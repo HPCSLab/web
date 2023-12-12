@@ -1,0 +1,26 @@
+---
+title: '電子動力学コード ARTED による Knights Landing プロセッサの性能評価'
+ref: '廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “電子動力学コード ARTED による Knights Landing プロセッサの性能評価”, 情報処理学会第157回HPC研究会報告 (HPC157), Vol. 2016-HPC-157, No. 8, Dec. 2016.'
+type: 'techreport'
+slug: 'ipsj-hpc157sato'
+---
+
+*by 廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩*
+
+Reference:
+```
+廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “電子動力学コード ARTED による Knights Landing プロセッサの性能評価”, 情報処理学会第157回HPC研究会報告 (HPC157), Vol. 2016-HPC-157, No. 8, Dec. 2016.
+```
+
+Bibtex Entry:
+```
+@techreport { IPSJ-HPC157:sato,
+  author      = "{廣川 祐太} and {朴 泰祐} and {佐藤 駿丞} and {矢花 一浩}",
+  title       = "{電子動力学コード ARTED による Knights Landing プロセッサの性能評価}",
+  year        = "2016",
+  volume      = "2016-HPC-157",
+  number      = "8",
+  month       = "12",
+  booktitle   = "情報処理学会第157回HPC研究会報告 (HPC157)"
+}
+```

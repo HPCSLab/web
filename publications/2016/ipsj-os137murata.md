@@ -1,0 +1,26 @@
+---
+title: 'RDMAを用いたRAMPトランザクションの高速化'
+ref: '村田 直郁, 川島 英之, 建部 修見: “RDMAを用いたRAMPトランザクションの高速化”, 情報処理学会第137回OS研究会報告 (OS137), Vol. 2016-OS-137, No. 3, May. 2016.'
+type: 'techreport'
+slug: 'ipsj-os137murata'
+---
+
+*by 村田 直郁, 川島 英之, 建部 修見*
+
+Reference:
+```
+村田 直郁, 川島 英之, 建部 修見: “RDMAを用いたRAMPトランザクションの高速化”, 情報処理学会第137回OS研究会報告 (OS137), Vol. 2016-OS-137, No. 3, May. 2016.
+```
+
+Bibtex Entry:
+```
+@techreport { IPSJ-OS137:murata,
+  author      = "{村田 直郁} and {川島 英之} and {建部 修見}",
+  title       = "{RDMAを用いたRAMPトランザクションの高速化}",
+  year        = "2016",
+  volume      = "2016-OS-137",
+  number      = "3",
+  month       = "5",
+  booktitle   = "情報処理学会第137回OS研究会報告 (OS137)"
+}
+```
