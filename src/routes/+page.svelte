@@ -45,7 +45,7 @@
 	<div class="container sidebar">
 		<div id="primary" class="content-area">
 			<main class="site-main entry-content">
-				<h2><a href="/bachelor/#!index.md">卒研配属情報はこちらから</a></h2>
+				<h2><a href="https://www.hpcs.cs.tsukuba.ac.jp/bachelor/#!index.md">卒研配属情報はこちらから</a></h2>
 				<h2>High Performance Computing System labs.</h2>
 				<p>
 					筑波大学ハイパフォーマンス・コンピューティング・システム研究室では，超並列計算機からクラスタまで，高性能計算に関連した以下の研究を行っています．
@@ -104,25 +104,25 @@
 							id="menu-item-728"
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-728"
 						>
-							<a target="_blank" href="/bachelor/#!index.md">卒研配属情報</a>
+							<a target="_blank" href="https://www.hpcs.cs.tsukuba.ac.jp/bachelor/#!index.md">卒研配属情報</a>
 						</li>
 						<li
 							id="menu-item-749"
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-749"
 						>
-							<a target="_blank" href="/experiment/text.html">情報システム実験B</a>
+							<a target="_blank" href="https://www.hpcs.cs.tsukuba.ac.jp/experiment/text.html">情報システム実験B</a>
 						</li>
 						<li
 							id="menu-item-172"
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-172"
 						>
-							<a target="_blank" href="/internal/pukiwiki/">Internal Page</a>
+							<a target="_blank" href="https://www.hpcs.cs.tsukuba.ac.jp/internal/pukiwiki/">Internal Page</a>
 						</li>
 						<li
 							id="menu-item-1100"
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1100"
 						>
-							<a href="/bachelor/"><img src="/banner_bachelor2.png" /></a>
+							<a href="https://www.hpcs.cs.tsukuba.ac.jp/bachelor/"><img src="/banner_bachelor2.png" /></a>
 						</li>
 					</ul>
 				</div>

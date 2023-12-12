@@ -47,7 +47,7 @@
 						id="menu-item-730"
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-730"
 					>
-						<a target="_blank" href="/bachelor/#!index.md">Open Lab.</a>
+						<a target="_blank" href="https://www.hpcs.cs.tsukuba.ac.jp/bachelor/#!index.md">Open Lab.</a>
 					</li>
 					<li
 						id="menu-item-39"
@@ -96,19 +96,19 @@
 								id="menu-item-732"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-732"
 							>
-								<a target="_blank" href="/bachelor/#!index.md">卒研配属情報</a>
+								<a target="_blank" href="https://www.hpcs.cs.tsukuba.ac.jp/bachelor/#!index.md">卒研配属情報</a>
 							</li>
 							<li
 								id="menu-item-748"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748"
 							>
-								<a href="/experiment/text.html">情報システム実験B</a>
+								<a href="https://www.hpcs.cs.tsukuba.ac.jp/experiment/text.html">情報システム実験B</a>
 							</li>
 							<li
 								id="menu-item-46"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"
 							>
-								<a target="_blank" href="/internal/pukiwiki/">Internal Page</a>
+								<a target="_blank" href="https://www.hpcs.cs.tsukuba.ac.jp/internal/pukiwiki/">Internal Page</a>
 							</li>
 						</ul>
 					</li>
