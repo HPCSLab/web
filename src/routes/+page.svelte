@@ -1,30 +1,12 @@
 <script lang="ts">
+	import type { PageData } from './$types';
+
 	import Header from '$lib/components/Header.svelte';
 	import PageHead from '$lib/components/PageHead.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
-	const images = [
-		{
-			name: 'COMA',
-			path: 'COMA.jpg'
-		},
-		{
-			name: 'HA-PACS',
-			path: 'HA-PACS.jpg'
-		},
-		{
-			name: 'Cygnus',
-			path: 'Cygnus.png'
-		},
-		{
-			name: 'HA-PACS / TCA',
-			path: 'HA-PACS-TCA.jpg'
-		},
-		{
-			name: 'Oakforest-PACS',
-			path: 'OFP.jpg'
-		}
-	];
+	export let data: PageData;
+	$: news = data.news;
 </script>
 
 <PageHead title={'HPCS Lab.'} description={'HPCS Lab. Webページ'} />
@@ -63,6 +45,14 @@
 					特に，筑波大学計算科学研究センターで運用されている多重複合型演算加速スーパーコンピュータCygnus,
 					最先端共同HPC基盤施設（JCAHPC）のOakforest-PACSでは，これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており，並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算を目指した研究を進めています．
 				</p>
+				<h3>What's New</h3>
+				<ul>
+				{#each news as news_item}
+					<li>
+						<p>{news_item.date} <a href={news_item.path}>{news_item.title}</a></p>
+					</li>
+				{/each}
+				</ul>
 			</main>
 		</div>
 		<div id="secondary" class="widget-area">
