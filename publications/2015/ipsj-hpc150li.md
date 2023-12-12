@@ -1,0 +1,26 @@
+---
+title: 'Design of Automatic Supernova Detection System'
+ref: 'Li Jiang, Hideyuki Kawashima, Osamu Tatebe: “Design of Automatic Supernova Detection System”, 情報処理学会第150回HPC研究会報告 (HPC150), Vol. 2015-HPC-150, No. 19, Aug. 2015.'
+type: 'techreport'
+slug: 'ipsj-hpc150li'
+---
+
+*by Li Jiang, Hideyuki Kawashima, Osamu Tatebe*
+
+Reference:
+```
+Li Jiang, Hideyuki Kawashima, Osamu Tatebe: “Design of Automatic Supernova Detection System”, 情報処理学会第150回HPC研究会報告 (HPC150), Vol. 2015-HPC-150, No. 19, Aug. 2015.
+```
+
+Bibtex Entry:
+```
+@techreport { IPSJ-HPC150:li,
+  author    = "{Li Jiang} and {Hideyuki Kawashima} and {Osamu Tatebe}",
+  title     = "{Design of Automatic Supernova Detection System}",
+  booktitle = "情報処理学会第150回HPC研究会報告 (HPC150)",
+  volume    = "2015-HPC-150",
+  number    = "19",
+  month     = "8",
+  year      = "2015"
+}
+```
