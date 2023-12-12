@@ -3,11 +3,11 @@ import { slugFromPath } from '$lib/slugFromPath';
 import { error } from '@sveltejs/kit';
 
 export const load: PageLoad = async ({ params }) => {
-	const modules = import.meta.glob(`/src/news/*/*.{md,svx,svelte.md}`);
+	const modules = import.meta.glob(`/news/*/*.{md,svx,svelte.md}`);
 
 	let match: { path?: string; resolver?: App.MdsvexResolver } = {};
 	for (const [path, resolver] of Object.entries(modules)) {
-		if (slugFromPath(path) === params.slug && path.split('/')[3] === params.year) {
+		if (slugFromPath(path) === params.slug && path.split('/')[2] === params.year) {
 			match = { path, resolver: resolver as unknown as App.MdsvexResolver };
 			break;
 		}
