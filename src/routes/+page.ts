@@ -13,7 +13,15 @@ export const load: PageLoad = async () => {
         });
 	}
 
+    news.sort((a, b) => {
+        const ad = Date.parse(a.date);
+        const bd = Date.parse(b.date);
+        if (ad == bd) return 0;
+        if (ad < bd) return 1;
+        return -1;
+    });
+
     return {
-        news,
+        news: news.slice(0, 10),
     };
 };
