@@ -10,7 +10,7 @@ export const load: PageLoad = async ({ params }) => {
     }
 
     if (2001 <= year && year < 2015) {
-        let bibtex_lists : {
+        let bibtex_lists: {
             journal: any[],
             conference: any[],
             poster: any[],
@@ -25,10 +25,9 @@ export const load: PageLoad = async ({ params }) => {
             domestic_poster: [],
             techreport: [],
         };
-	    const modules = import.meta.glob(`/publications/*.{md,svx,svelte.md}`);
-        for (const [path, resolver] of Object.entries(modules)) {
+        const modules: Record<string, any> = import.meta.globEager(`/publications/*.{md,svx,svelte.md}`);
+        for (const [path, content] of Object.entries(modules)) {
             if (slugFromPath(path) == params.year) {
-                const content: any = await resolver();
                 return {
                     year,
                     old_content: content,
@@ -38,8 +37,8 @@ export const load: PageLoad = async ({ params }) => {
         }
         throw error(404);
     } else if (2015 <= year) {
-	    const modules = import.meta.glob(`/publications/*/*.{md,svx,svelte.md}`);
-        let bibtex_lists : {
+        const modules: Record<string, any> = import.meta.globEager(`/publications/*/*.{md,svx,svelte.md}`);
+        let bibtex_lists: {
             journal: any[],
             conference: any[],
             poster: any[],
@@ -54,9 +53,8 @@ export const load: PageLoad = async ({ params }) => {
             domestic_poster: [],
             techreport: [],
         };
-        for (const [path, resolver] of Object.entries(modules)) {
+        for (const [path, content] of Object.entries(modules)) {
             if (path.split('/')[2] == params.year) {
-                const content: any = await resolver();
                 switch (content.metadata.type) {
                     case 'journal':
                         bibtex_lists.journal.push(content);

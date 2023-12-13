@@ -3,17 +3,17 @@ import { slugFromPath } from '$lib/slugFromPath';
 import { error } from '@sveltejs/kit';
 
 export const load: PageLoad = async ({ params }) => {
-	const modules = import.meta.glob(`/news/*/*.{md,svx,svelte.md}`);
+	const modules: Record<string, any> = import.meta.globEager(`/news/*/*.{md,svx,svelte.md}`);
 
-	let match: { path?: string; resolver?: App.MdsvexResolver } = {};
-	for (const [path, resolver] of Object.entries(modules)) {
+	let match: { path?: string; news?: any } = {};
+	for (const [path, news] of Object.entries(modules)) {
 		if (slugFromPath(path) === params.slug && path.split('/')[2] === params.year) {
-			match = { path, resolver: resolver as unknown as App.MdsvexResolver };
+			match = { path, news };
 			break;
 		}
 	}
 
-	const news = await match?.resolver?.();
+	const news = match?.news;
 
 	if (!news || !news.metadata.published) {
 		throw error(404); // Couldn't resolve the post
