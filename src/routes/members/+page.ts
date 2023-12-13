@@ -49,7 +49,7 @@ const prof2rank = (prof: profile) => {
 };
 
 export const load: PageLoad = async () => {
-    const data: Record<string, any> = import.meta.glob(`/members/profiles/*.{md,svx,svelte.md}`, { eager: true });
+    const data: Record<string, any> = import.meta.glob(`/members/profiles/*.md`, { eager: true });
     let profiles: profile[] = [];
 
     for (const [path, content] of Object.entries(data)) {

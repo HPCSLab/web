@@ -25,7 +25,7 @@ export const load: PageLoad = async ({ params }) => {
             domestic_poster: [],
             techreport: [],
         };
-        const modules: Record<string, any> = import.meta.glob(`/publications/*.{md,svx,svelte.md}`, { eager: true });
+        const modules: Record<string, any> = import.meta.glob(`/publications/*.md`, { eager: true });
         for (const [path, content] of Object.entries(modules)) {
             if (slugFromPath(path) == params.year) {
                 return {
@@ -37,7 +37,7 @@ export const load: PageLoad = async ({ params }) => {
         }
         throw error(404);
     } else if (2015 <= year) {
-        const modules: Record<string, any> = import.meta.glob(`/publications/*/*.{md,svx,svelte.md}`, { eager: true });
+        const modules: Record<string, any> = import.meta.glob(`/publications/*/*.md`, { eager: true });
         let bibtex_lists: {
             journal: any[],
             conference: any[],
