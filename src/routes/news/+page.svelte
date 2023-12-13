@@ -19,7 +19,7 @@
 	</header>
 
 	<div class="container">
-		<div id="primary" class="content-area">
+		<div class="content-area">
 			<main class="site-main entry-content">
                 <ul>
                 {#each news as news_item}

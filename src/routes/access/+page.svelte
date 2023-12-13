@@ -13,7 +13,7 @@
 		</div>
 	</header>
 	<div class="container">
-		<div id="primary" class="content-area">
+		<div class="content-area">
 			<main class="site-main entry-content">
 				<div class="entry-content">
 					<h2>Address</h2>

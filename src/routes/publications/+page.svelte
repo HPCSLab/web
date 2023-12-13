@@ -13,7 +13,7 @@
 		</div>
 	</header>
     <div class="container">
-        <div id="primary" class="content-area">
+        <div class="content-area">
             <main class="site-main entry-content">
                 <ul>
 					<li><a href="/publications/publications-2020">Publications (2020)</a></li>

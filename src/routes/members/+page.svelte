@@ -90,7 +90,7 @@
 	</header>
 
 	<div class="container">
-		<div id="primary" class="content-area">
+		<div class="content-area">
 			<main class="site-main entry-content">
 				<Filter title="Filter job" options={job_options} bind:userSelected={filter_job} />
 				<Filter title="Filter team" options={team_options} bind:userSelected={filter_team} />
