@@ -3,7 +3,7 @@ import { slugFromPath } from '$lib/slugFromPath';
 import { error } from '@sveltejs/kit';
 
 export const load: PageLoad = async ({ params }) => {
-	const modules: Record<string, any> = import.meta.globEager(`/news/*/*.{md,svx,svelte.md}`);
+	const modules: Record<string, any> = import.meta.glob(`/news/*/*.{md,svx,svelte.md}`, { eager: true });
 
 	let match: { path?: string; news?: any } = {};
 	for (const [path, news] of Object.entries(modules)) {

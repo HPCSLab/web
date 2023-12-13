@@ -2,7 +2,7 @@ import type { PageLoad } from './$types';
 import { slugFromPath } from '$lib/slugFromPath';
 
 export const load: PageLoad = async () => {
-    const news_data: Record<string, any> = import.meta.globEager(`/news/*/*.{md,svx,svelte.md}`);
+    const news_data: Record<string, any> = import.meta.glob(`/news/*/*.{md,svx,svelte.md}`, { eager: true });
     let news: { date: string, title: string, path: string }[] = [];
     for (const [path, content] of Object.entries(news_data)) {
         news.push({
