@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="site-branding-container">
 			<div class="site-branding">
-				<a href="/" rel="home">
+				<a href="/" rel="home" target="_self">
 					<h1 class="site-title">HPCS Lab.</h1>
 				</a>
 			</div>
@@ -22,25 +22,25 @@
 						id="menu-item-17"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-15 current_page_item menu-item-17"
 					>
-						<a href="/">Home</a>
+						<a href="/" target="_self">Home</a>
 					</li>
 					<li
 						id="menu-item-36"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"
 					>
-						<a href="/research/">Research</a>
+						<a href="/research/" target="_self">Research</a>
 					</li>
 					<li
 						id="menu-item-38"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38"
 					>
-						<a href="/members/">Members</a>
+						<a href="/members/" target="_self">Members</a>
 						<ul class="sub-menu">
 							<li
 								id="menu-item-37"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"
 							>
-								<a href="/members/alumni/">Alumni</a>
+								<a href="/members/alumni/" target="_self">Alumni</a>
 							</li>
 						</ul>
 					</li>
@@ -48,7 +48,7 @@
 						id="menu-item-113"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"
 					>
-						<a href="/publications/">Publications</a>
+						<a href="/publications/" target="_self">Publications</a>
 					</li>
 					<li
 						id="menu-item-730"
@@ -62,7 +62,7 @@
 						id="menu-item-39"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"
 					>
-						<a href="/access/">Access</a>
+						<a href="/access/" target="_self">Access</a>
 					</li>
 					<li
 						id="menu-item-40"
