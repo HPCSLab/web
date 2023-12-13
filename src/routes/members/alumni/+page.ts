@@ -5,8 +5,8 @@ export const load: PageLoad = async () => {
 
 	for (const [path, resolver] of Object.entries(alumni_data)) {
 		const content: any = await resolver();
-        return {
-            content,
-        }
+		return {
+			content,
+		}
 	}
 };
