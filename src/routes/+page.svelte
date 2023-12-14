@@ -4,19 +4,38 @@
 	import Header from '$lib/components/Header.svelte';
 	import PageHead from '$lib/components/PageHead.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import Carousel from '$lib/components/Carousel.svelte';
 
 	export let data: PageData;
 	$: news = data.news;
+
+	const images = [
+		{
+			uri: '/COMA.jpg',
+			name: 'COMA',
+		},
+		{
+			uri: '/HA-PACS.jpg',
+			name: 'HA-PACS',
+		},
+		{
+			uri: '/Cygnus.png',
+			name: 'Cygnus',
+		},
+		{
+			uri: '/HA-PACS-TCA.jpg',
+			name: 'HA-PACS/TCA',
+		},
+		{
+			uri: '/OFP.jpg',
+			name: 'Oakforest-PACS',
+		},
+	];
 </script>
 
 <PageHead title={'HPCS Lab.'} description={'HPCS Lab. Webページ'} />
 <Header />
-<div class="slider">
-	<img src="/Cygnus.png" width="100%" alt="Cygnus" />
-	<div class="caption-wrap">
-		<div class="caption">Cygnus</div>
-	</div>
-</div>
+<Carousel images={images} />
 
 <div class="site-content">
 	<header class="entry-header">
@@ -123,28 +142,3 @@
 </div>
 
 <Footer />
-
-<style>
-	.slider {
-		width: 100%;
-		position: relative;
-	}
-	.caption-wrap {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		opacity: 0.7;
-		margin: 0;
-		display: block;
-		width: 100%;
-		line-height: 1.4em;
-		background: rgba(0, 0, 0, 0.7);
-		color: #fff;
-		font-size: 2rem;
-		line-height: normal;
-		text-align: center;
-	}
-	.caption {
-		padding: 8px 14px 9px;
-	}
-</style>
