@@ -33,19 +33,19 @@
 					</li>
 					<li
 						id="menu-item-36"
-						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36 {getCurrentMenuItemClassName('/research')}"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36 {getCurrentMenuItemClassName('/research/')}"
 					>
 						<a href="/research/" target="_self">Research</a>
 					</li>
 					<li
 						id="menu-item-38"
-						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38 {getCurrentMenuItemClassName('/members')}"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38 {getCurrentMenuItemClassName('/members/')}"
 					>
 						<a href="/members/" target="_self">Members</a>
 						<ul class="sub-menu">
 							<li
 								id="menu-item-37"
-								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37 {getCurrentMenuItemClassName('/members/alumni')}"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37 {getCurrentMenuItemClassName('/members/alumni/')}"
 							>
 								<a href="/members/alumni/" target="_self">Alumni</a>
 							</li>
@@ -53,7 +53,7 @@
 					</li>
 					<li
 						id="menu-item-113"
-						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113 {getCurrentMenuItemClassName('/publications')}"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113 {getCurrentMenuItemClassName('/publications/')}"
 					>
 						<a href="/publications/" target="_self">Publications</a>
 					</li>
@@ -67,7 +67,7 @@
 					</li>
 					<li
 						id="menu-item-39"
-						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39 {getCurrentMenuItemClassName('/access')}"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39 {getCurrentMenuItemClassName('/access/')}"
 					>
 						<a href="/access/" target="_self">Access</a>
 					</li>
