@@ -1,0 +1,24 @@
+title: "アクセラレータ向け並列プログラミング言語XcalableACCにおけるTCA/InfiniBandハイブリッド通信"
+ref: "小田嶋 哲哉, 朴 泰祐, 塙 敏博, 村井 均, 中尾 昌広, 田渕 晶大, 佐藤 三久: “アクセラレータ向け並列プログラミング言語XcalableACCにおけるTCA/InfiniBandハイブリッド通信”, 情報処理学会第150回HPC研究会報告 (HPC150), Vol. 2015-HPC-150, No. 43, Aug. 2015."
+type: "techreport"
+slug: "ipsj-hpc150odajima"
+
+by:
+  - 小田嶋 哲哉
+  - 朴 泰祐
+  - 塙 敏博
+  - 村井 均
+  - 中尾 昌広
+  - 田渕 晶大
+  - 佐藤 三久
+
+bibtex: |
+  @techreport { IPSJ-HPC150:odajima,
+    author    = "{小田嶋 哲哉} and {朴 泰祐} and {塙 敏博} and {村井 均} and {中尾 昌広} and {田渕 晶大} and {佐藤 三久}",
+    title     = "{アクセラレータ向け並列プログラミング言語XcalableACCにおけるTCA/InfiniBandハイブリッド通信}",
+    booktitle = "情報処理学会第150回HPC研究会報告 (HPC150)",
+    volume    = "2015-HPC-150",
+    number    = "43",
+    month     = "8",
+    year      = "2015"
+  }

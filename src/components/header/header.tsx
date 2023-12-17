@@ -14,6 +14,7 @@ export default component$(() => {
       const body = document.querySelector("body");
       if (body) {
         if (closed.value) {
+          console.log(scrolled);
           body.removeAttribute("style");
           window.scroll(0, scrolled.value);
         } else {
@@ -25,6 +26,7 @@ export default component$(() => {
   const onClick = $(() => {
     if (closed.value) {
       scrolled.value = window.scrollY;
+      console.log(`scrolled: ${window.scrollY}`);
       closed.value = false;
     } else {
       closed.value = true;

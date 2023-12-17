@@ -3,7 +3,7 @@ import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { macroPlugin } from "@builder.io/vite-plugin-macro";
-import svgLoader from "vite-svg-loader";
+import yamlLoader from "@rollup/plugin-yaml";
 
 export default defineConfig(() => {
   return {
@@ -12,7 +12,7 @@ export default defineConfig(() => {
       qwikCity(),
       qwikVite(),
       tsconfigPaths(),
-      svgLoader({defaultImport: "component"})
+      yamlLoader(),
     ],
     dev: {
       headers: {
