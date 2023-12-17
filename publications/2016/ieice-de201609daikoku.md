@@ -1,21 +1,23 @@
 ---
-title: 'MapReduceにおけるShuffleの性能解析'
-ref: '大黒 晴之, 川島 英之, 建部 修見: “MapReduceにおけるShuffleの性能解析”, 信学技報 116, No. 214, pp. 19-24, Sep. 2016.'
-type: 'techreport'
-slug: 'ieice-de201609daikoku'
+title: "MapReduceにおけるShuffleの性能解析"
+ref: "大黒 晴之, 川島 英之, 建部 修見: “MapReduceにおけるShuffleの性能解析”, 信学技報 116, No. 214, pp. 19-24, Sep. 2016."
+type: "techreport"
+slug: "ieice-de201609daikoku"
 ---
 
-*by 大黒 晴之, 川島 英之, 建部 修見*
+_by 大黒 晴之, 川島 英之, 建部 修見_
 
 Reference:
+
 ```
 大黒 晴之, 川島 英之, 建部 修見: “MapReduceにおけるShuffleの性能解析”, 信学技報 116, No. 214, pp. 19-24, Sep. 2016.
 ```
 
 Bibtex Entry:
+
 ```
 @techreport { IEICE-DE201609:daikoku,
-  author      = "{大黒 晴之} and {川島 英之} and {建部 修見}", 
+  author      = "{大黒 晴之} and {川島 英之} and {建部 修見}",
   title       = "{MapReduceにおけるShuffleの性能解析}",
   booktitle   = "{信学技報 116}",
   number      = "214",

@@ -1,18 +1,20 @@
 ---
-title: 'Design of object storage using OpenNVM for high-performance distributed file system'
-ref: 'Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Design of object storage using OpenNVM for high-performance distributed file system”, GPC2015, May. 2015.'
-type: 'conference'
-slug: 'gpc2015takatsu'
+title: "Design of object storage using OpenNVM for high-performance distributed file system"
+ref: "Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Design of object storage using OpenNVM for high-performance distributed file system”, GPC2015, May. 2015."
+type: "conference"
+slug: "gpc2015takatsu"
 ---
 
-*by Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe*
+_by Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe_
 
 Reference:
+
 ```
 Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Design of object storage using OpenNVM for high-performance distributed file system”, GPC2015, May. 2015.
 ```
 
 Bibtex Entry:
+
 ```
 @conference { GPC2015:takatsu,
   author    = "{Fuyumasa Takatsu} and {Kohei Hiraga} and {Osamu Tatebe}",

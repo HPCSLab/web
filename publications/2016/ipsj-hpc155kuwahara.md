@@ -1,18 +1,20 @@
 ---
-title: 'GPUクラスタにおけるGPUセルフMPIシステムGMPIの予備性能評価'
-ref: '桑原 悠太, 塙 敏博, 朴 泰祐: “GPUクラスタにおけるGPUセルフMPIシステムGMPIの予備性能評価”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 15, Aug. 2016.'
-type: 'techreport'
-slug: 'ipsj-hpc155kuwahara'
+title: "GPUクラスタにおけるGPUセルフMPIシステムGMPIの予備性能評価"
+ref: "桑原 悠太, 塙 敏博, 朴 泰祐: “GPUクラスタにおけるGPUセルフMPIシステムGMPIの予備性能評価”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 15, Aug. 2016."
+type: "techreport"
+slug: "ipsj-hpc155kuwahara"
 ---
 
-*by 桑原 悠太, 塙 敏博, 朴 泰祐*
+_by 桑原 悠太, 塙 敏博, 朴 泰祐_
 
 Reference:
+
 ```
 桑原 悠太, 塙 敏博, 朴 泰祐: “GPUクラスタにおけるGPUセルフMPIシステムGMPIの予備性能評価”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 15, Aug. 2016.
 ```
 
 Bibtex Entry:
+
 ```
 @techreport { IPSJ-HPC155:kuwahara,
   author      = "{桑原 悠太} and {塙 敏博} and {朴 泰祐}",

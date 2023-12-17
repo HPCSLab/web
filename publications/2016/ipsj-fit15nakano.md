@@ -1,18 +1,20 @@
 ---
-title: 'FPGAによるTRAXソルバの実装'
-ref: '中野 正隆, 山口 佳樹: “FPGAによるTRAXソルバの実装”, FIT2016 第15回情報科学技術フォーラム 第１分冊, No. RC-001, pp. 11-15, Sep. 2016. (FIT奨励賞, FITヤングリサーチャー賞)'
-type: 'techreport'
-slug: 'ipsj-fit15nakano'
+title: "FPGAによるTRAXソルバの実装"
+ref: "中野 正隆, 山口 佳樹: “FPGAによるTRAXソルバの実装”, FIT2016 第15回情報科学技術フォーラム 第１分冊, No. RC-001, pp. 11-15, Sep. 2016. (FIT奨励賞, FITヤングリサーチャー賞)"
+type: "techreport"
+slug: "ipsj-fit15nakano"
 ---
 
-*by 中野 正隆, 山口 佳樹*
+_by 中野 正隆, 山口 佳樹_
 
 Reference:
+
 ```
 中野 正隆, 山口 佳樹: “FPGAによるTRAXソルバの実装”, FIT2016 第15回情報科学技術フォーラム 第１分冊, No. RC-001, pp. 11-15, Sep. 2016. (FIT奨励賞, FITヤングリサーチャー賞)
 ```
 
 Bibtex Entry:
+
 ```
 @techreport {IPSJ-FIT15:nakano,
   author      = "{中野 正隆} and {山口 佳樹}",

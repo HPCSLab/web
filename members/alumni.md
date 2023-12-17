@@ -1,5 +1,5 @@
 ---
-title: 'Alumni'
+title: "Alumni"
 ---
 
 # Faculty members

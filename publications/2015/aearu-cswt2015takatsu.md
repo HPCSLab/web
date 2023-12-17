@@ -1,18 +1,20 @@
 ---
-title: 'Object Storage for ioDrive'
-ref: 'Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Object Storage for ioDrive”, 10th AEARU Workshop on Computer Science and Web Technology (AEARU-CSWT2015), Feb. 2015. (Poster)'
-type: 'poster'
-slug: 'aearu-cswt2015takatsu'
+title: "Object Storage for ioDrive"
+ref: "Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Object Storage for ioDrive”, 10th AEARU Workshop on Computer Science and Web Technology (AEARU-CSWT2015), Feb. 2015. (Poster)"
+type: "poster"
+slug: "aearu-cswt2015takatsu"
 ---
 
-*by Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe*
+_by Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe_
 
 Reference:
+
 ```
 Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Object Storage for ioDrive”, 10th AEARU Workshop on Computer Science and Web Technology (AEARU-CSWT2015), Feb. 2015. (Poster)
 ```
 
 Bibtex Entry:
+
 ```
 @conference{AEARU-CSWT2015:takatsu,
   author    = "{Fuyumasa Takatsu} and {Kohei Hiraga} and {Osamu Tatebe}",

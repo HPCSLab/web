@@ -1,13 +1,13 @@
 ---
-title: '国際会議CCGrid2017で本研究室の学生が発表しました'
-description: 'CCGrid2017 にて，本研究室学生の田渕 (博士後期3年) が下記のタイトルで発表を行いました．'
-date: '2017-05-29'
+title: "国際会議CCGrid2017で本研究室の学生が発表しました"
+description: "CCGrid2017 にて，本研究室学生の田渕 (博士後期3年) が下記のタイトルで発表を行いました．"
+date: "2017-05-29"
 published: true
 ---
 
 国際会議 The 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid2017) にて，本研究室学生の田渕 (博士後期3年) が下記のタイトルで発表を行いました．
 
 > “Implementation and Evaluation of One-sided PGAS Communication in XcalableACC for Accelerated Clusters”  
-田渕晶大(発表者)，中尾昌広，村井均，朴泰祐，佐藤三久
+> 田渕晶大(発表者)，中尾昌広，村井均，朴泰祐，佐藤三久
 
 CCGridについては　[こちら](https://www.arcos.inf.uc3m.es/ccgrid2017/)　を参照してください．

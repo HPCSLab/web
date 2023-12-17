@@ -1,7 +1,7 @@
 ---
-title: 'HPCS研究室 卒研配属情報を掲載しました'
-description: ''
-date: '2018-10-03'
+title: "HPCS研究室 卒研配属情報を掲載しました"
+description: ""
+date: "2018-10-03"
 published: true
 ---
 

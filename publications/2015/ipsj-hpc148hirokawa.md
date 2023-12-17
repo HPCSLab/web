@@ -1,18 +1,20 @@
 ---
-title: '実時間実空間密度汎関数理論による電子動力学シミュレーションのXeon Phiクラスタ向け最適化'
-ref: '廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “実時間実空間密度汎関数理論による電子動力学シミュレーションのXeon Phiクラスタ向け最適化”, 情報処理学会第148回HPC研究会報告 (HPC148), Vol. 2015-HPC-148, No. 19, Mar. 2015.'
-type: 'techreport'
-slug: 'ipsj-hpc148hirokawa'
+title: "実時間実空間密度汎関数理論による電子動力学シミュレーションのXeon Phiクラスタ向け最適化"
+ref: "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “実時間実空間密度汎関数理論による電子動力学シミュレーションのXeon Phiクラスタ向け最適化”, 情報処理学会第148回HPC研究会報告 (HPC148), Vol. 2015-HPC-148, No. 19, Mar. 2015."
+type: "techreport"
+slug: "ipsj-hpc148hirokawa"
 ---
 
-*by 廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩*
+_by 廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩_
 
 Reference:
+
 ```
 廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “実時間実空間密度汎関数理論による電子動力学シミュレーションのXeon Phiクラスタ向け最適化”, 情報処理学会第148回HPC研究会報告 (HPC148), Vol. 2015-HPC-148, No. 19, Mar. 2015.
 ```
 
 Bibtex Entry:
+
 ```
 @techreport { IPSJ-HPC148:hirokawa,
   author    = "{廣川 祐太} and {朴 泰祐} and {佐藤 駿丞} and {矢花 一浩}",

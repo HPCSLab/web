@@ -1,18 +1,20 @@
 ---
-title: '最適化手法を自動化するXevolverフレームワーク用定義ファイルの実装'
-ref: '五味 歩武, 高橋 大介: “最適化手法を自動化するXevolverフレームワーク用定義ファイルの実装”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 7, Aug. 2016.'
-type: 'techreport'
-slug: 'ipsj-hpc155gomi'
+title: "最適化手法を自動化するXevolverフレームワーク用定義ファイルの実装"
+ref: "五味 歩武, 高橋 大介: “最適化手法を自動化するXevolverフレームワーク用定義ファイルの実装”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 7, Aug. 2016."
+type: "techreport"
+slug: "ipsj-hpc155gomi"
 ---
 
-*by 五味 歩武, 高橋 大介*
+_by 五味 歩武, 高橋 大介_
 
 Reference:
+
 ```
 五味 歩武, 高橋 大介: “最適化手法を自動化するXevolverフレームワーク用定義ファイルの実装”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 7, Aug. 2016.
 ```
 
 Bibtex Entry:
+
 ```
 @techreport { IPSJ-HPC155:gomi,
   author      = "{五味 歩武} and {高橋 大介}",

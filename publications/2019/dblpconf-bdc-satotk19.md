@@ -1,18 +1,20 @@
 ---
-title: 'In-situ Data Analysis System for High Resolution Meteorological Large Eddy Simulation Model'
-ref: 'Takuto Sato, Osamu Tatebe, Hiroyuki Kusaka: “In-situ Data Analysis System for High Resolution Meteorological Large Eddy Simulation Model”, Proceedings of the 6th IEEE/ACM International Conference on Big Data Computing, Applications and Technologies, BDCAT 2019, pp. 155-158, 2019.'
-type: 'conference'
-slug: 'dblpconf-bdc-satotk19'
+title: "In-situ Data Analysis System for High Resolution Meteorological Large Eddy Simulation Model"
+ref: "Takuto Sato, Osamu Tatebe, Hiroyuki Kusaka: “In-situ Data Analysis System for High Resolution Meteorological Large Eddy Simulation Model”, Proceedings of the 6th IEEE/ACM International Conference on Big Data Computing, Applications and Technologies, BDCAT 2019, pp. 155-158, 2019."
+type: "conference"
+slug: "dblpconf-bdc-satotk19"
 ---
 
-*by Takuto Sato, Osamu Tatebe, Hiroyuki Kusaka*
+_by Takuto Sato, Osamu Tatebe, Hiroyuki Kusaka_
 
 Reference:
+
 ```
 Takuto Sato, Osamu Tatebe, Hiroyuki Kusaka: “In-situ Data Analysis System for High Resolution Meteorological Large Eddy Simulation Model”, Proceedings of the 6th IEEE/ACM International Conference on Big Data Computing, Applications and Technologies, BDCAT 2019, pp. 155-158, 2019.
 ```
 
 Bibtex Entry:
+
 ```
 @inproceedings{DBLP:conf/bdc/SatoTK19,
   author    = {Takuto Sato and

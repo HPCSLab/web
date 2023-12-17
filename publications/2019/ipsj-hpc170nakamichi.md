@@ -1,18 +1,20 @@
 ---
-title: 'GPU・FPGA複合演算加速による輻射流体シミュレーションコードARGOTの実装'
-ref: '中道 安祐未, 藤田 典久, 小林 諒平, 朴 泰祐, 吉川 耕司, 梅村 雅之: “GPU・FPGA複合演算加速による輻射流体シミュレーションコードARGOTの実装”, 情報処理学会 第172回 HPC 研究会報告 (HPC170), Vol. 2019-HPC-170, No. 22, Jul. 2019.'
-type: 'techreport'
-slug: 'ipsj-hpc170nakamichi'
+title: "GPU・FPGA複合演算加速による輻射流体シミュレーションコードARGOTの実装"
+ref: "中道 安祐未, 藤田 典久, 小林 諒平, 朴 泰祐, 吉川 耕司, 梅村 雅之: “GPU・FPGA複合演算加速による輻射流体シミュレーションコードARGOTの実装”, 情報処理学会 第172回 HPC 研究会報告 (HPC170), Vol. 2019-HPC-170, No. 22, Jul. 2019."
+type: "techreport"
+slug: "ipsj-hpc170nakamichi"
 ---
 
-*by 中道 安祐未, 藤田 典久, 小林 諒平, 朴 泰祐, 吉川 耕司, 梅村 雅之*
+_by 中道 安祐未, 藤田 典久, 小林 諒平, 朴 泰祐, 吉川 耕司, 梅村 雅之_
 
 Reference:
+
 ```
 中道 安祐未, 藤田 典久, 小林 諒平, 朴 泰祐, 吉川 耕司, 梅村 雅之: “GPU・FPGA複合演算加速による輻射流体シミュレーションコードARGOTの実装”, 情報処理学会 第172回 HPC 研究会報告 (HPC170), Vol. 2019-HPC-170, No. 22, Jul. 2019.
 ```
 
 Bibtex Entry:
+
 ```
 @techreport { IPSJ-HPC170:nakamichi,
    author	= "{中道 安祐未} and {藤田 典久} and {小林 諒平} and {朴 泰祐} and {吉川 耕司} and {梅村 雅之}",

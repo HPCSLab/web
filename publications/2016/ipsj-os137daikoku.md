@@ -1,18 +1,20 @@
 ---
-title: 'In-memory MapReduceにおける最適なShuffle手法の検討'
-ref: '大黒 晴之, 川島 英之, 建部 修見: “In-memory MapReduceにおける最適なShuffle手法の検討”, 情報処理学会第137回OS研究会報告 (OS137), Vol. 2016-OS-137, No. 6, May. 2016.'
-type: 'techreport'
-slug: 'ipsj-os137daikoku'
+title: "In-memory MapReduceにおける最適なShuffle手法の検討"
+ref: "大黒 晴之, 川島 英之, 建部 修見: “In-memory MapReduceにおける最適なShuffle手法の検討”, 情報処理学会第137回OS研究会報告 (OS137), Vol. 2016-OS-137, No. 6, May. 2016."
+type: "techreport"
+slug: "ipsj-os137daikoku"
 ---
 
-*by 大黒 晴之, 川島 英之, 建部 修見*
+_by 大黒 晴之, 川島 英之, 建部 修見_
 
 Reference:
+
 ```
 大黒 晴之, 川島 英之, 建部 修見: “In-memory MapReduceにおける最適なShuffle手法の検討”, 情報処理学会第137回OS研究会報告 (OS137), Vol. 2016-OS-137, No. 6, May. 2016.
 ```
 
 Bibtex Entry:
+
 ```
 @techreport { IPSJ-OS137:daikoku,
   author      = "{大黒 晴之} and {川島 英之} and {建部 修見}",

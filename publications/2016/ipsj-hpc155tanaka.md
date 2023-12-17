@@ -1,18 +1,20 @@
 ---
-title: 'ワークフローシステムPwrakeにおける耐障害機能'
-ref: '田中 昌宏, 建部 修見: “ワークフローシステムPwrakeにおける耐障害機能”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 11, Aug. 2016.'
-type: 'techreport'
-slug: 'ipsj-hpc155tanaka'
+title: "ワークフローシステムPwrakeにおける耐障害機能"
+ref: "田中 昌宏, 建部 修見: “ワークフローシステムPwrakeにおける耐障害機能”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 11, Aug. 2016."
+type: "techreport"
+slug: "ipsj-hpc155tanaka"
 ---
 
-*by 田中 昌宏, 建部 修見*
+_by 田中 昌宏, 建部 修見_
 
 Reference:
+
 ```
 田中 昌宏, 建部 修見: “ワークフローシステムPwrakeにおける耐障害機能”, 情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 11, Aug. 2016.
 ```
 
 Bibtex Entry:
+
 ```
 @techreport { IPSJ-HPC155:tanaka,
   author      = "{田中 昌宏} and {建部 修見}",
