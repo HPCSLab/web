@@ -11,6 +11,9 @@ export default component$(() => {
         height: 12,
         justify: "center",
         align: "center",
+        position: "sticky",
+        top: "100vh",
+        bottom: 0,
       })}
     >
       <div>

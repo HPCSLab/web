@@ -1,6 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 import { useLocation } from "@builder.io/qwik-city";
-import NewsHeadline from "~/components/news/news-headline";
 import * as News from "~/lib/news";
 
 export default component$(() => {

@@ -37,7 +37,7 @@ function presentationalHeading(cls: Publications.PublicationClass): {
 export default component$(() => {
   const loc = useLocation();
   const publications = Publications.publications.get(
-    parseInt(loc.params.year, 10)
+    parseInt(loc.params.year, 10),
   );
   if (publications) {
     const classifiedByH2Heading: Map<
@@ -68,7 +68,11 @@ export default component$(() => {
                       <h3>{h3heading}</h3>
                       <ul>
                         {list.map((pub) => (
-                          <li key={pub.slug}>{pub.title}</li>
+                          <li key={pub.slug}>
+                            <a href={`/publications/details/${pub.slug}`}>
+                              {pub.reference}
+                            </a>
+                          </li>
                         ))}
                       </ul>
                     </section>
@@ -77,7 +81,11 @@ export default component$(() => {
                   return (
                     <ul key={JSON.stringify(cls)}>
                       {list.map((pub) => (
-                        <li key={pub.slug}>{pub.title}</li>
+                        <li key={pub.slug}>
+                          <a href={`/publications/details/${pub.slug}`}>
+                            {pub.reference}
+                          </a>
+                        </li>
                       ))}
                     </ul>
                   );

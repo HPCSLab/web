@@ -1,7 +1,5 @@
-title: 金子 紘也
-booktitle:
-  塙 敏博, 三浦 信一, 朴 泰祐, 佐藤 三久, 「PCI Express を用いた通信リンク PEARL
-  におけるネットワーク管理機構」, 情報処理学会研究報告, 2011-ARC-196(6)
+title: PCI Express を用いた通信リンク PEARL におけるネットワーク管理機構
+booktitle: 情報処理学会研究報告, 2011-ARC-196(6)
 year: 2011
 authors:
   - 金子 紘也
@@ -9,15 +7,10 @@ authors:
   - 三浦 信一
   - 朴 泰祐
   - 佐藤 三久
-  - 「PCI Express を用いた通信リンク PEARL におけるネットワーク管理機構」
-  - 情報処理学会研究報告
-  - 2011-ARC-196(6)
-  - pp. 1-6
-  - 2011年7月
-bibtex: >-
+bibtex: |-
   @inproceedings{hpcs2011-65440,
-    title = {金子 紘也},
-    booktitle = {塙 敏博, 三浦 信一, 朴 泰祐, 佐藤 三久, 「PCI Express を用いた通信リンク PEARL におけるネットワーク管理機構」, 情報処理学会研究報告, 2011-ARC-196(6)},
+    title = {PCI Express を用いた通信リンク PEARL におけるネットワーク管理機構},
+    booktitle = {情報処理学会研究報告, 2011-ARC-196(6)},
     pages = {1-6},
     year = {2011},
   }

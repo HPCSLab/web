@@ -121,14 +121,14 @@ function parseReference(ref: string): Parsed {
     .replaceAll("”", '"')
     .replaceAll("“", '"')
     .replaceAll("：", ":");
-  const endOfAuthorsPos = anyIndexOf(normalized, [":", '"']);
+  const endOfAuthorsPos = anyIndexOf(normalized, [":", '"', "「"]);
   const authors = normalized
     .slice(0, endOfAuthorsPos)
     .split(",")
     .map((author) => author.trim())
     .filter((s) => s.length > 0);
   const titleAndRest = normalized.slice(endOfAuthorsPos + 1);
-  const titleEndPos = anyIndexOf(titleAndRest, [".", ","]);
+  const titleEndPos = anyIndexOf(titleAndRest, [".", ",", "」"]);
   const title = titleAndRest.slice(0, titleEndPos);
   const trimedTitle = title.endsWith('"')
     ? title.slice(0, title.length - 1).trim()
@@ -534,12 +534,12 @@ async function scrapePublications(): Promise<
 }
 
 for (const collection of await scrapePublications()) {
-  fs.mkdirSync(`publications/${collection.year}/`, {
+  fs.mkdirSync(`../publications/${collection.year}/`, {
     recursive: true,
   });
   for (const publication of collection.collection) {
     fs.writeFileSync(
-      `publications/${collection.year}/${publication.slug}.yml`,
+      `../publications/${collection.year}/${publication.slug}.yml`,
       YAML.stringify(publication),
     );
   }

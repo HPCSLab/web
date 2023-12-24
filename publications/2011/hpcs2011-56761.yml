@@ -1,4 +1,4 @@
-title: 組込み機器向けon-chip/off-chipコア間通信機構」
+title: "XMCAPI: 組込み機器向けon-chip/off-chipコア間通信機構"
 booktitle: 先進的計算基盤システムシンポジウム(SACSIS 2011)論文集
 year: 2011
 authors:
@@ -6,10 +6,9 @@ authors:
   - 塙 敏博
   - 朴 泰祐
   - 佐藤 三久
-  - 「XMCAPI
 bibtex: |-
   @inproceedings{hpcs2011-56761,
-    title = {組込み機器向けon-chip/off-chipコア間通信機構」},
+    title = {XMCAPI: 組込み機器向けon-chip/off-chipコア間通信機構},
     booktitle = {先進的計算基盤システムシンポジウム(SACSIS 2011)論文集},
     pages = {264-265},
     year = {2011},
