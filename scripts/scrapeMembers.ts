@@ -142,6 +142,6 @@ members.forEach(async (member) => {
       team: data.team,
       img: data.img,
       username: data.username,
-    })
+    }),
   );
 });

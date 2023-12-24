@@ -23,7 +23,7 @@ async function scrape() {
     "fuculty",
     [...index.querySelectorAll(".entry-content > ul > li")]
       .map((li) => li.textContent)
-      .filter(notNull)
+      .filter(notNull),
   );
   for (const item of items) {
     if (item.nodeName === "H1") {
@@ -52,7 +52,7 @@ async function scrape() {
   fs.mkdirSync("members/", { recursive: true });
   fs.writeFileSync(
     "members/alumni.yml",
-    YAML.stringify(Object.fromEntries(alumni))
+    YAML.stringify(Object.fromEntries(alumni)),
   );
 }
 

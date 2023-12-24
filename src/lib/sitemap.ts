@@ -25,6 +25,10 @@ export const sitemap: Page[] = [
     ]
   },
   {
+    title: "News",
+    url: "/news",
+  },
+  {
     title: "Publications",
     url: "/publications"
   },
