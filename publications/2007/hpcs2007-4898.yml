@@ -1,0 +1,21 @@
+title: 分散メモリ向けデータ並列言語OpenMPDの設計と実装
+booktitle: 情報処理学会研究報告, 2007ARC172 2007HPC109
+year: 2007
+authors:
+  - 李 珍泌
+  - 佐藤 三久
+  - 朴 泰祐
+bibtex: |-
+  @inproceedings{hpcs2007-4898,
+    title = {分散メモリ向けデータ並列言語OpenMPDの設計と実装},
+    booktitle = {情報処理学会研究報告, 2007ARC172 2007HPC109},
+    pages = {49-54},
+    year = {2007},
+  }
+slug: hpcs2007-4898
+reference:
+  李 珍泌, 佐藤 三久, 朴 泰祐：分散メモリ向けデータ並列言語OpenMPDの設計と実装, 情報処理学会研究報告, 2007ARC172
+  2007HPC109, pp. 49-54, (2007)
+class:
+  class: domestic
+  subclass: workshop

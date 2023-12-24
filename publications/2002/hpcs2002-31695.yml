@@ -1,0 +1,21 @@
+title: "OmniRPC: グリッド環境での並列プログラミングのためのGrid RPCシステム"
+booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC927
+year: 2002
+authors:
+  - 佐藤 三久
+  - 朴 泰祐
+  - 高橋 大介
+bibtex: |-
+  @inproceedings{hpcs2002-31695,
+    title = {OmniRPC: グリッド環境での並列プログラミングのためのGrid RPCシステム},
+    booktitle = {情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC927},
+    pages = {3742.},
+    year = {2002},
+  }
+slug: hpcs2002-31695
+reference:
+  "佐藤 三久, 朴 泰祐, 高橋 大介, “OmniRPC: グリッド環境での並列プログラミングのためのGrid RPCシステム”,
+  情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC927, 2002, pp.3742."
+class:
+  class: domestic
+  subclass: workshop

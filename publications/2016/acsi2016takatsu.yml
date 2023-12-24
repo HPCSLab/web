@@ -1,13 +1,12 @@
-title: "Design of object storage using OpenNVM for high performance distributed file system"
-ref: "Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Design of object storage using OpenNVM for high performance distributed file system”, 2nd Annual Meeting on Advanced Computing System and Infrastructure (ACSI2016), Jan. 2016."
-type: "domestic_symposium"
-slug: "acsi2016takatsu"
-by:
+title: Design of object storage using OpenNVM for high performance distributed
+  file system
+booktitle: 2nd Annual Meeting on Advanced Computing System and Infrastructure (ACSI2016)
+year: 2016
+authors:
   - Fuyumasa Takatsu
   - Kohei Hiraga
   - Osamu Tatebe
-
-bibtex: |
+bibtex: >-
   @inproceedings { ACSI2016:takatsu,
     author    = "{Fuyumasa Takatsu} and {Kohei Hiraga} and {Osamu Tatebe}",
     title     = "{Design of object storage using OpenNVM for high performance distributed file system}",
@@ -15,3 +14,11 @@ bibtex: |
     month	    = "1",
     year 	    = "2016"
   }
+slug: acsi2016takatsu
+reference: "Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Design of object
+  storage using OpenNVM for high performance distributed file system”, 2nd
+  Annual Meeting on Advanced Computing System and Infrastructure (ACSI2016),
+  Jan. 2016."
+class:
+  class: domestic
+  subclass: conference

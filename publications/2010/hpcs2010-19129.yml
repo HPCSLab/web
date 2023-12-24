@@ -1,0 +1,31 @@
+title: Large-Scale Software Testing Environment Using Cloud Computing Technology
+  for Dependable Parallel and Distributed Systems
+booktitle: 2nd International Workshop on Software Testing in the Cloud
+  (STITC2010), co-located with the 3rd IEEE International Conference on Software
+  Testing, Verification, and Validation (ICST 2010)
+year: 2010
+authors:
+  - Toshihiro Hanawa
+  - Takayuki Banzai
+  - Hitoshi Koizumi
+  - Ryo Kanbayashi
+  - Takayuki Imada
+  - and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2010-19129,
+    title = {Large-Scale Software Testing Environment Using Cloud Computing Technology for Dependable Parallel and Distributed Systems},
+    booktitle = {2nd International Workshop on Software Testing in the Cloud (STITC2010), co-located with the 3rd IEEE International Conference on Software Testing, Verification, and Validation (ICST 2010)},
+    pages = {428-433},
+    year = {2010},
+  }
+slug: hpcs2010-19129
+reference: "Toshihiro Hanawa, Takayuki Banzai, Hitoshi Koizumi, Ryo Kanbayashi,
+  Takayuki Imada, and Mitsuhisa Sato: Large-Scale Software Testing Environment
+  Using Cloud Computing Technology for Dependable Parallel and Distributed
+  Systems, 2nd International Workshop on Software Testing in the Cloud
+  (STITC2010), co-located with the 3rd IEEE International Conference on Software
+  Testing, Verification, and Validation (ICST 2010), pp. 428-433, 2010 ,
+  doi:http://doi.ieeecomputersociety.org/10.1109/ICSTW.2010.59"
+class:
+  class: international
+  subclass: conference

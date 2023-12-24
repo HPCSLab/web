@@ -1,0 +1,18 @@
+title: Preliminary Evaluation of Cluster-wide RAID-4
+booktitle: IEEE Cluster2014 (Poster), Madrid, Sep. 2014
+year: 2014
+authors:
+  - Hiroki Ohtsuji
+  - Osamu Tatebe
+bibtex: |-
+  @inproceedings{hpcs2014-6135,
+    title = {Preliminary Evaluation of Cluster-wide RAID-4},
+    booktitle = {IEEE Cluster2014 (Poster), Madrid, Sep. 2014},
+    year = {2014},
+  }
+slug: hpcs2014-6135
+reference: Hiroki Ohtsuji, Osamu Tatebe, “Preliminary Evaluation of Cluster-wide
+  RAID-4”, IEEE Cluster2014 (Poster), Madrid, Sep. 2014
+class:
+  class: international
+  subclass: poster

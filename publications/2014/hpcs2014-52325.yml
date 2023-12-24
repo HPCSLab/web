@@ -1,0 +1,24 @@
+title: GPU向けQCDライブラリQUDAのTCAアーキテクチャによる実装
+booktitle: 情報処理学会研究報告, 2014-HPC-143 No.35
+year: 2014
+authors:
+  - 藤井 久史
+  - 塙 敏博
+  - 児玉 祐悦
+  - 朴 泰祐
+  - 佐藤 三久
+  - 藏増 嘉伸
+  - Mike Clark
+bibtex: |-
+  @inproceedings{hpcs2014-52325,
+    title = {GPU向けQCDライブラリQUDAのTCAアーキテクチャによる実装},
+    booktitle = {情報処理学会研究報告, 2014-HPC-143 No.35},
+    year = {2014},
+  }
+slug: hpcs2014-52325
+reference:
+  藤井 久史, 塙 敏博, 児玉 祐悦, 朴 泰祐, 佐藤 三久, 藏増 嘉伸, Mike Clark,
+  “GPU向けQCDライブラリQUDAのTCAアーキテクチャによる実装”, 情報処理学会研究報告, 2014-HPC-143 No.35, 2014.
+class:
+  class: domestic
+  subclass: workshop

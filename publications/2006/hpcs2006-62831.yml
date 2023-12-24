@@ -1,0 +1,21 @@
+title: UDP によるファイアウォール越えを用いたP2P オーバーレイネットワーク
+booktitle: 情報処理学会研究報告, 2006HPC107, pp . 121126
+year: 2006
+authors:
+  - 岡本高幸
+  - 朴泰祐
+  - 佐藤三久
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2006-62831,
+    title = {UDP によるファイアウォール越えを用いたP2P オーバーレイネットワーク},
+    booktitle = {情報処理学会研究報告, 2006HPC107, pp . 121126},
+    year = {2006},
+  }
+slug: hpcs2006-62831
+reference:
+  岡本高幸, 朴泰祐, 佐藤三久, 建部修見：UDP によるファイアウォール越えを用いたP2P
+  オーバーレイネットワーク，情報処理学会研究報告，2006HPC107，pp . 121126, (2006).
+class:
+  class: domestic
+  subclass: workshop

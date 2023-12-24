@@ -1,0 +1,21 @@
+title: Scalable Distributed Metadata Server Based on Nonblocking Transactions
+booktitle: Journal of Universal Computer Science
+year: 2020
+authors:
+  - Kohei Hiraga
+  - Osamu Tatebe
+  - Hideyuki Kawashima
+bibtex: >-
+  @article{ucs2020:hiraga,
+  	author    = {Kohei Hiraga, and Osamu Tatebe, and Hideyuki Kawashima},
+  	title     = {Scalable Distributed Metadata Server Based on Nonblocking Transactions},
+  	booktitle = {Journal of Universal Computer Science},
+  	year      = {2020},
+  	note      = {to appear},
+  }
+slug: ucs2020hiraga
+reference: " Kohei Hiraga,  Osamu Tatebe, Hideyuki Kawashima: “Scalable
+  Distributed Metadata Server Based on Nonblocking Transactions”, Journal of
+  Universal Computer Science, 2020. (to appear)"
+class:
+  class: journal

@@ -1,0 +1,24 @@
+title: Performance Evaluation of OmniRPC in a Grid Environment
+booktitle: 2004 Symposium on Applications and the InternetWorkshops (SAINT 2004
+  Workshops), High Performance Grid Computing and Networking.
+year: 2004
+authors:
+  - Yoshihiro Nakajima
+  - Mitsuhisa Sato
+  - Taisuke Boku
+  - Daisuke Takahashi
+  - Hitoshi Gotoh
+bibtex: >-
+  @inproceedings{hpcs2004-56596,
+    title = {Performance Evaluation of OmniRPC in a Grid Environment},
+    booktitle = {2004 Symposium on Applications and the InternetWorkshops (SAINT 2004 Workshops), High Performance Grid Computing and Networking.},
+    year = {2004},
+  }
+slug: hpcs2004-56596
+reference: Yoshihiro Nakajima, Mitsuhisa Sato, Taisuke Boku, Daisuke Takahashi,
+  Hitoshi Gotoh, “Performance Evaluation of OmniRPC in a Grid Environment”, 2004
+  Symposium on Applications and the InternetWorkshops (SAINT 2004 Workshops),
+  High Performance Grid Computing and Networking.
+class:
+  class: international
+  subclass: conference

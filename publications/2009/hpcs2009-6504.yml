@@ -1,0 +1,19 @@
+title: 大規模 SMP クラスタにおける OpenMP/MPI ハイブリッド NPB
+booktitle: RSDFT の評価 情報処理学会研究報告, 2009-ARC-182(28) 2009-HPC-119(28)
+year: 2009
+authors:
+  - 辻美和子、佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2009-6504,
+    title = {大規模 SMP クラスタにおける OpenMP/MPI ハイブリッド NPB},
+    booktitle = {RSDFT の評価 情報処理学会研究報告, 2009-ARC-182(28) 2009-HPC-119(28)},
+    pages = {163-168},
+    year = {2009},
+  }
+slug: hpcs2009-6504
+reference:
+  辻美和子、佐藤三久：大規模 SMP クラスタにおける OpenMP/MPI ハイブリッド NPB ， RSDFT の評価
+  情報処理学会研究報告，2009-ARC-182(28) 2009-HPC-119(28)，pp.163-168，2009.
+class:
+  class: domestic
+  subclass: workshop

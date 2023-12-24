@@ -1,0 +1,21 @@
+title: 分散ファイルシステムGfarmにおけるMTCアプリケーションの性能予測モデルの構築
+booktitle: 情報処理学会研究報告. Vol.2014-HPC-147
+year: 2014
+authors:
+  - キョウユ
+  - 建部修見
+  - 田中昌宏
+bibtex: |-
+  @inproceedings{hpcs2014-21464,
+    title = {分散ファイルシステムGfarmにおけるMTCアプリケーションの性能予測モデルの構築},
+    booktitle = {情報処理学会研究報告. Vol.2014-HPC-147},
+    number = {13},
+    year = {2014},
+  }
+slug: hpcs2014-21464
+reference:
+  "キョウユ, 建部修見, 田中昌宏: 分散ファイルシステムGfarmにおけるMTCアプリケーションの性能予測モデルの構築．
+  情報処理学会研究報告. Vol.2014-HPC-147, No.13, 2014"
+class:
+  class: domestic
+  subclass: workshop

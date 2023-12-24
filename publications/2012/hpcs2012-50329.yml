@@ -1,0 +1,28 @@
+title: "PEACH: a Multicore Communication SoC with PCI Express"
+booktitle: 17th International Conference on Architectural Support for
+  Programming Languages and Operating Systems (ASPLOS 2012), Mar. 2012.
+year: 2012
+authors:
+  - Sugako Otani
+  - Hiroyuki Kondo
+  - Kazutami Arimoto
+  - Toshihiro Hanawa
+  - Shin’ichi Miura
+  - Hiroya Kaneko
+  - Taisuke Boku
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2012-50329,
+    title = {PEACH: a Multicore Communication SoC with PCI Express},
+    booktitle = {17th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2012), Mar. 2012.},
+    year = {2012},
+  }
+slug: hpcs2012-50329
+reference: "Sugako Otani, Hiroyuki Kondo, Kazutami Arimoto, Toshihiro Hanawa,
+  Shin’ichi Miura, Hiroya Kaneko, Taisuke Boku, Mitsuhisa Sato, “PEACH: a
+  Multicore Communication SoC with PCI Express”, 17th International Conference
+  on Architectural Support for Programming Languages and Operating Systems
+  (ASPLOS 2012), Mar. 2012."
+class:
+  class: international
+  subclass: poster

@@ -1,0 +1,33 @@
+title: |-
+  Flexible Multi-link Ethernet Binding System for PC Clusters
+  with Asymmetric Topology
+booktitle: |-
+  The Fifteenth International Conference on
+  Parallel and Distributed Systems (ICPADS’09)
+year: 2009
+authors:
+  - Taiga Yonemoto
+  - Shin’ichi Miura
+  - Toshihiro Hanawa
+  - Taisuke Boku
+  - and Mitsuhisa Sato
+bibtex: |-
+  @inproceedings{hpcs2009-5536,
+    title = {Flexible Multi-link Ethernet Binding System for PC Clusters
+  with Asymmetric Topology},
+    booktitle = {The Fifteenth International Conference on
+  Parallel and Distributed Systems (ICPADS’09)},
+    pages = {49-56},
+    year = {2009},
+  }
+slug: hpcs2009-5536
+reference: >-
+  Taiga Yonemoto, Shin’ichi Miura, Toshihiro Hanawa, Taisuke Boku, and Mitsuhisa
+  Sato: Flexible Multi-link Ethernet Binding System for PC Clusters
+
+  with Asymmetric Topology, The Fifteenth International Conference on
+
+  Parallel and Distributed Systems (ICPADS’09), pp.49-56
+class:
+  class: international
+  subclass: conference

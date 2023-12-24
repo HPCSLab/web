@@ -1,0 +1,25 @@
+title: An Implementation of Parallel 3D FFT Using Short Vector SIMD Instructions
+  on Clusters of PCs
+booktitle: Proc. 7th International Workshop on Applied Parallel Computing (PARA
+  2004), Lecture Notes in Computer Science
+year: 2006
+authors:
+  - Daisuke Takahashi
+  - Taisuke Boku and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2006-57802,
+    title = {An Implementation of Parallel 3D FFT Using Short Vector SIMD Instructions on Clusters of PCs},
+    booktitle = {Proc. 7th International Workshop on Applied Parallel Computing (PARA 2004), Lecture Notes in Computer Science},
+    pages = {11591167},
+    number = {3732},
+    year = {2006},
+  }
+slug: hpcs2006-57802
+reference: "Daisuke Takahashi, Taisuke Boku and Mitsuhisa Sato: An
+  Implementation of Parallel 3D FFT Using Short Vector SIMD Instructions on
+  Clusters of PCs, Proc. 7th International Workshop on Applied Parallel
+  Computing (PARA 2004), Lecture Notes in Computer Science, No. 3732, pp.
+  11591167, SpringerVerlag, (2006)."
+class:
+  class: international
+  subclass: conference

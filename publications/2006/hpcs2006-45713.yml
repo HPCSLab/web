@@ -1,0 +1,21 @@
+title: 多様な計算環境で高性能を実現するFFTライブラリFFTSS
+booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2006論文集, p. 33
+year: 2006
+authors:
+  - 額田彰
+  - 高橋大介
+  - 須田礼仁
+  - 西田晃
+bibtex: |-
+  @inproceedings{hpcs2006-45713,
+    title = {多様な計算環境で高性能を実現するFFTライブラリFFTSS},
+    booktitle = {ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2006論文集, p. 33},
+    year = {2006},
+  }
+slug: hpcs2006-45713
+reference:
+  額田彰，高橋大介，須田礼仁，西田晃：多様な計算環境で高性能を実現するFFTライブラリFFTSS，2006年ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2006論文集,
+  p. 33, (2006).
+class:
+  class: domestic
+  subclass: poster

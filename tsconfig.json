@@ -22,5 +22,9 @@
     }
   },
   "files": ["./.eslintrc.cjs"],
-  "include": ["src", "./*.d.ts", "./*.config.ts"]
+  "include": ["src", "./*.d.ts", "./*.config.ts", "./scripts/*.ts"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
 }

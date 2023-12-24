@@ -1,0 +1,22 @@
+title: OmniRPC:グリッド環境での並列プログラミングのためのGrid RPCシステム
+booktitle: 情報処理学会論文誌コンピューティングシステム
+year: 2003
+authors:
+  - 佐藤三久
+  - 朴泰祐
+  - 高橋大介
+bibtex: |-
+  @article{hpcs2003-27906,
+    title = {OmniRPC:グリッド環境での並列プログラミングのためのGrid RPCシステム},
+    booktitle = {情報処理学会論文誌コンピューティングシステム},
+    pages = {3445},
+    vol = {44},
+    number = {SIG11 (ACS 3)},
+    year = {2003},
+  }
+slug: hpcs2003-27906
+reference:
+  佐藤三久，朴泰祐，高橋大介，”OmniRPC：グリッド環境での並列プログラミングのためのGrid RPCシステム”,
+  情報処理学会論文誌コンピューティングシステム, Vol.44, No. SIG11 (ACS 3), pp.3445, 2003.
+class:
+  class: journal

@@ -1,0 +1,24 @@
+title: Design of aa Software Distributed Shared Memory System using an MPI
+  communication layer
+booktitle: 2005 International Symposium on Parallel Architectures, Algorithms,
+  and Network (ISPAN 2005) (to appear).
+year: 2005
+authors:
+  - Yoshinori Ojima
+  - Mitsuhisa Sato
+  - Taisuke Boku
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2005-31046,
+    title = {Design of aa Software Distributed Shared Memory System using an MPI communication layer},
+    booktitle = {2005 International Symposium on Parallel Architectures, Algorithms, and Network (ISPAN 2005) (to appear).},
+    year = {2005},
+  }
+slug: hpcs2005-31046
+reference: Yoshinori Ojima, Mitsuhisa Sato, Taisuke Boku, Daisuke Takahashi,
+  “Design of aa Software Distributed Shared Memory System using an MPI
+  communication layer”, 2005 International Symposium on Parallel Architectures,
+  Algorithms, and Network (ISPAN 2005) (to appear).
+class:
+  class: international
+  subclass: conference

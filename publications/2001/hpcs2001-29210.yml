@@ -1,0 +1,17 @@
+title: A Blocking Algorithm for FFT on Cache-Based Processors
+booktitle: "HPCN Europe 2001: 551-554"
+year: 2001
+authors:
+  - Daisuke Takahashi
+bibtex: |-
+  @inproceedings{hpcs2001-29210,
+    title = {A Blocking Algorithm for FFT on Cache-Based Processors},
+    booktitle = {HPCN Europe 2001: 551-554},
+    year = {2001},
+  }
+slug: hpcs2001-29210
+reference: "Daisuke Takahashi: A Blocking Algorithm for FFT on Cache-Based
+  Processors. HPCN Europe 2001: 551-554"
+class:
+  class: international
+  subclass: conference

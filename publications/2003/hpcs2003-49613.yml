@@ -1,0 +1,19 @@
+title: '"Performance Evaluation of the Hitachi SR8000 Using SPEC OMP2001 Benchmarks'
+booktitle: "International Journal of Parallel Programming 31(3): 185196 (2003)"
+year: 2003
+authors:
+  - Daisuke Takahashi
+  - Mitsuhisa Sato
+  - Taisuke Boku
+bibtex: >-
+  @article{hpcs2003-49613,
+    title = {"Performance Evaluation of the Hitachi SR8000 Using SPEC OMP2001 Benchmarks},
+    booktitle = {International Journal of Parallel Programming 31(3): 185196 (2003)},
+    year = {2003},
+  }
+slug: hpcs2003-49613
+reference: "Daisuke Takahashi, Mitsuhisa Sato, Taisuke Boku: “Performance
+  Evaluation of the Hitachi SR8000 Using SPEC OMP2001 Benchmarks”. International
+  Journal of Parallel Programming 31(3): 185196 (2003)"
+class:
+  class: journal

@@ -1,0 +1,24 @@
+title: Reliable Software Distributed Shared Memory using Page Migration
+booktitle: |-
+  The Fifteenth International Conference on
+  Parallel and Distributed Systems (ICPADS’09)
+year: 2009
+authors:
+  - Jinpil Lee and Mitsuhisa Sato
+bibtex: |-
+  @inproceedings{hpcs2009-9231,
+    title = {Reliable Software Distributed Shared Memory using Page Migration},
+    booktitle = {The Fifteenth International Conference on
+  Parallel and Distributed Systems (ICPADS’09)},
+    pages = {456-463},
+    year = {2009},
+  }
+slug: hpcs2009-9231
+reference: >-
+  Jinpil Lee and Mitsuhisa Sato: Reliable Software Distributed Shared Memory
+  using Page Migration, The Fifteenth International Conference on
+
+  Parallel and Distributed Systems (ICPADS’09), pp.456-463
+class:
+  class: international
+  subclass: conference

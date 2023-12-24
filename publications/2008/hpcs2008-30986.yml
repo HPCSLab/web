@@ -1,0 +1,21 @@
+title: プリフェッチ機構を持つマルチコア向けソフトウェア分散共有メモリシステム情報処理学会研究報告
+booktitle: 2008HPC116
+year: 2008
+authors:
+  - 李 珍泌
+  - 佐藤 三久
+  - 朴 泰祐
+bibtex: |-
+  @inproceedings{hpcs2008-30986,
+    title = {プリフェッチ機構を持つマルチコア向けソフトウェア分散共有メモリシステム情報処理学会研究報告},
+    booktitle = {2008HPC116},
+    pages = {235-240},
+    year = {2008},
+  }
+slug: hpcs2008-30986
+reference: 李 珍泌，佐藤 三久，朴
+  泰祐：プリフェッチ機構を持つマルチコア向けソフトウェア分散共有メモリシステム情報処理学会研究報告，2008HPC116，pp. 235-240,
+  (2008)
+class:
+  class: domestic
+  subclass: workshop

@@ -1,0 +1,23 @@
+title: Workflow Scheduling to Minimize Data Movement using Multi-constraint
+  Graph Partitioning
+booktitle: The 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid
+  Computing (CCGrid2012)
+year: 2012
+authors:
+  - Masahiro Tanaka
+  - Osamu Tatebe
+bibtex: >-
+  @inproceedings{hpcs2012-16071,
+    title = {Workflow Scheduling to Minimize Data Movement using Multi-constraint Graph Partitioning},
+    booktitle = {The 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid2012)},
+    pages = {65-72},
+    year = {2012},
+  }
+slug: hpcs2012-16071
+reference: Masahiro Tanaka, Osamu Tatebe, “Workflow Scheduling to Minimize Data
+  Movement using Multi-constraint Graph Partitioning”, The 12th IEEE/ACM
+  International Symposium on Cluster, Cloud and Grid Computing (CCGrid2012),
+  pp.65-72, Ottawa, Canada, May 13-16, 2012.
+class:
+  class: international
+  subclass: conference

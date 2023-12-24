@@ -1,0 +1,19 @@
+title: '"Performance Evaluation of the Hitachi SR8000 Using OpenMP Benchmarks'
+booktitle: "ISHPC 2002: 390400"
+year: 2002
+authors:
+  - Daisuke Takahashi
+  - Mitsuhisa Sato
+  - Taisuke Boku
+bibtex: >-
+  @inproceedings{hpcs2002-10948,
+    title = {"Performance Evaluation of the Hitachi SR8000 Using OpenMP Benchmarks},
+    booktitle = {ISHPC 2002: 390400},
+    year = {2002},
+  }
+slug: hpcs2002-10948
+reference: "Daisuke Takahashi, Mitsuhisa Sato, Taisuke Boku: “Performance
+  Evaluation of the Hitachi SR8000 Using OpenMP Benchmarks”. ISHPC 2002: 390400"
+class:
+  class: international
+  subclass: conference

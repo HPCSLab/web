@@ -1,0 +1,25 @@
+title: 建部 修見
+booktitle: 曽田 哲之, 「広域分散ファイルシステムGfarm v2の実装と評価」, 情報処理学会研究報告, 2007HPC113
+year: 2007
+authors:
+  - 建部 修見
+  - 曽田 哲之
+  - 「広域分散ファイルシステムGfarm v2の実装と評価」
+  - 情報処理学会研究報告
+  - 2007HPC113
+  - pp.7-12
+  - (2007
+bibtex: |-
+  @inproceedings{hpcs2007-37962,
+    title = {建部 修見},
+    booktitle = {曽田 哲之, 「広域分散ファイルシステムGfarm v2の実装と評価」, 情報処理学会研究報告, 2007HPC113},
+    pages = {7-12},
+    year = {2007},
+  }
+slug: hpcs2007-37962
+reference:
+  建部 修見，曽田 哲之， 「広域分散ファイルシステムGfarm v2の実装と評価」， 情報処理学会研究報告，2007HPC113，
+  pp.7-12，(2007)
+class:
+  class: domestic
+  subclass: workshop

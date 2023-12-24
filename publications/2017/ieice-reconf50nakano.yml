@@ -1,0 +1,25 @@
+title: テンプレートマッチングベースのゲーム戦略とテンプレートサイズの違いによる戦略の変化の分析
+booktitle: 電子情報通信学会第50回リコンフィギャラブルシステム研究会 (RECONF50)
+year: 2017
+authors:
+  - 中野 正隆
+  - 山口 佳樹
+bibtex: |-
+  @techreport { IEICE-RECONF50:nakano,
+    author    = "{中野 正隆} and {山口 佳樹}",
+    title     = "{テンプレートマッチングベースのゲーム戦略とテンプレートサイズの違いによる戦略の変化の分析}",
+    booktitle = "電子情報通信学会第50回リコンフィギャラブルシステム研究会 (RECONF50)",
+    volume    = "117",
+    number    = "221",
+    pages     = "1--6",
+    month     = "9",
+    year      = "2017"
+  }
+slug: ieice-reconf50nakano
+reference:
+  "中野 正隆, 山口 佳樹: “テンプレートマッチングベースのゲーム戦略とテンプレートサイズの違いによる戦略の変化の分析”,
+  電子情報通信学会第50回リコンフィギャラブルシステム研究会 (RECONF50), Vol. 117, No. 221, pp. 1-6, Sep.
+  2017."
+class:
+  class: domestic
+  subclass: misc

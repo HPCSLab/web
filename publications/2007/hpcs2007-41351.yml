@@ -1,0 +1,20 @@
+title: Windows PCをグリッド環境で利用するための軽量Linuxバイナリ実行システム
+booktitle: 第19回 コンピュータシステム・シンポジウム (ComSys 2007)論文集, pp.
+year: 2007
+authors:
+  - 上村 佳史
+  - 中島 佳宏
+  - 佐藤 三久
+bibtex: |-
+  @inproceedings{hpcs2007-41351,
+    title = {Windows PCをグリッド環境で利用するための軽量Linuxバイナリ実行システム},
+    booktitle = {第19回 コンピュータシステム・シンポジウム (ComSys 2007)論文集, pp.},
+    year = {2007},
+  }
+slug: hpcs2007-41351
+reference:
+  上村 佳史, 中島 佳宏, 佐藤 三久：Windows PCをグリッド環境で利用するための軽量Linuxバイナリ実行システム, 第19回
+  コンピュータシステム・シンポジウム (ComSys 2007)論文集, pp. , (2007)
+class:
+  class: domestic
+  subclass: conference

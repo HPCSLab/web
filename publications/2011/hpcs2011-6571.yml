@@ -1,0 +1,25 @@
+title: PGAS言語XcalableMPとUnified Parallel Cの性能比較
+booktitle: 並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011）, 研究報告 ハイパフォーマンスコンピューティング（HPC）
+year: 2011
+authors:
+  - 中尾昌広
+  - 李珍泌
+  - 朴泰祐
+  - 佐藤三久.
+bibtex: >-
+  @inproceedings{hpcs2011-6571,
+    title = {PGAS言語XcalableMPとUnified Parallel Cの性能比較},
+    booktitle = {並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011）, 研究報告 ハイパフォーマンスコンピューティング（HPC）},
+    pages = {1-8},
+    vol = {2011-HPC-130 No.53},
+    year = {2011},
+  }
+slug: hpcs2011-6571
+reference:
+  中尾昌広，李珍泌，朴泰祐，佐藤三久．“PGAS言語XcalableMPとUnified Parallel
+  Cの性能比較”，2011年並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011），研究報告
+  ハイパフォーマンスコンピューティング（HPC），Vol.2011-HPC-130 No.53,
+  pp.1-8，2011年7月，かごしま県民交流センター（鹿児島）
+class:
+  class: domestic
+  subclass: workshop

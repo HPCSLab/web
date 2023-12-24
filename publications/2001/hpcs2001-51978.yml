@@ -1,0 +1,24 @@
+title: Implementation and performance evaluation of SPAM particle code with
+  OpenMP-MPI hybrid programming
+booktitle: Proceedings of European Workshop on OpenMP (EWOMP) 2001, Barcelona,
+  Sep. 2001 (to be published).
+year: 2001
+authors:
+  - Taisuke Boku
+  - Shigehiro Yoshikawa
+  - Mitsuhisa Sato
+  - C. G. Hoover and W. G. Hoover
+bibtex: >-
+  @inproceedings{hpcs2001-51978,
+    title = {Implementation and performance evaluation of SPAM particle code with OpenMP-MPI hybrid programming},
+    booktitle = {Proceedings of European Workshop on OpenMP (EWOMP) 2001, Barcelona, Sep. 2001 (to be published).},
+    year = {2001},
+  }
+slug: hpcs2001-51978
+reference: Taisuke Boku, Shigehiro Yoshikawa, Mitsuhisa Sato, C. G. Hoover and
+  W. G. Hoover, “Implementation and performance evaluation of SPAM particle code
+  with OpenMP-MPI hybrid programming”, Proceedings of European Workshop on
+  OpenMP (EWOMP) 2001, Barcelona, Sep. 2001 (to be published).
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,22 @@
+title: Power and QoS Performance Characteristics of Virtualized Servers
+booktitle: in Proceedings of Energy Efficient Grids, Clouds and Clusters
+  Workshop(E2GC2) in the 10th IEEE GRID 2009
+year: 2009
+authors:
+  - Takayuki Imada
+  - Mitsuhisa Sato and Hideaki Kimura
+bibtex: >-
+  @inproceedings{hpcs2009-46936,
+    title = {Power and QoS Performance Characteristics of Virtualized Servers},
+    booktitle = {in Proceedings of Energy Efficient Grids, Clouds and Clusters Workshop(E2GC2) in the 10th IEEE GRID 2009},
+    pages = {232-240},
+    year = {2009},
+  }
+slug: hpcs2009-46936
+reference: "Takayuki Imada, Mitsuhisa Sato and Hideaki Kimura: Power and QoS
+  Performance Characteristics of Virtualized Servers, in Proceedings of Energy
+  Efficient Grids, Clouds and Clusters Workshop(E2GC2) in the 10th IEEE GRID
+  2009, pp.232-240"
+class:
+  class: international
+  subclass: conference

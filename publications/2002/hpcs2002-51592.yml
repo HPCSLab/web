@@ -1,0 +1,19 @@
+title: '"A Blocking Algorithm for Parallel 1D FFT on Clusters of PCs'
+booktitle: "EuroPar 2002: 691700"
+year: 2002
+authors:
+  - Daisuke Takahashi
+  - Taisuke Boku
+  - Mitsuhisa Sato
+bibtex: |-
+  @inproceedings{hpcs2002-51592,
+    title = {"A Blocking Algorithm for Parallel 1D FFT on Clusters of PCs},
+    booktitle = {EuroPar 2002: 691700},
+    year = {2002},
+  }
+slug: hpcs2002-51592
+reference: "Daisuke Takahashi, Taisuke Boku, Mitsuhisa Sato: “A Blocking
+  Algorithm for Parallel 1D FFT on Clusters of PCs”. EuroPar 2002: 691700"
+class:
+  class: international
+  subclass: conference

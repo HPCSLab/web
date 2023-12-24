@@ -1,0 +1,20 @@
+title: 並列ファイル転送のためのスケジューリングアルゴリズムの検討
+booktitle: 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集
+year: 2009
+authors:
+  - 鈴木克典
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2009-50503,
+    title = {並列ファイル転送のためのスケジューリングアルゴリズムの検討},
+    booktitle = {先進的計算基盤システムシンポジウム(SACSIS 2009)論文集},
+    pages = {169-170},
+    year = {2009},
+  }
+slug: hpcs2009-50503
+reference:
+  鈴木克典， 建部修見：並列ファイル転送のためのスケジューリングアルゴリズムの検討，先進的計算基盤システムシンポジウム(SACSIS
+  2009)論文集，pp.169-170, 2009
+class:
+  class: domestic
+  subclass: poster

@@ -1,0 +1,21 @@
+title: MPI-IO/Gfarmにおけるデータ配置を考慮したプロセススケジューリングの検討
+booktitle: 情報処理学会研究報告
+year: 2011
+authors:
+  - 木村 浩希
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2011-9408,
+    title = {MPI-IO/Gfarmにおけるデータ配置を考慮したプロセススケジューリングの検討},
+    booktitle = {情報処理学会研究報告},
+    vol = {2011-HPC-130},
+    number = {33 (SWoPP鹿児島2011)},
+    year = {2011},
+  }
+slug: hpcs2011-9408
+reference:
+  "木村 浩希, 建部修見: MPI-IO/Gfarmにおけるデータ配置を考慮したプロセススケジューリングの検討, 情報処理学会研究報告,
+  Vol.2011-HPC-130, No.33 (SWoPP鹿児島2011), 2011年7月."
+class:
+  class: domestic
+  subclass: workshop

@@ -1,0 +1,24 @@
+title: SPAM 粒子シミュレーションコードのハイブリッド並列化
+booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会 (SWoPP’2001), 2001-HPC-87-8
+year: 2001
+authors:
+  - 吉川 茂洋
+  - 朴 泰祐
+  - William G. Hoover
+  - Carol G. Hoover
+  - 佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2001-58989,
+    title = {SPAM 粒子シミュレーションコードのハイブリッド並列化},
+    booktitle = {情報処理学会ハイパフォーマンスコンピューティング研究会 (SWoPP’2001), 2001-HPC-87-8},
+    pages = {43-48.},
+    year = {2001},
+  }
+slug: hpcs2001-58989
+reference:
+  吉川 茂洋, 朴 泰祐, William G. Hoover, Carol G. Hoover, 佐藤三久, “SPAM
+  粒子シミュレーションコードのハイブリッド並列化”, 情報処理学会ハイパフォーマンスコンピューティング研究会 (SWoPP’2001),
+  2001-HPC-87-8, 2001, pp.43-48.
+class:
+  class: domestic
+  subclass: workshop

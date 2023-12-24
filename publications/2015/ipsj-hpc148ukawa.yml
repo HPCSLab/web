@@ -1,16 +1,14 @@
-title: "Extreme SIMD アーキテクチャのプログラミングモデル拡張 C による性能評価"
-ref: "宇川 斉志, 佐藤 三久, 朴 泰祐, 児玉 祐悦, 山口 佳樹, 山本 淳二: “Extreme SIMD アーキテクチャのプログラミングモデル拡張 C による性能評価”, 情報処理学会第148回HPC研究会報告 (HPC148), Vol. 2015-HPC-148, No. 24, Mar. 2015."
-type: "techreport"
-slug: "ipsj-hpc148ukawa"
-by:
+title: Extreme SIMD アーキテクチャのプログラミングモデル拡張 C による性能評価
+booktitle: 情報処理学会第148回HPC研究会報告 (HPC148)
+year: 2015
+authors:
   - 宇川 斉志
   - 佐藤 三久
   - 朴 泰祐
   - 児玉 祐悦
   - 山口 佳樹
   - 山本 淳二
-
-bibtex: |
+bibtex: >-
   @techreport { IPSJ-HPC148:ukawa,
     author    = "{宇川 斉志} and {佐藤 三久} and {朴 泰祐} and {児玉 祐悦} and {山口 佳樹} and {山本 淳二}",
     title     = "{Extreme SIMD アーキテクチャのプログラミングモデル拡張 C による性能評価}",
@@ -20,3 +18,11 @@ bibtex: |
     month     = "3",
     year      = "2015"
   }
+slug: ipsj-hpc148ukawa
+reference:
+  "宇川 斉志, 佐藤 三久, 朴 泰祐, 児玉 祐悦, 山口 佳樹, 山本 淳二: “Extreme SIMD
+  アーキテクチャのプログラミングモデル拡張 C による性能評価”, 情報処理学会第148回HPC研究会報告 (HPC148), Vol.
+  2015-HPC-148, No. 24, Mar. 2015."
+class:
+  class: domestic
+  subclass: misc

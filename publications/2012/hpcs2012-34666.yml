@@ -1,0 +1,22 @@
+title: Implementation and Evaluation of Triple Precision BLAS Subroutines on GPUs
+booktitle: Parallel and Distributed Processing Symposium Workshops PhD Forum
+  (IPDPSW), 2012 IEEE 26th International
+year: 2012
+authors:
+  - Daichi Mukunoki
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2012-34666,
+    title = {Implementation and Evaluation of Triple Precision BLAS Subroutines on GPUs},
+    booktitle = {Parallel and Distributed Processing Symposium Workshops PhD Forum (IPDPSW), 2012 IEEE 26th International},
+    pages = {1378 –1386},
+    year = {2012},
+  }
+slug: hpcs2012-34666
+reference: Daichi Mukunoki, Daisuke Takahashi, “Implementation and Evaluation of
+  Triple Precision BLAS Subroutines on GPUs”, Parallel and Distributed
+  Processing Symposium Workshops PhD Forum (IPDPSW), 2012 IEEE 26th
+  International, pp. 1378 –1386, 2012.
+class:
+  class: international
+  subclass: conference

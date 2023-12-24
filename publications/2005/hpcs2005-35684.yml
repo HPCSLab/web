@@ -1,0 +1,23 @@
+title: 複数グリッドミドルウェア上で動作するGrid RPCシステムOmniRPCの設計と実装
+booktitle: ハイパフォーマンスコンピューティング研究会, 2005HPC103
+year: 2005
+authors:
+  - 中島佳宏
+  - 佐藤三久
+  - 相田祥昭
+  - 朴 泰祐
+  - 高橋大介
+  - Franck Cappello
+bibtex: |-
+  @inproceedings{hpcs2005-35684,
+    title = {複数グリッドミドルウェア上で動作するGrid RPCシステムOmniRPCの設計と実装},
+    booktitle = {ハイパフォーマンスコンピューティング研究会, 2005HPC103},
+    year = {2005},
+  }
+slug: hpcs2005-35684
+reference:
+  中島佳宏，佐藤三久，相田祥昭，朴 泰祐，高橋大介，Franck Cappello，”複数グリッドミドルウェア上で動作するGrid
+  RPCシステムOmniRPCの設計と実装”，ハイパフォーマンスコンピューティング研究会，2005HPC103，2005.
+class:
+  class: domestic
+  subclass: workshop

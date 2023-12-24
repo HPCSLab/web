@@ -1,0 +1,25 @@
+title: "Heterogeneous Multi-Computer System: 連続体・多粒子系融合型超並列計算機システム"
+booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会, 2001-HPC-88-10
+year: 2001
+authors:
+  - 朴 泰祐
+  - 牧野 淳一郎
+  - 須佐 元
+  - 梅村 雅之
+  - 福重 俊幸
+  - 宇川 彰
+bibtex: |-
+  @inproceedings{hpcs2001-7233,
+    title = {Heterogeneous Multi-Computer System: 連続体・多粒子系融合型超並列計算機システム},
+    booktitle = {情報処理学会ハイパフォーマンスコンピューティング研究会, 2001-HPC-88-10},
+    pages = {55-60.},
+    year = {2001},
+  }
+slug: hpcs2001-7233
+reference:
+  "朴 泰祐, 牧野 淳一郎, 須佐 元, 梅村 雅之, 福重 俊幸, 宇川 彰, “Heterogeneous
+  Multi-Computer System: 連続体・多粒子系融合型超並列計算機システム”, 情報処理学会ハイパフォーマンスコンピューティング研究会,
+  2001-HPC-88-10, 2001, pp.55-60."
+class:
+  class: domestic
+  subclass: workshop

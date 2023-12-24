@@ -1,0 +1,17 @@
+title: '"A Blocking Algorithm for Parallel 1D FFT on SharedMemory Parallel Computers'
+booktitle: "PARA 2002: 380392"
+year: 2002
+authors:
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2002-34307,
+    title = {"A Blocking Algorithm for Parallel 1D FFT on SharedMemory Parallel Computers},
+    booktitle = {PARA 2002: 380392},
+    year = {2002},
+  }
+slug: hpcs2002-34307
+reference: "Daisuke Takahashi: “A Blocking Algorithm for Parallel 1D FFT on
+  SharedMemory Parallel Computers”. PARA 2002: 380392"
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,22 @@
+title: taggedVLANを用いたPCクラスタ向けマルチパスネットワークにおける動的ルーティング
+booktitle: 情報処理学会研究報告, 2007HPC111
+year: 2007
+authors:
+  - 三浦 信一
+  - 岡本 高幸
+  - 朴 泰祐
+  - 塙 敏博
+bibtex: |-
+  @inproceedings{hpcs2007-42445,
+    title = {taggedVLANを用いたPCクラスタ向けマルチパスネットワークにおける動的ルーティング},
+    booktitle = {情報処理学会研究報告, 2007HPC111},
+    pages = {219224},
+    year = {2007},
+  }
+slug: hpcs2007-42445
+reference: 三浦 信一，岡本 高幸，朴 泰祐，塙
+  敏博：taggedVLANを用いたPCクラスタ向けマルチパスネットワークにおける動的ルーティング，情報処理学会研究報告, 2007HPC111, pp.
+  219224, (2007)
+class:
+  class: domestic
+  subclass: workshop

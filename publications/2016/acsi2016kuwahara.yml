@@ -1,13 +1,11 @@
 title: "A proposal of GMPI: GPU self MPI for GPU clusters"
-ref: "Yuta Kuwahara, Toshihiro Hanawa, Taisuke Boku: “A proposal of GMPI: GPU self MPI for GPU clusters”, 2nd Annual Meeting on Advanced Computing System and Infrastructure (ACSI2016), Jan. 2016. (Outstanding Research Award)"
-type: "domestic_symposium"
-slug: "acsi2016kuwahara"
-by:
+booktitle: 2nd Annual Meeting on Advanced Computing System and Infrastructure (ACSI2016)
+year: 2016
+authors:
   - Yuta Kuwahara
   - Toshihiro Hanawa
   - Taisuke Boku
-
-bibtex: |
+bibtex: >-
   @inproceedings { ACSI2016:kuwahara,
     author    = "{Yuta Kuwahara} and {Toshihiro Hanawa} and {Taisuke Boku}",
     title     = "{A proposal of GMPI: GPU self MPI for GPU clusters}",
@@ -16,3 +14,10 @@ bibtex: |
     year      = "2016",
     comment   = "Outstanding Research Award"
   }
+slug: acsi2016kuwahara
+reference: "Yuta Kuwahara, Toshihiro Hanawa, Taisuke Boku: “A proposal of GMPI:
+  GPU self MPI for GPU clusters”, 2nd Annual Meeting on Advanced Computing
+  System and Infrastructure (ACSI2016), Jan. 2016. (Outstanding Research Award)"
+class:
+  class: domestic
+  subclass: conference
