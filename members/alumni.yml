@@ -1,0 +1,505 @@
+fuculty:
+  - Kisaburo Nakazawa
+  - Hiroshi Nakamura
+  - Toshihiro Hanawa
+  - Yuetsu Kodama
+  - Hideyuki Kawashima
+staff:
+  - year: 2012
+    month: 2
+    name: Shin’ichi Miura
+  - year: 2012
+    month: 8
+    name: Miwako Tsuji
+  - year: 2013
+    month: 11
+    name: Masahiro Nakao
+  - year: 2014
+    month: 2
+    name: Hideo Nuga
+  - year: 2014
+    month: 5
+    name: Daichi Mukunoki
+  - year: 2016
+    month: 2
+    name: Hiroaki Umeda
+  - year: 2016
+    month: 3
+    name: Kazuya Matsumoto
+  - year: 2018
+    month: 3
+    name: Mohamed Amin JABRI
+doctor:
+  - year: 1992
+    month: 3
+    name: Motohisa Ito
+  - year: 1997
+    month: 3
+    name: Takayuki Morimoto
+  - year: 1999
+    month: 3
+    name: Ken’ichi Itakura
+  - year: 2001
+    month: 3
+    name: Masazumi Matsubara
+  - year: 2007
+    month: 3
+    name: Yoshinori Ojima
+  - year: 2008
+    month: 3
+    name: Motonori Hirano
+  - year: 2008
+    month: 3
+    name: Yoshihiko Hotta
+  - year: 2008
+    month: 3
+    name: Shin’ichi Miura
+  - year: 2008
+    month: 3
+    name: Yoshihiro Nakajima
+  - year: 2008
+    month: 3
+    name: Chikafumi Takahashi
+  - year: 2009
+    month: 3
+    name: Hiroko Midorikawa
+  - year: 2010
+    month: 3
+    name: Hitoshi Murai
+  - year: 2011
+    month: 3
+    name: Hideaki Kimura
+  - year: 2011
+    month: 3
+    name: Takayuki Imada
+  - year: 2012
+    month: 3
+    name: Jinpil Lee
+  - year: 2012
+    month: 7
+    name: Adnan
+  - year: 2014
+    month: 3
+    name: Yoshikuni Sato
+  - year: 2016
+    month: 3
+    name: Tetsuya ODAJIMA
+  - year: 2016
+    month: 3
+    name: Hiroki OHTSUJI
+  - year: 2017
+    month: 3
+    name: Fuyumasa TAKATSU
+  - year: 2017
+    month: 3
+    name: Xieming LI
+  - year: 2018
+    month: 3
+    name: Akihiro TABUCHI
+  - year: 2018
+    month: 3
+    name: Keisuke TSUGANE
+  - year: 2018
+    month: 9
+    name: Yuta HIROKAWA
+  - year: 2019
+    month: 3
+    name: Kohei Hiraga
+  - year: 2019
+    month: 3
+    name: Firmansyah Iman
+master:
+  - year: 1993
+    month: 3
+    name: Hiromitsu Imori
+  - year: 1994
+    month: 3
+    name: Tetsuya Saito
+  - year: 1996
+    month: 3
+    name: Akira Hirono
+  - year: 1996
+    month: 3
+    name: Takeshi Mishima
+  - year: 1996
+    month: 3
+    name: Takeshi Sone
+  - year: 1996
+    month: 3
+    name: Kohta Yamazaki
+  - year: 1997
+    month: 3
+    name: Tomoki Harada
+  - year: 1997
+    month: 3
+    name: Masaki Hattori
+  - year: 1997
+    month: 3
+    name: Yoshito Abei
+  - year: 1998
+    month: 3
+    name: Masahiro Mishima
+  - year: 1998
+    month: 3
+    name: Yoshiki Murakami
+  - year: 1998
+    month: 3
+    name: Kazushi Saito
+  - year: 1998
+    month: 3
+    name: Takashi Toda
+  - year: 2000
+    month: 3
+    name: Hidetoshi Hayakawa
+  - year: 2000
+    month: 3
+    name: Masaaki Kondo
+  - year: 2000
+    month: 3
+    name: Hisataka Numa
+  - year: 2002
+    month: 3
+    name: Eiichiro Ooiwa
+  - year: 2002
+    month: 3
+    name: Shigehiro Yoshikawa
+  - year: 2005
+    month: 3
+    name: Yusuke Ohtaki
+  - year: 2005
+    month: 3
+    name: Kenji Onuma
+  - year: 2007
+    month: 3
+    name: Yoshiaki Aida
+  - year: 2008
+    month: 3
+    name: Yoshihumi Uemura
+  - year: 2008
+    month: 3
+    name: Takayuki Okamoto
+  - year: 2008
+    month: 3
+    name: Takashi Yamamoto
+  - year: 2009
+    month: 3
+    name: Takuya Yokozawa
+  - year: 2010
+    month: 3
+    name: Ryo Kanbayashi
+  - year: 2010
+    month: 3
+    name: Masahiro Nakamura
+  - year: 2010
+    month: 3
+    name: Yoshikuni Sato
+  - year: 2011
+    month: 3
+    name: Katsunori Suzuki
+  - year: 2011
+    month: 3
+    name: Takayuki Banzai
+  - year: 2011
+    month: 3
+    name: Hitoshi Koizumi
+  - year: 2011
+    month: 3
+    name: Ryohei Suzuki
+  - year: 2011
+    month: 3
+    name: Koji Miki
+  - year: 2011
+    month: 3
+    name: Taiga Yonemoto
+  - year: 2011
+    month: 3
+    name: Tomonori Harada
+  - year: 2011
+    month: 3
+    name: Yuji Kubota
+  - year: 2012
+    month: 3
+    name: Minh Tuan Tran
+  - year: 2012
+    month: 3
+    name: Hiroki Kimura
+  - year: 2012
+    month: 3
+    name: Kenji Kobayashi
+  - year: 2012
+    month: 3
+    name: Shunsuke Mikami
+  - year: 2012
+    month: 3
+    name: Yoshitaka Tanba
+  - year: 2012
+    month: 3
+    name: Yoshihiro Niboshi
+  - year: 2012
+    month: 3
+    name: Hana Saito
+  - year: 2012
+    month: 3
+    name: Joel Tucci
+  - year: 2012
+    month: 3
+    name: Takatoshi Nakayama
+  - year: 2013
+    month: 3
+    name: Hiroya KANEKO
+  - year: 2013
+    month: 3
+    name: Kenta OHNISHI
+  - year: 2013
+    month: 3
+    name: Takuma NOMIZU
+  - year: 2013
+    month: 3
+    name: Suguru OCHIAI
+  - year: 2013
+    month: 3
+    name: Takuya NAGASHIMA
+  - year: 2013
+    month: 3
+    name: Hiroki YOSHIZAWA
+  - year: 2013
+    month: 3
+    name: Yohei MIKI
+  - year: 2013
+    month: 3
+    name: Go OGIYA
+  - year: 2013
+    month: 3
+    name: Akira SUGIURA
+  - year: 2013
+    month: 3
+    name: Toru YABUKI
+  - year: 2014
+    month: 3
+    name: Koukun Kim
+  - year: 2014
+    month: 3
+    name: Marilia Melo
+  - year: 2014
+    month: 3
+    name: Sohta Ishikawa
+  - year: 2014
+    month: 3
+    name: Alamri Hussain
+  - year: 2015
+    month: 3
+    name: Yu Gong
+  - year: 2015
+    month: 3
+    name: Kou Houshou
+  - year: 2015
+    month: 3
+    name: Hiroshi Maruyama
+  - year: 2015
+    month: 3
+    name: Kenta FUJINAMI
+  - year: 2015
+    month: 3
+    name: Takaaki Hiragushi
+  - year: 2015
+    month: 3
+    name: Hisafumi Fujii
+  - year: 2016
+    month: 3
+    name: Furu E
+  - year: 2016
+    month: 3
+    name: Hiroshi MAEDA
+  - year: 2016
+    month: 3
+    name: Shusaku SAITOH
+  - year: 2016
+    month: 3
+    name: Keisuke SHINOZUKA
+  - year: 2016
+    month: 3
+    name: Hitoshi UKAWA
+  - year: 2016
+    month: 3
+    name: Chisato OHKAWA
+  - year: 2016
+    month: 3
+    name: FU Chikou
+  - year: 2016
+    month: 3
+    name: LI Seitetsu
+  - year: 2016
+    month: 3
+    name: Jiang Li
+  - year: 2017
+    month: 3
+    name: Daisuke SUGIYAMA
+  - year: 2017
+    month: 3
+    name: Yuta KUWAHARA
+  - year: 2017
+    month: 3
+    name: Kenta SATO
+  - year: 2017
+    month: 3
+    name: Kentaro HORIO
+  - year: 2017
+    month: 3
+    name: Komei KAMIYA
+  - year: 2017
+    month: 3
+    name: Ryuya MITSUHASHI
+  - year: 2017
+    month: 3
+    name: Hirotaka TAKAYAMA
+  - year: 2017
+    month: 3
+    name: Kaki EN
+  - year: 2017
+    month: 3
+    name: Haoyu MA
+  - year: 2018
+    month: 3
+    name: Ayumu GOMI
+  - year: 2018
+    month: 3
+    name: Harunobu DAIKOKU
+  - year: 2018
+    month: 3
+    name: Masataka NAKANO
+  - year: 2018
+    month: 3
+    name: Naofumi MURATA
+  - year: 2018
+    month: 3
+    name: Ryota TAKIZAWA
+  - year: 2018
+    month: 3
+    name: Yuma OOBATA
+  - year: 2019
+    month: 3
+    name: Kei Nishimura
+  - year: 2019
+    month: 3
+    name: Yuta Kinokuni
+  - year: 2019
+    month: 3
+    name: Tomoya Yokono
+  - year: 2019
+    month: 3
+    name: Minxuan Du
+  - year: 2019
+    month: 3
+    name: Junji Kobayashi
+  - year: 2019
+    month: 3
+    name: Atsuki Iwai
+  - year: 2019
+    month: 3
+    name: Kengo Kajiwara
+  - year: 2019
+    month: 3
+    name: Noriyuki Watanabe
+  - year: 2019
+    month: 3
+    name: Yasuhiro Nakamura
+undergraduate:
+  - year: 1991
+    month: 3
+    name: Hiroe Iwasaki
+  - year: 1993
+    month: 3
+    name: Noriko Ichibashi
+  - year: 1993
+    month: 3
+    name: Iori Nagamura
+  - year: 1994
+    month: 3
+    name: Taku Wakabayashi
+  - year: 1996
+    month: 3
+    name: Azuma Tsubota
+  - year: 1996
+    month: 3
+    name: Eiji Umeki
+  - year: 1996
+    month: 3
+    name: Daisuke Utsunomiya
+  - year: 1996
+    month: 3
+    name: Kohki Uwano
+  - year: 1996
+    month: 3
+    name: Mamoru Kugumiya
+  - year: 1997
+    month: 3
+    name: Koji Fukushi
+  - year: 1997
+    month: 3
+    name: Masaaki Tanabe
+  - year: 1997
+    month: 3
+    name: Urata Takuji
+  - year: 1999
+    month: 3
+    name: Susumu Fujieda
+  - year: 1990
+    month: 3
+    name: Norihiko Murata
+  - year: 2002
+    month: 3
+    name: Arata Miyagi
+  - year: 2008
+    month: 3
+    name: Masaru Okano
+  - year: 2009
+    month: 3
+    name: Kotaro Kiba
+  - year: 2009
+    month: 3
+    name: Masayuki Hirayama
+  - year: 2009
+    month: 3
+    name: Takashi Fukuda
+  - year: 2012
+    month: 3
+    name: Nguyen Trong Hung
+  - year: 2013
+    month: 3
+    name: Youichi ISHIKAWA
+  - year: 2013
+    month: 3
+    name: Kazunari TAKAHASHI
+  - year: 2013
+    month: 3
+    name: Kohei TAKAHASHI
+  - year: 2013
+    month: 3
+    name: Dongyang Sun
+  - year: 2014
+    month: 3
+    name: Noriaki Nakamura
+  - year: 2015
+    month: 3
+    name: Toshiyuki Shimanuki
+  - year: 2016
+    month: 3
+    name: Yuki KIRII
+  - year: 2017
+    month: 3
+    name: Naohiro YOSHIKAWA
+  - year: 2017
+    month: 3
+    name: Kazuaki MATSUMURA
+  - year: 2018
+    month: 3
+    name: Mitsuki Terui
+  - year: 2019
+    month: 3
+    name: Yuuji Moroto
+  - year: 2019
+    month: 3
+    name: Kento Oda
+  - year: 2019
+    month: 3
+    name: Kenta Yokota

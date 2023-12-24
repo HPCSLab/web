@@ -11,3 +11,10 @@ members: scrapeMembers.js
 
 scrapeMembers.js: scrapeMembers.ts
 	esbuild $< --outfile=$@
+
+.PHONY: alumni
+alumni: scrapeAlumni.js
+	node $<
+
+scrapeAlumni.js: scrapeAlumni.ts
+	esbuild $< --outfile=$@
