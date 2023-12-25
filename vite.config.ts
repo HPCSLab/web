@@ -24,5 +24,8 @@ export default defineConfig(() => {
         "Cache-Control": "public, max-age=600",
       },
     },
+    build: {
+      target: ['es2022', 'edge89', 'firefox89', 'chrome89', 'safari15']
+    }
   };
 });

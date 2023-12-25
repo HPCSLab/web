@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
-import { useLocation } from "@builder.io/qwik-city";
-import * as Publications from "~/lib/publications";
+import { type StaticGenerateHandler, useLocation } from "@builder.io/qwik-city";
+import * as Publications from "~/resource/publications";
 
 function presentationalHeading(cls: Publications.PublicationClass): {
   h2: string;
@@ -100,3 +100,11 @@ export default component$(() => {
     return <main></main>;
   }
 });
+
+export const onStaticGenerate: StaticGenerateHandler = async () => {
+  return {
+    params: [...Publications.publications.keys()].map((year) => {
+      return { year: year.toString() };
+    }),
+  };
+};

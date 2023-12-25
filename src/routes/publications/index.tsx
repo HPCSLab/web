@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { css } from "~/styled-system/css";
-import { publications } from "~/lib/publications";
+import { publications } from "~/resource/publications";
 
 export default component$(() => {
   return (

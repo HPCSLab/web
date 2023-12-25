@@ -1,4 +1,4 @@
-import type * as News from "~/lib/news";
+import type * as News from "~/resource/news";
 import { css } from "~/styled-system/css";
 
 export type NewsHeadlineProps = {

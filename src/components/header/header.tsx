@@ -3,7 +3,7 @@ import { css } from "~/styled-system/css";
 import { LuMenu, LuX } from "@qwikest/icons/lucide";
 import { flex } from "~/styled-system/patterns";
 import Nav from "~/components/header/nav";
-import { sitemap } from "~/lib/sitemap";
+import { sitemap } from "~/resource/sitemap";
 
 export default component$(() => {
   const closed = useSignal(true);

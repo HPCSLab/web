@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import NewsHeadline from "~/components/news/news-headline";
-import * as News from "~/lib/news";
+import * as News from "~/resource/news";
 
 export default component$(() => {
   const loc = useLocation();

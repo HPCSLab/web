@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import * as News from "~/lib/news";
+import * as News from "~/resource/news";
 import NewsHeadline from "./news-headline";
 interface LatestNewsProps {
   limit?: number;

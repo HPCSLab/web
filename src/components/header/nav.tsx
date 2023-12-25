@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import type { Page } from "~/lib/sitemap";
+import type { Page } from "~/resource/sitemap";
 import { css } from "~/styled-system/css";
 
 interface SitemapEntryProps {

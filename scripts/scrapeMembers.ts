@@ -123,7 +123,6 @@ members.forEach(async (member) => {
     const imgdata = await (await fetch(img)).arrayBuffer();
 
     data.img = `/icons/${username}.jpg`;
-    console.log(username);
 
     fs.writeFileSync(`icons/${username}.jpg`, new DataView(imgdata));
   }

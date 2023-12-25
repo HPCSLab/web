@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
-import type { StaticGenerateHandler } from "@builder.io/qwik-city";
 import NewsHeadline from "~/components/news/news-headline";
-import * as News from "~/lib/news";
+import * as News from "~/resource/news";
 
 export default component$(() => {
   return (
@@ -22,14 +21,3 @@ export default component$(() => {
     </main>
   );
 });
-
-export const onStaticGenerate: StaticGenerateHandler = async () => {
-  // example of loading params for this use case
-  // every implementation will be different
-
-  return {
-    params: [...News.news.keys()].map((year) => ({
-      id: `${year}`,
-    })),
-  };
-};

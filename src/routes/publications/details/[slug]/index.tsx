@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
-import { useLocation } from "@builder.io/qwik-city";
-import { publicationsBySlug } from "~/lib/publications";
+import { type StaticGenerateHandler, useLocation } from "@builder.io/qwik-city";
+import { publicationsBySlug } from "~/resource/publications";
 import { css } from "~/styled-system/css";
 
 export default component$(() => {
@@ -25,3 +25,11 @@ export default component$(() => {
     return <main></main>;
   }
 });
+
+export const onStaticGenerate: StaticGenerateHandler = async () => {
+  return {
+    params: [...publicationsBySlug.keys()].map((slug) => {
+      return { slug: slug.toString() };
+    }),
+  };
+};
