@@ -1,4 +1,3 @@
-import type { JSXChildren } from "@builder.io/qwik";
 import { z } from "zod";
 
 const studentVerifier = z.object({
