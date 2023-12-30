@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const studentVerifier = z.object({
+const studentValidator = z.object({
   occupation: z.literal("Student"),
   grade: z.union([
     z.literal("D3"),
@@ -12,7 +12,9 @@ const studentVerifier = z.object({
   ]),
 });
 
-const fucultyVerifier = z.object({
+export type Student = z.infer<typeof studentValidator>;
+
+const facultyValidator = z.object({
   occupation: z.literal("Faculty"),
   grade: z.union([
     z.literal("Professor"),
@@ -22,15 +24,21 @@ const fucultyVerifier = z.object({
   ]),
 });
 
-const researcherVerifier = z.object({
+export type Faculty = z.infer<typeof facultyValidator>;
+
+const researcherValidator = z.object({
   occupation: z.literal("Researcher"),
 });
 
-const researchStudentVerifier = z.object({
+export type Researcher = z.infer<typeof researcherValidator>;
+
+const researchStudentValidator = z.object({
   occupation: z.literal("Research Student"),
 });
 
-const teamVerifier = z.union([
+export type ResearchStudent = z.infer<typeof researchStudentValidator>;
+
+const teamValidator = z.union([
   z.literal("Algorithm"),
   z.literal("Performance"),
   z.literal("FPGA"),
@@ -39,28 +47,28 @@ const teamVerifier = z.union([
   z.literal("PA"),
 ]);
 
+export type TeamKind = z.infer<typeof teamValidator>;
+
 const memberVerifier = z.intersection(
   z.object({
     name: z.string().nullish(),
     eng_name: z.string(),
-    team: teamVerifier,
+    team: teamValidator,
     img: z.string(),
     username: z.string(),
   }),
   z.union([
-    studentVerifier,
-    fucultyVerifier,
-    researcherVerifier,
-    researchStudentVerifier,
-  ])
+    studentValidator,
+    facultyValidator,
+    researcherValidator,
+    researchStudentValidator,
+  ]),
 );
 
 export type Member = z.infer<typeof memberVerifier>;
 
-const membersSrc = import.meta.glob("../../members/profiles/*.yml", {
-  eager: true,
-}) as Record<string, { default: any }>;
-
-export const members = Object.values(membersSrc).map((member) =>
-  memberVerifier.parse(member.default)
-);
+export const members = Object.values(
+  import.meta.glob("../../members/profiles/*.yml", {
+    eager: true,
+  }) as Record<string, { default: any }>,
+).map((member) => memberVerifier.parse(member.default));

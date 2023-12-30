@@ -8,18 +8,19 @@ export type NewsHeadlineProps = {
 export default (props: NewsHeadlineProps) => {
   return (
     <ul>
-      {props.news.map((md) => (
-        <li key={md.markdown.frontmatter.date}>
+      {props.news.map((md) => {
+        const date = new Date(md.frontmatter.timestamp);
+        return <li key={md.slug}>
           <section class={css({ p: "2" })}>
-            <span>{md.markdown.frontmatter.date}</span>
+            <span>{`${date.getUTCFullYear()}-${date.getUTCMonth()}-${date.getDay()}`}</span>
             <h3>
               <a href={`/news/details/${md.slug}`}>
-                {md.markdown.frontmatter.title}
+                {md.frontmatter.title}
               </a>
             </h3>
           </section>
         </li>
-      ))}
+      })}
     </ul>
   );
 };

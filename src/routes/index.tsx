@@ -1,10 +1,16 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import LatestNews from "~/components/news/latest-news";
+import { routeLoader$, type DocumentHead } from "@builder.io/qwik-city";
+import NewsHeadline from "~/components/news/news-headline";
 import Section from "~/components/section-in-index/section";
+import { news } from "~/resource";
 import { css } from "~/styled-system/css";
 
+export const useLatestNews = routeLoader$(async () => {
+  return (await news({})).slice(0, 10);
+});
+
 export default component$(() => {
+  const latestNews = useLatestNews();
   return (
     <>
       <main>
@@ -43,7 +49,7 @@ export default component$(() => {
           </p>
         </Section>
         <Section title="What's news">
-          <LatestNews limit={10} />
+          <NewsHeadline news={latestNews.value} />
         </Section>
       </main>
     </>

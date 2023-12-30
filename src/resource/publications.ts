@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const publicationClassVerifier = z.union([
+const publicationClassValidator = z.union([
   z.object({
     class: z.literal("journal"),
   }),
@@ -20,7 +20,7 @@ const publicationClassVerifier = z.union([
   }),
 ]);
 
-export type PublicationClass = z.infer<typeof publicationClassVerifier>;
+export type PublicationClass = z.infer<typeof publicationClassValidator>;
 
 const publicationVerifier = z.object({
   title: z.string(),
@@ -30,55 +30,13 @@ const publicationVerifier = z.object({
   bibtex: z.string(),
   slug: z.string(),
   reference: z.string(),
-  class: publicationClassVerifier,
+  class: publicationClassValidator,
 });
 
 export type Publication = z.infer<typeof publicationVerifier>;
 
-const publicationsSrc = import.meta.glob("../../publications/**/*.yml", {
-  eager: true,
-}) as Record<string, { default: any }>;
-
-const publicationsWorkspace: Map<
-  number,
-  Map<string, Publication[]>
-> = new Map();
-export const publicationsBySlug: Map<string, Publication> = new Map();
-
-for (const rawPublication of Object.values(publicationsSrc)) {
-  const publication = publicationVerifier.parse(rawPublication.default);
-  if (publicationsWorkspace.get(publication.year) === undefined) {
-    const inAnYear = new Map();
-    inAnYear.set(JSON.stringify(publication.class), [publication]);
-    publicationsWorkspace.set(publication.year, inAnYear);
-  } else if (
-    publicationsWorkspace
-      .get(publication.year)
-      ?.get(JSON.stringify(publication.class)) === undefined
-  ) {
-    publicationsWorkspace
-      .get(publication.year)
-      ?.set(JSON.stringify(publication.class), [publication]);
-  } else {
-    publicationsWorkspace
-      .get(publication.year)
-      ?.get(JSON.stringify(publication.class))
-      ?.push(publication);
-  }
-  publicationsBySlug.set(publication.slug, publication);
-}
-
-export const publications: Map<
-  number,
-  Map<PublicationClass, Publication[]>
-> = new Map(
-  [...publicationsWorkspace.entries()].map(([year, classified]) => [
-    year,
-    new Map(
-      [...classified.entries()].map(([cls, publications]) => [
-        publicationClassVerifier.parse(JSON.parse(cls)),
-        publications,
-      ]),
-    ),
-  ]),
-);
+export const publications = Object.values(
+  import.meta.glob("../../publications/**/*.yml", {
+    eager: true,
+  }) as Record<string, { default: any }>,
+).map((publication) => publicationVerifier.parse(publication.default));
