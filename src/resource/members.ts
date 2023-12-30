@@ -1,4 +1,5 @@
 import { z } from "zod";
+import alumniSrc from "../../members/alumni.yml";
 
 const studentValidator = z.object({
   occupation: z.literal("Student"),
@@ -72,3 +73,23 @@ export const members = Object.values(
     eager: true,
   }) as Record<string, { default: any }>,
 ).map((member) => memberVerifier.parse(member.default));
+
+const alumniProfile = z.object({
+  name: z.string(),
+  year: z.number(),
+  month: z.number(),
+});
+
+export type AlumniProfile = z.infer<typeof alumniProfile>;
+
+const alumniValidator = z.object({
+  faculty: z.array(z.string()),
+  staff: z.array(alumniProfile),
+  doctor: z.array(alumniProfile),
+  master: z.array(alumniProfile),
+  undergraduate: z.array(alumniProfile),
+});
+
+export type Alumni = z.infer<typeof alumniValidator>;
+
+export const alumni = alumniValidator.parse(alumniSrc);
