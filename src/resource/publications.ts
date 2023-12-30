@@ -1,22 +1,35 @@
 import { z } from "zod";
 
+const internationalSubcategoryValidator = z.union([
+  z.literal("conference"),
+  z.literal("poster"),
+]);
+
+export type InternationalSubcategory = z.infer<
+  typeof internationalSubcategoryValidator
+>;
+
+const domesticSubcategoryValidator = z.union([
+  z.literal("conference"),
+  z.literal("poster"),
+  z.literal("workshop"),
+  z.literal("magazine"),
+  z.literal("misc"),
+]);
+
+export type DomesticSubcategory = z.infer<typeof domesticSubcategoryValidator>;
+
 const publicationClassValidator = z.union([
   z.object({
     class: z.literal("journal"),
   }),
   z.object({
     class: z.literal("international"),
-    subclass: z.union([z.literal("conference"), z.literal("poster")]),
+    subclass: internationalSubcategoryValidator,
   }),
   z.object({
     class: z.literal("domestic"),
-    subclass: z.union([
-      z.literal("conference"),
-      z.literal("poster"),
-      z.literal("workshop"),
-      z.literal("magazine"),
-      z.literal("misc"),
-    ]),
+    subclass: domesticSubcategoryValidator,
   }),
 ]);
 

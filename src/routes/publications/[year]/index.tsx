@@ -1,110 +1,123 @@
-import { component$ } from "@builder.io/qwik";
-import { type StaticGenerateHandler, useLocation } from "@builder.io/qwik-city";
-import * as Publications from "~/resource/publications";
+import { type JSXNode, component$ } from "@builder.io/qwik";
+import { type StaticGenerateHandler, useLocation, routeLoader$ } from "@builder.io/qwik-city";
+import { publications } from "~/resource";
+import type { DomesticSubcategory, InternationalSubcategory, Publication } from "~/resource/publications";
 
-function presentationalHeading(cls: Publications.PublicationClass): {
-  h2: string;
-  h3?: string;
+export const usePublicationsPerYear = routeLoader$(async (req) => {
+  return await publications({year: parseInt(req.params.year, 10)});
+});
+
+function classify(publications: Publication[]): {
+  journals: Publication[],
+  domestics: Map<DomesticSubcategory, Publication[]>
+  internationals: Map<InternationalSubcategory, Publication[]>
 } {
-  switch (cls.class) {
-    case "journal":
-      return { h2: "論文誌" };
-    case "domestic":
-      switch (cls.subclass) {
-        case "conference":
-          return { h2: "国内", h3: "国内会議" };
-        case "magazine":
-          return { h2: "国内", h3: "雑誌" };
-        case "misc":
-          return { h2: "国内", h3: "その他" };
-        case "poster":
-          return { h2: "国内", h3: "ポスター発表" };
-        case "workshop":
-          return { h2: "国内", h3: "研究会" };
+  const journals: Publication[] = [];
+  const internationals: Map<InternationalSubcategory, Publication[]> = new Map();
+  const domestics: Map<DomesticSubcategory, Publication[]> = new Map();
+  publications.forEach((pub) => {
+    switch (pub.class.class) {
+      case "journal":
+        journals.push(pub);
+        break;
+      case "domestic": {
+        const target = domestics.get(pub.class.subclass);
+        if (target) {
+          target.push(pub);
+        }
+        else {
+          domestics.set(pub.class.subclass, [pub]);
+        }
       }
       break;
-    case "international":
-      switch (cls.subclass) {
-        case "conference":
-          return { h2: "国外", h3: "国際会議" };
-        case "poster":
-          return { h2: "国外", h3: "ポスター発表" };
+      case "international":{
+        const target = internationals.get(pub.class.subclass);
+        if (target) {
+          target.push(pub);
+        }
+        else {
+          internationals.set(pub.class.subclass, [pub]);
+        }
       }
       break;
+    }
+  });
+  return {
+    journals,
+    internationals,
+    domestics
+  }
+}
+
+function PublicationsList(props: {publications: Publication[]}): JSXNode {
+  return <ul>
+    {
+      props.publications.map(journal => <li key={journal.slug}><a  href={`/publications/details/${journal.slug}`}>{journal.reference}</a></li>)
+    }
+  </ul>
+}
+
+function translateDomesticSubcategory(sub: DomesticSubcategory): string {
+  switch (sub){
+    case "conference":
+      return "国内会議";
+    case "magazine":
+      return "雑誌";
+    case "misc":
+      return "その他";
+    case "poster":
+      return "ポスター発表";
+    case "workshop":
+      return "研究会"
+  }
+}
+
+function translateInternationalSubcategory(sub: InternationalSubcategory): string {
+  switch (sub) {
+    case "conference":
+      return "国際会議"
+    case "poster":
+      return "ポスター発表";
   }
 }
 
 export default component$(() => {
   const loc = useLocation();
-  const publications = Publications.publications.get(
-    parseInt(loc.params.year, 10),
-  );
-  if (publications) {
-    const classifiedByH2Heading: Map<
-      "international" | "journal" | "domestic",
-      Map<Publications.PublicationClass, Publications.Publication[]>
-    > = new Map();
-    for (const [cls, pubs] of publications) {
-      if (classifiedByH2Heading.get(cls.class) === undefined) {
-        classifiedByH2Heading.set(cls.class, new Map([[cls, pubs]]));
-      } else {
-        classifiedByH2Heading.get(cls.class)?.set(cls, pubs);
+  const publicationsPerYear = usePublicationsPerYear();
+  const {journals, internationals, domestics} = classify(publicationsPerYear.value);
+
+  return <main>
+    <h1>Publicaions - {loc.params.year}</h1>
+    <section>
+      <h2>論文誌</h2>
+      <PublicationsList publications={journals}/>
+    </section>
+    <section>
+      <h2>国際発表</h2>
+      {
+        [...internationals.entries()].map(([h3, pubs]) => <section key={h3}>
+          <h3>{translateInternationalSubcategory(h3)}</h3>
+          <PublicationsList publications={pubs} />
+        </section>)
       }
-    }
-    return (
-      <main>
-        <h1>Publications - {loc.params.year}</h1>
-        {[...classifiedByH2Heading.values()].sort().map((pubs) => {
-          const sampleClass = [...pubs.keys()][0];
-          const h2heading = presentationalHeading(sampleClass).h2;
-          return (
-            <section key={sampleClass.class}>
-              <h2>{h2heading}</h2>
-              {[...pubs.entries()].map(([cls, list]) => {
-                const h3heading = presentationalHeading(cls).h3;
-                if (h3heading) {
-                  return (
-                    <section key={JSON.stringify(cls)}>
-                      <h3>{h3heading}</h3>
-                      <ul>
-                        {list.map((pub) => (
-                          <li key={pub.slug}>
-                            <a href={`/publications/details/${pub.slug}`}>
-                              {pub.reference}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </section>
-                  );
-                } else {
-                  return (
-                    <ul key={JSON.stringify(cls)}>
-                      {list.map((pub) => (
-                        <li key={pub.slug}>
-                          <a href={`/publications/details/${pub.slug}`}>
-                            {pub.reference}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  );
-                }
-              })}
-            </section>
-          );
-        })}
-      </main>
-    );
-  } else {
-    return <main></main>;
-  }
+    </section>
+    <section>
+      <h2>国内発表</h2>
+      {
+        [...domestics.entries()].map(([h3, pubs]) => <section key={h3}>
+          <h3>{translateDomesticSubcategory(h3)}</h3>
+          <PublicationsList publications={pubs} />
+        </section>)
+      }
+    </section>
+  </main>
 });
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
+  const years = new Set(await publications({}));
   return {
-    params: [...Publications.publications.keys()].map((year) => {
-      return { year: year.toString() };
-    }),
+    params: [...years.values()].map((year) => (
+     { year: year.toString() }
+    )),
   };
 };

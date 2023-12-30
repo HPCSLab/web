@@ -1,15 +1,20 @@
-import { component$ } from "@builder.io/qwik";
-import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
+import {  component$ } from "@builder.io/qwik";
+import { type StaticGenerateHandler, routeLoader$ } from "@builder.io/qwik-city";
 import NewsHeadline from "~/components/news/news-headline";
-import * as News from "~/resource/news";
+import {news} from "~/resource";
+
+export const useNewsPerYear = routeLoader$(async (req) => {
+  const year = parseInt(req.params.year, 10);
+  return {news: await news({year}), year};
+});
+
 
 export default component$(() => {
-  const loc = useLocation();
-  const news = News.news.get(parseInt(loc.params.year, 10));
+  const newsPerYear = useNewsPerYear();
   return (
     <main>
-      <h1>News - {loc.params.year}</h1>
-      {news ? <NewsHeadline news={news} /> : null}
+      <h1>News - {newsPerYear.value.year}</h1>
+      {newsPerYear.value.news.length > 0 ? <NewsHeadline news={newsPerYear.value.news} /> : null}
     </main>
   );
 });
@@ -19,8 +24,6 @@ export const onStaticGenerate: StaticGenerateHandler = async () => {
   // every implementation will be different
 
   return {
-    params: [...News.news.keys()].map((year) => ({
-      id: `${year}`,
-    })),
+    params: (await news({})).map(news => ({slug: news.slug})),
   };
 };

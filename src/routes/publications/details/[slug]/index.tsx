@@ -1,23 +1,26 @@
 import { component$ } from "@builder.io/qwik";
-import { type StaticGenerateHandler, useLocation } from "@builder.io/qwik-city";
-import { publicationsBySlug } from "~/resource/publications";
+import { type StaticGenerateHandler, routeLoader$ } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
+import {publications} from "~/resource";
+
+export const usePublicationDetail = routeLoader$(async (req) => {
+  return await publications({slug: req.params.slug});
+});
 
 export default component$(() => {
-  const loc = useLocation();
-  const pub = publicationsBySlug.get(loc.params.slug);
-  if (pub) {
+  const pub = usePublicationDetail();
+  if (pub.value.length > 0) {
     return (
       <main>
-        <h1>{pub.title}</h1>
-        <div>by {pub.authors.join(", ")}</div>
+        <h1>{pub.value[0].title}</h1>
+        <div>by {pub.value[0].authors.join(", ")}</div>
         <section>
           <h2>Reference</h2>
-          <div>{pub.reference}</div>
+          <div>{pub.value[0].reference}</div>
         </section>
         <section>
           <h2>bibtex</h2>
-          <pre class={css({ overflowX: "scroll" })}>{pub.bibtex}</pre>
+          <pre class={css({ overflowX: "scroll" })}>{pub.value[0].bibtex}</pre>
         </section>
       </main>
     );
@@ -27,9 +30,8 @@ export default component$(() => {
 });
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
+  const pubs = await publications({});
   return {
-    params: [...publicationsBySlug.keys()].map((slug) => {
-      return { slug: slug.toString() };
-    }),
+    params: pubs.map((pub) => ({ slug: pub.slug })),
   };
 };

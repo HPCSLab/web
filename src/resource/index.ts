@@ -7,15 +7,17 @@ import {
 
 type NewsQuery = {
   slug?: string;
+  year?: number;
 };
 
 export async function news(query: NewsQuery): Promise<News[]> {
-  if (query.slug) {
-    const found = newsSrc.find((news) => news.slug === query.slug);
-    return found ? [found] : [];
-  } else {
-    return newsSrc;
-  }
+  return newsSrc
+    .filter((news) => (query.slug ? news.slug === query.slug : true))
+    .filter((news) =>
+      query.year
+        ? query.year == new Date(news.frontmatter.timestamp).getUTCFullYear()
+        : true,
+    );
 }
 
 type MembersQuery = {
@@ -23,14 +25,9 @@ type MembersQuery = {
 };
 
 export async function members(query: MembersQuery): Promise<Member[]> {
-  if (query.username) {
-    const found = membersSrc.find(
-      (member) => member.username === query.username,
-    );
-    return found ? [found] : [];
-  } else {
-    return membersSrc;
-  }
+  return membersSrc.filter((member) =>
+    query.username ? member.username === query.username : true,
+  );
 }
 
 type PublicationQuery = {
