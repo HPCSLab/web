@@ -3,6 +3,7 @@ import {
   type StaticGenerateHandler,
   useLocation,
   routeLoader$,
+  Link,
 } from "@builder.io/qwik-city";
 import { publications } from "~/resource";
 import type {
@@ -63,9 +64,9 @@ function PublicationsList(props: { publications: Publication[] }): JSXNode {
     <ul>
       {props.publications.map((journal) => (
         <li key={journal.slug}>
-          <a href={`/publications/details/${journal.slug}`}>
+          <Link href={`/publications/details/${journal.slug}`}>
             {journal.reference}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

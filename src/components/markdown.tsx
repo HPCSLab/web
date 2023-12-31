@@ -2,6 +2,7 @@ import { type JSXChildren, component$ } from "@builder.io/qwik";
 import type { Root } from "remark-parse/lib";
 import type { RootContent } from "mdast";
 import SsrImg from "./ssr-img";
+import { Link } from "@builder.io/qwik-city";
 
 type MarkdownProps = {
   root: Root;
@@ -114,7 +115,7 @@ function md(ctx: RenderContext, root: RootContent): JSXChildren {
         <dl>
           <dt>{root.identifier}</dt>
           <dd>
-            <a href={root.url}>{root.url}</a>
+            <Link href={root.url}>{root.url}</Link>
           </dd>
         </dl>
       );

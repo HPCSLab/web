@@ -38,6 +38,6 @@ export default component$((props: Props) => {
       return fallback(props);
     }
   } else {
-    return fallback;
+    return fallback(props);
   }
 });

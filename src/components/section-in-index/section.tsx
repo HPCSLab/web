@@ -1,4 +1,5 @@
 import { Slot, component$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
 
 interface SectionProps {
@@ -10,7 +11,7 @@ export default component$((props: SectionProps) => {
   return (
     <section class={css({ p: 2 })}>
       <h2 class={css({ fontSize: "xl" })}>
-        {props.url ? <a href={props.url}>{props.title}</a> : props.title}
+        {props.url ? <Link href={props.url}>{props.title}</Link> : props.title}
       </h2>
       <Slot />
     </section>

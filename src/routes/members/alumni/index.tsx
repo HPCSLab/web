@@ -1,5 +1,5 @@
 import { type JSXNode, component$ } from "@builder.io/qwik";
-import { routeLoader$ } from "@builder.io/qwik-city";
+import { type DocumentHead, routeLoader$ } from "@builder.io/qwik-city";
 import { type AlumniProfile, alumni } from "~/resource/members";
 
 export const useAlumni = routeLoader$(async () => {
@@ -36,9 +36,11 @@ export default component$(() => {
       <h1>Alumnus</h1>
       <section>
         <h2>Faculty</h2>
-        {alumni.value.faculty.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
+        <ul>
+          {alumni.value.faculty.map((name) => (
+            <li key={name}>{name}</li>
+          ))}
+        </ul>
       </section>
       <section>
         <h2>Doctor</h2>
@@ -55,3 +57,13 @@ export default component$(() => {
     </main>
   );
 });
+
+export const head: DocumentHead = {
+  title: "HPCS Lab.",
+  meta: [
+    {
+      name: "description",
+      content: "HPCS Laboratory, Tsukuba University, Alumnus",
+    },
+  ],
+};

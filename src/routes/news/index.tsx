@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { routeLoader$ } from "@builder.io/qwik-city";
+import { Link, routeLoader$ } from "@builder.io/qwik-city";
 import NewsHeadline from "~/components/news/news-headline";
 import { news } from "~/resource";
 
@@ -17,9 +17,9 @@ export default component$(() => {
           <li key={entry.slug}>
             <section>
               <h2>
-                <a href={`/news/details/${entry.slug}`}>
+                <Link href={`/news/details/${entry.slug}`}>
                   {entry.frontmatter.title}
-                </a>
+                </Link>
               </h2>
               <NewsHeadline news={newsHeadlines.value} />
             </section>

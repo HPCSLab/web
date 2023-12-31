@@ -1,3 +1,4 @@
+import { Link } from "@builder.io/qwik-city";
 import type * as News from "~/resource/news";
 import { css } from "~/styled-system/css";
 
@@ -15,7 +16,9 @@ export default (props: NewsHeadlineProps) => {
             <section class={css({ p: "2" })}>
               <span>{`${date.getUTCFullYear()}-${date.getUTCMonth()}-${date.getDay()}`}</span>
               <h3>
-                <a href={`/news/details/${md.slug}`}>{md.frontmatter.title}</a>
+                <Link href={`/news/details/${md.slug}`}>
+                  {md.frontmatter.title}
+                </Link>
               </h3>
             </section>
           </li>

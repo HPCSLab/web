@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
 import Researcher from "~/components/research/researcher";
 import Team from "~/components/research/team";
 import { css } from "~/styled-system/css";
@@ -54,12 +55,12 @@ export default component$(() => {
             より大規模なデータ解析のためには，データ規模，コンピュータの計算速度に応じたスケーラブルなI/Oの仕組みが必要になります．
             その仕組みに基づく分散ファイルシステム，並列I/O，ワークフロー，MapReduceなどスケールアウトする並列分散システムソフトウェアの研究を行っています．
             そのためのプラットフォームとしてオープンソースで
-            <a
+            <Link
               class={css({ textDecoration: "underline", color: "blue.700" })}
               href="http://oss-tsukuba.org/software/gfarm"
             >
               Gfarmファイルシステム
-            </a>
+            </Link>
             を開発しています．
           </p>
           <iframe
@@ -82,12 +83,12 @@ export default component$(() => {
           ></iframe>
           <p>
             詳細は
-            <a
+            <Link
               class={css({ textDecoration: "underline", color: "blue.700" })}
               href="http://www.ddn.com/customers/joint-center-for-advanced-high-performance-computing-jcahpc/"
             >
               こちら
-            </a>
+            </Link>
             を参照してください．
           </p>
         </Researcher>
@@ -168,12 +169,12 @@ export default component$(() => {
           <p>
             筑波大学計算科学研究センターでは，東京大学と共に，2016年に大規模なメニーコアプロセッサを用いたスーパコンピュータを構築する予定です
             (
-            <a
+            <Link
               class={css({ textDecoration: "underline", color: "blue.700" })}
               href="https://www.jcahpc.jp"
             >
               JCAHPC
-            </a>
+            </Link>
             )．このシステムで活用できるプログラミングシステムや，理化学研究所計算科学研究機構のチームとともに並列プログラミング言語XcalableMPという言語を開発しています．
           </p>
         </Researcher>

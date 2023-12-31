@@ -46,11 +46,18 @@ export default component$(() => {
     >
       <div class={flex({ align: "center", justify: "space-between", p: "2" })}>
         <span class={css({ fontSize: "xl", fontWeight: 300 })}>HPCS Lab.</span>
-        <button class={css({ fontSize: "xl" })} onClick$={() => onClick()}>
+        <button
+          class={css({ fontSize: "xl" })}
+          onClick$={() => onClick()}
+          role="button"
+          aria-pressed={!closed.value}
+          value={closed.value ? "open menu" : "close menu"}
+          aria-label="menu toggle button"
+        >
           {closed.value ? <LuMenu /> : <LuX />}
         </button>
       </div>
-      {closed.value ? null : <Nav sitemap={sitemap} />}
+      {closed.value ? null : <Nav closed={closed} sitemap={sitemap} />}
     </header>
   );
 });
