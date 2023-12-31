@@ -4,8 +4,8 @@ import { publications } from "~/resource";
 import { routeLoader$ } from "@builder.io/qwik-city";
 
 export const useYears = routeLoader$(async () => {
-  const years = new Set((await publications({})).map(pub => pub.year));
-  return [...years.values()]
+  const years = new Set((await publications({})).map((pub) => pub.year));
+  return [...years.values()];
 });
 
 export default component$(() => {

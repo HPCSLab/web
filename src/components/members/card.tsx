@@ -9,11 +9,16 @@ interface MemberProps {
 
 export default component$((props: MemberProps) => {
   return (
-    <div class={css({bg: "gray.300"})}>
+    <div class={css({ bg: "gray.300" })}>
       <h2>
         {props.profile.name ? props.profile.name : props.profile.eng_name}
       </h2>
-      <SsrImg src={props.profile.img} alt={`picture for ${props.profile.name ? props.profile.name : props.profile.eng_name}`} />
+      <SsrImg
+        src={props.profile.img}
+        alt={`picture for ${
+          props.profile.name ? props.profile.name : props.profile.eng_name
+        }`}
+      />
     </div>
   );
 });

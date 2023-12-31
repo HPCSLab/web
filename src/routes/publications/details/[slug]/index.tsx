@@ -1,10 +1,13 @@
 import { component$ } from "@builder.io/qwik";
-import { type StaticGenerateHandler, routeLoader$ } from "@builder.io/qwik-city";
+import {
+  type StaticGenerateHandler,
+  routeLoader$,
+} from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
-import {publications} from "~/resource";
+import { publications } from "~/resource";
 
 export const usePublicationDetail = routeLoader$(async (req) => {
-  return await publications({slug: req.params.slug});
+  return await publications({ slug: req.params.slug });
 });
 
 export default component$(() => {
