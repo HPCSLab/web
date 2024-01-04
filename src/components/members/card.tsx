@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { type Member } from "~/resource/members";
 import { css } from "~/styled-system/css";
-import SsrImg from "../ssr-img";
+import SsrImg from "../static-img";
 
 interface MemberProps {
   profile: Member;

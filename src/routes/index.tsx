@@ -4,10 +4,26 @@ import NewsHeadline from "~/components/news/news-headline";
 import Section from "~/components/section-in-index/section";
 import { news } from "~/resource";
 import { css } from "~/styled-system/css";
+import Carousel, { type Picture } from "~/components/carousel";
 
 export const useLatestNews = routeLoader$(async () => {
   return (await news({})).slice(0, 10);
 });
+
+const pictures: Picture[] = [
+  {
+    url: "/carousel/COMA.jpg",
+    alt: "COMA",
+  },
+  {
+    url: "/carousel/Cygnus.png",
+    alt: "Cygnus",
+  },
+  {
+    url: "/carousel/HA-PACS_TCA.jpg",
+    alt: "HA-PACS/TCA",
+  },
+];
 
 export default component$(() => {
   const latestNews = useLatestNews();
@@ -17,6 +33,7 @@ export default component$(() => {
         <h1 class={css({ fontSize: "2xl", fontWeight: "bold" })}>
           Welcome to HPCS Lab.
         </h1>
+        <Carousel pictures={pictures} transitionDurationMs={300} />
         <Section
           title="卒研配属情報はこちらから"
           url="https://www.hpcs.cs.tsukuba.ac.jp/bachelor/#!index.md"

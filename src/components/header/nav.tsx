@@ -10,14 +10,7 @@ interface SitemapEntryProps {
 
 function SitemapEntry(props: SitemapEntryProps) {
   const title = props.page.url ? (
-    <Link
-      onClick$={() => {
-        props.closed.value = true;
-      }}
-      href={props.page.url}
-    >
-      {props.page.title}
-    </Link>
+    <Link href={props.page.url}>{props.page.title}</Link>
   ) : (
     props.page.title
   );

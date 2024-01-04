@@ -4,6 +4,7 @@ import { LuMenu, LuX } from "@qwikest/icons/lucide";
 import { flex } from "~/styled-system/patterns";
 import Nav from "~/components/header/nav";
 import { sitemap } from "~/resource/sitemap";
+import { useLocation } from "@builder.io/qwik-city";
 
 export default component$(() => {
   const closed = useSignal(true);
@@ -22,6 +23,17 @@ export default component$(() => {
       }
     });
   });
+  const location = useLocation();
+  const currentPath = useSignal(location.url.href);
+  // eslint-disable-next-line qwik/no-use-visible-task
+  useVisibleTask$(({ track }) => {
+    track(() => location.url.href);
+    closed.value = true;
+    if (currentPath.value !== location.url.href) {
+      scrolled.value = 0;
+    }
+    currentPath.value = location.url.href;
+  });
   const onClick = $(() => {
     if (closed.value) {
       scrolled.value = window.scrollY;
@@ -30,20 +42,21 @@ export default component$(() => {
       closed.value = true;
     }
   });
+  const headerStyleOnClosed = css({
+    w: "full",
+    position: "sticky",
+    top: 0,
+    background: "white",
+  });
+  const headerStyleOnOpened = css({
+    w: "full",
+    position: "sticky",
+    top: 0,
+    h: "dvh",
+    background: "white",
+  });
   return (
-    <header
-      class={
-        closed.value
-          ? css({ w: "full", position: "sticky", top: 0, background: "white" })
-          : css({
-              w: "full",
-              position: "sticky",
-              top: 0,
-              h: "dvh",
-              background: "white",
-            })
-      }
-    >
+    <header class={closed.value ? headerStyleOnClosed : headerStyleOnOpened}>
       <div class={flex({ align: "center", justify: "space-between", p: "2" })}>
         <span class={css({ fontSize: "xl", fontWeight: 300 })}>HPCS Lab.</span>
         <button

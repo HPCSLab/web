@@ -1,7 +1,7 @@
 import { type JSXChildren, component$ } from "@builder.io/qwik";
 import type { Root } from "remark-parse/lib";
 import type { RootContent } from "mdast";
-import SsrImg from "./ssr-img";
+import StaticImg from "./static-img";
 import { Link } from "@builder.io/qwik-city";
 
 type MarkdownProps = {
@@ -130,7 +130,7 @@ function md(ctx: RenderContext, root: RootContent): JSXChildren {
       );
       return null;
     case "footnoteReference":
-      return <a href={`#${root.identifier}`}>{root.identifier}</a>;
+      return <Link href={`#${root.identifier}`}>{root.identifier}</Link>;
     case "heading":
       const inner = root.children.map((child) => md(ctx, child));
       switch (root.depth) {
@@ -151,7 +151,7 @@ function md(ctx: RenderContext, root: RootContent): JSXChildren {
     case "html":
       return <div dangerouslySetInnerHTML={root.value}></div>;
     case "image":
-      return <SsrImg src={root.url} alt={root.alt ? root.alt : ""} />;
+      return <StaticImg src={root.url} alt={root.alt ? root.alt : ""} />;
     case "paragraph":
       return <p>{root.children.map((child) => md(ctx, child))}</p>;
     case "text":
@@ -160,7 +160,7 @@ function md(ctx: RenderContext, root: RootContent): JSXChildren {
       // TODO
       const refUrl = ctx.defs.get(root.identifier);
       if (refUrl) {
-        return <SsrImg src={refUrl} alt={root.alt ? root.alt : ""} />;
+        return <StaticImg src={refUrl} alt={root.alt ? root.alt : ""} />;
       } else {
         return <div></div>;
       }
@@ -169,13 +169,15 @@ function md(ctx: RenderContext, root: RootContent): JSXChildren {
       return <code>{root.value}</code>;
     case "link":
       return (
-        <a href={root.url}>{root.children.map((child) => md(ctx, child))}</a>
+        <Link href={root.url}>
+          {root.children.map((child) => md(ctx, child))}
+        </Link>
       );
     case "linkReference": {
       const refUrl = ctx.defs.get(root.identifier);
       const children = root.children.map((child) => md(ctx, child));
       if (refUrl) {
-        return <a href={refUrl}>{children}</a>;
+        return <Link href={refUrl}>{children}</Link>;
       } else {
         return <span>{children}</span>;
       }
