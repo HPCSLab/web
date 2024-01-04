@@ -4,7 +4,7 @@ import { LuMenu, LuX } from "@qwikest/icons/lucide";
 import { flex } from "~/styled-system/patterns";
 import Nav from "~/components/header/nav";
 import { sitemap } from "~/resource/sitemap";
-import { useLocation } from "@builder.io/qwik-city";
+import { Link, useLocation } from "@builder.io/qwik-city";
 
 export default component$(() => {
   const closed = useSignal(true);
@@ -58,9 +58,13 @@ export default component$(() => {
   return (
     <header class={closed.value ? headerStyleOnClosed : headerStyleOnOpened}>
       <div class={flex({ align: "center", justify: "space-between", p: "2" })}>
-        <span class={css({ fontSize: "xl", fontWeight: 300 })}>HPCS Lab.</span>
+        <Link href="/">
+          <span class={css({ fontSize: "2xl", m: "1", fontWeight: 300 })}>
+            HPCS Lab.
+          </span>
+        </Link>
         <button
-          class={css({ fontSize: "xl" })}
+          class={css({ fontSize: "2xl", m: "1" })}
           onClick$={() => onClick()}
           role="button"
           aria-pressed={!closed.value}

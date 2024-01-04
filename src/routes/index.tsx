@@ -30,10 +30,18 @@ export default component$(() => {
   return (
     <>
       <main>
-        <h1 class={css({ fontSize: "2xl", fontWeight: "bold" })}>
-          Welcome to HPCS Lab.
-        </h1>
         <Carousel pictures={pictures} transitionDurationMs={300} />
+        <div
+          class={css({
+            backgroundColor: "gray.100",
+            fontSize: "2xl",
+            fontWeight: "bold",
+            p: "3",
+            mb: "2",
+          })}
+        >
+          <h1>Welcome to HPCS Lab.</h1>
+        </div>
         <Section
           title="卒研配属情報はこちらから"
           url="https://www.hpcs.cs.tsukuba.ac.jp/bachelor/#!index.md"
