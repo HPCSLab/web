@@ -1,11 +1,11 @@
 import { type Signal, component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import type { Page } from "~/resource/sitemap";
+import type { IndexPage } from "~/resource/sitemap";
 import { css } from "~/styled-system/css";
 
 interface SitemapEntryProps {
   closed: Signal<boolean>;
-  page: Page;
+  page: IndexPage;
 }
 
 function SitemapEntry(props: SitemapEntryProps) {
@@ -19,7 +19,7 @@ function SitemapEntry(props: SitemapEntryProps) {
       <ul>
         {props.page.children.map((page) => (
           <li key={page.title}>
-            <SitemapEntry closed={props.closed} page={page} />
+            <Link href={page.url}>{page.title}</Link>
           </li>
         ))}
       </ul>
@@ -33,13 +33,13 @@ function SitemapEntry(props: SitemapEntryProps) {
 }
 
 interface NavProps {
-  sitemap: Page[];
+  sitemap: IndexPage[];
   closed: Signal<boolean>;
 }
 
 export default component$((props: NavProps) => {
   return (
-    <nav>
+    <nav class={css({ h: "full" })}>
       <ul>
         {props.sitemap.map((page) => (
           <li key={page.title}>

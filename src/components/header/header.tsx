@@ -2,7 +2,8 @@ import { component$, useSignal, useVisibleTask$, $ } from "@builder.io/qwik";
 import { css } from "~/styled-system/css";
 import { LuMenu, LuX } from "@qwikest/icons/lucide";
 import { flex } from "~/styled-system/patterns";
-import Nav from "~/components/header/nav";
+import NavMobile from "~/components/header/nav-mobile";
+import NavDesktop from "./nav-desktop";
 import { sitemap } from "~/resource/sitemap";
 import { Link, useLocation } from "@builder.io/qwik-city";
 
@@ -46,35 +47,69 @@ export default component$(() => {
     w: "full",
     position: "sticky",
     top: 0,
+    h: "8",
     background: "white",
   });
   const headerStyleOnOpened = css({
     w: "full",
     position: "sticky",
     top: 0,
-    h: "dvh",
+    h: "8",
     background: "white",
   });
+  const NavMobileToggleButton = (
+    <button
+      class={css({ fontSize: "2xl", m: "1" })}
+      onClick$={() => onClick()}
+      role="button"
+      aria-pressed={!closed.value}
+      value={closed.value ? "open menu" : "close menu"}
+      aria-label="menu toggle button"
+    >
+      {closed.value ? <LuMenu /> : <LuX />}
+    </button>
+  );
   return (
-    <header class={closed.value ? headerStyleOnClosed : headerStyleOnOpened}>
-      <div class={flex({ align: "center", justify: "space-between", p: "2" })}>
-        <Link href="/">
-          <span class={css({ fontSize: "2xl", m: "1", fontWeight: 300 })}>
-            HPCS Lab.
-          </span>
-        </Link>
-        <button
-          class={css({ fontSize: "2xl", m: "1" })}
-          onClick$={() => onClick()}
-          role="button"
-          aria-pressed={!closed.value}
-          value={closed.value ? "open menu" : "close menu"}
-          aria-label="menu toggle button"
+    <>
+      <header class={closed.value ? headerStyleOnClosed : headerStyleOnOpened}>
+        <div
+          class={flex({
+            align: "center",
+            justify: "space-between",
+            pl: "2",
+            pr: "2",
+            h: "full",
+          })}
         >
-          {closed.value ? <LuMenu /> : <LuX />}
-        </button>
-      </div>
-      {closed.value ? null : <Nav closed={closed} sitemap={sitemap} />}
-    </header>
+          <Link href="/">
+            <span class={css({ fontSize: "2xl", m: "1", fontWeight: 300 })}>
+              HPCS Lab.
+            </span>
+          </Link>
+          <div
+            class={css({
+              display: {
+                base: "none",
+                lg: "unset",
+              },
+              h: "full",
+            })}
+          >
+            <NavDesktop sitemap={sitemap} />
+          </div>
+          <div
+            class={css({
+              display: {
+                base: "unset",
+                lg: "none",
+              },
+            })}
+          >
+            {NavMobileToggleButton}
+          </div>
+        </div>
+      </header>
+      {closed.value ? null : <NavMobile closed={closed} sitemap={sitemap} />}
+    </>
   );
 });

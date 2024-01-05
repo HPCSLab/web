@@ -1,10 +1,25 @@
-export type Page = {
+export type SubPage = {
   title: string;
-  url?: string;
-  children?: Page[];
+  url: string;
 };
 
-export const sitemap: Page[] = [
+export type IndexTitle =
+  | "Home"
+  | "Research"
+  | "Members"
+  | "News"
+  | "Publications"
+  | "Open Lab."
+  | "Access"
+  | "Link";
+
+export type IndexPage = {
+  title: IndexTitle;
+  url?: string;
+  children?: SubPage[];
+};
+
+export const sitemap: IndexPage[] = [
   {
     title: "Home",
     url: "/",
