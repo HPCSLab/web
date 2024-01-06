@@ -1,5 +1,5 @@
 import { z } from "zod";
-import alumniSrc from "../../members/alumni.yml";
+import alumniSrc from "./articles/members/alumni.yml";
 
 const studentValidator = z.object({
   occupation: z.literal("Student"),
@@ -63,15 +63,15 @@ const memberVerifier = z.intersection(
     facultyValidator,
     researcherValidator,
     researchStudentValidator,
-  ]),
+  ])
 );
 
 export type Member = z.infer<typeof memberVerifier>;
 
 export const members = Object.values(
-  import.meta.glob("../../members/profiles/*.yml", {
+  import.meta.glob("./articles/members/profiles/*.yml", {
     eager: true,
-  }) as Record<string, { default: any }>,
+  }) as Record<string, { default: any }>
 ).map((member) => memberVerifier.parse(member.default));
 
 const alumniProfile = z.object({

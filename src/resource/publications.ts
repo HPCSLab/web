@@ -49,7 +49,7 @@ const publicationVerifier = z.object({
 export type Publication = z.infer<typeof publicationVerifier>;
 
 export const publications = Object.values(
-  import.meta.glob("../../publications/**/*.yml", {
+  import.meta.glob("./articles/publications/**/*.yml", {
     eager: true,
-  }) as Record<string, { default: any }>,
+  }) as Record<string, { default: any }>
 ).map((publication) => publicationVerifier.parse(publication.default));

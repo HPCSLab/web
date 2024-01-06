@@ -1,4 +1,7 @@
-/**
- * PandaCSS CSS layers
- * View the full documentation at https://panda-css.com/docs/concepts/cascade-layers#layer-css
- */
+
+
+body {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+}

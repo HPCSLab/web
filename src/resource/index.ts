@@ -17,7 +17,7 @@ export async function news(query: NewsQuery): Promise<News[]> {
     .filter((news) =>
       query.year
         ? query.year == new Date(news.frontmatter.timestamp).getUTCFullYear()
-        : true,
+        : true
     );
 }
 
@@ -27,7 +27,7 @@ type MembersQuery = {
 
 export async function members(query: MembersQuery): Promise<Member[]> {
   return membersSrc.filter((member) =>
-    query.username ? member.username === query.username : true,
+    query.username ? member.username === query.username : true
   );
 }
 
@@ -37,7 +37,7 @@ type PublicationQuery = {
 };
 
 export async function publications(
-  query: PublicationQuery,
+  query: PublicationQuery
 ): Promise<Publication[]> {
   return publicationsSrc
     .filter((pub) => (query.year ? pub.year == query.year : true))

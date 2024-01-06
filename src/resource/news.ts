@@ -29,7 +29,7 @@ export type News = {
 };
 
 export const news: News[] = Object.entries(
-  import.meta.glob("../../news/**/*.mdx", { eager: true, as: "raw" }),
+  import.meta.glob("./articles/news/**/*.mdx", { eager: true, as: "raw" })
 )
   .map(([path, src]) => {
     const root = unified()
@@ -39,11 +39,11 @@ export const news: News[] = Object.entries(
       .use(remarkMdx)
       .use(remarkFrontmatter, ["yaml"])
       .parse(src);
-    const slug = /\.\.\/\.\.\/news\/\d{4}\/(.+)\.mdx/.exec(path);
+    const slug = /\.\/articles\/news\/\d{4}\/(.+)\.mdx/.exec(path);
     if (slug && slug[1]) {
       if (root.children[0].type === "yaml") {
         const frontmatter = frontmatterValidator.parse(
-          YAML.parse(root.children[0].value),
+          YAML.parse(root.children[0].value)
         );
         return {
           root: toSerializable({
