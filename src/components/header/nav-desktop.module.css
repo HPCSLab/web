@@ -1,0 +1,88 @@
+:root {
+  --menu-parent-width: 6rem;
+  --menu-content-margin: 0.5rem;
+}
+
+.root {
+  height: 100%;
+}
+
+.menuChild {
+  display: none;
+}
+
+.menuParentsContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.menuParent {
+  width: var(--menu-parent-width);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.menuParent > * > * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuParent > * > * > svg {
+  margin-left: 0.2em;
+  font-size: larger;
+  transition: transform 0.2s linear;
+  transform: rotate(0deg);
+}
+
+.menuParent:hover > * > * > svg {
+  transform: rotate(180deg);
+}
+
+.menuParent:hover > ul {
+  display: unset;
+  max-height: 20rem;
+  padding: 1em;
+}
+
+.menuParent > ul {
+  max-height: 0;
+  padding: 0 1em 0 1em;
+  overflow-y: hidden;
+  position: absolute;
+  top: calc(var(--header-height) + var(--menu-content-margin));
+  background-color: var(--bg-color);
+  margin: 0;
+  border-radius: 0.2em;
+  transition: max-height 0.3s linear;
+  transition: padding 0.1s linear;
+}
+
+.menuParent > ul > li {
+  margin: 0.2em;
+}
+
+.menuHeadingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuChildTeams {
+  width: 10em;
+  left: calc((var(--menu-parent-width) - 10em) / 2);
+}
+
+.menuChildMembers {
+  width: 10em;
+  left: calc((var(--menu-parent-width) - 10em) / 2);
+}
+
+.menuChildLink {
+  right: 0;
+  width: 15em;
+  right: var(--menu-content-margin);
+}

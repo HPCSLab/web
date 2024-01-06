@@ -2,18 +2,17 @@ import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import Researcher from "~/components/research/researcher";
 import Team from "~/components/research/team";
-import { css } from "~/styled-system/css";
 
 export default component$(() => {
   return (
     <main>
-      <h1 class={css({ fontSize: "2xl", m: "3" })}>Research</h1>
+      <h1>Research</h1>
       <Team name="Algorithm Team">
         <Researcher
           name="高橋 大介 教授"
           url="http://www.hpcs.cs.tsukuba.ac.jp/~daisuke/"
         >
-          <ul class={css({ listStyle: "disc", pl: "6" })}>
+          <ul>
             <li>高性能数値計算に関する研究</li>
             <li>高性能並列数値計算ソフトウェア</li>
             <li>GPUやMIC（Many Integrated Core）などを用いた高性能計算</li>
@@ -30,7 +29,7 @@ export default component$(() => {
           name="多田野 寛人 助教"
           url="http://www.hpcs.cs.tsukuba.ac.jp/~tadano/"
         >
-          <ul class={css({ listStyle: "disc", pl: "6" })}>
+          <ul>
             <li>大規模線形計算アルゴリズムに関する研究</li>
             <li>
               大規模連立一次方程式の高速・高精度・高信頼性アルゴリズムの構築
@@ -55,10 +54,7 @@ export default component$(() => {
             より大規模なデータ解析のためには，データ規模，コンピュータの計算速度に応じたスケーラブルなI/Oの仕組みが必要になります．
             その仕組みに基づく分散ファイルシステム，並列I/O，ワークフロー，MapReduceなどスケールアウトする並列分散システムソフトウェアの研究を行っています．
             そのためのプラットフォームとしてオープンソースで
-            <Link
-              class={css({ textDecoration: "underline", color: "blue.700" })}
-              href="http://oss-tsukuba.org/software/gfarm"
-            >
+            <Link href="http://oss-tsukuba.org/software/gfarm">
               Gfarmファイルシステム
             </Link>
             を開発しています．
@@ -83,10 +79,7 @@ export default component$(() => {
           ></iframe>
           <p>
             詳細は
-            <Link
-              class={css({ textDecoration: "underline", color: "blue.700" })}
-              href="http://www.ddn.com/customers/joint-center-for-advanced-high-performance-computing-jcahpc/"
-            >
+            <Link href="http://www.ddn.com/customers/joint-center-for-advanced-high-performance-computing-jcahpc/">
               こちら
             </Link>
             を参照してください．
@@ -98,7 +91,7 @@ export default component$(() => {
           name="山口 佳樹 准教授"
           url="https://www.cs.tsukuba.ac.jp/~yoshiki/"
         >
-          <ul class={css({ listStyle: "disc", pl: "6" })}>
+          <ul>
             <li>FPGAやGPUなどによるアクセラレータに関する研究</li>
             <li>
               画像・音声処理，ビッグデータ解析，人工知能，暗号処理などにおけるハードウェア化研究，など
@@ -120,7 +113,7 @@ export default component$(() => {
           name="朴 泰祐 教授"
           url="http://www.hpcs.cs.tsukuba.ac.jp/~taisuke/"
         >
-          <ul class={css({ listStyle: "disc", pl: 6 })}>
+          <ul>
             <li>
               GPU等の演算加速装置を含む並列処理アーキテクチャ及びネットワークに関する研究
             </li>
@@ -168,13 +161,7 @@ export default component$(() => {
           </strong>
           <p>
             筑波大学計算科学研究センターでは，東京大学と共に，2016年に大規模なメニーコアプロセッサを用いたスーパコンピュータを構築する予定です
-            (
-            <Link
-              class={css({ textDecoration: "underline", color: "blue.700" })}
-              href="https://www.jcahpc.jp"
-            >
-              JCAHPC
-            </Link>
+            (<Link href="https://www.jcahpc.jp">JCAHPC</Link>
             )．このシステムで活用できるプログラミングシステムや，理化学研究所計算科学研究機構のチームとともに並列プログラミング言語XcalableMPという言語を開発しています．
           </p>
         </Researcher>

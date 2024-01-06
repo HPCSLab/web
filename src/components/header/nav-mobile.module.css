@@ -1,0 +1,11 @@
+.contentRoot {
+  overflow-y: scroll;
+  min-height: calc(100vh - var(--header-height));
+  max-height: calc(100vh - var(--header-height));
+}
+
+.toggleButton {
+  padding: 0;
+  border-width: 0;
+  background-color: var(--bg-color);
+}

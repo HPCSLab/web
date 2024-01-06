@@ -3,7 +3,6 @@ import { routeLoader$, type DocumentHead } from "@builder.io/qwik-city";
 import NewsHeadline from "~/components/news/news-headline";
 import Section from "~/components/section-in-index/section";
 import { news } from "~/resource";
-import { css } from "~/styled-system/css";
 import Carousel, { type Picture } from "~/components/carousel";
 
 export const useLatestNews = routeLoader$(async () => {
@@ -31,15 +30,7 @@ export default component$(() => {
     <>
       <main>
         <Carousel pictures={pictures} transitionDurationMs={300} />
-        <div
-          class={css({
-            backgroundColor: "gray.100",
-            fontSize: "2xl",
-            fontWeight: "bold",
-            p: "3",
-            mb: "2",
-          })}
-        >
+        <div>
           <h1>Welcome to HPCS Lab.</h1>
         </div>
         <Section
@@ -51,7 +42,7 @@ export default component$(() => {
             筑波大学ハイパフォーマンス・コンピューティング・システム研究室では，
             超並列計算機からクラスタまで，高性能計算に関連した以下の研究を行っています．
           </p>
-          <ul class={css({ listStyle: "disc", pl: 6 })}>
+          <ul>
             <li>各種並列処理システムにおける高性能計算と性能評価</li>
             <li>
               プロセッサからネットワークまで計算機アーキテクチャに関する研究

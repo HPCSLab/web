@@ -7,7 +7,6 @@ import {
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
-import { css } from "./styled-system/css";
 
 export default component$(() => {
   /**
@@ -22,10 +21,14 @@ export default component$(() => {
       <head>
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+        />
         <RouterHead />
         <ServiceWorkerRegister />
       </head>
-      <body lang="en" class={css({ minHeight: "dvh", width: "full" })}>
+      <body lang="en">
         <RouterOutlet />
       </body>
     </QwikCityProvider>

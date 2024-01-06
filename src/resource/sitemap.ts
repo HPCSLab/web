@@ -5,11 +5,10 @@ export type SubPage = {
 
 export type IndexTitle =
   | "Home"
-  | "Research"
+  | "Teams"
   | "Members"
   | "News"
   | "Publications"
-  | "Open Lab."
   | "Access"
   | "Link";
 
@@ -21,17 +20,43 @@ export type IndexPage = {
 
 export const sitemap: IndexPage[] = [
   {
-    title: "Home",
-    url: "/",
-  },
-  {
-    title: "Research",
-    url: "/research",
+    title: "Teams",
+    url: "/teams",
+    children: [
+      {
+        title: "卒研配属",
+        url: "/bachelor",
+      },
+      {
+        title: "Algorithm",
+        url: "/teams/algo",
+      },
+      {
+        title: "System Software",
+        url: "/teams/ss",
+      },
+      {
+        title: "FPGA",
+        url: "/teams/fpga",
+      },
+      {
+        title: "Architecture",
+        url: "/teams/arch",
+      },
+      {
+        title: "PA",
+        url: "/teams/pa",
+      },
+    ],
   },
   {
     title: "Members",
     url: "/members",
     children: [
+      {
+        title: "Members",
+        url: "/members/",
+      },
       {
         title: "Alumni",
         url: "/members/alumni",
@@ -45,10 +70,6 @@ export const sitemap: IndexPage[] = [
   {
     title: "Publications",
     url: "/publications",
-  },
-  {
-    title: "Open Lab.",
-    url: "/bachelor/#!index.md",
   },
   {
     title: "Access",

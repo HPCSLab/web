@@ -3,7 +3,6 @@ import {
   type StaticGenerateHandler,
   routeLoader$,
 } from "@builder.io/qwik-city";
-import { css } from "~/styled-system/css";
 import { publications } from "~/resource";
 
 export const usePublicationDetail = routeLoader$(async (req) => {
@@ -23,7 +22,7 @@ export default component$(() => {
         </section>
         <section>
           <h2>bibtex</h2>
-          <pre class={css({ overflowX: "scroll" })}>{pub.value[0].bibtex}</pre>
+          <pre>{pub.value[0].bibtex}</pre>
         </section>
       </main>
     );

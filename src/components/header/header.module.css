@@ -1,0 +1,41 @@
+:root {
+  --header-height: 2rem;
+}
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 1;
+}
+
+@media (min-width: 1000px) {
+  .menuToggleButton {
+    display: none;
+  }
+
+  .desktopMenuEntries {
+    height: 100%;
+    display: unset;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menuToggleButton {
+    display: unset;
+  }
+
+  .desktopMenuEntries {
+    height: 100%;
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}

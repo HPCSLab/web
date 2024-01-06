@@ -1,0 +1,45 @@
+:root {
+  --toggle-button-size: 1.5rem;
+  --bar-between: 0.5rem;
+  --bar-wdith: 0.1rem;
+}
+
+.root {
+  position: relative;
+  width: var(--toggle-button-size);
+  height: var(--toggle-button-size);
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.bar {
+  height: var(--bar-wdith);
+  width: var(--toggle-button-size);
+  background-color: black;
+  margin: 0;
+  transition: transform 0.2s linear;
+}
+
+.topBar {
+  top: calc((var(--toggle-button-size) - var(--bar-between)) / 2);
+  position: absolute;
+}
+
+.bottomBar {
+  bottom: calc((var(--toggle-button-size) - var(--bar-between)) / 2);
+  position: absolute;
+}
+
+.topBarOpened {
+  transform: translateY(
+      calc(0rem + var(--bar-between) / 2 - var(--bar-wdith) / 2)
+    )
+    rotate(45deg);
+}
+
+.bottomBarOpened {
+  transform: translateY(
+      calc(0rem - var(--bar-between) / 2 + var(--bar-wdith) / 2)
+    )
+    rotate(-45deg);
+}

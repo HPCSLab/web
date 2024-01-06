@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import { css } from "~/styled-system/css";
 import { publications } from "~/resource";
 import { Link, routeLoader$ } from "@builder.io/qwik-city";
 
@@ -12,7 +11,7 @@ export default component$(() => {
   const years = useYears();
   return (
     <main>
-      <h1 class={css({ fontSize: "2xl" })}>Publications</h1>
+      <h1>Publications</h1>
       <ol>
         {years.value.map((year) => (
           <li key={year}>

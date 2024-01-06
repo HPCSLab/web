@@ -4,6 +4,7 @@ import {
   type Publication,
   publications as publicationsSrc,
 } from "./publications";
+import "./global.css";
 
 type NewsQuery = {
   slug?: string;

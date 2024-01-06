@@ -1,6 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 import { type Member } from "~/resource/members";
-import { css } from "~/styled-system/css";
 import SsrImg from "../static-img";
 
 interface MemberProps {
@@ -9,7 +8,7 @@ interface MemberProps {
 
 export default component$((props: MemberProps) => {
   return (
-    <div class={css({ bg: "gray.300" })}>
+    <div>
       <h2>
         {props.profile.name ? props.profile.name : props.profile.eng_name}
       </h2>
