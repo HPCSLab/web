@@ -1,0 +1,53 @@
+---
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a href={href}>
+  <span class="arrow-container">
+    <div class="arrow-center"></div>
+  </span>
+  <slot />
+</a>
+
+<style>
+  :root {
+    --arrow-max-length: 1.2em;
+    --arrow-min-length: 0.5em;
+    --arrow-head-length: 0.5em;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  a:hover .arrow-container {
+    width: var(--arrow-max-length);
+  }
+
+  a:hover .arrow-center {
+    width: var(--arrow-max-length);
+  }
+
+  .arrow-container {
+    margin-right: 0.5em;
+    height: 1em;
+    width: var(--arrow-min-length);
+    position: relative;
+    transition: all 0.1s linear;
+  }
+
+  .arrow-center {
+    position: absolute;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--bg-dark);
+    width: var(--arrow-min-length);
+    top: 50%;
+    transition: all 0.1s linear;
+  }
+</style>

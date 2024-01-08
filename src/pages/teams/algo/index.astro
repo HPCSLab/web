@@ -1,0 +1,181 @@
+---
+import { Image } from "astro:assets";
+import Base from "../../../layouts/base.astro";
+import BoolshelfImage from "./img/ateam-bookshelf.jpg";
+import ServerImage from "./img/server-front.jpg";
+import Members from "../../../components/teams/members.astro";
+import members from "./members.yml";
+---
+
+<Base title="Algorithm team">
+  <div class="root">
+    <section>
+      <div>
+        <div class="centering">
+          <Image src={BoolshelfImage} alt="Algorithmチームの本棚" />
+        </div>
+        <h1>Algorithm Team</h1>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>高橋 大介 教授</h2>
+        <ul>
+          <li>高性能数値計算に関する研究</li>
+          <li>高性能並列数値計算ソフトウェア</li>
+          <li>GPUやMIC（Many Integrated Core）などを用いた高性能計算</li>
+          <li>高精度計算アルゴリズムとその応用</li>
+        </ul>
+        <p>
+          我々は，限られた時間の中で大規模な科学技術計算を行うために，スーパーコンピュータの性能をできるだけ発揮できるようなアルゴリズムやプログラミングに関する研究を行っています．高速なプログラムを作成するには，コンピュータの仕組みや数学について深い理解が必要になりますが、努力が性能という数字にそのまま反映されることから，やりがいがある分野です．
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>多田野 寛人 助教</h2>
+        <ul>
+          <li>大規模線形計算アルゴリズムに関する研究</li>
+          <li>
+            大規模連立一次方程式の高速・高精度・高信頼性アルゴリズムの構築
+          </li>
+          <li>連立一次方程式の 高速化のための前処理法の開発</li>
+          <li>並列計算環境における大規模固有値問題の高速解法の開発</li>
+        </ul>
+        <p>
+          我々は，連立一次方程式や固有値問題をはじめとした数値解法アルゴリズムの開発を行っています．
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>アルゴリズムチームの使っている計算機について</h2>
+        <div class="side-by-side">
+          <p>
+            チームで所有している計算機としては、IntelのXeonプロセッサを搭載した4ノードのクラスタ2つのほか、IntelのXeon
+            Phiプロセッサを搭載した4ノードのクラスタがあります。これらは学生によって管理・運用されていて自由に使うことができます。また本研究室は計算科学研究センターと協力関係にあり、研究内容によっては筑波大学が運用するスーパーコンピュータCygnus
+            (理論ピーク性能2.4PFLOPS)，Pegasus
+            (理論ピーク性能6.5PFLOPS)を利用できます。これらの様々な計算機資源を利用して研究を行うことが可能です。
+          </p>
+          <Image
+            src={ServerImage}
+            alt="Algorithmチームの計算機クラスタ"
+            class="cluster"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>FFT (高速フーリエ変換)</h2>
+        <p>高橋教授の研究内容のひとつであるFFTをご紹介します。</p>
+        <div class="centering">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GPJx5JTGQEU"
+            title="配信講義 計算科学技術特論B (2020) 第6回"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="dark-section">
+      <div>
+        <h2>メンバー</h2>
+        <Members members={members} />
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>近年の研究成果について</h2>
+        <p>研究成果については，以下のページよりご覧ください．</p>
+        <ul>
+          <li>
+            高橋 教授 : https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/pub-j.html
+          </li>
+          <li>
+            多田野 助教 :
+            https://www.hpcs.cs.tsukuba.ac.jp/~tadano/publication.html
+          </li>
+        </ul>
+        <p>
+          一例として，2023年までに国際学会，情報処理学会HPC研究会等に投稿した研究会原稿を紹介します．
+        </p>
+        <p>
+          筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
+        </p>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  h1 {
+    margin-top: 2em;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .root {
+  }
+
+  .root > section {
+    padding: 2em 4em 2em 4em;
+  }
+
+  .root > section h2 {
+    border-bottom: var(--bg-dark) solid 1px;
+    padding-bottom: 0.5em;
+  }
+
+  .main-contents {
+  }
+
+  .dark-section {
+    background-color: var(--bg-dark);
+    color: white;
+  }
+
+  .members-section {
+    background-color: var(--bg-dark);
+    color: white;
+  }
+
+  h2 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+
+  ul {
+    margin: 1em 0 1em 0;
+    list-style-type: disc;
+    margin-left: 1.5em;
+  }
+
+  p {
+    word-break: auto-phrase;
+    margin: 0.5em;
+    line-height: 2em;
+  }
+
+  ul {
+    line-height: 2em;
+  }
+
+  .side-by-side {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inline-list {
+    list-style: none;
+  }
+
+  .inline-list > li {
+    display: inline;
+  }
+</style>

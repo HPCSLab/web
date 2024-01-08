@@ -4,7 +4,7 @@ import Footer from "../components/footer.astro";
 const { title } = Astro.props;
 ---
 
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,6 +26,8 @@ const { title } = Astro.props;
 
 <style is:global>
   :root {
+    --color-primary: blue;
+    --color-keyword: rgb(0, 200, 0);
     --bg-color: white;
     --link-color: #90afff;
     --visited-link-color: #24479e;
@@ -43,9 +45,15 @@ const { title } = Astro.props;
     color: var(--visited-link-color);
   }
 
+  p {
+    word-break: auto-phrase;
+  }
+
   body {
     box-sizing: border-box;
     min-height: 100vh;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans", Meiryo, sans-serif;
   }
 
   main {

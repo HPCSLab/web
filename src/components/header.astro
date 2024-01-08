@@ -110,16 +110,18 @@ const pages: IndexPage[] = [
   <nav class="logo">
     <a href="/">HPCS Lab.</a>
   </nav>
-  <nav>
+  <nav class="nav-wrapper">
     <ul class="nav-index-container">
       {
         pages.map((page) => (
           <li class="nav-index">
-            {page.url ? (
-              <a href={page.url}>{page.title}</a>
-            ) : (
-              <span>{page.title}</span>
-            )}
+            <div class="nav-index-link-wrapper">
+              {page.url ? (
+                <a href={page.url}>{page.title}</a>
+              ) : (
+                <span>{page.title}</span>
+              )}
+            </div>
             {page.children.length > 0 ? (
               <nav
                 class:list={
@@ -148,7 +150,7 @@ const pages: IndexPage[] = [
 
 <style>
   :root {
-    --drawer-width: 10em;
+    --drawer-width: 14em;
     --drawer-height: 16em;
   }
 
@@ -156,11 +158,30 @@ const pages: IndexPage[] = [
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     top: 0;
     background-color: var(--bg-color);
     position: sticky;
     z-index: 100;
     height: var(--header-height);
+    background-color: var(--bg-dark);
+    color: white;
+  }
+
+  header a {
+    padding: 0.5em;
+  }
+
+  header a:visited {
+    color: white;
+  }
+
+  header a:link {
+    color: white;
+  }
+
+  .nav-wrapper {
+    height: 100%;
   }
 
   .nav-index-container {
@@ -168,12 +189,25 @@ const pages: IndexPage[] = [
     flex-direction: row;
     align-items: center;
     height: 100%;
+    padding: 0 1em 0 1em;
+  }
+
+  .nav-index-link-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-index-link-wrapper > a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   .nav-index {
     margin: 0 0.5em 0 0.5em;
     position: relative;
     z-index: 1;
+    height: 100%;
   }
 
   .drawer {
@@ -193,10 +227,18 @@ const pages: IndexPage[] = [
   }
 
   .drawer > ul {
-    background-color: var(--bg-color);
-    border-radius: 0.2em;
+    background-color: var(--bg-dark);
     padding: 0.5em;
     margin: 0.5em;
+  }
+
+  .drawer > ul > li {
+    padding: 0.7em 0 0.7em 0;
+    width: 100%;
+  }
+
+  .drawer > ul > li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   .drawer:hover {
@@ -211,5 +253,8 @@ const pages: IndexPage[] = [
 
   .logo {
     font-size: larger;
+    font-weight: lighter;
+    margin-left: 1em;
+    font-family: ui-monospace;
   }
 </style>

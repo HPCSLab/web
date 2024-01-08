@@ -1,19 +1,63 @@
 ---
+import HoverLink from "../../components/hover-link.astro";
 import Base from "../../layouts/base.astro";
 import { news } from "./index";
 ---
 
 <Base title="News">
-  <ul>
-    {
-      news.map((frontmatter) => (
-        <li>
-          <span>{frontmatter.date}</span>
-          <a href={`/news/${frontmatter.year}/${frontmatter.slug}`}>
-            {frontmatter.title}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <section>
+    <h1>News</h1>
+  </section>
+  <section>
+    <ul>
+      {
+        news.map((frontmatter) => (
+          <li>
+            <div class="title">
+              <HoverLink href={`/news/${frontmatter.year}/${frontmatter.slug}`}>
+                {frontmatter.title}
+              </HoverLink>
+            </div>
+            <div class="date">{frontmatter.date}</div>
+            <p class="description">{frontmatter.description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Base>
+
+<style>
+  section {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
+  }
+
+  h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  li {
+    margin: 2em;
+    border-bottom: var(--bg-dark) solid 1px;
+    padding: 1em;
+  }
+
+  .date {
+    margin-top: 1em;
+    margin-left: 1em;
+    color: var(--bg-dark);
+  }
+
+  .title {
+    font-size: larger;
+  }
+
+  p {
+    margin-top: 1em;
+    line-height: 1.8em;
+    margin-left: 1em;
+  }
+</style>
