@@ -1,6 +1,10 @@
 ---
 import { Image } from "astro:assets";
 
+// InteractionObserver APIでスクロールした時に画像の順番を裏で入れ替えれば（多分）無限スクロールできる
+// スクロール動作で一定時間自動スクロール止める処理も欲しい
+// Custom elementsを使っているのは単なる趣味。クラス名でquerySelectorAllしてハンドラ貼り付けるだけで済むはず
+
 export type CarouselPicture = {
   src: ImageMetadata;
   alt: string;
@@ -11,96 +15,151 @@ interface Props {
   width: number;
   height: number;
   scrollInterval?: number;
+  graceToAutoScroll?: number;
 }
 
-const { pictures, width, height, scrollInterval } = Astro.props;
+const {
+  pictures,
+  width,
+  height,
+  scrollInterval,
+  graceToAutoScroll: durationToStartAutoScroll,
+} = Astro.props;
 ---
 
-<my-carousel data-scroll-interval-ms={scrollInterval ? scrollInterval : 3000}>
-  <template shadowrootmode="open">
-    <ul class="root">
-      {
-        pictures.map((pic) => (
-          <li>
-            <figure>
-              <Image
-                src={pic.src}
-                alt={pic.alt}
-                width={width}
-                height={height}
-              />
-              <figcaption>
-                <span>{pic.alt}</span>
-              </figcaption>
-            </figure>
-          </li>
-        ))
-      }
-    </ul>
+<hpcs-carousel
+  data-scroll-interval={scrollInterval ? scrollInterval : 1500}
+  data-grace-to-auto-scroll={durationToStartAutoScroll
+    ? durationToStartAutoScroll
+    : 3000}
+>
+  <ul class="root">
+    {
+      pictures.map((pic, index) => (
+        <li data-picture-index={index}>
+          <figure>
+            <Image src={pic.src} alt={pic.alt} width={width} height={height} />
+            <figcaption>
+              <span>{pic.alt}</span>
+            </figcaption>
+          </figure>
+        </li>
+      ))
+    }
+  </ul>
 
-    <style>
-      .root {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-      }
+  <style>
+    .root {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
 
-      img {
-        width: 100%;
-        height: auto;
-      }
+    .root::-webkit-scrollbar {
+      display: none;
+    }
 
-      li {
-        scroll-snap-align: center;
-        min-width: 100%;
-      }
+    img {
+      width: 100%;
+      height: auto;
+    }
 
-      figure {
-        position: relative;
-        margin: 0;
-      }
+    li {
+      scroll-snap-align: center;
+      min-width: 100%;
+    }
 
-      figcaption {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.8);
-        bottom: 0;
-        width: 100%;
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-  </template>
-</my-carousel>
+    figure {
+      position: relative;
+      margin: 0;
+    }
+
+    figcaption {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      bottom: 0;
+      width: 100%;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</hpcs-carousel>
 
 <script is:inline>
   class Carousel extends HTMLElement {
     constructor() {
       super();
-      customElements.whenDefined("my-carousel").then(() => {
-        /*console.log(this);
-        this.pictures = this.shadowRoot.querySelectorAll("li");
-        this.pictureCount = this.pictures.length;
-        this.currentIndex = 0;
-        setInterval(
+      const scrollInterval = parseInt(this.dataset.scrollInterval, 10);
+      const graceToAutoScroll = parseInt(this.dataset.graceToAutoScroll, 10);
+      this.currentIndex = 0;
+      const container = this.querySelector("ul");
+
+      [...container.children].forEach((child, index) => {
+        const observer = new IntersectionObserver(
           () => {
-            this.currentIndex = (this.currentIndex + 1) % this.pictureCount;
-            console.log(this.pictures[this.currentIndex]);
-            this.pictures[this.currentIndex].scrollIntoView({
-              behavior: "smooth",
-              inline: "end",
-            });
+            this.currentIndex = index;
           },
-          parseInt(this.dataset.scrollIntervalMs, 10)
-        );*/
+          {
+            threshold: 0.9,
+          }
+        );
+        observer.observe(child);
       });
+
+      const scroll = () => {
+        if (
+          container.scrollLeft >
+          window.innerWidth * (container.children.length - 2)
+        ) {
+          container.scrollBy({
+            left:
+              -window.innerWidth * container.children.length +
+              window.innerWidth / 2,
+            behavior: "smooth",
+          });
+        } else {
+          container.scrollBy({
+            left: window.innerWidth / 2,
+            behavior: "smooth",
+          });
+        }
+      };
+
+      const scheduleAutoScroll = () => {
+        if (this.timeoutHandler) {
+          clearTimeout(this.timeoutHandler);
+        }
+        this.timeoutHandler = setTimeout(() => {
+          this.timeoutHandler = null;
+          scroll();
+          this.intervalHandler = setInterval(() => {
+            scroll();
+          }, scrollInterval);
+        }, graceToAutoScroll);
+      };
+
+      const cancelAutoScroll = () => {
+        if (this.intervalHandler) {
+          clearInterval(this.intervalHandler);
+          this.intervalHandler = null;
+        }
+      };
+
+      container.addEventListener("scroll", () => {
+        cancelAutoScroll();
+        scheduleAutoScroll();
+      });
+      scheduleAutoScroll();
     }
   }
 
-  customElements.define("my-carousel", Carousel);
+  customElements.define("hpcs-carousel", Carousel);
 </script>

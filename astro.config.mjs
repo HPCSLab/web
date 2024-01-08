@@ -6,7 +6,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   vite: {
-    plugins: [YamlPlugin()]
+    plugins: [YamlPlugin()],
   },
-  integrations: [mdx()]
+  integrations: [mdx()],
 });

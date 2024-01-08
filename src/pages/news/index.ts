@@ -34,7 +34,7 @@ const rawNews: Frontmatter[] = await Promise.all(
       } else {
         throw new Error(`invalid path ${path}`);
       }
-    }
-  )
+    },
+  ),
 );
 export const news = rawNews.sort((a, b) => b.timestamp - a.timestamp);

@@ -17,25 +17,25 @@ const pages: IndexPage[] = [
     children: [
       {
         title: "Algorithm",
-        url: "/teams/algo"
+        url: "/teams/algo",
       },
       {
         title: "System Software",
-        url: "/teams/ss"
+        url: "/teams/ss",
       },
       {
         title: "FPGA",
-        url: "/teams/fpga"
+        url: "/teams/fpga",
       },
       {
         title: "Architecture",
-        url: "/teams/arch"
+        url: "/teams/arch",
       },
       {
         title: "PA",
-        url: "/teams/pa"
-      }
-    ]
+        url: "/teams/pa",
+      },
+    ],
   },
   {
     title: "Members",
@@ -43,66 +43,66 @@ const pages: IndexPage[] = [
     children: [
       {
         title: "Members",
-        url: "/members"
+        url: "/members",
       },
       {
         title: "Alumnus",
-        url: "/members/alumnus"
-      }
-    ]
+        url: "/members/alumnus",
+      },
+    ],
   },
   {
     title: "News",
     url: "/news",
-    children: []
+    children: [],
   },
   {
     title: "Publications",
     url: "/publications",
-    children: []
+    children: [],
   },
   {
     title: "Access",
     url: "/access",
-    children: []
+    children: [],
   },
   {
     title: "Link",
     children: [
       {
         title: "筑波大学",
-        url: "https://www.tsukuba.ac.jp/"
+        url: "https://www.tsukuba.ac.jp/",
       },
       {
         title: "システム情報工学研究群",
-        url: "https://www.sie.tsukuba.ac.jp/"
+        url: "https://www.sie.tsukuba.ac.jp/",
       },
       {
         title: "情報理工学位プログラム",
-        url: "https://www.cs.tsukuba.ac.jp/"
+        url: "https://www.cs.tsukuba.ac.jp/",
       },
       {
         title: "情報科学類",
-        url: "https://www.coins.tsukuba.ac.jp/"
+        url: "https://www.coins.tsukuba.ac.jp/",
       },
       {
         title: "計算科学研究センター",
-        url: "https://www.ccs.tsukuba.ac.jp/"
+        url: "https://www.ccs.tsukuba.ac.jp/",
       },
       {
         title: "卒研配属情報",
-        url: "http://localhost:5173/bachelor/#!index.md"
+        url: "http://localhost:5173/bachelor/#!index.md",
       },
       {
         title: "情報システム実験B",
-        url: "https://www.hpcs.cs.tsukuba.ac.jp/experiment/text.html"
+        url: "https://www.hpcs.cs.tsukuba.ac.jp/experiment/text.html",
       },
       {
         title: "Internal",
-        url: "http://localhost:5173/internal/pukiwiki/"
-      }
-    ]
-  }
+        url: "http://localhost:5173/internal/pukiwiki/",
+      },
+    ],
+  },
 ];
 ---
 
@@ -113,20 +113,34 @@ const pages: IndexPage[] = [
   <nav>
     <ul class="nav-index-container">
       {
-        pages.map(page =>
+        pages.map((page) => (
           <li class="nav-index">
-            {page.url ? <a href={page.url}>{page.title}</a> : <span>{page.title}</span>}
-            {page.children.length > 0 ?
-            <nav class:list={page.title === pages[pages.length-1].title ? ["drawer-last", "drawer"] : ["drawer"]}>
-              <ul>
-                {page.children.length == 0 ? null : page.children.map((subpage) => 
-                  <li><a href={subpage.url}>{subpage.title}</a></li>
-                )}
-              </ul>
-            </nav>
-            : null}
+            {page.url ? (
+              <a href={page.url}>{page.title}</a>
+            ) : (
+              <span>{page.title}</span>
+            )}
+            {page.children.length > 0 ? (
+              <nav
+                class:list={
+                  page.title === pages[pages.length - 1].title
+                    ? ["drawer-last", "drawer"]
+                    : ["drawer"]
+                }
+              >
+                <ul>
+                  {page.children.length == 0
+                    ? null
+                    : page.children.map((subpage) => (
+                        <li>
+                          <a href={subpage.url}>{subpage.title}</a>
+                        </li>
+                      ))}
+                </ul>
+              </nav>
+            ) : null}
           </li>
-        )
+        ))
       }
     </ul>
   </nav>
@@ -142,6 +156,7 @@ const pages: IndexPage[] = [
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: sticky;
   }
 
   .nav-index-container {
@@ -163,9 +178,8 @@ const pages: IndexPage[] = [
     left: calc(50% - var(--drawer-width) / 2);
     max-height: 0;
     overflow-y: hidden;
-    transition: max-height 0.3s linear; 
+    transition: max-height 0.3s linear;
   }
-
 
   .drawer-last {
     right: 0;
@@ -180,11 +194,11 @@ const pages: IndexPage[] = [
     margin: 0.5em;
   }
 
-  .drawer:hover  {
+  .drawer:hover {
     max-height: var(--drawer-height);
   }
 
-  .nav-index:hover > .drawer  {
+  .nav-index:hover > .drawer {
     max-height: var(--drawer-height);
   }
 

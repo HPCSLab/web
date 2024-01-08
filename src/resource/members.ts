@@ -63,7 +63,7 @@ const memberVerifier = z.intersection(
     facultyValidator,
     researcherValidator,
     researchStudentValidator,
-  ])
+  ]),
 );
 
 export type Member = z.infer<typeof memberVerifier>;
@@ -71,7 +71,7 @@ export type Member = z.infer<typeof memberVerifier>;
 export const members = Object.values(
   import.meta.glob("./articles/members/profiles/*.yml", {
     eager: true,
-  }) as Record<string, { default: any }>
+  }) as Record<string, { default: any }>,
 ).map((member) => memberVerifier.parse(member.default));
 
 const alumniProfile = z.object({
