@@ -156,7 +156,11 @@ const pages: IndexPage[] = [
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    top: 0;
+    background-color: var(--bg-color);
     position: sticky;
+    z-index: 100;
+    height: var(--header-height);
   }
 
   .nav-index-container {
@@ -176,9 +180,10 @@ const pages: IndexPage[] = [
     position: absolute;
     width: var(--drawer-width);
     left: calc(50% - var(--drawer-width) / 2);
-    max-height: 0;
     overflow-y: hidden;
-    transition: max-height 0.3s linear;
+    visibility: hidden;
+    transform: scale(0.95);
+    transition: transform 0.1s ease-out;
   }
 
   .drawer-last {
@@ -195,11 +200,13 @@ const pages: IndexPage[] = [
   }
 
   .drawer:hover {
-    max-height: var(--drawer-height);
+    visibility: visible;
+    transform: scale(1);
   }
 
   .nav-index:hover > .drawer {
-    max-height: var(--drawer-height);
+    visibility: visible;
+    transform: scale(1);
   }
 
   .logo {
