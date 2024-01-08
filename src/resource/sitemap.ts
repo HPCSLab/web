@@ -6,6 +6,7 @@ export type SubPage = {
 export type IndexTitle =
   | "Home"
   | "Teams"
+  | "卒研配属"
   | "Members"
   | "News"
   | "Publications"
@@ -23,10 +24,6 @@ export const sitemap: IndexPage[] = [
     title: "Teams",
     url: "/teams",
     children: [
-      {
-        title: "卒研配属",
-        url: "/bachelor",
-      },
       {
         title: "Algorithm",
         url: "/teams/algo",
