@@ -1,0 +1,106 @@
+---
+import { Image } from "astro:assets";
+
+export type CarouselPicture = {
+  src: ImageMetadata;
+  alt: string;
+};
+
+interface Props {
+  pictures: CarouselPicture[];
+  width: number;
+  height: number;
+  scrollInterval?: number;
+}
+
+const { pictures, width, height, scrollInterval } = Astro.props;
+---
+
+<my-carousel data-scroll-interval-ms={scrollInterval ? scrollInterval : 3000}>
+  <template shadowrootmode="open">
+    <ul class="root">
+      {
+        pictures.map((pic) => (
+          <li>
+            <figure>
+              <Image
+                src={pic.src}
+                alt={pic.alt}
+                width={width}
+                height={height}
+              />
+              <figcaption>
+                <span>{pic.alt}</span>
+              </figcaption>
+            </figure>
+          </li>
+        ))
+      }
+    </ul>
+
+    <style>
+      .root {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      li {
+        scroll-snap-align: center;
+        min-width: 100%;
+      }
+
+      figure {
+        position: relative;
+        margin: 0;
+      }
+
+      figcaption {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 0;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </template>
+</my-carousel>
+
+<script is:inline>
+  class Carousel extends HTMLElement {
+    constructor() {
+      super();
+      customElements.whenDefined("my-carousel").then(() => {
+        /*console.log(this);
+        this.pictures = this.shadowRoot.querySelectorAll("li");
+        this.pictureCount = this.pictures.length;
+        this.currentIndex = 0;
+        setInterval(
+          () => {
+            this.currentIndex = (this.currentIndex + 1) % this.pictureCount;
+            console.log(this.pictures[this.currentIndex]);
+            this.pictures[this.currentIndex].scrollIntoView({
+              behavior: "smooth",
+              inline: "end",
+            });
+          },
+          parseInt(this.dataset.scrollIntervalMs, 10)
+        );*/
+      });
+    }
+  }
+
+  customElements.define("my-carousel", Carousel);
+</script>

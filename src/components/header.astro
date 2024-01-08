@@ -1,0 +1,194 @@
+---
+export type SubPage = {
+  title: string;
+  url: string;
+};
+
+export type IndexPage = {
+  title: string;
+  url?: string;
+  children: SubPage[];
+};
+
+const pages: IndexPage[] = [
+  {
+    title: "Teams",
+    url: "/teams",
+    children: [
+      {
+        title: "Algorithm",
+        url: "/teams/algo"
+      },
+      {
+        title: "System Software",
+        url: "/teams/ss"
+      },
+      {
+        title: "FPGA",
+        url: "/teams/fpga"
+      },
+      {
+        title: "Architecture",
+        url: "/teams/arch"
+      },
+      {
+        title: "PA",
+        url: "/teams/pa"
+      }
+    ]
+  },
+  {
+    title: "Members",
+    url: "/members",
+    children: [
+      {
+        title: "Members",
+        url: "/members"
+      },
+      {
+        title: "Alumnus",
+        url: "/members/alumnus"
+      }
+    ]
+  },
+  {
+    title: "News",
+    url: "/news",
+    children: []
+  },
+  {
+    title: "Publications",
+    url: "/publications",
+    children: []
+  },
+  {
+    title: "Access",
+    url: "/access",
+    children: []
+  },
+  {
+    title: "Link",
+    children: [
+      {
+        title: "筑波大学",
+        url: "https://www.tsukuba.ac.jp/"
+      },
+      {
+        title: "システム情報工学研究群",
+        url: "https://www.sie.tsukuba.ac.jp/"
+      },
+      {
+        title: "情報理工学位プログラム",
+        url: "https://www.cs.tsukuba.ac.jp/"
+      },
+      {
+        title: "情報科学類",
+        url: "https://www.coins.tsukuba.ac.jp/"
+      },
+      {
+        title: "計算科学研究センター",
+        url: "https://www.ccs.tsukuba.ac.jp/"
+      },
+      {
+        title: "卒研配属情報",
+        url: "http://localhost:5173/bachelor/#!index.md"
+      },
+      {
+        title: "情報システム実験B",
+        url: "https://www.hpcs.cs.tsukuba.ac.jp/experiment/text.html"
+      },
+      {
+        title: "Internal",
+        url: "http://localhost:5173/internal/pukiwiki/"
+      }
+    ]
+  }
+];
+---
+
+<header>
+  <nav class="logo">
+    <a href="/">HPCS Lab.</a>
+  </nav>
+  <nav>
+    <ul class="nav-index-container">
+      {
+        pages.map(page =>
+          <li class="nav-index">
+            {page.url ? <a href={page.url}>{page.title}</a> : <span>{page.title}</span>}
+            {page.children.length > 0 ?
+            <nav class:list={page.title === pages[pages.length-1].title ? ["drawer-last", "drawer"] : ["drawer"]}>
+              <ul>
+                {page.children.length == 0 ? null : page.children.map((subpage) => 
+                  <li><a href={subpage.url}>{subpage.title}</a></li>
+                )}
+              </ul>
+            </nav>
+            : null}
+          </li>
+        )
+      }
+    </ul>
+  </nav>
+</header>
+
+<style>
+  :root {
+    --drawer-width: 10em;
+    --drawer-height: 16em;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-index-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+
+  .nav-index {
+    margin: 0 0.5em 0 0.5em;
+    position: relative;
+    z-index: 1;
+  }
+
+  .drawer {
+    position: absolute;
+    width: var(--drawer-width);
+    left: calc(50% - var(--drawer-width) / 2);
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.3s linear; 
+  }
+
+
+  .drawer-last {
+    right: 0;
+    left: unset;
+    width: 14em;
+  }
+
+  .drawer > ul {
+    background-color: var(--bg-color);
+    border-radius: 0.2em;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+
+  .drawer:hover  {
+    max-height: var(--drawer-height);
+  }
+
+  .nav-index:hover > .drawer  {
+    max-height: var(--drawer-height);
+  }
+
+  .logo {
+    font-size: larger;
+  }
+</style>

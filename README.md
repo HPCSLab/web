@@ -1,32 +1,47 @@
-# Web係向け
+# Astro Starter Kit: Minimal
 
-## 開発環境構築方法
+```sh
+npm create astro@latest -- --template minimal
+```
 
-1. node, npmをインストール (`volta`がオススメだがなんでも良い)
-2. `npm install -g pnpm`で`pnpm`をインストール（別の方法でインストールしても良い）
-3. `pnpm install`
-4. `pnpm run dev`で`5173`ポートで立ち上がるのでそれをみながら編集
-5. `pnpm run fmt`でのフォーマットと`pnpm run build`で警告が出てないことを確認(バンドルサイズの警告は無視して良い)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-## 編集対象ファイル
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-- `./src/resource/articles/members/alumni.yml`
-  - OBOGの一覧ファイル
-- `./src/resource/articles/members/profiles/*.yml`
-  - 現在のメンバーのファイル
-  - ファイルを追加/削除した場合は自動反映されるので他をいじる必要はなし
-  - 画像は`./src/resource/img/icons`以下に配置。画像のルートは`./src/resource/img`なので`/icons/mnakano.jpg`のようなパスで指定する
-- `./src/resource/articles/publications/*/*.yml`
-  - こちらも追加/削除時は自動で反映される
-  - ファイル名、西暦のディレクトリ名は単にファイル整理のためのものだが、YAML内の`year`と`slug`に揃えるのを推奨
-  - 分類についていじりたい場合は以下のファイルを修正する必要がある
-    - `./src/resource/publications.ts`
-    - `./src/resource/index.ts`
-    - `./src/routes/publications/**/*.tsx`
-- `./src/resource/articles/news/*/*.mdx`
-  - こちらも追加/削除時の自動反映
-  - 画像は`./src/resource/img/misc`以下に配置し、`/misc/*`の形式で参照すること
+## 🚀 Project Structure
 
-## 開発時ノート
+Inside of your Astro project, you'll see the following folders and files:
 
-静的サイトなので基本はstaticなHTMLで高速に描画したいが、hamburger menuなど一部動的なコンテンツがある。これらを生のJSで書くのは結構しんどい。
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

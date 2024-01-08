@@ -1,0 +1,71 @@
+---
+import { load } from "../lib/loader";
+import Carousel, { type CarouselPicture } from "../components/carousel.astro";
+import Base from "../layouts/base.astro";
+import COMA from "../resource/img/carousel/COMA.jpg";
+import Cygnus from "../resource/img/carousel/Cygnus.png";
+import HA_PACS from "../resource/img/carousel/HA-PACS.jpg";
+import { news } from "./news/index";
+
+const carouselPictures: CarouselPicture[] = [
+  {
+    src: COMA,
+    alt: "COMA",
+  },
+  {
+    src: Cygnus,
+    alt: "Cygnus",
+  },
+  {
+    src: HA_PACS,
+    alt: "HA-PACS",
+  },
+];
+---
+
+<Base>
+  <Carousel pictures={carouselPictures} width={1200} height={300} />
+  <h1>Welcome to HPCS Laboratory</h1>
+
+  <section>
+    <h2><a href="/bachelor">卒研配属情報はこちらから</a></h2>
+  </section>
+  <section>
+    <h2>High Performance Computing System labs.</h2>
+    <p>
+      筑波大学ハイパフォーマンス・コンピューティング・システム研究室では，超並列計算機からクラスタまで，高性能計算に関連した以下の研究を行っています．
+    </p>
+    <ul>
+      <li>各種並列処理システムにおける高性能計算と性能評価</li>
+      <li>プロセッサからネットワークまで計算機アーキテクチャに関する研究</li>
+      <li>GPUやメニーコア，FPGAなどの高性能計算向けアーキテクチャの研究</li>
+      <li>高性能並列処理コンパイラの研究</li>
+      <li>大規模データ処理 (ビッグデータ) 技術の研究</li>
+      <li>
+        大規模計算機を支えるストレージ技術やシステムソフトウェアに関する研究
+      </li>
+      <li>大規模計算機における高性能数値計算技術の研究</li>
+    </ul>
+    <p>
+      特に，筑波大学計算科学研究センターで運用されている多重複合型演算加速スーパーコンピュータCygnus,
+      最先端共同HPC基盤施設（JCAHPC）のOakforest-PACSでは，
+      これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており，
+      並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算を目指した研究を進めています．
+    </p>
+  </section>
+  <section>
+    <h2>What's news</h2>
+    <ul>
+      {
+        news.map((frontmatter) => (
+          <li>
+            <span>{frontmatter.date}</span>
+            <a href={`/news/${frontmatter.year}/${frontmatter.slug}`}>
+              {frontmatter.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>

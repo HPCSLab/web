@@ -1,6 +1,0 @@
-:8080 {
-	file_server {
-		root dist
-	}
-	encode gzip zstd 
-}

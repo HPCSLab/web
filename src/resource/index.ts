@@ -1,5 +1,4 @@
 import { type Member, members as membersSrc } from "./members";
-import { type News, news as newsSrc } from "./news";
 import {
   type Publication,
   publications as publicationsSrc,
@@ -9,17 +8,8 @@ import "./global.css";
 type NewsQuery = {
   slug?: string;
   year?: number;
+  limit?: number;
 };
-
-export async function news(query: NewsQuery): Promise<News[]> {
-  return newsSrc
-    .filter((news) => (query.slug ? news.slug === query.slug : true))
-    .filter((news) =>
-      query.year
-        ? query.year == new Date(news.frontmatter.timestamp).getUTCFullYear()
-        : true
-    );
-}
 
 type MembersQuery = {
   username?: string;

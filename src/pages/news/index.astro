@@ -1,0 +1,19 @@
+---
+import Base from "../../layouts/base.astro";
+import { news } from "./index";
+---
+
+<Base title="News">
+  <ul>
+    {
+      news.map((frontmatter) => (
+        <li>
+          <span>{frontmatter.date}</span>
+          <a href={`/news/${frontmatter.year}/${frontmatter.slug}`}>
+            {frontmatter.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

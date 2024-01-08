@@ -19,7 +19,7 @@ const forBachelorsFrontmatterValidator = z.object({
       z.object({
         name: z.string(),
         number: z.number().int(),
-      })
+      }),
     )
     .nullable(),
 });

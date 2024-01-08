@@ -1,0 +1,43 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+const { title } = Astro.props;
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="generator" content={Astro.generator} />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg-color: white;
+    --link-color: #90afff;
+    --visited-link-color: #24479e;
+    --bg-dark: #313539;
+    --typo-gray: #acaeaf;
+  }
+
+  a:link {
+    color: var(--link-color);
+  }
+
+  a:visited {
+    color: var(--visited-link-color);
+  }
+</style>
