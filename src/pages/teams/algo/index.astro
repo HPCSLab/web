@@ -5,6 +5,8 @@ import BoolshelfImage from "./img/ateam-bookshelf.jpg";
 import ServerImage from "./img/server-front.jpg";
 import Members from "../../../components/teams/members.astro";
 import members from "./members.yml";
+import HoverLink from "../../../components/hover-link.astro";
+import recentWorks from "./recent-works.yml";
 ---
 
 <Base title="Algorithm team">
@@ -20,6 +22,9 @@ import members from "./members.yml";
     <section>
       <div>
         <h2>高橋 大介 教授</h2>
+        <HoverLink href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/">
+          個人ページ
+        </HoverLink>
         <ul>
           <li>高性能数値計算に関する研究</li>
           <li>高性能並列数値計算ソフトウェア</li>
@@ -34,6 +39,9 @@ import members from "./members.yml";
     <section>
       <div>
         <h2>多田野 寛人 助教</h2>
+        <HoverLink href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/">
+          個人ページ
+        </HoverLink>
         <ul>
           <li>大規模線形計算アルゴリズムに関する研究</li>
           <li>
@@ -106,6 +114,33 @@ import members from "./members.yml";
         <p>
           筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
         </p>
+        <ul class="recent-works">
+          {
+            recentWorks.map((work) => (
+              <li class="work">
+                <div class="work-title">
+                  {work.url ? (
+                    <HoverLink href={work.url}>{work.title}</HoverLink>
+                  ) : (
+                    work.title
+                  )}
+                </div>
+                <div class="work-detail">
+                  <ul class="authors-container">
+                    {work.authors.map((author) => (
+                      <li class="author">{author}</li>
+                    ))}
+                  </ul>
+                  <ul class="description-container">
+                    {work.description.map((desc) => (
+                      <li class="description">{desc}</li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </section>
   </div>
@@ -116,6 +151,14 @@ import members from "./members.yml";
     margin-top: 2em;
     font-size: xx-large;
     font-weight: bold;
+  }
+
+  .recent-works {
+    list-style: none;
+  }
+
+  .work-detail {
+    margin-left: 1em;
   }
 
   .root {
@@ -141,6 +184,35 @@ import members from "./members.yml";
   .members-section {
     background-color: var(--bg-dark);
     color: white;
+  }
+
+  .work-title {
+    font-size: large;
+  }
+
+  .authors-container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+  }
+
+  .description-container {
+    margin: 0;
+    list-style: none;
+  }
+
+  .work {
+    margin-bottom: 1em;
+  }
+
+  .description {
+    font-size: small;
+  }
+
+  .author {
+    margin-right: 1em;
+    font-size: small;
   }
 
   h2 {
