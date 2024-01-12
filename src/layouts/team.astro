@@ -12,9 +12,14 @@ const { name, imgSrc, imgAlt } = Astro.props;
 ---
 
 <Base>
-  <PageHeading>
-    {name}
-  </PageHeading>
+  <div class="img-triming">
+    <Image src={imgSrc} alt={imgAlt} class="header-img" />
+    <div class="heading-text">
+      <PageHeading mode="transparent">
+        {name}
+      </PageHeading>
+    </div>
+  </div>
   <slot />
 </Base>
 
@@ -22,5 +27,27 @@ const { name, imgSrc, imgAlt } = Astro.props;
   h1 {
     font-size: var(--font-size-3xl);
     margin: 2rem;
+  }
+
+  .img-triming {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    overflow-y: hidden;
+    height: 12rem;
+    max-height: 12rem;
+  }
+
+  .header-img {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+
+  .heading-text {
+    backdrop-filter: blur(2px);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 </style>
