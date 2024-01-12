@@ -1,4 +1,6 @@
 ---
+import PageHeading from "../components/atom/page-heading.astro";
+import WidthShrinker from "../components/atom/width-shrinker.astro";
 import Base from "./base.astro";
 import { Image } from "astro:assets";
 interface Props {
@@ -10,10 +12,9 @@ const { name, imgSrc, imgAlt } = Astro.props;
 ---
 
 <Base>
-  <div>
-    <Image src={imgSrc} alt={imgAlt} />
-  </div>
-  <h1>{name}</h1>
+  <PageHeading>
+    {name}
+  </PageHeading>
   <slot />
 </Base>
 

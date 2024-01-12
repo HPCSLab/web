@@ -10,10 +10,7 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="generator" content={Astro.generator} />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"
-    />
+    <link rel="stylesheet" href="/destyle.css" />
   </head>
   <body>
     <Header />
@@ -37,13 +34,15 @@ const { title } = Astro.props;
     --color-text-normal: rgba(0, 0, 0, 80%);
     --color-text-disable: rgba(0, 0, 0, 50%);
 
+    --color-text-near-primary: rgba(48, 34, 81, 80%);
     --color-inverted-text-strong: rgba(255, 255, 255, 95%);
     --color-inverted-text-normal: rgba(255, 255, 255, 80%);
     --color-inverted-text-disable: rgba(255, 255, 255, 50%);
 
     --color-bg-white: #f8f6ff;
-    --color-bg-dark: #28252d;
+    --color-bg-dark: #2c2635;
 
+    --font-size-sm: 0.75rem;
     --font-size-base: 1rem;
     --font-size-lg: 1.125rem;
     --font-size-xl: 1.25rem;

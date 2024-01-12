@@ -1,19 +1,30 @@
 ---
 interface Props {
-  href: string;
+  href?: string;
 }
 
 const { href } = Astro.props;
 ---
 
-<a class="root" href={href}>
-  <div>
-    <slot />
-  </div>
-  <div class="underline-wrapper">
-    <div class="underline"></div>
-  </div>
-</a>
+{
+  href ? (
+    <a class="root" href={href}>
+      <div>
+        <slot />
+      </div>
+      <div class="underline-wrapper">
+        <div class="underline" />
+      </div>
+    </a>
+  ) : (
+    <span class="root">
+      <div>
+        <slot />
+      </div>
+      <div class="underline-wrapper"></div>
+    </span>
+  )
+}
 
 <style>
   .root {

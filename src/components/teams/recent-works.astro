@@ -1,5 +1,6 @@
 ---
-import HoverLink from "../hover-link.astro";
+import ExternalLink from "../external-link.astro";
+import ReadMoreLink from "../read-more-link.astro";
 
 export type Work = {
   title: string;
@@ -20,11 +21,7 @@ const { works } = Astro.props;
     works.map((work) => (
       <li class="work">
         <div class="work-title">
-          {work.url ? (
-            <HoverLink href={work.url}>{work.title}</HoverLink>
-          ) : (
-            work.title
-          )}
+          <ExternalLink href={work.url}>{work.title}</ExternalLink>
         </div>
         <div class="work-detail">
           <ul class="authors-container">
@@ -42,3 +39,30 @@ const { works } = Astro.props;
     ))
   }
 </ul>
+
+<style>
+  .work {
+    margin-bottom: 2rem;
+  }
+
+  .work-title {
+    font-size: var(--font-size-lg);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-detail {
+    margin-left: 2rem;
+  }
+
+  .authors-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+  }
+
+  .author {
+    color: var(--color-text-disable);
+    margin-right: 0.5em;
+  }
+</style>

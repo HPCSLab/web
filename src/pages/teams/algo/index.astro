@@ -3,17 +3,23 @@ import { Image } from "astro:assets";
 import Team from "../../../layouts/team.astro";
 import BoolshelfImage from "./img/ateam-bookshelf.jpg";
 import ServerImage from "./img/server-front.jpg";
-import Members from "../../../components/teams/members.astro";
-import members from "./members.yml";
-import HoverLink from "../../../components/hover-link.astro";
+import Researchers from "../../../components/teams/researchers.astro";
+import researchers from "./researchers.yml";
+import Students from "../../../components/teams/students.astro";
+import students from "./students.yml";
 import recentWorks from "./recent-works.yml";
 import TopLevelSection from "../../../components/teams/top-level-section.astro";
 import RecentWorks from "../../../components/teams/recent-works.astro";
 import List from "../../../components/atom/list.astro";
 import ListItem from "../../../components/atom/list-item.astro";
 import Typography from "../../../components/atom/typography.astro";
-import SideBySide from "../../../components/atom/side-by-side.astro";
-import Centering from "../../../components/atom/centering.astro";
+import ChevronListItem from "../../../components/atom/chevron-list-item.astro";
+import Keyword from "../../../components/atom/keyword.astro";
+import ReadMoreLink from "../../../components/read-more-link.astro";
+import Row from "../../../components/layout/row.astro";
+import Right from "../../../components/layout/right.astro";
+import Left from "../../../components/layout/left.astro";
+import { z } from "zod";
 ---
 
 <Team
@@ -23,92 +29,161 @@ import Centering from "../../../components/atom/centering.astro";
 >
   <TopLevelSection headingText="高橋 大介 教授" backgroundInverted={false}>
     <List ordered={false}>
-      <ListItem>高性能数値計算に関する研究</ListItem>
-      <ListItem>高性能並列数値計算ソフトウェア</ListItem>
-      <ListItem>
-        GPUやMIC（Many Integrated Core）などを用いた高性能計算
-      </ListItem>
-      <ListItem>高精度計算アルゴリズムとその応用</ListItem>
+      <ChevronListItem>
+        <Keyword>高性能数値計算</Keyword>に関する研究
+      </ChevronListItem>
+      <ChevronListItem>
+        高性能<Keyword>並列数値計算</Keyword>ソフトウェア
+      </ChevronListItem>
+      <ChevronListItem>
+        <Keyword>GPU</Keyword>や <Keyword>
+          MIC（Many Integrated Core）
+        </Keyword>などを用いた高性能計算
+      </ChevronListItem>
+      <ChevronListItem>
+        <Keyword>高精度計算</Keyword>アルゴリズムとその応用
+      </ChevronListItem>
     </List>
     <Typography>
       我々は，限られた時間の中で大規模な科学技術計算を行うために，スーパーコンピュータの性能をできるだけ発揮できるようなアルゴリズムやプログラミングに関する研究を行っています．高速なプログラムを作成するには，コンピュータの仕組みや数学について深い理解が必要になりますが、努力が性能という数字にそのまま反映されることから，やりがいがある分野です．
     </Typography>
-    <HoverLink href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/">
+    <ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/">
       個人ページ
-    </HoverLink>
+    </ReadMoreLink>
   </TopLevelSection>
   <TopLevelSection headingText="多田野 寛人 助教" backgroundInverted={false}>
-    <HoverLink href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/">
-      個人ページ
-    </HoverLink>
     <List ordered={false}>
-      <ListItem>大規模線形計算アルゴリズムに関する研究</ListItem>
-      <ListItem>
-        大規模連立一次方程式の高速・高精度・高信頼性アルゴリズムの構築
-      </ListItem>
-      <ListItem>連立一次方程式の 高速化のための前処理法の開発</ListItem>
-      <ListItem>並列計算環境における大規模固有値問題の高速解法の開発</ListItem>
+      <ChevronListItem>
+        <Keyword>大規模線形計算</Keyword>アルゴリズムに関する研究
+      </ChevronListItem>
+      <ChevronListItem>
+        <Keyword>
+          大規模連立一次方程式
+        </Keyword>の高速・高精度・高信頼性アルゴリズムの構築
+      </ChevronListItem>
+      <ChevronListItem>
+        <Keyword>連立一次方程式</Keyword>の 高速化のための前処理法の開発
+      </ChevronListItem>
+      <ChevronListItem>
+        並列計算環境における <Keyword>大規模固有値問題</Keyword>の高速解法の開発
+      </ChevronListItem>
     </List>
     <Typography>
       我々は，連立一次方程式や固有値問題をはじめとした数値解法アルゴリズムの開発を行っています．
     </Typography>
+    <ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/">
+      個人ページ
+    </ReadMoreLink>
   </TopLevelSection>
   <TopLevelSection
     headingText="アルゴリズムチームの使っている計算機について"
     backgroundInverted={false}
   >
-    <SideBySide>
-      <Typography>
-        チームで所有している計算機としては、IntelのXeonプロセッサを搭載した4ノードのクラスタ2つのほか、IntelのXeon
-        Phiプロセッサを搭載した4ノードのクラスタがあります。これらは学生によって管理・運用されていて自由に使うことができます。また本研究室は計算科学研究センターと協力関係にあり、研究内容によっては筑波大学が運用するスーパーコンピュータCygnus
-        (理論ピーク性能2.4PFLOPS)，Pegasus
-        (理論ピーク性能6.5PFLOPS)を利用できます。これらの様々な計算機資源を利用して研究を行うことが可能です。
-      </Typography>
-      <Image
-        src={ServerImage}
-        alt="Algorithmチームの計算機クラスタ"
-        class="cluster"
-      />
-    </SideBySide>
+    <Row>
+      <Left>
+        <Typography>
+          チームで所有している計算機としては、IntelのXeonプロセッサを搭載した4ノードのクラスタ2つのほか、IntelのXeon
+          Phiプロセッサを搭載した4ノードのクラスタがあります。これらは学生によって管理・運用されていて自由に使うことができます。また本研究室は計算科学研究センターと協力関係にあり、研究内容によっては筑波大学が運用するスーパーコンピュータCygnus
+          (理論ピーク性能2.4PFLOPS)，Pegasus
+          (理論ピーク性能6.5PFLOPS)を利用できます。これらの様々な計算機資源を利用して研究を行うことが可能です。
+        </Typography>
+      </Left>
+      <Right>
+        <Image
+          src={ServerImage}
+          alt="Algorithmチームの計算機クラスタ"
+          class="pic-cluster"
+        />
+      </Right>
+    </Row>
   </TopLevelSection>
   <TopLevelSection
     headingText="FFT (高速フーリエ変換)"
     backgroundInverted={false}
   >
     <Typography>高橋教授の研究内容のひとつであるFFTをご紹介します。</Typography>
-    <Centering>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/GPJx5JTGQEU"
-        title="配信講義 計算科学技術特論B (2020) 第6回"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </Centering>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/GPJx5JTGQEU"
+      title="配信講義 計算科学技術特論B (2020) 第6回"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
   </TopLevelSection>
   <TopLevelSection headingText="メンバー" backgroundInverted={true}>
-    <Members members={members} />
+    <Researchers researchers={researchers} />
+    <Students students={students} />
   </TopLevelSection>
   <TopLevelSection
     headingText="近年の研究成果について"
     backgroundInverted={false}
   >
-    <Typography>研究成果については，以下のページよりご覧ください．</Typography>
-    <List ordered={false}>
-      <ListItem>
-        高橋 教授 : https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/pub-j.html
-      </ListItem>
-      <ListItem>
-        多田野 助教 : https://www.hpcs.cs.tsukuba.ac.jp/~tadano/publication.html
-      </ListItem>
-    </List>
     <Typography>
-      一例として，2023年までに国際学会，情報処理学会HPC研究会等に投稿した研究会原稿を紹介します．
+      教員の研究成果については，以下のページよりご覧ください．
     </Typography>
-    <Typography>
-      筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
-    </Typography>
-    <RecentWorks works={recentWorks} />
+    <div>
+      <div class="teacher-work-link-wrapper">
+        <ReadMoreLink
+          href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/pub-j.html"
+        >
+          <div class="work-author">
+            <span class="work-author-name">高橋 大介</span>
+            <span class="work-author-role">教授</span>
+          </div>
+        </ReadMoreLink>
+      </div>
+
+      <div class="teacher-work-link-wrapper">
+        <ReadMoreLink
+          href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/publication.html"
+        >
+          <div class="work-author">
+            <span class="work-author-name">多田野 寛人</span>
+            <span class="work-author-role">助教</span>
+          </div>
+        </ReadMoreLink>
+      </div>
+
+      <Typography>
+        一例として，2023年までに国際学会，情報処理学会HPC研究会等に投稿した研究会原稿を紹介します．
+      </Typography>
+      <Typography>
+        筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
+      </Typography>
+      <RecentWorks works={recentWorks} />
+    </div>
   </TopLevelSection>
+
+  <style>
+    .pic-cluster {
+      width: auto;
+      height: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .teacher-work-link-wrapper {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    .work-author {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+    }
+
+    .work-author-name {
+      color: var(--color-text-strong);
+      font-size: var(--font-size-lg);
+    }
+
+    .work-author-role {
+      color: var(--color-text-disable);
+      font-size: var(--font-size-normal);
+
+      margin-left: 0.5em;
+    }
+  </style>
 </Team>

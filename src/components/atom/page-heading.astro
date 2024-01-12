@@ -1,0 +1,21 @@
+---
+import WidthShrinker from "./width-shrinker.astro";
+---
+
+<h1>
+  <WidthShrinker>
+    <slot />
+  </WidthShrinker>
+</h1>
+
+<style>
+  h1 {
+    font-size: var(--font-size-3xl);
+    color: var(--color-inverted-text-strong);
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--color-bg-dark);
+  }
+</style>

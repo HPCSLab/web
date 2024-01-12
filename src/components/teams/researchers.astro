@@ -1,0 +1,44 @@
+---
+import Typography from "../atom/typography.astro";
+import Researcher from "./researcher.astro";
+
+export type Member = {
+  name: string;
+  role: string;
+  keywords?: string[];
+  message: string;
+  icon: string;
+};
+
+interface Props {
+  researchers: Member[];
+}
+const { researchers: members } = Astro.props;
+---
+
+<div class="container">
+  {
+    members.map((member) => (
+      <div class="child-wrapper">
+        <Researcher
+          name={member.name}
+          role={member.role}
+          keywords={member.keywords}
+          icon={member.icon}
+        >
+          <Typography>{member.message}</Typography>
+        </Researcher>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .container {
+  }
+
+  .child-wrapper {
+    margin-bottom: 2rem;
+    height: 100%;
+  }
+</style>

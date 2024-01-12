@@ -1,0 +1,22 @@
+<div>
+  <span>
+    <slot />
+  </span>
+</div>
+
+<style>
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-size: var(--font-size-sm);
+    border-radius: 1em;
+    background-color: var(--color-triadic-2);
+    padding-block: 0.2em;
+    padding-inline: 0.5em;
+    color: var(--color-inverted-text-strong);
+    box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.3);
+  }
+</style>

@@ -1,0 +1,75 @@
+---
+import { Icon } from "astro-icon/components";
+interface Props {
+  href?: string;
+}
+
+const { href } = Astro.props;
+---
+
+{
+  href ? (
+    <a href={href} class="root">
+      <div class="circle">
+        <Icon class="arrow" name="material-symbols:link" />
+      </div>
+      <span class="text">
+        <slot />
+      </span>
+    </a>
+  ) : (
+    <span class="root">
+      <div class="circle">
+        <Icon class="arrow" name="material-symbols:link-off" />
+      </div>
+      <span class="text">
+        <slot />
+      </span>
+    </span>
+  )
+}
+
+<style>
+  .root {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    align-items: center;
+  }
+
+  .text {
+  }
+
+  a.root .text {
+    text-decoration: underline;
+  }
+
+  .arrow {
+    transform: scale(1);
+    transition: all 0.2s ease;
+    color: var(--color-primary);
+  }
+
+  span .arrow {
+    color: var(--color-triadic-1);
+  }
+
+  .circle {
+    margin-right: 0.5em;
+    height: 1.5rem;
+    width: 1.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a.root:hover .arrow {
+    transform: scale(1.5);
+  }
+</style>
