@@ -4,7 +4,7 @@ import Base from "../layouts/base.astro";
 import COMA from "../resource/img/carousel/COMA.jpg";
 import Cygnus from "../resource/img/carousel/Cygnus.png";
 import HA_PACS from "../resource/img/carousel/HA-PACS.jpg";
-import { news } from "../resource/img/pages/news/index";
+import { news } from "../resource/pages/news";
 import Typography from "../components/atom/typography.astro";
 import List from "../components/list/list.astro";
 import ListItem from "../components/list/list-item.astro";
@@ -15,6 +15,8 @@ import ResponsiveWidth from "../components/layout/responsive-width.astro";
 import ChevronListItem from "../components/list/chevron-list-item.astro";
 import NoImgHeader from "../components/common/no-img-header.astro";
 import ExternalLink from "../components/anchor/external-link.astro";
+
+console.log(news);
 
 const carouselPictures: CarouselPicture[] = [
   {
