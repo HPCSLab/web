@@ -1,8 +1,7 @@
 ---
-import PageHeading from "../components/atom/page-heading.astro";
-import WidthShrinker from "../components/atom/width-shrinker.astro";
+import BlurImgHeader from "../components/common/blur-img-header.astro";
 import Base from "./base.astro";
-import { Image } from "astro:assets";
+
 interface Props {
   name: string;
   imgSrc: ImageMetadata;
@@ -12,14 +11,9 @@ const { name, imgSrc, imgAlt } = Astro.props;
 ---
 
 <Base>
-  <div class="img-triming">
-    <Image src={imgSrc} alt={imgAlt} class="header-img" />
-    <div class="heading-text">
-      <PageHeading mode="transparent">
-        {name}
-      </PageHeading>
-    </div>
-  </div>
+  <BlurImgHeader imgAlt={imgAlt} imgSrc={imgSrc}>
+    {name}
+  </BlurImgHeader>
   <slot />
 </Base>
 

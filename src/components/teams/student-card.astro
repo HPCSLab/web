@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import Keyword from "../atom/keyword.astro";
 import Icons from "../../resource/img/icons";
 import { unwrap } from "../../lib/util";
 import Badge from "../atom/badge.astro";
@@ -20,8 +19,8 @@ interface Props {
     </div>
     <div class="top-text">
       <h3>
-        <span class="name">{Astro.props.name}</span>
-        <span class="role">{Astro.props.role}</span>
+        <div class="name">{Astro.props.name}</div>
+        <div class="role">{Astro.props.role}</div>
       </h3>
       {
         Astro.props.keywords ? (
@@ -42,6 +41,9 @@ interface Props {
   </div>
 
   <style>
+    .description {
+      padding-top: 1rem;
+    }
     .texts-wrapper {
       margin-left: 2rem;
     }
@@ -90,14 +92,14 @@ interface Props {
     }
 
     .icon-wrapper {
-      height: 4rem;
-      width: 4rem;
-      min-height: 4rem;
-      min-width: 4rem;
+      height: 3rem;
+      width: 3rem;
+      min-height: 3rem;
+      min-width: 3rem;
       overflow-x: hidden;
       overflow-y: hidden;
       border-radius: 50%;
-      margin-right: 2rem;
+      margin-right: 1rem;
     }
   </style>
 </section>

@@ -1,7 +1,7 @@
 ---
-import HoverLink from "../../components/hover-link.astro";
+import ReadMoreLink from "../../components/anchor/read-more-link.astro";
 import Base from "../../layouts/base.astro";
-import { news } from "./index";
+import { news } from "../../resource/img/pages/news/index";
 ---
 
 <Base title="News">
@@ -14,9 +14,11 @@ import { news } from "./index";
         news.map((frontmatter) => (
           <li>
             <div class="title">
-              <HoverLink href={`/news/${frontmatter.year}/${frontmatter.slug}`}>
+              <ReadMoreLink
+                href={`/news/${frontmatter.year}/${frontmatter.slug}`}
+              >
                 {frontmatter.title}
-              </HoverLink>
+              </ReadMoreLink>
             </div>
             <div class="date">{frontmatter.date}</div>
             <p class="description">{frontmatter.description}</p>
@@ -62,3 +64,4 @@ import { news } from "./index";
     margin-left: 1em;
   }
 </style>
+../../resource/img/pages/news/index

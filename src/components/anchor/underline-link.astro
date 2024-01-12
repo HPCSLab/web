@@ -21,7 +21,7 @@ const { href } = Astro.props;
       <div>
         <slot />
       </div>
-      <div class="underline-wrapper"></div>
+      <div class="underline-wrapper" />
     </span>
   )
 }
@@ -57,8 +57,5 @@ const { href } = Astro.props;
       width 0.1s ease,
       height 0.1s ease,
       border-radius 0.1s ease;
-  }
-
-  .root:hover {
   }
 </style>

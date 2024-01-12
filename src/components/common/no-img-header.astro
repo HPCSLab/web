@@ -1,14 +1,11 @@
 ---
-import WidthShrinker from "./width-shrinker.astro";
-interface Props {
-  mode: "transparent" | undefined;
-}
+import ResponsiveWidth from "../layout/responsive-width.astro";
 ---
 
-<h1 class={Astro.props.mode}>
-  <WidthShrinker>
+<h1>
+  <ResponsiveWidth>
     <slot />
-  </WidthShrinker>
+  </ResponsiveWidth>
 </h1>
 
 <style>
@@ -23,6 +20,6 @@ interface Props {
   }
 
   .transparent {
-    background-color: rgba(1,1,2,0.5);
+    background-color: rgba(1, 1, 2, 0.5);
   }
-rgb(1, 1, 2)</style>
+</style>

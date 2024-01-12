@@ -1,25 +1,27 @@
 ---
 import { Image } from "astro:assets";
 import Team from "../../../layouts/team.astro";
-import BoolshelfImage from "./img/ateam-bookshelf.jpg";
-import ServerImage from "./img/server-front.jpg";
-import Researchers from "../../../components/teams/researchers.astro";
-import researchers from "./researchers.yml";
-import Students from "../../../components/teams/students.astro";
-import students from "./students.yml";
-import recentWorks from "./recent-works.yml";
-import TopLevelSection from "../../../components/teams/top-level-section.astro";
-import RecentWorks from "../../../components/teams/recent-works.astro";
-import List from "../../../components/atom/list.astro";
-import ListItem from "../../../components/atom/list-item.astro";
+import BoolshelfImage from "../../../resource/img/pages/team/algo/ateam-bookshelf.jpg";
+import ServerImage from "../../../resource/img/pages/team/algo/server-front.jpg";
+import FacultyCard from "../../../components/teams/faculty-card.astro";
+import {
+  students,
+  faculties,
+  recentWorks,
+} from "../../../resource/pages/team/algo/index";
+import TopLevelSection from "../../../components/layout/top-level-section.astro";
+import List from "../../../components/list/list.astro";
 import Typography from "../../../components/atom/typography.astro";
-import ChevronListItem from "../../../components/atom/chevron-list-item.astro";
+import ChevronListItem from "../../../components/list/chevron-list-item.astro";
 import Keyword from "../../../components/atom/keyword.astro";
-import ReadMoreLink from "../../../components/read-more-link.astro";
+import ReadMoreLink from "../../../components/anchor/read-more-link.astro";
 import Row from "../../../components/layout/row.astro";
 import Right from "../../../components/layout/right.astro";
 import Left from "../../../components/layout/left.astro";
-import { z } from "zod";
+import RecentWorks from "../../../components/teams/recent-works.astro";
+import VSpace2Rem from "../../../components/layout/v-space-2rem.astro";
+import ResponsiveCardsGrid from "../../../components/layout/responsive-cards-grid.astro";
+import Student from "../../../components/teams/student-card.astro";
 ---
 
 <Team
@@ -107,13 +109,35 @@ import { z } from "zod";
       height="315"
       src="https://www.youtube.com/embed/GPJx5JTGQEU"
       title="配信講義 計算科学技術特論B (2020) 第6回"
-      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
   </TopLevelSection>
   <TopLevelSection headingText="メンバー" backgroundInverted={true}>
-    <Researchers researchers={researchers} />
-    <Students students={students} />
+    <div>
+      {
+        faculties.map((faculty) => (
+          <VSpace2Rem>
+            <FacultyCard
+              name={faculty.name}
+              icon={faculty.icon}
+              role={faculty.role}
+              keywords={faculty.keywords}
+            >
+              <Typography>{faculty.message}</Typography>
+            </FacultyCard>
+          </VSpace2Rem>
+        ))
+      }
+    </div>
+    <ResponsiveCardsGrid>
+      {
+        students.map((student) => (
+          <Student name={student.name} icon={student.icon} role={student.role}>
+            <Typography>{student.message}</Typography>
+          </Student>
+        ))
+      }
+    </ResponsiveCardsGrid>
   </TopLevelSection>
   <TopLevelSection
     headingText="近年の研究成果について"

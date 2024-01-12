@@ -1,11 +1,10 @@
 ---
-import ExternalLink from "../external-link.astro";
-import ReadMoreLink from "../read-more-link.astro";
+import ExternalLink from "../anchor/external-link.astro";
 
 export type Work = {
   title: string;
   authors: string[];
-  url?: string;
+  url?: string | null;
   description: string[];
 };
 

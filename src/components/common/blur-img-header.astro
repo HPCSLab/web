@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets";
+import ResponsiveWidth from "../layout/responsive-width.astro";
+
+interface Props {
+  imgSrc: ImageMetadata;
+  imgAlt: string;
+}
+
+const { imgSrc, imgAlt } = Astro.props;
+---
+
+<div class="img-triming">
+  <Image src={imgSrc} alt={imgAlt} class="header-img" />
+  <div class="heading-text">
+    <h1>
+      <ResponsiveWidth>
+        <slot />
+      </ResponsiveWidth>
+    </h1>
+  </div>
+</div>
+
+<style>
+  .img-triming {
+    position: relative;
+    height: 12rem;
+    max-height: 12rem;
+    overflow-y: hidden;
+  }
+
+  .header-img {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+
+  .heading-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(1, 1, 10, 0.6);
+  }
+
+  h1 {
+    font-size: var(--font-size-3xl);
+    color: var(--color-inverted-text-strong);
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+</style>

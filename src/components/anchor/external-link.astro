@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 interface Props {
-  href?: string;
+  href?: string | null;
 }
 
 const { href } = Astro.props;
@@ -47,7 +47,7 @@ const { href } = Astro.props;
 
   .arrow {
     transform: scale(1);
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
     color: var(--color-primary);
   }
 

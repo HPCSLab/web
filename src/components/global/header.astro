@@ -1,6 +1,6 @@
 ---
-import UnderlineAnchor from "./atom/underline-anchor.astro";
-import HoverLink from "./hover-link.astro";
+import UnderlineAnchor from "../anchor/underline-link.astro";
+import ExternalLink from "../anchor/external-link.astro";
 
 export type SubPage = {
   title: string;
@@ -138,9 +138,9 @@ const pages: IndexPage[] = [
                     ? null
                     : page.children.map((subpage) => (
                         <li>
-                          <HoverLink href={subpage.url} bgColor="light">
+                          <ExternalLink href={subpage.url}>
                             {subpage.title}
-                          </HoverLink>
+                          </ExternalLink>
                         </li>
                       ))}
                 </ul>

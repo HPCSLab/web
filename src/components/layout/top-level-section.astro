@@ -1,6 +1,6 @@
 ---
-import WidthShrinker from "../atom/width-shrinker.astro";
-import HoverLink from "../hover-link.astro";
+import ResponsiveWidth from "../layout/responsive-width.astro";
+import ReadMoreLink from "../anchor/read-more-link.astro";
 interface Props {
   headingText: string;
   headingUrl?: string;
@@ -13,20 +13,20 @@ const { headingText, headingUrl, backgroundInverted } = Astro.props;
 <section class={backgroundInverted ? "bg-inverted" : null}>
   <div>
     <h2>
-      <WidthShrinker>
+      <ResponsiveWidth>
         {
           headingUrl ? (
-            <HoverLink href={headingUrl}>{headingText}</HoverLink>
+            <ReadMoreLink href={headingUrl}>{headingText}</ReadMoreLink>
           ) : (
             headingText
           )
         }
-      </WidthShrinker>
+      </ResponsiveWidth>
     </h2>
   </div>
-  <WidthShrinker>
+  <ResponsiveWidth>
     <slot />
-  </WidthShrinker>
+  </ResponsiveWidth>
 </section>
 
 <style>
