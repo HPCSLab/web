@@ -16,8 +16,6 @@ import ChevronListItem from "../components/list/chevron-list-item.astro";
 import NoImgHeader from "../components/common/no-img-header.astro";
 import ExternalLink from "../components/anchor/external-link.astro";
 
-console.log(news);
-
 const carouselPictures: CarouselPicture[] = [
   {
     src: COMA,
@@ -37,7 +35,6 @@ const carouselPictures: CarouselPicture[] = [
 <Base>
   <Carousel pictures={carouselPictures} width={1200} height={300} />
 
-  <h1 class="main-heading"></h1>
   <NoImgHeader>HPCS Laboratory</NoImgHeader>
   <section class="about">
     <ResponsiveWidth>

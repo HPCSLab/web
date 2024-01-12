@@ -1,0 +1,162 @@
+---
+import type { IndexPage } from "./header.astro";
+import UnderlineLink from "../anchor/underline-link.astro";
+import ExternalLink from "../anchor/external-link.astro";
+
+interface Props {
+  pages: IndexPage[];
+}
+
+const { pages } = Astro.props;
+---
+
+<nav class="nav-wrapper">
+  <ul class="nav-index-container">
+    {
+      pages.map((page) => (
+        <li class="nav-index">
+          <div class="nav-index-link-wrapper">
+            {page.url ? (
+              <UnderlineLink href={page.url}>{page.title}</UnderlineLink>
+            ) : (
+              <span>{page.title}</span>
+            )}
+          </div>
+          {page.children.length > 0 ? (
+            <nav
+              class:list={
+                page.title === pages[pages.length - 1].title
+                  ? ["drawer-last", "drawer"]
+                  : ["drawer"]
+              }
+            >
+              <ul>
+                {page.children.length == 0
+                  ? null
+                  : page.children.map((subpage) => (
+                      <li>
+                        <ExternalLink href={subpage.url}>
+                          {subpage.title}
+                        </ExternalLink>
+                      </li>
+                    ))}
+              </ul>
+            </nav>
+          ) : null}
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .nav-index-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .nav-index-link-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-index-link-wrapper a {
+    padding: 0.5em;
+  }
+
+  .nav-index-link-wrapper > a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nav-index {
+    margin: 0 0.5rem 0 0.5rem;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+
+  @keyframes show-drawer {
+    0% {
+      transform: scale(0.95);
+      visibility: visible;
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes hide-drawer {
+    0% {
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    99% {
+      visibility: visible;
+      transform: scale(0.95);
+    }
+
+    100% {
+      visibility: hidden;
+    }
+  }
+
+  .drawer {
+    position: absolute;
+    width: var(--drawer-width);
+    left: calc(50% - var(--drawer-width) / 2);
+    visibility: hidden;
+    transition:
+      transform 0.1s ease-out,
+      visibility 0.1s ease-out;
+    z-index: 100;
+    transform: scale(0.95);
+  }
+
+  .drawer-last {
+    right: -1.5rem;
+    left: unset;
+    width: 20em;
+  }
+
+  .drawer > ul {
+    border-radius: 2px;
+    background-color: white;
+    padding: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+  }
+
+  .drawer > ul > li {
+    padding: 0.7em 0em 0.7em 0.5em;
+    width: 100%;
+  }
+
+  .drawer > ul > li:hover {
+  }
+
+  .nav-index-link-wrapper:hover a {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+  }
+
+  .drawer:hover {
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .nav-index:hover > .drawer {
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .nav-wrapper {
+    height: 100%;
+  }
+</style>
