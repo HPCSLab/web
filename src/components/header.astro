@@ -1,4 +1,5 @@
 ---
+import UnderlineAnchor from "./atom/underline-anchor.astro";
 import HoverLink from "./hover-link.astro";
 
 export type SubPage = {
@@ -119,7 +120,7 @@ const pages: IndexPage[] = [
           <li class="nav-index">
             <div class="nav-index-link-wrapper">
               {page.url ? (
-                <a href={page.url}>{page.title}</a>
+                <UnderlineAnchor href={page.url}>{page.title}</UnderlineAnchor>
               ) : (
                 <span>{page.title}</span>
               )}
@@ -164,7 +165,7 @@ const pages: IndexPage[] = [
     justify-content: space-between;
     align-items: center;
     top: 0;
-    background-color: var(--color-bg-white);
+    background-color: white;
     position: sticky;
     z-index: 100;
     height: var(--header-height);
@@ -263,7 +264,7 @@ const pages: IndexPage[] = [
 
   .drawer > ul {
     border-radius: 2px;
-    background-color: var(--color-bg-white);
+    background-color: white;
     padding: 0.5em;
     margin: 0.5em;
     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
@@ -294,7 +295,7 @@ const pages: IndexPage[] = [
 
   .logo {
     font-size: var(--font-size-2xl);
-    font-weight: lighter;
+    font-weight: light;
     margin-left: 2rem;
     font-family: ui-monospace;
     margin-block-start: 0.5em;

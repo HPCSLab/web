@@ -1,0 +1,16 @@
+---
+import { Icon } from "astro-icon/components";
+import ListItem from "./list-item.astro";
+---
+
+<ListItem>
+  <Icon name="material-symbols:chevron-right-rounded" class="icon" />
+  <slot />
+</ListItem>
+
+<style>
+  .icon {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+  }
+</style>
