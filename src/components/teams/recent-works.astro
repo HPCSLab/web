@@ -1,0 +1,44 @@
+---
+import HoverLink from "../hover-link.astro";
+
+export type Work = {
+  title: string;
+  authors: string[];
+  url?: string;
+  description: string[];
+};
+
+interface Props {
+  works: Work[];
+}
+
+const { works } = Astro.props;
+---
+
+<ul class="recent-works">
+  {
+    works.map((work) => (
+      <li class="work">
+        <div class="work-title">
+          {work.url ? (
+            <HoverLink href={work.url}>{work.title}</HoverLink>
+          ) : (
+            work.title
+          )}
+        </div>
+        <div class="work-detail">
+          <ul class="authors-container">
+            {work.authors.map((author) => (
+              <li class="author">{author}</li>
+            ))}
+          </ul>
+          <ul class="description-container">
+            {work.description.map((desc) => (
+              <li class="description">{desc}</li>
+            ))}
+          </ul>
+        </div>
+      </li>
+    ))
+  }
+</ul>

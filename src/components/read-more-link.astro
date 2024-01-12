@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon/components";
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a href={href}>
+  <div class="circle">
+    <Icon class="arrow" name="material-symbols:arrow-right-alt-rounded" />
+  </div>
+  <slot />
+</a>
+
+<style>
+  a {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    align-items: center;
+  }
+
+  .arrow {
+    color: var(--color-inverted-text-strong);
+  }
+
+  .circle {
+    margin-right: 0.5em;
+    background-color: var(--color-primary);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a:hover .circle {
+    height: 2rem;
+    width: 2rem;
+  }
+</style>

@@ -1,0 +1,43 @@
+---
+import HoverLink from "../hover-link.astro";
+interface Props {
+  headingText: string;
+  headingUrl?: string;
+  backgroundInverted: boolean;
+}
+
+const { headingText, headingUrl, backgroundInverted } = Astro.props;
+---
+
+<section class={backgroundInverted ? "bg-inverted" : null}>
+  <h2>
+    {
+      headingUrl ? (
+        <HoverLink href={headingUrl}>{headingText}</HoverLink>
+      ) : (
+        headingText
+      )
+    }
+  </h2>
+  <slot />
+</section>
+
+<style>
+  bg-inverted {
+    background-color: var(--bg-dark);
+  }
+
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  section > h2 {
+    font-size: var(--font-size-xl);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+  }
+</style>

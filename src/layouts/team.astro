@@ -1,0 +1,25 @@
+---
+import Base from "./base.astro";
+import { Image } from "astro:assets";
+interface Props {
+  name: string;
+  imgSrc: ImageMetadata;
+  imgAlt: string;
+}
+const { name, imgSrc, imgAlt } = Astro.props;
+---
+
+<Base>
+  <div>
+    <Image src={imgSrc} alt={imgAlt} />
+  </div>
+  <h1>{name}</h1>
+  <slot />
+</Base>
+
+<style>
+  h1 {
+    font-size: var(--font-size-3xl);
+    margin: 2rem;
+  }
+</style>

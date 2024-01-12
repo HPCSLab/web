@@ -7,6 +7,12 @@ import Cygnus from "../resource/img/carousel/Cygnus.png";
 import HA_PACS from "../resource/img/carousel/HA-PACS.jpg";
 import { news } from "./news/index";
 import HoverLink from "../components/hover-link.astro";
+import Typography from "../components/atom/typography.astro";
+import List from "../components/atom/list.astro";
+import ListItem from "../components/atom/list-item.astro";
+import TopLevelSection from "../components/teams/top-level-section.astro";
+import Keyword from "../components/atom/keyword.astro";
+import ReadMoreLink from "../components/read-more-link.astro";
 
 const carouselPictures: CarouselPicture[] = [
   {
@@ -26,112 +32,96 @@ const carouselPictures: CarouselPicture[] = [
 
 <Base>
   <Carousel pictures={carouselPictures} width={1200} height={300} />
-  <div class="main-container">
-    <section class="about">
-      <h1 class="main-heading">HPCS Laboratory</h1>
-      <p>
-        筑波大学ハイパフォーマンス・コンピューティング・システム研究室では，超並列計算機からクラスタまで，高性能計算に関連した以下の研究を行っています．
-      </p>
-      <ul>
-        <li>各種並列処理システムにおける高性能計算と性能評価</li>
-        <li>プロセッサからネットワークまで計算機アーキテクチャに関する研究</li>
-        <li>GPUやメニーコア，FPGAなどの高性能計算向けアーキテクチャの研究</li>
-        <li>高性能並列処理コンパイラの研究</li>
-        <li>大規模データ処理 (ビッグデータ) 技術の研究</li>
-        <li>
-          大規模計算機を支えるストレージ技術やシステムソフトウェアに関する研究
-        </li>
-        <li>大規模計算機における高性能数値計算技術の研究</li>
-      </ul>
-      <p>
-        特に，筑波大学計算科学研究センターで運用されている多重複合型演算加速スーパーコンピュータCygnus,
-        最先端共同HPC基盤施設（JCAHPC）のOakforest-PACSでは，
-        これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており，
-        並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算を目指した研究を進めています．
-      </p>
-    </section>
-    <section>
-      <h2><HoverLink href="/bachelor">卒研配属情報はこちらから</HoverLink></h2>
-    </section>
-    <section>
-      <h2><HoverLink href="/news/">What's news</HoverLink></h2>
-      <ul>
-        {
-          news.slice(0, 10).map((frontmatter) => (
-            <li class="news-headline">
-              <span class="news-date">{frontmatter.date}</span>
-              <a
-                class="news-title"
-                href={`/news/${frontmatter.year}/${frontmatter.slug}`}
-              >
-                {frontmatter.title}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-      <div class="news-read-more">
-        <HoverLink href="/news">さらに読む</HoverLink>
-      </div>
-    </section>
-  </div>
+
+  <h1 class="main-heading">HPCS Laboratory</h1>
+  <section class="about">
+    <Typography>
+      筑波大学ハイパフォーマンス・コンピューティング・システム研究室では，超並列計算機からクラスタまで，高性能計算に関連した以下の研究を行っています．
+    </Typography>
+    <List ordered={false}>
+      <ListItem>
+        各種<Keyword>並列処理システム</Keyword>における高性能計算と性能評価
+      </ListItem>
+      <ListItem>
+        プロセッサからネットワークまで<Keyword>
+          計算機アーキテクチャ
+        </Keyword>に関する研究
+      </ListItem>
+      <ListItem>
+        <Keyword>GPU</Keyword>
+        や
+        <Keyword>メニーコア</Keyword>,
+        <Keyword>FPGA</Keyword>
+        などの高性能計算向けアーキテクチャの研究
+      </ListItem>
+      <ListItem>高性能<Keyword>並列処理コンパイラ</Keyword>の研究</ListItem>
+      <ListItem>
+        <Keyword>大規模データ処理 (ビッグデータ)</Keyword> 技術の研究
+      </ListItem>
+      <ListItem>
+        大規模計算機を支える<Keyword>ストレージ技術</Keyword>や<Keyword>
+          システムソフトウェア
+        </Keyword>に関する研究
+      </ListItem>
+      <ListItem>
+        大規模計算機における<Keyword>高性能数値計算</Keyword>技術の研究
+      </ListItem>
+    </List>
+    <Typography>
+      特に，筑波大学計算科学研究センターで運用されている多重複合型演算加速スーパーコンピュータCygnus,
+      最先端共同HPC基盤施設（JCAHPC）のOakforest-PACSでは，
+      これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており，
+      並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算を目指した研究を進めています．
+    </Typography>
+  </section>
+
+  <TopLevelSection
+    headingText="卒研配属情報はこちらから"
+    headingUrl="/bachelor"
+    backgroundInverted={false}
+  />
+  <TopLevelSection
+    headingText="What's news"
+    headingUrl="/news/"
+    backgroundInverted={false}
+  >
+    <List ordered={false}>
+      {
+        news.slice(0, 10).map((frontmatter) => (
+          <ListItem class="news-headline">
+            <span class="news-date">{frontmatter.date}</span>
+            <HoverLink href={`/news/${frontmatter.year}/${frontmatter.slug}`}>
+              {frontmatter.title}
+            </HoverLink>
+          </ListItem>
+        ))
+      }
+
+      <ListItem>
+        <ReadMoreLink href="/news">さらに読む</ReadMoreLink>
+      </ListItem>
+    </List>
+  </TopLevelSection>
 </Base>
 
 <style>
-  .main-heading {
-    font-size: xx-large;
-    font-weight: bolder;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-  }
-
-  .news-headline {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-
-  .news-date {
-    display: block;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-    font-size: small;
-    opacity: 0.9;
-  }
-
-  .news-read-more {
-    margin-top: 1em;
-  }
-
-  .news-title {
-    display: block;
-  }
-
-  h2 {
-    font-size: x-large;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  h1 {
+    font-size: var(--font-size-3xl);
+    color: var(--color-inverted-text-strong);
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--color-bg-dark);
   }
 
   .about {
-    line-height: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .main-container {
-    margin: 4em;
-  }
-
-  .main-container > section {
-    margin: 2em;
-  }
-
-  p {
-    line-height: 1.5em;
-  }
-
-  ul {
-    list-style: disc;
-    margin-left: 1.5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  .news-date {
+    color: var(--color-text-disable);
+    font-size: smaller;
   }
 </style>

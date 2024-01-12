@@ -1,15 +1,20 @@
 ---
 interface Props {
   href: string;
+  bgColor?: "light" | "dark";
 }
 
+const bgColor = Astro.props.bgColor ? Astro.props.bgColor : "light";
 const { href } = Astro.props;
 ---
 
 <a href={href}>
-  <span class="arrow-container">
-    <div class="arrow-center"></div>
-  </span>
+  <div class="arrow-container">
+    <div
+      class:list={["arrow-center", bgColor == "light" ? "bg-light" : "bg-dark"]}
+    >
+    </div>
+  </div>
   <slot />
 </a>
 
@@ -34,21 +39,31 @@ const { href } = Astro.props;
     width: var(--arrow-max-length);
   }
 
+  .bg-light {
+    background-color: var(--color-text-normal);
+  }
+
+  .bg-dark {
+    background-color: var(--color-inverted-text-normal);
+  }
+
   .arrow-container {
+    visibility: inherit;
     margin-right: 0.5em;
     height: 1em;
     width: var(--arrow-min-length);
-    position: relative;
-    transition: all 0.1s linear;
+    transition: width 0.1s linear;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .arrow-center {
-    position: absolute;
-    height: 2px;
+    visibility: inherit;
+    height: 1px;
     border-radius: 1px;
-    background-color: var(--bg-dark);
     width: var(--arrow-min-length);
     top: 50%;
-    transition: all 0.1s linear;
+    transition: width 0.1s linear;
   }
 </style>

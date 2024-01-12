@@ -1,4 +1,6 @@
 ---
+import HoverLink from "./hover-link.astro";
+
 export type SubPage = {
   title: string;
   url: string;
@@ -135,7 +137,9 @@ const pages: IndexPage[] = [
                     ? null
                     : page.children.map((subpage) => (
                         <li>
-                          <a href={subpage.url}>{subpage.title}</a>
+                          <HoverLink href={subpage.url} bgColor="light">
+                            {subpage.title}
+                          </HoverLink>
                         </li>
                       ))}
                 </ul>
@@ -160,24 +164,22 @@ const pages: IndexPage[] = [
     justify-content: space-between;
     align-items: center;
     top: 0;
-    background-color: var(--bg-color);
+    background-color: var(--color-bg-white);
     position: sticky;
     z-index: 100;
     height: var(--header-height);
-    background-color: var(--bg-dark);
-    color: white;
-  }
-
-  header a {
-    padding: 0.5em;
+    max-height: var(--header-height);
+    min-height: var(--header-height);
+    color: var(--color-text-strong);
+    box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.1);
   }
 
   header a:visited {
-    color: white;
+    color: var(--color-text-strong);
   }
 
   header a:link {
-    color: white;
+    color: var(--color-text-strong);
   }
 
   .nav-wrapper {
@@ -189,7 +191,7 @@ const pages: IndexPage[] = [
     flex-direction: row;
     align-items: center;
     height: 100%;
-    padding: 0 1em 0 1em;
+    padding: 0 1rem 0 1rem;
   }
 
   .nav-index-link-wrapper {
@@ -199,46 +201,85 @@ const pages: IndexPage[] = [
     align-items: center;
   }
 
+  .nav-index-link-wrapper a {
+    padding: 0.5em;
+  }
+
   .nav-index-link-wrapper > a:hover {
     background-color: rgba(255, 255, 255, 0.5);
   }
 
   .nav-index {
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 0.5rem 0 0.5rem;
     position: relative;
     z-index: 1;
     height: 100%;
+  }
+
+  @keyframes show-drawer {
+    0% {
+      transform: scale(0.95);
+      visibility: visible;
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes hide-drawer {
+    0% {
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    99% {
+      visibility: visible;
+      transform: scale(0.95);
+    }
+
+    100% {
+      visibility: hidden;
+    }
   }
 
   .drawer {
     position: absolute;
     width: var(--drawer-width);
     left: calc(50% - var(--drawer-width) / 2);
-    overflow-y: hidden;
     visibility: hidden;
+    transition:
+      transform 0.1s ease-out,
+      visibility 0.1s ease-out;
+    z-index: 100;
     transform: scale(0.95);
-    transition: transform 0.1s ease-out;
   }
 
   .drawer-last {
-    right: 0;
+    right: -1.5rem;
     left: unset;
-    width: 14em;
+    width: 20em;
   }
 
   .drawer > ul {
-    background-color: var(--bg-dark);
+    border-radius: 2px;
+    background-color: var(--color-bg-white);
     padding: 0.5em;
     margin: 0.5em;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
   }
 
   .drawer > ul > li {
-    padding: 0.7em 0 0.7em 0;
+    padding: 0.7em 0em 0.7em 0.5em;
     width: 100%;
   }
 
   .drawer > ul > li:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nav-index-link-wrapper:hover a {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.3em;
   }
 
   .drawer:hover {
@@ -252,9 +293,11 @@ const pages: IndexPage[] = [
   }
 
   .logo {
-    font-size: larger;
+    font-size: var(--font-size-2xl);
     font-weight: lighter;
-    margin-left: 1em;
+    margin-left: 2rem;
     font-family: ui-monospace;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
   }
 </style>

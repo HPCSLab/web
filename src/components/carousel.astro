@@ -1,9 +1,16 @@
 ---
 import { Image } from "astro:assets";
 
-// InteractionObserver APIでスクロールした時に画像の順番を裏で入れ替えれば（多分）無限スクロールできる
-// スクロール動作で一定時間自動スクロール止める処理も欲しい
-// Custom elementsを使っているのは単なる趣味。クラス名でquerySelectorAllしてハンドラ貼り付けるだけで済むはず
+// 簡易的な実装。ネイティブの実装でありおそらくパフォーマンス上は有利だが、
+// Macのblinkでは自然でスムーズなスクロールを実現する方法がない。GeckoとWebkitは可能
+// またRecyclerな表現も出来ない
+// このタイプのコンポーネントの本来正しい実装はscrollイベントをhookし、デフォルトのスクロールに変わりstyle属性のtransform: translationXで実現する
+// ただしこの方法はエンジンがハンドラの処理を行った後にスクロールを行うためパフォーマンス上の懸念があり、モバイル環境では
+// addEventListenerの第二引数に`{passive: false}`が必要。
+// スナップ処理はstyle属性のtransform: translationとCSSでのtransitionで実現可能。
+// これらの処理は複雑なDOM操作を必要とする上、パフォーマンス上の懸念があるのでここでは使わない。
+// ちなみにネイティブのスクロールをDOMの入れ替えでinfinite化するのは無理です。
+// Chrome早くsmooth scrollingを入れてくれ〜
 
 export type CarouselPicture = {
   src: ImageMetadata;
@@ -81,7 +88,8 @@ const {
 
     figcaption {
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.8);
+      /* This is adhoc. CSS cannot applying alpha value to hexadecimal coded color */
+      background-color: rgba(40, 37, 45, 0.6);
       bottom: 0;
       width: 100%;
       padding: 0.5em;
