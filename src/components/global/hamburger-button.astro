@@ -28,15 +28,15 @@ interface Props {
         root.addEventListener("click", () => {
           if (root.classList.contains("opened")) {
             root.classList.remove("opened");
-            this.opened = true;
-            for (const handler of this.toggleEventListeners) {
-              handler(true);
-            }
-          } else {
-            root.classList.add("opened");
             this.opened = false;
             for (const handler of this.toggleEventListeners) {
               handler(false);
+            }
+          } else {
+            root.classList.add("opened");
+            this.opened = true;
+            for (const handler of this.toggleEventListeners) {
+              handler(true);
             }
           }
         });

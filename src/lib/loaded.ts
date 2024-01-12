@@ -20,6 +20,6 @@ export type NewsFrontmatter = {
 export const news = (
   await load<z.infer<typeof newsFrontmatterValidator>>(
     import.meta.glob("./news/**/*.mdx"),
-    (md: any) => newsFrontmatterValidator.parse(md.frontmatter)
+    (md: any) => newsFrontmatterValidator.parse(md.frontmatter),
   )
 ).entries();

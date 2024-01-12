@@ -14,10 +14,12 @@ const { title } = Astro.props;
   </head>
   <body>
     <Header />
-    <main>
-      <slot />
-    </main>
-    <Footer />
+    <div id="contents-wrapper">
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>
 

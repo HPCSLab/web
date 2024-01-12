@@ -3,6 +3,7 @@ import UnderlineAnchor from "../anchor/underline-link.astro";
 import ExternalLink from "../anchor/external-link.astro";
 import NavDesktop from "./nav-desktop.astro";
 import HamburgerIcon from "./hamburger-button.astro";
+import FullscreenNav from "./fullscreen-nav.astro";
 
 export type SubPage = {
   title: string;
@@ -121,6 +122,9 @@ const pages: IndexPage[] = [
   <div class="mobile-nav">
     <HamburgerIcon id="drawer-toggle-button" />
   </div>
+  <div id="fullscreen-nav-wrapper" class="fullscreen-nav-wrapper">
+    <FullscreenNav id="fullscreen-nav" />
+  </div>
 </header>
 
 <script>
@@ -134,10 +138,34 @@ const pages: IndexPage[] = [
       "drawer-toggle-button"
     ) as HamburgerButton | null;
 
-    console.log(drawerToggleButton);
-    if (drawerToggleButton) {
+    const fullscreenNavWrapper = document.getElementById(
+      "fullscreen-nav-wrapper"
+    );
+    const fullscreenNav = document.getElementById("fullscreen-nav");
+
+    const body = document.getElementById("contents-wrapper");
+    let scrollY = 0;
+    if (drawerToggleButton && fullscreenNavWrapper && body) {
       drawerToggleButton.addToggleEventListener((opened: boolean) => {
-        console.log(opened);
+        if (opened) {
+          fullscreenNavWrapper.classList.add("fullscreen-nav-opened");
+
+          fullscreenNav?.classList.add("show");
+          scrollY = window.scrollY;
+          body.style.position = "fixed";
+          body.style.transform = `translateY(-${scrollY}px)`;
+        } else {
+          fullscreenNavWrapper.classList.remove("fullscreen-nav-opened");
+
+          fullscreenNav?.classList.remove("show");
+
+          body.style.position = "unset";
+          window.scroll({
+            behavior: "instant",
+            top: scrollY,
+          });
+          body.style.transform = "";
+        }
       });
     }
   });
@@ -147,6 +175,17 @@ const pages: IndexPage[] = [
   :root {
     --drawer-width: 14em;
     --drawer-height: 16em;
+  }
+
+  .fullscreen-nav-wrapper {
+    position: absolute;
+    top: var(--header-height);
+    transform: translateX(-100vw);
+    transition: transform 0.3s ease-in;
+  }
+
+  .fullscreen-nav-opened {
+    transform: translateX(0);
   }
 
   header {
