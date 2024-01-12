@@ -8,18 +8,21 @@ const { href } = Astro.props;
 ---
 
 <a href={href}>
-  <div class="circle">
-    <Icon class="arrow" name="material-symbols:arrow-right-alt-rounded" />
+  <div>
+    <div class="circle">
+      <Icon class="arrow" name="material-symbols:arrow-right-alt-rounded" />
+    </div>
   </div>
-  <slot />
+  <span>
+    <slot />
+  </span>
 </a>
 
 <style>
   a {
     display: flex;
     flex-direction: row;
-    height: 2rem;
-    align-items: center;
+    align-items: start;
   }
 
   .arrow {
