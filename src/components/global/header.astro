@@ -2,6 +2,7 @@
 import UnderlineAnchor from "../anchor/underline-link.astro";
 import ExternalLink from "../anchor/external-link.astro";
 import NavDesktop from "./nav-desktop.astro";
+import HamburgerIcon from "./hamburger-button.astro";
 
 export type SubPage = {
   title: string;
@@ -114,8 +115,33 @@ const pages: IndexPage[] = [
   <nav class="logo">
     <a href="/">HPCS Lab.</a>
   </nav>
-  <NavDesktop pages={pages} />
+  <div class="desktop-nav">
+    <NavDesktop pages={pages} />
+  </div>
+  <div class="mobile-nav">
+    <HamburgerIcon id="drawer-toggle-button" />
+  </div>
 </header>
+
+<script>
+  type ToggleEventHandler = (opened: boolean) => void;
+  type HamburgerButton = HTMLElement & {
+    addToggleEventListener: (handler: ToggleEventHandler) => void;
+  };
+
+  customElements.whenDefined("humburger-button").then(() => {
+    const drawerToggleButton = document.getElementById(
+      "drawer-toggle-button"
+    ) as HamburgerButton | null;
+
+    console.log(drawerToggleButton);
+    if (drawerToggleButton) {
+      drawerToggleButton.addToggleEventListener((opened: boolean) => {
+        console.log(opened);
+      });
+    }
+  });
+</script>
 
 <style>
   :root {
@@ -154,5 +180,28 @@ const pages: IndexPage[] = [
     font-family: ui-monospace;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
+  }
+
+  .desktop-nav {
+    height: 100%;
+    display: none;
+  }
+
+  .mobile-nav {
+    height: 100%;
+    display: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .desktop-nav {
+      display: unset;
+    }
+
+    .mobile-nav {
+      display: none;
+    }
   }
 </style>

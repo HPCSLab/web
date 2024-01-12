@@ -22,6 +22,7 @@ import RecentWorks from "../../../components/teams/recent-works.astro";
 import VSpace2Rem from "../../../components/layout/v-space-2rem.astro";
 import ResponsiveCardsGrid from "../../../components/layout/responsive-cards-grid.astro";
 import Student from "../../../components/teams/student-card.astro";
+import YoutubeContainer from "../../../components/layout/youtube-container.astro";
 ---
 
 <Team
@@ -104,13 +105,15 @@ import Student from "../../../components/teams/student-card.astro";
     backgroundInverted={false}
   >
     <Typography>高橋教授の研究内容のひとつであるFFTをご紹介します。</Typography>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/GPJx5JTGQEU"
-      title="配信講義 計算科学技術特論B (2020) 第6回"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <YoutubeContainer>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/GPJx5JTGQEU"
+        title="配信講義 計算科学技術特論B (2020) 第6回"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </YoutubeContainer>
   </TopLevelSection>
   <TopLevelSection headingText="メンバー" backgroundInverted={true}>
     <div>

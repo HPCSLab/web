@@ -1,0 +1,109 @@
+---
+interface Props {
+  id?: string;
+}
+---
+
+<humburger-button id={Astro.props.id}>
+  <button class:list={["root"]}>
+    <div class:list={["top", "bar"]}></div>
+    <div class:list={["middle", "bar"]}></div>
+    <div class:list={["bottom", "bar"]}></div>
+  </button>
+</humburger-button>
+
+<script>
+  export class HumburgerButton extends HTMLElement {
+    opened: boolean;
+    toggleEventListeners: ((opened: boolean) => void)[];
+
+    constructor() {
+      super();
+
+      this.opened = false;
+      this.toggleEventListeners = [];
+
+      const root = this.querySelector(".root");
+      if (root) {
+        root.addEventListener("click", () => {
+          if (root.classList.contains("opened")) {
+            root.classList.remove("opened");
+            this.opened = true;
+            for (const handler of this.toggleEventListeners) {
+              handler(true);
+            }
+          } else {
+            root.classList.add("opened");
+            this.opened = false;
+            for (const handler of this.toggleEventListeners) {
+              handler(false);
+            }
+          }
+        });
+      }
+    }
+
+    addToggleEventListener(handler: (opened: boolean) => void) {
+      this.toggleEventListeners.push(handler);
+    }
+
+    removeToggleEventListener(handler: (opened: boolean) => void) {
+      this.toggleEventListeners = [
+        ...this.toggleEventListeners.filter(
+          (registered) => registered != handler
+        ),
+      ];
+    }
+  }
+
+  customElements.define("humburger-button", HumburgerButton);
+</script>
+
+<style>
+  :root {
+    --hamburger-bar-width: 1.2rem;
+  }
+
+  .root {
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+  }
+
+  .bar {
+    position: absolute;
+    left: calc((2rem - var(--hamburger-bar-width)) / 2);
+    height: 1px;
+    width: var(--hamburger-bar-width);
+    background-color: var(--color-text-normal);
+    transition:
+      transform 0.3s ease,
+      width 0.3s ease;
+  }
+
+  .top {
+    transform: translateY(0.5rem);
+    top: 0rem;
+  }
+
+  .middle {
+    top: 50%;
+  }
+
+  .bottom {
+    transform: translateY(-0.5rem);
+    bottom: 0rem;
+  }
+
+  .opened > .top {
+    transform: translateY(calc(+1rem - 0.5px)) rotate(45deg);
+  }
+
+  .opened > .bottom {
+    transform: translateY(calc(-1rem + 0.5px)) rotate(-45deg);
+  }
+
+  .opened > .middle {
+    width: 0;
+  }
+</style>
