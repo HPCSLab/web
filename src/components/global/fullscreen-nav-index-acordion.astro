@@ -39,7 +39,7 @@ const { index } = Astro.props;
               icon="material-symbols:link-off-rounded"
               animateOnHover={true}
             >
-              <a href={subpage.title} class="max-width">
+              <a href={subpage.url} class="max-width">
                 {subpage.title}
               </a>
             </TextWithIcon>
@@ -131,6 +131,7 @@ const { index } = Astro.props;
     border-bottom: 0.5px solid var(--color-text-disable);
     height: 2rem;
     width: 100%;
+    cursor: pointer;
   }
 
   .title-with-icon {
