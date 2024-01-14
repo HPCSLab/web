@@ -1,30 +1,45 @@
 ---
+import FullscreenNavIndexAcordion from "./fullscreen-nav-index-acordion.astro";
+import FullscreenNavIndexLink from "./fullscreen-nav-index-link.astro";
+import type { IndexPage } from "./header.astro";
+
 interface Props {
   id?: string;
+  sitemap: IndexPage[];
 }
 ---
 
-<div id={Astro.props.id}>
-  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime distinctio
-  ducimus tenetur! Quos delectus recusandae fugiat nihil maxime esse illum
-  corrupti. Modi velit architecto cupiditate ipsam totam quod ea aspernatur.
-</div>
+<nav id={Astro.props.id}>
+  <div>
+    {
+      Astro.props.sitemap.map((index) => (
+        <div>
+          {index.hasChildren ? (
+            <FullscreenNavIndexAcordion index={index} />
+          ) : (
+            <FullscreenNavIndexLink index={index} />
+          )}
+        </div>
+      ))
+    }
+  </div>
+</nav>
 
 <style>
-  div {
+  nav {
     height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
+    width: 100vw;
     transition:
       background-color 0.3s ease,
-      backdrop-filter 0.3s ease-in;
+      backdrop-filter 0.3s ease;
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(1px);
+    overflow-y: scroll;
   }
 
   .show {
-    background-color: rgba(255, 255, 255, 1);
-    transition:
-      background-color 0.3s ease,
-      backdrop-filter 0.3s ease-in;
+    background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
   }
 </style>

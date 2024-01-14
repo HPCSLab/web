@@ -1,0 +1,77 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  icon: string;
+  iconColor: "primary" | "secondary" | "tri1" | "tri2" | "tri3";
+  animateOnHover?: boolean;
+}
+
+const { icon, animateOnHover, iconColor } = Astro.props;
+---
+
+<span class:list={animateOnHover ? ["root", "animation"] : ["root"]}>
+  <div class="icon-wrapper">
+    <Icon class:list={["icon", `color-${iconColor}`]} name={icon} />
+  </div>
+  <span class="text">
+    <slot />
+  </span>
+</span>
+
+<style>
+  .color-primary {
+    color: var(--color-primary);
+  }
+
+  .color-secondary {
+    color: var(--color-secondary);
+  }
+
+  .color-tri1 {
+    color: var(--color-triadic-1);
+  }
+
+  .color-tri2 {
+    color: var(--color-triadic-2);
+  }
+
+  .color-tri3 {
+    color: var(--color-triadic-3);
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .root {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .icon {
+    transform: scale(1);
+    transition: transform 0.2s ease;
+  }
+
+  .icon-wrapper {
+    margin-right: 0.5em;
+    height: 1.5rem;
+    width: 1.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .animation:hover .icon {
+    transform: scale(1.5);
+  }
+</style>

@@ -13,17 +13,24 @@ export type IndexTitle =
   | "Access"
   | "Link";
 
-export type IndexPage = {
-  title: IndexTitle;
-  url?: string;
-  children?: SubPage[];
-};
+export type IndexPage =
+  | {
+      title: IndexTitle;
+      children?: SubPage[];
+    }
+  | {
+      title: IndexTitle;
+      url: string;
+    };
 
 export const sitemap: IndexPage[] = [
   {
     title: "Teams",
-    url: "/teams",
     children: [
+      {
+        title: "卒研配属",
+        url: "/bachelor",
+      },
       {
         title: "Algorithm",
         url: "/teams/algo",
@@ -48,7 +55,6 @@ export const sitemap: IndexPage[] = [
   },
   {
     title: "Members",
-    url: "/members",
     children: [
       {
         title: "Members",

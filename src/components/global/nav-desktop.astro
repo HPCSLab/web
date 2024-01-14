@@ -16,13 +16,13 @@ const { pages } = Astro.props;
       pages.map((page) => (
         <li class="nav-index">
           <div class="nav-index-link-wrapper">
-            {page.url ? (
-              <UnderlineLink href={page.url}>{page.title}</UnderlineLink>
-            ) : (
+            {page.hasChildren ? (
               <span>{page.title}</span>
+            ) : (
+              <UnderlineLink href={page.url}>{page.title}</UnderlineLink>
             )}
           </div>
-          {page.children.length > 0 ? (
+          {page.hasChildren ? (
             <nav
               class:list={
                 page.title === pages[pages.length - 1].title
@@ -31,15 +31,13 @@ const { pages } = Astro.props;
               }
             >
               <ul>
-                {page.children.length == 0
-                  ? null
-                  : page.children.map((subpage) => (
-                      <li>
-                        <ExternalLink href={subpage.url}>
-                          {subpage.title}
-                        </ExternalLink>
-                      </li>
-                    ))}
+                {page.children.map((subpage) => (
+                  <li>
+                    <ExternalLink href={subpage.url}>
+                      {subpage.title}
+                    </ExternalLink>
+                  </li>
+                ))}
               </ul>
             </nav>
           ) : null}

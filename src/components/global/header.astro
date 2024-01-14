@@ -4,22 +4,31 @@ import ExternalLink from "../anchor/external-link.astro";
 import NavDesktop from "./nav-desktop.astro";
 import HamburgerIcon from "./hamburger-button.astro";
 import FullscreenNav from "./fullscreen-nav.astro";
+import { sitemap } from "../../resource/sitemap";
 
 export type SubPage = {
   title: string;
   url: string;
 };
 
-export type IndexPage = {
+type JustLinkIndex = {
   title: string;
-  url?: string;
+  hasChildren: false;
+  url: string;
+};
+
+type AcordionIndex = {
+  title: string;
+  hasChildren: true;
   children: SubPage[];
 };
+
+export type IndexPage = JustLinkIndex | AcordionIndex;
 
 const pages: IndexPage[] = [
   {
     title: "Teams",
-    url: "/teams",
+    hasChildren: true,
     children: [
       {
         title: "Algorithm",
@@ -45,7 +54,7 @@ const pages: IndexPage[] = [
   },
   {
     title: "Members",
-    url: "/members",
+    hasChildren: true,
     children: [
       {
         title: "Members",
@@ -59,21 +68,22 @@ const pages: IndexPage[] = [
   },
   {
     title: "News",
+    hasChildren: false,
     url: "/news",
-    children: [],
   },
   {
     title: "Publications",
+    hasChildren: false,
     url: "/publications",
-    children: [],
   },
   {
     title: "Access",
+    hasChildren: false,
     url: "/access",
-    children: [],
   },
   {
     title: "Link",
+    hasChildren: true,
     children: [
       {
         title: "筑波大学",
@@ -112,20 +122,23 @@ const pages: IndexPage[] = [
 ];
 ---
 
-<header>
-  <nav class="logo">
-    <a href="/">HPCS Lab.</a>
-  </nav>
-  <div class="desktop-nav">
-    <NavDesktop pages={pages} />
-  </div>
-  <div class="mobile-nav">
-    <HamburgerIcon id="drawer-toggle-button" />
-  </div>
+<div class="root">
+  <header>
+    <nav class="logo">
+      <a href="/">HPCS Lab.</a>
+    </nav>
+    <div class="desktop-nav">
+      <NavDesktop pages={pages} />
+    </div>
+    <div class="mobile-nav">
+      <HamburgerIcon id="drawer-toggle-button" />
+    </div>
+  </header>
+
   <div id="fullscreen-nav-wrapper" class="fullscreen-nav-wrapper">
-    <FullscreenNav id="fullscreen-nav" />
+    <FullscreenNav id="fullscreen-nav" sitemap={pages} />
   </div>
-</header>
+</div>
 
 <script>
   type ToggleEventHandler = (opened: boolean) => void;
@@ -177,11 +190,16 @@ const pages: IndexPage[] = [
     --drawer-height: 16em;
   }
 
+  .root {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
   .fullscreen-nav-wrapper {
     position: absolute;
     top: var(--header-height);
     transform: translateX(-100vw);
-    transition: transform 0.3s ease-in;
   }
 
   .fullscreen-nav-opened {

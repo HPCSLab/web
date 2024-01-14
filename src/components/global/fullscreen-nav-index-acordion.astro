@@ -1,0 +1,152 @@
+---
+import ExternalLink from "../anchor/external-link.astro";
+import TextWithIcon from "../anchor/text-with-icon.astro";
+import type { IndexPage, SubPage } from "./header.astro";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  index: {
+    title: string;
+    children: SubPage[];
+  };
+}
+const { index } = Astro.props;
+---
+
+<acordion-menu>
+  <div class="root">
+    <h2>
+      <TextWithIcon
+        icon="material-symbols:folder-open-outline"
+        iconColor="primary"
+        animateOnHover={true}
+      >
+        {index.title}
+      </TextWithIcon>
+      <div class="icon-wrapper">
+        <Icon
+          name="material-symbols:keyboard-arrow-down-rounded"
+          class="down-icon"
+        />
+      </div>
+    </h2>
+    <ul class="links">
+      {
+        index.children.map((subpage) => (
+          <li class="link">
+            <TextWithIcon
+              iconColor="primary"
+              icon="material-symbols:link-off-rounded"
+              animateOnHover={true}
+            >
+              <a href={subpage.title} class="max-width">
+                {subpage.title}
+              </a>
+            </TextWithIcon>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</acordion-menu>
+
+<script>
+  class AcordionMenu extends HTMLElement {
+    closed: boolean;
+
+    constructor() {
+      super();
+      const h2 = this.querySelector("h2");
+      this.closed = true;
+      if (h2) {
+        h2.addEventListener("click", () => {
+          this.toggleHandler();
+        });
+      }
+    }
+
+    toggleHandler() {
+      const links = this.querySelector(".links") as HTMLElement | null;
+      const icon = this.querySelector(".down-icon");
+      if (links && icon) {
+        if (this.closed) {
+          this.closed = false;
+          const childrenLength = links.querySelectorAll("li").length;
+          links.style.maxHeight = `${childrenLength * 2}rem`;
+          icon.classList.add("icon-rotated");
+        } else {
+          this.closed = true;
+          links.style.maxHeight = "0";
+          icon.classList.remove("icon-rotated");
+        }
+      }
+    }
+  }
+
+  customElements.define("acordion-menu", AcordionMenu);
+</script>
+
+<style>
+  .max-width {
+    width: 100%;
+    display: block;
+  }
+  .icon-container {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-left: 0.5px solid var(--color-text-disable);
+  }
+
+  .icon {
+    font-size: large;
+  }
+
+  .icon-wrapper {
+    height: 100%;
+    width: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .down-icon {
+    transition: transform 0.2s ease;
+  }
+
+  .icon-rotated {
+    transform: rotate(180deg);
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-bottom: 0.5px solid var(--color-text-disable);
+    height: 2rem;
+    width: 100%;
+  }
+
+  .title-with-icon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .links {
+    max-height: 0;
+    width: 100%;
+    overflow-y: hidden;
+    transition: max-height 0.2s ease;
+  }
+
+  .link {
+    height: 2rem;
+    margin-left: 1rem;
+  }
+</style>
