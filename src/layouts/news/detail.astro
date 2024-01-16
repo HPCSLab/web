@@ -1,10 +1,63 @@
 ---
+import ResponsiveWidth from "../../components/layout/responsive-width.astro";
 import Base from "../base.astro";
-const { title } = Astro.props;
+const { title, date } = Astro.props.content;
 ---
 
 <Base title={title}>
-  <article>
-    <slot />
-  </article>
+  <div class="news-md-top">
+    <article>
+      <div class="header-container">
+        <ResponsiveWidth>
+          <h1>
+            {title}
+          </h1>
+          <div class="date">
+            {date}
+          </div>
+        </ResponsiveWidth>
+      </div>
+      <ResponsiveWidth>
+        <slot />
+      </ResponsiveWidth>
+    </article>
+  </div>
 </Base>
+
+<style is:global>
+  .news-md-top .header-container {
+    padding-block-start: 1rem;
+    padding-block-end: 0.5rem;
+    background-color: var(--color-bg-dark);
+    color: var(--color-inverted-text-strong);
+  }
+
+  .date {
+    margin-top: 0.5rem;
+    color: var(--color-inverted-text-disable);
+  }
+
+  .news-md-top h1 {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+  }
+
+  .news-md-top p {
+    line-height: 1.5;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+  }
+
+  .news-md-top a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    color: var(--color-primary);
+  }
+
+  .news-md-top blockquote {
+    color: var(--color-text-normal);
+    border-left: 2px solid var(--color-primary);
+    border-radius: 1px;
+    padding-left: 1rem;
+  }
+</style>
