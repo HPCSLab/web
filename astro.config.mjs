@@ -9,5 +9,15 @@ export default defineConfig({
   vite: {
     plugins: [YamlPlugin()],
   },
-  integrations: [mdx(), icon()],
+  integrations: [
+    mdx(),
+    icon({
+      include: {
+        fluent: "*",
+        ph: "*",
+        icons8: "*",
+        ic: "*",
+      },
+    }),
+  ],
 });

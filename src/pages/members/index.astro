@@ -1,0 +1,68 @@
+---
+import TopLevelSection from "../../components/layout/top-level-section.astro";
+import FacultyCard from "../../components/members/member-card.astro";
+import {
+  faculties,
+  researchers,
+  researchStudents,
+  students,
+} from "../../resource/articles/members/profiles";
+import Base from "../../layouts/base.astro";
+---
+
+<Base>
+  <div class="root">
+    <section>
+      <h2>教員</h2>
+      <div class="container">
+        {faculties.map((faculty) => <FacultyCard faculty={faculty} />)}
+      </div>
+    </section>
+    <section>
+      <h2>研究員</h2>
+      <div class="container">
+        {researchers.map((researcher) => <FacultyCard faculty={researcher} />)}
+      </div>
+      <section>
+        <h2>学生</h2>
+        <div class="container">
+          {students.map((researcher) => <FacultyCard faculty={researcher} />)}
+        </div>
+      </section>
+      <section>
+        <h2>研究生</h2>
+        <div class="container">
+          {
+            researchStudents.map((researcher) => (
+              <FacultyCard faculty={researcher} />
+            ))
+          }
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <style>
+    .root {
+      background-color: var(--color-bg-dark);
+    }
+
+    section {
+      padding-top: 2rem;
+    }
+
+    h2 {
+      font-size: var(--font-size-xl);
+      color: var(--color-inverted-text-strong);
+      font-weight: bold;
+      margin-left: 2rem;
+    }
+
+    .container {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+    }
+  </style>
+</Base>
