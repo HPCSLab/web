@@ -13,7 +13,7 @@ const { href } = Astro.props;
       <Icon class="arrow" name="material-symbols:arrow-right-alt-rounded" />
     </div>
   </div>
-  <span>
+  <span class="text">
     <slot />
   </span>
 </a>
@@ -22,7 +22,13 @@ const { href } = Astro.props;
   a {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
+    min-height: 2rem;
+    width: 100%;
+  }
+
+  .text {
+    max-width: calc(100% - 1rem);
   }
 
   .arrow {
