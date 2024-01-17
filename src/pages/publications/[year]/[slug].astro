@@ -5,6 +5,7 @@ import Base from "../../../layouts/base.astro";
 import ResponsiveWidth from "../../../components/layout/responsive-width.astro";
 import { unwrap } from "../../../lib/util";
 import Codeblock from "../../../components/parts/codeblock.astro";
+import NoImgHeader from "../../../components/common/no-img-header.astro";
 export const getStaticPaths = (() => {
   return [...grouped.entries()].flatMap(([year, pubs]) =>
     pubs.all.map((pub) => ({
@@ -22,11 +23,9 @@ const pub = unwrap(publicationCollection.get(slug));
 
 <Base>
   <article>
-    <div class="header">
-      <ResponsiveWidth>
-        <h1>{pub.title}</h1>
-      </ResponsiveWidth>
-    </div>
+    <NoImgHeader>
+      {pub.title}
+    </NoImgHeader>
     <ResponsiveWidth>
       <section class="description">
         <div class="reference">
