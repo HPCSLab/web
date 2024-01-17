@@ -1,0 +1,53 @@
+---
+import type { Publication } from "../../resource/publications";
+import ExternalLink from "../anchor/external-link.astro";
+
+interface Props {
+  pub: Publication;
+}
+
+const { pub } = Astro.props;
+---
+
+<section>
+  <div class="work-title">
+    <ExternalLink href={`/publications/${pub.year}/${pub.slug}`}>
+      {pub.title}
+    </ExternalLink>
+  </div>
+  <div class="work-detail">
+    <ul class="authors-container">
+      {pub.authors.map((author) => <li class="author">{author}</li>)}
+    </ul>
+    <div>
+      {pub.booktitle}
+    </div>
+  </div>
+</section>
+
+<style>
+  .work {
+    margin-bottom: 2rem;
+  }
+
+  .work-title {
+    font-size: var(--font-size-lg);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-detail {
+    margin-left: 2rem;
+  }
+
+  .authors-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+  }
+
+  .author {
+    color: var(--color-text-disable);
+    margin-right: 0.5em;
+  }
+</style>

@@ -5,6 +5,11 @@ import NavDesktop from "./nav-desktop.astro";
 import HamburgerIcon from "./hamburger-button.astro";
 import FullscreenNav from "./fullscreen-nav.astro";
 import { sitemap } from "../../resource/sitemap";
+import { years } from "../../resource/publications";
+import logo from "../../../public/hpcs.svg";
+import { Image } from "astro:assets";
+
+const latestPubYear = years[years.length - 1];
 
 export type SubPage = {
   title: string;
@@ -74,7 +79,7 @@ const pages: IndexPage[] = [
   {
     title: "Publications",
     hasChildren: false,
-    url: "/publications",
+    url: `/publications/${latestPubYear}`,
   },
   {
     title: "Access",
@@ -125,7 +130,7 @@ const pages: IndexPage[] = [
 <div class="root">
   <header>
     <nav class="logo">
-      <a href="/">HPCS Lab.</a>
+      <a href="/"><Image src={logo} alt="HPCS Logo" /></a>
     </nav>
     <div class="desktop-nav">
       <NavDesktop pages={pages} />
@@ -232,11 +237,22 @@ const pages: IndexPage[] = [
 
   .logo {
     font-size: var(--font-size-2xl);
-    font-weight: light;
+    font-weight: lighter;
     margin-left: 2rem;
-    font-family: ui-monospace;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
+  }
+
+  .logo > a {
+    display: block;
+    padding: 0;
+  }
+
+  .logo > a > img {
+    display: block;
+    margin: 0;
+    height: 1rem;
+    width: auto;
   }
 
   .desktop-nav {

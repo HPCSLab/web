@@ -1,0 +1,36 @@
+---
+import { Publication } from "../../resource/publications";
+import ResponsiveWidth from "../layout/responsive-width.astro";
+import ListItem from "../list/list-item.astro";
+import List from "../list/list.astro";
+import PublicationHeading from "./publication-heading.astro";
+
+interface Props {
+  title: string;
+  publications: Publication[];
+}
+
+const { title, publications } = Astro.props;
+---
+
+{
+  publications.length > 0 ? (
+    <section>
+      <h2>{title}</h2>
+      <List ordered={false}>
+        {publications.map((pub) => (
+          <ListItem>
+            <PublicationHeading pub={pub} />
+          </ListItem>
+        ))}
+      </List>
+    </section>
+  ) : null
+}
+
+<style>
+  h2 {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+  }
+</style>

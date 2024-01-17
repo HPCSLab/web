@@ -1,0 +1,134 @@
+---
+import ResponsiveWidth from "../../../components/layout/responsive-width.astro";
+import TopLevelSection from "../../../components/layout/top-level-section.astro";
+import ListItem from "../../../components/list/list-item.astro";
+import List from "../../../components/list/list.astro";
+import Base from "../../../layouts/base.astro";
+import { unwrap } from "../../../lib/util";
+import { grouped, years } from "../../../resource/publications";
+import PublicationHeading from "../../../components/publications/publication-heading.astro";
+import type { GetStaticPaths } from "astro";
+import Subclass from "../../../components/publications/subclass.astro";
+import { Icon } from "astro-icon/components";
+import TopHeaderInMain from "../../../components/common/top-header-in-main.astro";
+import NoImgHeader from "../../../components/common/no-img-header.astro";
+
+export const getStaticPaths = (() => {
+  return years.map((year) => ({
+    params: { year: year.toString() },
+  }));
+}) satisfies GetStaticPaths;
+
+const year = parseInt(Astro.params.year, 10);
+const { journal, international, domestic } = unwrap(
+  grouped.get(year)
+).categorized;
+
+const prevYear = years[years.indexOf(year) - 1];
+const nextYear = years[years.indexOf(year) + 1];
+---
+
+<Base>
+  <NoImgHeader>
+    <span class="supplemental-text-in-heading">Publications of</span>
+    <span class="year-in-heading">{year}</span>
+  </NoImgHeader>
+  <nav class="year-nav">
+    <div class="year-link-container">
+      {
+        prevYear && (
+          <a
+            class:list={["prev-year", "year-link"]}
+            href={`/publications/${prevYear}`}
+          >
+            <Icon
+              name="material-symbols:chevron-left-rounded"
+              class="nav-icon"
+            />
+            {prevYear}
+          </a>
+        )
+      }
+    </div>
+    <div class="year-link-container">
+      {
+        nextYear && (
+          <a
+            class:list={["next-year", "year-link"]}
+            href={`/publications/${nextYear}`}
+          >
+            {nextYear}
+            <Icon
+              name="material-symbols:chevron-right-rounded"
+              class="nav-icon"
+            />
+          </a>
+        )
+      }
+    </div>
+  </nav>
+  <TopLevelSection backgroundInverted={false} headingText="論文誌">
+    <List ordered={false}>
+      {
+        journal.map((pub) => (
+          <ListItem>
+            <PublicationHeading pub={pub} />
+          </ListItem>
+        ))
+      }
+    </List>
+  </TopLevelSection>
+  <TopLevelSection backgroundInverted={false} headingText="国際会議">
+    <Subclass title="本会議" publications={international.conference} />
+    <Subclass title="ポスター" publications={international.poster} />
+  </TopLevelSection>
+  <TopLevelSection backgroundInverted={false} headingText="国内会議">
+    <Subclass title="国内会議" publications={domestic.conference} />
+    <Subclass title="ポスター" publications={domestic.poster} />
+    <Subclass title="研究会" publications={domestic.workshop} />
+    <Subclass title="雑誌" publications={domestic.magazine} />
+    <Subclass title="その他" publications={domestic.misc} />
+  </TopLevelSection>
+</Base>
+
+<style>
+  .supplemental-text-in-heading {
+    font-size: var(--font-size-lg);
+  }
+
+  .year-in-heading {
+    font-weight: bold;
+    font-size: var(--font-size-2xl);
+  }
+
+  .year-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block-start: 1rem;
+  }
+
+  .year-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .prev-yaer {
+  }
+
+  .next-year {
+  }
+
+  .year-link-container:hover .nav-icon {
+    transform: scale(1.5);
+  }
+
+  .nav-icon {
+    color: var(--color-primary);
+    font-size: var(--font-size-xl);
+    transition: transform 0.1s linear;
+  }
+</style>

@@ -1,28 +1,28 @@
 ---
+import ExternalLink from "../../components/anchor/external-link.astro";
 import ReadMoreLink from "../../components/anchor/read-more-link.astro";
 import Typography from "../../components/atom/typography.astro";
+import TopHeaderInMain from "../../components/common/top-header-in-main.astro";
+import ResponsiveWidth from "../../components/layout/responsive-width.astro";
 import TopLevelSection from "../../components/layout/top-level-section.astro";
 import Base from "../../layouts/base.astro";
 import { news } from "./_index";
 ---
 
 <Base title="News">
-  <TopLevelSection
-    headingText="News"
-    headingUrl={undefined}
-    backgroundInverted={false}
-  >
+  <TopHeaderInMain>News</TopHeaderInMain>
+  <ResponsiveWidth>
     <ul>
       {
         news.map((frontmatter) => (
           <li>
-            <div class="title">
-              <ReadMoreLink
+            <h2 class="title">
+              <ExternalLink
                 href={`/news/${frontmatter.year}/${frontmatter.slug}`}
               >
                 {frontmatter.title}
-              </ReadMoreLink>
-            </div>
+              </ExternalLink>
+            </h2>
             <div class="detail">
               <div class="date">{frontmatter.date}</div>
               <Typography>{frontmatter.description}</Typography>
@@ -31,7 +31,7 @@ import { news } from "./_index";
         ))
       }
     </ul>
-  </TopLevelSection>
+  </ResponsiveWidth>
 </Base>
 
 <style>
@@ -41,9 +41,7 @@ import { news } from "./_index";
   }
 
   li {
-    margin: 2em;
     border-bottom: var(--bg-dark) solid 1px;
-    padding: 1em;
   }
 
   .detail {
@@ -58,5 +56,6 @@ import { news } from "./_index";
   .title {
     font-size: var(--font-size-lg);
     color: var(--color-text-strong);
+    font-weight: bold;
   }
 </style>

@@ -2,25 +2,22 @@
 import ResponsiveWidth from "../layout/responsive-width.astro";
 ---
 
-<h1>
+<div class="root">
   <ResponsiveWidth>
-    <slot />
+    <h1>
+      <slot />
+    </h1>
   </ResponsiveWidth>
-</h1>
+</div>
 
 <style>
+  .root {
+    background-color: var(--color-bg-dark);
+  }
+
   h1 {
     font-size: var(--font-size-xl);
     font-weight: bold;
     color: var(--color-inverted-text-strong);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: var(--color-bg-dark);
-  }
-
-  .transparent {
-    background-color: rgba(1, 1, 2, 0.5);
   }
 </style>

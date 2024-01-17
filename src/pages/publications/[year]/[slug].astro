@@ -1,0 +1,106 @@
+---
+import type { GetStaticPaths } from "astro";
+import { grouped, publicationCollection } from "../../../resource/publications";
+import Base from "../../../layouts/base.astro";
+import ResponsiveWidth from "../../../components/layout/responsive-width.astro";
+import { unwrap } from "../../../lib/util";
+import Codeblock from "../../../components/parts/codeblock.astro";
+export const getStaticPaths = (() => {
+  return [...grouped.entries()].flatMap(([year, pubs]) =>
+    pubs.all.map((pub) => ({
+      params: {
+        year,
+        slug: pub.slug,
+      },
+    }))
+  );
+}) satisfies GetStaticPaths;
+
+const { slug } = Astro.params;
+const pub = unwrap(publicationCollection.get(slug));
+---
+
+<Base>
+  <article>
+    <div class="header">
+      <ResponsiveWidth>
+        <h1>{pub.title}</h1>
+      </ResponsiveWidth>
+    </div>
+    <ResponsiveWidth>
+      <section class="description">
+        <div class="reference">
+          {pub.reference}
+        </div>
+
+        <ul class="authors">
+          {pub.authors.map((author) => <li class="author">{author}</li>)}
+        </ul>
+
+        <div class="booktitle">
+          {pub.booktitle}
+        </div>
+      </section>
+      <section>
+        <h2>BiBTex entry</h2>
+        <Codeblock code={pub.bibtex} />
+      </section>
+    </ResponsiveWidth>
+  </article>
+</Base>
+
+<style>
+  .header {
+    background-color: var(--color-bg-dark);
+  }
+  h1 {
+    color: var(--color-inverted-text-strong);
+    font-weight: bold;
+    font-size: var(--font-size-xl);
+  }
+
+  h2 {
+    color: var(--color-text-strong);
+    font-weight: bold;
+    font-size: var(--font-size-lg);
+    margin-bottom: 1rem;
+  }
+
+  .booktitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .description {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+  }
+
+  .authors {
+    margin-block-end: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .author {
+    margin-right: 1rem;
+    text-decoration: underline;
+  }
+
+  .reference {
+    font-family: var(--font-family-monospace);
+    color: var(--color-text-disable);
+    font-size: var(--font-size-sm);
+    margin-block-end: 1rem;
+  }
+
+  .bibtex {
+    display: block;
+    background-color: var(--color-bg-dark);
+    color: var(--color-inverted-text-normal);
+    padding: 1rem;
+    border-radius: 0.2rem;
+    overflow-x: scroll;
+    width: fit-content;
+    height: fit-content;
+  }
+</style>
