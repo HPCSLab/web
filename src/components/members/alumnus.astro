@@ -1,0 +1,29 @@
+---
+import Alumni from "./alumni.astro";
+
+interface Props {
+  alumnus: {
+    name: string;
+    year: number;
+    month: number;
+  }[];
+}
+const { alumnus } = Astro.props;
+---
+
+<div class="grid">
+  {
+    alumnus.map((staff) => (
+      <Alumni name={staff.name} year={staff.year} month={staff.month} />
+    ))
+  }
+</div>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, max-content));
+    gap: 2rem;
+    width: 100%;
+  }
+</style>

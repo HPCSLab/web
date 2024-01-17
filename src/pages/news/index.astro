@@ -1,16 +1,14 @@
 ---
 import ExternalLink from "../../components/anchor/external-link.astro";
-import ReadMoreLink from "../../components/anchor/read-more-link.astro";
 import Typography from "../../components/atom/typography.astro";
-import TopHeaderInMain from "../../components/common/top-header-in-main.astro";
+import NoImgHeader from "../../components/common/no-img-header.astro";
 import ResponsiveWidth from "../../components/layout/responsive-width.astro";
-import TopLevelSection from "../../components/layout/top-level-section.astro";
 import Base from "../../layouts/base.astro";
 import { news } from "./_index";
 ---
 
 <Base title="News">
-  <TopHeaderInMain>News</TopHeaderInMain>
+  <NoImgHeader>News</NoImgHeader>
   <ResponsiveWidth>
     <ul>
       {

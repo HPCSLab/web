@@ -1,0 +1,30 @@
+---
+import NoImgHeader from "../../components/common/no-img-header.astro";
+import TopLevelSection from "../../components/layout/top-level-section.astro";
+import ChevronListItem from "../../components/list/chevron-list-item.astro";
+import List from "../../components/list/list.astro";
+import AlumnusComponent from "../../components/members/alumnus.astro";
+import Base from "../../layouts/base.astro";
+import alumnus from "../../resource/articles/members/alumni";
+---
+
+<Base>
+  <NoImgHeader>Almnus</NoImgHeader>
+  <TopLevelSection headingText="教員" backgroundInverted={false}>
+    <List ordered={false}>
+      {alumnus.faculty.map((name) => <ChevronListItem>{name}</ChevronListItem>)}
+    </List>
+  </TopLevelSection>
+  <TopLevelSection headingText="スタッフ" backgroundInverted={false}>
+    <AlumnusComponent alumnus={alumnus.staff} />
+  </TopLevelSection>
+  <TopLevelSection headingText="博士" backgroundInverted={false}>
+    <AlumnusComponent alumnus={alumnus.doctor} />
+  </TopLevelSection>
+  <TopLevelSection headingText="修士" backgroundInverted={false}>
+    <AlumnusComponent alumnus={alumnus.master} />
+  </TopLevelSection>
+  <TopLevelSection headingText="学士" backgroundInverted={false}>
+    <AlumnusComponent alumnus={alumnus.undergraduate} />
+  </TopLevelSection>
+</Base>
