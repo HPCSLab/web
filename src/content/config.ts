@@ -1,4 +1,9 @@
-import { z, defineCollection, type SchemaContext } from "astro:content";
+import {
+  z,
+  defineCollection,
+  type SchemaContext,
+  reference,
+} from "astro:content";
 
 const newsSchema = z.object({
   title: z.string(),
@@ -51,7 +56,6 @@ const publicationSchema = z.object({
   year: z.number(),
   authors: z.array(z.string()),
   bibtex: z.string(),
-  slug: z.string(),
   reference: z.string(),
   class: publicationClassSchema,
 });
@@ -152,25 +156,78 @@ const memberSchema = (ctx: SchemaContext) =>
 
 export type Member = z.infer<ReturnType<typeof memberSchema>>;
 
-const alumniSchema = z.union([
-  z.object({
-    name: z.string(),
-    type: z.literal("faculty"),
-  }),
-  z.object({
-    name: z.string(),
-    type: z.union([
-      z.literal("staff"),
-      z.literal("doctor"),
-      z.literal("master"),
-      z.literal("undergraduate"),
-    ]),
-    year: z.number(),
-    month: z.number(),
-  }),
-]);
+const facultyAlumnusSchema = z.object({
+  name: z.string(),
+  type: z.literal("faculty"),
+});
 
-export type Alumni = z.infer<typeof alumniSchema>;
+export type FacultyAlumnus = z.infer<typeof facultyAlumnusSchema>;
+
+const notFacultyAlumnusSchema = z.object({
+  name: z.string(),
+  type: z.union([
+    z.literal("staff"),
+    z.literal("doctor"),
+    z.literal("master"),
+    z.literal("undergraduate"),
+  ]),
+  year: z.number(),
+  month: z.number(),
+});
+
+export type NotFacultyAlumnus = z.infer<typeof notFacultyAlumnusSchema>;
+
+const alumnusSchema = z.union([facultyAlumnusSchema, notFacultyAlumnusSchema]);
+
+export type Alumnus = z.infer<typeof alumnusSchema>;
+
+export type CollectionDataEntry<T> = {
+  id: string;
+  collection: string;
+  data: T;
+};
+
+export function isFacultyAlumnus(
+  alumni: CollectionDataEntry<Alumnus>
+): alumni is CollectionDataEntry<FacultyAlumnus> {
+  return alumni.data.type === "faculty";
+}
+
+export function isNotFacultyAlumnus(
+  alumni: CollectionDataEntry<Alumnus>
+): alumni is CollectionDataEntry<NotFacultyAlumnus> {
+  return alumni.data.type !== "faculty";
+}
+
+const teamMemberSchema = (ctx: SchemaContext) =>
+  z.object({
+    name: z.string(),
+    profile: reference("member"),
+    role: z.string(),
+    message: z.string(),
+    keywords: z.array(z.string()).nullish(),
+  });
+
+export type TeamMember = z.infer<ReturnType<typeof teamMemberSchema>>;
+
+const teamRecentWorkSchema = z.object({
+  title: z.string(),
+  authors: z.array(z.string()),
+  url: z.string().nullish(),
+  description: z.array(z.string()),
+});
+
+export type TeamRecentWork = z.infer<typeof teamRecentWorkSchema>;
+
+const teamSchema = (ctx: SchemaContext) =>
+  z.object({
+    cover: ctx.image(),
+    faculties: z.array(teamMemberSchema(ctx)),
+    students: z.array(teamMemberSchema(ctx)),
+    recentWorks: z.array(teamRecentWorkSchema),
+  });
+
+export type Team = z.infer<ReturnType<typeof teamSchema>>;
 
 export const collections = {
   news: defineCollection({
@@ -187,6 +244,10 @@ export const collections = {
   }),
   alumni: defineCollection({
     type: "data",
-    schema: alumniSchema,
+    schema: alumnusSchema,
+  }),
+  team: defineCollection({
+    type: "data",
+    schema: teamSchema,
   }),
 };

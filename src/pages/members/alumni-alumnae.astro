@@ -1,0 +1,61 @@
+---
+import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
+import H1Section from "@components/composite/section/H1.astro";
+import ChevronListItem from "../../components/display/list/item/Chevron.astro";
+import List from "../../components/display/list/list.astro";
+import Alumni from "@components/pages/members/Alumni.astro";
+import Base from "../../layouts/base/index.astro";
+import { getCollection } from "astro:content";
+import {
+  isFacultyAlumnus,
+  isNotFacultyAlumnus,
+  type CollectionDataEntry,
+  type Alumnus,
+} from "@content";
+const facultyAlumni = (await getCollection("alumni")).filter(isFacultyAlumnus);
+const alumni = (
+  (await getCollection("alumni")) as CollectionDataEntry<Alumnus>[]
+).filter(isNotFacultyAlumnus);
+---
+
+<Base>
+  <NoImageHeader>Almnus</NoImageHeader>
+  <H1Section headingText="教員" backgroundInverted={false}>
+    <List ordered={false}>
+      {
+        facultyAlumni.map((faculty) => (
+          <ChevronListItem>{faculty.data.name}</ChevronListItem>
+        ))
+      }
+    </List>
+  </H1Section>
+  <H1Section headingText="スタッフ" backgroundInverted={false}>
+    <Alumni
+      alumni={alumni
+        .filter((alumni) => alumni.data.type === "staff")
+        .map((alumnus) => alumnus.data)}
+    />
+  </H1Section>
+  <H1Section headingText="博士" backgroundInverted={false}>
+    <Alumni
+      alumni={alumni
+        .filter((alumni) => alumni.data.type === "doctor")
+        .map((alumnus) => alumnus.data)}
+    />
+  </H1Section>
+  <H1Section headingText="修士" backgroundInverted={false}>
+    <Alumni
+      alumni={alumni
+        .filter((alumni) => alumni.data.type === "master")
+        .map((alumnus) => alumnus.data)}
+    />
+  </H1Section>
+  <H1Section headingText="学士" backgroundInverted={false}>
+    <Alumni
+      alumni={alumni
+        .filter((alumni) => alumni.data.type === "undergraduate")
+        .map((alumnus) => alumnus.data)}
+    />
+  </H1Section>
+</Base>
+Alumnus isFacultyAlumnusisFacultyAlumnus isNotFacultyAlumnusisNotFacultyAlumnus

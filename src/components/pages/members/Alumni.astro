@@ -1,22 +1,26 @@
 ---
+import type { NotFacultyAlumnus } from "@content";
+import Alumnus from "./Alumnus.astro";
+
 interface Props {
-  name: string;
-  month: number;
-  year: number;
+  alumni: NotFacultyAlumnus[];
 }
-const { name, year, month } = Astro.props;
+const { alumni: alumnus } = Astro.props;
 ---
 
-<div class="root">
-  <div class="date">
-    {`${year}.${("0" + month).slice(-1)}`}
-  </div>
-  <div class="name">{name}</div>
+<div class="grid">
+  {
+    alumnus.map((staff) => (
+      <Alumnus name={staff.name} year={staff.year} month={staff.month} />
+    ))
+  }
 </div>
 
 <style>
-  .date {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-disable);
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, max-content));
+    gap: 2rem;
+    width: 100%;
   }
 </style>

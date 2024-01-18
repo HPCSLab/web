@@ -1,11 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import Team from "@layouts/team.astro";
-import headerImage from "../../resource/img/pages/team/arch/arcteam_group_photo.jpg";
-import cygnus from "../../resource/img/pages/team/arch/Cygnus.png";
-import aisConcept from "../../resource/img/pages/team/arch/Ais_concept.png";
-import aocl from "../../resource/img/pages/team/arch/aocl.png";
-import astroFpga from "../../resource/img/pages/team/arch/astro-fpga.png";
+import cygnus from "@asset/team/arch/Cygnus.png";
+import aisConcept from "@asset/team/arch/Ais_concept.png";
+import aocl from "@asset/team/arch/aocl.png";
+import astroFpga from "@asset/team/arch/astro-fpga.png";
 import H1Section from "@components/composite/section/H1.astro";
 import List from "@components/display/list/list.astro";
 import Typography from "@components/display/Typography.astro";
@@ -16,9 +15,17 @@ import HStack from "@components/layout/HStack.astro";
 import Width from "@components/layout/box/width.astro";
 import Box from "@components/layout/box/box.astro";
 import Youtube from "@components/display/Youtube.astro";
+import { getEntry } from "astro:content";
+import FacultyCard from "@components/pages/teams/FacultyCard.astro";
+import StudentCard from "@components/pages/teams/StudentCard.astro";
+import RecentWorks from "@components/pages/teams/RecentWorks.astro";
+
+const {
+  data: { cover, faculties, students, recentWorks },
+} = await getEntry("team", "arch");
 ---
 
-<Team name="Architecture team" imgSrc={headerImage} imgAlt="group photo">
+<Team name="Architecture team" imgSrc={cover} imgAlt="group photo">
   <H1Section headingText="朴 泰祐 教授" backgroundInverted={false}>
     <List ordered={false}>
       <ChevronListItem>
@@ -177,6 +184,29 @@ import Youtube from "@components/display/Youtube.astro";
       並列プログラミング言語に関する研究はPAチームとの共同研究で，我々のPEACH2をPAチームで開発している並列言語XcalableMPの演算加速装置向け拡張XcalableACCに導入した実績もあります．
       また，FPGAチームとも協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．
     </Typography>
+  </H1Section>
+  <H1Section headingText="メンバー" backgroundInverted={true}>
+    <div class=".card-container">
+      {
+        faculties.map((faculty) => (
+          <FacultyCard member={faculty}>
+            <Typography>{faculty.message}</Typography>
+          </FacultyCard>
+        ))
+      }
+    </div>
+    <div class="card-container">
+      {
+        students.map((student) => (
+          <StudentCard member={student}>
+            <Typography>{student.message}</Typography>
+          </StudentCard>
+        ))
+      }
+    </div>
+  </H1Section>
+  <H1Section headingText="近年の研究成果" backgroundInverted={false}>
+    <RecentWorks works={recentWorks} />
   </H1Section>
 </Team>
 <style>

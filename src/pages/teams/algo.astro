@@ -1,15 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import Team from "@layouts/team.astro";
-import BoolshelfImage from "../../resource/img/pages/team/algo/ateam-bookshelf.jpg";
-import ServerImage from "../../resource/img/pages/team/algo/server-front.jpg";
+import ServerImage from "@asset/team/algo/server-front.jpg";
 import FacultyCard from "@components/pages/teams/FacultyCard.astro";
-import {
-  students,
-  faculties,
-  recentWorks,
-} from "../../resource/pages/team/algo/index";
-import TopLevelSection from "@components/composite/section/H1.astro";
+import H1Section from "@components/composite/section/H1.astro";
 import List from "@components/display/list/list.astro";
 import Typography from "@components/display/Typography.astro";
 import ChevronLi from "@components/display/list/item/Chevron.astro";
@@ -20,14 +14,15 @@ import RecentWorks from "@components/pages/teams/RecentWorks.astro";
 import Student from "@components/pages/teams/StudentCard.astro";
 import Width from "@components/layout/box/width.astro";
 import Youtube from "@components/display/Youtube.astro";
+import { getEntry } from "astro:content";
+
+const {
+  data: { cover, faculties, students, recentWorks },
+} = await getEntry("team", "algo");
 ---
 
-<Team
-  name="Algorithm team"
-  imgSrc={BoolshelfImage}
-  imgAlt="Algorithmチームの本棚"
->
-  <TopLevelSection headingText="高橋 大介 教授" backgroundInverted={false}>
+<Team name="Algorithm team" imgSrc={cover} imgAlt="Algorithmチームの本棚">
+  <H1Section headingText="高橋 大介 教授" backgroundInverted={false}>
     <List ordered={false}>
       <ChevronLi>
         <Keyword>高性能数値計算</Keyword>に関する研究
@@ -50,8 +45,8 @@ import Youtube from "@components/display/Youtube.astro";
     <ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/">
       個人ページ
     </ReadMoreLink>
-  </TopLevelSection>
-  <TopLevelSection headingText="多田野 寛人 助教" backgroundInverted={false}>
+  </H1Section>
+  <H1Section headingText="多田野 寛人 助教" backgroundInverted={false}>
     <List ordered={false}>
       <ChevronLi>
         <Keyword>大規模線形計算</Keyword>アルゴリズムに関する研究
@@ -74,8 +69,8 @@ import Youtube from "@components/display/Youtube.astro";
     <ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/">
       個人ページ
     </ReadMoreLink>
-  </TopLevelSection>
-  <TopLevelSection
+  </H1Section>
+  <H1Section
     headingText="アルゴリズムチームの使っている計算機について"
     backgroundInverted={false}
   >
@@ -94,27 +89,19 @@ import Youtube from "@components/display/Youtube.astro";
         class="pic-cluster"
       />
     </HStack>
-  </TopLevelSection>
-  <TopLevelSection
-    headingText="FFT (高速フーリエ変換)"
-    backgroundInverted={false}
-  >
+  </H1Section>
+  <H1Section headingText="FFT (高速フーリエ変換)" backgroundInverted={false}>
     <Typography>高橋教授の研究内容のひとつであるFFTをご紹介します。</Typography>
     <Youtube
       src="https://www.youtube.com/embed/GPJx5JTGQEU"
       ,
       title="配信講義 計算科学技術特論B (2020) 第6回"
     />
-    <TopLevelSection headingText="メンバー" backgroundInverted={true}>
+    <H1Section headingText="メンバー" backgroundInverted={true}>
       <div class=".card-container">
         {
           faculties.map((faculty) => (
-            <FacultyCard
-              name={faculty.name}
-              icon={faculty.icon}
-              role={faculty.role}
-              keywords={faculty.keywords}
-            >
+            <FacultyCard member={faculty}>
               <Typography>{faculty.message}</Typography>
             </FacultyCard>
           ))
@@ -123,21 +110,14 @@ import Youtube from "@components/display/Youtube.astro";
       <div class="card-container">
         {
           students.map((student) => (
-            <Student
-              name={student.name}
-              icon={student.icon}
-              role={student.role}
-            >
+            <Student member={student}>
               <Typography>{student.message}</Typography>
             </Student>
           ))
         }
       </div>
-    </TopLevelSection>
-    <TopLevelSection
-      headingText="近年の研究成果について"
-      backgroundInverted={false}
-    >
+    </H1Section>
+    <H1Section headingText="近年の研究成果について" backgroundInverted={false}>
       <Typography>
         教員の研究成果については，以下のページよりご覧ください．
       </Typography>
@@ -170,9 +150,9 @@ import Youtube from "@components/display/Youtube.astro";
         <Typography>
           筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
         </Typography>
-        <RecentWorks works={recentWorks} />
       </div>
-    </TopLevelSection>
+      <RecentWorks works={recentWorks} />
+    </H1Section>
 
     <style>
       .pic-cluster {
@@ -205,5 +185,5 @@ import Youtube from "@components/display/Youtube.astro";
         margin-left: 0.5em;
       }
     </style>
-  </TopLevelSection>
+  </H1Section>
 </Team>

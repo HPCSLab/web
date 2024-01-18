@@ -4,33 +4,87 @@ import TopLevelSection from "@components/composite/section/H1.astro";
 import ListItem from "@components/display/list/item/Naked.astro";
 import List from "@components/display/list/list.astro";
 import Base from "@layouts/base/index.astro";
-import { unwrap } from "../../../lib/util";
-import { grouped, years } from "../../../resource/publications";
 import PublicationHeading from "@components/pages/publications/PublicationHeading.astro";
 import type { GetStaticPaths } from "astro";
 import SubClass from "@components/pages/publications/SubClass.astro";
 import { Icon } from "astro-icon/components";
 import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
+import { getCollection } from "astro:content";
 
-export const getStaticPaths = (() => {
-  return years.map((year) => ({
-    params: { year: year.toString() },
+const years = [
+  ...new Set((await getCollection("publication")).map((pub) => pub.data.year)),
+];
+
+export const getStaticPaths = (async () => {
+  return [
+    ...new Set(
+      (await getCollection("publication")).map((pub) => pub.data.year)
+    ),
+  ].map((year) => ({
+    params: { year },
   }));
 }) satisfies GetStaticPaths;
 
-const year = parseInt(Astro.params.year, 10);
-const { journal, international, domestic } = unwrap(
-  grouped.get(year)
-).categorized;
+const journal = await getCollection(
+  "publication",
+  (pub) => pub.data.class.class === "journal"
+);
 
-const prevYear = years[years.indexOf(year) - 1];
-const nextYear = years[years.indexOf(year) + 1];
+const international = {
+  conference: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "international" &&
+      pub.data.class.subclass === "conference"
+  ),
+  poster: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "international" &&
+      pub.data.class.subclass === "poster"
+  ),
+};
+
+const domestic = {
+  conference: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "conference"
+  ),
+  poster: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "poster"
+  ),
+  workshop: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "workshop"
+  ),
+  magazine: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "magazine"
+  ),
+  misc: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" && pub.data.class.subclass === "misc"
+  ),
+};
+
+const prevYear = years[years.indexOf(Astro.params.year) - 1];
+const nextYear = years[years.indexOf(Astro.params.year) + 1];
 ---
 
 <Base>
   <NoImageHeader>
     <span class="supplemental-text-in-heading">Publications of</span>
-    <span class="year-in-heading">{year}</span>
+    <span class="year-in-heading">{Astro.params.year}</span>
   </NoImageHeader>
   <ResponsiveWidth>
     <nav class="year-nav">

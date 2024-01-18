@@ -6,7 +6,7 @@ import PublicationHeading from "./PublicationHeading.astro";
 
 interface Props {
   title: string;
-  publications: Publication[];
+  publications: { data: Publication; id: string }[];
 }
 
 const { title, publications } = Astro.props;

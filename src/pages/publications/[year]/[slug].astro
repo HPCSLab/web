@@ -1,24 +1,31 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { grouped, publicationCollection } from "../../../resource/publications";
 import Base from "@layouts/base/index.astro";
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
-import { unwrap } from "../../../lib/util";
 import Codeblock from "@components/display/codeblock.astro";
 import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
-export const getStaticPaths = (() => {
-  return [...grouped.entries()].flatMap(([year, pubs]) =>
-    pubs.all.map((pub) => ({
-      params: {
-        year,
-        slug: pub.slug,
-      },
-    }))
-  );
+import { getCollection, getEntry } from "astro:content";
+export const getStaticPaths = (async () => {
+  return (await getCollection("publication")).map((pub) => {
+    const matched = /(\d{4})\/(.+)/.exec(pub.id);
+    if (matched && matched[1] && matched[2]) {
+      return {
+        params: {
+          year: matched[1],
+          slug: matched[2],
+        },
+      };
+    } else {
+      throw new Error("invalid format");
+    }
+  });
 }) satisfies GetStaticPaths;
 
-const { slug } = Astro.params;
-const pub = unwrap(publicationCollection.get(slug));
+const { year, slug } = Astro.params;
+const pub = (await getEntry("publication", `${year}/${slug}`))?.data;
+if (pub === undefined) {
+  throw new Error(`${year}/${slug} not found`);
+}
 ---
 
 <Base>

@@ -3,7 +3,7 @@ import type { Publication } from "@content";
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
 
 interface Props {
-  pub: Publication;
+  pub: { data: Publication; id: string };
 }
 
 const { pub } = Astro.props;
@@ -11,16 +11,16 @@ const { pub } = Astro.props;
 
 <section>
   <div class="work-title">
-    <ExternalLink href={`/publications/${pub.year}/${pub.slug}`}>
-      {pub.title}
+    <ExternalLink href={`/publications/${pub.id}`}>
+      {pub.data.title}
     </ExternalLink>
   </div>
   <div class="work-detail">
     <ul class="authors-container">
-      {pub.authors.map((author) => <li class="author">{author}</li>)}
+      {pub.data.authors.map((author) => <li class="author">{author}</li>)}
     </ul>
     <div>
-      {pub.booktitle}
+      {pub.data.booktitle}
     </div>
   </div>
 </section>

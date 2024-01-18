@@ -1,31 +1,33 @@
 ---
 import { Image } from "astro:assets";
-import Icons from "../../../resource/img/icons";
-import { unwrap } from "../../../lib/util";
 import Badge from "@components/display/Badge.astro";
+import type { TeamMember } from "@content";
+import { getCollection, getEntry } from "astro:content";
 
 interface Props {
-  name: string;
-  role: string;
-  icon: string;
-  keywords?: string[] | null;
+  member: TeamMember;
 }
+
+const { member } = Astro.props;
+const {
+  data: { icon },
+} = await getEntry(member.profile.collection, member.profile.id);
 ---
 
 <section>
   <div class="top-wrapper">
     <div class="icon-wrapper">
-      <Image src={unwrap(Icons.get(Astro.props.icon))} alt={Astro.props.name} />
+      <Image src={icon} alt={member.name} />
     </div>
     <div class="top-text">
       <h3>
-        <span class="name">{Astro.props.name}</span>
-        <span class="role">{Astro.props.role}</span>
+        <span class="name">{member.name}</span>
+        <span class="role">{member.role}</span>
       </h3>
       {
-        Astro.props.keywords ? (
+        member.keywords ? (
           <ul class="keywords-container">
-            {Astro.props.keywords.map((keyword) => (
+            {member.keywords.map((keyword) => (
               <li class="keyword">
                 <Badge>{keyword}</Badge>
               </li>
