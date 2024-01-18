@@ -1,0 +1,33 @@
+title: An 80Gb/s Dependable multicore Communication SoC with PCI Express I/F and
+  Intelligent Interrupt Controller
+booktitle: IEEE Symposium on Low-Power and High-Speed Chips (COOL Chips XIV), 3
+  pages (regular), 2011 (PDF).
+year: 2011
+authors:
+  - Sugako Otani
+  - Hiroyuki Kondo
+  - Itaru Nonomura
+  - Atsuyuki Ikeya
+  - Minoru Uemura
+  - Katsushi Asahina
+  - Kazutami Arimoto
+  - Shin’ichi Miura
+  - Toshihiro Hanawa
+  - Taisuke Boku
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2011-8333,
+    title = {An 80Gb/s Dependable multicore Communication SoC with PCI Express I/F and Intelligent Interrupt Controller},
+    booktitle = {IEEE Symposium on Low-Power and High-Speed Chips (COOL Chips XIV), 3 pages (regular), 2011 (PDF).},
+    year = {2011},
+  }
+slug: hpcs2011-8333
+reference: Sugako Otani, Hiroyuki Kondo, Itaru Nonomura, Atsuyuki Ikeya, Minoru
+  Uemura, Katsushi Asahina, Kazutami Arimoto, Shin’ichi Miura, Toshihiro Hanawa,
+  Taisuke Boku, Mitsuhisa Sato, “An 80Gb/s Dependable multicore Communication
+  SoC with PCI Express I/F and Intelligent Interrupt Controller,” IEEE Symposium
+  on Low-Power and High-Speed Chips (COOL Chips XIV), 3 pages (regular), 2011
+  (PDF).
+class:
+  class: international
+  subclass: conference

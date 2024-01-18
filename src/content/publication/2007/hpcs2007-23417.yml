@@ -1,0 +1,22 @@
+title: 匿名相互証明書とP2P通信を用いる認証方式
+booktitle: 先進的計算基盤システムシンポジウムSACSIS2007論文集
+year: 2007
+authors:
+  - 平野 基孝
+  - 首藤 一幸
+  - 田中 良夫
+  - 佐藤 三久
+bibtex: |-
+  @inproceedings{hpcs2007-23417,
+    title = {匿名相互証明書とP2P通信を用いる認証方式},
+    booktitle = {先進的計算基盤システムシンポジウムSACSIS2007論文集},
+    pages = {8794},
+    year = {2007},
+  }
+slug: hpcs2007-23417
+reference:
+  平野 基孝, 首藤 一幸, 田中 良夫, 佐藤 三久：匿名相互証明書とP2P通信を用いる認証方式,
+  先進的計算基盤システムシンポジウムSACSIS2007論文集, pp. 8794, (2007).
+class:
+  class: domestic
+  subclass: conference

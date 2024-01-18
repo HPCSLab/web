@@ -1,0 +1,25 @@
+title: MegaProto/Eにおける電力性能評価および電力性能最適化の検討
+booktitle: 情報処理学会研究報告, 2006HPC108
+year: 2006
+authors:
+  - 今田貴之
+  - 佐藤三久
+  - 堀田義彦
+  - 木村英明
+  - 朴泰祐
+  - 高橋大介
+  - 三浦信一
+bibtex: |-
+  @inproceedings{hpcs2006-49883,
+    title = {MegaProto/Eにおける電力性能評価および電力性能最適化の検討},
+    booktitle = {情報処理学会研究報告, 2006HPC108},
+    pages = {6772},
+    year = {2006},
+  }
+slug: hpcs2006-49883
+reference:
+  今田貴之，佐藤三久，堀田義彦，木村英明，朴泰祐，高橋大介，三浦信一：MegaProto/Eにおける電力性能評価および電力性能最適化の検討，情報処理学会研究報告，2006HPC108，pp.
+  6772, (2006).
+class:
+  class: domestic
+  subclass: workshop

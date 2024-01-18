@@ -1,0 +1,17 @@
+title: トラフィック量に適応する非対称マルチリンクEthernetトランキング 第21回コンピュータシステム・シンポジウム(ComSys 2009)論文集
+year: 2009
+authors:
+  - 米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久
+bibtex: >-
+  @inproceedings{hpcs2009-50762,
+    title = {トラフィック量に適応する非対称マルチリンクEthernetトランキング 第21回コンピュータシステム・シンポジウム(ComSys 2009)論文集},
+    pages = {21-30},
+    year = {2009},
+  }
+slug: hpcs2009-50762
+reference:
+  米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久：トラフィック量に適応する非対称マルチリンクEthernetトランキング
+  第21回コンピュータシステム・シンポジウム(ComSys 2009)論文集, pp. 21-30, 2009
+class:
+  class: domestic
+  subclass: conference

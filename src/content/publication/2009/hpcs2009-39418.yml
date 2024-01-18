@@ -1,0 +1,19 @@
+title: 非対称な形状に適応する高バンド幅multi-link Ethernet 情報処理学会研究報告
+booktitle: 2009-OS-112(17)
+year: 2009
+authors:
+  - 米元大我、三浦信一、塙敏博、朴泰祐、佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2009-39418,
+    title = {非対称な形状に適応する高バンド幅multi-link Ethernet 情報処理学会研究報告},
+    booktitle = {2009-OS-112(17)},
+    pages = {1-9},
+    year = {2009},
+  }
+slug: hpcs2009-39418
+reference:
+  米元大我、三浦信一、塙敏博、朴泰祐、佐藤三久：非対称な形状に適応する高バンド幅multi-link Ethernet
+  情報処理学会研究報告，2009-OS-112(17)，pp. 1-9, 2009
+class:
+  class: domestic
+  subclass: workshop

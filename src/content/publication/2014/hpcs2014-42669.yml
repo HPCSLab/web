@@ -1,0 +1,20 @@
+title: ワークフローシステムPwrakeにおけるI/O性能を考慮したタスクスケジューリング
+booktitle: 情報処理学会研究報告. Vol.2014-HPC-143
+year: 2014
+authors:
+  - 田中昌宏
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2014-42669,
+    title = {ワークフローシステムPwrakeにおけるI/O性能を考慮したタスクスケジューリング},
+    booktitle = {情報処理学会研究報告. Vol.2014-HPC-143},
+    number = {3},
+    year = {2014},
+  }
+slug: hpcs2014-42669
+reference:
+  "田中昌宏, 建部修見: ワークフローシステムPwrakeにおけるI/O性能を考慮したタスクスケジューリング． 情報処理学会研究報告.
+  Vol.2014-HPC-143, No.3, 2014"
+class:
+  class: domestic
+  subclass: workshop

@@ -1,0 +1,19 @@
+title: "OpenGR: A directivebased grid programming environment"
+booktitle: Parallel Computing 31, pp 11401154
+year: 2005
+authors:
+  - M. Hirano
+  - M. Sato
+  - Y. Tanaka
+bibtex: |-
+  @inproceedings{hpcs2005-36115,
+    title = {OpenGR: A directivebased grid programming environment},
+    booktitle = {Parallel Computing 31, pp 11401154},
+    year = {2005},
+  }
+slug: hpcs2005-36115
+reference: "M. Hirano, M. Sato, Y. Tanaka: OpenGR: A directivebased grid
+  programming environment. Parallel Computing 31, pp 11401154, (2005)."
+class:
+  class: international
+  subclass: conference

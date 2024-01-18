@@ -1,0 +1,28 @@
+title: Performance Improvement by Data Management Layer in a Grid RPC System
+booktitle: Proc. First International Conference on Grid and Pervasive Computing
+  (GPC 2006), Lecture Notes in Computer Science
+year: 2006
+authors:
+  - Yoshiaki Aida
+  - Yoshihiro Nakajima
+  - Mitsuhisa Sato
+  - Tetsuya Sakurai
+  - Daisuke Takahashi
+  - Taisuke Boku
+bibtex: >-
+  @inproceedings{hpcs2006-42083,
+    title = {Performance Improvement by Data Management Layer in a Grid RPC System},
+    booktitle = {Proc. First International Conference on Grid and Pervasive Computing (GPC 2006), Lecture Notes in Computer Science},
+    pages = {324335},
+    number = {3947},
+    year = {2006},
+  }
+slug: hpcs2006-42083
+reference: "Yoshiaki Aida, Yoshihiro Nakajima, Mitsuhisa Sato, Tetsuya Sakurai,
+  Daisuke Takahashi, Taisuke Boku: Performance Improvement by Data Management
+  Layer in a Grid RPC System, Proc. First International Conference on Grid and
+  Pervasive Computing (GPC 2006), Lecture Notes in Computer Science, No. 3947,
+  pp. 324335, SpringerVerlag, (2006)."
+class:
+  class: international
+  subclass: conference

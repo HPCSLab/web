@@ -1,0 +1,25 @@
+title: "MegaProto/E: PowerAware HighPerformance Cluster with Commodity Technology"
+booktitle: Proc. 20th IEEE International Parallel and Distributed Processing
+  Symposium (IPDPS’06).
+year: 2006
+authors:
+  - Taisuke Boku
+  - Mitsuhisa Sato
+  - Daisuke Takahashi
+  - Hiroshi Nakashima
+  - Hiroshi Nakamura
+  - Satoshi Matsuoka and Yoshihiko Hotta
+bibtex: >-
+  @inproceedings{hpcs2006-8395,
+    title = {MegaProto/E: PowerAware HighPerformance Cluster with Commodity Technology},
+    booktitle = {Proc. 20th IEEE International Parallel and Distributed Processing Symposium (IPDPS’06).},
+    year = {2006},
+  }
+slug: hpcs2006-8395
+reference: "Taisuke Boku, Mitsuhisa Sato, Daisuke Takahashi, Hiroshi Nakashima,
+  Hiroshi Nakamura, Satoshi Matsuoka and Yoshihiko Hotta: MegaProto/E:
+  PowerAware HighPerformance Cluster with Commodity Technology, Proc. 20th IEEE
+  International Parallel and Distributed Processing Symposium (IPDPS’06)."
+class:
+  class: international
+  subclass: conference

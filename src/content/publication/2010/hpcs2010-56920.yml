@@ -1,0 +1,17 @@
+title: 分散メモリ向け並列言語XcalableMPコンパイラの実装と性能評価　先進的計算基盤システムシンポジウムSACSIS2010論文集
+year: 2010
+authors:
+  - 李珍泌
+  - 朴泰祐
+  - 佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2010-56920,
+    title = {分散メモリ向け並列言語XcalableMPコンパイラの実装と性能評価　先進的計算基盤システムシンポジウムSACSIS2010論文集},
+    pages = {175-182},
+    year = {2010},
+  }
+slug: hpcs2010-56920
+reference: 李珍泌，朴泰祐，佐藤三久：分散メモリ向け並列言語XcalableMPコンパイラの実装と性能評価　先進的計算基盤システムシンポジウムSACSIS2010論文集，pp.175-182，2010
+class:
+  class: domestic
+  subclass: conference

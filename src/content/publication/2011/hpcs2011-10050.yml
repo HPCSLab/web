@@ -1,0 +1,18 @@
+title: Non-blocking RPCを用いた遠隔ファイルアクセスの実装と性能評価
+booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会(HPC132), 2011年11月
+year: 2011
+authors:
+  - 大辻弘貴
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2011-10050,
+    title = {Non-blocking RPCを用いた遠隔ファイルアクセスの実装と性能評価},
+    booktitle = {情報処理学会ハイパフォーマンスコンピューティング研究会(HPC132), 2011年11月},
+    year = {2011},
+  }
+slug: hpcs2011-10050
+reference: 大辻弘貴，建部修見，「Non-blocking
+  RPCを用いた遠隔ファイルアクセスの実装と性能評価」，情報処理学会ハイパフォーマンスコンピューティング研究会(HPC132)，2011年11月
+class:
+  class: domestic
+  subclass: workshop

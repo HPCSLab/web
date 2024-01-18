@@ -1,0 +1,20 @@
+title: 並列分散ワークフローシステムPwrakeによる大規模データ処理
+booktitle: 宇宙航空研究開発機構研究開発報告 JAXA-RR-11-007 (宇宙科学情報解析論文誌第一号)
+year: 2012
+authors:
+  - 田中昌宏
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2012-15220,
+    title = {並列分散ワークフローシステムPwrakeによる大規模データ処理},
+    booktitle = {宇宙航空研究開発機構研究開発報告 JAXA-RR-11-007 (宇宙科学情報解析論文誌第一号)},
+    pages = {67-75},
+    year = {2012},
+  }
+slug: hpcs2012-15220
+reference:
+  田中昌宏, 建部修見, “並列分散ワークフローシステムPwrakeによる大規模データ処理”, 宇宙航空研究開発機構研究開発報告
+  JAXA-RR-11-007 (宇宙科学情報解析論文誌第一号), pp.67-75, 2012年3月
+class:
+  class: domestic
+  subclass: conference

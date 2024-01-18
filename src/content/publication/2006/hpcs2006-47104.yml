@@ -1,0 +1,23 @@
+title: "VFRECNet: ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク"
+booktitle: 先進的計算基盤システムシンポジウムSACSIS2006論文集
+year: 2006
+authors:
+  - 三浦信一
+  - 岡本高幸
+  - 朴泰祐
+  - 佐藤三久
+  - 高橋大介
+bibtex: |-
+  @inproceedings{hpcs2006-47104,
+    title = {VFRECNet: ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク},
+    booktitle = {先進的計算基盤システムシンポジウムSACSIS2006論文集},
+    pages = {117125},
+    year = {2006},
+  }
+slug: hpcs2006-47104
+reference: "三浦信一，岡本高幸，朴泰祐，佐藤三久，高橋大介：VFRECNet:
+  ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク，先進的計算基盤システムシンポジウムSACSIS2006論文集, pp.
+  117125, (2006)."
+class:
+  class: domestic
+  subclass: conference

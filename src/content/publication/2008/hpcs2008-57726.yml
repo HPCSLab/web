@@ -1,0 +1,20 @@
+title: オープンなセンサを共有するセンシングWebのための広域分散アーキテクチャ情報処理学会研究報告
+booktitle: 2008HPC116
+year: 2008
+authors:
+  - 神林亮
+  - 佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2008-57726,
+    title = {オープンなセンサを共有するセンシングWebのための広域分散アーキテクチャ情報処理学会研究報告},
+    booktitle = {2008HPC116},
+    pages = {229-234},
+    year = {2008},
+  }
+slug: hpcs2008-57726
+reference:
+  神林亮，佐藤三久：オープンなセンサを共有するセンシングWebのための広域分散アーキテクチャ情報処理学会研究報告，2008HPC116，pp.
+  229-234, (2008)
+class:
+  class: domestic
+  subclass: workshop

@@ -1,0 +1,22 @@
+title: Nuclear Fusion Simulation Code Optimization and Performance Evaluation on
+  GPU Clusters
+booktitle: Proc. of PDSEC2014, May-2014.
+year: 2014
+authors:
+  - N. Fujita
+  - H. Nuga
+  - T. Boku
+  - Y. Idomura
+bibtex: >-
+  @inproceedings{hpcs2014-9463,
+    title = {Nuclear Fusion Simulation Code Optimization and Performance Evaluation on GPU Clusters},
+    booktitle = {Proc. of PDSEC2014, May-2014.},
+    year = {2014},
+  }
+slug: hpcs2014-9463
+reference: N. Fujita, H. Nuga, T. Boku, Y. Idomura, “Nuclear Fusion Simulation
+  Code Optimization and Performance Evaluation on GPU Clusters”, Proc. of
+  PDSEC2014, May-2014.
+class:
+  class: international
+  subclass: conference

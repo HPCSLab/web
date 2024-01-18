@@ -1,0 +1,17 @@
+title: 省電力でディペンダブルな組込み並列システム向け計算プラットフォーム　ソフトウェアデザイン２月号
+booktitle: 技術評論社
+year: 2010
+authors:
+  - 塙敏博
+bibtex: |-
+  @inproceedings{hpcs2010-25373,
+    title = {省電力でディペンダブルな組込み並列システム向け計算プラットフォーム　ソフトウェアデザイン２月号},
+    booktitle = {技術評論社},
+    pages = {93-97},
+    year = {2010},
+  }
+slug: hpcs2010-25373
+reference: 塙敏博：省電力でディペンダブルな組込み並列システム向け計算プラットフォーム　ソフトウェアデザイン２月号，技術評論社, pp. 93-97, 2010
+class:
+  class: domestic
+  subclass: magazine

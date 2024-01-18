@@ -1,0 +1,18 @@
+title: ◦大規模SMPクラスタにおけるOpenMP/MPIハイブリッドプログラムの性能評価 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集
+year: 2009
+authors:
+  - 辻 美和子
+  - 佐藤 三久
+bibtex: >-
+  @inproceedings{hpcs2009-46048,
+    title = {◦大規模SMPクラスタにおけるOpenMP/MPIハイブリッドプログラムの性能評価 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集},
+    pages = {265-272},
+    year = {2009},
+  }
+slug: hpcs2009-46048
+reference:
+  辻 美和子, 佐藤 三久：◦大規模SMPクラスタにおけるOpenMP/MPIハイブリッドプログラムの性能評価
+  先進的計算基盤システムシンポジウム(SACSIS 2009)論文集，pp.265-272, 2009
+class:
+  class: domestic
+  subclass: conference

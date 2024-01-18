@@ -1,0 +1,17 @@
+title: 高性能クラスタのための高速汎用ステージングソフトウェア 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集
+year: 2009
+authors:
+  - 松葉浩也、堀敦史、石川裕
+bibtex: |-
+  @inproceedings{hpcs2009-4952,
+    title = {高性能クラスタのための高速汎用ステージングソフトウェア 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集},
+    pages = {239-246},
+    year = {2009},
+  }
+slug: hpcs2009-4952
+reference:
+  松葉浩也、堀敦史、石川裕：高性能クラスタのための高速汎用ステージングソフトウェア 先進的計算基盤システムシンポジウム(SACSIS
+  2009)論文集，pp.239-246, 2009
+class:
+  class: domestic
+  subclass: conference

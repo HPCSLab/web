@@ -1,10 +1,13 @@
 ---
+import { getCollection } from "astro:content";
 import ExternalLink from "../../components/anchor/external-link.astro";
 import Typography from "../../components/atom/typography.astro";
 import NoImgHeader from "../../components/common/no-img-header.astro";
 import ResponsiveWidth from "../../components/layout/responsive-width.astro";
 import Base from "../../layouts/base.astro";
-import { news } from "./_index";
+// import { news } from "./_index";
+
+const news = await getCollection("news");
 ---
 
 <Base title="News">
@@ -12,18 +15,16 @@ import { news } from "./_index";
   <ResponsiveWidth>
     <ul>
       {
-        news.map((frontmatter) => (
+        news.map((article) => (
           <li>
             <h2 class="title">
-              <ExternalLink
-                href={`/news/${frontmatter.year}/${frontmatter.slug}`}
-              >
-                {frontmatter.title}
+              <ExternalLink href={`/news/${article.slug}`}>
+                {article.data.title}
               </ExternalLink>
             </h2>
             <div class="detail">
-              <div class="date">{frontmatter.date}</div>
-              <Typography>{frontmatter.description}</Typography>
+              <div class="date">{article.data.date}</div>
+              <Typography>{article.data.description}</Typography>
             </div>
           </li>
         ))

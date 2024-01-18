@@ -1,0 +1,21 @@
+title: 行列積を用いた古典 GramSchmidt直交化の再帰的実装
+booktitle: 日本応用数理学会2006年度年会講演予稿集
+year: 2006
+authors:
+  - 横澤拓弥
+  - 高橋大介
+  - 朴泰祐
+  - 佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2006-12001,
+    title = {行列積を用いた古典 GramSchmidt直交化の再帰的実装},
+    booktitle = {日本応用数理学会2006年度年会講演予稿集},
+    pages = {324325},
+    year = {2006},
+  }
+slug: hpcs2006-12001
+reference: 横澤拓弥，高橋大介，朴泰祐，佐藤三久：行列積を用いた古典
+  GramSchmidt直交化の再帰的実装，日本応用数理学会2006年度年会講演予稿集， pp. 324325, (2006).
+class:
+  class: domestic
+  subclass: workshop

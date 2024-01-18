@@ -1,0 +1,23 @@
+title: EthernetマルチリンクによるPCクラスタ向け耐故障ネットワークRI2N/UDP
+booktitle: 先進的計算基盤システムシンポジウムSACSIS2006論文集
+year: 2006
+authors:
+  - 岡本高幸
+  - 三浦信一
+  - 朴泰祐
+  - 佐藤三久
+  - 高橋大介
+bibtex: |-
+  @inproceedings{hpcs2006-20506,
+    title = {EthernetマルチリンクによるPCクラスタ向け耐故障ネットワークRI2N/UDP},
+    booktitle = {先進的計算基盤システムシンポジウムSACSIS2006論文集},
+    pages = {271272},
+    year = {2006},
+  }
+slug: hpcs2006-20506
+reference:
+  岡本高幸，三浦信一，朴泰祐，佐藤三久，高橋大介：EthernetマルチリンクによるPCクラスタ向け耐故障ネットワークRI2N/UDP，先進的計算基盤システムシンポジウムSACSIS2006論文集,
+  pp. 271272, (2006).
+class:
+  class: domestic
+  subclass: poster

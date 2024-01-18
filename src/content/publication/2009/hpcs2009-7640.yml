@@ -1,0 +1,18 @@
+title: A Distributed Architecture of Sensing Web for Sharing Open Sensor Nodes
+booktitle: "GPC 2009: pp.340-352"
+year: 2009
+authors:
+  - Ryo Kanbayashi
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2009-7640,
+    title = {A Distributed Architecture of Sensing Web for Sharing Open Sensor Nodes},
+    booktitle = {GPC 2009: pp.340-352},
+    year = {2009},
+  }
+slug: hpcs2009-7640
+reference: "Ryo Kanbayashi, Mitsuhisa Sato: A Distributed Architecture of
+  Sensing Web for Sharing Open Sensor Nodes. GPC 2009: pp.340-352"
+class:
+  class: international
+  subclass: conference

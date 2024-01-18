@@ -1,0 +1,27 @@
+title: Heterogeneous Remote Computing System for Computational Astrophysics with
+  OmniRPC
+booktitle: 2004 Symposium on Applications and the InternetWorkshops (SAINT 2004
+  Workshops), High Performance Grid Computing and Networking.
+year: 2004
+authors:
+  - Kenji Onuma
+  - Taisuke Boku
+  - Mitsuhisa Sato
+  - Daisuke Takahashi
+  - Hajime Susa
+  - Masayuki Umemura
+bibtex: >-
+  @inproceedings{hpcs2004-40786,
+    title = {Heterogeneous Remote Computing System for Computational Astrophysics with OmniRPC},
+    booktitle = {2004 Symposium on Applications and the InternetWorkshops (SAINT 2004 Workshops), High Performance Grid Computing and Networking.},
+    year = {2004},
+  }
+slug: hpcs2004-40786
+reference: Kenji Onuma, Taisuke Boku, Mitsuhisa Sato, Daisuke Takahashi, Hajime
+  Susa, Masayuki Umemura, “Heterogeneous Remote Computing System for
+  Computational Astrophysics with OmniRPC”, 2004 Symposium on Applications and
+  the InternetWorkshops (SAINT 2004 Workshops), High Performance Grid Computing
+  and Networking.
+class:
+  class: international
+  subclass: conference

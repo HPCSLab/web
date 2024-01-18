@@ -1,0 +1,26 @@
+title: Integration of TicToc Concurrency Control Protocol with Parallel Write
+  Ahead Logging Protocol
+booktitle: International Journal of Networking and Computing
+year: 2019
+authors:
+  - Yasuhiro Nakamura
+  - Hideyuki Kawashima
+  - Osamu Tatebe
+bibtex: >-
+  @article{ijnc2019:nakamura,
+  	author    = {Yasuhiro Nakamura, and Hideyuki Kawashima, and Osamu Tatebe,},
+  	title     = {Integration of TicToc Concurrency Control Protocol with Parallel Write Ahead Logging Protocol},
+  	booktitle = {International Journal of Networking and Computing},
+  	volume    = {9},
+  	number    = {2},
+  	pages     = {339--353},
+  	doi       = {10.15803/ijnc.9.2_339},
+  	year      = {2019},
+  }
+slug: ijnc2019nakamura
+reference: " Yasuhiro Nakamura,  Hideyuki Kawashima,  Osamu Tatebe: “Integration
+  of TicToc Concurrency Control Protocol with Parallel Write Ahead Logging
+  Protocol”, International Journal of Networking and Computing, Vol. 9, No. 2,
+  pp. 339-353, 2019."
+class:
+  class: journal

@@ -1,0 +1,37 @@
+title: |-
+  Evaluation of Multicore Processor for Embedded Systems by
+  Parallel Benchmark Program using OpenMP
+booktitle: >-
+  Proc. of 5th International
+
+  Workshop on OpenMP (IWOMP 2009), Lecture Notes in Computer Science 5568, Springer
+year: 2009
+authors:
+  - Toshihiro Hanawa
+  - Mitsuhisa Sato
+  - Jinpil Lee
+  - Takayuki Imada
+  - Hideaki Kimura
+  - and Taisuke Boku
+bibtex: >-
+  @inproceedings{hpcs2009-23072,
+    title = {Evaluation of Multicore Processor for Embedded Systems by
+  Parallel Benchmark Program using OpenMP},
+    booktitle = {Proc. of 5th International
+  Workshop on OpenMP (IWOMP 2009), Lecture Notes in Computer Science 5568, Springer},
+    pages = {15-27},
+    year = {2009},
+  }
+slug: hpcs2009-23072
+reference: >-
+  Toshihiro Hanawa, Mitsuhisa Sato, Jinpil Lee, Takayuki Imada, Hideaki Kimura,
+  and Taisuke Boku,
+
+  “Evaluation of Multicore Processor for Embedded Systems by
+
+  Parallel Benchmark Program using OpenMP,” Proc. of 5th International
+
+  Workshop on OpenMP (IWOMP 2009), Lecture Notes in Computer Science 5568, Springer, pp. 15-27, (2009).
+class:
+  class: international
+  subclass: conference

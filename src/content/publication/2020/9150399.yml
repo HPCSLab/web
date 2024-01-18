@@ -1,0 +1,25 @@
+title: Design of Locality-aware MPI-IO for Scalable Shared File Write Performance
+booktitle: 2020 IEEE International Parallel and Distributed Processing Symposium
+  Workshops (IPDPSW)
+year: 2020
+authors:
+  - K. Sugihara
+  - O. Tatebe
+bibtex: >-
+  @INPROCEEDINGS{9150399,
+    author={K. {Sugihara} and O. {Tatebe}},
+    booktitle={2020 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)}, 
+    title={Design of Locality-aware MPI-IO for Scalable Shared File Write Performance}, 
+    year={2020},
+    volume={},
+    number={},
+    pages={1080-1089},
+  }
+slug: "9150399"
+reference: "K. Sugihara, O. Tatebe: “Design of Locality-aware MPI-IO for
+  Scalable Shared File Write Performance”, 2020 IEEE International Parallel and
+  Distributed Processing Symposium Workshops (IPDPSW), Vol. , No. , pp.
+  1080-1089, 2020."
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,19 @@
+title: Hadoop MapReduce on Gfarm File System
+booktitle: PRAGMA 18
+year: 2010
+authors:
+  - Shunsuke Mikami
+  - Kazuki Ohta
+  - Osamu Tatebe
+bibtex: |-
+  @inproceedings{hpcs2010-35788,
+    title = {Hadoop MapReduce on Gfarm File System},
+    booktitle = {PRAGMA 18},
+    year = {2010},
+  }
+slug: hpcs2010-35788
+reference: "Shunsuke Mikami, Kazuki Ohta, Osamu Tatebe: Hadoop MapReduce on
+  Gfarm File System, PRAGMA 18, 2010"
+class:
+  class: international
+  subclass: conference

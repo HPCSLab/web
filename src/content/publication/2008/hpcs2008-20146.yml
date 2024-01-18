@@ -1,0 +1,25 @@
+title: Power Management of Distributed Web Servers by Controlling Server Power
+  State and Traffic Prediction for QoS
+booktitle: in Proceedings of High Performance Power-Aware Computing
+  Workshop(HPPAC) in the 22th IEEE IPDPS
+year: 2008
+authors:
+  - Takayuki Imada
+  - Mitsuhisa Sato
+  - Yoshihiko Hotta
+  - Hideaki Kimura
+bibtex: >-
+  @inproceedings{hpcs2008-20146,
+    title = {Power Management of Distributed Web Servers by Controlling Server Power State and Traffic Prediction for QoS},
+    booktitle = {in Proceedings of High Performance Power-Aware Computing Workshop(HPPAC) in the 22th IEEE IPDPS},
+    pages = {1-8},
+    year = {2008},
+  }
+slug: hpcs2008-20146
+reference: "Takayuki Imada, Mitsuhisa Sato, Yoshihiko Hotta, Hideaki Kimura:
+  Power Management of Distributed Web Servers by Controlling Server Power State
+  and Traffic Prediction for QoS, in Proceedings of High Performance Power-Aware
+  Computing Workshop(HPPAC) in the 22th IEEE IPDPS, pp.1-8"
+class:
+  class: international
+  subclass: conference

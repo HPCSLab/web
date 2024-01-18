@@ -1,0 +1,25 @@
+title: Power-aware
+booktitle: 'Dependable, and High-Performance Communication Link Using PCI
+  Express: PEARL, " IEEE International Conference on Cluster Computing
+  (Cluster2010), poster, 4 pages'
+year: 2010
+authors:
+  - Toshihiro Hanawa
+  - Taisuke Boku
+  - Shin’ichi Miura
+  - Mitsuhisa Sato
+  - and Kazutami Arimoto
+bibtex: >-
+  @inproceedings{hpcs2010-62166,
+    title = {Power-aware},
+    booktitle = {Dependable, and High-Performance Communication Link Using PCI Express: PEARL, " IEEE International Conference on Cluster Computing (Cluster2010), poster, 4 pages},
+    year = {2010},
+  }
+slug: hpcs2010-62166
+reference: "Toshihiro Hanawa, Taisuke Boku, Shin’ichi Miura, Mitsuhisa Sato, and
+  Kazutami Arimoto, “Power-aware, Dependable, and High-Performance Communication
+  Link Using PCI Express: PEARL,” IEEE International Conference on Cluster
+  Computing (Cluster2010), poster, 4 pages, 2010."
+class:
+  class: international
+  subclass: conference

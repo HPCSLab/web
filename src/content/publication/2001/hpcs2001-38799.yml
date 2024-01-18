@@ -1,0 +1,20 @@
+title: '"TACO – Prototyping High-Level Object-Oriented Programming Constructs by
+  Means of Template Based Programming Techniques'
+booktitle: "SIGPLAN Notices 36(12): 35-49 (2001)"
+year: 2001
+authors:
+  - Jorg Nolte
+  - Yutaka Ishikawa
+  - Mitsuhisa Sato
+bibtex: >-
+  @article{hpcs2001-38799,
+    title = {"TACO – Prototyping High-Level Object-Oriented Programming Constructs by Means of Template Based Programming Techniques},
+    booktitle = {SIGPLAN Notices 36(12): 35-49 (2001)},
+    year = {2001},
+  }
+slug: hpcs2001-38799
+reference: "Jorg Nolte, Yutaka Ishikawa, Mitsuhisa Sato: “TACO – Prototyping
+  High-Level Object-Oriented Programming Constructs by Means of Template Based
+  Programming Techniques”. SIGPLAN Notices 36(12): 35-49 (2001)"
+class:
+  class: journal

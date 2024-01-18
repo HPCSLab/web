@@ -1,0 +1,21 @@
+title: '"OmniRPC: a Grid RPC ystem for Parallel Programming in Cluster and Grid
+  Environment'
+booktitle: "CCGRID 2003: 206"
+year: 2003
+authors:
+  - Mitsuhisa Sato
+  - Taisuke Boku
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2003-46303,
+    title = {"OmniRPC: a Grid RPC ystem for Parallel Programming in Cluster and Grid Environment},
+    booktitle = {CCGRID 2003: 206},
+    year = {2003},
+  }
+slug: hpcs2003-46303
+reference: "Mitsuhisa Sato, Taisuke Boku, Daisuke Takahashi: “OmniRPC: a Grid
+  RPC ystem for Parallel Programming in Cluster and Grid Environment”. CCGRID
+  2003: 206"
+class:
+  class: international
+  subclass: conference
