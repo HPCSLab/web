@@ -32,40 +32,42 @@ const nextYear = years[years.indexOf(year) + 1];
     <span class="supplemental-text-in-heading">Publications of</span>
     <span class="year-in-heading">{year}</span>
   </NoImgHeader>
-  <nav class="year-nav">
-    <div class="year-link-container">
-      {
-        prevYear && (
-          <a
-            class:list={["prev-year", "year-link"]}
-            href={`/publications/${prevYear}`}
-          >
-            <Icon
-              name="material-symbols:chevron-left-rounded"
-              class="nav-icon"
-            />
-            {prevYear}
-          </a>
-        )
-      }
-    </div>
-    <div class="year-link-container">
-      {
-        nextYear && (
-          <a
-            class:list={["next-year", "year-link"]}
-            href={`/publications/${nextYear}`}
-          >
-            {nextYear}
-            <Icon
-              name="material-symbols:chevron-right-rounded"
-              class="nav-icon"
-            />
-          </a>
-        )
-      }
-    </div>
-  </nav>
+  <ResponsiveWidth>
+    <nav class="year-nav">
+      <div class="year-link-container">
+        {
+          prevYear && (
+            <a
+              class:list={["prev-year", "year-link"]}
+              href={`/publications/${prevYear}`}
+            >
+              <Icon
+                name="material-symbols:chevron-left-rounded"
+                class="nav-icon"
+              />
+              {prevYear}
+            </a>
+          )
+        }
+      </div>
+      <div class="year-link-container">
+        {
+          nextYear && (
+            <a
+              class:list={["next-year", "year-link"]}
+              href={`/publications/${nextYear}`}
+            >
+              {nextYear}
+              <Icon
+                name="material-symbols:chevron-right-rounded"
+                class="nav-icon"
+              />
+            </a>
+          )
+        }
+      </div>
+    </nav>
+  </ResponsiveWidth>
   <TopLevelSection backgroundInverted={false} headingText="論文誌">
     <List ordered={false}>
       {
@@ -111,8 +113,6 @@ const nextYear = years[years.indexOf(year) + 1];
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .prev-yaer {
