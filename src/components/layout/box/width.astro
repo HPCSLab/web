@@ -1,0 +1,25 @@
+---
+interface Props {
+  width?: string;
+  min?: string;
+  max?: string;
+}
+
+const { width, min, max } = Astro.props;
+---
+
+<div></div>
+
+<style
+  define:vars={{
+    width: width ? width : "unset",
+    min: min ? min : "unset",
+    max: max ? max : "unset",
+  }}
+>
+  div {
+    width: var(--width);
+    min-width: var(--min);
+    max-width: var(--max);
+  }
+</style>

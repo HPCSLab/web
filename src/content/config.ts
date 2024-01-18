@@ -1,4 +1,4 @@
-import { z, defineCollection } from "astro:content";
+import { z, defineCollection, type SchemaContext } from "astro:content";
 
 const newsSchema = z.object({
   title: z.string(),
@@ -6,10 +6,16 @@ const newsSchema = z.object({
   description: z.string(),
 });
 
+export type News = z.infer<typeof newsSchema>;
+
 const publicationSubClassInternationalSchema = z.union([
   z.literal("conference"),
   z.literal("poster"),
 ]);
+
+export type PublicationSubclassInternational = z.infer<
+  typeof publicationSubClassInternationalSchema
+>;
 
 const publicationSubClassDomesticSchema = z.union([
   z.literal("conference"),
@@ -18,6 +24,10 @@ const publicationSubClassDomesticSchema = z.union([
   z.literal("magazine"),
   z.literal("misc"),
 ]);
+
+export type PublicationSubclassDomestic = z.infer<
+  typeof publicationSubClassDomesticSchema
+>;
 
 const publicationClassSchema = z.union([
   z.object({
@@ -33,6 +43,8 @@ const publicationClassSchema = z.union([
   }),
 ]);
 
+export type PublicationClass = z.infer<typeof publicationClassSchema>;
+
 const publicationSchema = z.object({
   title: z.string(),
   booktitle: z.string().nullish(),
@@ -44,6 +56,8 @@ const publicationSchema = z.object({
   class: publicationClassSchema,
 });
 
+export type Publication = z.infer<typeof publicationSchema>;
+
 const teamKindSchema = z.union([
   z.literal("Algorithm"),
   z.literal("System Software"),
@@ -53,13 +67,18 @@ const teamKindSchema = z.union([
   z.literal("PA"),
 ]);
 
-const memeberCommonSchema = z.object({
-  name: z.string().nullish(),
-  eng_name: z.string(),
-  img: z.string(),
-  team: teamKindSchema,
-  username: z.string(),
-});
+export type TeamKind = z.infer<typeof teamKindSchema>;
+
+const memberCommonSchema = (ctx: SchemaContext) =>
+  z.object({
+    name: z.string().nullish(),
+    eng_name: z.string(),
+    icon: ctx.image(),
+    team: teamKindSchema,
+    username: z.string(),
+  });
+
+export type MemberCommon = z.infer<ReturnType<typeof memberCommonSchema>>;
 
 const facultyGradeSchema = z.union([
   z.literal("Professor"),
@@ -68,14 +87,33 @@ const facultyGradeSchema = z.union([
   z.literal("Professor (Cooperative Graduate School Program)"),
 ]);
 
+export type FacultyGrade = z.infer<typeof facultyGradeSchema>;
+
+export function translateFacultyGrade(grade: FacultyGrade): string {
+  switch (grade) {
+    case "Assistant Professor":
+      return "助教授";
+    case "Associate Professor":
+      return "准教授";
+    case "Professor":
+      return "教授";
+    case "Professor (Cooperative Graduate School Program)":
+      return "連携大学院教授";
+  }
+}
+
 const facultySchema = z.object({
   occupation: z.literal("Faculty"),
   grade: facultyGradeSchema,
 });
 
+export type Faculty = z.infer<typeof facultyGradeSchema>;
+
 const researcherSchema = z.object({
   occupation: z.literal("Researcher"),
 });
+
+export type Researcher = z.infer<typeof researcherSchema>;
 
 const studentGradeSchema = z.union([
   z.literal("D3"),
@@ -86,24 +124,33 @@ const studentGradeSchema = z.union([
   z.literal("B4"),
 ]);
 
+export type studentGrade = z.infer<typeof studentGradeSchema>;
+
 const studentSchema = z.object({
   occupation: z.literal("Student"),
   grade: studentGradeSchema,
 });
 
+export type Student = z.infer<typeof studentSchema>;
+
 const researchStudentSchema = z.object({
   occupation: z.literal("Research Student"),
 });
 
-const memberSchema = z.intersection(
-  memeberCommonSchema,
-  z.union([
-    facultySchema,
-    researcherSchema,
-    studentSchema,
-    researchStudentSchema,
-  ])
-);
+export type researchStudent = z.infer<typeof researchStudentSchema>;
+
+const memberSchema = (ctx: SchemaContext) =>
+  z.intersection(
+    memberCommonSchema(ctx),
+    z.union([
+      facultySchema,
+      researcherSchema,
+      studentSchema,
+      researchStudentSchema,
+    ])
+  );
+
+export type Member = z.infer<ReturnType<typeof memberSchema>>;
 
 const alumniSchema = z.union([
   z.object({
@@ -122,6 +169,8 @@ const alumniSchema = z.union([
     month: z.number(),
   }),
 ]);
+
+export type Alumni = z.infer<typeof alumniSchema>;
 
 export const collections = {
   news: defineCollection({

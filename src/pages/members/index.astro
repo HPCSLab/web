@@ -1,12 +1,25 @@
 ---
-import FacultyCard from "../../components/members/member-card.astro";
-import {
-  faculties,
-  researchers,
-  researchStudents,
-  students,
-} from "../../resource/articles/members/profiles";
-import Base from "../../layouts/base.astro";
+import MemberCard from "@components/pages/members/MemberCard.astro";
+
+import Base from "@layouts/base/index.astro";
+import { getCollection } from "astro:content";
+
+const faculties = await getCollection(
+  "member",
+  ({ data }) => data.occupation === "Faculty"
+);
+const researchers = await getCollection(
+  "member",
+  ({ data }) => data.occupation === "Researcher"
+);
+const researchStudents = await getCollection(
+  "member",
+  ({ data }) => data.occupation === "Research Student"
+);
+const students = await getCollection(
+  "member",
+  ({ data }) => data.occupation === "Student"
+);
 ---
 
 <Base>
@@ -14,19 +27,23 @@ import Base from "../../layouts/base.astro";
     <section>
       <h2>教員</h2>
       <div class="container">
-        {faculties.map((faculty) => <FacultyCard faculty={faculty} />)}
+        {faculties.map((faculty) => <MemberCard faculty={faculty.data} />)}
       </div>
     </section>
     <section>
       <h2>研究員</h2>
       <div class="container">
-        {researchers.map((researcher) => <FacultyCard faculty={researcher} />)}
+        {
+          researchers.map((researcher) => (
+            <MemberCard faculty={researcher.data} />
+          ))
+        }
       </div>
     </section>
     <section>
       <h2>学生</h2>
       <div class="container">
-        {students.map((researcher) => <FacultyCard faculty={researcher} />)}
+        {students.map((researcher) => <MemberCard faculty={researcher.data} />)}
       </div>
     </section>
     <section>
@@ -34,7 +51,7 @@ import Base from "../../layouts/base.astro";
       <div class="container">
         {
           researchStudents.map((researcher) => (
-            <FacultyCard faculty={researcher} />
+            <MemberCard faculty={researcher.data} />
           ))
         }
       </div>

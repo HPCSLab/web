@@ -1,6 +1,6 @@
 ---
-import BlurImgHeader from "../components/common/blur-img-header.astro";
-import Base from "./base.astro";
+import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
+import Base from "@layouts/base/index.astro";
 
 interface Props {
   name: string;
@@ -11,9 +11,9 @@ const { name, imgSrc, imgAlt } = Astro.props;
 ---
 
 <Base>
-  <BlurImgHeader imgAlt={imgAlt} imgSrc={imgSrc}>
+  <BlurImageHeader imgAlt={imgAlt} imgSrc={imgSrc}>
     {name}
-  </BlurImgHeader>
+  </BlurImageHeader>
   <slot />
 </Base>
 

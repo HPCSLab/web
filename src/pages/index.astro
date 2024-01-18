@@ -1,20 +1,22 @@
 ---
-import Carousel, { type CarouselPicture } from "../components/carousel.astro";
-import Base from "../layouts/base.astro";
-import COMA from "../resource/img/carousel/COMA.jpg";
-import Cygnus from "../resource/img/carousel/Cygnus.png";
-import HA_PACS from "../resource/img/carousel/HA-PACS.jpg";
+import Carousel, {
+  type CarouselPicture,
+} from "@components/display/Carousel.astro";
+import Base from "@layouts/base/index.astro";
+import COMA from "@asset/carousel/COMA.jpg";
+import Cygnus from "@asset/carousel/Cygnus.png";
+import HA_PACS from "@asset/carousel/HA-PACS.jpg";
 import { news } from "./news/_index";
-import Typography from "../components/atom/typography.astro";
-import List from "../components/list/list.astro";
-import ListItem from "../components/list/list-item.astro";
-import TopLevelSection from "../components/layout/top-level-section.astro";
-import Keyword from "../components/atom/keyword.astro";
-import ReadMoreLink from "../components/anchor/read-more-link.astro";
-import ResponsiveWidth from "../components/layout/responsive-width.astro";
-import ChevronListItem from "../components/list/chevron-list-item.astro";
-import NoImgHeader from "../components/common/no-img-header.astro";
-import ExternalLink from "../components/anchor/external-link.astro";
+import Typography from "@components/display/Typography.astro";
+import List from "@components/display/list/list.astro";
+import ListItem from "@components/display/list/item/Naked.astro";
+import TopLevelSection from "@components/composite/section/H1.astro";
+import Keyword from "@components/display/Keyword.astro";
+import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+import ChevronListItem from "@components/display/list/item/Chevron.astro";
+import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
+import ExternalLink from "@components/atom/link/ExternalLink.astro";
 
 const carouselPictures: CarouselPicture[] = [
   {

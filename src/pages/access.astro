@@ -1,15 +1,14 @@
 ---
-import NoImgHeader from "../components/common/no-img-header.astro";
-import HSpace from "../components/layout/h-space.astro";
-import TopLevelSection from "../components/layout/top-level-section.astro";
-import ChevronListItem from "../components/list/chevron-list-item.astro";
-import List from "../components/list/list.astro";
-import Base from "../layouts/base.astro";
+import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
+import H1Section from "@components/composite/section/H1.astro";
+import ChevronListItem from "@components/display/list/item/Chevron.astro";
+import List from "@components/display/list/list.astro";
+import Base from "@layouts/base/index.astro";
 ---
 
 <Base title="access">
-  <NoImgHeader>Access</NoImgHeader>
-  <TopLevelSection headingText="Address" backgroundInverted={false}>
+  <NoImageHeader>Access</NoImageHeader>
+  <H1Section headingText="Address" backgroundInverted={false}>
     <address>
       <div class="address">
         <div>
@@ -17,22 +16,20 @@ import Base from "../layouts/base.astro";
         </div>
         <div>Ibaraki, Japan</div>
       </div>
-      <HSpace />
       <div class="address">
         <div>
           305-8573 茨城県 つくば市 天王台 1-1-1 筑波大学 システム情報工学研究科
         </div>
         <div>HPCS研究室</div>
       </div>
-      <HSpace />
       <List ordered={false}>
         <ChevronListItem>総合研究棟B 928 (9F)</ChevronListItem>
         <ChevronListItem>総合研究棟B 1122 (11F)</ChevronListItem>
         <ChevronListItem>総合研究棟B 1124 (11F)</ChevronListItem>
       </List>
     </address>
-  </TopLevelSection>
-  <TopLevelSection headingText="Phone" backgroundInverted={false}>
+  </H1Section>
+  <H1Section headingText="Phone" backgroundInverted={false}>
     <section class="phone-numbers">
       <h3 class="phone-place">総合研究棟B 1122 (11F)</h3>
       <div class="phone-table">
@@ -55,7 +52,7 @@ import Base from "../layouts/base.astro";
         <div class="phone-number">(内線:3655)</div>
       </div>
     </section>
-  </TopLevelSection>
+  </H1Section>
 </Base>
 
 <style>

@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import ExternalLink from "../../components/anchor/external-link.astro";
-import Typography from "../../components/atom/typography.astro";
-import NoImgHeader from "../../components/common/no-img-header.astro";
-import ResponsiveWidth from "../../components/layout/responsive-width.astro";
-import Base from "../../layouts/base.astro";
+import ExternalLink from "@components/atom/link/ExternalLink.astro";
+import Typography from "@components/display/Typography.astro";
+import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+import Base from "@layouts/base/index.astro";
 // import { news } from "./_index";
 
 const news = await getCollection("news");

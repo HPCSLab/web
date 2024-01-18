@@ -1,11 +1,11 @@
 ---
 import type { GetStaticPaths } from "astro";
 import { grouped, publicationCollection } from "../../../resource/publications";
-import Base from "../../../layouts/base.astro";
-import ResponsiveWidth from "../../../components/layout/responsive-width.astro";
+import Base from "@layouts/base/index.astro";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import { unwrap } from "../../../lib/util";
-import Codeblock from "../../../components/parts/codeblock.astro";
-import NoImgHeader from "../../../components/common/no-img-header.astro";
+import Codeblock from "@components/display/codeblock.astro";
+import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 export const getStaticPaths = (() => {
   return [...grouped.entries()].flatMap(([year, pubs]) =>
     pubs.all.map((pub) => ({

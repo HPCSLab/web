@@ -1,28 +1,25 @@
 ---
 import { Image } from "astro:assets";
-import Team from "../../layouts/team.astro";
+import Team from "@layouts/team.astro";
 import BoolshelfImage from "../../resource/img/pages/team/algo/ateam-bookshelf.jpg";
 import ServerImage from "../../resource/img/pages/team/algo/server-front.jpg";
-import FacultyCard from "../../components/teams/faculty-card.astro";
+import FacultyCard from "@components/pages/teams/FacultyCard.astro";
 import {
   students,
   faculties,
   recentWorks,
 } from "../../resource/pages/team/algo/index";
-import TopLevelSection from "../../components/layout/top-level-section.astro";
-import List from "../../components/list/list.astro";
-import Typography from "../../components/atom/typography.astro";
-import ChevronListItem from "../../components/list/chevron-list-item.astro";
-import Keyword from "../../components/atom/keyword.astro";
-import ReadMoreLink from "../../components/anchor/read-more-link.astro";
-import Row from "../../components/layout/row.astro";
-import Right from "../../components/layout/right.astro";
-import Left from "../../components/layout/left.astro";
-import RecentWorks from "../../components/teams/recent-works.astro";
-import VSpace2Rem from "../../components/layout/v-space-2rem.astro";
-import ResponsiveCardsGrid from "../../components/layout/responsive-cards-grid.astro";
-import Student from "../../components/teams/student-card.astro";
-import YoutubeContainer from "../../components/layout/youtube-container.astro";
+import TopLevelSection from "@components/composite/section/H1.astro";
+import List from "@components/display/list/list.astro";
+import Typography from "@components/display/Typography.astro";
+import ChevronLi from "@components/display/list/item/Chevron.astro";
+import Keyword from "@components/display/Keyword.astro";
+import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
+import HStack from "@components/layout/HStack.astro";
+import RecentWorks from "@components/pages/teams/RecentWorks.astro";
+import Student from "@components/pages/teams/StudentCard.astro";
+import Width from "@components/layout/box/width.astro";
+import Youtube from "@components/display/Youtube.astro";
 ---
 
 <Team
@@ -32,20 +29,20 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
 >
   <TopLevelSection headingText="高橋 大介 教授" backgroundInverted={false}>
     <List ordered={false}>
-      <ChevronListItem>
+      <ChevronLi>
         <Keyword>高性能数値計算</Keyword>に関する研究
-      </ChevronListItem>
-      <ChevronListItem>
+      </ChevronLi>
+      <ChevronLi>
         高性能<Keyword>並列数値計算</Keyword>ソフトウェア
-      </ChevronListItem>
-      <ChevronListItem>
+      </ChevronLi>
+      <ChevronLi>
         <Keyword>GPU</Keyword>や <Keyword>
           MIC（Many Integrated Core）
         </Keyword>などを用いた高性能計算
-      </ChevronListItem>
-      <ChevronListItem>
+      </ChevronLi>
+      <ChevronLi>
         <Keyword>高精度計算</Keyword>アルゴリズムとその応用
-      </ChevronListItem>
+      </ChevronLi>
     </List>
     <Typography>
       我々は，限られた時間の中で大規模な科学技術計算を行うために，スーパーコンピュータの性能をできるだけ発揮できるようなアルゴリズムやプログラミングに関する研究を行っています．高速なプログラムを作成するには，コンピュータの仕組みや数学について深い理解が必要になりますが、努力が性能という数字にそのまま反映されることから，やりがいがある分野です．
@@ -56,20 +53,20 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
   </TopLevelSection>
   <TopLevelSection headingText="多田野 寛人 助教" backgroundInverted={false}>
     <List ordered={false}>
-      <ChevronListItem>
+      <ChevronLi>
         <Keyword>大規模線形計算</Keyword>アルゴリズムに関する研究
-      </ChevronListItem>
-      <ChevronListItem>
+      </ChevronLi>
+      <ChevronLi>
         <Keyword>
           大規模連立一次方程式
         </Keyword>の高速・高精度・高信頼性アルゴリズムの構築
-      </ChevronListItem>
-      <ChevronListItem>
+      </ChevronLi>
+      <ChevronLi>
         <Keyword>連立一次方程式</Keyword>の 高速化のための前処理法の開発
-      </ChevronListItem>
-      <ChevronListItem>
+      </ChevronLi>
+      <ChevronLi>
         並列計算環境における <Keyword>大規模固有値問題</Keyword>の高速解法の開発
-      </ChevronListItem>
+      </ChevronLi>
     </List>
     <Typography>
       我々は，連立一次方程式や固有値問題をはじめとした数値解法アルゴリズムの開発を行っています．
@@ -82,44 +79,36 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
     headingText="アルゴリズムチームの使っている計算機について"
     backgroundInverted={false}
   >
-    <Row>
-      <Left>
+    <HStack>
+      <Width width="40%" min="40%">
         <Typography>
           チームで所有している計算機としては、IntelのXeonプロセッサを搭載した4ノードのクラスタ2つのほか、IntelのXeon
           Phiプロセッサを搭載した4ノードのクラスタがあります。これらは学生によって管理・運用されていて自由に使うことができます。また本研究室は計算科学研究センターと協力関係にあり、研究内容によっては筑波大学が運用するスーパーコンピュータCygnus
           (理論ピーク性能2.4PFLOPS)，Pegasus
           (理論ピーク性能6.5PFLOPS)を利用できます。これらの様々な計算機資源を利用して研究を行うことが可能です。
         </Typography>
-      </Left>
-      <Right>
-        <Image
-          src={ServerImage}
-          alt="Algorithmチームの計算機クラスタ"
-          class="pic-cluster"
-        />
-      </Right>
-    </Row>
+      </Width>
+      <Image
+        src={ServerImage}
+        alt="Algorithmチームの計算機クラスタ"
+        class="pic-cluster"
+      />
+    </HStack>
   </TopLevelSection>
   <TopLevelSection
     headingText="FFT (高速フーリエ変換)"
     backgroundInverted={false}
   >
     <Typography>高橋教授の研究内容のひとつであるFFTをご紹介します。</Typography>
-    <YoutubeContainer>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/GPJx5JTGQEU"
-        title="配信講義 計算科学技術特論B (2020) 第6回"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </YoutubeContainer>
-  </TopLevelSection>
-  <TopLevelSection headingText="メンバー" backgroundInverted={true}>
-    <div>
-      {
-        faculties.map((faculty) => (
-          <VSpace2Rem>
+    <Youtube
+      src="https://www.youtube.com/embed/GPJx5JTGQEU"
+      ,
+      title="配信講義 計算科学技術特論B (2020) 第6回"
+    />
+    <TopLevelSection headingText="メンバー" backgroundInverted={true}>
+      <div class=".card-container">
+        {
+          faculties.map((faculty) => (
             <FacultyCard
               name={faculty.name}
               icon={faculty.icon}
@@ -128,89 +117,93 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
             >
               <Typography>{faculty.message}</Typography>
             </FacultyCard>
-          </VSpace2Rem>
-        ))
-      }
-    </div>
-    <ResponsiveCardsGrid>
-      {
-        students.map((student) => (
-          <Student name={student.name} icon={student.icon} role={student.role}>
-            <Typography>{student.message}</Typography>
-          </Student>
-        ))
-      }
-    </ResponsiveCardsGrid>
-  </TopLevelSection>
-  <TopLevelSection
-    headingText="近年の研究成果について"
-    backgroundInverted={false}
-  >
-    <Typography>
-      教員の研究成果については，以下のページよりご覧ください．
-    </Typography>
-    <div>
-      <div class="teacher-work-link-wrapper">
-        <ReadMoreLink
-          href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/pub-j.html"
-        >
-          <div class="work-author">
-            <span class="work-author-name">高橋 大介</span>
-            <span class="work-author-role">教授</span>
-          </div>
-        </ReadMoreLink>
+          ))
+        }
       </div>
-
-      <div class="teacher-work-link-wrapper">
-        <ReadMoreLink
-          href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/publication.html"
-        >
-          <div class="work-author">
-            <span class="work-author-name">多田野 寛人</span>
-            <span class="work-author-role">助教</span>
-          </div>
-        </ReadMoreLink>
+      <div class="card-container">
+        {
+          students.map((student) => (
+            <Student
+              name={student.name}
+              icon={student.icon}
+              role={student.role}
+            >
+              <Typography>{student.message}</Typography>
+            </Student>
+          ))
+        }
       </div>
+    </TopLevelSection>
+    <TopLevelSection
+      headingText="近年の研究成果について"
+      backgroundInverted={false}
+    >
+      <Typography>
+        教員の研究成果については，以下のページよりご覧ください．
+      </Typography>
+      <div>
+        <div class="teacher-work-link-wrapper">
+          <ReadMoreLink
+            href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/pub-j.html"
+          >
+            <div class="work-author">
+              <span class="work-author-name">高橋 大介</span>
+              <span class="work-author-role">教授</span>
+            </div>
+          </ReadMoreLink>
+        </div>
 
-      <Typography>
-        一例として，2023年までに国際学会，情報処理学会HPC研究会等に投稿した研究会原稿を紹介します．
-      </Typography>
-      <Typography>
-        筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
-      </Typography>
-      <RecentWorks works={recentWorks} />
-    </div>
+        <div class="teacher-work-link-wrapper">
+          <ReadMoreLink
+            href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/publication.html"
+          >
+            <div class="work-author">
+              <span class="work-author-name">多田野 寛人</span>
+              <span class="work-author-role">助教</span>
+            </div>
+          </ReadMoreLink>
+        </div>
+
+        <Typography>
+          一例として，2023年までに国際学会，情報処理学会HPC研究会等に投稿した研究会原稿を紹介します．
+        </Typography>
+        <Typography>
+          筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
+        </Typography>
+        <RecentWorks works={recentWorks} />
+      </div>
+    </TopLevelSection>
+
+    <style>
+      .pic-cluster {
+        width: auto;
+        height: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .teacher-work-link-wrapper {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
+      .work-author {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+      }
+
+      .work-author-name {
+        color: var(--color-text-strong);
+        font-size: var(--font-size-lg);
+      }
+
+      .work-author-role {
+        color: var(--color-text-disable);
+        font-size: var(--font-size-normal);
+
+        margin-left: 0.5em;
+      }
+    </style>
   </TopLevelSection>
-
-  <style>
-    .pic-cluster {
-      width: auto;
-      height: 100%;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .teacher-work-link-wrapper {
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-
-    .work-author {
-      display: flex;
-      flex-direction: row;
-      align-items: end;
-    }
-
-    .work-author-name {
-      color: var(--color-text-strong);
-      font-size: var(--font-size-lg);
-    }
-
-    .work-author-role {
-      color: var(--color-text-disable);
-      font-size: var(--font-size-normal);
-
-      margin-left: 0.5em;
-    }
-  </style>
 </Team>

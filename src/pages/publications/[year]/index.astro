@@ -1,16 +1,16 @@
 ---
-import ResponsiveWidth from "../../../components/layout/responsive-width.astro";
-import TopLevelSection from "../../../components/layout/top-level-section.astro";
-import ListItem from "../../../components/list/list-item.astro";
-import List from "../../../components/list/list.astro";
-import Base from "../../../layouts/base.astro";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+import TopLevelSection from "@components/composite/section/H1.astro";
+import ListItem from "@components/display/list/item/Naked.astro";
+import List from "@components/display/list/list.astro";
+import Base from "@layouts/base/index.astro";
 import { unwrap } from "../../../lib/util";
 import { grouped, years } from "../../../resource/publications";
-import PublicationHeading from "../../../components/publications/publication-heading.astro";
+import PublicationHeading from "@components/pages/publications/PublicationHeading.astro";
 import type { GetStaticPaths } from "astro";
-import Subclass from "../../../components/publications/subclass.astro";
+import SubClass from "@components/pages/publications/SubClass.astro";
 import { Icon } from "astro-icon/components";
-import NoImgHeader from "../../../components/common/no-img-header.astro";
+import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
 
 export const getStaticPaths = (() => {
   return years.map((year) => ({
@@ -28,10 +28,10 @@ const nextYear = years[years.indexOf(year) + 1];
 ---
 
 <Base>
-  <NoImgHeader>
+  <NoImageHeader>
     <span class="supplemental-text-in-heading">Publications of</span>
     <span class="year-in-heading">{year}</span>
-  </NoImgHeader>
+  </NoImageHeader>
   <ResponsiveWidth>
     <nav class="year-nav">
       <div class="year-link-container">
@@ -80,15 +80,15 @@ const nextYear = years[years.indexOf(year) + 1];
     </List>
   </TopLevelSection>
   <TopLevelSection backgroundInverted={false} headingText="国際会議">
-    <Subclass title="本会議" publications={international.conference} />
-    <Subclass title="ポスター" publications={international.poster} />
+    <SubClass title="本会議" publications={international.conference} />
+    <SubClass title="ポスター" publications={international.poster} />
   </TopLevelSection>
   <TopLevelSection backgroundInverted={false} headingText="国内会議">
-    <Subclass title="国内会議" publications={domestic.conference} />
-    <Subclass title="ポスター" publications={domestic.poster} />
-    <Subclass title="研究会" publications={domestic.workshop} />
-    <Subclass title="雑誌" publications={domestic.magazine} />
-    <Subclass title="その他" publications={domestic.misc} />
+    <SubClass title="国内会議" publications={domestic.conference} />
+    <SubClass title="ポスター" publications={domestic.poster} />
+    <SubClass title="研究会" publications={domestic.workshop} />
+    <SubClass title="雑誌" publications={domestic.magazine} />
+    <SubClass title="その他" publications={domestic.misc} />
   </TopLevelSection>
 </Base>
 

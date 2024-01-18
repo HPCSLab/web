@@ -1,0 +1,47 @@
+:root {
+  --color-primary: #815ddd;
+  --color-secondary: #b9dd5d;
+  --color-analog-1: #5d79dd;
+  --color-analog-2: #c15ddd;
+  --color-triadic-1: #dd5db9;
+  --color-triadic-2: #dd815d;
+  --color-text-strong: rgba(0, 0, 0, 95%);
+  --color-text-normal: rgba(0, 0, 0, 80%);
+  --color-text-weak: rgba(0, 0, 0, 50%);
+  --color-text-near-primary: rgba(48, 34, 81, 80%);
+  --color-inverted-text-strong: rgba(255, 255, 255, 95%);
+  --color-inverted-text-normal: rgba(255, 255, 255, 80%);
+  --color-inverted-text-weak: rgba(255, 255, 255, 50%);
+  --color-bg-white: #f8f6ff;
+  --color-bg-dark: #2c2635;
+  --font-size-sm: 0.75rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2rem;
+  --header-height: 3rem;
+  --footer-height: 2rem;
+  --font-family-monospace: Menlo, Monaco, "Courier New", monospace;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  word-break: auto-phrase;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: var(--color-text-normal);
+  background-color: white;
+}
+

@@ -1,0 +1,45 @@
+---
+import NavIndexAcordion from "./NavIndexAcordion.astro";
+import NavIndexLink from "./NavIndexLink.astro";
+import type { IndexPage } from "../sitemap";
+
+interface Props {
+  id?: string;
+  sitemap: IndexPage[];
+}
+---
+
+<nav id={Astro.props.id}>
+  <div>
+    {
+      Astro.props.sitemap.map((index) => (
+        <div>
+          {index.hasChildren ? (
+            <NavIndexAcordion index={index} />
+          ) : (
+            <NavIndexLink index={index} />
+          )}
+        </div>
+      ))
+    }
+  </div>
+</nav>
+
+<style>
+  nav {
+    height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
+    width: 100vw;
+    transition:
+      background-color 0.3s ease,
+      backdrop-filter 0.3s ease;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(1px);
+    overflow-y: scroll;
+  }
+
+  .show {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+  }
+</style>

@@ -1,36 +1,25 @@
 ---
 import { Image } from "astro:assets";
-import Team from "../../layouts/team.astro";
+import Team from "@layouts/team.astro";
 import headerImage from "../../resource/img/pages/team/arch/arcteam_group_photo.jpg";
 import cygnus from "../../resource/img/pages/team/arch/Cygnus.png";
 import aisConcept from "../../resource/img/pages/team/arch/Ais_concept.png";
 import aocl from "../../resource/img/pages/team/arch/aocl.png";
 import astroFpga from "../../resource/img/pages/team/arch/astro-fpga.png";
-import ServerImage from "../../resource/img/pages/team/algo/server-front.jpg";
-import FacultyCard from "../../components/teams/faculty-card.astro";
-import {
-  students,
-  faculties,
-  recentWorks,
-} from "../../resource/pages/team/algo/index";
-import TopLevelSection from "../../components/layout/top-level-section.astro";
-import List from "../../components/list/list.astro";
-import Typography from "../../components/atom/typography.astro";
-import ChevronListItem from "../../components/list/chevron-list-item.astro";
-import Keyword from "../../components/atom/keyword.astro";
-import ReadMoreLink from "../../components/anchor/read-more-link.astro";
-import Row from "../../components/layout/row.astro";
-import Right from "../../components/layout/right.astro";
-import Left from "../../components/layout/left.astro";
-import RecentWorks from "../../components/teams/recent-works.astro";
-import VSpace2Rem from "../../components/layout/v-space-2rem.astro";
-import ResponsiveCardsGrid from "../../components/layout/responsive-cards-grid.astro";
-import Student from "../../components/teams/student-card.astro";
-import YoutubeContainer from "../../components/layout/youtube-container.astro";
+import H1Section from "@components/composite/section/H1.astro";
+import List from "@components/display/list/list.astro";
+import Typography from "@components/display/Typography.astro";
+import ChevronListItem from "@components/display/list/item/Chevron.astro";
+import Keyword from "@components/display/Keyword.astro";
+import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
+import HStack from "@components/layout/HStack.astro";
+import Width from "@components/layout/box/width.astro";
+import Box from "@components/layout/box/box.astro";
+import Youtube from "@components/display/Youtube.astro";
 ---
 
 <Team name="Architecture team" imgSrc={headerImage} imgAlt="group photo">
-  <TopLevelSection headingText="朴 泰祐 教授" backgroundInverted={false}>
+  <H1Section headingText="朴 泰祐 教授" backgroundInverted={false}>
     <List ordered={false}>
       <ChevronListItem>
         <Keyword>GPU</Keyword>等の<Keyword>
@@ -61,8 +50,8 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
         個人ページ
       </ReadMoreLink>
     </List>
-  </TopLevelSection>
-  <TopLevelSection headingText="小林 諒平 助教" backgroundInverted={false}>
+  </H1Section>
+  <H1Section headingText="小林 諒平 助教" backgroundInverted={false}>
     <List ordered={false}>
       <ChevronListItem>
         高性能な<Keyword>FPGAアクセラレータ</Keyword>とその開発方式に関する研究
@@ -74,8 +63,8 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
     <ReadMoreLink href="https://sites.google.com/site/ryokbya/">
       個人ページ
     </ReadMoreLink>
-  </TopLevelSection>
-  <TopLevelSection headingText="研究内容" backgroundInverted={false}>
+  </H1Section>
+  <H1Section headingText="研究内容" backgroundInverted={false}>
     <Typography>
       アーキテクチャチームでは，GPUやメニーコアプロセッサ等の演算加速装置をより有効に大規模並列処理に活用する手法や，超高性能並列処理向けネットワーク，さらにこれらを活用する高性能並列コンパイラの研究をしています．
       現在の主な研究テーマは以下の通りです．なお，朴及び小林，藤田の3名が共同で適宜指導を行います。朴教授、小林助教、藤田助教の共同募集で募集人数は8名です．
@@ -98,34 +87,32 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
       </ChevronListItem>
     </List>
     以下に，所属している学生達が行っている研究テーマについて紹介します．
-  </TopLevelSection>
-  <TopLevelSection
+  </H1Section>
+  <H1Section
     headingText="GPU-FPGA複合システムにおけるデバイス間連携機構"
     backgroundInverted={false}
   >
-    <Row>
-      <Left percent={40}>
+    <HStack>
+      <Width min="40%">
         <div class="img-container">
           <Image src={cygnus} alt="Supercomputer Cygnus" />
         </div>
-      </Left>
-      <Right>
-        <Typography>
-          我々は，高い演算性能とメモリバンド幅を有する GPU (Graphics Processing
-          Unit) に演算通信性能に優れている FPGA (Field Programmable Gate Array)
-          を連携させ，双方を相補的に利用する GPU-FPGA
-          複合システムに関する研究を進めています．我々が提案しているAiS(Accelerator
-          in Switch)
-          というコンセプトでは，FPGAを高速通信のできる再構成可能な演算加速装置として捉え，CPU-GPU
-          クラスタ構成である現在のHPC
-          システムの性能を更に向上させる鍵であると考えています．GPUとFPGAを組み合わせた世界初のスーパーコンピュータCygnus
-          (左図)
-          を用いて，実用的なアプリケーションをターゲットにした提案手法の実験を行っています．
-        </Typography>
-      </Right>
-    </Row>
-    <Row>
-      <Left percent={60}>
+      </Width>
+      <Typography>
+        我々は，高い演算性能とメモリバンド幅を有する GPU (Graphics Processing
+        Unit) に演算通信性能に優れている FPGA (Field Programmable Gate Array)
+        を連携させ，双方を相補的に利用する GPU-FPGA
+        複合システムに関する研究を進めています．我々が提案しているAiS(Accelerator
+        in Switch)
+        というコンセプトでは，FPGAを高速通信のできる再構成可能な演算加速装置として捉え，CPU-GPU
+        クラスタ構成である現在のHPC
+        システムの性能を更に向上させる鍵であると考えています．GPUとFPGAを組み合わせた世界初のスーパーコンピュータCygnus
+        (左図)
+        を用いて，実用的なアプリケーションをターゲットにした提案手法の実験を行っています．
+      </Typography>
+    </HStack>
+    <HStack>
+      <Width min="40%">
         <Typography>
           右図に AiS コンセプトの概要を示します．各ノードには GPU と FPGA
           が搭載されており，それらは PCIe
@@ -135,20 +122,18 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
           FPGA
           を適用することによって，より効率的でレイテンシボトルネックの少ない強スケーリングの実現を目指しています．
         </Typography>
-      </Left>
-      <Right>
-        <div class="img-container">
-          <Image src={aisConcept} alt="AiS concept" />
-        </div>
-      </Right>
-    </Row>
-  </TopLevelSection>
-  <TopLevelSection
+      </Width>
+      <div class="img-container">
+        <Image src={aisConcept} alt="AiS concept" />
+      </div>
+    </HStack>
+  </H1Section>
+  <H1Section
     headingText="高性能なFPGAアクセラレータを利用したアプリケーション開発に関する研究"
     backgroundInverted={false}
   >
-    <Row>
-      <Left percent={60}>
+    <HStack>
+      <Width min="60%">
         <Typography>
           近年，再構成可能ハードウェアとしてFPGAが注目され，多くの分野で使われるようになってきました．
           高性能計算においてもその流れがあり，我々は現在利用されているGPUやCPUがどうしても解決できない問題について，
@@ -158,53 +143,41 @@ import YoutubeContainer from "../../components/layout/youtube-container.astro";
           このOpenCLの記述能力をフルに活用して，プログラミングコストを削減しつつ高性能なFPGAアクセラレータを実現することを目指しています．
           その一環として，初期宇宙の研究に重要な輻射輸送を解くプログラムで用いられているアルゴリズムをOpenCLで記述してFPGA向けに最適化する研究を本学の計算科学研究センターに所属する宇宙物理の研究者と共同で実施しています．
         </Typography>
-      </Left>
-      <Right>
+      </Width>
+      <Box>
         <div class="img-container">
           <Image src={aocl} alt="aocl description" />
         </div>
         <div class="img-container">
           <Image src={astroFpga} alt="astro-FPGA description" />
         </div>
-      </Right>
-    </Row>
-  </TopLevelSection>
-  <TopLevelSection headingText="世界的な活動" backgroundInverted={false}>
+      </Box>
+    </HStack>
+  </H1Section>
+  <H1Section headingText="世界的な活動" backgroundInverted={false}>
     <Typography>
       朴教授は国際会議における議長やプログラム委員長を務めるなど、世界的に活躍しています．
       また，小林助教も国際会議のプログラム委員の経験があります．
     </Typography>
-    <iframe
-      width="560"
-      height="315"
+    <Youtube
       src="https://www.youtube.com/embed/zT1BKPU8VVk"
       title="Developing Faster Algorithms with OpenACC and XcalableACC"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-    <iframe
-      width="560"
-      height="315"
+    />
+    <Youtube
       src="https://www.youtube.com/embed/RgADPWRNBgM"
       title="Oakforest-PACS: Overview of the New JCAHPC Computing Facility"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-    <iframe
-      width="560"
-      height="315"
+    />
+    <Youtube
       src="https://www.youtube.com/embed/BDPsa7AP7NA"
       title="Interview with HPC in Asia Chair Prof. Dr. Taisuke Boku"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </TopLevelSection>
-  <TopLevelSection headingText="他チームとの協力" backgroundInverted={false}>
+    />
+  </H1Section>
+  <H1Section headingText="他チームとの協力" backgroundInverted={false}>
     <Typography>
       並列プログラミング言語に関する研究はPAチームとの共同研究で，我々のPEACH2をPAチームで開発している並列言語XcalableMPの演算加速装置向け拡張XcalableACCに導入した実績もあります．
       また，FPGAチームとも協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．
     </Typography>
-  </TopLevelSection>
+  </H1Section>
 </Team>
 <style>
   .img-container {

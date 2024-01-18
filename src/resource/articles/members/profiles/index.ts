@@ -1,4 +1,3 @@
-import type { ResolvedAuditRule } from "astro/runtime/client/dev-overlay/plugins/audit/index.js";
 import { z } from "zod";
 
 const teamKindValidator = z.union([
@@ -15,7 +14,6 @@ export type TeamKind = z.infer<typeof teamKindValidator>;
 const memeberCommonValidator = z.object({
   name: z.string().nullish(),
   eng_name: z.string(),
-  img: z.string(),
   team: teamKindValidator,
   username: z.string(),
 });
@@ -88,7 +86,7 @@ const memberValidator = z.intersection(
     studentValidator,
     researchStudentValidator,
   ]),
-  memeberCommonValidator,
+  memeberCommonValidator
 );
 
 export type Member = z.infer<typeof memberValidator>;
@@ -103,14 +101,14 @@ const isResearcher = (member: Member): member is Researcher & MemberCommon =>
   member.occupation === "Researcher";
 
 const isResearchStudent = (
-  member: Member,
+  member: Member
 ): member is ResearchStudent & MemberCommon =>
   member.occupation === "Research Student";
 
 export const members: Member[] = await Promise.all(
   Object.values(import.meta.glob("./**/*.yml")).map(async (value) =>
-    memberValidator.parse(((await value()) as { default: any }).default),
-  ),
+    memberValidator.parse(((await value()) as { default: any }).default)
+  )
 );
 
 export const faculties: (Faculty & MemberCommon)[] = members.filter(isFaculty);
