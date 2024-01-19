@@ -2,6 +2,7 @@
 import type { IndexPage } from "../sitemap";
 import UnderlineLink from "@components/atom/link/UnderlineLink.astro";
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
+import Box from "@components/layout/box/Box.astro";
 
 interface Props {
   pages: IndexPage[];
@@ -14,34 +15,38 @@ const { pages } = Astro.props;
   <ul class="nav-index-container">
     {
       pages.map((page) => (
-        <li class="nav-index">
-          <div class="nav-index-link-wrapper">
+        <Box p="0.5rem" mode="v">
+          <li class="nav-index">
+            <div class="nav-index-link-wrapper">
+              {page.hasChildren ? (
+                <span>{page.title}</span>
+              ) : (
+                <UnderlineLink href={page.url}>{page.title}</UnderlineLink>
+              )}
+            </div>
             {page.hasChildren ? (
-              <span>{page.title}</span>
-            ) : (
-              <UnderlineLink href={page.url}>{page.title}</UnderlineLink>
-            )}
-          </div>
-          {page.hasChildren ? (
-            <nav
-              class:list={
-                page.title === pages[pages.length - 1].title
-                  ? ["drawer-last", "drawer"]
-                  : ["drawer"]
-              }
-            >
-              <ul>
-                {page.children.map((subpage) => (
-                  <li>
-                    <ExternalLink href={subpage.url}>
-                      {subpage.title}
-                    </ExternalLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ) : null}
-        </li>
+              <nav
+                class:list={
+                  page.title === pages[pages.length - 1].title
+                    ? ["drawer-last", "drawer"]
+                    : ["drawer"]
+                }
+              >
+                <Box p="0.5rem">
+                  <ul class="link-list">
+                    {page.children.map((subpage) => (
+                      <li class="link">
+                        <ExternalLink href={subpage.url}>
+                          {subpage.title}
+                        </ExternalLink>
+                      </li>
+                    ))}
+                  </ul>
+                </Box>
+              </nav>
+            ) : null}
+          </li>
+        </Box>
       ))
     }
   </ul>
@@ -72,7 +77,6 @@ const { pages } = Astro.props;
   }
 
   .nav-index {
-    margin: 0 0.5rem 0 0.5rem;
     position: relative;
     z-index: 1;
     height: 100%;
@@ -123,19 +127,15 @@ const { pages } = Astro.props;
     width: 20em;
   }
 
-  .drawer > ul {
+  .link-list {
     border-radius: 2px;
     background-color: white;
     padding: 0.5em;
-    margin: 0.5em;
     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
   }
 
-  .drawer > ul > li {
+  .list {
     width: 100%;
-  }
-
-  .drawer > ul > li:hover {
   }
 
   .nav-index-link-wrapper:hover a {

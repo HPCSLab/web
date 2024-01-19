@@ -1,3 +1,29 @@
+---
+interface Props {
+  mode?: "v" | "h" | "all";
+  p: string;
+}
+
+const { mode, p } = Astro.props;
+const padding = (() => {
+  switch (mode) {
+    case undefined:
+    case "all":
+      return p;
+    case "h":
+      return `${p} 0 ${p} 0`;
+    case "v":
+      return `0 ${p} 0 ${p}`;
+  }
+})();
+---
+
 <div>
   <slot />
 </div>
+
+<style define:vars={{ padding }}>
+  div {
+    padding: var(--padding);
+  }
+</style>
