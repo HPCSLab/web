@@ -1,0 +1,37 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, getEntry } from "astro:content";
+import Base from "@layouts/base/index.astro";
+import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
+import { getEntries } from "astro:content";
+
+export const getStaticPaths = (async () => {
+  const news = await getCollection("news");
+  return news.map((news) => {
+    const matched = /(\d{4})\/(.+)/.exec(news.slug);
+    if (matched && matched[1] && matched[2]) {
+      return {
+        params: {
+          year: matched[1],
+          slug: matched[2],
+        },
+      };
+    } else {
+      throw new Error("invalid slug");
+    }
+  });
+}) satisfies GetStaticPaths;
+
+const params = Astro.params;
+
+const news = await getEntry("news", `${params.year}/${params.slug}`);
+if (news === undefined) {
+  throw new Error(`${params.year}/${params.slug} not found`);
+}
+---
+
+<Base>
+  <NoImageHeader>
+    {news.data.title}
+  </NoImageHeader>
+</Base>

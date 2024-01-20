@@ -6,7 +6,6 @@ import Base from "@layouts/base/index.astro";
 import COMA from "@asset/carousel/COMA.jpg";
 import Cygnus from "@asset/carousel/Cygnus.png";
 import HA_PACS from "@asset/carousel/HA-PACS.jpg";
-import { news } from "./news/_index";
 import Typography from "@components/display/Typography.astro";
 import List from "@components/display/list/list.astro";
 import ListItem from "@components/display/list/item/Naked.astro";
@@ -17,6 +16,7 @@ import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import ChevronListItem from "@components/display/list/item/Chevron.astro";
 import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
+import { getCollection } from "astro:content";
 
 const carouselPictures: CarouselPicture[] = [
   {
@@ -32,6 +32,8 @@ const carouselPictures: CarouselPicture[] = [
     alt: "HA-PACS",
   },
 ];
+
+const news = await getCollection("news");
 ---
 
 <Base>
@@ -95,14 +97,12 @@ const carouselPictures: CarouselPicture[] = [
   >
     <List ordered={false}>
       {
-        news.slice(0, 10).map((frontmatter) => (
+        news.slice(0, 10).map((news) => (
           <ListItem class="news-headline">
             <div>
-              <span class="news-date">{frontmatter.date}</span>
-              <ExternalLink
-                href={`/news/${frontmatter.year}/${frontmatter.slug}`}
-              >
-                {frontmatter.title}
+              <span class="news-date">{news.data.date}</span>
+              <ExternalLink href={`/news/${news.id}`}>
+                {news.data.title}
               </ExternalLink>
             </div>
           </ListItem>
