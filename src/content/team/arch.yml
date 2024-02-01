@@ -1,4 +1,310 @@
 cover: ./arch/arcteam_group_photo.jpg
-faculties: []
-students: []
-recentWorks: []
+faculties:
+  - name: 朴 泰祐
+    role: 教授
+    profile: taisuke
+    keywords:
+      - アクセラレータ
+      - ネットワーク
+    message: |
+      大規模科学技術計算（計算科学）は，最先端のサイエンスを支える重要な研究であり，
+      我々は本学の計算科学研究センターを始めとする国内外の研究者との共同研究によってこれを実施しています．
+      GPU，FPGA等の計算リソースは今後の同分野の研究推進に重要な要素であり，
+      これらを積極的に用いた大規模計算科学の実質的な成果を目指した研究を日夜進めています．
+      ぜひみなさんの若い力を貸して下さい！
+  - name: 小林 諒平
+    role: 助教
+    profile: kobayashi
+    keywords:
+      - GPU
+      - FPGA
+      - アクセラレータ
+      - 高性能インターコネクト
+    message: |
+      FPGAを使って自分だけの高性能ハードウェアを作ってみたい，
+      高性能ハードウェアを簡単に作れる素敵なツールを実装してみたい，FPGAだけじゃなく，
+      CPU, GPUを含めたヘテロジニアスコンピューティングについて探求したいという人は間違いなく当研究室に向いているので，
+      どうぞ見学においで下さい．当研究室は，世界の第一線で活躍されている先生方を多く抱え，
+      かつ学外の一流の研究者とも連携することができ，研究をするにおいてこれ以上無いくらい理想的な環境が用意されています．
+      是非一緒に世界を獲る研究を行っていきましょう！(詳細) (TSUKUBA FUTUREの記事)
+  - name: 藤田 典久
+    role: 助教
+    profile: fujita
+    keywords:
+      - GPU
+      - FPGA
+      - アクセラレータ
+    message: |
+      大規模な科学技術計算にFPGAを適用する研究をしています。
+      FPGA向けのアプリケーション最適化に関する研究だけでなく、
+      FPGAが持つ高速な外部通信機構を用いて複数のFPGA間で通信し、
+      大規模な問題を複数のFPGAで並列に計算をする研究も行っています。
+      現在のFPGAは開発コストが高く、なかなか一筋縄にはいきませんが、
+      CPUや他のアクセラレータでは実現できない処理がFPGAでは可能であり、
+      将来性のあるデバイスであると考えています。そして何よりも、研究成果が出たときの達成感と喜びは格別です。
+      最近ではフランクフルトで開催された国際会議でHPC in ASIA poster awardを受賞しました。
+      これ以外にも本研究室の研究内容は世界的に評価されているので，
+      「何か凄いことをして世界中の注目を集めてみたい！」とこっそり思っている人にとって本研究室はまさに理想的な環境です。
+      1ミリでも興味を持ったら是非遊びに来て下さい！
+students:
+  - name: 佐野 由佳
+    role: M2
+    profile: ysano
+    keywords:
+      - FPGA
+      - OpenACC
+    message: |
+      現在は、高性能計算向けに最適化されたFPGAでのプログラミングがより簡単になるようなプログラミング環境の研究をしています。
+      自分がやりたい研究があれば、実現のために真摯に向き合ってくださる先生方が数多くいらっしゃいます。
+      高性能プログラミングに興味を持たれた方は是非お越しください。
+  - name: 北爪 開人
+    role: M1
+    profile: kitazume
+    keywords:
+      - FPGA
+    message: |
+      スーパーコンピュータCygnus上で並列FPGA間通信をより使いやすくするためのフレームワーク改良に取り組んでいます。
+      この研究室は大学内で見てもかなり環境が整っている部類の研究室だと日々感じており、
+      中々手が出ない価格のハイエンドなFPGAやGPUを扱うことができます。「百聞は一見にしかず」かと思いますので、
+      ぜひ一度研究室へ見学にいらしてみてください。
+  - name: Liang Wentao
+    role: M1
+    profile: wentao
+    keywords:
+      - GPU
+      - FPGA
+      - oneAPI
+    message: |
+      The supercomputing now is using different kind of accelerator very often,
+      the "traditional" way of using them is by OpenCL.
+      Intel now introduce a new unified programming platform — oneAPI,
+      the platform provided the runtime and library to program different accelerator,
+      including host code. That's a great contribition to heterogeneous computing,
+      and now I'm trying to use it to program both GPU and FPGA.
+  - name: 鈴木 拓実
+    role: M1
+    profile: tsuzuki
+    keywords:
+      - FPGA
+    message: |
+      私はHPCの知識がない状態で入り、今は、OpenMP、OpenMPI、Verilog HDL、OpenCLなどのHPCの基本的な言語やライブラリの勉強をしています。
+      先生方がわかりやすく教えて下さり、また、サーバ等の研究設備も整っており、良い環境で学ぶことができます。
+  - name: 堀之内 航
+    role: B4
+    profile: horinouchi
+    keywords:
+      - GPU
+    message: |
+      今年度からArchitectureチームに配属となりました。
+      GPUを使ったアプリケーションの高速化の研究のための勉強をしています。
+      HPCに興味のある方はぜひお越しください。
+  - name: Guo Zhixuan
+    role: 研究生
+    profile: zguo
+    keywords:
+      - GPU
+    message: |
+      来年4月からM1になるGuo ZhiXuanです。
+      私の研究はコードをGPU化し、処理速度を高速化させることです。
+      研究室には優れた教員がおり、充実したリソースと設備も整っています。 HPCの知識を豊富に学ぶことができます。
+
+recentWorks:
+  - title: OpenACC Unified Programming Environment for Multi-hybrid Acceleration with GPU and FPGA
+    authors:
+      - Boku Taisuke
+      - Tsunashima Ryuta
+      - Kobayashi Ryohei
+      - Fujita Norihisa
+      - Lee Seyong
+      - Vetter Jeffrey S
+      - Murai Hitoshi
+      - Nakao Masahiro
+      - Tsuji Miwako
+      - Sato Mitsuhisa
+    description:
+      - "ISC High Performance 2023: High Performance Computing, 13999 662-674, Aug, 2023"
+  - title: SYCLに基づく複数の演算加速装置を統一的に扱えるプログラミング手法の提案
+    authors:
+      - 藤田 典久
+      - 小林 諒平
+      - Beau Johnston
+      - Narasinga Rao Miniskar
+      - Seyong Lee
+      - Keita Teranishi
+      - Jeffrer S. Vetter
+      - 朴 泰祐
+    description:
+      - 第190回HPC研究発表会, Jul, 2023
+  - title: NVIDIA H100 GPUにおけるグラフニューラルネットワークの学習精度と実行性能評価
+    authors:
+      - 小林 諒平
+      - 藤田 典久
+      - 朴 泰祐
+      - 天笠 俊之
+    description:
+      - 第190回HPC研究発表会, Jul, 2023
+  - title: Implementation and Performance Evaluation of Memory System Using Addressable Cache for HPC Applications on HBM2 Equipped FPGAs
+    authors:
+      - Fujita Norihisa
+      - Kobayashi Ryohei
+      - Yamaguchi Yoshiki
+      - Boku Taisuke
+    description:
+      - "Euro-Par 2022: Parallel Processing Workshops, 13835 121-132, May, 2023"
+  - title: HPC利用に向けたFPGA間シリアル通信コントローラKyokkoのIntel FPGAへの実装
+    authors:
+      - 北爪 開人
+      - 藤田 典久
+      - 小林 諒平
+      - 朴 泰祐
+    description:
+      - 第189回HPC研究発表会, May, 2023
+  - title: Accelerating Radiative Transfer Simulation on NVIDIA GPUs with OpenACC
+    authors:
+      - Kobayashi Ryohei
+      - Fujita Norihisa
+      - Yamaguchi Yoshiki
+      - Boku Taisuke
+      - Yoshikawa Kohji
+      - Abe Makito
+      - Umemura Masayuki
+    description:
+      - "PDCAT 2022: Parallel and Distributed Computing, Applications and Technologies, 13798 344-358, Apr, 2023"
+  - title: FPGA高位合成における演算性能向上のための空間並列性記述に関する研究
+    authors:
+      - 佐野 由佳
+      - 小林 諒平
+      - 藤田 典久
+      - 朴 泰祐
+      - 佐藤 三久
+    description:
+      - 第188回HPC研究発表会, Mar, 2023
+  - title: Implementation and Performance Evaluation of Collective Communications Using CIRCUS on Multiple FPGAs
+    authors:
+      - Kikuchi Kohei
+      - Fujita Norihisa
+      - Kobayashi Ryohei
+      - Boku Taisuke
+    description:
+      - "HPC Asia '23 Workshops: Proceedings of the HPC Asia 2023 Workshops, 15-23, Feb, 2023"
+  - title: GPU–FPGA-accelerated Radiative Transfer Simulation with Inter-FPGA Communication
+    authors:
+      - Kobayashi Ryohei
+      - Fujita Norihisa
+      - Yamaguchi Yoshiki
+      - Boku Taisuke
+      - Yoshikawa Kohji
+      - Abe Makito
+      - Umemura Masayuki
+    description:
+      - "HPC Asia '23: Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region, 117-125, Feb, 2023"
+  - title: Cygnus - World First Multihybrid Accelerated Cluster with GPU and FPGA Coupling
+    authors:
+      - Boku Taisuke
+      - Fujita Norihisa
+      - Kobayashi Ryohei
+      - Tatebe Osamu
+    description:
+      - "ICPP Workshops '22: Workshop Proceedings of the 51st International Conference on Parallel Processing, (8) 1-8, Jan, 2023"
+  - title: 並列FPGA環境における通信システムCIRCUSを用いた集団通信の実装と性能評価
+    authors:
+      - 菊池 航平
+      - 藤田 典久
+      - 小林 諒平
+      - 朴 泰祐
+    description:
+      - 第187回HPC研究発表会, Nov, 2022
+  - title: An Open-source FPGA Library for Data Sorting
+    authors:
+      - Kobayashi Ryohei
+      - Miura Kento
+      - Fujita Norihisa
+      - Boku Taisuke
+      - Amagasa Toshiyuki
+    description:
+      - Journal of Information Processing, 30 766-777, Oct, 2022
+  - title: GPU・FPGA複合型演算加速クラスタを用いた宇宙輻射輸送コードARGOTの多ノード並列化
+    authors:
+      - 小林 諒平
+      - 藤田 典久
+      - 山口 佳樹
+      - 朴 泰祐
+      - 吉川 耕司
+      - 安部 牧人
+      - 梅村 雅之
+    description:
+      - 第185回HPC研究発表会, Jul, 2022
+  - title: Performance Evaluation on GPU-FPGA Accelerated Computing Considering Interconnections between Accelerators
+    authors:
+      - Sano Yuka
+      - Kobayashi Ryohei
+      - Fujita Norihisa
+      - Boku Taisuke
+    description:
+      - The Proceedings of the 12th International Symposium on Highly Efficient Accelerators and Reconfigurable Technologies (HEART 2022), 10-16, Jun, 2022
+  - title: ノードを跨いだGPU・FPGA複合型演算加速による宇宙物理シミュレーションの実装と評価
+    authors:
+      - 佐野 由佳
+      - 小林 諒平
+      - 藤田 典久
+      - 朴 泰祐
+    description:
+      - 第184回HPC研究発表会, May, 2022
+  - title: HBM2 搭載 FPGA のための Addressable Cache を用いた HPC 向けメモリシステムの性能評価
+    authors:
+      - 藤田 典久
+      - 小林 諒平
+      - 山口 佳樹
+      - 朴 泰祐
+    description:
+      - 第183回HPC研究発表会, Mar, 2022
+  - title: OpenACCによる宇宙物理シミュレーションのGPU＋FPGA協調計算の実装
+    authors:
+      - 綱島 隆太
+      - 小林 諒平
+      - 藤田 典久
+      - 朴 泰祐
+      - Lee Seyong
+      - Vetter Jeffrey S
+      - 村井 均
+      - 中尾 昌広
+      - 辻 美和子
+      - 佐藤 三久
+    description:
+      - 第183回HPC研究発表会, Mar, 2022
+  - title: oneAPIを用いたGPU・FPGA混載ノードにおける宇宙物理シミュレーションコードARGOTの実装
+    authors:
+      - 柏野 隆太
+      - 小林 諒平
+      - 藤田 典久
+      - 朴 泰祐
+    description:
+      - 第183回HPC研究発表会, Mar, 2022
+  - title: GPUクラスタを用いた宇宙輻射輸送コードARGOTのOpenACC実装と性能評価
+    authors:
+      - 小林 諒平
+      - 藤田 典久
+      - 山口 佳樹
+      - 朴 泰祐
+      - 吉川 耕司
+      - 安部 牧人
+      - 梅村 雅之
+    description:
+      - 第183回HPC研究発表会, Mar, 2022
+  - title: High resolution of city-level climate simulation by GPU with multi-physical phenomena
+    authors:
+      - Watanabe Koei
+      - Kikuchi Kohei
+      - Boku Taisuke
+      - Sato Takuto
+      - Kusaka Hiroyuki
+    description:
+      - Lecture Notes in Computer Science, 13152, Jan, 2022
+  - title: Multi-hetero Acceleration by GPU and FPGA for Astrophysics Simulation on oneAPI Environment
+    authors:
+      - Kashino Ryuta
+      - Kobayashi Ryohei
+      - Fujita Norihisa
+      - Boku Taisuke
+    description:
+      - "HPCAsia2022: International Conference on High Performance Computing in Asia-Pacific Region, 84-93, Jan, 2022"

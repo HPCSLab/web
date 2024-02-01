@@ -1,32 +1,52 @@
 ---
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
+import Box from "@components/layout/box/Box.astro";
 interface Props {
   headingText: string;
   headingUrl?: string;
-  backgroundInverted: boolean;
+  backgroundInverted?: boolean;
+  fullW?: boolean;
 }
 
-const { headingText, headingUrl, backgroundInverted } = Astro.props;
+const { headingText, headingUrl, backgroundInverted, fullW } = Astro.props;
 ---
 
 <section class={backgroundInverted ? "bg-inverted" : null}>
   <div>
     <h2>
-      <ResponsiveWidth>
-        {
-          headingUrl ? (
-            <ReadMoreLink href={headingUrl}>{headingText}</ReadMoreLink>
-          ) : (
-            headingText
-          )
-        }
-      </ResponsiveWidth>
+      {
+        fullW ? (
+          <Box mode="h" p="2rem">
+            {headingUrl ? (
+              <ReadMoreLink href={headingUrl}>{headingText}</ReadMoreLink>
+            ) : (
+              headingText
+            )}
+          </Box>
+        ) : (
+          <ResponsiveWidth>
+            {headingUrl ? (
+              <ReadMoreLink href={headingUrl}>{headingText}</ReadMoreLink>
+            ) : (
+              headingText
+            )}
+          </ResponsiveWidth>
+        )
+      }
     </h2>
   </div>
-  <ResponsiveWidth>
-    <slot />
-  </ResponsiveWidth>
+  {
+    fullW ? (
+      <Box mode="h" p="2rem">
+        <slot />
+      </Box>
+    ) : (
+      <ResponsiveWidth>
+        <slot />
+      </ResponsiveWidth>
+    )
+  }
 </section>
 
 <style>
@@ -39,10 +59,16 @@ const { headingText, headingUrl, backgroundInverted } = Astro.props;
     color: var(--color-inverted-text-strong);
   }
 
+  .full-width {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   section {
     padding-top: 1rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    width: 100%;
   }
 
   section h2 {

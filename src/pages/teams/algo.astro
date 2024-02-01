@@ -15,6 +15,8 @@ import Student from "@components/pages/teams/StudentCard.astro";
 import Width from "@components/layout/box/Width.astro";
 import Youtube from "@components/display/Youtube.astro";
 import { getEntry } from "astro:content";
+import Grid from "@components/layout/Grid.astro";
+import VSpace from "@components/layout/VSpace.astro";
 
 const {
   data: { cover, faculties, students, recentWorks },
@@ -74,15 +76,13 @@ const {
     headingText="アルゴリズムチームの使っている計算機について"
     backgroundInverted={false}
   >
-    <HStack>
-      <Width width="40%" min="40%">
-        <Typography>
-          チームで所有している計算機としては、IntelのXeonプロセッサを搭載した4ノードのクラスタ2つのほか、IntelのXeon
-          Phiプロセッサを搭載した4ノードのクラスタがあります。これらは学生によって管理・運用されていて自由に使うことができます。また本研究室は計算科学研究センターと協力関係にあり、研究内容によっては筑波大学が運用するスーパーコンピュータCygnus
-          (理論ピーク性能2.4PFLOPS)，Pegasus
-          (理論ピーク性能6.5PFLOPS)を利用できます。これらの様々な計算機資源を利用して研究を行うことが可能です。
-        </Typography>
-      </Width>
+    <HStack template="40% 1fr">
+      <Typography>
+        チームで所有している計算機としては、IntelのXeonプロセッサを搭載した4ノードのクラスタ2つのほか、IntelのXeon
+        Phiプロセッサを搭載した4ノードのクラスタがあります。これらは学生によって管理・運用されていて自由に使うことができます。また本研究室は計算科学研究センターと協力関係にあり、研究内容によっては筑波大学が運用するスーパーコンピュータCygnus
+        (理論ピーク性能2.4PFLOPS)，Pegasus
+        (理論ピーク性能6.5PFLOPS)を利用できます。これらの様々な計算機資源を利用して研究を行うことが可能です。
+      </Typography>
       <Image
         src={ServerImage}
         alt="Algorithmチームの計算機クラスタ"
@@ -97,93 +97,96 @@ const {
       ,
       title="配信講義 計算科学技術特論B (2020) 第6回"
     />
-    <H1Section headingText="メンバー" backgroundInverted={true}>
-      <div class=".card-container">
-        {
-          faculties.map((faculty) => (
-            <FacultyCard member={faculty}>
-              <Typography>{faculty.message}</Typography>
-            </FacultyCard>
-          ))
-        }
+  </H1Section>
+  <H1Section headingText="メンバー" backgroundInverted={true} fullW={true}>
+    <Grid minW="30rem">
+      {
+        faculties.map((faculty) => (
+          <FacultyCard member={faculty}>
+            <Typography>{faculty.message}</Typography>
+          </FacultyCard>
+        ))
+      }
+    </Grid>
+    <VSpace h="2rem" />
+    <Grid minW="13rem">
+      {
+        students.map((student) => (
+          <Student member={student}>
+            <Typography>{student.message}</Typography>
+          </Student>
+        ))
+      }
+    </Grid>
+
+    <VSpace h="2rem" />
+  </H1Section>
+  <H1Section headingText="近年の研究成果について" backgroundInverted={false}>
+    <Typography>
+      教員の研究成果については，以下のページよりご覧ください．
+    </Typography>
+    <div>
+      <div class="teacher-work-link-wrapper">
+        <ReadMoreLink
+          href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/pub-j.html"
+        >
+          <div class="work-author">
+            <span class="work-author-name">高橋 大介</span>
+            <span class="work-author-role">教授</span>
+          </div>
+        </ReadMoreLink>
       </div>
-      <div class="card-container">
-        {
-          students.map((student) => (
-            <Student member={student}>
-              <Typography>{student.message}</Typography>
-            </Student>
-          ))
-        }
+
+      <div class="teacher-work-link-wrapper">
+        <ReadMoreLink
+          href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/publication.html"
+        >
+          <div class="work-author">
+            <span class="work-author-name">多田野 寛人</span>
+            <span class="work-author-role">助教</span>
+          </div>
+        </ReadMoreLink>
       </div>
-    </H1Section>
-    <H1Section headingText="近年の研究成果について" backgroundInverted={false}>
+
       <Typography>
-        教員の研究成果については，以下のページよりご覧ください．
+        一例として，2023年までに国際学会，情報処理学会HPC研究会等に投稿した研究会原稿を紹介します．
       </Typography>
-      <div>
-        <div class="teacher-work-link-wrapper">
-          <ReadMoreLink
-            href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/pub-j.html"
-          >
-            <div class="work-author">
-              <span class="work-author-name">高橋 大介</span>
-              <span class="work-author-role">教授</span>
-            </div>
-          </ReadMoreLink>
-        </div>
-
-        <div class="teacher-work-link-wrapper">
-          <ReadMoreLink
-            href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/publication.html"
-          >
-            <div class="work-author">
-              <span class="work-author-name">多田野 寛人</span>
-              <span class="work-author-role">助教</span>
-            </div>
-          </ReadMoreLink>
-        </div>
-
-        <Typography>
-          一例として，2023年までに国際学会，情報処理学会HPC研究会等に投稿した研究会原稿を紹介します．
-        </Typography>
-        <Typography>
-          筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
-        </Typography>
-      </div>
-      <RecentWorks works={recentWorks} />
-    </H1Section>
-
-    <style>
-      .pic-cluster {
-        width: auto;
-        height: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
-
-      .teacher-work-link-wrapper {
-        margin-top: 1em;
-        margin-bottom: 1em;
-      }
-
-      .work-author {
-        display: flex;
-        flex-direction: row;
-        align-items: end;
-      }
-
-      .work-author-name {
-        color: var(--color-text-strong);
-        font-size: var(--font-size-lg);
-      }
-
-      .work-author-role {
-        color: var(--color-text-disable);
-        font-size: var(--font-size-normal);
-
-        margin-left: 0.5em;
-      }
-    </style>
+      <Typography>
+        筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
+      </Typography>
+    </div>
+    <RecentWorks works={recentWorks} />
   </H1Section>
 </Team>
+
+<style>
+  .pic-cluster {
+    width: auto;
+    height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .teacher-work-link-wrapper {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .work-author {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+
+  .work-author-name {
+    color: var(--color-text-strong);
+    font-size: var(--font-size-lg);
+  }
+
+  .work-author-role {
+    color: var(--color-text-disable);
+    font-size: var(--font-size-normal);
+
+    margin-left: 0.5em;
+  }
+</style>

@@ -1,12 +1,18 @@
+---
+interface Props {
+  template: string;
+}
+---
+
 <div>
   <slot />
 </div>
 
-<style>
+<style define:vars={{ template: Astro.props.template }}>
   div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: var(--template);
+    gap: 1rem;
     height: 100%;
     width: 100%;
   }

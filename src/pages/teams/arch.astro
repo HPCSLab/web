@@ -19,6 +19,10 @@ import { getEntry } from "astro:content";
 import FacultyCard from "@components/pages/teams/FacultyCard.astro";
 import StudentCard from "@components/pages/teams/StudentCard.astro";
 import RecentWorks from "@components/pages/teams/RecentWorks.astro";
+import HSpace from "@components/layout/HSpace.astro";
+import VStack from "@components/layout/VStack.astro";
+import Grid from "@components/layout/Grid.astro";
+import VSpace from "@components/layout/VSpace.astro";
 
 const {
   data: { cover, faculties, students, recentWorks },
@@ -99,12 +103,10 @@ const {
     headingText="GPU-FPGA複合システムにおけるデバイス間連携機構"
     backgroundInverted={false}
   >
-    <HStack>
-      <Width min="40%">
-        <div class="img-container">
-          <Image src={cygnus} alt="Supercomputer Cygnus" />
-        </div>
-      </Width>
+    <HStack template="40% 1fr">
+      <div class="img-container">
+        <Image src={cygnus} alt="Supercomputer Cygnus" />
+      </div>
       <Typography>
         我々は，高い演算性能とメモリバンド幅を有する GPU (Graphics Processing
         Unit) に演算通信性能に優れている FPGA (Field Programmable Gate Array)
@@ -118,18 +120,16 @@ const {
         を用いて，実用的なアプリケーションをターゲットにした提案手法の実験を行っています．
       </Typography>
     </HStack>
-    <HStack>
-      <Width min="40%">
-        <Typography>
-          右図に AiS コンセプトの概要を示します．各ノードには GPU と FPGA
-          が搭載されており，それらは PCIe
-          バスを介して接続されています．アプリケーションにおける大規模な粗粒度並列処理部分は従来通り
-          GPU が担当しつつ，GPU
-          ではカバーできない並列性の低い演算部分のオフロードおよび高速ノード間通信処理に
-          FPGA
-          を適用することによって，より効率的でレイテンシボトルネックの少ない強スケーリングの実現を目指しています．
-        </Typography>
-      </Width>
+    <HStack template="1fr 40%">
+      <Typography>
+        右図に AiS コンセプトの概要を示します．各ノードには GPU と FPGA
+        が搭載されており，それらは PCIe
+        バスを介して接続されています．アプリケーションにおける大規模な粗粒度並列処理部分は従来通り
+        GPU が担当しつつ，GPU
+        ではカバーできない並列性の低い演算部分のオフロードおよび高速ノード間通信処理に
+        FPGA
+        を適用することによって，より効率的でレイテンシボトルネックの少ない強スケーリングの実現を目指しています．
+      </Typography>
       <div class="img-container">
         <Image src={aisConcept} alt="AiS concept" />
       </div>
@@ -139,79 +139,83 @@ const {
     headingText="高性能なFPGAアクセラレータを利用したアプリケーション開発に関する研究"
     backgroundInverted={false}
   >
-    <HStack>
-      <Width min="60%">
-        <Typography>
-          近年，再構成可能ハードウェアとしてFPGAが注目され，多くの分野で使われるようになってきました．
-          高性能計算においてもその流れがあり，我々は現在利用されているGPUやCPUがどうしても解決できない問題について，
-          FPGAを用いることで高性能化・高速化が行えないか検討しています．また，CPU,
-          GPUに加え，FPGAにおいてもOpenCLプラットフォーム (右図)
-          がサポートされ，FPGAを用いたプログラミングが従来よりも格段に容易になったこともその流れを後押ししています．
-          このOpenCLの記述能力をフルに活用して，プログラミングコストを削減しつつ高性能なFPGAアクセラレータを実現することを目指しています．
-          その一環として，初期宇宙の研究に重要な輻射輸送を解くプログラムで用いられているアルゴリズムをOpenCLで記述してFPGA向けに最適化する研究を本学の計算科学研究センターに所属する宇宙物理の研究者と共同で実施しています．
-        </Typography>
-      </Width>
-      <Box p="0">
+    <HStack template="60% 1fr">
+      <Typography>
+        近年，再構成可能ハードウェアとしてFPGAが注目され，多くの分野で使われるようになってきました．
+        高性能計算においてもその流れがあり，我々は現在利用されているGPUやCPUがどうしても解決できない問題について，
+        FPGAを用いることで高性能化・高速化が行えないか検討しています．また，CPU,
+        GPUに加え，FPGAにおいてもOpenCLプラットフォーム (右図)
+        がサポートされ，FPGAを用いたプログラミングが従来よりも格段に容易になったこともその流れを後押ししています．
+        このOpenCLの記述能力をフルに活用して，プログラミングコストを削減しつつ高性能なFPGAアクセラレータを実現することを目指しています．
+        その一環として，初期宇宙の研究に重要な輻射輸送を解くプログラムで用いられているアルゴリズムをOpenCLで記述してFPGA向けに最適化する研究を本学の計算科学研究センターに所属する宇宙物理の研究者と共同で実施しています．
+      </Typography>
+      <VStack template="1fr 1fr">
         <div class="img-container">
           <Image src={aocl} alt="aocl description" />
         </div>
         <div class="img-container">
           <Image src={astroFpga} alt="astro-FPGA description" />
         </div>
-      </Box>
+      </VStack>
     </HStack>
   </H1Section>
-  <H1Section headingText="世界的な活動" backgroundInverted={false}>
-    <Typography>
-      朴教授は国際会議における議長やプログラム委員長を務めるなど、世界的に活躍しています．
-      また，小林助教も国際会議のプログラム委員の経験があります．
-    </Typography>
-    <Youtube
-      src="https://www.youtube.com/embed/zT1BKPU8VVk"
-      title="Developing Faster Algorithms with OpenACC and XcalableACC"
-    />
-    <Youtube
-      src="https://www.youtube.com/embed/RgADPWRNBgM"
-      title="Oakforest-PACS: Overview of the New JCAHPC Computing Facility"
-    />
-    <Youtube
-      src="https://www.youtube.com/embed/BDPsa7AP7NA"
-      title="Interview with HPC in Asia Chair Prof. Dr. Taisuke Boku"
-    />
-  </H1Section>
-  <H1Section headingText="他チームとの協力" backgroundInverted={false}>
-    <Typography>
-      並列プログラミング言語に関する研究はPAチームとの共同研究で，我々のPEACH2をPAチームで開発している並列言語XcalableMPの演算加速装置向け拡張XcalableACCに導入した実績もあります．
-      また，FPGAチームとも協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．
-    </Typography>
-  </H1Section>
-  <H1Section headingText="メンバー" backgroundInverted={true}>
-    <div class=".card-container">
-      {
-        faculties.map((faculty) => (
-          <FacultyCard member={faculty}>
-            <Typography>{faculty.message}</Typography>
-          </FacultyCard>
-        ))
-      }
-    </div>
-    <div class="card-container">
-      {
-        students.map((student) => (
-          <StudentCard member={student}>
-            <Typography>{student.message}</Typography>
-          </StudentCard>
-        ))
-      }
-    </div>
-  </H1Section>
-  <H1Section headingText="近年の研究成果" backgroundInverted={false}>
-    <RecentWorks works={recentWorks} />
-  </H1Section>
 </Team>
+<H1Section headingText="世界的な活動" backgroundInverted={false}>
+  <Typography>
+    朴教授は国際会議における議長やプログラム委員長を務めるなど、世界的に活躍しています．
+    また，小林助教も国際会議のプログラム委員の経験があります．
+  </Typography>
+  <Box mode="v" p="1rem">
+    <VStack template="1fr 1fr 1fr">
+      <Youtube
+        src="https://www.youtube.com/embed/zT1BKPU8VVk"
+        title="Developing Faster Algorithms with OpenACC and XcalableACC"
+      />
+      <Youtube
+        src="https://www.youtube.com/embed/RgADPWRNBgM"
+        title="Oakforest-PACS: Overview of the New JCAHPC Computing Facility"
+      />
+      <Youtube
+        src="https://www.youtube.com/embed/BDPsa7AP7NA"
+        title="Interview with HPC in Asia Chair Prof. Dr. Taisuke Boku"
+      />
+    </VStack>
+  </Box>
+</H1Section>
+<H1Section headingText="他チームとの協力" backgroundInverted={false}>
+  <Typography>
+    並列プログラミング言語に関する研究はPAチームとの共同研究で，我々のPEACH2をPAチームで開発している並列言語XcalableMPの演算加速装置向け拡張XcalableACCに導入した実績もあります．
+    また，FPGAチームとも協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．
+  </Typography>
+</H1Section>
+<H1Section headingText="メンバー" backgroundInverted={true} fullW={true}>
+  <Grid minW="30rem">
+    {
+      faculties.map((faculty) => (
+        <FacultyCard member={faculty}>
+          <Typography>{faculty.message}</Typography>
+        </FacultyCard>
+      ))
+    }
+  </Grid>
+  <VSpace h="2rem" />
+  <Grid minW="20rem">
+    {
+      students.map((student) => (
+        <StudentCard member={student}>
+          <Typography>{student.message}</Typography>
+        </StudentCard>
+      ))
+    }
+  </Grid>
+  <VSpace h="2rem" />
+</H1Section>
+<H1Section headingText="近年の研究成果" backgroundInverted={false}>
+  <RecentWorks works={recentWorks} />
+</H1Section>
+
 <style>
   .img-container {
-    padding-top: 1rem;
     width: 100%;
   }
 
