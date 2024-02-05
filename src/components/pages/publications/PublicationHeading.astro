@@ -19,8 +19,8 @@ const { pub } = Astro.props;
     <ul class="authors-container">
       {pub.data.authors.map((author) => <li class="author">{author}</li>)}
     </ul>
-    <div>
-      {pub.data.booktitle}
+    <div class="reference">
+      {pub.data.reference}
     </div>
   </div>
 </section>
@@ -41,13 +41,19 @@ const { pub } = Astro.props;
   }
 
   .authors-container {
-    display: flex;
-    flex-direction: row;
+    display: inline;
     margin-bottom: 0.5rem;
   }
 
   .author {
     color: var(--color-text-weak);
+    display: inline;
     margin-right: 0.5em;
+  }
+
+  .reference {
+    margin-top: 1rem;
+    color: var(--color-text-weak);
+    font-size: var(--font-size-sm);
   }
 </style>

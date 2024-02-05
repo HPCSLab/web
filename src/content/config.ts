@@ -57,6 +57,7 @@ const publicationSchema = z.object({
   authors: z.array(z.string()),
   bibtex: z.string(),
   reference: z.string(),
+  url: z.string().nullish(),
   class: publicationClassSchema,
 });
 
@@ -151,7 +152,7 @@ const memberSchema = (ctx: SchemaContext) =>
       researcherSchema,
       studentSchema,
       researchStudentSchema,
-    ])
+    ]),
   );
 
 export type Member = z.infer<ReturnType<typeof memberSchema>>;
@@ -188,25 +189,24 @@ export type CollectionDataEntry<T> = {
 };
 
 export function isFacultyAlumnus(
-  alumni: CollectionDataEntry<Alumnus>
+  alumni: CollectionDataEntry<Alumnus>,
 ): alumni is CollectionDataEntry<FacultyAlumnus> {
   return alumni.data.type === "faculty";
 }
 
 export function isNotFacultyAlumnus(
-  alumni: CollectionDataEntry<Alumnus>
+  alumni: CollectionDataEntry<Alumnus>,
 ): alumni is CollectionDataEntry<NotFacultyAlumnus> {
   return alumni.data.type !== "faculty";
 }
 
-const teamMemberSchema = 
-  z.object({
-    name: z.string(),
-    profile: reference("member"),
-    role: z.string(),
-    message: z.string(),
-    keywords: z.array(z.string()).nullish(),
-  });
+const teamMemberSchema = z.object({
+  name: z.string(),
+  profile: reference("member"),
+  role: z.string(),
+  message: z.string(),
+  keywords: z.array(z.string()).nullish(),
+});
 
 export type TeamMember = z.infer<typeof teamMemberSchema>;
 
@@ -224,7 +224,7 @@ const teamSchema = (ctx: SchemaContext) =>
     cover: ctx.image(),
     faculties: z.array(teamMemberSchema),
     students: z.array(teamMemberSchema),
-    recentWorks: z.array(reference('publication')),
+    recentWorks: z.array(reference("publication")),
   });
 
 export type Team = z.infer<ReturnType<typeof teamSchema>>;

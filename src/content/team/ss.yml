@@ -10,43 +10,43 @@ faculties:
     message: |
       システムソフトウェアに興味がある人, 大きいことをやってみたい人は是非どうぞ. 好きなことをやってください.
 students:
-  - name: 平賀 弘平	
+  - name: 平賀 弘平
     role: 研究員
     profile: hiraga
     message: |
       分散メタデータサーバ、MPI-IO分散システムやシステムソフトウェアに興味のある方はぜひ一緒に研究しましょう。
       不揮発性メモリを使ってみたい方もどうぞ！
   - name: 前田 宗則
-    role: 主任研究員	
+    role: 主任研究員
     profile: munem
     message: |
       産学連携プロジェクトで富士通株式会社から来ました研究員です. 
       高速な分散データストアの重要性は増しています. この研究室で一緒にやりましょう.
-  - name: 中谷 裕一	
+  - name: 中谷 裕一
     role: D2
     profile: nakatani
     message: |
       負荷が均等となるコンシステントハッシングの研究をしています
-  - name: 杉原 航平	
+  - name: 杉原 航平
     role: D1
     profile: sugihara
     keywords:
       - ノードローカルバーストバッファ
     message: |
       研究室の人数よりも計算機の方が多い研究室です。クラスタやスーパーコンピューターを使って研究してみたい人はぜひ！
-  - name: 兪明哲	
+  - name: 兪明哲
     role: D1
     profile: yu
     message: |
       分散学習の耐障害性についての研究を考えています
-  - name: 木下 嵩裕	
+  - name: 木下 嵩裕
     profile: kinoshita
     role: M2
     keywords:
       - 不揮発メモリ
     message: |
       潤沢な計算資源，環境があります．ぜひ一緒に研究しましょう．
-  - name: 小山 創平	
+  - name: 小山 創平
     role: M2
     profile: skoyama
     message: |
@@ -64,23 +64,20 @@ students:
     message: |
       HPCに限らず色々な分散システムの話をしましょう
 
-
 recentWorks:
-  - sc23koyama
-  - rexio2023tatebe
-  - rexio2023koyama
-  - icpp-ws2022boku
-  - adopt22koyama
-  - essa22tatebe
-  - hpcasia2022tatebe
-  - swopp2023tatabe
-  - ipsj-hpc190koyama
-  - ipsj-hpc186kasai
-  - ipsj-hpc185hiraga
-  - ipsj-hpc185tatebe
-  - ipsj-hpc185obata
-  - ipsj-hpc184obata
-  - ipsj-hpc183hiraga
-  - ipsj-hpc183tatebe
-
-
+  - 2023/sc23koyama
+  - 2023/rexio2023tatebe
+  - 2023/rexio2023koyama
+  - 2022/icpp-ws2022boku
+  - 2022/adopt22koyama
+  - 2022/essa22tatebe
+  - 2022/hpcasia2022tatebe
+  - 2023/swopp2023tatebe
+  - 2023/ipsj-hpc190koyama
+  - 2022/ipsj-hpc186kasai
+  - 2022/ipsj-hpc185hiraga
+  - 2022/ipsj-hpc185tatebe
+  - 2022/ipsj-hpc185obata
+  - 2022/ipsj-hpc184obata
+  - 2022/ipsj-hpc183hiraga
+  - 2022/ipsj-hpc183tatebe

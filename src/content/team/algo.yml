@@ -47,25 +47,25 @@ students:
     role: B4
     message: 複数右辺連立一次方程式に対する反復法の近似解精度改善
 recentWorks:
-  - jsiam-nonlin2022saito
-  - jsiam2022suganuma
-  - jsiam-letters2021
-  - jsiam2021ishikawa
-  - jsiam-nonlin2020ishikawa
-  - jsiam-fed17ishikawa
-  - jsiam2020kuramoto
-  - jsiam-mat30ishikawa
-  - ipsj2023yamaguchi
-  - hpcasia-2023edamatsu
-  - ieee-trans-etc2022edamatsu
-  - sugizaki2022
-  - iccsa2021harayama
-  - ipsj-hpc177harayama
-  - ica3pp2020sugizaki
-  - jsiam2020sugizaki
-  - ica3pp-edamatsu
-  - jsiam2019edamatsu
-  - hpcc2018edamatsu
-  - ipsj-hpc164sato
-  - ipsj-hpc155gomi
-  - ipsj-hpc154shinoduka
+  - 2022/jsiam-nonlin2022saito
+  - 2022/jsiam2022suganuma
+  - 2021/jsiam-letters2021
+  - 2021/jsiam2021ishikawa
+  - 2020/jsiam-nonlin2020ishikawa
+  - 2021/jsiam-fed17ishikawa
+  - 2020/jsiam2020kuramoto
+  - 2023/jsiam-mat30ishikawa
+  - 2023/ipsj2023yamaguchi
+  - 2023/hpcasia-2023edamatsu
+  - 2022/ieee-trans-etc2022edamatsu
+  - 2022/sugizaki2022
+  - 2021/iccsa2021harayama
+  - 2020/ipsj-hpc177harayama
+  - 2020/ica3pp2020sugizaki
+  - 2020/jsiam2020sugizaki
+  - 2019/ica3pp-edamatsu
+  - 2019/jsiam2019edamatsu
+  - 2018/hpcc2018edamatsu
+  - 2018/ipsj-hpc164sato
+  - 2016/ipsj-hpc155gomi
+  - 2016/ipsj-hpc154shinoduka

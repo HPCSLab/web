@@ -109,24 +109,24 @@ students:
       研究室には優れた教員がおり、充実したリソースと設備も整っています。 HPCの知識を豊富に学ぶことができます。
 
 recentWorks:
-  - ischp2023boku
-  - ipsj-hpc190fujita
-  - ipsj-hpc190kobayashi
-  - europar-2022fujita
-  - ipsj-hpc189kitazume
-  - pdcast-2022kobayashi
-  - ipsj-hpc188sano
-  - hpcasia-2023kikuchi
-  - hpcasia-2023kobayashi
-  - icpp-ws2022boku
-  - ipsj-hpc187kikuchi
-  - ipsj-jip2022kobayashi
-  - ipsj-hpc185kobayashi
-  - heart2022sano
-  - ipsj-hpc2022sano
-  - ipsj-hpc183fujita
-  - ipsj-hpc183tsunashima
-  - ipsj-hpc183kashiwano
-  - ipsj-hpc183kobayashi
-  - lncs2022
-  - hpcasia2022watanabe
+  - 2023/ischp2023boku
+  - 2023/ipsj-hpc190fujita
+  - 2023/ipsj-hpc190kobayashi
+  - 2022/europar-2022fujita
+  - 2023/ipsj-hpc189kitazume
+  - 2022/pdcat-2022kobayashi
+  - 2023/ipsj-hpc188sano
+  - 2023/hpcasia-2023kikuchi
+  - 2023/hpcasia-2023kobayashi
+  - 2022/icpp-ws2022boku
+  - 2023/ipsj-hpc187kikuchi
+  - 2022/ipsj-jip2022kobayashi
+  - 2022/ipsj-hpc185kobayashi
+  - 2022/heart2022sano
+  - 2022/ipsj-hpc2022sano
+  - 2022/ipsj-hpc183fujita
+  - 2022/ipsj-hpc183tsunashima
+  - 2022/ipsj-hpc183kashiwano
+  - 2022/ipsj-hpc183kobayashi
+  - 2022/lncs2022
+  - 2022/hpcasia2022watanabe
