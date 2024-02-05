@@ -1,0 +1,30 @@
+title: GPUクラスタを用いた宇宙輻射輸送コードARGOTのOpenACC実装と性能評価
+authors:
+  - 小林 諒平
+  - 藤田 典久
+  - 山口 佳樹
+  - 朴 泰祐
+  - 吉川 耕司
+  - 安部 牧人
+  - 梅村 雅之
+year: 2022
+bibtex: |
+  @techreport { IPSJ-HPC183:kobayashi,
+    author      = "{小林 諒平} and {藤田 典久} and {山口 佳樹} and {朴 泰祐} and {吉川 耕司} and {安部 牧人} and {梅村 雅之}",
+    title       = "GPUクラスタを用いた宇宙輻射輸送コードARGOTのOpenACC実装と性能評価",
+    year        = "2022",
+    volume      = "2022-HPC-183",
+    number      = "17",
+    month       = "3",
+    booktitle   = "情報処理学会 第183回 HPC 研究会報告 (HPC183)"
+  }
+reference: |
+  小林 諒平, 藤田 典久, 山口 佳樹, 朴 泰祐, 吉川 耕司, 安部 牧人, 梅村 雅之:
+  ”GPUクラスタを用いた宇宙輻射輸送コードARGOTのOpenACC実装と性能評価,”
+  情報処理学会第183回HPC研究報告会,
+  Vol. 2022-HPC-183,
+  No. 17,
+  Mar 2022.
+class:
+  class: domestic
+  subclass: workshop

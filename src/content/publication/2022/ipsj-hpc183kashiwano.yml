@@ -1,0 +1,27 @@
+title: oneAPIを用いたGPU・FPGA混載ノードにおける宇宙物理シミュレーションコードARGOTの実装
+authors:
+  - 柏野 隆太
+  - 小林 諒平
+  - 藤田 典久
+  - 朴 泰祐
+bibtex: |
+  @techreport { IPSJ-HPC183:kashiwano,
+    author      = "{柏野 隆太} and {小林 諒平} and {藤田 典久} and {朴 泰祐}",
+    title       = "oneAPIを用いたGPU・FPGA混載ノードにおける宇宙物理シミュレーションコードARGOTの実装",
+    year        = "2022",
+    volume      = "2022-HPC-183",
+    number      = "12",
+    month       = "3",
+    booktitle   = "情報処理学会 第183回 HPC 研究会報告 (HPC183)"
+  }
+reference: |
+  柏野 隆太, 小林 諒平, 藤田 典久, 朴 泰祐:
+  ”oneAPIを用いたGPU・FPGA混載ノードにおける宇宙物理シミュレーションコードARGOTの実装,”
+  情報処理学会第183回HPC研究報告会,
+  Vol. 2022-HPC-183,
+  No. 12,
+  Mar 2022.
+class:
+  class: domestic
+  subclass: workshop
+year: 2022

@@ -1,0 +1,30 @@
+title: Multi-hetero Acceleration by GPU and FPGA for Astrophysics Simulation on oneAPI Environment
+authors:
+  - Kashino Ryuta
+  - Kobayashi Ryohei
+  - Fujita Norihisa
+  - Boku Taisuke
+bibtex: |
+  @inproceedings{10.1145/3492805.3492817,
+  author = {Kashino, Ryuta and Kobayashi, Ryohei and Fujita, Norihisa and Boku, Taisuke},
+  title = {Multi-hetero Acceleration by GPU and FPGA for Astrophysics Simulation on oneAPI Environment},
+  year = {2022},
+  isbn = {9781450384988},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3492805.3492817},
+  doi = {10.1145/3492805.3492817},
+  abstract = {GPU (Graphics Processing Unit) computing is one of the most popular accelerating methods for various high-performance computing applications. For scientific computations based on multi-physical phenomena, however, a single device solution on a GPU is insufficient, where the single timescale or degree of parallelism is not simply supported by a simple GPU-only solution. We have been researching a combination of a GPU and FPGA (Field Programmable Gate Array) for such complex physical simulations. The most challenging issue is how to program these multiple devices using a single code. OneAPI, recently provided by Intel, is a programming paradigm supporting such a solution on a single language platform using DPC++ based on SYCL 2020. However, there are no practical applications utilizing its full features or supporting heterogeneous multi-device programming to demonstrate its potential capability. In this study, we present the implementation and performance evaluation of our astrophysics code ARGOT used to apply the oneAPI solution with a GPU and an FPGA. To realize our concept of Cooperative Heterogeneous Acceleration by Reconfigurable Multidevices, also known as CHARM, as a type of next-generation accelerated supercomputing for complex multi-physical simulations, this study was conducted on our multi-heterogeneous accelerated cluster machine running at the University of Tsukuba. Through the research, we found that current oneAPI framework is effective not only for its typical programming by DPC++ but also for utilizing traditionally developed applications coded by several other languages such as CUDA or OpenCL to support multiple types of accelerators. As an example of real application, we successfully implemented and executed an early stage universe simulation by fundamental astrophysics code to utilize both GPU and FPGA effectively. In this paper, we demonstrate the actual procedure for this method to program multi-device acceleration over oneAPI.},
+  booktitle = {International Conference on High Performance Computing in Asia-Pacific Region},
+  pages = {84–93},
+  numpages = {10},
+  keywords = {Multi-hetero Acceleration, Intel oneAPI, GPU, FPGA},
+  location = {, Virtual Event, Japan, },
+  series = {HPCAsia '22}
+  }
+year: 2022
+reference: |
+  Ryuta Kashino, Ryohei Kobayashi, Norihisa Fujita, and Taisuke Boku. 2022. Multi-hetero Acceleration by GPU and FPGA for Astrophysics Simulation on oneAPI Environment. In International Conference on High Performance Computing in Asia-Pacific Region (HPCAsia '22). Association for Computing Machinery, New York, NY, USA, 84–93. https://doi.org/10.1145/3492805.3492817
+class:
+  class: domestic
+  subclass: workshop

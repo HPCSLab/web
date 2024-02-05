@@ -48,7 +48,12 @@ const events = [
 ];
 ---
 
-<Team name="FPGA team" imgSrc={cover} imgAlt="平成29年集合写真">
+<Team
+  name="FPGA team"
+  cover={{ src: cover, alt: "平成29年集合写真" }}
+  students={{ members: students, maxW: "18rem" }}
+  faculties={{ members: faculties, maxW: "30rem" }}
+>
   <H1Section headingText="山口 佳樹 准教授">
     <List ordered={false}>
       <Chevron>

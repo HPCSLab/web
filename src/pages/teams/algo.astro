@@ -2,7 +2,6 @@
 import { Image } from "astro:assets";
 import Team from "@layouts/team.astro";
 import ServerImage from "@asset/team/algo/server-front.jpg";
-import FacultyCard from "@components/pages/teams/FacultyCard.astro";
 import H1Section from "@components/composite/section/H1.astro";
 import List from "@components/display/list/list.astro";
 import Typography from "@components/display/Typography.astro";
@@ -10,20 +9,21 @@ import ChevronLi from "@components/display/list/item/Chevron.astro";
 import Keyword from "@components/display/Keyword.astro";
 import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
 import HStack from "@components/layout/HStack.astro";
-import RecentWorks from "@components/pages/teams/RecentWorks.astro";
-import Student from "@components/pages/teams/StudentCard.astro";
-import Width from "@components/layout/box/Width.astro";
 import Youtube from "@components/display/Youtube.astro";
 import { getEntry } from "astro:content";
-import Grid from "@components/layout/Grid.astro";
-import VSpace from "@components/layout/VSpace.astro";
 
 const {
   data: { cover, faculties, students, recentWorks },
 } = await getEntry("team", "algo");
 ---
 
-<Team name="Algorithm team" imgSrc={cover} imgAlt="Algorithmチームの本棚">
+<Team
+  name="Algorithm team"
+  cover={{ src: cover, alt: "Algorithmチームの本棚" }}
+  students={{ maxW: "18rem", members: students }}
+  faculties={{ maxW: "30rem", members: faculties }}
+  recentWorks={recentWorks}
+>
   <H1Section headingText="高橋 大介 教授" backgroundInverted={false}>
     <List ordered={false}>
       <ChevronLi>
@@ -98,63 +98,6 @@ const {
       title="配信講義 計算科学技術特論B (2020) 第6回"
     />
   </H1Section>
-  <H1Section headingText="メンバー" backgroundInverted={true} fullW={true}>
-    <Grid minW="30rem">
-      {
-        faculties.map((faculty) => (
-          <FacultyCard member={faculty}>
-            <Typography>{faculty.message}</Typography>
-          </FacultyCard>
-        ))
-      }
-    </Grid>
-    <VSpace h="2rem" />
-    <Grid minW="18rem">
-      {
-        students.map((student) => (
-          <Student member={student}>
-            <Typography>{student.message}</Typography>
-          </Student>
-        ))
-      }
-    </Grid>
-  </H1Section>
-  <H1Section headingText="近年の研究成果について" backgroundInverted={false}>
-    <Typography>
-      教員の研究成果については，以下のページよりご覧ください．
-    </Typography>
-    <div>
-      <div class="teacher-work-link-wrapper">
-        <ReadMoreLink
-          href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/pub-j.html"
-        >
-          <div class="work-author">
-            <span class="work-author-name">高橋 大介</span>
-            <span class="work-author-role">教授</span>
-          </div>
-        </ReadMoreLink>
-      </div>
-
-      <div class="teacher-work-link-wrapper">
-        <ReadMoreLink
-          href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/publication.html"
-        >
-          <div class="work-author">
-            <span class="work-author-name">多田野 寛人</span>
-            <span class="work-author-role">助教</span>
-          </div>
-        </ReadMoreLink>
-      </div>
-
-      <Typography>
-        一例として，2023年までに国際学会，情報処理学会HPC研究会等に投稿した研究会原稿を紹介します．
-      </Typography>
-      <Typography>
-        筑波大学は情報処理学会と機関契約をしていますので，筑波大学構内のネットワークからは自由にダウンロード可能です．
-      </Typography>
-    </div>
-    <RecentWorks works={recentWorks} />
-  </H1Section>
 </Team>
 
 <style>
@@ -182,7 +125,7 @@ const {
   }
 
   .work-author-role {
-    color: var(--color-text-disable);
+    color: var(--color-text-weak);
     font-size: var(--font-size-normal);
 
     margin-left: 0.5em;

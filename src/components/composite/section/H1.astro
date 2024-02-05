@@ -15,25 +15,15 @@ const { headingText, headingUrl, backgroundInverted, fullW } = Astro.props;
 <section class={backgroundInverted ? "bg-inverted" : null}>
   <div>
     <h2>
-      {
-        fullW ? (
-          <Box mode="h" p="2rem">
-            {headingUrl ? (
-              <ReadMoreLink href={headingUrl}>{headingText}</ReadMoreLink>
-            ) : (
-              headingText
-            )}
-          </Box>
-        ) : (
-          <ResponsiveWidth>
-            {headingUrl ? (
-              <ReadMoreLink href={headingUrl}>{headingText}</ReadMoreLink>
-            ) : (
-              headingText
-            )}
-          </ResponsiveWidth>
-        )
-      }
+      <ResponsiveWidth>
+        {
+          headingUrl ? (
+            <ReadMoreLink href={headingUrl}>{headingText}</ReadMoreLink>
+          ) : (
+            headingText
+          )
+        }
+      </ResponsiveWidth>
     </h2>
   </div>
   {

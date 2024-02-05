@@ -1,0 +1,27 @@
+title: GPU・FPGA複合型演算加速クラスタを用いた宇宙輻射輸送コードARGOTの多ノード並列化
+year: 2022
+authors:
+  - 小林 諒平
+  - 藤田 典久
+  - 山口 佳樹
+  - 朴 泰祐
+  - 吉川 耕司
+  - 安部 牧人
+  - 梅村 雅之
+bibtex: |
+  @techreport { IPSJ-HPC189:Kobayashi,
+    author      = "{小林 諒平} and {藤田 典久} and {山口 佳樹} and {朴 泰祐} and {吉川 耕司} and {安部 牧人} and {梅村 雅之}",
+    title       = "GPU・FPGA複合型演算加速クラスタを用いた宇宙輻射輸送コードARGOTの多ノード並列化",
+    year        = "2022",
+    volume      = "2022-HPC-185",
+    number      = "1",
+    month       = "7",
+    booktitle   = "情報処理学会 第185回 HPC 研究会報告 (HPC185)"
+  }
+reference: |
+  小林 諒平, 藤田 典久, 山口 佳樹, 朴 泰祐, 吉川 耕司, 安部 牧人, 梅村 雅之:
+  ”GPU・FPGA複合型演算加速クラスタを用いた宇宙輻射輸送コードARGOTの多ノード並列化,”
+  情報処理学会第185回HPC研究報告会, Vol. 2022-HPC-185, No. 1, Jul 2022
+class:
+  class: domestic
+  subclass: workshop

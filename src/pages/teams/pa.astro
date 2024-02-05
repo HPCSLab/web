@@ -19,7 +19,13 @@ const {
 } = await getEntry("team", "pa");
 ---
 
-<Team name="PA team" imgSrc={cover} imgAlt="group photo">
+<Team
+  name="PA team"
+  cover={{ src: cover, alt: "集合写真" }}
+  students={{ members: students, maxW: "18rem" }}
+  faculties={{ members: faculties, maxW: "30rem" }}
+  recentWorks={recentWorks}
+>
   <H1Section
     headingText="佐藤 三久 連携大学院教授 (理化学研究所 計算科学研究センター)"
   >
@@ -54,29 +60,5 @@ const {
       我々が開発しているXcalableACCへTCA
       APIを組み込み，ディレクティブを用いて容易にTCAシステムを利用できるようにしました．
     </Typography>
-  </H1Section>
-  <H1Section headingText="メンバー" backgroundInverted={true} fullW={true}>
-    <Grid minW="30rem">
-      {
-        faculties.map((faculty) => (
-          <FacultyCard member={faculty}>
-            <Typography>{faculty.message}</Typography>
-          </FacultyCard>
-        ))
-      }
-    </Grid>
-    <VSpace h="2rem" />
-    <Grid minW="18rem">
-      {
-        students.map((student) => (
-          <StudentCard member={student}>
-            <Typography>{student.message}</Typography>
-          </StudentCard>
-        ))
-      }
-    </Grid>
-  </H1Section>
-  <H1Section headingText="近年の研究成果" backgroundInverted={false}>
-    <RecentWorks works={recentWorks} />
   </H1Section>
 </Team>

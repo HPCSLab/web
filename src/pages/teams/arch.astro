@@ -12,24 +12,23 @@ import ChevronListItem from "@components/display/list/item/Chevron.astro";
 import Keyword from "@components/display/Keyword.astro";
 import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
 import HStack from "@components/layout/HStack.astro";
-import Width from "@components/layout/box/Width.astro";
 import Box from "@components/layout/box/Box.astro";
 import Youtube from "@components/display/Youtube.astro";
 import { getEntry } from "astro:content";
-import FacultyCard from "@components/pages/teams/FacultyCard.astro";
-import StudentCard from "@components/pages/teams/StudentCard.astro";
-import RecentWorks from "@components/pages/teams/RecentWorks.astro";
-import HSpace from "@components/layout/HSpace.astro";
 import VStack from "@components/layout/VStack.astro";
-import Grid from "@components/layout/Grid.astro";
-import VSpace from "@components/layout/VSpace.astro";
 
 const {
   data: { cover, faculties, students, recentWorks },
 } = await getEntry("team", "arch");
 ---
 
-<Team name="Architecture team" imgSrc={cover} imgAlt="group photo">
+<Team
+  name="Architecture team"
+  cover={{ src: cover, alt: "group photo" }}
+  students={{ members: students, maxW: "18rem" }}
+  faculties={{ members: faculties, maxW: "100%" }}
+  recentWorks={recentWorks}
+>
   <H1Section headingText="朴 泰祐 教授" backgroundInverted={false}>
     <List ordered={false}>
       <ChevronListItem>
@@ -159,59 +158,35 @@ const {
       </VStack>
     </HStack>
   </H1Section>
+  <H1Section headingText="世界的な活動" backgroundInverted={false}>
+    <Typography>
+      朴教授は国際会議における議長やプログラム委員長を務めるなど、世界的に活躍しています．
+      また，小林助教も国際会議のプログラム委員の経験があります．
+    </Typography>
+    <Box mode="v" p="1rem">
+      <VStack template="1fr 1fr 1fr">
+        <Youtube
+          src="https://www.youtube.com/embed/zT1BKPU8VVk"
+          title="Developing Faster Algorithms with OpenACC and XcalableACC"
+        />
+        <Youtube
+          src="https://www.youtube.com/embed/RgADPWRNBgM"
+          title="Oakforest-PACS: Overview of the New JCAHPC Computing Facility"
+        />
+        <Youtube
+          src="https://www.youtube.com/embed/BDPsa7AP7NA"
+          title="Interview with HPC in Asia Chair Prof. Dr. Taisuke Boku"
+        />
+      </VStack>
+    </Box>
+  </H1Section>
+  <H1Section headingText="他チームとの協力" backgroundInverted={false}>
+    <Typography>
+      並列プログラミング言語に関する研究はPAチームとの共同研究で，我々のPEACH2をPAチームで開発している並列言語XcalableMPの演算加速装置向け拡張XcalableACCに導入した実績もあります．
+      また，FPGAチームとも協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．
+    </Typography>
+  </H1Section>
 </Team>
-<H1Section headingText="世界的な活動" backgroundInverted={false}>
-  <Typography>
-    朴教授は国際会議における議長やプログラム委員長を務めるなど、世界的に活躍しています．
-    また，小林助教も国際会議のプログラム委員の経験があります．
-  </Typography>
-  <Box mode="v" p="1rem">
-    <VStack template="1fr 1fr 1fr">
-      <Youtube
-        src="https://www.youtube.com/embed/zT1BKPU8VVk"
-        title="Developing Faster Algorithms with OpenACC and XcalableACC"
-      />
-      <Youtube
-        src="https://www.youtube.com/embed/RgADPWRNBgM"
-        title="Oakforest-PACS: Overview of the New JCAHPC Computing Facility"
-      />
-      <Youtube
-        src="https://www.youtube.com/embed/BDPsa7AP7NA"
-        title="Interview with HPC in Asia Chair Prof. Dr. Taisuke Boku"
-      />
-    </VStack>
-  </Box>
-</H1Section>
-<H1Section headingText="他チームとの協力" backgroundInverted={false}>
-  <Typography>
-    並列プログラミング言語に関する研究はPAチームとの共同研究で，我々のPEACH2をPAチームで開発している並列言語XcalableMPの演算加速装置向け拡張XcalableACCに導入した実績もあります．
-    また，FPGAチームとも協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．
-  </Typography>
-</H1Section>
-<H1Section headingText="メンバー" backgroundInverted={true} fullW={true}>
-  <Grid minW="30rem">
-    {
-      faculties.map((faculty) => (
-        <FacultyCard member={faculty}>
-          <Typography>{faculty.message}</Typography>
-        </FacultyCard>
-      ))
-    }
-  </Grid>
-  <VSpace h="2rem" />
-  <Grid minW="18rem">
-    {
-      students.map((student) => (
-        <StudentCard member={student}>
-          <Typography>{student.message}</Typography>
-        </StudentCard>
-      ))
-    }
-  </Grid>
-</H1Section>
-<H1Section headingText="近年の研究成果" backgroundInverted={false}>
-  <RecentWorks works={recentWorks} />
-</H1Section>
 
 <style>
   .img-container {

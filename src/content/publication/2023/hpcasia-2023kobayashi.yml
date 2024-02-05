@@ -1,0 +1,33 @@
+title: GPU-FPGA-accelerated Radiative Transfer Simulation with Inter-FPGA Communication
+authors:
+  - Kobayashi Ryohei
+  - Fujita Norihisa
+  - Yamaguchi Yoshiki
+  - Boku Taisuke
+  - Yoshikawa Kohji
+  - Abe Makito
+  - Umemura Masayuki
+year: 2023
+bibtex: |
+  @inproceedings{10.1145/3578178.3578231,
+  author = {Kobayashi, Ryohei and Fujita, Norihisa and Yamaguchi, Yoshiki and Boku, Taisuke and Yoshikawa, Kohji and Abe, Makito and Umemura, Masayuki},
+  title = {GPU–FPGA-accelerated Radiative Transfer Simulation with Inter-FPGA Communication},
+  year = {2023},
+  isbn = {9781450398053},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3578178.3578231},
+  doi = {10.1145/3578178.3578231},
+  abstract = {The complementary use of graphics processing units (GPUs) and field programmable gate arrays (FPGAs) is a major topic of interest in the high-performance computing (HPC) field. GPU–FPGA-accelerated computing is an effective tool for multiphysics simulations, which encompass multiple physical models and simultaneous physical phenomena. Because the constituent operations in multiphysics simulations exhibit varying characteristics, accelerating these operations solely using GPUs is often challenging. Hence, FPGAs are frequently implemented for this purpose. The objective of the present study was to further improve application performance by employing both GPUs and FPGAs in a complementary manner. Recently, this approach has been applied to the radiative transfer simulation code for astrophysics known as ARGOT, with evaluation results quantitatively demonstrating the resulting improvement in performance. However, the evaluation results in question came from the use of a single node equipped with both a GPU and FPGA. In this study, we extended the GPU–FPGA-accelerated ARGOT code to operate on multiple nodes using the message passing interface (MPI) and an FPGA-to-FPGA communication technology scheme called Communication Integrated Reconfigurable CompUting System (CIRCUS). We evaluated the performance of the ARGOT code with multiple GPUs and FPGAs under weak scaling conditions, and found it to achieve up to 12.8x speedup compared to the GPU-only execution.},
+  booktitle = {Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region},
+  pages = {117–125},
+  numpages = {9},
+  keywords = {CUDA, FPGA, GPU, Inter-FPGA communication, Multi-hetero Acceleration, Multiphysics, OpenCL},
+  location = {, Singapore, Singapore, },
+  series = {HPCAsia '23}
+  }
+reference: |
+  Ryohei Kobayashi, Norihisa Fujita, Yoshiki Yamaguchi, Taisuke Boku, Kohji Yoshikawa, Makito Abe, and Masayuki Umemura. 2023. GPU–FPGA-accelerated Radiative Transfer Simulation with Inter-FPGA Communication. In Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region (HPCAsia '23). Association for Computing Machinery, New York, NY, USA, 117–125. https://doi.org/10.1145/3578178.3578231
+class:
+  class: international
+  subclass: conference

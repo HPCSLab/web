@@ -25,9 +25,13 @@ export const getStaticPaths = (async () => {
   }));
 }) satisfies GetStaticPaths;
 
+
+const year = parseInt(Astro.params.year, 10);
+
 const journal = await getCollection(
   "publication",
-  (pub) => pub.data.class.class === "journal"
+  (pub) =>
+    pub.data.class.class === "journal" && pub.data.year === Astro.params.year
 );
 
 const international = {
@@ -35,13 +39,15 @@ const international = {
     "publication",
     (pub) =>
       pub.data.class.class === "international" &&
-      pub.data.class.subclass === "conference"
+      pub.data.class.subclass === "conference" &&
+      pub.data.year === year
   ),
   poster: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "international" &&
-      pub.data.class.subclass === "poster"
+      pub.data.class.subclass === "poster" &&
+      pub.data.year === year
   ),
 };
 
@@ -50,34 +56,39 @@ const domestic = {
     "publication",
     (pub) =>
       pub.data.class.class === "domestic" &&
-      pub.data.class.subclass === "conference"
+      pub.data.class.subclass === "conference" &&
+      pub.data.year === year
   ),
   poster: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "domestic" &&
-      pub.data.class.subclass === "poster"
+      pub.data.class.subclass === "poster" &&
+      pub.data.year === year
   ),
   workshop: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "domestic" &&
-      pub.data.class.subclass === "workshop"
+      pub.data.class.subclass === "workshop" &&
+      pub.data.year === year
   ),
   magazine: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "domestic" &&
-      pub.data.class.subclass === "magazine"
+      pub.data.class.subclass === "magazine" &&
+      pub.data.year === year
   ),
   misc: await getCollection(
     "publication",
     (pub) =>
-      pub.data.class.class === "domestic" && pub.data.class.subclass === "misc"
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "misc" &&
+      pub.data.year === year
   ),
 };
 
-const year = parseInt(Astro.params.year, 10);
 const prevYear = years[years.indexOf(year) - 1];
 const nextYear = years[years.indexOf(year) + 1];
 ---

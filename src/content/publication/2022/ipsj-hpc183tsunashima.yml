@@ -1,0 +1,33 @@
+title: OpenACCによる宇宙物理シミュレーションのGPU＋FPGA協調計算の実装
+authors:
+  - 綱島 隆太
+  - 小林 諒平
+  - 藤田 典久
+  - 朴 泰祐
+  - Lee Seyong
+  - Vetter Jeffrey S
+  - 村井 均
+  - 中尾 昌広
+  - 辻 美和子
+  - 佐藤 三久
+bibtex: |
+  @techreport { IPSJ-HPC183:tsunashima,
+    author      = "{綱島 隆太} and {小林 諒平} and {藤田 典久} and {朴 泰祐} and {Lee Seyong} and {Vetter Jeffrey S} and {村井 均} and {中尾 昌広} and {辻 美和子} and {佐藤 三久}",
+    title       = "OpenACCによる宇宙物理シミュレーションのGPU＋FPGA協調計算の実装",
+    year        = "2022",
+    volume      = "2022-HPC-183",
+    number      = "11",
+    month       = "3",
+    booktitle   = "情報処理学会 第183回 HPC 研究会報告 (HPC183)"
+  }
+year: 2022
+reference: |
+  綱島 隆太, 小林 諒平, 藤田 典久, 朴 泰祐, Lee Seyong, Vetter Jeffrey S, 村井 均, 中尾 昌広, 辻 美和子, 佐藤 三久:
+  ”OpenACCによる宇宙物理シミュレーションのGPU＋FPGA協調計算の実装,”
+  情報処理学会第183回HPC研究報告会,
+  Vol. 2022-HPC-183,
+  No. 11,
+  Mar 2022.
+class:
+  class: domestic
+  subclass: workshop

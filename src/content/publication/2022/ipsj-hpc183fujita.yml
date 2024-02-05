@@ -1,0 +1,27 @@
+title: HBM2 搭載 FPGA のための Addressable Cache を用いた HPC 向けメモリシステムの性能評価
+year: 2022
+authors:
+  - 藤田 典久
+  - 小林 諒平
+  - 山口 佳樹
+  - 朴 泰祐
+bibtex: |
+  @techreport { IPSJ-HPC183:fujita,
+    author      = "{藤田 典久} and {小林 諒平} and {山口 佳樹} and {朴 泰祐}",
+    title       = "HBM2 搭載 FPGA のための Addressable Cache を用いた HPC 向けメモリシステムの性能評価",
+    year        = "2022",
+    volume      = "2022-HPC-183",
+    number      = "9",
+    month       = "3",
+    booktitle   = "情報処理学会 第183回 HPC 研究会報告 (HPC183)"
+  }
+reference: |
+  藤田 典久, 小林 諒平, 山口 佳樹, 朴 泰祐:
+  ”HBM2 搭載 FPGA のための Addressable Cache を用いた HPC 向けメモリシステムの性能評価,”
+  情報処理学会第183回HPC研究報告会,
+  Vol. 2022-HPC-183,
+  No. 9,
+  Mar 2022.
+class:
+  class: domestic
+  subclass: workshop

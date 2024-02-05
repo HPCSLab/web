@@ -1,0 +1,25 @@
+title: NVIDIA H100 GPUにおけるグラフニューラルネットワークの学習精度と実行性能評価
+year: 2023
+authors:
+  - 小林 諒平
+  - 藤田 典久
+  - 朴 泰祐
+  - 天笠 俊之
+reference: |
+  小林 諒平, 藤田 典久, 朴 泰祐, 天笠 俊之:
+  “NVIDIA H100 GPUにおけるグラフニューラルネットワークの学習精度と実行性能評価,”
+  情報処理学会 第190回HPC研究発表会, Vol. 2023-HPC-190, No. 17, Jul 2023
+bibtex: |
+  @article{published_papers/43056515,
+  title = {NVIDIA H100 GPUにおけるグラフニューラルネットワークの学習精度と実行性能評価},
+  author = {小林, 諒平 and 藤田, 典久 and 朴, 泰祐 and 天笠, 俊之},
+  journal = {研究報告ハイパフォーマンスコンピューティング（HPC）},
+  month = {7},
+  number = {17},
+  pages = {1--8},
+  volume = {2023-HPC-190},
+  year = {2023}
+  }
+class:
+  class: "domestic"
+  subclass: "workshop"

@@ -1,0 +1,26 @@
+title: FPGA高位合成における演算性能向上のための空間並列性記述に関する研究
+authors:
+  - 佐野 由佳
+  - 小林 諒平
+  - 藤田 典久
+  - 朴 泰祐
+  - 佐藤 三久
+bibtex: |
+  @techreport { IPSJ-HPC188:sano,
+    author      = "{佐野 由佳} and {小林 諒平} and 藤田 典久 and {朴 泰祐} and {佐藤 三久}",
+    title       = "FPGA高位合成における演算性能向上のための空間並列性記述に関する研究",
+    year        = "2023",
+    volume      = "2023-HPC-188",
+    number      = "22",
+    month       = "7",
+    booktitle   = "情報処理学会 第188回 HPC 研究会報告 (HPC188)"
+  }
+class:
+  class: domestic
+  subclass: workshop
+year: 2023
+reference: |
+  佐野 由佳, 小林 諒平, 藤田 典久, 朴 泰祐, 佐藤 三久:
+  ”FPGA高位合成における演算性能向上のための空間並列性記述に関する研究,”
+  情報処理学会第188回HPC研究報告会, Vol. 2023-HPC-188, No. 22, Jul 2023.
+

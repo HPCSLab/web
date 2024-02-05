@@ -14,7 +14,12 @@ const {
 } = await getEntry("team", "perf");
 ---
 
-<Team name="Performance team" imgAlt="Performanceチームの本棚" imgSrc={cover}>
+<Team
+  name="Performance team"
+  cover={{ src: cover, alt: "Performanceチームの本棚" }}
+  students={{ members: students, maxW: "18rem" }}
+  faculties={{ members: faculties, maxW: "18rem" }}
+>
   <H1Section headingText="額田 彰 教授">
     <Typography>
       コンピュータ分野においてパフォーマンス（性能）とは多くの場合は処理速度，計算スピードを意味します．
@@ -49,26 +54,5 @@ const {
       あるいは希望があればGPU以外のCPUやメニーコアプロセッサも対象とします．
     </Typography>
     <Image src={cover} alt="Performanceチームの本棚" />
-  </H1Section>
-  <H1Section headingText="メンバー" fullW={true} backgroundInverted={true}>
-    <Grid minW="30rem">
-      {
-        faculties.map((faculty) => (
-          <FacultyCard member={faculty}>
-            <Typography>{faculty.message}</Typography>
-          </FacultyCard>
-        ))
-      }
-    </Grid>
-    <VSpace h="2rem" />
-    <Grid minW="18rem">
-      {
-        students.map((student) => (
-          <StudentCard member={student}>
-            <Typography>{student.message}</Typography>
-          </StudentCard>
-        ))
-      }
-    </Grid>
   </H1Section>
 </Team>

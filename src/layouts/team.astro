@@ -1,20 +1,68 @@
 ---
 import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
+import type { TeamMember, TeamRecentWork } from "@content";
 import Base from "@layouts/base/index.astro";
+import H1Section from "@components/composite/section/H1.astro";
+import Typography from "@components/display/Typography.astro";
+import FacultyCard from "@components/pages/teams/FacultyCard.astro";
+import Grid from "@components/layout/Grid.astro";
+import VSpace from "@components/layout/VSpace.astro";
+import StudentCard from "@components/pages/teams/StudentCard.astro";
+import RecentWorks from "@components/pages/teams/RecentWorks.astro";
+
+export type Members = {
+  maxW: string;
+  members: TeamMember[];
+};
+
+export type Cover = {
+  src: ImageMetadata;
+  alt: string;
+};
 
 interface Props {
   name: string;
-  imgSrc: ImageMetadata;
-  imgAlt: string;
+  cover: Cover;
+  students: Members;
+  faculties: Members;
+  recentWorks?: TeamRecentWork[];
 }
-const { name, imgSrc, imgAlt } = Astro.props;
+const { name, cover, students, faculties, recentWorks } = Astro.props;
 ---
 
 <Base>
-  <BlurImageHeader imgAlt={imgAlt} imgSrc={imgSrc}>
+  <BlurImageHeader imgAlt={cover.alt} imgSrc={cover.src}>
     {name}
   </BlurImageHeader>
   <slot />
+  <H1Section headingText="メンバー" backgroundInverted={true} fullW={true}>
+    <Grid minW={faculties.maxW}>
+      {
+        faculties.members.map((faculty) => (
+          <FacultyCard member={faculty}>
+            <Typography>{faculty.message}</Typography>
+          </FacultyCard>
+        ))
+      }
+    </Grid>
+    <VSpace h="2rem" />
+    <Grid minW={students.maxW}>
+      {
+        students.members.map((student) => (
+          <StudentCard member={student}>
+            <Typography>{student.message}</Typography>
+          </StudentCard>
+        ))
+      }
+    </Grid>
+  </H1Section>
+  {
+    recentWorks && recentWorks.length > 0 ? (
+      <H1Section headingText="近年の研究成果" backgroundInverted={false}>
+        <RecentWorks works={recentWorks} />
+      </H1Section>
+    ) : null
+  }
 </Base>
 
 <style>

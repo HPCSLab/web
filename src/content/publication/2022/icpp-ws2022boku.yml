@@ -1,0 +1,31 @@
+title: Cygnus - World First Multihybrid Accelerated Cluster with GPU and FPGA Coupling
+authors:
+  - Boku Taisuke
+  - Fujita Norihisa
+  - Kobayashi Ryohei
+  - Tatebe Osamu
+bibtex: |
+  @inproceedings{10.1145/3547276.3548629,
+  author = {Boku, Taisuke and Fujita, Norihisa and Kobayashi, Ryohei and Tatebe, Osamu},
+  title = {Cygnus - World First Multihybrid Accelerated Cluster with GPU and FPGA Coupling},
+  year = {2023},
+  isbn = {9781450394451},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3547276.3548629},
+  doi = {10.1145/3547276.3548629},
+  abstract = {In this paper, we describe the concept, system architecture, supporting system software, and applications on our world-first supercomputer with multihybrid accelerators using GPU and FPGA coupling, named Cygnus, which runs at Center for Computational Sciences, University of Tsukuba. A special group of 32 nodes is configured as a multihybrid accelerated computing system named Albireo part although Cygnus is constructed with over 80 computation nodes as a GPU-accelerated PC cluster. Each node of the Albireo part is equipped with four NVIDIA V100 GPU cards and two Intel Stratix10 FPGA cards in addition to two sockets of Intel Xeon Gold CPU where all nodes are connected by four lanes of InfiniBand HDR100 interconnection HCA in the full bisection bandwidth of NVIDIA HDR200 switches. Beside this ordinary interconnection network, all FPGA cards in Albireo part are connected by a special 2-Dimensional Torus network with direct optical links on each FPGA for constructing a very high throughput and low latency of FPGA-centric interconnection network. To the best of our knowledge, Cygnus is the world’s first production-level PC cluster to realize multihybrid acceleration with the GPU and FPGA combination. Unlike other GPU-accelerated clusters, users can program parallel codes where each process exploits both or either of the GPU and/or FPGA devices based on the characteristics of their applications. We developed various supporting system software such as inter-FPGA network routing system, DMA engine for GPU-FPGA direct communication managed by FPGA, and multihybrid accelerated programming framework because the programming method of such a complicated system has not been standardized. Further, we developed the first real application on Cygnus for fundamental astrophysics simulation to fully utilize GPU and FPGA together for very efficient acceleration. We describe the overall concept and construction of the Cygnus cluster with a brief introduction of the several underlying hardware and software research studies that have already been published. We summarize how such a concept of GPU/FPGA coworking will usher in a new era of accelerated supercomputing.},
+  booktitle = {Workshop Proceedings of the 51st International Conference on Parallel Processing},
+  articleno = {8},
+  numpages = {8},
+  keywords = {FPGA, GPU, PC cluster, accelerator, computational science, hybrid system, multi-physics, programming},
+  location = {Bordeaux, France},
+  series = {ICPP Workshops '22}
+  }
+year: 2023
+reference: |
+  Taisuke Boku, Norihisa Fujita, Ryohei Kobayashi, and Osamu Tatebe. 2023. Cygnus - World First Multihybrid Accelerated Cluster with GPU and FPGA Coupling. In Workshop Proceedings of the 51st International Conference on Parallel Processing (ICPP Workshops '22). Association for Computing Machinery, New York, NY, USA, Article 8, 1–8. https://doi.org/10.1145/3547276.3548629
+class:
+  class: international
+  subclass: conference
+
