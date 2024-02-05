@@ -21,7 +21,7 @@ export const getStaticPaths = (async () => {
       (await getCollection("publication")).map((pub) => pub.data.year)
     ),
   ].map((year) => ({
-    params: { year },
+    params: { year: year.toString() },
   }));
 }) satisfies GetStaticPaths;
 
@@ -77,8 +77,9 @@ const domestic = {
   ),
 };
 
-const prevYear = years[years.indexOf(Astro.params.year) - 1];
-const nextYear = years[years.indexOf(Astro.params.year) + 1];
+const year = parseInt(Astro.params.year, 10);
+const prevYear = years[years.indexOf(year) - 1];
+const nextYear = years[years.indexOf(year) + 1];
 ---
 
 <Base>

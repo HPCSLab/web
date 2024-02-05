@@ -1,0 +1,54 @@
+---
+import { Icon } from "astro-icon/components";
+
+export type Event = {
+  date: string;
+  content: string;
+};
+
+interface Props {
+  events: Event[];
+}
+---
+
+<div class="root">
+  {
+    Astro.props.events.map((event) => (
+      <>
+        <div class="date">{event.date}</div>
+        <div class="middle">
+          <Icon name="material-symbols:chevron-right-rounded" />
+        </div>
+        <div class="content">{event.content}</div>
+      </>
+    ))
+  }
+</div>
+
+<style>
+  .root {
+    display: grid;
+    grid-template-columns: max-content 2rem 1fr;
+  }
+
+  .date {
+    color: var(--color-text-weak);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--font-size-sm);
+  }
+
+  .content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .middle {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+  }
+</style>

@@ -1,0 +1,30 @@
+cover: ./perf/perfteam-bookshelf.png
+faculties:
+  - name: 額田 彰
+    role: 教授
+    profile: nukada
+    keywords:
+      - 高性能計算
+      - 性能最適化
+      - GPUコンピューティング
+    message: |
+      私自身は計算の高速化に関連することであれば割と何でもやります．
+students:
+  - name: 勢見　達将
+    role: M1
+    profile: seimi
+    keywords:
+      - OpenSWPCのDO CONCURRENTによるGPUコード移植
+    message: |
+      GPGPUによるソフトウェアの高速化をやっています．
+  - name: Choi Yeon Kyu
+    role: M1
+    profile: choi
+    message: |
+      NVIDIA GPUのRT coreを利用した汎用計算の加速化に挑戦しています．
+  - name: 関　拓己
+    role: B4
+    profile: seki
+    message: |
+      GPUの計算速度を向上させるパラメータをCUPTIライブラリによってパフォーマンスカウンタを取得することで効率よく探索する方法を研究しております.
+recentWorks: []

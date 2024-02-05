@@ -47,6 +47,10 @@ export const pages: IndexPage[] = [
         url: "/teams/arch",
       },
       {
+        title: "Performance",
+        url: "/teams/perf"
+      },
+      {
         title: "PA",
         url: "/teams/pa",
       },
