@@ -13,7 +13,7 @@ import { getCollection } from "astro:content";
 
 const years = [
   ...new Set((await getCollection("publication")).map((pub) => pub.data.year)),
-];
+].sort((a, b) => a - b);
 
 export const getStaticPaths = (async () => {
   return [
@@ -31,7 +31,7 @@ const year = parseInt(Astro.params.year, 10);
 const journal = await getCollection(
   "publication",
   (pub) =>
-    pub.data.class.class === "journal" && pub.data.year === Astro.params.year
+    pub.data.class.class === "journal" && pub.data.year == year
 );
 
 const international = {
