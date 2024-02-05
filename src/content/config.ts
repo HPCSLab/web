@@ -199,7 +199,7 @@ export function isNotFacultyAlumnus(
   return alumni.data.type !== "faculty";
 }
 
-const teamMemberSchema = (ctx: SchemaContext) =>
+const teamMemberSchema = 
   z.object({
     name: z.string(),
     profile: reference("member"),
@@ -208,7 +208,7 @@ const teamMemberSchema = (ctx: SchemaContext) =>
     keywords: z.array(z.string()).nullish(),
   });
 
-export type TeamMember = z.infer<ReturnType<typeof teamMemberSchema>>;
+export type TeamMember = z.infer<typeof teamMemberSchema>;
 
 const teamRecentWorkSchema = z.object({
   title: z.string(),
@@ -222,9 +222,9 @@ export type TeamRecentWork = z.infer<typeof teamRecentWorkSchema>;
 const teamSchema = (ctx: SchemaContext) =>
   z.object({
     cover: ctx.image(),
-    faculties: z.array(teamMemberSchema(ctx)),
-    students: z.array(teamMemberSchema(ctx)),
-    recentWorks: z.array(teamRecentWorkSchema),
+    faculties: z.array(teamMemberSchema),
+    students: z.array(teamMemberSchema),
+    recentWorks: z.array(reference('publication')),
   });
 
 export type Team = z.infer<ReturnType<typeof teamSchema>>;

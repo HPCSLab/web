@@ -1,0 +1,28 @@
+title: I/O-Aware Flushing for HPC Caching Filesystem
+authors:
+  - Osamu Tatebe
+  - Kohei Hiraga
+  - Hiroki Ohtsuji,
+bibtex: |
+  @INPROCEEDINGS {10321937,
+  author = {O. Tatebe and K. Hiraga and H. Ohtsuji},
+  booktitle = {2023 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops)},
+  title = {I/O-Aware Flushing for HPC Caching Filesystem},
+  year = {2023},
+  volume = {},
+  issn = {},
+  pages = {11-17},
+  abstract = {The increasing difference in performance between computing and storage has caused significant problems for HPC systems. To reduce the difference in performance, intermediate storage layers have been introduced; however, the flushing strategy is a significant issue in these layers. Dirty data must be flushed to efficiently utilize the intermediate storage layers although this may degrade I/O performance and cause instability because data access and flushing interfere with each other. In this study, an I/O-aware mechanism that does not interfere with I/O activity is proposed for data flushing, using HPC-specific workloads. Evaluations based on HPC application benchmarks in MPI-IO and NetCDF demonstrated the performance advantages of the proposed I/O-aware flushing, with the I/O performance of the intermediate storage layers displaying minimum degradation and remaining stable during flushing.},
+  keywords = {degradation;codes;file systems;conferences;source coding;bandwidth;interference},
+  doi = {10.1109/CLUSTERWorkshops61457.2023.00012},
+  url = {https://doi.ieeecomputersociety.org/10.1109/CLUSTERWorkshops61457.2023.00012},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  month = {oct}
+  }
+year: 2023
+reference: |
+  O. Tatebe, K. Hiraga and H. Ohtsuji, "I/O-Aware Flushing for HPC Caching Filesystem," in 2023 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops), Santa Fe, NM, USA, 2023 pp. 11-17.
+class:
+  class: international
+  subclass: conference

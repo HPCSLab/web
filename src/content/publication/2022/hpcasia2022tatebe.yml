@@ -1,0 +1,32 @@
+title: "CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory"
+url: https://dl.acm.org/doi/10.1145/3492805.3492807
+authors:
+  - Osamu Tatebe
+  - Kazuki Obata
+  - Kohei Hiraga
+  - Hiroki Ohtsuji
+bibtex: |
+  @inproceedings{10.1145/3492805.3492807,
+  author = {Tatebe, Osamu and Obata, Kazuki and Hiraga, Kohei and Ohtsuji, Hiroki},
+  title = {CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory},
+  year = {2022},
+  isbn = {9781450384988},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3492805.3492807},
+  doi = {10.1145/3492805.3492807},
+  abstract = {This paper proposes a design for CHFS, an ad hoc parallel file system that utilizes the persistent memory of compute nodes. The design is based entirely on a highly scalable distributed key-value store with consistent hashing. CHFS improves the scalability of parallel data-access performance and metadata performance in terms of the number of compute nodes by eliminating dedicated metadata servers, sequential execution, and centralized data management. The implementation efficiently utilizes multicore and manycore CPUs, high-performance networks, and remote direct memory access by the Mochi-Margo library. With a 4-node persistent memory cluster, CHFS performs 9.9 times better than the state-of-the-art DAOS distributed object storage and 6.0 times better than GekkoFS on the IOR hard write benchmark. Regarding scalability, CHFS displays better scalability and performance for both bandwidth and metadata compared with BeeOND and GekkoFS. CHFS is a promising building block for HPC storage layers.},
+  booktitle = {International Conference on High Performance Computing in Asia-Pacific Region},
+  pages = {115–124},
+  numpages = {10},
+  keywords = {Distributed key-value store, Parallel file system, Persistent memory},
+  location = {, Virtual Event, Japan, },
+  series = {HPCAsia '22}
+  }
+reference: |
+  Osamu Tatebe, Kazuki Obata, Kohei Hiraga, and Hiroki Ohtsuji. 2022. CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory. In International Conference on High Performance Computing in Asia-Pacific Region (HPCAsia '22). Association for Computing Machinery, New York, NY, USA, 115–124. https://doi.org/10.1145/3492805.3492807
+
+year: 2022
+class:
+  class: international
+  subclass: conference

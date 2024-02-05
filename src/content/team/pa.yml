@@ -9,38 +9,8 @@ faculties:
     message: ""
 students: []
 recentWorks:
-  - title: Implementation and Evaluation of One-sided PGAS Communication in XcalableACC for Accelerated Clusters
-    authors:
-      - Tabuchi Akihiro
-      - Masahiro Nakao
-      - Hitoshi Murai
-      - Taisuke Boku
-      - Mitsuhisa Sato
-    description:
-      - In Cluster, Cloud and Grid Computing (CCGRID), 2017 17th IEEE/ACM International Symposium on, pp. 625-634. IEEE, 2017.
-  - title: Multi-tasking Execution in PGAS Language XcalableMP and Communication Optimization on Many-core Clusters
-    authors:
-      - Tsugane Keisuke
-      - Jinpil Lee
-      - Hitoshi Murai
-      - Mitsuhisa Sato
-    description:
-      - In Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region, pp. 75-85. ACM, 2018.
-  - title: Performance evaluation for a hydrodynamics application in XcalableACC PGAS language for accelerated clusters
-    authors:
-      - Tabuchi Akihiro
-      - Masahiro Nakao
-      - Hitoshi Murai
-      - Taisuke Boku
-      - Mitsuhisa Sato
-    description:
-      - In Proceedings of Workshops of HPC Asia, pp. 1-10. ACM, 2018.
-  - title: Trade-Off of Offloading to FPGA in OpenMP Task-Based Programming
-    authors:
-      - Watanabe Yutaka
-      - Jinpil Lee
-      - Taisuke Boku
-      - Mitsuhisa Sato
-    description:
-      - In International Workshop on OpenMP, pp. 96-110. Springer, Cham, 2018.
+  - ccgrid2017tabuchi
+  - hpcasia2018tsugane
+  - hpcasia2018tabuchi
+  - iwomp2018watanabe
 

@@ -109,202 +109,24 @@ students:
       研究室には優れた教員がおり、充実したリソースと設備も整っています。 HPCの知識を豊富に学ぶことができます。
 
 recentWorks:
-  - title: OpenACC Unified Programming Environment for Multi-hybrid Acceleration with GPU and FPGA
-    authors:
-      - Boku Taisuke
-      - Tsunashima Ryuta
-      - Kobayashi Ryohei
-      - Fujita Norihisa
-      - Lee Seyong
-      - Vetter Jeffrey S
-      - Murai Hitoshi
-      - Nakao Masahiro
-      - Tsuji Miwako
-      - Sato Mitsuhisa
-    description:
-      - "ISC High Performance 2023: High Performance Computing, 13999 662-674, Aug, 2023"
-  - title: SYCLに基づく複数の演算加速装置を統一的に扱えるプログラミング手法の提案
-    authors:
-      - 藤田 典久
-      - 小林 諒平
-      - Beau Johnston
-      - Narasinga Rao Miniskar
-      - Seyong Lee
-      - Keita Teranishi
-      - Jeffrer S. Vetter
-      - 朴 泰祐
-    description:
-      - 第190回HPC研究発表会, Jul, 2023
-  - title: NVIDIA H100 GPUにおけるグラフニューラルネットワークの学習精度と実行性能評価
-    authors:
-      - 小林 諒平
-      - 藤田 典久
-      - 朴 泰祐
-      - 天笠 俊之
-    description:
-      - 第190回HPC研究発表会, Jul, 2023
-  - title: Implementation and Performance Evaluation of Memory System Using Addressable Cache for HPC Applications on HBM2 Equipped FPGAs
-    authors:
-      - Fujita Norihisa
-      - Kobayashi Ryohei
-      - Yamaguchi Yoshiki
-      - Boku Taisuke
-    description:
-      - "Euro-Par 2022: Parallel Processing Workshops, 13835 121-132, May, 2023"
-  - title: HPC利用に向けたFPGA間シリアル通信コントローラKyokkoのIntel FPGAへの実装
-    authors:
-      - 北爪 開人
-      - 藤田 典久
-      - 小林 諒平
-      - 朴 泰祐
-    description:
-      - 第189回HPC研究発表会, May, 2023
-  - title: Accelerating Radiative Transfer Simulation on NVIDIA GPUs with OpenACC
-    authors:
-      - Kobayashi Ryohei
-      - Fujita Norihisa
-      - Yamaguchi Yoshiki
-      - Boku Taisuke
-      - Yoshikawa Kohji
-      - Abe Makito
-      - Umemura Masayuki
-    description:
-      - "PDCAT 2022: Parallel and Distributed Computing, Applications and Technologies, 13798 344-358, Apr, 2023"
-  - title: FPGA高位合成における演算性能向上のための空間並列性記述に関する研究
-    authors:
-      - 佐野 由佳
-      - 小林 諒平
-      - 藤田 典久
-      - 朴 泰祐
-      - 佐藤 三久
-    description:
-      - 第188回HPC研究発表会, Mar, 2023
-  - title: Implementation and Performance Evaluation of Collective Communications Using CIRCUS on Multiple FPGAs
-    authors:
-      - Kikuchi Kohei
-      - Fujita Norihisa
-      - Kobayashi Ryohei
-      - Boku Taisuke
-    description:
-      - "HPC Asia '23 Workshops: Proceedings of the HPC Asia 2023 Workshops, 15-23, Feb, 2023"
-  - title: GPU–FPGA-accelerated Radiative Transfer Simulation with Inter-FPGA Communication
-    authors:
-      - Kobayashi Ryohei
-      - Fujita Norihisa
-      - Yamaguchi Yoshiki
-      - Boku Taisuke
-      - Yoshikawa Kohji
-      - Abe Makito
-      - Umemura Masayuki
-    description:
-      - "HPC Asia '23: Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region, 117-125, Feb, 2023"
-  - title: Cygnus - World First Multihybrid Accelerated Cluster with GPU and FPGA Coupling
-    authors:
-      - Boku Taisuke
-      - Fujita Norihisa
-      - Kobayashi Ryohei
-      - Tatebe Osamu
-    description:
-      - "ICPP Workshops '22: Workshop Proceedings of the 51st International Conference on Parallel Processing, (8) 1-8, Jan, 2023"
-  - title: 並列FPGA環境における通信システムCIRCUSを用いた集団通信の実装と性能評価
-    authors:
-      - 菊池 航平
-      - 藤田 典久
-      - 小林 諒平
-      - 朴 泰祐
-    description:
-      - 第187回HPC研究発表会, Nov, 2022
-  - title: An Open-source FPGA Library for Data Sorting
-    authors:
-      - Kobayashi Ryohei
-      - Miura Kento
-      - Fujita Norihisa
-      - Boku Taisuke
-      - Amagasa Toshiyuki
-    description:
-      - Journal of Information Processing, 30 766-777, Oct, 2022
-  - title: GPU・FPGA複合型演算加速クラスタを用いた宇宙輻射輸送コードARGOTの多ノード並列化
-    authors:
-      - 小林 諒平
-      - 藤田 典久
-      - 山口 佳樹
-      - 朴 泰祐
-      - 吉川 耕司
-      - 安部 牧人
-      - 梅村 雅之
-    description:
-      - 第185回HPC研究発表会, Jul, 2022
-  - title: Performance Evaluation on GPU-FPGA Accelerated Computing Considering Interconnections between Accelerators
-    authors:
-      - Sano Yuka
-      - Kobayashi Ryohei
-      - Fujita Norihisa
-      - Boku Taisuke
-    description:
-      - The Proceedings of the 12th International Symposium on Highly Efficient Accelerators and Reconfigurable Technologies (HEART 2022), 10-16, Jun, 2022
-  - title: ノードを跨いだGPU・FPGA複合型演算加速による宇宙物理シミュレーションの実装と評価
-    authors:
-      - 佐野 由佳
-      - 小林 諒平
-      - 藤田 典久
-      - 朴 泰祐
-    description:
-      - 第184回HPC研究発表会, May, 2022
-  - title: HBM2 搭載 FPGA のための Addressable Cache を用いた HPC 向けメモリシステムの性能評価
-    authors:
-      - 藤田 典久
-      - 小林 諒平
-      - 山口 佳樹
-      - 朴 泰祐
-    description:
-      - 第183回HPC研究発表会, Mar, 2022
-  - title: OpenACCによる宇宙物理シミュレーションのGPU＋FPGA協調計算の実装
-    authors:
-      - 綱島 隆太
-      - 小林 諒平
-      - 藤田 典久
-      - 朴 泰祐
-      - Lee Seyong
-      - Vetter Jeffrey S
-      - 村井 均
-      - 中尾 昌広
-      - 辻 美和子
-      - 佐藤 三久
-    description:
-      - 第183回HPC研究発表会, Mar, 2022
-  - title: oneAPIを用いたGPU・FPGA混載ノードにおける宇宙物理シミュレーションコードARGOTの実装
-    authors:
-      - 柏野 隆太
-      - 小林 諒平
-      - 藤田 典久
-      - 朴 泰祐
-    description:
-      - 第183回HPC研究発表会, Mar, 2022
-  - title: GPUクラスタを用いた宇宙輻射輸送コードARGOTのOpenACC実装と性能評価
-    authors:
-      - 小林 諒平
-      - 藤田 典久
-      - 山口 佳樹
-      - 朴 泰祐
-      - 吉川 耕司
-      - 安部 牧人
-      - 梅村 雅之
-    description:
-      - 第183回HPC研究発表会, Mar, 2022
-  - title: High resolution of city-level climate simulation by GPU with multi-physical phenomena
-    authors:
-      - Watanabe Koei
-      - Kikuchi Kohei
-      - Boku Taisuke
-      - Sato Takuto
-      - Kusaka Hiroyuki
-    description:
-      - Lecture Notes in Computer Science, 13152, Jan, 2022
-  - title: Multi-hetero Acceleration by GPU and FPGA for Astrophysics Simulation on oneAPI Environment
-    authors:
-      - Kashino Ryuta
-      - Kobayashi Ryohei
-      - Fujita Norihisa
-      - Boku Taisuke
-    description:
-      - "HPCAsia2022: International Conference on High Performance Computing in Asia-Pacific Region, 84-93, Jan, 2022"
+  - ischp2023boku
+  - ipsj-hpc190fujita
+  - ipsj-hpc190kobayashi
+  - europar-2022fujita
+  - ipsj-hpc189kitazume
+  - pdcast-2022kobayashi
+  - ipsj-hpc188sano
+  - hpcasia-2023kikuchi
+  - hpcasia-2023kobayashi
+  - icpp-ws2022boku
+  - ipsj-hpc187kikuchi
+  - ipsj-jip2022kobayashi
+  - ipsj-hpc185kobayashi
+  - heart2022sano
+  - ipsj-hpc2022sano
+  - ipsj-hpc183fujita
+  - ipsj-hpc183tsunashima
+  - ipsj-hpc183kashiwano
+  - ipsj-hpc183kobayashi
+  - lncs2022
+  - hpcasia2022watanabe

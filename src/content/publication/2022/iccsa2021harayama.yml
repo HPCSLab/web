@@ -1,0 +1,40 @@
+title: A Rapid Euclidean Norm Calculation Algorithm that Reduces Overflow and Underflow
+authors:
+  - 原山 赳幸
+  - 工藤 周平
+  - 椋木 大地
+  - 今村 俊幸
+  - 高橋 大介
+url: https://doi.org/10.1007/978-3-030-86653-2_7
+bibtex: |
+  @InProceedings{10.1007/978-3-030-86653-2_7,
+  author="Harayama, Takeyuki
+  and Kudo, Shuhei
+  and Mukunoki, Daichi
+  and Imamura, Toshiyuki
+  and Takahashi, Daisuke",
+  editor="Gervasi, Osvaldo
+  and Murgante, Beniamino
+  and Misra, Sanjay
+  and Garau, Chiara
+  and Ble{\v{c}}i{\'{c}}, Ivan
+  and Taniar, David
+  and Apduhan, Bernady O.
+  and Rocha, Ana Maria A. C.
+  and Tarantino, Eufemia
+  and Torre, Carmelo Maria",
+  title="A Rapid Euclidean Norm Calculation Algorithm that Reduces Overflow and Underflow",
+  booktitle="Computational Science and Its Applications -- ICCSA 2021",
+  year="2021",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="95--110",
+  abstract="The Euclidean norm is widely used in scientific and engineering calculations. However, a straightforward implementation may cause overflow/underflow and loss of accuracy. The Blue algorithm selects a scaling value from three conditional branches according to the absolute value to reduce overflow and underflow. We improve this algorithm and propose the Two-Accumulator method, which is expected to be faster by selecting it from two conditional branches. The input range of our method is slightly smaller than the Blue algorithm. However, we mitigate this problem by dynamically setting the scaling value depending on the vector size. Moreover, we combine it with double-double arithmetic to prevent rounding errors. An evaluation shows that our method combined with double-double arithmetic can be approximately 15{\%} faster than the Blue algorithm while maintaining the same error level, but it can be approximately 46{\%} slower, depending on the input range.",
+  isbn="978-3-030-86653-2"
+  }
+year: 2021
+reference: |
+  Harayama, T., Kudo, S., Mukunoki, D., Imamura, T., Takahashi, D. (2021). A Rapid Euclidean Norm Calculation Algorithm that Reduces Overflow and Underflow. In: Gervasi, O., et al. Computational Science and Its Applications – ICCSA 2021. ICCSA 2021. Lecture Notes in Computer Science(), vol 12949. Springer, Cham. https://doi.org/10.1007/978-3-030-86653-2_7
+class:
+  class: international
+  subclass: conference

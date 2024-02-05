@@ -1,0 +1,20 @@
+title: Fast checkpointing of Large Language Models with TensorStore CHFS
+authors:
+  - Sohei Koyama
+  - Kohei Hiraga
+  - Osamu Tatebe
+year: 2023
+bibtex: |
+  @inproceedings{sc23koyama
+    title={Fast checkpointing of Large Language Models with TensorStore CHFS}
+    authors={Sohei Koyama, Kohei Hiraga, Osamu Tatebe}
+    year={2023}
+    booktitle={SC23}
+  }
+reference: |
+  S. Koyama, K. Hiraga and O.Tatebe,
+  “Fast checkpointing of Large Language Models with TensorStore CHFS,”
+  Supercomputing Conference (SC) 23, Poster, Nov. 2023.
+class:
+  class: international
+  subclass: conference

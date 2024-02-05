@@ -1,0 +1,28 @@
+title: オーバー・アンダーフローを抑えた高精度かつ高速な2ノルム計算手法
+authors:
+  - 原山 赳幸
+  - 工藤 周平
+  - 椋木 大地
+  - 今村 俊幸
+  - 高橋 大介
+bibtex: |-
+  @techreport { IPSJ-HPC177:harayama,
+    author      = "{原山 赳幸} and {工藤 周平} and {椋木 大地} and {今村 俊幸} and {高橋 大介}",
+    title       = "オーバー・アンダーフローを抑えた高精度かつ高速な2ノルム計算手法",
+    year        = "2020",
+    volume      = "2020-HPC-177",
+    number      = "8",
+    month       = "12",
+    booktitle   = "情報処理学会 第176回 HPC 研究会報告 (HPC177)"
+  }
+reference: |
+  原山 赳幸, 工藤 周平, 椋木 大地, 今村 俊幸, 高橋 大介:
+  オーバー・アンダーフローを抑えた高精度かつ高速な2ノルム計算手法,”
+  情報処理学会第177回研究会報告,
+  Vol. 2020-HPC-177,
+  No. 8,
+  Dec 2020.
+year: 2020
+class:
+  class: domestic
+  subclass: workshop

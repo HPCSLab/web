@@ -1,0 +1,30 @@
+title: Multi-tasking Execution in PGAS Language XcalableMP and Communication Optimization on Many-core Clusters
+year: 2018
+authors:
+  - Keisuke Tsugane
+  - Jinpil Lee
+  - Hitoshi Murai
+  - Mitsuhisa Sato
+bibtex: |
+  @inproceedings{10.1145/3149457.3154482,
+  author = {Tsugane, Keisuke and Lee, Jinpil and Murai, Hitoshi and Sato, Mitsuhisa},
+  title = {Multi-tasking Execution in PGAS Language XcalableMP and Communication Optimization on Many-core Clusters},
+  year = {2018},
+  isbn = {9781450353724},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3149457.3154482},
+  doi = {10.1145/3149457.3154482},
+  abstract = {Large-scale clusters based on many-core processors such as Intel Xeon Phi have recently been deployed. Multi-tasking execution using task dependencies in OpenMP 4.0 is a promising candidate for facilitating the parallelization of such many-core processors, because this enables users to avoid global synchronization through fine-grained task-to-task synchronization using user-specified data dependencies. Recently, the partitioned global address space (PGAS) model has emerged as a usable distributed-memory programming model. In this paper, we propose a multi-tasking execution model in the PGAS language XcalableMP (XMP) for many-core clusters. The model provides a method to describe interactions between tasks based on point-to-point communications on the global address space. A communication is executed non-collectively among nodes. We implemented the proposed execution model in XMP, and designed a simple code transformation algorithm to MPI and OpenMP. We implemented two benchmarks using our model for preliminary evaluation, namely blocked Cholesky factorization and the Laplace equation solver. Most of the implementations using our model outperform the conventional barrier-based data-parallel model. To improve the performance in many-core clusters, we propose a communication optimization method by dedicating a single thread for communications, to avoid performance problems related to the current multi-threaded MPI execution. As a result, the performances of blocked Cholesky factorization and the Laplace equation solver using this communication optimization are improved to 138\% and 119\% compared with the barrier-based implementation in Intel Xeon Phi KNL clusters, respectively. From the viewpoint of productivity, the program implemented by our model in XMP is almost the same as the implementation based on the OpenMP task depend clause, because XMP enables the parallelization of the serial source code with additional directives and small changes as well as OpenMP.},
+  booktitle = {Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region},
+  pages = {75–85},
+  numpages = {11},
+  keywords = {Many-core cluster, PGAS, Task Parallelism, XcalableMP},
+  location = {, Chiyoda, Tokyo, Japan, },
+  series = {HPCAsia '18}
+  }
+reference: |
+  Keisuke Tsugane, Jinpil Lee, Hitoshi Murai, and Mitsuhisa Sato. 2018. Multi-tasking Execution in PGAS Language XcalableMP and Communication Optimization on Many-core Clusters. In Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region (HPCAsia '18). Association for Computing Machinery, New York, NY, USA, 75–85. https://doi.org/10.1145/3149457.3154482
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,23 @@
+title: GPUにおけるSELL形式疎行列ベクトル積の実装と性能評価
+authors:
+  - 佐藤 駿一
+  - 高橋 大介
+url: http://id.nii.ac.jp/1001/00187362/
+year: 2018
+bibtex: |
+  @techreport { IPSJ-HPC164:hatanaka,
+    author      = "{佐藤 駿一} and {高橋 大介}",
+    title       = "{GPUにおけるSELL形式疎行列ベクトル積の実装と性能評価}",
+    year        = "2018",
+    volume      = "2018-HPC-164",
+    number      = "3",
+    month       = "4",
+    booktitle   = "情報処理学会 第164回 HPC 研究会報告 (HPC164)"
+  }
+reference: |
+  佐藤 駿一, 高橋 大介:
+  “GPUにおけるSELL形式疎行列ベクトル積の実装と性能評価,”
+  情報処理学会第164回研究会報告 (HPC164), Vol. 2018-HPC-164, No. 3, Apr. 2018."
+class:
+  class: domestic
+  subclass: workshop

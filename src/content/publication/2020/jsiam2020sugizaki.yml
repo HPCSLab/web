@@ -1,0 +1,23 @@
+title: NVIDIA Volta GPUにおける浮動小数点演算を用いた剰余乗算の高速化
+authors:
+  - 杉崎 行優
+  - 高橋 大介
+year: 2020
+bibtex: |
+  @techreport { jsiam2020:sugizaki,
+    author      = "{杉崎 行優} and {高橋 大介}",
+    title       = "{NVIDIA Volta GPUにおける浮動小数点演算を用いた剰余乗算の高速化}",
+    year        = "2020",
+    month       = "9",
+    booktitle   = "日本応用数理学会2020年度年会",
+    pages       = {419--420}
+  }
+reference: |
+  杉崎 行優, 高橋 大介:
+  “NVIDIA Volta GPUにおける浮動小数点演算を用いた剰余乗算の高速化,”
+  日本応用数理学会2020年度年会,
+  pp. 419-420,
+  Sep. 2020.
+class:
+  class: domestic
+  subclass: conference

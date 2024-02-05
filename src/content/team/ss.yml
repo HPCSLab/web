@@ -66,126 +66,21 @@ students:
 
 
 recentWorks:
-  - title: Fast checkpointing of Large Language Models with TensorStore CHFS
-    authors:
-      - Sohei Koyama
-      - Kohei Hiraga
-      - Osamu Tatebe
-    description:
-      - SC23 Graduate Posters ACM Student Research Competition, 2023 (to appear)
-  - title: I/O-Aware Flushing for HPC Caching Filesystem
-    authors:
-      - Osamu Tatebe
-      - Kohei Hiraga
-      - Hiroki Ohtsuji,
-    description:
-      - Proceedings of 3rd Workshop on Re-envisioning Extreme-Scale I/O for Emerging Hybrid HPC Workloads (REX-IO), 2023 (to appear)
-  - title: Accelerating I/O in Distributed Data Processing Systems with Apache Arrow CHFS
-    authors:
-      - Sohei Koyama
-      - Kohei Hiraga
-      - Osamu Tatebe,
-    description:
-      - Proceedings of 3rd Workshop on Re-envisioning Extreme-Scale I/O for Emerging Hybrid HPC Workloads (REX-IO), short paper, 2023 (to appear)
-  - title: Cygnus - World First Multihybrid Accelerated Cluster with GPU and FPGA Coupling
-    url: https://dl.acm.org/doi/10.1145/3547276.3548629
-    authors:
-      - Taisuke Boku
-      - Norihisa Fujita
-      - Ryohei Kobayashi
-      - Osamu Tatebe
-    description:
-      - Proceedings of 2nd International Workshop on Deployment and Use of Accelerators (DUAC), Article No.8, pp.1-8, 10.1145/3547276.3548629, 2022
-  - title: Scalable Data Parallel Distributed Training for Graph Neural Networks
-    url: https://ieeexplore.ieee.org/document/9835176
-    authors:
-      - Sohei Koyama
-      - Osamu Tatebe
-    description:
-      - Proceedings of Workshop on AI for Datacenter Optimization (ADOPT'22), pp.699-707, 10.1109/IPDPSW55747.2022.00121, 2022
-  - title: Caching Support for CHFS Node-local Persistent Memory File System
-    url: https://ieeexplore.ieee.org/document/9835238
-    authors:
-      - Osamu Tatebe
-      - Hiroki Ohtsuji
-    description:
-      - Proceedings of 3rd Workshop on Extreme-Scale Storage and Analysis (ESSA 2022), pp.1103-1110, 10.1109/IPDPSW55747.2022.00182, 2022
-  - title: "CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory"
-    url: https://dl.acm.org/doi/10.1145/3492805.3492807
-    authors:
-      - Osamu Tatebe
-      - Kazuki Obata
-      - Kohei Hiraga
-      - Hiroki Ohtsuji
-    description:
-      - Proceedings of the ACM International Conference on High Performance Computing in Asia-Pacific Region (HPC Asia 2022), pp.115-124, 10.1145/3492805.3492807, 2022
-  - title: Pegasusビッグメモリスーパコンピュータの性能評価
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=227118&item_no=1&page_id=13&block_id=8
-    authors:
-      - 建部 修見
-      - 平賀 弘平
-      - 前田 宗則
-      - 藤田 典久
-      - 小林 諒平
-      - 額田 彰
-    description:
-      - 情報処理学会 第190回 HPC 研究会報告
-  - title: Apache Arrow CHFSによるビッグデータ処理のI/O高速化
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=227116&item_no=1&page_id=13&block_id=8
-    authors:
-      - 小山 創平
-      - 平賀 弘平
-      - 建部 修見
-    description:
-      - 情報処理学会 第190回 HPC 研究会報告
-  - title: 分散キャッシュファイルシステムの設計と実装
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220228&item_no=1&page_id=13&block_id=8
-    authors:
-      - 笠井 大暉
-      - 建部 修見
-    description:
-      - 情報処理学会 第186回 HPC 研究会報告
-  - title: MPI-IO/CHFS:ノードローカル不揮発性メモリを活用するアドホック分散ファイルシステムのためのMPI-IOの設計
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=218971&item_no=1&page_id=13&block_id=8
-    authors:
-      - 平賀 弘平
-      - 建部 修見
-    description:
-      - 情報処理学会 第185回 HPC 研究会報告
-  - title: CHFSアドホック並列分散ファイルシステムのアクセス性能の評価
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=218969&item_no=1&page_id=13&block_id=8
-    authors:
-      - 建部 修見
-    description:
-      - 情報処理学会 第185回 HPC 研究会報告
-  - title: HPC環境を想定した探索的データ解析におけるノードローカルストレージの利用の検討
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=218957&item_no=1&page_id=13&block_id=8
-    authors:
-      - 巨畠 和樹
-      - 小山 創平
-      - 平賀 弘平
-      - 建部 修見
-    description:
-      - 情報処理学会 第185回 HPC 研究会報告
-  - title: 不揮発性メモリを用いた分散オブジェクトストレージの設計
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=217758&item_no=1&page_id=13&block_id=8
-    authors:
-      - 巨畠 和樹
-      - 建部 修見
-    description:
-      - 情報処理学会 第184回 HPC 研究会報告
-  - title: 計算ノード上の不揮発性メモリを用いたMPI-IOバーストバッファの設計
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=217502&item_no=1&page_id=13&block_id=8
-    authors:
-      - 平賀 弘平
-      - 建部 修見
-    description:
-      - 情報処理学会 第183回 HPC 研究会報告
-  - title: 計算ノードの不揮発性メモリを用いたキャッシュファイルシステムの設計
-    url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=217486&item_no=1&page_id=13&block_id=8
-    authors:
-      - 建部 修見
-    description:
-      - 情報処理学会 第183回 HPC 研究会報告
+  - sc23koyama
+  - rexio2023tatebe
+  - rexio2023koyama
+  - icpp-ws2022boku
+  - adopt22koyama
+  - essa22tatebe
+  - hpcasia2022tatebe
+  - swopp2023tatabe
+  - ipsj-hpc190koyama
+  - ipsj-hpc186kasai
+  - ipsj-hpc185hiraga
+  - ipsj-hpc185tatebe
+  - ipsj-hpc185obata
+  - ipsj-hpc184obata
+  - ipsj-hpc183hiraga
+  - ipsj-hpc183tatebe
 
 

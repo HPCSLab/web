@@ -9,7 +9,7 @@ authors:
   - 安部 牧人
   - 梅村 雅之
 bibtex: |
-  @techreport { IPSJ-HPC189:Kobayashi,
+  @techreport { IPSJ-HPC185:Kobayashi,
     author      = "{小林 諒平} and {藤田 典久} and {山口 佳樹} and {朴 泰祐} and {吉川 耕司} and {安部 牧人} and {梅村 雅之}",
     title       = "GPU・FPGA複合型演算加速クラスタを用いた宇宙輻射輸送コードARGOTの多ノード並列化",
     year        = "2022",

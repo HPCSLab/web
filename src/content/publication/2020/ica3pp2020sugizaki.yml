@@ -1,0 +1,28 @@
+title: Fast Computation of the Exact Number of Magic Series with an Improved Montgomery Multiplication Algorithm
+authors:
+  - 杉崎 行優
+  - 高橋 大介
+url: https://doi.org/10.1007/978-3-030-60239-0_25
+bibtex: |
+  @inproceedings{10.1007/978-3-030-60239-0_25,
+  author = {Sugizaki, Yukimasa and Takahashi, Daisuke},
+  title = {Fast Computation of the Exact Number of Magic Series with an Improved Montgomery Multiplication Algorithm},
+  year = {2020},
+  isbn = {978-3-030-60238-3},
+  publisher = {Springer-Verlag},
+  address = {Berlin, Heidelberg},
+  url = {https://doi.org/10.1007/978-3-030-60239-0_25},
+  doi = {10.1007/978-3-030-60239-0_25},
+  abstract = {The numbers of magic series of large orders are computed on Intel Xeon Phi processors with an improved and optimized Montgomery multiplication algorithm. The number of magic series can be efficiently computed by Kinnaes’ formula, of which the most time-consuming element is modular multiplication. We use Montgomery multiplication for faster modular multiplication, and the number of operations is reduced through procedural simplifications. Modular addition, subtraction, and multiplication operations are vectorized by using the following instructions: Intel Advanced Vector Extensions (AVX), Intel Advanced Vector Extensions 2 (AVX2), and Intel Advanced Vector Extensions 512 (AVX-512). The number of magic series of order 8000 is computed on multiple nodes of an Intel Xeon Phi processor with a total execution time of 1806 days. Results are compared with salient studies in the literature to confirm the efficacy of the approach.},
+  booktitle = {Algorithms and Architectures for Parallel Processing: 20th International Conference, ICA3PP 2020, New York City, NY, USA, October 2–4, 2020, Proceedings, Part II},
+  pages = {365–382},
+  numpages = {18},
+  keywords = {Intel Xeon Phi processor, Montgomery multiplication, Magic square, Magic series},
+  location = {New York, NY, USA}
+  }
+reference: |
+  Yukimasa Sugizaki and Daisuke Takahashi. 2020. Fast Computation of the Exact Number of Magic Series with an Improved Montgomery Multiplication Algorithm. In Algorithms and Architectures for Parallel Processing: 20th International Conference, ICA3PP 2020, New York City, NY, USA, October 2–4, 2020, Proceedings, Part II. Springer-Verlag, Berlin, Heidelberg, 365–382. https://doi.org/10.1007/978-3-030-60239-0_25
+year: 2020
+class:
+  class: international
+  subclass: conference

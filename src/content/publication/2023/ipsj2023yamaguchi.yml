@@ -1,0 +1,26 @@
+title: ルジャンドル予想の数値的検証
+authors:
+  - 山口博將
+  - 高橋大介
+year: 2023
+reference: |
+  山口博將, 高橋大介:
+  “ルジャンドル予想の数値的検証,”
+  情報処理学会第85回全国大会講演論文集,
+  Vol. 2023,
+  No. 1,
+  Feb. 2023.
+bibtex: |-
+  @inproceedings{weko_229569_1,
+   author	 = "山口,博將 and 高橋,大介",
+   title	 = "ルジャンドル予想の数値的検証",
+   booktitle	 = "第85回全国大会講演論文集",
+   year 	 = "2023",
+   volume	 = "2023",
+   number	 = "1",
+   pages	 = "73--74",
+   month	 = "feb"
+  }
+class:
+  class: domestic
+  subclass: conference

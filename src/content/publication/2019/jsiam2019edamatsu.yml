@@ -1,0 +1,23 @@
+title: AVX-512IFMAを用いた多倍長整数乗算の高速化
+authors:
+  - 枝松 拓弥
+  - 高橋 大介
+bibtex: |
+  @techreport{ jsiam:edamatsu,
+    author        = "{枝松 拓弥} and {高橋 大介}",
+    title         = "AVX-512IFMAを用いた多倍長整数乗算の高速化",
+    year          = "2019",
+    pages         = {400-401}
+    month         = "8",
+    booktitle     = "日本応用数理学会2019年度年会"
+  }
+year: 2019
+reference: |
+  枝松 拓弥, 高橋 大介:
+  “AVX-512IFMAを用いた多倍長整数乗算の高速化,”
+  日本応用数理学会2019年度年会,
+  pp. 400-401,
+  Aug. 2019.
+class:
+  class: domestic
+  subclass: conference
