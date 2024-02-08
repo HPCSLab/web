@@ -5,3 +5,8 @@ grade: Professor
 team: System Software
 icon: ./icons/tatebe.jpg
 username: tatebe
+keywords:
+  - 分散ファイルシステム
+  - 並列システムソフトウェア
+message: |
+  システムソフトウェアに興味がある人, 大きいことをやってみたい人は是非どうぞ. 好きなことをやってください.

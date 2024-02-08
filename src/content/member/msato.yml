@@ -5,3 +5,7 @@ grade: Professor (Cooperative Graduate School Program)
 team: PA
 icon: ./icons/msato.jpg
 username: msato
+keywords:
+  - 並列プログラミング言語
+  - メニーコア
+message: ""

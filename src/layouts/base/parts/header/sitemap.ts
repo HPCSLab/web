@@ -27,6 +27,24 @@ export type IndexPage = JustLinkIndex | AcordionIndex;
 
 export const pages: IndexPage[] = [
   {
+    title: "卒研配属",
+    hasChildren: true,
+    children: [
+      {
+        title: "概要",
+        url: "/bachelor"
+      },
+      {
+        title: "スケジュール",
+        url: "/bachelor/schedule"
+      },
+      {
+        title: "募集人数",
+        url: "/bachelor/capacity"
+      }
+    ]
+  },
+  {
     title: "Teams",
     hasChildren: true,
     children: [
@@ -66,7 +84,7 @@ export const pages: IndexPage[] = [
       },
       {
         title: "Alumnus",
-        url: "/members/alumnus",
+        url: "/members/alumni",
       },
     ],
   },

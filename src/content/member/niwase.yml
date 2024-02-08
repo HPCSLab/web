@@ -5,3 +5,5 @@ grade: D2
 team: FPGA
 icon: ./icons/niwase.jpg
 username: niwase
+message: |
+  FPGAによる大規模数値計算などへの応用に向けた高速ノード間インターコネクトの実装に関する研究に取り組んでいます．

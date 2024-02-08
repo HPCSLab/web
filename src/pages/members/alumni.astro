@@ -3,7 +3,7 @@ import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
 import H1Section from "@components/composite/section/H1.astro";
 import ChevronListItem from "../../components/display/list/item/Chevron.astro";
 import List from "../../components/display/list/list.astro";
-import Alumni from "@components/pages/members/Alumni.astro";
+import AlumniCard from "@components/pages/members/Alumni.astro";
 import Base from "../../layouts/base/index.astro";
 import { getCollection } from "astro:content";
 import {
@@ -19,7 +19,7 @@ const alumni = (
 ---
 
 <Base>
-  <NoImageHeader>Almnus</NoImageHeader>
+  <NoImageHeader>Almuni</NoImageHeader>
   <H1Section headingText="教員" backgroundInverted={false}>
     <List ordered={false}>
       {
@@ -30,32 +30,31 @@ const alumni = (
     </List>
   </H1Section>
   <H1Section headingText="スタッフ" backgroundInverted={false}>
-    <Alumni
+    <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "staff")
         .map((alumnus) => alumnus.data)}
     />
   </H1Section>
   <H1Section headingText="博士" backgroundInverted={false}>
-    <Alumni
+    <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "doctor")
         .map((alumnus) => alumnus.data)}
     />
   </H1Section>
   <H1Section headingText="修士" backgroundInverted={false}>
-    <Alumni
+    <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "master")
         .map((alumnus) => alumnus.data)}
     />
   </H1Section>
   <H1Section headingText="学士" backgroundInverted={false}>
-    <Alumni
+    <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "undergraduate")
         .map((alumnus) => alumnus.data)}
     />
   </H1Section>
 </Base>
-Alumnus isFacultyAlumnusisFacultyAlumnus isNotFacultyAlumnusisNotFacultyAlumnus

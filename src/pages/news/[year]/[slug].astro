@@ -3,7 +3,7 @@ import type { GetStaticPaths } from "astro";
 import { getCollection, getEntry } from "astro:content";
 import Base from "@layouts/base/index.astro";
 import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
-import { getEntries } from "astro:content";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 
 export const getStaticPaths = (async () => {
   const news = await getCollection("news");
@@ -28,10 +28,62 @@ const news = await getEntry("news", `${params.year}/${params.slug}`);
 if (news === undefined) {
   throw new Error(`${params.year}/${params.slug} not found`);
 }
+
+const Body = await news.render();
 ---
 
 <Base>
-  <NoImageHeader>
-    {news.data.title}
-  </NoImageHeader>
+  <article>
+    <NoImageHeader>
+      <h1>
+        {news.data.title}
+      </h1>
+      <div class="date">
+        {news.data.date}
+      </div>
+    </NoImageHeader>
+    <div class="news-md-top">
+      <ResponsiveWidth>
+        <Body.Content />
+      </ResponsiveWidth>
+    </div>
+  </article>
 </Base>
+
+<style is:global>
+  .news-md-top .header-container {
+    padding-block-start: 1rem;
+    padding-block-end: 0.5rem;
+    background-color: var(--color-bg-dark);
+    color: var(--color-inverted-text-strong);
+  }
+
+  .date {
+    margin-top: 0.5rem;
+    color: var(--color-inverted-text-disable);
+  }
+
+  .news-md-top h1 {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+  }
+
+  .news-md-top p {
+    line-height: 1.5;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+  }
+
+  .news-md-top a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    color: var(--color-primary);
+  }
+
+  .news-md-top blockquote {
+    color: var(--color-text-normal);
+    border-left: 2px solid var(--color-primary);
+    border-radius: 1px;
+    padding-left: 1rem;
+  }
+</style>

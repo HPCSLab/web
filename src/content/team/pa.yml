@@ -1,15 +1,6 @@
-cover: ./pa/xmp.png
-faculties:
-  - name: 佐藤 三久
-    profile: msato
-    role: 連携大学院教授
-    keywords:
-      - 並列プログラミング言語
-      - メニーコア
-    message: ""
-students: []
+cover: ./cover/xmp.png
 recentWorks:
-  - ccgrid2017tabuchi
-  - hpcasia2018tsugane
-  - hpcasia2018tabuchi
-  - iwomp2018watanabe
+  - 2017/ccgrid2017tabuchi
+  - 2018/hpcasia2018tsugane
+  - 2018/hpcasia2018tabuchi
+  - 2018/iwomp2018watanabe

@@ -5,3 +5,6 @@ grade: ""
 team: System Software
 icon: ./icons/hiraga.jpg
 username: hiraga
+message: |
+  分散メタデータサーバ、MPI-IO分散システムやシステムソフトウェアに興味のある方はぜひ一緒に研究しましょう。
+  不揮発性メモリを使ってみたい方もどうぞ！

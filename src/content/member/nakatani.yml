@@ -5,3 +5,5 @@ grade: D3
 team: System Software
 icon: ./icons/nakatani.jpg
 username: nakatani
+message: |
+  負荷が均等となるコンシステントハッシングの研究をしています

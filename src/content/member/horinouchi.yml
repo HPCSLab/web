@@ -5,3 +5,9 @@ grade: B4
 team: Architecture
 icon: ./icons/horinouchi.jpg
 username: horinouchi
+keywords:
+  - GPU
+message: |
+  今年度からArchitectureチームに配属となりました。
+  GPUを使ったアプリケーションの高速化の研究のための勉強をしています。
+  HPCに興味のある方はぜひお越しください。

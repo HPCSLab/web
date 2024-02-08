@@ -1,0 +1,93 @@
+---
+import { Icon } from "astro-icon/components";
+import { teamColor, teamToIcon } from "../../../team";
+import {TeamKind} from "@content";
+import type { log } from "node_modules/astro/dist/core/logger/core";
+import type { string } from "zod";
+import Typography from "@components/display/Typography.astro";
+
+interface Props {
+  id: TeamKind;
+  description: string;
+  url: string;
+}
+
+
+const icon = teamToIcon(Astro.props.id);
+const color = teamColor(Astro.props.id);
+---
+
+<div class="root">
+  <div>
+    <Icon name={icon} class:list={[color, "team-icon"]}/>
+  </div>
+  <h2>
+    <a href={Astro.props.url}>
+      {Astro.props.id}
+    </a>
+  </h2>
+  <div class="desc">
+    <Typography>
+      {Astro.props.description}
+    </Typography>
+  </div>
+</div>
+
+<style>
+  h2 {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+  }
+
+  h2 > a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px
+  }
+
+  .desc {
+    grid-column-start: 2;
+  }
+
+  .root {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    grid-template-rows: 1.5rem 1fr;
+    gap: 0.5rem;
+    background-color: var(--color-bg-white);
+    padding: 1rem;
+    border-radius: 0.2rem;
+    color: var(--color-text-normal);
+  }
+
+  .team-icon {
+    font-size: var(--font-size-2xl);
+    border-radius: 50%;
+    padding: 0.2rem;
+    color: white;
+  }
+
+  .team-color-1 {
+    background-color: hsl(0, 77%, 29%);
+  }
+
+  .team-color-2 {
+    background-color: hsl(60, 77%, 29%);
+  }
+
+  .team-color-3 {
+    background-color: hsl(120, 77%, 29%);
+  }
+
+  .team-color-4 {
+    background-color: hsl(180, 77%, 29%);
+  }
+
+  .team-color-5 {
+    background-color: hsl(240, 77%, 29%);
+  }
+
+  .team-color-6 {
+    background-color: hsl(300, 77%, 29%);
+  }
+</style>

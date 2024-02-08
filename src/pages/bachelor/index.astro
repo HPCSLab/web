@@ -1,0 +1,169 @@
+---
+import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
+import Base from "@layouts/base/index.astro";
+import HpcsAll from "@asset/hpcs-all-2019.jpg";
+import Typography from "@components/display/Typography.astro";
+import H1Section from "@components/composite/section/H1.astro";
+import Keyword from "@components/display/Keyword.astro";
+import Chevron from "@components/display/list/item/Chevron.astro";
+import List from "@components/display/list/list.astro";
+import type { TeamKind } from "@content";
+import TeamCard from "@components/pages/bachelor/TeamCard.astro";
+import Grid from "@components/layout/Grid.astro";
+
+const teams: { id: TeamKind; url: string; description: string }[] = [
+  {
+    id: "Architecture",
+    url: "/teams/arch",
+    description:
+      "ネットワークやアクセラレータ,特にFPGAやGPUなどの演算加速装置を用いた並列処理アーキテクチャとネットワークに関する研究を行っています",
+  },
+  {
+    id: "Algorithm",
+    url: "/teams/algo",
+    description:
+      "大規模数値計算,特に高性能数値計算ライブラリや大規模連立一次方程式の高速求解など科学技術計算に関する研究を行っています",
+  },
+  {
+    id: "FPGA",
+    url: "/teams/fpga",
+    description:
+      "FPGA,特に FPGA を用いた大規模数値計算やリアルタイム処理などを行っています",
+  },
+  {
+    id: "PA",
+    url: "/teams/pa",
+    description:
+      "プログラミング環境,特に大規模並列計算機に向けた並列プログラミング言語の開発を行っています",
+  },
+  {
+    id: "Performance",
+    url: "/teams/perf",
+    description:
+      "並列化や性能最適化など,高速に計算することを目的としたソフトウェア研究を行っています",
+  },
+  {
+    id: "System Software",
+    url: "/teams/ss",
+    description:
+      "システムソフトウェア,特に並列ファイルシステムや DBMS など,並列分散システムに関わる基盤ソフトウェアの研究を行っています",
+  },
+];
+---
+
+<Base>
+  <BlurImageHeader imgSrc={HpcsAll} imgAlt="HPCS全員の集合写真">
+    卒研配属情報
+  </BlurImageHeader>
+  <H1Section headingText="HPCS研究室">
+    <Typography>
+      筑波大学 High Performance Computing System (HPCS) 研究室では,
+      超並列計算機システムからコモディティクラスタシステムまで, 高性能計算 (High
+      Performance Computing) に関連する様々な研究を行っています．
+    </Typography>
+    <List ordered={false}>
+      <Chevron>
+        各種並列処理システムにおける<Keyword>高性能計算</Keyword>と性能評価
+      </Chevron>
+      <Chevron>
+        プロセッサからネットワークまで<Keyword>
+          計算機アーキテクチャ
+        </Keyword>に関する研究
+      </Chevron>
+      <Chevron>
+        <Keyword>GPU</Keyword>や<Keyword>メニーコア</Keyword>,<Keyword>
+          FPGA
+        </Keyword>などの高性能計算向けアーキテクチャの研究
+      </Chevron>
+      <Chevron>高性能並列処理<Keyword>コンパイラ</Keyword>の研究</Chevron>
+      <Chevron>
+        <Keyword>大規模データ処理</Keyword> (ビッグデータ) 技術の研究
+      </Chevron>
+      <Chevron>
+        大規模計算機を支える<Keyword>ストレージ</Keyword>技術や<Keyword>
+          システムソフトウェア
+        </Keyword>に関する研究
+      </Chevron>
+      <Chevron>
+        大規模計算機における<Keyword>高性能数値計算</Keyword>技術の研究
+      </Chevron>
+    </List>
+    <Typography>
+      特に,筑波大学計算科学研究センターで運用されている Cygnus,
+      Pegasusでは,これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており,
+      並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算の研究を進めています．
+      研究室にある大規模 PC クラスタの他,ABCI や TSUBAME
+      など他機構のスパコンも利用しながら研究を行っています．
+    </Typography>
+  </H1Section>
+  <H1Section headingText="チーム一覧" backgroundInverted={true} fullW={true}>
+    <Grid minW="24rem">
+      {
+        teams.map((team) => (
+          <TeamCard
+            id={team.id}
+            description={team.description}
+            url={team.url}
+          />
+        ))
+      }
+    </Grid>
+  </H1Section>
+  <H1Section headingText="就職状況">
+    <Typography>
+      就職状況は極めて良好です．就職先は以下のような例があります．
+    </Typography>
+    <div class="after-graduate">
+      <div class="year">2019</div>
+      <div>
+        LINE,Treasure Data,FreakOut,Cadence Design Systems,
+        Inc.,エリクソン・ジャパン
+      </div>
+      <div class="year">2018</div>
+      <div>
+        筑波大学 計算科学研究センター,NTT 研究所,ヤフー,富士通,楽天,Fixstars
+      </div>
+      <div class="year">2017</div>
+      <div> 日立研究所,ヤフー,ドワンゴ,サイプレスセミコンダクタ</div>
+      <div class="year">2016以前</div>
+      <div>
+        筑波大学 計算科学研究センター,理化学研究所
+        計算科学研究センター,富士通研究所,NTT 研究所,Google
+        dublin,ヤフー,CyberAgent,Fixstars,リクルート,日立製作所,NTTデータ,パナソニック,株式会社ユーザーローカル,三菱スペース・ソフトウエア株式会社
+      </div>
+    </div>
+    <Typography>インターンシップ先には以下のような例があります．</Typography>
+    <div class="after-graduate">
+      <div class="year">2019</div>
+      <div>理化学研究所</div>
+      <div class="year"> 2018</div>
+      <div>
+        理化学研究所,NTT 研究所,サイボウズラボ,Treasure
+        Data,PFN,メルカリ,LINE,Fixstars,ヤフー
+      </div>
+      <div class="year"> 2017</div>
+      <div> ヤフー,Fixstars</div>
+      <div class="year"> 2016 以前</div>
+      <div>
+        Argonne National
+        Laboratory,日立製作所中央研究所,ノーチラステクノロジーズ,Fixstars
+      </div>
+    </div>
+  </H1Section>
+</Base>
+
+<style>
+  .after-graduate {
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+    display: grid;
+    grid-template-columns: max-content  1fr;
+    row-gap: 1.5rem;
+    column-gap: 0.75rem;
+  }
+
+  .year {
+    text-align: right;
+    color: var(--color-text-weak);
+  }
+</style>

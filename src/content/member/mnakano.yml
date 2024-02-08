@@ -5,3 +5,7 @@ grade: B4
 team: System Software
 icon: ./icons/mnakano.jpg
 username: mnakano
+keywords:
+  - 非同期ランタイム
+message: |
+  HPCに限らず色々な分散システムの話をしましょう

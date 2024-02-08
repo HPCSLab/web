@@ -5,3 +5,7 @@ grade: M2
 team: Performance
 icon: ./icons/seimi.jpg
 username: seimi
+keywords:
+  - OpenSWPCのDO CONCURRENTによるGPUコード移植
+message: |
+  GPGPUによるソフトウェアの高速化をやっています．

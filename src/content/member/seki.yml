@@ -5,3 +5,5 @@ grade: M1
 team: Performance
 icon: ./icons/seki.jpg
 username: seki
+message: |
+  GPUの計算速度を向上させるパラメータをCUPTIライブラリによってパフォーマンスカウンタを取得することで効率よく探索する方法を研究しております.

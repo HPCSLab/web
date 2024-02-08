@@ -219,15 +219,40 @@ const teamRecentWorkSchema = z.object({
 
 export type TeamRecentWork = z.infer<typeof teamRecentWorkSchema>;
 
+const bachelorCapacitySchema = z.object({
+    faculties: z.array(reference('member')),
+    capacity: z.number().int().positive()
+  });
+
+const bachelorInformationSessionSchema = z.object({
+    begin: z.date(),
+    end: z.date(),
+    place: z.object({
+      display: z.string(),
+      canonical: z.string(),
+    }),
+    note: z.string().nullish()
+  });
+
+const bachelorInfoSchema = z.object({
+  capacities: z.array(bachelorCapacitySchema),
+  description: z.string(),
+  informationSessions: z.array(bachelorInformationSessionSchema),
+});
+
+export type BachelorCapacity = z.infer<typeof bachelorCapacitySchema>;
+export type BachelorInformationSession = z.infer<typeof bachelorInformationSessionSchema>;
+export type BachelorInfo = z.infer<typeof bachelorInfoSchema>;
+
 const teamSchema = (ctx: SchemaContext) =>
   z.object({
     cover: ctx.image(),
-    faculties: z.array(teamMemberSchema),
-    students: z.array(teamMemberSchema),
     recentWorks: z.array(reference("publication")),
+    bachelorInfo: bachelorInfoSchema,
   });
 
 export type Team = z.infer<ReturnType<typeof teamSchema>>;
+
 
 export const collections = {
   news: defineCollection({
@@ -250,4 +275,8 @@ export const collections = {
     type: "data",
     schema: teamSchema,
   }),
+  bachelor: defineCollection({
+    type: "data",
+    schema: bachelorInfoSchema,
+  })
 };

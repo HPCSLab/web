@@ -1,6 +1,6 @@
 ---
 import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
-import type { TeamMember, TeamRecentWork } from "@content";
+import type { TeamMember} from "@content";
 import Base from "@layouts/base/index.astro";
 import H1Section from "@components/composite/section/H1.astro";
 import Typography from "@components/display/Typography.astro";
@@ -25,7 +25,7 @@ interface Props {
   cover: Cover;
   students: Members;
   faculties: Members;
-  recentWorks?: TeamRecentWork[];
+  recentWorks?: {id: string}[];
 }
 const { name, cover, students, faculties, recentWorks } = Astro.props;
 ---

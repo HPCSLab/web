@@ -5,3 +5,7 @@ grade: D1
 team: FPGA
 icon: ./icons/furukawa.jpg
 username: furukawa
+message: |
+  筑波大学計算科学研究センターで開発が進む，宇宙輻射流体力学シミュレーションの演算加速の研究をしています．
+  FPGAやGPU，メモリ，アプリケーションに関する様々な特性を深く理解し，最適解を探します．
+  実装が動作すると大きな喜びを得られます．

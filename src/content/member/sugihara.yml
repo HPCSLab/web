@@ -5,3 +5,7 @@ grade: D1
 team: System Software
 icon: ./icons/sugihara.jpg
 username: sugihara
+keywords:
+  - ノードローカルバーストバッファ
+message: |
+  研究室の人数よりも計算機の方が多い研究室です。クラスタやスーパーコンピューターを使って研究してみたい人はぜひ！

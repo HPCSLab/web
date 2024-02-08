@@ -5,3 +5,10 @@ grade: M2
 team: Architecture
 icon: ./icons/ysano.jpg
 username: ysano
+keywords:
+  - FPGA
+  - OpenACC
+message: |
+  現在は、高性能計算向けに最適化されたFPGAでのプログラミングがより簡単になるようなプログラミング環境の研究をしています。
+  自分がやりたい研究があれば、実現のために真摯に向き合ってくださる先生方が数多くいらっしゃいます。
+  高性能プログラミングに興味を持たれた方は是非お越しください。

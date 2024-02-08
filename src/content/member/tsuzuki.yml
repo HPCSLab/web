@@ -5,3 +5,8 @@ grade: M1
 team: Architecture
 icon: ./icons/tsuzuki.jpg
 username: tsuzuki
+keywords:
+  - FPGA
+message: |
+  私はHPCの知識がない状態で入り、今は、OpenMP、OpenMPI、Verilog HDL、OpenCLなどのHPCの基本的な言語やライブラリの勉強をしています。
+  先生方がわかりやすく教えて下さり、また、サーバ等の研究設備も整っており、良い環境で学ぶことができます。

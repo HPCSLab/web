@@ -1,7 +1,17 @@
-name: ""
 eng_name: Liang Wentao
 occupation: Student
 grade: M1
 team: Architecture
 icon: ./icons/wentao.jpg
 username: wentao
+keywords:
+  - GPU
+  - FPGA
+  - oneAPI
+message: |
+  The supercomputing now is using different kind of accelerator very often,
+  the "traditional" way of using them is by OpenCL.
+  Intel now introduce a new unified programming platform — oneAPI,
+  the platform provided the runtime and library to program different accelerator,
+  including host code. That's a great contribition to heterogeneous computing,
+  and now I'm trying to use it to program both GPU and FPGA.

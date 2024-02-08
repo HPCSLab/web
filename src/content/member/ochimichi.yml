@@ -5,3 +5,4 @@ grade: M1
 team: Algorithm
 icon: ./icons/ochimichi.jpg
 username: ochimichi
+message: Intel Advanced Matrix Extensions（AMX）を用いた行列乗算

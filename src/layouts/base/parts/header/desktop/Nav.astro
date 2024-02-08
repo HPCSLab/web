@@ -2,7 +2,7 @@
 import type { IndexPage } from "../sitemap";
 import UnderlineLink from "@components/atom/link/UnderlineLink.astro";
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
-import Box from "@components/layout/box/Box.astro";
+import Box from "@components/layout/box/box.astro";
 
 interface Props {
   pages: IndexPage[];
@@ -66,6 +66,7 @@ const { pages } = Astro.props;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: max-content;
   }
 
   .nav-index-link-wrapper a {
