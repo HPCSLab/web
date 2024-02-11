@@ -1,39 +1,111 @@
 ---
 import { Icon } from "astro-icon/components";
-import { teamColor, teamToIcon } from "../../../team";
-import {TeamKind} from "@content";
-import type { log } from "node_modules/astro/dist/core/logger/core";
-import type { string } from "zod";
 import Typography from "@components/display/Typography.astro";
+import type { Team } from "@content";
+import { getEntry } from "astro:content";
 
 interface Props {
-  id: TeamKind;
-  description: string;
-  url: string;
+  team: Team;
+  href: string;
 }
 
-
-const icon = teamToIcon(Astro.props.id);
-const color = teamColor(Astro.props.id);
+const { team, href } = Astro.props;
 ---
 
 <div class="root">
   <div>
-    <Icon name={icon} class:list={[color, "team-icon"]}/>
+    <Icon name={team.icon} class:list={["team-icon"]} />
   </div>
   <h2>
-    <a href={Astro.props.url}>
-      {Astro.props.id}
+    <a href={href}>
+      {team.name}
     </a>
   </h2>
   <div class="desc">
     <Typography>
-      {Astro.props.description}
+      {team.description}
     </Typography>
+    <section class="in-card-section">
+      <h3>募集人数</h3>
+      {
+        team.bachelorInfo ? (
+          <div class="capacities">
+            {team.bachelorInfo.capacities.map((capacity) => (
+              <div class="capacity">
+                <div class="faculties">
+                  {capacity.faculties.map(async (facultyRef) => {
+                    const faculty = await getEntry(
+                      facultyRef.collection,
+                      facultyRef.id
+                    );
+                    return (
+                      <a
+                        href={`/members/${facultyRef.id}`}
+                        class="faculty-name"
+                      >
+                        {faculty.data.name
+                          ? faculty.data.name
+                          : faculty.data.eng_name}
+                      </a>
+                    );
+                  })}
+                </div>
+                <div class="capacity-n">
+                  {capacity.capacity}
+                  <span class="unit">人</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div>※学部での募集は行なっていません</div>
+        )
+      }
+    </section>
+    {
+      team.bachelorInfo ? (
+        <section class="in-card-section">
+          <h3>説明会</h3>
+          <div class="schedule-table">
+            {team.bachelorInfo.informationSessions.map((session) => (
+              <div class="session">
+                <div class="day">
+                  {session.day
+                    ? `${session.day.getMonth()}月${session.day.getDay()}日`
+                    : "随時"}
+                </div>
+                <div class="hour">
+                  <Icon name="material-symbols:av-timer-outline-rounded" />
+                  {session.hour ? (
+                    <span>
+                      <span class="begin">{session.hour.begin}</span>
+                      <span class="time-separator">--</span>
+                      <span class="end">{session.hour.end}</span>
+                    </span>
+                  ) : (
+                    "随時"
+                  )}
+                </div>
+                <div>
+                  <Icon name="material-symbols:pin-drop-outline-rounded" />
+                  {session.place.display}
+                </div>
+                {session.note ? (
+                  <div>
+                    <Icon name="material-symbols:chat-info-outline-rounded" />
+                    {session.note}
+                  </div>
+                ) : null}
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null
+    }
   </div>
 </div>
 
-<style>
+<style define:vars={{ teamColor: team.color }}>
   h2 {
     font-size: var(--font-size-lg);
     font-weight: bold;
@@ -42,11 +114,69 @@ const color = teamColor(Astro.props.id);
   h2 > a {
     text-decoration: underline;
     text-underline-offset: 3px;
-    text-decoration-thickness: 1.5px
+    text-decoration-thickness: 1.5px;
+  }
+
+  .in-card-section > h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .schedule-table {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .day {
+    font-weight: bold;
+  }
+
+  .session {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .day {
+  }
+
+  .time-separator {
+    color: var(--color-text-weak);
+  }
+
+  .capacities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, max-content));
+    gap: 5rem;
+  }
+
+  .capacity {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .unit {
+    color: var(--color-text-weak);
+  }
+
+  .faculties {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .faculty-name {
+    text-decoration: underline;
   }
 
   .desc {
     grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .root {
@@ -65,29 +195,6 @@ const color = teamColor(Astro.props.id);
     border-radius: 50%;
     padding: 0.2rem;
     color: white;
-  }
-
-  .team-color-1 {
-    background-color: hsl(0, 77%, 29%);
-  }
-
-  .team-color-2 {
-    background-color: hsl(60, 77%, 29%);
-  }
-
-  .team-color-3 {
-    background-color: hsl(120, 77%, 29%);
-  }
-
-  .team-color-4 {
-    background-color: hsl(180, 77%, 29%);
-  }
-
-  .team-color-5 {
-    background-color: hsl(240, 77%, 29%);
-  }
-
-  .team-color-6 {
-    background-color: hsl(300, 77%, 29%);
+    background-color: var(--teamColor);
   }
 </style>

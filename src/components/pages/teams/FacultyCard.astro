@@ -1,28 +1,25 @@
 ---
 import { Image } from "astro:assets";
 import Badge from "@components/display/Badge.astro";
-import type { TeamMember } from "@content";
 import { getEntry } from "astro:content";
+import { memberRoleName, type Member } from "@content";
 
 interface Props {
-  member: TeamMember;
+  member: Member;
 }
 
-const { member } = Astro.props;
-const {
-  data: { icon },
-} = await getEntry(member.profile.collection, member.profile.id);
----
+const {member} = Astro.props;
+--- 
 
 <section>
   <div class="top-wrapper">
     <div class="icon-wrapper">
-      <Image src={icon} alt={member.name} />
+      <Image src={member.icon} alt={member.name ? member.name : member.eng_name} />
     </div>
     <div class="top-text">
       <h3>
         <span class="name">{member.name}</span>
-        <span class="role">{member.role}</span>
+        <span class="role">{memberRoleName(member)}</span>
       </h3>
       {
         member.keywords ? (

@@ -1,16 +1,17 @@
 ---
 import { Image } from "astro:assets";
-import type { Member, TeamKind } from "@content";
+import type { Member } from "@content";
 import { translateFacultyGrade } from "@content";
 import { Icon } from "astro-icon/components";
-import { teamColor, teamToIcon } from "src/team";
+import { getEntry } from "astro:content";
+import FacultyCard from "../teams/FacultyCard.astro";
 
 interface Props {
   faculty: Member;
 }
+
 const props = Astro.props.faculty;
-
-
+const team = await getEntry("team", props.team.slug);
 ---
 
 <section>
@@ -61,39 +62,15 @@ const props = Astro.props.faculty;
     }
     <div class="sub-divider"></div>
     <div class="team">
-      <div class:list={["badge", teamColor(props.team)]}>
-        <Icon name={teamToIcon(props.team)} class="team-icon" />
-        {props.team}
+      <div class:list={["badge"]}>
+        <Icon name={team.data.icon} class="team-icon" />
+        {team.data.name}
       </div>
     </div>
   </div>
 </section>
 
-<style>
-  .team-color-1 {
-    background-color: hsl(0, 77%, 29%);
-  }
-
-  .team-color-2 {
-    background-color: hsl(60, 77%, 29%);
-  }
-
-  .team-color-3 {
-    background-color: hsl(120, 77%, 29%);
-  }
-
-  .team-color-4 {
-    background-color: hsl(180, 77%, 29%);
-  }
-
-  .team-color-5 {
-    background-color: hsl(240, 77%, 29%);
-  }
-
-  .team-color-6 {
-    background-color: hsl(300, 77%, 29%);
-  }
-
+<style define:vars={{ teamColor: team.data.color }}>
   .link-icons {
     display: flex;
     flex-direction: row;
@@ -188,6 +165,7 @@ const props = Astro.props.faculty;
     padding-right: 0.4rem;
     min-height: 1.2rem;
     border-radius: 0.6rem;
+    background-color: var(--teamColor);
   }
 
   .team-icon {

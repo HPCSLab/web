@@ -1,0 +1,36 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, getEntry } from "astro:content";
+import Base from "@layouts/base/index.astro";
+import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+
+export const getStaticPaths = (async () => {
+  return (await getCollection("team")).map((team) => ({
+    params: { slug: team.slug },
+  }));
+}) satisfies GetStaticPaths;
+
+const team = await getEntry("team", Astro.params.slug);
+
+const Rendered = await team.render();
+---
+
+<Base>
+  <BlurImageHeader imgSrc={team.data.cover.src} imgAlt={team.data.cover.alt}>
+    {team.data.name} team
+  </BlurImageHeader>
+  <ResponsiveWidth>
+    <div class="root">
+      <Rendered.Content />
+    </div>
+  </ResponsiveWidth>
+</Base>
+
+<style>
+  .root {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+</style>

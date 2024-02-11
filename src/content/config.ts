@@ -63,24 +63,15 @@ const publicationSchema = z.object({
 
 export type Publication = z.infer<typeof publicationSchema>;
 
-const teamKindSchema = z.union([
-  z.literal("Algorithm"),
-  z.literal("System Software"),
-  z.literal("Architecture"),
-  z.literal("Performance"),
-  z.literal("FPGA"),
-  z.literal("PA"),
-]);
-
-export type TeamKind = z.infer<typeof teamKindSchema>;
-
 const memberCommonSchema = (ctx: SchemaContext) =>
   z.object({
     name: z.string().nullish(),
     eng_name: z.string(),
     icon: ctx.image(),
-    team: teamKindSchema,
+    team: reference("team"),
     username: z.string(),
+    message: z.string().nullish(),
+    keywords: z.array(z.string()).nullish(),
   });
 
 export type MemberCommon = z.infer<ReturnType<typeof memberCommonSchema>>;
@@ -152,10 +143,23 @@ const memberSchema = (ctx: SchemaContext) =>
       researcherSchema,
       studentSchema,
       researchStudentSchema,
-    ]),
+    ])
   );
 
 export type Member = z.infer<ReturnType<typeof memberSchema>>;
+
+export function memberRoleName(member: Member): string {
+  switch (member.occupation) {
+    case "Faculty":
+      return translateFacultyGrade(member.grade);
+    case "Researcher":
+      return "研究者";
+    case "Research Student":
+      return "研究生";
+    case "Student":
+      return member.grade;
+  }
+}
 
 const facultyAlumnusSchema = z.object({
   name: z.string(),
@@ -189,70 +193,63 @@ export type CollectionDataEntry<T> = {
 };
 
 export function isFacultyAlumnus(
-  alumni: CollectionDataEntry<Alumnus>,
+  alumni: CollectionDataEntry<Alumnus>
 ): alumni is CollectionDataEntry<FacultyAlumnus> {
   return alumni.data.type === "faculty";
 }
 
 export function isNotFacultyAlumnus(
-  alumni: CollectionDataEntry<Alumnus>,
+  alumni: CollectionDataEntry<Alumnus>
 ): alumni is CollectionDataEntry<NotFacultyAlumnus> {
   return alumni.data.type !== "faculty";
 }
 
-const teamMemberSchema = z.object({
-  name: z.string(),
-  profile: reference("member"),
-  role: z.string(),
-  message: z.string(),
-  keywords: z.array(z.string()).nullish(),
-});
-
-export type TeamMember = z.infer<typeof teamMemberSchema>;
-
-const teamRecentWorkSchema = z.object({
-  title: z.string(),
-  authors: z.array(z.string()),
-  url: z.string().nullish(),
-  description: z.array(z.string()),
-});
-
-export type TeamRecentWork = z.infer<typeof teamRecentWorkSchema>;
-
 const bachelorCapacitySchema = z.object({
-    faculties: z.array(reference('member')),
-    capacity: z.number().int().positive()
-  });
+  faculties: z.array(reference("member")),
+  capacity: z.number().int().positive(),
+});
 
 const bachelorInformationSessionSchema = z.object({
-    begin: z.date(),
-    end: z.date(),
-    place: z.object({
-      display: z.string(),
-      canonical: z.string(),
-    }),
-    note: z.string().nullish()
-  });
+  day: z.date().nullish(),
+  hour: z
+    .object({
+      begin: z.string().regex(/\d{2}:\d{2}/),
+      end: z.string().regex(/\d{2}:\d{2}/),
+    })
+    .nullish(),
+  place: z.object({
+    display: z.string(),
+    canonical: z.string(),
+  }),
+  note: z.string().nullish(),
+});
 
 const bachelorInfoSchema = z.object({
   capacities: z.array(bachelorCapacitySchema),
-  description: z.string(),
   informationSessions: z.array(bachelorInformationSessionSchema),
 });
 
 export type BachelorCapacity = z.infer<typeof bachelorCapacitySchema>;
-export type BachelorInformationSession = z.infer<typeof bachelorInformationSessionSchema>;
+export type BachelorInformationSession = z.infer<
+  typeof bachelorInformationSessionSchema
+>;
 export type BachelorInfo = z.infer<typeof bachelorInfoSchema>;
 
 const teamSchema = (ctx: SchemaContext) =>
   z.object({
-    cover: ctx.image(),
+    description: z.string(),
+    cover: z.object({
+      src: ctx.image(),
+      alt: z.string(),
+    }),
+    name: z.string(),
     recentWorks: z.array(reference("publication")),
-    bachelorInfo: bachelorInfoSchema,
+    bachelorInfo: bachelorInfoSchema.nullish(),
+    icon: z.string(),
+    color: z.string(),
   });
 
 export type Team = z.infer<ReturnType<typeof teamSchema>>;
-
 
 export const collections = {
   news: defineCollection({
@@ -272,11 +269,7 @@ export const collections = {
     schema: alumnusSchema,
   }),
   team: defineCollection({
-    type: "data",
+    type: "content",
     schema: teamSchema,
   }),
-  bachelor: defineCollection({
-    type: "data",
-    schema: bachelorInfoSchema,
-  })
 };

@@ -7,48 +7,11 @@ import H1Section from "@components/composite/section/H1.astro";
 import Keyword from "@components/display/Keyword.astro";
 import Chevron from "@components/display/list/item/Chevron.astro";
 import List from "@components/display/list/list.astro";
-import type { TeamKind } from "@content";
 import TeamCard from "@components/pages/bachelor/TeamCard.astro";
 import Grid from "@components/layout/Grid.astro";
+import { getCollection } from "astro:content";
 
-const teams: { id: TeamKind; url: string; description: string }[] = [
-  {
-    id: "Architecture",
-    url: "/teams/arch",
-    description:
-      "ネットワークやアクセラレータ,特にFPGAやGPUなどの演算加速装置を用いた並列処理アーキテクチャとネットワークに関する研究を行っています",
-  },
-  {
-    id: "Algorithm",
-    url: "/teams/algo",
-    description:
-      "大規模数値計算,特に高性能数値計算ライブラリや大規模連立一次方程式の高速求解など科学技術計算に関する研究を行っています",
-  },
-  {
-    id: "FPGA",
-    url: "/teams/fpga",
-    description:
-      "FPGA,特に FPGA を用いた大規模数値計算やリアルタイム処理などを行っています",
-  },
-  {
-    id: "PA",
-    url: "/teams/pa",
-    description:
-      "プログラミング環境,特に大規模並列計算機に向けた並列プログラミング言語の開発を行っています",
-  },
-  {
-    id: "Performance",
-    url: "/teams/perf",
-    description:
-      "並列化や性能最適化など,高速に計算することを目的としたソフトウェア研究を行っています",
-  },
-  {
-    id: "System Software",
-    url: "/teams/ss",
-    description:
-      "システムソフトウェア,特に並列ファイルシステムや DBMS など,並列分散システムに関わる基盤ソフトウェアの研究を行っています",
-  },
-];
+const teams = await getCollection("team");
 ---
 
 <Base>
@@ -100,11 +63,7 @@ const teams: { id: TeamKind; url: string; description: string }[] = [
     <Grid minW="24rem">
       {
         teams.map((team) => (
-          <TeamCard
-            id={team.id}
-            description={team.description}
-            url={team.url}
-          />
+          <TeamCard team={team.data} href={`/teams/${team.id}`} />
         ))
       }
     </Grid>
@@ -124,7 +83,7 @@ const teams: { id: TeamKind; url: string; description: string }[] = [
         筑波大学 計算科学研究センター,NTT 研究所,ヤフー,富士通,楽天,Fixstars
       </div>
       <div class="year">2017</div>
-      <div> 日立研究所,ヤフー,ドワンゴ,サイプレスセミコンダクタ</div>
+      <div>日立研究所,ヤフー,ドワンゴ,サイプレスセミコンダクタ</div>
       <div class="year">2016以前</div>
       <div>
         筑波大学 計算科学研究センター,理化学研究所
@@ -136,14 +95,14 @@ const teams: { id: TeamKind; url: string; description: string }[] = [
     <div class="after-graduate">
       <div class="year">2019</div>
       <div>理化学研究所</div>
-      <div class="year"> 2018</div>
+      <div class="year">2018</div>
       <div>
         理化学研究所,NTT 研究所,サイボウズラボ,Treasure
         Data,PFN,メルカリ,LINE,Fixstars,ヤフー
       </div>
-      <div class="year"> 2017</div>
-      <div> ヤフー,Fixstars</div>
-      <div class="year"> 2016 以前</div>
+      <div class="year">2017</div>
+      <div>ヤフー,Fixstars</div>
+      <div class="year">2016 以前</div>
       <div>
         Argonne National
         Laboratory,日立製作所中央研究所,ノーチラステクノロジーズ,Fixstars
@@ -157,7 +116,7 @@ const teams: { id: TeamKind; url: string; description: string }[] = [
     margin-block-start: 1rem;
     margin-block-end: 2rem;
     display: grid;
-    grid-template-columns: max-content  1fr;
+    grid-template-columns: max-content 1fr;
     row-gap: 1.5rem;
     column-gap: 0.75rem;
   }
