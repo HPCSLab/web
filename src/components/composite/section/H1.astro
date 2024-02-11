@@ -1,23 +1,27 @@
 ---
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
-import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
-import Box from "@components/layout/box/box.astro";
 interface Props {
-  headingText: string;
-  headingUrl?: string;
   backgroundInverted?: boolean;
   fullW?: boolean;
 }
 
-const { headingText, headingUrl, backgroundInverted, fullW } = Astro.props;
+const { backgroundInverted, fullW } = Astro.props;
 ---
 
 <section class={backgroundInverted ? "bg-inverted" : null}>
-  <ResponsiveWidth>
-    <div class="content-root">
-      <slot />
-    </div>
-  </ResponsiveWidth>
+  {
+    fullW ? (
+      <div class:list={["content-root", "full-width"]}>
+        <slot />
+      </div>
+    ) : (
+      <ResponsiveWidth>
+        <div class="content-root">
+          <slot />
+        </div>
+      </ResponsiveWidth>
+    )
+  }
 </section>
 
 <style>

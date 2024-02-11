@@ -10,6 +10,7 @@ import SubClass from "@components/pages/publications/SubClass.astro";
 import { Icon } from "astro-icon/components";
 import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
 import { getCollection } from "astro:content";
+import H2 from "@components/composite/heading/h2.astro";
 
 const years = [
   ...new Set((await getCollection("publication")).map((pub) => pub.data.year)),
@@ -25,13 +26,11 @@ export const getStaticPaths = (async () => {
   }));
 }) satisfies GetStaticPaths;
 
-
 const year = parseInt(Astro.params.year, 10);
 
 const journal = await getCollection(
   "publication",
-  (pub) =>
-    pub.data.class.class === "journal" && pub.data.year == year
+  (pub) => pub.data.class.class === "journal" && pub.data.year == year
 );
 
 const international = {
@@ -134,7 +133,8 @@ const nextYear = years[years.indexOf(year) + 1];
       </div>
     </nav>
   </ResponsiveWidth>
-  <TopLevelSection backgroundInverted={false} headingText="論文誌">
+  <TopLevelSection backgroundInverted={false}>
+    <H2>論文誌</H2>
     <List ordered={false}>
       {
         journal.map((pub) => (
@@ -145,11 +145,13 @@ const nextYear = years[years.indexOf(year) + 1];
       }
     </List>
   </TopLevelSection>
-  <TopLevelSection backgroundInverted={false} headingText="国際会議">
+  <TopLevelSection backgroundInverted={false}>
+    <H2>国際会議</H2>
     <SubClass title="本会議" publications={international.conference} />
     <SubClass title="ポスター" publications={international.poster} />
   </TopLevelSection>
-  <TopLevelSection backgroundInverted={false} headingText="国内会議">
+  <TopLevelSection backgroundInverted={false}>
+    <H2>国内会議</H2>
     <SubClass title="国内会議" publications={domestic.conference} />
     <SubClass title="ポスター" publications={domestic.poster} />
     <SubClass title="研究会" publications={domestic.workshop} />

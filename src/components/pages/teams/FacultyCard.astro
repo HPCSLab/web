@@ -3,22 +3,26 @@ import { Image } from "astro:assets";
 import Badge from "@components/display/Badge.astro";
 import { getEntry } from "astro:content";
 import { memberRoleName, type Member } from "@content";
+import Typography from "@components/display/Typography.astro";
 
 interface Props {
   member: Member;
 }
 
-const {member} = Astro.props;
---- 
+const { member } = Astro.props;
+---
 
 <section>
   <div class="top-wrapper">
     <div class="icon-wrapper">
-      <Image src={member.icon} alt={member.name ? member.name : member.eng_name} />
+      <Image
+        src={member.icon}
+        alt={member.name ? member.name : member.eng_name}
+      />
     </div>
     <div class="top-text">
       <h3>
-        <span class="name">{member.name}</span>
+        <span class="name">{member.name ? member.name : member.eng_name}</span>
         <span class="role">{memberRoleName(member)}</span>
       </h3>
       {
@@ -36,7 +40,9 @@ const {member} = Astro.props;
   </div>
 
   <div class="description">
-    <slot />
+    <Typography>
+      {member.message}
+    </Typography>
   </div>
 
   <style>
@@ -47,7 +53,7 @@ const {member} = Astro.props;
     .keywords-container {
       display: flex;
       flex-direction: row;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       flex-wrap: wrap;
     }
 

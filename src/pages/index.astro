@@ -17,6 +17,7 @@ import ChevronListItem from "@components/display/list/item/Chevron.astro";
 import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
 import { getCollection } from "astro:content";
+import H2 from "@components/composite/heading/h2.astro";
 
 const carouselPictures: CarouselPicture[] = [
   {
@@ -33,14 +34,17 @@ const carouselPictures: CarouselPicture[] = [
   },
 ];
 
-const news = await getCollection("news");
+const news = (await getCollection("news")).sort(
+  (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date)
+);
 ---
 
 <Base>
   <Carousel pictures={carouselPictures} width={1200} height={300} />
 
   <NoImgHeader>HPCS Laboratory</NoImgHeader>
-  <TopLevelSection headingText="About">
+  <TopLevelSection>
+    <H2>About</H2>
     <Typography>
       筑波大学ハイパフォーマンス・コンピューティング・システム研究室では，超並列計算機からクラスタまで，高性能計算に関連した以下の研究を行っています．
     </Typography>
@@ -83,20 +87,19 @@ const news = await getCollection("news");
     </Typography>
   </TopLevelSection>
   <ResponsiveWidth>
-    <ReadMoreLink href="/bachelor"><h2>卒研配属情報はこちらから</h2></ReadMoreLink>
+    <H2>
+      <ReadMoreLink href="/bachelor">卒研配属情報はこちらから</ReadMoreLink>
+    </H2>
   </ResponsiveWidth>
-  <TopLevelSection
-    headingText="What's news"
-    headingUrl="/news/"
-    backgroundInverted={false}
-  >
+  <TopLevelSection backgroundInverted={false}>
+    <H2>What's news</H2>
     <List ordered={false}>
       {
         news.slice(0, 10).map((news) => (
           <ListItem class="news-headline">
             <div>
               <span class="news-date">{news.data.date}</span>
-              <ExternalLink href={`/news/${news.id}`}>
+              <ExternalLink href={`/news/${news.slug}`}>
                 {news.data.title}
               </ExternalLink>
             </div>

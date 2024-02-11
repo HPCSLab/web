@@ -4,11 +4,13 @@ import H1Section from "@components/composite/section/H1.astro";
 import ChevronListItem from "@components/display/list/item/Chevron.astro";
 import List from "@components/display/list/list.astro";
 import Base from "@layouts/base/index.astro";
+import H2 from "@components/composite/heading/h2.astro";
 ---
 
 <Base title="access">
   <NoImageHeader>Access</NoImageHeader>
-  <H1Section headingText="Address" backgroundInverted={false}>
+  <H1Section backgroundInverted={false}>
+    <H2>Address</H2>
     <address>
       <div class="address">
         <div>
@@ -29,7 +31,8 @@ import Base from "@layouts/base/index.astro";
       </List>
     </address>
   </H1Section>
-  <H1Section headingText="Phone" backgroundInverted={false}>
+  <H1Section backgroundInverted={false}>
+    <H2>Phone</H2>
     <section class="phone-numbers">
       <h3 class="phone-place">総合研究棟B 1122 (11F)</h3>
       <div class="phone-table">

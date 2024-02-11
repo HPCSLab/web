@@ -12,6 +12,7 @@ import {
   type CollectionDataEntry,
   type Alumnus,
 } from "@content";
+import H2 from "@components/composite/heading/h2.astro";
 const facultyAlumni = (await getCollection("alumni")).filter(isFacultyAlumnus);
 const alumni = (
   (await getCollection("alumni")) as CollectionDataEntry<Alumnus>[]
@@ -20,7 +21,8 @@ const alumni = (
 
 <Base>
   <NoImageHeader>Almuni</NoImageHeader>
-  <H1Section headingText="教員" backgroundInverted={false}>
+  <H1Section backgroundInverted={false}>
+    <H2>教員</H2>
     <List ordered={false}>
       {
         facultyAlumni.map((faculty) => (
@@ -29,28 +31,32 @@ const alumni = (
       }
     </List>
   </H1Section>
-  <H1Section headingText="スタッフ" backgroundInverted={false}>
+  <H1Section backgroundInverted={false}>
+    <H2>スタッフ</H2>
     <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "staff")
         .map((alumnus) => alumnus.data)}
     />
   </H1Section>
-  <H1Section headingText="博士" backgroundInverted={false}>
+  <H1Section backgroundInverted={false}>
+    <H2>博士</H2>
     <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "doctor")
         .map((alumnus) => alumnus.data)}
     />
   </H1Section>
-  <H1Section headingText="修士" backgroundInverted={false}>
+  <H1Section backgroundInverted={false}>
+    <H2>修士</H2>
     <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "master")
         .map((alumnus) => alumnus.data)}
     />
   </H1Section>
-  <H1Section headingText="学士" backgroundInverted={false}>
+  <H1Section backgroundInverted={false}>
+    <H2>学士</H2>
     <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "undergraduate")

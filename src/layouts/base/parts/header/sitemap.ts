@@ -2,7 +2,7 @@ import { getCollection } from "astro:content";
 
 const latestPubYear = [
   ...new Set(
-    (await getCollection("publication")).map((pub) => pub.data.year),
+    (await getCollection("publication")).map((pub) => pub.data.year)
   ).values(),
 ].reduce((a, b) => (a > b ? a : b), 0);
 
@@ -27,27 +27,13 @@ export type IndexPage = JustLinkIndex | AcordionIndex;
 
 export const pages: IndexPage[] = [
   {
-    title: "卒研配属",
-    hasChildren: true,
-    children: [
-      {
-        title: "概要",
-        url: "/bachelor"
-      },
-      {
-        title: "スケジュール",
-        url: "/bachelor/schedule"
-      },
-      {
-        title: "募集人数",
-        url: "/bachelor/capacity"
-      }
-    ]
-  },
-  {
     title: "Teams",
     hasChildren: true,
     children: [
+      {
+        title: "卒研配属",
+        url: "/bachelor",
+      },
       {
         title: "Algorithm",
         url: "/teams/algo",

@@ -16,110 +16,116 @@ const { team, href } = Astro.props;
   <div>
     <Icon name={team.icon} class:list={["team-icon"]} />
   </div>
-  <h2>
+  <h2 class="team-name">
     <a href={href}>
       {team.name}
     </a>
   </h2>
-  <div class="desc">
+  <section class="in-card-section">
     <Typography>
       {team.description}
     </Typography>
-    <section class="in-card-section">
-      <h3>募集人数</h3>
-      {
-        team.bachelorInfo ? (
-          <div class="capacities">
-            {team.bachelorInfo.capacities.map((capacity) => (
-              <div class="capacity">
-                <div class="faculties">
-                  {capacity.faculties.map(async (facultyRef) => {
-                    const faculty = await getEntry(
-                      facultyRef.collection,
-                      facultyRef.id
-                    );
-                    return (
-                      <a
-                        href={`/members/${facultyRef.id}`}
-                        class="faculty-name"
-                      >
-                        {faculty.data.name
-                          ? faculty.data.name
-                          : faculty.data.eng_name}
-                      </a>
-                    );
-                  })}
-                </div>
-                <div class="capacity-n">
-                  {capacity.capacity}
-                  <span class="unit">人</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div>※学部での募集は行なっていません</div>
-        )
-      }
-    </section>
+  </section>
+  <section class="in-card-section">
+    <h3>募集人数</h3>
     {
       team.bachelorInfo ? (
-        <section class="in-card-section">
-          <h3>説明会</h3>
-          <div class="schedule-table">
-            {team.bachelorInfo.informationSessions.map((session) => (
-              <div class="session">
-                <div class="day">
-                  {session.day
-                    ? `${session.day.getMonth()}月${session.day.getDay()}日`
-                    : "随時"}
-                </div>
-                <div class="hour">
-                  <Icon name="material-symbols:av-timer-outline-rounded" />
-                  {session.hour ? (
-                    <span>
-                      <span class="begin">{session.hour.begin}</span>
-                      <span class="time-separator">--</span>
-                      <span class="end">{session.hour.end}</span>
-                    </span>
-                  ) : (
-                    "随時"
-                  )}
-                </div>
-                <div>
-                  <Icon name="material-symbols:pin-drop-outline-rounded" />
-                  {session.place.display}
-                </div>
-                {session.note ? (
-                  <div>
-                    <Icon name="material-symbols:chat-info-outline-rounded" />
-                    {session.note}
-                  </div>
-                ) : null}
+        <div class="capacities">
+          {team.bachelorInfo.capacities.map((capacity) => (
+            <div class="capacity">
+              <div class="faculties">
+                {capacity.faculties.map(async (facultyRef) => {
+                  const faculty = await getEntry(
+                    facultyRef.collection,
+                    facultyRef.id
+                  );
+                  return (
+                    <a href={`/members/${facultyRef.id}`} class="faculty-name">
+                      {faculty.data.name
+                        ? faculty.data.name
+                        : faculty.data.eng_name}
+                    </a>
+                  );
+                })}
               </div>
-            ))}
-          </div>
-        </section>
-      ) : null
+              <div class="capacity-n">
+                {capacity.capacity}
+                <span class="unit">人</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div>※学部での募集は行なっていません</div>
+      )
     }
-  </div>
+  </section>
+  {
+    team.bachelorInfo ? (
+      <section class="in-card-section">
+        <h3>説明会</h3>
+        <div class="schedule-table">
+          {team.bachelorInfo.informationSessions.map((session) => (
+            <div class="session">
+              <div class="day">
+                {session.day
+                  ? `${session.day.getMonth()}月${session.day.getDay()}日`
+                  : "随時"}
+              </div>
+              <div class="hour">
+                <Icon name="material-symbols:av-timer-outline-rounded" />
+                {session.hour ? (
+                  <span>
+                    <span class="begin">{session.hour.begin}</span>
+                    <span class="time-separator">--</span>
+                    <span class="end">{session.hour.end}</span>
+                  </span>
+                ) : (
+                  "随時"
+                )}
+              </div>
+              <div>
+                <Icon name="material-symbols:pin-drop-outline-rounded" />
+                {session.place.display}
+              </div>
+              {session.note ? (
+                <div>
+                  <Icon name="material-symbols:chat-info-outline-rounded" />
+                  <span class="note">{session.note}</span>
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      </section>
+    ) : (
+      <section />
+    )
+  }
 </div>
 
 <style define:vars={{ teamColor: team.color }}>
-  h2 {
-    font-size: var(--font-size-lg);
+  .team-name {
+    font-size: var(--font-size-xl);
     font-weight: bold;
   }
 
-  h2 > a {
+  .team-name > a {
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 1.5px;
   }
 
+  .in-card-section {
+    grid-column: 2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .in-card-section > h3 {
     font-weight: bold;
     margin-bottom: 1rem;
+    font-size: var(--font-size-lg);
   }
 
   .schedule-table {
@@ -128,14 +134,21 @@ const { team, href } = Astro.props;
     gap: 1rem;
   }
 
+  .note {
+    color: var(--color-text-weak);
+  }
+
   .day {
     font-weight: bold;
+    margin-bottom: 0.3rem;
   }
 
   .session {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .day {
@@ -146,9 +159,11 @@ const { team, href } = Astro.props;
   }
 
   .capacities {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6rem, max-content));
-    gap: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
   }
 
   .capacity {
@@ -182,7 +197,8 @@ const { team, href } = Astro.props;
   .root {
     display: grid;
     grid-template-columns: 2rem 1fr;
-    grid-template-rows: 1.5rem 1fr;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
     gap: 0.5rem;
     background-color: var(--color-bg-white);
     padding: 1rem;

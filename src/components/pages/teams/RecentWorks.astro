@@ -1,6 +1,6 @@
 ---
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
-import {  getEntry } from "astro:content";
+import { getEntry } from "astro:content";
 
 export type Work = {
   title: string;
@@ -10,16 +10,17 @@ export type Work = {
 };
 
 interface Props {
-  works: {id: string}[];
+  works: { id: string }[];
 }
 
-const works = await Promise.all(Astro.props.works.map(async (work) => {
-  return await getEntry('publication', work.id)
-}))
-
+const works = await Promise.all(
+  Astro.props.works.map(async (work) => {
+    return await getEntry("publication", work.id);
+  })
+);
 
 function isNotNull<T>(x: T | null | undefined): x is T {
-  return x ? true : false
+  return x ? true : false;
 }
 ---
 
@@ -36,9 +37,7 @@ function isNotNull<T>(x: T | null | undefined): x is T {
               <li class="author">{author}</li>
             ))}
           </ul>
-          <div class="description-container">
-            {work.data.reference}
-          </div>
+          <div class="description-container">{work.data.reference}</div>
         </div>
       </li>
     ))
@@ -73,6 +72,7 @@ function isNotNull<T>(x: T | null | undefined): x is T {
   }
 
   .description-container {
+    margin-top: 0.5rem;
     color: var(--color-text-weak);
     font-size: var(--font-size-sm);
   }
