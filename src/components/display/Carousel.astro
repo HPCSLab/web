@@ -54,52 +54,63 @@ const {
       ))
     }
   </ul>
-
-  <style>
-    .root {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-
-    .root::-webkit-scrollbar {
-      display: none;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    li {
-      scroll-snap-align: center;
-      min-width: 100%;
-    }
-
-    figure {
-      position: relative;
-    }
-
-    figcaption {
-      position: absolute;
-      /* This is adhoc. CSS cannot applying alpha value to hexadecimal coded color */
-      background-color: rgba(40, 37, 45, 0.6);
-      bottom: 0;
-      width: 100%;
-      padding: 0.5em;
-      color: white;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
 </hpcs-carousel>
+
+<style>
+  .root {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .root::-webkit-scrollbar {
+    display: none;
+  }
+
+  img {
+    width: calc(max(895px, 100vw));
+    min-width: calc(max(895px, 100vw));
+    height: auto;
+  }
+
+  li {
+    scroll-snap-align: center;
+    min-width: 100vw;
+    max-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  figcaption {
+    position: absolute;
+    /* This is adhoc. CSS cannot applying alpha value to hexadecimal coded color */
+    background-color: rgba(40, 37, 45, 0.6);
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
 
 <script is:inline>
   class Carousel extends HTMLElement {
