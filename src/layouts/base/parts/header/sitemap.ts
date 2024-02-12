@@ -91,37 +91,37 @@ export const pages: IndexPage[] = [
       {
         title: "筑波大学",
         url: "https://www.tsukuba.ac.jp/",
-        icon: "material-symbols:link",
+        icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "システム情報工学研究群",
         url: "https://www.sie.tsukuba.ac.jp/",
-        icon: "material-symbols:link",
+        icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "情報理工学位プログラム",
         url: "https://www.cs.tsukuba.ac.jp/",
-        icon: "material-symbols:link",
+        icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "情報科学類",
         url: "https://www.coins.tsukuba.ac.jp/",
-        icon: "material-symbols:link",
+        icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "計算科学研究センター",
         url: "https://www.ccs.tsukuba.ac.jp/",
-        icon: "material-symbols:link",
+        icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "卒研配属情報",
         url: "http://localhost:5173/bachelor/#!index.md",
-        icon: "material-symbols:link",
+        icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "情報システム実験B",
         url: "https://www.hpcs.cs.tsukuba.ac.jp/experiment/text.html",
-        icon: "material-symbols:link",
+        icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "Internal",

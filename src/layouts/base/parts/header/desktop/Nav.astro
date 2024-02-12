@@ -3,6 +3,8 @@ import type { IndexPage } from "../sitemap";
 import UnderlineLink from "@components/atom/link/UnderlineLink.astro";
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
 import Box from "@components/layout/box/box.astro";
+import TextWithIcon from "@components/atom/TextWithIcon.astro";
+import { toAttributeString } from "astro/runtime/server/render/util.js";
 
 interface Props {
   pages: IndexPage[];
@@ -15,13 +17,27 @@ const { pages } = Astro.props;
   <ul class="nav-index-container">
     {
       pages.map((page) => (
-        <Box p="0.5rem" mode="h">
-          <li class="nav-index">
+        <li class="nav-index">
+          <Box p="0.5rem" mode="h">
             <div class="nav-index-link-wrapper">
               {page.hasChildren ? (
-                <span>{page.title}</span>
+                <TextWithIcon
+                  icon={page.icon}
+                  iconColor="primary"
+                  animateOnHover={true}
+                >
+                  {page.title}
+                </TextWithIcon>
               ) : (
-                <UnderlineLink href={page.url}>{page.title}</UnderlineLink>
+                <a href={page.url}>
+                  <TextWithIcon
+                    icon={page.icon}
+                    iconColor="primary"
+                    animateOnHover={true}
+                  >
+                    {page.title}
+                  </TextWithIcon>
+                </a>
               )}
             </div>
             {page.hasChildren ? (
@@ -36,17 +52,23 @@ const { pages } = Astro.props;
                   <ul class="link-list">
                     {page.children.map((subpage) => (
                       <li class="link">
-                        <ExternalLink href={subpage.url}>
-                          {subpage.title}
-                        </ExternalLink>
+                        <a href={subpage.url}>
+                          <TextWithIcon
+                            icon={subpage.icon}
+                            iconColor="primary"
+                            animateOnHover={true}
+                          >
+                            {subpage.title}
+                          </TextWithIcon>
+                        </a>
                       </li>
                     ))}
                   </ul>
                 </Box>
               </nav>
             ) : null}
-          </li>
-        </Box>
+          </Box>
+        </li>
       ))
     }
   </ul>
@@ -58,7 +80,8 @@ const { pages } = Astro.props;
     flex-direction: row;
     align-items: center;
     height: 100%;
-    padding: 0 1rem 0 1rem;
+    gap: 2rem;
+    padding-inline-end: 2rem;
   }
 
   .nav-index-link-wrapper {
@@ -112,6 +135,7 @@ const { pages } = Astro.props;
 
   .drawer {
     position: absolute;
+    padding-top: 0.5rem;
     width: var(--drawer-width);
     left: calc(50% - var(--drawer-width) / 2);
     visibility: hidden;
@@ -139,17 +163,12 @@ const { pages } = Astro.props;
     width: 100%;
   }
 
-  .nav-index-link-wrapper:hover a {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0.3em;
-  }
-
   .drawer:hover {
     visibility: visible;
     transform: scale(1);
   }
 
-  .nav-index:hover > .drawer {
+  .nav-index:hover .drawer {
     visibility: visible;
     transform: scale(1);
   }

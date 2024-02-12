@@ -12,11 +12,13 @@ import { pages } from "./sitemap";
     <nav class="logo">
       <a href="/"><Image src={logo} alt="HPCS Logo" /></a>
     </nav>
-    <div class="desktop-nav">
-      <NavDesktop pages={pages} />
-    </div>
-    <div class="mobile-nav">
-      <HamburgerButton id="drawer-toggle-button" />
+    <div class="nav-container">
+      <div class="desktop-nav">
+        <NavDesktop pages={pages} />
+      </div>
+      <div class="mobile-nav">
+        <HamburgerButton id="drawer-toggle-button" />
+      </div>
     </div>
   </header>
 
@@ -70,6 +72,14 @@ import { pages } from "./sitemap";
 </script>
 
 <style>
+  .nav-container {
+    container-type: inline-size;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
   :root {
     --drawer-width: 14em;
     --drawer-height: 16em;
@@ -147,7 +157,7 @@ import { pages } from "./sitemap";
     align-items: center;
   }
 
-  @media screen and (min-width: 768px) {
+  @container (min-width: 60rem) {
     .desktop-nav {
       display: unset;
     }

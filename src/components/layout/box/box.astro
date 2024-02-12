@@ -11,9 +11,9 @@ const padding = (() => {
     case "all":
       return p;
     case "h":
-      return `0 ${p} 0 ${p}`;
-    case "v":
       return `${p} 0 ${p} 0`;
+    case "v":
+      return `0 ${p} 0 ${p}`;
   }
 })();
 ---
