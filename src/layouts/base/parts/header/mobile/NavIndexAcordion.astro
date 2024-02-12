@@ -1,13 +1,10 @@
 ---
 import TextWithIcon from "@components/atom/TextWithIcon.astro";
-import type { SubPage } from "../sitemap";
+import type { AcordionIndex } from "../sitemap";
 import { Icon } from "astro-icon/components";
 
 interface Props {
-  index: {
-    title: string;
-    children: SubPage[];
-  };
+  index: AcordionIndex;
 }
 const { index } = Astro.props;
 ---
@@ -35,7 +32,7 @@ const { index } = Astro.props;
           <li class="link">
             <TextWithIcon
               iconColor="primary"
-              icon="material-symbols:link-off-rounded"
+              icon={subpage.icon}
               animateOnHover={true}
             >
               <a href={subpage.url} class="max-width">

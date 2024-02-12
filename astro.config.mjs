@@ -17,6 +17,7 @@ export default defineConfig({
         ph: "*",
         icons8: "*",
         ic: "*",
+        charm: "*",
       },
     }),
   ],
