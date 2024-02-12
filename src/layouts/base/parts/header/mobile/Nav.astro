@@ -10,19 +10,17 @@ interface Props {
 ---
 
 <nav id={Astro.props.id}>
-  <div>
-    {
-      Astro.props.sitemap.map((index) => (
-        <div>
-          {index.hasChildren ? (
-            <FullscreenNavIndexAcordion index={index} />
-          ) : (
-            <FullscreenNavIndexLink index={index} />
-          )}
-        </div>
-      ))
-    }
-  </div>
+  {
+    Astro.props.sitemap.map((index) => (
+      <div>
+        {index.hasChildren ? (
+          <FullscreenNavIndexAcordion index={index} />
+        ) : (
+          <FullscreenNavIndexLink index={index} />
+        )}
+      </div>
+    ))
+  }
 </nav>
 
 <style>
@@ -34,7 +32,6 @@ interface Props {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(4px);
     overflow-y: scroll;
-    display: flex;
   }
 
   .show {
