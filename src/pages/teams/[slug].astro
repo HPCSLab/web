@@ -10,6 +10,7 @@ import FacultyCard from "@components/pages/teams/FacultyCard.astro";
 import H2 from "@components/composite/heading/h2.astro";
 import VSpace from "@components/layout/VSpace.astro";
 import RecentWorks from "@components/pages/teams/RecentWorks.astro";
+import { viewRank } from "@content";
 
 export const getStaticPaths = (async () => {
   return (await getCollection("team")).map((team) => ({
@@ -50,11 +51,19 @@ const students = await getCollection(
   <H1Section backgroundInverted={true} fullW={true}>
     <H2>メンバー</H2>
     <Grid minW="30rem">
-      {faculties.map((faculty) => <FacultyCard member={faculty.data} />)}
+      {
+        faculties
+          .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+          .map((faculty) => <FacultyCard member={faculty.data} />)
+      }
     </Grid>
     <VSpace h="1rem" />
     <Grid minW="20rem">
-      {students.map((student) => <FacultyCard member={student.data} />)}
+      {
+        students
+          .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+          .map((student) => <FacultyCard member={student.data} />)
+      }
     </Grid>
   </H1Section>
 

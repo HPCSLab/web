@@ -3,6 +3,7 @@ import MemberCard from "@components/pages/members/MemberCard.astro";
 
 import Base from "@layouts/base/index.astro";
 import { getCollection } from "astro:content";
+import { viewRank } from "@content";
 
 const faculties = await getCollection(
   "member",
@@ -27,32 +28,40 @@ const students = await getCollection(
     <section>
       <h2>教員</h2>
       <div class="container">
-        {faculties.map((faculty) => <MemberCard faculty={faculty.data} />)}
+        {
+          faculties
+            .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+            .map((faculty) => <MemberCard faculty={faculty.data} />)
+        }
       </div>
     </section>
     <section>
       <h2>研究員</h2>
       <div class="container">
         {
-          researchers.map((researcher) => (
-            <MemberCard faculty={researcher.data} />
-          ))
+          researchers
+            .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+            .map((researcher) => <MemberCard faculty={researcher.data} />)
         }
       </div>
     </section>
     <section>
       <h2>学生</h2>
       <div class="container">
-        {students.map((researcher) => <MemberCard faculty={researcher.data} />)}
+        {
+          students
+            .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+            .map((researcher) => <MemberCard faculty={researcher.data} />)
+        }
       </div>
     </section>
     <section>
       <h2>研究生</h2>
       <div class="container">
         {
-          researchStudents.map((researcher) => (
-            <MemberCard faculty={researcher.data} />
-          ))
+          researchStudents
+            .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+            .map((researcher) => <MemberCard faculty={researcher.data} />)
         }
       </div>
     </section>

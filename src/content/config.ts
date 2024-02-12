@@ -161,6 +161,41 @@ export function memberRoleName(member: Member): string {
   }
 }
 
+export function viewRank(member: Member): number {
+  switch (member.occupation) {
+    case "Faculty":
+      switch (member.grade) {
+        case "Professor":
+          return 4 * 100 + 4;
+        case "Professor (Cooperative Graduate School Program)":
+          return 4 * 100 + 3;
+        case "Associate Professor":
+          return 4 * 100 + 2;
+        case "Assistant Professor":
+          return 4 * 100 + 1;
+      }
+    case "Researcher":
+      return 3 * 100;
+    case "Research Student":
+      return 2 * 100;
+    case "Student":
+      switch (member.grade) {
+        case "D3":
+          return 1 * 100 + 6;
+        case "D2":
+          return 1 * 100 + 5;
+        case "D1":
+          return 1 * 100 + 4;
+        case "M2":
+          return 1 * 100 + 3;
+        case "M1":
+          return 1 * 100 + 2;
+        case "B4":
+          return 1 * 100 + 1;
+      }
+  }
+}
+
 const facultyAlumnusSchema = z.object({
   name: z.string(),
   type: z.literal("faculty"),
