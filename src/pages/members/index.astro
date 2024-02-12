@@ -87,7 +87,10 @@ const students = await getCollection(
   .container {
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, max-content));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(min(100%, 18rem)), max-content)
+    );
     gap: 1.5rem;
   }
 </style>

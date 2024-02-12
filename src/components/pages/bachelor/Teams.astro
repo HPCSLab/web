@@ -9,7 +9,10 @@
 <style>
   .root {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, max-content));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc(min(100%, 20rem)), max-content)
+    );
     gap: 1rem;
   }
 </style>

@@ -14,6 +14,9 @@ const { minW } = Astro.props;
   div {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(var(--minW), 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc(min(100%, var(--minW))), max-content)
+    );
   }
 </style>

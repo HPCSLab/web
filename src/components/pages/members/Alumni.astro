@@ -19,7 +19,10 @@ const { alumni: alumnus } = Astro.props;
 <style>
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, max-content));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(min(100%, 12rem)), max-content)
+    );
     gap: 2rem;
     width: 100%;
   }
