@@ -69,7 +69,7 @@ const { team, href } = Astro.props;
             <div class="session">
               <div class="day">
                 {session.day
-                  ? `${session.day.getMonth()}月${session.day.getDay()}日`
+                  ? `${session.day.getMonth() + 1}月${session.day.getDate()}日`
                   : "随時"}
               </div>
               <div class="hour">

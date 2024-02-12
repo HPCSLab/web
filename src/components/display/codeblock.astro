@@ -9,7 +9,10 @@ interface Props {
 <code-block>
   <div class="root">
     <button class="copy-button">
-      <Icon name="material-symbols:content-copy-outline-rounded" />
+      <Icon
+        name="material-symbols:content-copy-outline-rounded"
+        class="copy-icon"
+      />
     </button>
     <div class:list={["button-msg", "copy-suggest"]}>copy?</div>
     <code>
@@ -56,6 +59,10 @@ interface Props {
     position: relative;
   }
 
+  .copy-icon {
+    color: var(--color-inverted-text-weak);
+  }
+
   .copy-button {
     height: 1rem;
     width: 1rem;
@@ -66,6 +73,10 @@ interface Props {
     top: 0.3rem;
     right: 0.3rem;
     color: var(--color-inverted-text-disable);
+  }
+
+  .copy-button:hover .copy-icon {
+    color: var(--color-inverted-text-normal);
   }
 
   .button-msg {
