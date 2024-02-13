@@ -1,11 +1,9 @@
 ---
-import type { GetStaticPaths } from "astro";
 import MemberCard from "@components/pages/members/MemberCard.astro";
 
 import Base from "@layouts/base/index.astro";
 import { getCollection } from "astro:content";
 import { viewRank } from "@content";
-import { Icon } from "astro-icon/components";
 
 const faculties = await getCollection(
   "member",
