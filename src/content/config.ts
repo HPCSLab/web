@@ -289,6 +289,13 @@ const teamSchema = (ctx: SchemaContext) => {
 
 export type Team = z.infer<ReturnType<typeof teamSchema>>;
 
+const carouselSchema =(ctx: SchemaContext) => z.object({
+  src: ctx.image(),
+  name: z.string()
+});
+
+export type CarouselPicture = z.infer<ReturnType<typeof carouselSchema>>;
+
 export const collections = {
   news: defineCollection({
     type: "content",
@@ -310,4 +317,8 @@ export const collections = {
     type: "content",
     schema: teamSchema,
   }),
+  carousel: defineCollection({
+    type: "data",
+    schema: carouselSchema,
+  })
 };

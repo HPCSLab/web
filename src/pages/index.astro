@@ -19,24 +19,13 @@ import ExternalLink from "@components/atom/link/ExternalLink.astro";
 import { getCollection } from "astro:content";
 import H2 from "@components/composite/heading/h2.astro";
 
-const carouselPictures: CarouselPicture[] = [
-  {
-    src: COMA,
-    alt: "COMA",
-  },
-  {
-    src: Cygnus,
-    alt: "Cygnus",
-  },
-  {
-    src: HA_PACS,
-    alt: "HA-PACS",
-  },
-];
-
 const news = (await getCollection("news")).sort(
   (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date)
 );
+
+const carouselPictures = (await getCollection("carousel"))
+  .sort(() => Math.random() - 0.5)
+  .map((pic) => pic.data);
 ---
 
 <Base>

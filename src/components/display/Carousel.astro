@@ -1,4 +1,5 @@
 ---
+import type { CarouselPicture } from "@content";
 import { Image } from "astro:assets";
 
 // 簡易的な実装。ネイティブの実装でありおそらくパフォーマンス上は有利だが、
@@ -11,11 +12,6 @@ import { Image } from "astro:assets";
 // これらの処理は複雑なDOM操作を必要とする上、パフォーマンス上の懸念があるのでここでは使わない。
 // ちなみにネイティブのスクロールをDOMの入れ替えでinfinite化するのは無理です。
 // Chrome早くsmooth scrollingを入れてくれ〜
-
-export type CarouselPicture = {
-  src: ImageMetadata;
-  alt: string;
-};
 
 interface Props {
   pictures: CarouselPicture[];
@@ -45,9 +41,9 @@ const {
       pictures.map((pic, index) => (
         <li data-picture-index={index}>
           <figure>
-            <Image src={pic.src} alt={pic.alt} width={width} height={height} />
+            <Image src={pic.src} alt={pic.name} width={width} height={height} />
             <figcaption>
-              <span>{pic.alt}</span>
+              <span>{pic.name}</span>
             </figcaption>
           </figure>
         </li>
