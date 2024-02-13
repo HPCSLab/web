@@ -11,9 +11,14 @@ const { backgroundInverted, fullW } = Astro.props;
 <section class={backgroundInverted ? "bg-inverted" : null}>
   {
     fullW ? (
-      <div class:list={["content-root", "full-width"]}>
-        <slot />
-      </div>
+      <>
+        <ResponsiveWidth>
+          <slot name="heading" />
+        </ResponsiveWidth>
+        <div class:list={["content-root", "full-width"]}>
+          <slot />
+        </div>
+      </>
     ) : (
       <ResponsiveWidth>
         <div class="content-root">

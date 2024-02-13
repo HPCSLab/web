@@ -11,8 +11,25 @@ import TeamCard from "@components/pages/bachelor/TeamCard.astro";
 import Teams from "@components/pages/bachelor/Teams.astro";
 import { getCollection } from "astro:content";
 import H2 from "@components/composite/heading/h2.astro";
+import Session from "@components/pages/bachelor/Session.astro";
+import type { InformationSession } from "@content";
 
 const teams = await getCollection("team");
+
+const generalSession: InformationSession = {
+  place: {
+    display: "総合研究棟B1001",
+    canonical: "筑波大学 総合研究棟B1001",
+  },
+  day: new Date("2023-10-6"),
+  hour: {
+    begin: "16:45",
+    end: "18:00",
+  },
+};
+
+const generalSessionFormLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLScoPSBe2PMLGNuUuVF980Yi6xQWacRS9oya9YENXPxeiwCiOg/viewform";
 ---
 
 <Base>
@@ -61,8 +78,21 @@ const teams = await getCollection("team");
       など他機構のスパコンも利用しながら研究を行っています．
     </Typography>
   </H1Section>
+  <H1Section>
+    <H2>全体説明会</H2>
+    <Session session={generalSession} direction="row" />
+    <Typography>
+      全体説明会は HPCS
+      研究室に所属する先生が原則全員参加し，各チームの研究内容について紹介する説明会です．
+      以下のボタンをクリックし，リンク先のGoogleフォームに必要な情報を入力・送信して下さい．
+      もちろん，飛び入り参加も大歓迎です．直接，開催場所にお越し下さい！
+    </Typography>
+    <a href={generalSessionFormLink} class="general-session-link">
+      全体説明会申し込みフォーム</a
+    >
+  </H1Section>
   <H1Section backgroundInverted={true} fullW={true}>
-    <H2>チーム一覧</H2>
+    <H2 backgroundInverted={true} slot="heading">チーム一覧</H2>
     <Teams>
       {
         teams.map((team) => (
@@ -73,9 +103,6 @@ const teams = await getCollection("team");
   </H1Section>
   <H1Section>
     <H2>就職先一覧</H2>
-    <Typography>
-      就職状況は極めて良好です．就職先は以下のような例があります．
-    </Typography>
     <div class="after-graduate">
       <div class="year">2019</div>
       <div>
@@ -95,7 +122,7 @@ const teams = await getCollection("team");
         dublin,ヤフー,CyberAgent,Fixstars,リクルート,日立製作所,NTTデータ,パナソニック,株式会社ユーザーローカル,三菱スペース・ソフトウエア株式会社
       </div>
     </div>
-    <Typography>インターンシップ先には以下のような例があります．</Typography>
+    <h3 class="normal-h3-heading">インターンシップ</h3>
     <div class="after-graduate">
       <div class="year">2019</div>
       <div>理化学研究所</div>
@@ -116,6 +143,26 @@ const teams = await getCollection("team");
 </Base>
 
 <style>
+  .normal-h3-heading {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+  }
+
+  .general-session-link {
+    background-color: var(--color-primary);
+    width: fit-content;
+    padding: 0.7rem;
+    font-weight: bolder;
+    color: var(--color-inverted-text-strong);
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.1s linear;
+  }
+
+  .general-session-link:hover {
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.6);
+  }
+
   .after-graduate {
     margin-block-start: 1rem;
     margin-block-end: 2rem;

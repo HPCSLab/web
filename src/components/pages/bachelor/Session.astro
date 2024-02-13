@@ -1,0 +1,79 @@
+---
+import type { InformationSession } from "@content";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  session: InformationSession;
+  direction?: "column" | "row";
+}
+
+const { session } = Astro.props;
+---
+
+<div class="session">
+  <div class="day">
+    {
+      session.day
+        ? `${session.day.getMonth() + 1}月${session.day.getDate()}日`
+        : "随時"
+    }
+  </div>
+  <div class="hour">
+    <Icon name="material-symbols:av-timer-outline-rounded" class="icon" />
+    {
+      session.hour ? (
+        <span>
+          <span>{session.hour.begin}</span>
+          <span class="time-separator">--</span>
+          <span>{session.hour.end}</span>
+        </span>
+      ) : (
+        "随時"
+      )
+    }
+  </div>
+  <div>
+    <Icon name="material-symbols:pin-drop-outline-rounded" class="icon" />
+    {session.place.display}
+  </div>
+  {
+    session.note ? (
+      <div>
+        <Icon name="material-symbols:chat-info-outline-rounded" class="icon" />
+        <span class="note">{session.note}</span>
+      </div>
+    ) : null
+  }
+</div>
+
+<style
+  define:vars={{
+    direction: Astro.props.direction === "row" ? "row" : "column",
+  }}
+>
+  .note {
+    color: var(--color-text-weak);
+  }
+
+  .icon {
+    color: var(--color-primary);
+  }
+
+  .day {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  .session {
+    display: flex;
+    flex-direction: var(--direction);
+    row-gap: 0.5rem;
+    column-gap: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .time-separator {
+    color: var(--color-text-weak);
+  }
+</style>

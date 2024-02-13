@@ -3,6 +3,7 @@ import { Icon } from "astro-icon/components";
 import Typography from "@components/display/Typography.astro";
 import type { Team } from "@content";
 import { getEntry } from "astro:content";
+import Session from "./Session.astro";
 
 interface Props {
   team: Team;
@@ -66,35 +67,7 @@ const { team, href } = Astro.props;
         <h3>説明会</h3>
         <div class="schedule-table">
           {team.bachelorInfo.informationSessions.map((session) => (
-            <div class="session">
-              <div class="day">
-                {session.day
-                  ? `${session.day.getMonth() + 1}月${session.day.getDate()}日`
-                  : "随時"}
-              </div>
-              <div class="hour">
-                <Icon name="material-symbols:av-timer-outline-rounded" />
-                {session.hour ? (
-                  <span>
-                    <span class="begin">{session.hour.begin}</span>
-                    <span class="time-separator">--</span>
-                    <span class="end">{session.hour.end}</span>
-                  </span>
-                ) : (
-                  "随時"
-                )}
-              </div>
-              <div>
-                <Icon name="material-symbols:pin-drop-outline-rounded" />
-                {session.place.display}
-              </div>
-              {session.note ? (
-                <div>
-                  <Icon name="material-symbols:chat-info-outline-rounded" />
-                  <span class="note">{session.note}</span>
-                </div>
-              ) : null}
-            </div>
+            <Session session={session} />
           ))}
         </div>
       </section>
@@ -132,30 +105,6 @@ const { team, href } = Astro.props;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }
-
-  .note {
-    color: var(--color-text-weak);
-  }
-
-  .day {
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-  }
-
-  .session {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .day {
-  }
-
-  .time-separator {
-    color: var(--color-text-weak);
   }
 
   .capacities {

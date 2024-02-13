@@ -259,6 +259,8 @@ const bachelorInformationSessionSchema = z.object({
   note: z.string().nullish(),
 });
 
+export type InformationSession = z.infer<typeof bachelorInformationSessionSchema>;
+
 const bachelorInfoSchema = z.object({
   capacities: z.array(bachelorCapacitySchema),
   informationSessions: z.array(bachelorInformationSessionSchema),
@@ -270,8 +272,8 @@ export type BachelorInformationSession = z.infer<
 >;
 export type BachelorInfo = z.infer<typeof bachelorInfoSchema>;
 
-const teamSchema = (ctx: SchemaContext) =>
-  z.object({
+const teamSchema = (ctx: SchemaContext) => {
+  return z.object({
     description: z.string(),
     cover: z.object({
       src: ctx.image(),
@@ -283,6 +285,7 @@ const teamSchema = (ctx: SchemaContext) =>
     icon: z.string(),
     color: z.string(),
   });
+}
 
 export type Team = z.infer<ReturnType<typeof teamSchema>>;
 
