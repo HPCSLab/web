@@ -2,7 +2,7 @@ import { getCollection } from "astro:content";
 
 const latestPubYear = [
   ...new Set(
-    (await getCollection("publication")).map((pub) => pub.data.year)
+    (await getCollection("publication")).map((pub) => pub.data.year),
   ).values(),
 ].reduce((a, b) => (a > b ? a : b), 0);
 

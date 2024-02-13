@@ -143,7 +143,7 @@ const memberSchema = (ctx: SchemaContext) =>
       researcherSchema,
       studentSchema,
       researchStudentSchema,
-    ])
+    ]),
   );
 
 export type Member = z.infer<ReturnType<typeof memberSchema>>;
@@ -228,13 +228,13 @@ export type CollectionDataEntry<T> = {
 };
 
 export function isFacultyAlumnus(
-  alumni: CollectionDataEntry<Alumnus>
+  alumni: CollectionDataEntry<Alumnus>,
 ): alumni is CollectionDataEntry<FacultyAlumnus> {
   return alumni.data.type === "faculty";
 }
 
 export function isNotFacultyAlumnus(
-  alumni: CollectionDataEntry<Alumnus>
+  alumni: CollectionDataEntry<Alumnus>,
 ): alumni is CollectionDataEntry<NotFacultyAlumnus> {
   return alumni.data.type !== "faculty";
 }
@@ -259,7 +259,9 @@ const bachelorInformationSessionSchema = z.object({
   note: z.string().nullish(),
 });
 
-export type InformationSession = z.infer<typeof bachelorInformationSessionSchema>;
+export type InformationSession = z.infer<
+  typeof bachelorInformationSessionSchema
+>;
 
 const bachelorInfoSchema = z.object({
   capacities: z.array(bachelorCapacitySchema),
@@ -285,14 +287,15 @@ const teamSchema = (ctx: SchemaContext) => {
     icon: z.string(),
     color: z.string(),
   });
-}
+};
 
 export type Team = z.infer<ReturnType<typeof teamSchema>>;
 
-const carouselSchema =(ctx: SchemaContext) => z.object({
-  src: ctx.image(),
-  name: z.string()
-});
+const carouselSchema = (ctx: SchemaContext) =>
+  z.object({
+    src: ctx.image(),
+    name: z.string(),
+  });
 
 export type CarouselPicture = z.infer<ReturnType<typeof carouselSchema>>;
 
@@ -320,5 +323,5 @@ export const collections = {
   carousel: defineCollection({
     type: "data",
     schema: carouselSchema,
-  })
+  }),
 };
