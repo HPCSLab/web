@@ -1,16 +1,14 @@
 ---
 import type { IndexPage } from "../sitemap";
-import UnderlineLink from "@components/atom/link/UnderlineLink.astro";
-import ExternalLink from "@components/atom/link/ExternalLink.astro";
 import Box from "@components/layout/box/box.astro";
 import TextWithIcon from "@components/atom/TextWithIcon.astro";
-import { toAttributeString } from "astro/runtime/server/render/util.js";
 
 interface Props {
   pages: IndexPage[];
 }
 
 const { pages } = Astro.props;
+const lastPage = pages[pages.length - 1];
 ---
 
 <nav class="nav-wrapper">
@@ -43,7 +41,7 @@ const { pages } = Astro.props;
             {page.hasChildren ? (
               <nav
                 class:list={
-                  page.title === pages[pages.length - 1].title
+                  lastPage && page.title === lastPage.title
                     ? ["drawer-last", "drawer"]
                     : ["drawer"]
                 }
