@@ -1,0 +1,75 @@
+services:
+  traefik:
+    image: traefik:v2.11
+    command: --configFile=/etc/traefik/traefik.yaml
+    volumes:
+      - type: bind
+        source: ./traefik
+        target: /etc/traefik
+      - type: bind
+        source: ./pki
+        target: /etc/pki/www
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+    ports:
+      - "80:80"
+      - "8080:8080"
+      - "443:443"
+  fallback-http:
+    build: ./fallback-http
+    volumes:
+      - type: bind
+        source: /Users
+        target: /home
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.fallback-http.entrypoints=http
+      - traefik.http.routers.fallback-http.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
+      - traefik.http.routers.fallback-http.priority=0
+  fallback-https:
+    build: ./fallback-https
+    volumes:
+      - type: bind
+        source: /Users
+        target: /home
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.fallback-https.entrypoints=https
+      - traefik.http.routers.fallback-https.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
+      - traefik.http.routers.fallback-https.priority=0
+  hpcs-web:
+    image: nginx:1.25.4
+    volumes:
+      - type: bind
+        source: ./hpcs-web/nginx.conf
+        target: /etc/nginx/nginx.conf
+      - type: bind
+        source: ../dist
+        target: /www
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.web.entrypoints=https
+      - traefik.http.routers.web.priority=100
+      - traefik.http.routers.web.tls=true
+      - >
+        traefik.http.routers.web.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`) && (
+        Path(`/`)
+        || Path(`/index.html`)
+        || Path(`/global.css`)
+        || Path(`/destyle.css`)
+        || Path(`/favicon.svg`)
+        || PathPrefix(`/_astro/`)
+        || PathPrefix(`/access/`)
+        || Path(`/access`)
+        || PathPrefix(`/bachelor/`)
+        || Path(`/bachelor`)
+        || PathPrefix(`/members/`)
+        || Path(`/members`)
+        || PathPrefix(`/news/`)
+        || Path(`/news`)
+        || PathPrefix(`/publications/`)
+        || Path(`/publications`)
+        || PathPrefix(`/teams/`)
+        || Path(`/teams`)
+        )

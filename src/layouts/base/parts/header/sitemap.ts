@@ -115,17 +115,17 @@ export const pages: IndexPage[] = [
       },
       {
         title: "卒研配属情報",
-        url: "http://localhost:5173/bachelor/#!index.md",
+        url: "/bachelor/#!index.md",
         icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "情報システム実験B",
-        url: "https://www.hpcs.cs.tsukuba.ac.jp/experiment/text.html",
+        url: "/experiment/text.html",
         icon: "material-symbols:arrow-outward-rounded",
       },
       {
         title: "Internal",
-        url: "http://localhost:5173/internal/pukiwiki/",
+        url: "/internal/pukiwiki/",
         icon: "material-symbols:login-rounded",
       },
     ],

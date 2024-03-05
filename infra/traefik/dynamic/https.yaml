@@ -1,0 +1,5 @@
+tls:
+  certificates:
+    - certFile: /etc/pki/www/nii-odca4g7rsa.cer
+    - certFile: /etc/pki/www/www.cer
+      keyFile: /etc/pki/www/www.nopass.key
