@@ -13,6 +13,7 @@ api:
 entryPoints:
   https:
     address: ":443"
+    http3: {}
     http:
       tls: true
   http:

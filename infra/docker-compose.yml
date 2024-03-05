@@ -15,7 +15,8 @@ services:
     ports:
       - "80:80"
       - "8080:8080"
-      - "443:443"
+      - "443:443/tcp"
+      - "443:443/udp"
   fallback-http:
     build: ./fallback-http
     volumes:
