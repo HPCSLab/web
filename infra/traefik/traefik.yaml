@@ -20,6 +20,13 @@ entryPoints:
     address: ":80"
     http:
       tls: false
+certificatesResolvers:
+  main:
+    acme:
+      email: hpcs-admin@hpcs.cs.tsukuba.ac.jp
+      storage: /etc/pki/www/acme.json
+      certificatesDuration: 2160
+      tlsChallenge: {}
 providers:
   file:
     directory: /etc/traefik/dynamic
