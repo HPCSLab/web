@@ -39,6 +39,7 @@ services:
       - traefik.http.routers.fallback-https.entrypoints=https
       - traefik.http.routers.fallback-https.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
       - traefik.http.routers.fallback-https.priority=0
+      - traefik.http.routers.web.tls.certresolver=main
   hpcs-web:
     image: nginx:1.25.4
     volumes:
@@ -52,7 +53,7 @@ services:
       - traefik.enable=true
       - traefik.http.routers.web.entrypoints=https
       - traefik.http.routers.web.priority=100
-      - traefik.http.routers.web.tls=true
+      - traefik.http.routers.web.tls.certresolver=main
       - >
         traefik.http.routers.web.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`) && (
         Path(`/`)
