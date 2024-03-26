@@ -1,0 +1,24 @@
+title: Fast Multiple-Precision Integer Division Using Intel AVX-512
+authors:
+  - 枝松 拓弥
+  - 高橋 大介
+url: https://doi.org/10.1109/TETC.2022.3196147
+bibtex: |-
+  @ARTICLE{9852983,
+  author={Edamatsu, Takuya and Takahashi, Daisuke},
+  journal={IEEE Transactions on Emerging Topics in Computing}, 
+  title={Fast Multiple-Precision Integer Division Using Intel AVX-512}, 
+  year={2023},
+  volume={11},
+  number={1},
+  pages={224-236},
+  keywords={Instruction sets;Arithmetic;Registers;Approximation algorithms;Costs;Computer architecture;Time measurement;AVX-512;divide-and-conquer;integer division;multi-precision arithmetic;SIMD},
+  doi={10.1109/TETC.2022.3196147}}
+reference: |
+  T. Edamatsu and D. Takahashi, "Fast Multiple-Precision Integer Division Using Intel AVX-512," in IEEE Transactions on Emerging Topics in Computing, vol. 11, no. 1, pp. 224-236, 1 Jan.-March 2023, doi: 10.1109/TETC.2022.3196147. keywords: {Instruction sets;Arithmetic;Registers;Approximation algorithms;Costs;Computer architecture;Time measurement;AVX-512;divide-and-conquer;integer division;multi-precision arithmetic;SIMD},
+year: 2023
+class:
+  class: international
+  subclass: conference
+description:
+  - IEEE Transactions on Emerging Topics in Computing, Vol. 11, No. 1, pp. 224-236 (2023)

@@ -1,0 +1,21 @@
+title: Flexible Fine Grain Threads Management By StackThreads/Mp Library for
+  OpenMP Task Implementation
+booktitle: "International Workshop on OpenMP Beyond Loop Level Parallelism in
+  OpenMP: Accelarators, Tasking and More (IWOMP2010, poster session)"
+year: 2010
+authors:
+  - Adnan and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2010-1876,
+    title = {Flexible Fine Grain Threads Management By StackThreads/Mp Library for OpenMP Task Implementation},
+    booktitle = {International Workshop on OpenMP Beyond Loop Level Parallelism in OpenMP: Accelarators, Tasking and More (IWOMP2010, poster session)},
+    year = {2010},
+  }
+slug: hpcs2010-1876
+reference: "Adnan and Mitsuhisa Sato: Flexible Fine Grain Threads Management By
+  StackThreads/Mp Library for OpenMP Task Implementation, International Workshop
+  on OpenMP Beyond Loop Level Parallelism in OpenMP: Accelarators, Tasking and
+  More (IWOMP2010, poster session), 2010"
+class:
+  class: international
+  subclass: conference

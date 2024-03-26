@@ -1,0 +1,30 @@
+title: Implementation and Performance Evaluation of Collective Communications Using CIRCUS on Multiple FPGAs
+authors:
+  - Kikuchi Kohei
+  - Fujita Norihisa
+  - Kobayashi Ryohei
+  - Boku Taisuke
+bibtex: |
+  @inproceedings{10.1145/3581576.3581602,
+  author = {Kikuchi, Kohei and Fujita, Norihisa and Kobayashi, Ryohei and Boku, Taisuke},
+  title = {Implementation and Performance Evaluation of Collective Communications Using CIRCUS on Multiple FPGAs},
+  year = {2023},
+  isbn = {9781450399890},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3581576.3581602},
+  doi = {10.1145/3581576.3581602},
+  abstract = {In the high-performance computing domain, Field Programmable Gate Array (FPGA) is a novel accelerator that exhibits high flexibility and performance characteristics distinct from other accelerators such as the Graphics Processing Unit (GPU). Recent advanced high-end FPGA is equipped with multiple channels of high speed optical link up to 100Gbps performance for each. This is a crucial feature when we construct PC clusters with FPGAs as accelerators, however it is not easy to utilize from user kernels because this feature is implemented in low level and simple direct communication between neighboring FPGAs. In order to provide the communication feature between FPGAs for accelerated PC clusters, we developed a communication system named CIRCUS which implies a user-friendly API from OpenCL and is equipped with routing function over multi-hop communication on multi-dimensional torus network of FPGAs. However, current CIRCUS only provides a point-to-point communication between source and destination FPGAs. In ordinary parallel processing environment such as MPI, the user program the message passing with various collective communication functions for parallel algorithm, for instance Allreduce, Allgather, etc. In this paper, we implement the collective communication function over CIRCUS for user-friendly programming of ordinary parallel algorithms on FPGAs. As the first target, we implement Allreduce function which is the most essential and important function. The paper describes the CIRCUS system briefly followed by the design, implementation and preliminary performance evaluation on Intel Stratix10 FPGAs.},
+  booktitle = {Proceedings of the HPC Asia 2023 Workshops},
+  pages = {15–23},
+  numpages = {9},
+  keywords = {Field-Programmable Gate Array (FPGA), High-Level Synthesis, High-Performance Computing (HPC), Inter-FPGA Communication, OpenCL},
+  location = {, Raffles Blvd, Singapore, },
+  series = {HPCAsia '23 Workshops}
+  }
+year: 2023
+reference: |
+  Kohei Kikuchi, Norihisa Fujita, Ryohei Kobayashi, and Taisuke Boku. 2023. Implementation and Performance Evaluation of Collective Communications Using CIRCUS on Multiple FPGAs. In Proceedings of the HPC Asia 2023 Workshops (HPCAsia '23 Workshops). Association for Computing Machinery, New York, NY, USA, 15–23. https://doi.org/10.1145/3581576.3581602
+class:
+  class: international
+  subclass: conference

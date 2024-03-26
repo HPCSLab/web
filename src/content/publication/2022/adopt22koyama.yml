@@ -1,0 +1,22 @@
+title: Scalable Data Parallel Distributed Training for Graph Neural Networks
+url: https://ieeexplore.ieee.org/document/9835176
+authors:
+  - Sohei Koyama
+  - Osamu Tatebe
+year: 2022
+bibtex: |
+  @INPROCEEDINGS{9835176,
+  author={Koyama, Sohei and Tatebe, Osamu},
+  booktitle={2022 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)}, 
+  title={Scalable Data Parallel Distributed Training for Graph Neural Networks}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={699-707},
+  keywords={Training;Proteins;Distributed processing;Scalability;Conferences;Memory management;Distributed databases;Graph Neural Networks;Distributed training;High Performance Computing;Deep Graph Library},
+  doi={10.1109/IPDPSW55747.2022.00121}}
+reference: |
+  S. Koyama and O. Tatebe, "Scalable Data Parallel Distributed Training for Graph Neural Networks," 2022 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), Lyon, France, 2022, pp. 699-707, doi: 10.1109/IPDPSW55747.2022.00121.
+class:
+  class: international
+  subclass: conference

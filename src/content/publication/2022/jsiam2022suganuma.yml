@@ -1,0 +1,23 @@
+title: 複数右辺連立一次方程式に対するブロック・グローバル混合型反復法の構築と性能評価
+authors:
+  - 菅沼 夏樹
+  - 多田野 寛人
+description:
+  - 日本応用数理学会2022年度年会
+
+year: 2022
+bibtex: |
+  @inproceedings{jsiam2022suganuma,
+    title = {複数右辺連立一次方程式に対するブロック・グローバル混合型反復法の構築と性能評価},
+    author = "{菅沼 夏樹} and {多田野 寛人}",
+    booktitle = {日本応用数理学会2022年度年会},
+    year = {2022},
+  }
+class:
+  class: domestic
+  subclass: conference
+reference: |
+  菅沼 夏樹, 多田野 寛人:
+  “複数右辺連立一次方程式に対するブロック・グローバル混合型反復法の構築と性能評価,”
+  日本応用数理学会2022年度年会,
+  2022.

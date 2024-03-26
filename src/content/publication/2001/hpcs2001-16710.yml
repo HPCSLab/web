@@ -1,0 +1,19 @@
+title: '"Compiler optimization techniques for OpenMP programs'
+booktitle: "Scientific Programming 9(2-3): 131-142 (2001)"
+year: 2001
+authors:
+  - Shigehisa Satoh
+  - Kazuhiro Kusano
+  - Mitsuhisa Sato
+bibtex: |-
+  @article{hpcs2001-16710,
+    title = {"Compiler optimization techniques for OpenMP programs},
+    booktitle = {Scientific Programming 9(2-3): 131-142 (2001)},
+    year = {2001},
+  }
+slug: hpcs2001-16710
+reference: "Shigehisa Satoh, Kazuhiro Kusano, Mitsuhisa Sato: “Compiler
+  optimization techniques for OpenMP programs”. Scientific Programming 9(2-3):
+  131-142 (2001)"
+class:
+  class: journal

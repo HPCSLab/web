@@ -1,0 +1,17 @@
+title: アクセスパターンと回線遅延を考慮した遠隔ファイルアクセスの最適化
+booktitle: 先進的計算基盤システムシンポジウム(SACSIS2011)論文集, 2011年5月
+year: 2011
+authors:
+  - 大辻弘貴
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2011-44133,
+    title = {アクセスパターンと回線遅延を考慮した遠隔ファイルアクセスの最適化},
+    booktitle = {先進的計算基盤システムシンポジウム(SACSIS2011)論文集, 2011年5月},
+    year = {2011},
+  }
+slug: hpcs2011-44133
+reference: 大辻弘貴，建部修見，”アクセスパターンと回線遅延を考慮した遠隔ファイルアクセスの最適化”，先進的計算基盤システムシンポジウム(SACSIS2011)論文集，2011年5月
+class:
+  class: domestic
+  subclass: conference

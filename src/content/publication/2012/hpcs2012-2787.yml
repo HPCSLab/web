@@ -1,0 +1,24 @@
+title: XcalableMP Ver
+booktitle: '1.0: Highly Productive Parallel Programming Language", International
+  Workshop on Peta-Scale Computing Programming Environment, Languages and Tools
+  (WPSE 2012), Japan, Feb'
+year: 2012
+authors:
+  - "Masahiro Nakao\x03"
+  - Jinpil Lee
+  - "Taisuke Boku\x03"
+  - and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2012-2787,
+    title = {XcalableMP Ver},
+    booktitle = {1.0: Highly Productive Parallel Programming Language", International Workshop on Peta-Scale Computing Programming Environment, Languages and Tools (WPSE 2012), Japan, Feb},
+    year = {2012},
+  }
+slug: hpcs2012-2787
+reference: "Masahiro Nakao\x03, Jinpil Lee, Taisuke Boku\x03, and Mitsuhisa
+  Sato, “XcalableMP Ver.1.0: Highly Productive Parallel Programming Language”,
+  International Workshop on Peta-Scale Computing Programming Environment,
+  Languages and Tools (WPSE 2012), Japan, Feb, 2012."
+class:
+  class: international
+  subclass: conference

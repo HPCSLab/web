@@ -1,0 +1,24 @@
+title: "DLM: A Distributed Large Memory System using Remote Memory Swapping over
+  Cluster Nodes"
+booktitle: Proc. 10th IEEE International Conference on Cluster Computing (CLUSTER 2008)
+year: 2008
+authors:
+  - Hiroko Midorikawa
+  - Motoyoshi Kurokawa
+  - Ryutaro Himeno
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2008-48264,
+    title = {DLM: A Distributed Large Memory System using Remote Memory Swapping over Cluster Nodes},
+    booktitle = {Proc. 10th IEEE International Conference on Cluster Computing (CLUSTER 2008)},
+    pages = {268-273},
+    year = {2008},
+  }
+slug: hpcs2008-48264
+reference: "Hiroko Midorikawa, Motoyoshi Kurokawa, Ryutaro Himeno, Mitsuhisa
+  Sato: DLM: A Distributed Large Memory System using Remote Memory Swapping over
+  Cluster Nodes, Proc. 10th IEEE International Conference on Cluster Computing
+  (CLUSTER 2008), pp.268-273"
+class:
+  class: international
+  subclass: conference

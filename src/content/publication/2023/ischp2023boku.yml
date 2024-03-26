@@ -1,0 +1,44 @@
+title: OpenACC Unified Programming Environment for Multi-hybrid Acceleration with GPU and FPGA
+year: 2023
+authors:
+  - Boku Taisuke
+  - Tsunashima Ryuta
+  - Kobayashi Ryohei
+  - Fujita Norihisa
+  - Lee Seyong
+  - Vetter Jeffrey S
+  - Murai Hitoshi
+  - Nakao Masahiro
+  - Tsuji Miwako
+  - Sato Mitsuhisa
+bibtex: |
+  @InProceedings{10.1007/978-3-031-40843-4_49,
+  author="Boku, Taisuke
+  and Tsunashima, Ryuta
+  and Kobayashi, Ryohei
+  and Fujita, Norihisa
+  and Lee, Seyong
+  and Vetter, Jeffrey S.
+  and Murai, Hitoshi
+  and Nakao, Masahiro
+  and Tsuji, Miwako
+  and Sato, Mitsuhisa",
+  editor="Bienz, Amanda
+  and Weiland, Mich{\`e}le
+  and Baboulin, Marc
+  and Kruse, Carola",
+  title="OpenACC Unified Programming Environment for Multi-hybrid Acceleration with GPU and FPGA",
+  booktitle="High Performance Computing",
+  year="2023",
+  publisher="Springer Nature Switzerland",
+  address="Cham",
+  pages="662--674",
+  abstract="Accelerated computing in HPC such as with GPU, plays a central role in HPC nowadays. However, in some complicated applications with partially different performance behavior is hard to solve with a single type of accelerator where GPU is not the perfect solution in these cases. We are developing a framework and transpiler allowing the users to program the codes with a single notation of OpenACC to be compiled for multi-hybrid accelerators, named MHOAT (Multi-Hybrid OpenACC Translator) for HPC applications. MHOAT parses the original code with directives to identify the target accelerating devices, currently supporting NVIDIA GPU and Intel FPGA, dispatching these specific partial codes to background compilers such as NVIDIA HPC SDK for GPU and OpenARC research compiler for FPGA, then assembles binaries for the final object with FPGA bitstream file. In this paper, we present the concept, design, implementation, and performance evaluation of a practical astrophysics simulation code where we successfully enhanced the performance up to 10 times faster than the GPU-only solution.",
+  isbn="978-3-031-40843-4"
+  }
+
+reference: |
+  Boku, T. et al. (2023). OpenACC Unified Programming Environment for Multi-hybrid Acceleration with GPU and FPGA. In: Bienz, A., Weiland, M., Baboulin, M., Kruse, C. (eds) High Performance Computing. ISC High Performance 2023. Lecture Notes in Computer Science, vol 13999. Springer, Cham. https://doi.org/10.1007/978-3-031-40843-4_49
+class:
+  class: "international"
+  subclass: "conference"

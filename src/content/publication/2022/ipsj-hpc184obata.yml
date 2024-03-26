@@ -1,0 +1,26 @@
+title: 不揮発性メモリを用いた分散オブジェクトストレージの設計
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=217758&item_no=1&page_id=13&block_id=8
+authors:
+  - 巨畠 和樹
+  - 建部 修見
+year: 2022
+bibtex: |
+  @techreport { IPSJ-HPC184:obata,
+    author      = "{巨畠 和樹} and {建部 修見}",
+    title       = "不揮発性メモリを用いた分散オブジェクトストレージの設計",
+    year        = "2022",
+    volume      = "2022-HPC-184",
+    month       = "5",
+    booktitle   = "情報処理学会 第184回 HPC 研究会報告 (HPC184)",
+    number      = "3"
+  }
+reference: |
+  巨畠 和樹, 建部 修見:
+  ”不揮発性メモリを用いた分散オブジェクトストレージの設計,”
+  情報処理学会第184回HPC研究報告会,
+  Vol. 2022-HPC-184,
+  No. 3,
+  May 2022.
+class:
+  class: domestic
+  subclass: workshop

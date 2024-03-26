@@ -1,0 +1,28 @@
+title: HPC環境を想定した探索的データ解析におけるノードローカルストレージの利用の検討
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=218957&item_no=1&page_id=13&block_id=8
+authors:
+  - 巨畠 和樹
+  - 小山 創平
+  - 平賀 弘平
+  - 建部 修見
+year: 2022
+bibtex: |
+  @techreport{weko_218957_1,
+    author	 = "巨畠,和樹 and 小山,創平 and 平賀,弘平 and 建部,修見",
+    title	 = "HPC環境を想定した探索的データ解析におけるノードローカルストレージの利用の検討",
+    year 	 = "2022",
+    institution	 = "筑波大学大学院理工情報生命学術院システム情報工学研究群情報理工学位プログラム, 筑波大学大学院理工情報生命学術院システム情報工学研究群情報理工学位プログラム, 筑波大学計算科学研究センター, 筑波大学計算科学研究センター",
+    number	 = "19",
+    month	 = "jul"
+    volume = "2022-HPC-185",
+  }
+reference: |
+  巨畠 和樹, 小山 創平, 平賀 弘平, 建部 修見:
+  ”HPC環境を想定した探索的データ解析におけるノードローカルストレージの利用の検討,”
+  情報処理学会第185回HPC研究報告会,
+  Vol. 2022-HPC-185,
+  No. 19,
+  Jul 2022.
+class:
+  class: domestic
+  subclass: workshop

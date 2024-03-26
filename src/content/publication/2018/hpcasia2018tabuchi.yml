@@ -1,0 +1,31 @@
+title: Performance evaluation for a hydrodynamics application in XcalableACC PGAS language for accelerated clusters
+authors:
+  - Tabuchi Akihiro
+  - Masahiro Nakao
+  - Hitoshi Murai
+  - Taisuke Boku
+  - Mitsuhisa Sato
+bibtex: |
+  @inproceedings{10.1145/3176364.3176365,
+  author = {Tabuchi, Akihiro and Nakao, Masahiro and Murai, Hitoshi and Boku, Taisuke and Sato, Mitsuhisa},
+  title = {Performance evaluation for a hydrodynamics application in XcalableACC PGAS language for accelerated clusters},
+  year = {2018},
+  isbn = {9781450363471},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3176364.3176365},
+  doi = {10.1145/3176364.3176365},
+  abstract = {Clusters equipped with accelerators such as GPUs and MICs are used widely. To use these clusters, programmers write programs for their applications by combining MPI with one of the accelerator programming models such as CUDA and OpenACC. The accelerator programming component is becoming easier because of a directive-based OpenACC, but complex distributed-memory programming using MPI means that programming is still difficult. In order to simplify the programming process, XcalableACC (XACC) has been proposed as an "orthogonal" integration of the PGAS language XcalableMP (XMP) and OpenACC. XACC provides the original XMP and OpenACC features, as well as their extensions for communication between accelerator memories. In this study, we implemented a hydrodynamics mini-application Clover-Leaf in XACC and evaluated the usability of XACC in terms of it performance and productivity. According to the performance evaluation, the XACC version achieved 87--95\% of the performance of the MPI+CUDA version and 93--101\% of the MPI+OpenACC version with strong scaling, and 88--91\% of the MPI+CUDA version and 94--97\% of the MPI+OpenACC version with weak scaling. In particular, the halo exchange time was better with XACC than MPI+OpenACC in some cases because the Omni XACC runtime is written in MPI and CUDA, and it is well tuned. The productivity evaluation showed that the application could be implemented after small changes compared with the serial version. These results demonstrate that XACC is a practical programming language for science applications.},
+  booktitle = {Proceedings of Workshops of HPC Asia},
+  pages = {1–10},
+  numpages = {10},
+  keywords = {GPU, PGAS, XcalableMP, accelerator, cluster, hydrodynamics, openACC},
+  location = {, Chiyoda, Tokyo, },
+  series = {HPCAsia '18 Workshops}
+  }
+year: 2018
+reference: |
+  Akihiro Tabuchi, Masahiro Nakao, Hitoshi Murai, Taisuke Boku, and Mitsuhisa Sato. 2018. Performance evaluation for a hydrodynamics application in XcalableACC PGAS language for accelerated clusters. In Proceedings of Workshops of HPC Asia (HPCAsia '18 Workshops). Association for Computing Machinery, New York, NY, USA, 1–10. https://doi.org/10.1145/3176364.3176365
+class:
+  class: international
+  subclass: conference

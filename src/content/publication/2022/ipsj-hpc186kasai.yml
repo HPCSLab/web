@@ -1,0 +1,24 @@
+title: 分散キャッシュファイルシステムの設計と実装
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220228&item_no=1&page_id=13&block_id=8
+authors:
+  - 笠井 大暉
+  - 建部 修見
+year: 2022
+bibtex: |
+  @techreport { IPSJ-HPC186:kasai,
+    author      = "{笠井 大暉} and {建部 修見}",
+    title       = "分散キャッシュファイルシステムの設計と実装",
+    year        = "2022",
+    volume      = "2022-HPC-186",
+    month       = "7",
+    booktitle   = "情報処理学会 第186回 HPC 研究会報告 (HPC186)"
+  }
+reference: |
+  笠井 大暉, 建部 修見:
+  ”分散キャッシュファイルシステムの設計と実装,”
+  情報処理学会第186回HPC研究報告会,
+  2022-HPC-186,
+  Jul 2022.
+class:
+  class: domestic
+  subclass: workshop

@@ -1,0 +1,28 @@
+---
+interface Props {
+  ordered: boolean;
+}
+
+const { ordered } = Astro.props;
+---
+
+{
+  ordered ? (
+    <ol>
+      <slot />
+    </ol>
+  ) : (
+    <ul>
+      <slot />
+    </ul>
+  )
+}
+
+<style>
+  ul {
+  }
+
+  ul > li {
+    background-color: red;
+  }
+</style>

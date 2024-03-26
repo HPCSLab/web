@@ -1,0 +1,26 @@
+title: 計算ノード上の不揮発性メモリを用いたMPI-IOバーストバッファの設計
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=217502&item_no=1&page_id=13&block_id=8
+authors:
+  - 平賀 弘平
+  - 建部 修見
+year: 2022
+bibtex: |
+  @techreport { IPSJ-HPC183:hiraga,
+    author      = "{平賀 弘平} and {建部 修見}",
+    title       = "計算ノード上の不揮発性メモリを用いたMPI-IOバーストバッファの設計",
+    year        = "2022",
+    volume      = "2022-HPC-183",
+    month       = "5",
+    booktitle   = "情報処理学会 第183回 HPC 研究会報告 (HPC183)",
+    number      = "24"
+  }
+reference: |
+  平賀 弘平, 建部 修見:
+  "計算ノード上の不揮発性メモリを用いたMPI-IOバーストバッファの設計,”
+  情報処理学会第183回HPC研究報告会,
+  Vol. 2022-HPC0183,
+  No. 24,
+  May 2022.
+class:
+  class: domestic
+  subclass: workshop

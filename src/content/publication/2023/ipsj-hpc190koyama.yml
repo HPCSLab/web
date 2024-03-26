@@ -1,0 +1,24 @@
+title: Apache Arrow CHFSによるビッグデータ処理のI/O高速化
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=227116&item_no=1&page_id=13&block_id=8
+authors:
+  - 小山 創平
+  - 平賀 弘平
+  - 建部 修見
+year: 2023
+bibtex: |
+  @techreport { IPSJ-HPC190:koyama,
+    author      = "{小山 創平} and {平賀 弘平} and {建部 修見}",
+    title       = "Apache Arrow CHFSによるビッグデータ処理のI/O高速化",
+    year        = "2023",
+    volume      = "2023-HPC-190",
+    number      = "5",
+    month       = "7",
+    booktitle   = "情報処理学会 第190回 HPC 研究会報告 (HPC190)"
+  }
+reference: |
+  小山 創平, 平賀 弘平, 建部 修見:
+  “Apache Arrow CHFSによるビッグデータ処理のI/O高速化,”
+  情報処理学会 第190回 HPC 研究会報告 (HPC190),
+class:
+  class: domestic
+  subclass: workshop

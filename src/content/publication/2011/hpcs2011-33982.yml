@@ -1,0 +1,16 @@
+title: 高生産・高性能プログラミングのための並列言語XcalableMP
+booktitle: オープンCAEシンポジウム2011（オーガナイズドセッション）, 2011年12月, 国立オリンピック記念青少年総合センター（東京）
+year: 2011
+authors:
+  - 中尾昌広.
+bibtex: >-
+  @inproceedings{hpcs2011-33982,
+    title = {高生産・高性能プログラミングのための並列言語XcalableMP},
+    booktitle = {オープンCAEシンポジウム2011（オーガナイズドセッション）, 2011年12月, 国立オリンピック記念青少年総合センター（東京）},
+    year = {2011},
+  }
+slug: hpcs2011-33982
+reference: 中尾昌広．”高生産・高性能プログラミングのための並列言語XcalableMP”，オープンCAEシンポジウム2011（オーガナイズドセッション），2011年12月，国立オリンピック記念青少年総合センター（東京）
+class:
+  class: domestic
+  subclass: conference

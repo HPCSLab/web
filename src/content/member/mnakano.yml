@@ -1,0 +1,11 @@
+name: 中野 将生
+eng_name: Masaki Nakano
+occupation: Student
+grade: B4
+team: ss
+icon: ./icons/mnakano.jpg
+username: mnakano
+keywords:
+  - 非同期ランタイム
+message: |
+  HPCに限らず色々な分散システムの話をしましょう

@@ -1,0 +1,35 @@
+---
+import type { Publication } from "@content";
+import ListItem from "@components/display/list/item/Naked.astro";
+import List from "@components/display/list/list.astro";
+import PublicationHeading from "./PublicationHeading.astro";
+
+interface Props {
+  title: string;
+  publications: { data: Publication; id: string }[];
+}
+
+const { title, publications } = Astro.props;
+---
+
+{
+  publications.length > 0 ? (
+    <section>
+      <h2>{title}</h2>
+      <List ordered={false}>
+        {publications.map((pub) => (
+          <ListItem>
+            <PublicationHeading pub={pub} />
+          </ListItem>
+        ))}
+      </List>
+    </section>
+  ) : null
+}
+
+<style>
+  h2 {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+  }
+</style>

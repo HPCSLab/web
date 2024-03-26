@@ -1,0 +1,20 @@
+title: 漸化式の可変的グループ化によるBlock GWBiCGSTAB法の性能改善
+authors:
+  - 齋藤 颯人
+  - 多田野 寛人
+year: 2022
+bibtex: |
+  @inproceedings{jsiam-nonlin2022isaito,
+    title = {漸化式の可変的グループ化によるBlock GWBiCGSTAB法の性能改善},
+    author = "{齋藤 颯人} and {多田野 寛人}",
+    booktitle = {【非線形問題の高性能解法と可視化技術に関する研究会】2022年度第1回研究会},
+    year = {2022},
+  }
+reference: |
+  齋藤 颯人, 多田野 寛人:
+  “漸化式の可変的グループ化によるBlock GWBiCGSTAB法の性能改善,”
+  【非線形問題の高性能解法と可視化技術に関する研究会】2022年度第1回研究会,
+  2022.
+class:
+  class: domestic
+  subclass: conference

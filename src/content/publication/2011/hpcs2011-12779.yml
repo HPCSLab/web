@@ -1,0 +1,23 @@
+title: スクリプト言語 Xcrypt による格子 QCD シミュレーションの最適化
+booktitle: 情報処理学会研究報告, 2011-HPC-130(58)
+year: 2011
+authors:
+  - 斎藤 華
+  - 朴 泰祐
+  - 金谷 和至
+  - 塙 敏博
+  - 佐藤 三久
+bibtex: |-
+  @inproceedings{hpcs2011-12779,
+    title = {スクリプト言語 Xcrypt による格子 QCD シミュレーションの最適化},
+    booktitle = {情報処理学会研究報告, 2011-HPC-130(58)},
+    pages = {1-6},
+    year = {2011},
+  }
+slug: hpcs2011-12779
+reference:
+  斎藤 華, 朴 泰祐, 金谷 和至, 塙 敏博, 佐藤 三久，「スクリプト言語 Xcrypt による格子 QCD
+  シミュレーションの最適化」，情報処理学会研究報告，2011-HPC-130(58), pp. 1-6, 2011年7月．
+class:
+  class: domestic
+  subclass: workshop

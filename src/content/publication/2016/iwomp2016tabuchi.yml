@@ -1,0 +1,31 @@
+title: Design and Preliminary Evaluation of Omni OpenACC Compiler for Massive
+  MIMD Processor PEZY-SC
+booktitle: "OpenMP: Memory, Devices, and Tasks: 12th International Workshop on
+  OpenMP, IWOMP 2016"
+year: 2016
+authors:
+  - Akihiro Tabuchi
+  - Yasuyuki Kimura
+  - Sunao Torii
+  - Hideo Matsufuru
+  - Tadashi Ishikawa
+  - Taisuke Boku
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings { IWOMP2016:tabuchi,
+    author    = "{Akihiro Tabuchi} and {Yasuyuki Kimura} and {Sunao Torii} and {Hideo Matsufuru} and {Tadashi Ishikawa} and {Taisuke Boku} and {Mitsuhisa Sato}",
+    title     = "{Design and Preliminary Evaluation of Omni OpenACC Compiler for Massive MIMD  Processor PEZY-SC}",
+    booktitle = "{OpenMP: Memory, Devices, and Tasks: 12th International Workshop on OpenMP, IWOMP 2016}",
+    month     = "10",
+    year      = "2016",
+    pages     = "293--305"
+  }
+slug: iwomp2016tabuchi
+reference: "Akihiro Tabuchi, Yasuyuki Kimura, Sunao Torii, Hideo Matsufuru,
+  Tadashi Ishikawa, Taisuke Boku, Mitsuhisa Sato: “Design and Preliminary
+  Evaluation of Omni OpenACC Compiler for Massive MIMD Processor PEZY-SC”,
+  OpenMP: Memory, Devices, and Tasks: 12th International Workshop on OpenMP,
+  IWOMP 2016, pp. 293-305, Oct. 2016."
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,26 @@
+title: Implementation of CG Method on GPU Cluster with Proprietary Interconnect
+  TCA for GPU Direct Communication
+booktitle: Proc. of AsHES2015 in IEEE IPDPS2015
+year: 2015
+authors:
+  - Kazuya Matsumoto
+  - Toshihiro Hanawa
+  - Yuetsu Kodama
+  - Hisafumi Fujii
+  - Taisuke Boku
+bibtex: >-
+  @inproceedings { AsHES:matsumoto,
+    author    = "{Kazuya Matsumoto} and {Toshihiro Hanawa} and {Yuetsu Kodama} and {Hisafumi Fujii} and {Taisuke Boku}",
+    title     = "{Implementation of CG Method on GPU Cluster with Proprietary Interconnect TCA for GPU Direct Communication}",
+    booktitle = "Proc. of AsHES2015 in IEEE IPDPS2015",
+    month	    = "5",
+    year 	    = "2015"
+  }
+slug: ashesmatsumoto
+reference: "Kazuya Matsumoto, Toshihiro Hanawa, Yuetsu Kodama, Hisafumi Fujii,
+  Taisuke Boku: “Implementation of CG Method on GPU Cluster with Proprietary
+  Interconnect TCA for GPU Direct Communication”, Proc. of AsHES2015 in IEEE
+  IPDPS2015, May. 2015."
+class:
+  class: international
+  subclass: conference

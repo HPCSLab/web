@@ -1,0 +1,11 @@
+name: 勢見 達将
+eng_name: Tatsumasa Seimi
+occupation: Student
+grade: M2
+team: perf
+icon: ./icons/seimi.jpg
+username: seimi
+keywords:
+  - OpenSWPCのDO CONCURRENTによるGPUコード移植
+message: |
+  GPGPUによるソフトウェアの高速化をやっています．

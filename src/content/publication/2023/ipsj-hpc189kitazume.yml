@@ -1,0 +1,24 @@
+title: HPC利用に向けたFPGA間シリアル通信コントローラKyokkoのIntel FPGAへの実装
+authors:
+  - 北爪 開人
+  - 藤田 典久
+  - 小林 諒平
+  - 朴 泰祐
+year: 2023
+bibtex: |
+  @techreport { IPSJ-HPC189:kitazume,
+    author      = "{北爪 開人} and {藤田 典久} and {小林 諒平} and {朴 泰祐}",
+    title       = "HPC利用に向けたFPGA間シリアル通信コントローラKyokkoのIntel FPGAへの実装",
+    year        = "2023",
+    volume      = "2023-HPC-189",
+    number      = "4",
+    month       = "5",
+    booktitle   = "情報処理学会 第189回 HPC 研究会報告 (HPC189)"
+  }
+reference: |
+  北爪 開人, 藤田 典久, 小林 諒平, 朴 泰祐:
+  “HPC利用に向けたFPGA間シリアル通信コントローラKyokkoのIntel FPGAへの実装,” 
+  情報処理学会 第189回HPC研究発表会, Vol. 2023-HPC-189, No. 4, May 2023.
+class:
+  class: domestic
+  subclass: workshop

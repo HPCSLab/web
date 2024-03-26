@@ -1,0 +1,81 @@
+---
+import ExternalLink from "@components/atom/link/ExternalLink.astro";
+import { getEntry } from "astro:content";
+
+export type Work = {
+  title: string;
+  authors: string[];
+  url?: string | null;
+  description: string[];
+};
+
+interface Props {
+  works: { id: string }[];
+}
+
+const works = await Promise.all(
+  Astro.props.works.map(async (work) => {
+    return await getEntry("publication", work.id);
+  })
+);
+
+function isNotNull<T>(x: T | null | undefined): x is T {
+  return x ? true : false;
+}
+---
+
+<ul class="recent-works">
+  {
+    works.filter(isNotNull).map((work) => (
+      <li class="work">
+        <div class="work-title">
+          <ExternalLink href={work.data.url}>{work.data.title}</ExternalLink>
+        </div>
+        <div class="work-detail">
+          <ul class="authors-container">
+            {work.data.authors.map((author) => (
+              <li class="author">{author}</li>
+            ))}
+          </ul>
+          <div class="description-container">{work.data.reference}</div>
+        </div>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .work {
+    margin-bottom: 2rem;
+  }
+
+  .work-title {
+    font-size: var(--font-size-lg);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-detail {
+    margin-left: 2rem;
+  }
+
+  .authors-container {
+    display: inline;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+  }
+
+  .author {
+    color: var(--color-text-weak);
+    margin-right: 0.5em;
+    display: inline;
+  }
+
+  .description-container {
+    margin-top: 0.5rem;
+    color: var(--color-text-weak);
+    font-size: var(--font-size-sm);
+    max-width: 100%;
+    word-break: break-all;
+  }
+</style>

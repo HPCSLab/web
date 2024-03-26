@@ -1,0 +1,14 @@
+---
+interface Props {
+  h: string;
+}
+---
+
+<div></div>
+
+<style define:vars={{ h: Astro.props.h }}>
+  div {
+    width: 100%;
+    height: var(--h);
+  }
+</style>

@@ -1,0 +1,28 @@
+title: Accelerating Large Integer Multiplication Using Intel AVX-512IFMA
+authors:
+  - 枝松 拓弥
+  - 高橋 大介
+url: https://doi.org/10.1007/978-3-030-38991-8_5
+bibtex: |
+  @inproceedings{10.1007/978-3-030-38991-8_5,
+  author = {Edamatsu, Takuya and Takahashi, Daisuke},
+  title = {Accelerating Large Integer Multiplication Using Intel AVX-512IFMA},
+  year = {2019},
+  isbn = {978-3-030-38990-1},
+  publisher = {Springer-Verlag},
+  address = {Berlin, Heidelberg},
+  url = {https://doi.org/10.1007/978-3-030-38991-8_5},
+  doi = {10.1007/978-3-030-38991-8_5},
+  abstract = {In this study, we implemented large integer multiplication with Single Instruction Multiple Data (SIMD) instructions. We evaluated the implementation on a processor with Cannon Lake microarchitecture, containing Intel AVX-512IFMA (Integer Fused Multiply-Add) instructions. AVX-512IFMA can compute multiple 52-bit integer multiplication and addition operations through one instruction and it has the potential to process large integer multiplications faster than its conventional AVX-512 counterpart. Furthermore, the AVX-512IFMA instructions take three 52-bit integers of 64-bit spaces as operands, and we can use the remaining 12 bits effectively to accumulate carries (reduced-radix representation). For multiplication in the context of larger integers, we applied the Karatsuba and Basecase methods to our program. The former is known to be a faster algorithm than the latter. For evaluation purposes, we compared execution times against extant alternatives and the GNU Multiple Precision Arithmetic Library (GMP). This comparison showed that we were able to achieve a substantive improvement in performance. Specifically, our proposed approach was up to approximately 3.07 times faster than AVX-512F (Foundation) and approximately 2.97 times faster than GMP.},
+  booktitle = {Algorithms and Architectures for Parallel Processing: 19th International Conference, ICA3PP 2019, Melbourne, VIC, Australia, December 9–11, 2019, Proceedings, Part I},
+  pages = {60–74},
+  numpages = {15},
+  keywords = {AVX-512, IFMA, Large integer multiplication, Reduced-radix representation, Karatsuba method},
+  location = {Melbourne, VIC, Australia}
+  }
+reference: |
+  Takuya Edamatsu and Daisuke Takahashi. 2019. Accelerating Large Integer Multiplication Using Intel AVX-512IFMA. In Algorithms and Architectures for Parallel Processing: 19th International Conference, ICA3PP 2019, Melbourne, VIC, Australia, December 9–11, 2019, Proceedings, Part I. Springer-Verlag, Berlin, Heidelberg, 60–74. https://doi.org/10.1007/978-3-030-38991-8_5
+year: 2019
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,24 @@
+title: '"グリッドRPCシステムOmniRPCにおける初期データの分散管理による効率化'
+booktitle: 情報処理学会研究報告, 2005HPC104
+year: 2005
+authors:
+  - 相田祥昭
+  - 中島佳宏
+  - 佐藤三久
+  - 櫻井鉄也
+  - 高橋大介
+  - 朴泰祐
+bibtex: |-
+  @inproceedings{hpcs2005-10618,
+    title = {"グリッドRPCシステムOmniRPCにおける初期データの分散管理による効率化},
+    booktitle = {情報処理学会研究報告, 2005HPC104},
+    pages = {712},
+    year = {2005},
+  }
+slug: hpcs2005-10618
+reference:
+  相田祥昭，中島佳宏，佐藤三久，櫻井鉄也，高橋大介，朴泰祐：”グリッドRPCシステムOmniRPCにおける初期データの分散管理による効率化”，
+  情報処理学会研究報告，2005HPC104，pp. 712, (2005).
+class:
+  class: domestic
+  subclass: workshop

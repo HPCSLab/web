@@ -1,0 +1,14 @@
+name: 山口 佳樹
+eng_name: Yoshiki YAMAGUCHI
+occupation: Faculty
+grade: Associate Professor
+team: fpga
+icon: ./icons/yoshiki.jpg
+username: yoshiki
+keywords:
+  - FPGA
+  - DAPDNA
+  - DRP
+message: |
+  FPGAアーキテクチャから，FPGAを用いたアプリケーションに関する研究までを縦断的に扱っています．
+  既に始まっている半導体を中心とした情報システムの再編のキーワードはチップレットとFPGA．興味を持ったら，研究室紹介で聞いてみましょう．

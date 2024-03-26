@@ -1,0 +1,28 @@
+---
+interface Props {
+  backgroundInverted?: boolean;
+}
+
+const { backgroundInverted } = Astro.props;
+---
+
+<h2 class={backgroundInverted ? "inverted" : "normal"}>
+  <slot />
+</h2>
+
+<style>
+  .inverted {
+    color: var(--color-inverted-text-strong);
+  }
+
+  .normal {
+    color: var(--color-text-strong);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+  }
+</style>

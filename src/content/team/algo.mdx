@@ -1,0 +1,130 @@
+---
+cover:
+  src: ./cover/ateam-bookshelf.jpg
+  alt: Algorithmチームの本棚
+name: Algorithm
+icon: "fluent:flowchart-32-regular"
+color: hsl(0, 77%, 29%)
+description: |
+  大規模数値計算，特に高性能数値計算ライブラリや大規模連立一次方程式の高速求解など科学技術計算に関する研究を行っています
+bachelorInfo:
+  capacities:
+    - faculties:
+        - daisuke
+      capacity: 2
+    - faculties:
+        - tadano
+      capacity: 2
+  informationSessions:
+    - day: 2023-10-02
+      hour:
+        begin: "18:00"
+        end: "19:00"
+      place:
+        display: 総合研究棟B 1122
+        canonical: 筑波大学 総合研究棟B 1122
+    - day: 2023-10-17
+      hour:
+        begin: "18:15"
+        end: "19:00"
+      place:
+        display: 総合研究棟B 1014
+        canonical: 筑波大学 総合研究棟B 1014
+    - day: 2023-10-23
+      hour:
+        begin: "18:15"
+        end: "19:00"
+      place:
+        display: 総合研究棟B 1122
+        canonical: 筑波大学 総合研究棟B 1122
+recentWorks:
+  - 2022/jsiam-nonlin2022saito
+  - 2022/jsiam2022suganuma
+  - 2021/jsiam-letters2021
+  - 2021/jsiam2021ishikawa
+  - 2020/jsiam-nonlin2020ishikawa
+  - 2021/jsiam-fed17ishikawa
+  - 2020/jsiam2020kuramoto
+  - 2023/jsiam-mat30ishikawa
+  - 2023/ipsj2023yamaguchi
+  - 2023/hpcasia-2023edamatsu
+  - 2022/ieee-trans-etc2022edamatsu
+  - 2022/sugizaki2022
+  - 2021/iccsa2021harayama
+  - 2020/ipsj-hpc177harayama
+  - 2020/ica3pp2020sugizaki
+  - 2020/jsiam2020sugizaki
+  - 2019/ica3pp-edamatsu
+  - 2019/jsiam2019edamatsu
+  - 2018/hpcc2018edamatsu
+  - 2018/ipsj-hpc164sato
+  - 2016/ipsj-hpc155gomi
+  - 2016/ipsj-hpc154shinoduka
+---
+
+import Keyword from "@components/display/Keyword.astro";
+import Typography from "@components/display/Typography.astro";
+import Youtube from "@components/display/Youtube.astro";
+import h2 from "@components/composite/heading/h2.astro";
+import HStack from "@components/layout/HStack.astro";
+import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
+import ServerImage from "@asset/team/algo/server-front.jpg";
+import { Image } from "astro:assets";
+import Chevron from "@components/display/list/item/Chevron.astro";
+
+export const components = {
+  p: Typography,
+  li: Chevron,
+  strong: Keyword,
+  h2,
+};
+
+## 高橋 大介 教授
+
+- **高性能数値計算**に関する研究
+- 高性能**並列数値計算**ソフトウェア
+- **GPU** や **MIC（Many Integrated Core** などを用いた高性能計算
+- **高精度計算**アルゴリズムとその応用
+
+我々は，限られた時間の中で大規模な科学技術計算を行うために，スーパーコンピュータの性能をできるだけ発揮できるようなアルゴリズムやプログラミングに関する研究を行っています．高速なプログラムを作成するには，コンピュータの仕組みや数学について深い理解が必要になりますが、努力が性能という数字にそのまま反映されることから，やりがいがある分野です．
+
+<ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/">
+  個人ページ
+</ReadMoreLink>
+
+## 多田野 寛人 教授
+
+- **大規模線形計算**アルゴリズムに関する研究
+- **大規模連立一次方程式**の高速・高精度・高信頼性アルゴリズムの構築
+- **連立一次方程式**の 高速化のための前処理法の開発
+- 並列計算環境における **大規模固有値問題**の高速解法の開発
+
+我々は，連立一次方程式や固有値問題をはじめとした数値解法アルゴリズムの開発を行っています．
+
+<ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/">
+  個人ページ
+</ReadMoreLink>
+
+## アルゴリズムチームの使っている計算機について
+
+<HStack template="50% 1fr">
+
+チームで所有している計算機としては、IntelのXeonプロセッサを搭載した4ノードのクラスタ2つのほか、IntelのXeon
+Phiプロセッサを搭載した4ノードのクラスタがあります。これらは学生によって管理・運用されていて自由に使うことができます。また本研究室は計算科学研究センターと協力関係にあり、研究内容によっては筑波大学が運用するスーパーコンピュータCygnus
+(理論ピーク性能2.4PFLOPS)，Pegasus
+(理論ピーク性能6.5PFLOPS)を利用できます。これらの様々な計算機資源を利用して研究を行うことが可能です。
+
+<Image
+  src={ServerImage}
+  alt="Algorithmチームの計算機クラスタ"
+/>
+</HStack>
+
+## FFT (高速フーリエ変換)
+
+高橋教授の研究内容のひとつであるFFTをご紹介します。
+
+<Youtube
+  src="https://www.youtube.com/embed/GPJx5JTGQEU"
+  title="配信講義 計算科学技術特論B (2020) 第6回"
+/>

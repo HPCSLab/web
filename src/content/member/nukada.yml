@@ -1,0 +1,13 @@
+name: 額田 彰
+eng_name: Akira NUKADA
+occupation: Faculty
+grade: Professor
+team: perf
+icon: ./icons/nukada.jpg
+username: nukada
+keywords:
+  - 高性能計算
+  - 性能最適化
+  - GPUコンピューティング
+message: |
+  私自身は計算の高速化に関連することであれば割と何でもやります．

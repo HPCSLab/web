@@ -1,0 +1,24 @@
+title: Productivity and Performance of Global-View Programming with XcalableMP
+  PGAS Language
+booktitle: CCGrid 2012 – The 12th IEEE/ACM International Symposium on Cluster,
+  Cloud and Grid Computing, Ottawa, Canada, May
+year: 2012
+authors:
+  - "Masahiro Nakao\x03"
+  - Jinpil Lee
+  - "Taisuke Boku\x03"
+  - and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2012-54755,
+    title = {Productivity and Performance of Global-View Programming with XcalableMP PGAS Language},
+    booktitle = {CCGrid 2012 – The 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing, Ottawa, Canada, May},
+    year = {2012},
+  }
+slug: hpcs2012-54755
+reference: "Masahiro Nakao\x03, Jinpil Lee, Taisuke Boku\x03, and Mitsuhisa
+  Sato, “Productivity and Performance of Global-View Programming with XcalableMP
+  PGAS Language”, CCGrid 2012 – The 12th IEEE/ACM International Symposium on
+  Cluster, Cloud and Grid Computing, Ottawa, Canada, May, 2012."
+class:
+  class: international
+  subclass: conference

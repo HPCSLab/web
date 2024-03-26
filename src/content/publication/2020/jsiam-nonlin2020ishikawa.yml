@@ -1,0 +1,21 @@
+title: 3次元モデル再構成問題に現れる鞍点型連立一次方程式の求解高速化
+authors:
+  - 石川 翔大
+  - 多田野 寛人
+  - 齋藤 歩
+year: 2020
+bibtex: |
+  @inproceedings{jsiam-nonlin2020ishikawa,
+    title = {3次元モデル再構成問題に現れる鞍点型連立一次方程式の求解高速化},
+    authors = "{石川 翔大} and {多田野 寛人} and {齋藤 歩}",
+    booktitle = "【非線形問題の解法と可視化に関する研究会】2020年度第1回研究会",
+    year = 2020
+  }
+reference: |
+  石川 翔大, 多田野 寛人, 齋藤 歩:
+  “3次元モデル再構成問題に現れる鞍点型連立一次方程式の求解高速化,”
+  【非線形問題の解法と可視化に関する研究会】2020年度第1回研究会,
+  2020.
+class:
+  class: domestic
+  subclass: conference

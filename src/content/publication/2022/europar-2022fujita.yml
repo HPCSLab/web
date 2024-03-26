@@ -1,0 +1,29 @@
+title: Implementation and Performance Evaluation of Memory System Using Addressable Cache for HPC Applications on HBM2 Equipped FPGAs
+authors:
+  - Fujita Norihisa
+  - Kobayashi Ryohei
+  - Yamaguchi Yoshiki
+  - Boku Taisuke
+bibtex: |
+  @inproceedings{10.1007/978-3-031-31209-0_9,
+  author = {Fujita, Norihisa and Kobayashi, Ryohei and Yamaguchi, Yoshiki and Boku, Taisuke},
+  title = {Implementation and Performance Evaluation of Memory System Using Addressable Cache for HPC Applications on HBM2 Equipped FPGAs},
+  year = {2023},
+  isbn = {978-3-031-31208-3},
+  publisher = {Springer-Verlag},
+  address = {Berlin, Heidelberg},
+  url = {https://doi.org/10.1007/978-3-031-31209-0_9},
+  doi = {10.1007/978-3-031-31209-0_9},
+  abstract = {When we apply field programmable gate arrays (FPGAs) as HPC accelerators, their memory bandwidth presents a significant challenge because it is not comparable to those of other HPC accelerators. In this paper, we propose a memory system for HBM2-equipped FPGAs and HPC applications that uses block RAMs as an addressable cache implemented between HBM2 and an application. This architecture enables data transfer between HBM2 and the cache bulk and allows an application to utilize fast random access on BRAMs. This study demonstrates the implementation and performance evaluation of our new memory system for HPC and HBM2 on an FPGA. Furthermore, we describe the API that can be used to control this system from the host. We implement RISC-V cores in an FPGA as controllers to realize fine-grain data transfer control and to prevent overheads derived from the PCI Express bus. The proposed system is implemented on eight memory channels and achieves 102.7 GB/s of the bandwidth. It overcomes the memory bandwidth of conventional FPGA boards with four channels of DDR4 memory despite using only 8 of 32 channels of the HBM2.},
+  booktitle = {Euro-Par 2022: Parallel Processing Workshops: Euro-Par 2022 International Workshops, Glasgow, UK, August 22–26, 2022, Revised Selected Papers},
+  pages = {121–132},
+  numpages = {12},
+  keywords = {FPGA, HBM2, Memory System},
+  location = {Glasgow, United Kingdom}
+  }
+year: 2023
+reference: |
+  Fujita, N., Kobayashi, R., Yamaguchi, Y., Boku, T. (2023). Implementation and Performance Evaluation of Memory System Using Addressable Cache for HPC Applications on HBM2 Equipped FPGAs. In: Singer, J., Elkhatib, Y., Blanco Heras, D., Diehl, P., Brown, N., Ilic, A. (eds) Euro-Par 2022: Parallel Processing Workshops. Euro-Par 2022. Lecture Notes in Computer Science, vol 13835. Springer, Cham. https://doi.org/10.1007/978-3-031-31209-0_9
+class:
+  class: international
+  subclass: conference

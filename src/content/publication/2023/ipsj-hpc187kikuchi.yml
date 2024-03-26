@@ -1,0 +1,24 @@
+title: 並列FPGA環境における通信システムCIRCUSを用いた集団通信の実装と性能評価
+authors:
+  - 菊池 航平
+  - 藤田 典久
+  - 小林 諒平
+  - 朴 泰祐
+year: 2022
+bibtex: |
+  @techreport { IPSJ-HPC187:kikuchi,
+    author      = "{菊池 航平} and {藤田 典久} and {小林 諒平} and {朴 泰祐}",
+    title       = "並列FPGA環境における通信システムCIRCUSを用いた集団通信の実装と性能評価",
+    year        = "2022",
+    volume      = "2022-HPC-187",
+    number      = "7",
+    month       = "12",
+    booktitle   = "情報処理学会 第187回 HPC 研究会報告 (HPC187)"
+  }
+reference: |
+  菊池 航平, 藤田 典久, 小林 諒平, 朴 泰祐:
+  ”並列FPGA環境における通信システムCIRCUSを用いた集団通信の実装と性能評価, ”
+  情報処理学会第187回HPC研究報告会, Vol. 2022-HPC-187, No. 7, Dec 2023.
+class:
+  class: domestic
+  subclass: workshop

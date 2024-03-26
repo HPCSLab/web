@@ -1,0 +1,123 @@
+---
+import MemberCard from "@components/pages/members/MemberCard.astro";
+
+import Base from "@layouts/base/index.astro";
+import { getCollection } from "astro:content";
+import { viewRank } from "@content";
+
+const faculties = await getCollection(
+  "member",
+  ({ data }) => data.occupation === "Faculty"
+);
+const researchers = await getCollection(
+  "member",
+  ({ data }) => data.occupation === "Researcher"
+);
+const researchStudents = await getCollection(
+  "member",
+  ({ data }) => data.occupation === "Research Student"
+);
+const students = await getCollection(
+  "member",
+  ({ data }) => data.occupation === "Student"
+);
+---
+
+<Base>
+  <div class="root">
+    <section>
+      <div class="separator">
+        <h2>教員</h2>
+      </div>
+
+      {
+        faculties
+          .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+          .map((faculty) => (
+            <div class="card">
+              <MemberCard faculty={faculty.data} />
+            </div>
+          ))
+      }
+    </section>
+    <section>
+      <div class="separator">
+        <h2>研究員</h2>
+      </div>
+
+      {
+        researchers
+          .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+          .map((researcher) => (
+            <div class="card">
+              <MemberCard faculty={researcher.data} />
+            </div>
+          ))
+      }
+    </section>
+    <section>
+      <div class="separator">
+        <h2>学生</h2>
+      </div>
+
+      {
+        students
+          .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+          .map((researcher) => (
+            <div class="card">
+              <MemberCard faculty={researcher.data} />
+            </div>
+          ))
+      }
+    </section>
+    <section>
+      <div class="separator">
+        <h2>研究生</h2>
+      </div>
+      {
+        researchStudents
+          .sort((a, b) => viewRank(b.data) - viewRank(a.data))
+          .map((researcher) => (
+            <div class="card">
+              <MemberCard faculty={researcher.data} />
+            </div>
+          ))
+      }
+    </section>
+  </div>
+</Base>
+
+<style>
+  .root {
+    background-color: var(--color-bg-dark);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .subcontainer {
+    display: subgrid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  .separator {
+    grid-column-start: 1;
+  }
+
+  .separator ~ .card:nth-of-type(2) {
+    grid-column-start: 1;
+  }
+
+  section {
+    padding-top: 2rem;
+    display: contents;
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+    color: var(--color-inverted-text-strong);
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+</style>

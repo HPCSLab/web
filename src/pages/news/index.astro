@@ -1,0 +1,67 @@
+---
+import { getCollection } from "astro:content";
+import ExternalLink from "@components/atom/link/ExternalLink.astro";
+import Typography from "@components/display/Typography.astro";
+import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+import Base from "@layouts/base/index.astro";
+
+const news = await getCollection("news");
+---
+
+<Base title="News">
+  <NoImgHeader>News</NoImgHeader>
+  <ResponsiveWidth>
+    <ul class="container">
+      {
+        news.map((article) => (
+          <li class="news-heading">
+            <h2 class="title">
+              <ExternalLink href={`/news/${article.slug}`}>
+                {article.data.title}
+              </ExternalLink>
+            </h2>
+            <div class="detail">
+              <div class="date">{article.data.date}</div>
+              <Typography>{article.data.description}</Typography>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </ResponsiveWidth>
+</Base>
+
+<style>
+  h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .container {
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  li {
+    border-bottom: var(--bg-dark) solid 1px;
+  }
+
+  .detail {
+    margin-left: 2rem;
+  }
+
+  .date {
+    margin-top: 0.5em;
+    color: var(--color-text-weak);
+  }
+
+  .title {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-strong);
+    font-weight: bold;
+  }
+</style>

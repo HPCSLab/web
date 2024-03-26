@@ -1,0 +1,25 @@
+---
+interface Props {
+  template: string;
+}
+---
+
+<div class="container">
+  <slot />
+</div>
+
+<style define:vars={{ template: Astro.props.template }}>
+  .container {
+    display: grid;
+    grid-template-columns: var(--template);
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,60 @@
+---
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+interface Props {
+  backgroundInverted?: boolean;
+  fullW?: boolean;
+}
+
+const { backgroundInverted, fullW } = Astro.props;
+---
+
+<section class={backgroundInverted ? "bg-inverted" : null}>
+  {
+    fullW ? (
+      <>
+        <ResponsiveWidth>
+          <slot name="heading" />
+        </ResponsiveWidth>
+        <div class:list={["content-root", "full-width"]}>
+          <slot />
+        </div>
+      </>
+    ) : (
+      <ResponsiveWidth>
+        <div class="content-root">
+          <slot />
+        </div>
+      </ResponsiveWidth>
+    )
+  }
+</section>
+
+<style>
+  .bg-inverted {
+    background-color: var(--color-bg-dark);
+    color: var(--color-inverted-text-normal);
+  }
+
+  .bg-inverted h2 {
+    color: var(--color-inverted-text-strong);
+  }
+
+  .full-width {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .content-root {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+</style>

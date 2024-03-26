@@ -1,0 +1,27 @@
+title: CHFSアドホック並列分散ファイルシステムのアクセス性能の評価
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=218969&item_no=1&page_id=13&block_id=8
+authors:
+  - 建部 修見
+bibtex: |
+  @techreport{hpc185tatebe,
+   author	 = "建部,修見",
+   title	 = "CHFSアドホック並列分散ファイルシステムのアクセス性能の評価",
+   year 	 = "2022",
+   booktitle     ="研究報告ハイパフォーマンスコンピューティング（HPC）",
+   institution	 = "筑波大学計算科学研究センター",
+   number	 = "31",
+   month	 = "jul"
+   volume = "2022-HPC-185",
+   number = "31",
+  }
+reference: |
+  建部 修見:
+  ”CHFSアドホック並列分散ファイルシステムのアクセス性能の評価,”
+  研究報告ハイパフォーマンスコンピューティング（HPC）,
+  Vol. 2022-HPC-185,
+  No. 31,
+  Jul 2022.
+year: 2022
+class:
+  class: domestic
+  subclass: workshop

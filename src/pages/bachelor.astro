@@ -1,0 +1,179 @@
+---
+import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
+import Base from "@layouts/base/index.astro";
+import HpcsAll from "@asset/hpcs-all-2019.jpg";
+import Typography from "@components/display/Typography.astro";
+import H1Section from "@components/composite/section/H1.astro";
+import Keyword from "@components/display/Keyword.astro";
+import Chevron from "@components/display/list/item/Chevron.astro";
+import List from "@components/display/list/list.astro";
+import TeamCard from "@components/pages/bachelor/TeamCard.astro";
+import Teams from "@components/pages/bachelor/Teams.astro";
+import { getCollection } from "astro:content";
+import H2 from "@components/composite/heading/h2.astro";
+import Session from "@components/pages/bachelor/Session.astro";
+import type { InformationSession } from "@content";
+
+const teams = await getCollection("team");
+
+const generalSession: InformationSession = {
+  place: {
+    display: "総合研究棟B1001",
+    canonical: "筑波大学 総合研究棟B1001",
+  },
+  day: new Date("2023-10-6"),
+  hour: {
+    begin: "16:45",
+    end: "18:00",
+  },
+};
+
+const generalSessionFormLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLScoPSBe2PMLGNuUuVF980Yi6xQWacRS9oya9YENXPxeiwCiOg/viewform";
+---
+
+<Base>
+  <BlurImageHeader imgSrc={HpcsAll} imgAlt="HPCS全員の集合写真">
+    卒研配属情報
+  </BlurImageHeader>
+  <H1Section>
+    <H2>HPCS研究室</H2>
+    <Typography>
+      筑波大学 High Performance Computing System (HPCS) 研究室では,
+      超並列計算機システムからコモディティクラスタシステムまで, 高性能計算 (High
+      Performance Computing) に関連する様々な研究を行っています．
+    </Typography>
+    <List ordered={false}>
+      <Chevron>
+        各種並列処理システムにおける<Keyword>高性能計算</Keyword>と性能評価
+      </Chevron>
+      <Chevron>
+        プロセッサからネットワークまで<Keyword>
+          計算機アーキテクチャ
+        </Keyword>に関する研究
+      </Chevron>
+      <Chevron>
+        <Keyword>GPU</Keyword>や<Keyword>メニーコア</Keyword>,<Keyword>
+          FPGA
+        </Keyword>などの高性能計算向けアーキテクチャの研究
+      </Chevron>
+      <Chevron>高性能並列処理<Keyword>コンパイラ</Keyword>の研究</Chevron>
+      <Chevron>
+        <Keyword>大規模データ処理</Keyword> (ビッグデータ) 技術の研究
+      </Chevron>
+      <Chevron>
+        大規模計算機を支える<Keyword>ストレージ</Keyword>技術や<Keyword>
+          システムソフトウェア
+        </Keyword>に関する研究
+      </Chevron>
+      <Chevron>
+        大規模計算機における<Keyword>高性能数値計算</Keyword>技術の研究
+      </Chevron>
+    </List>
+    <Typography>
+      特に,筑波大学計算科学研究センターで運用されている Cygnus,
+      Pegasusでは,これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており,
+      並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算の研究を進めています．
+      研究室にある大規模 PC クラスタの他,ABCI や TSUBAME
+      など他機構のスパコンも利用しながら研究を行っています．
+    </Typography>
+  </H1Section>
+  <H1Section>
+    <H2>全体説明会</H2>
+    <Session session={generalSession} direction="row" />
+    <Typography>
+      全体説明会は HPCS
+      研究室に所属する先生が原則全員参加し，各チームの研究内容について紹介する説明会です．
+      以下のボタンをクリックし，リンク先のGoogleフォームに必要な情報を入力・送信して下さい．
+      もちろん，飛び入り参加も大歓迎です．直接，開催場所にお越し下さい！
+    </Typography>
+    <a href={generalSessionFormLink} class="general-session-link">
+      全体説明会申し込みフォーム</a
+    >
+  </H1Section>
+  <H1Section backgroundInverted={true} fullW={true}>
+    <H2 backgroundInverted={true} slot="heading">チーム一覧</H2>
+    <Teams>
+      {
+        teams.map((team) => (
+          <TeamCard team={team.data} href={`/teams/${team.slug}`} />
+        ))
+      }
+    </Teams>
+  </H1Section>
+  <H1Section>
+    <H2>就職先一覧</H2>
+    <div class="after-graduate">
+      <div class="year">2019</div>
+      <div>
+        LINE,Treasure Data,FreakOut,Cadence Design Systems,
+        Inc.,エリクソン・ジャパン
+      </div>
+      <div class="year">2018</div>
+      <div>
+        筑波大学 計算科学研究センター,NTT 研究所,ヤフー,富士通,楽天,Fixstars
+      </div>
+      <div class="year">2017</div>
+      <div>日立研究所,ヤフー,ドワンゴ,サイプレスセミコンダクタ</div>
+      <div class="year">2016以前</div>
+      <div>
+        筑波大学 計算科学研究センター,理化学研究所
+        計算科学研究センター,富士通研究所,NTT 研究所,Google
+        dublin,ヤフー,CyberAgent,Fixstars,リクルート,日立製作所,NTTデータ,パナソニック,株式会社ユーザーローカル,三菱スペース・ソフトウエア株式会社
+      </div>
+    </div>
+    <h3 class="normal-h3-heading">インターンシップ</h3>
+    <div class="after-graduate">
+      <div class="year">2019</div>
+      <div>理化学研究所</div>
+      <div class="year">2018</div>
+      <div>
+        理化学研究所,NTT 研究所,サイボウズラボ,Treasure
+        Data,PFN,メルカリ,LINE,Fixstars,ヤフー
+      </div>
+      <div class="year">2017</div>
+      <div>ヤフー,Fixstars</div>
+      <div class="year">2016 以前</div>
+      <div>
+        Argonne National
+        Laboratory,日立製作所中央研究所,ノーチラステクノロジーズ,Fixstars
+      </div>
+    </div>
+  </H1Section>
+</Base>
+
+<style>
+  .normal-h3-heading {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+  }
+
+  .general-session-link {
+    background-color: var(--color-primary);
+    width: fit-content;
+    padding: 0.7rem;
+    font-weight: bolder;
+    color: var(--color-inverted-text-strong);
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.1s linear;
+  }
+
+  .general-session-link:hover {
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.6);
+  }
+
+  .after-graduate {
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    row-gap: 1.5rem;
+    column-gap: 0.75rem;
+  }
+
+  .year {
+    text-align: right;
+    color: var(--color-text-weak);
+  }
+</style>

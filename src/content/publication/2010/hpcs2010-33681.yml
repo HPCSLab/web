@@ -1,0 +1,23 @@
+title: XcalableMP Implementation and Performance of NAS Parallel Benchmarks
+booktitle: Fourth Conference on Partitioned Global Address Space Programming
+  Model (PGAS10), NewYork, USA, Oct.
+year: 2010
+authors:
+  - Masahiro Nakao
+  - Jinpil Lee
+  - Taisuke Boku
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2010-33681,
+    title = {XcalableMP Implementation and Performance of NAS Parallel Benchmarks},
+    booktitle = {Fourth Conference on Partitioned Global Address Space Programming Model (PGAS10), NewYork, USA, Oct.},
+    year = {2010},
+  }
+slug: hpcs2010-33681
+reference: "Masahiro Nakao, Jinpil Lee, Taisuke Boku, Mitsuhisa Sato: XcalableMP
+  Implementation and Performance of NAS Parallel Benchmarks, Fourth Conference
+  on Partitioned Global Address Space Programming Model (PGAS10), NewYork, USA,
+  Oct., 2010."
+class:
+  class: international
+  subclass: conference

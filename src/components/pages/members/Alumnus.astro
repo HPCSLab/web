@@ -1,0 +1,22 @@
+---
+interface Props {
+  name: string;
+  month: number;
+  year: number;
+}
+const { name, year, month } = Astro.props;
+---
+
+<div class="root">
+  <div class="date">
+    {`${year}.${("0" + month).slice(-1)}`}
+  </div>
+  <div class="name">{name}</div>
+</div>
+
+<style>
+  .date {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-weak);
+  }
+</style>

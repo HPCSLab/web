@@ -1,0 +1,25 @@
+title: Empirical Study on Reducing Energy of Parallel Programs using Slack
+  Reclamation by DVFS in a Powerscalable High Performance Cluster
+booktitle: Proc. 8th IEEE International Conference on Cluster Computing (CLUSTER), CDROM
+year: 2006
+authors:
+  - Hideaki Kimura
+  - Mitsuhisa Sato
+  - Yoshihiko Hotta
+  - Satoshi Matsuoka
+  - Taisuke Boku and Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2006-26618,
+    title = {Empirical Study on Reducing Energy of Parallel Programs using Slack Reclamation by DVFS in a Powerscalable High Performance Cluster},
+    booktitle = {Proc. 8th IEEE International Conference on Cluster Computing (CLUSTER), CDROM},
+    year = {2006},
+  }
+slug: hpcs2006-26618
+reference: "Hideaki Kimura, Mitsuhisa Sato, Yoshihiko Hotta, Satoshi Matsuoka,
+  Taisuke Boku and Daisuke Takahashi: Empirical Study on Reducing Energy of
+  Parallel Programs using Slack Reclamation by DVFS in a Powerscalable High
+  Performance Cluster. Proc. 8th IEEE International Conference on Cluster
+  Computing (CLUSTER), CDROM, (2006)."
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,25 @@
+title: Profilebased Optimization of Power Performance by using Dynamic Voltage
+  Scaling on a PC cluster
+booktitle: Proc. 20th IEEE International Parallel and Distributed Processing
+  Symposium (IPDPS’06).
+year: 2006
+authors:
+  - Yoshihiko Hotta
+  - Mitsuhisa Sato
+  - Hideaki Kimura
+  - Satoshi Matsuoka
+  - Taisuke Boku and Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2006-35187,
+    title = {Profilebased Optimization of Power Performance by using Dynamic Voltage Scaling on a PC cluster},
+    booktitle = {Proc. 20th IEEE International Parallel and Distributed Processing Symposium (IPDPS’06).},
+    year = {2006},
+  }
+slug: hpcs2006-35187
+reference: "Yoshihiko Hotta, Mitsuhisa Sato, Hideaki Kimura, Satoshi Matsuoka,
+  Taisuke Boku and Daisuke Takahashi: Profilebased Optimization of Power
+  Performance by using Dynamic Voltage Scaling on a PC cluster, Proc. 20th IEEE
+  International Parallel and Distributed Processing Symposium (IPDPS’06)."
+class:
+  class: international
+  subclass: conference

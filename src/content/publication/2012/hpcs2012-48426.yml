@@ -1,0 +1,23 @@
+title: Implementation and Evaluation of Quadruple Precision BLAS Functions on GPUs
+booktitle: Proc. 10th International Conference on Applied Parallel and
+  Scientific Computing (PARA 2010), Part I, Lecture Notes in Computer Science
+year: 2012
+authors:
+  - Daichi Mukunoki
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2012-48426,
+    title = {Implementation and Evaluation of Quadruple Precision BLAS Functions on GPUs},
+    booktitle = {Proc. 10th International Conference on Applied Parallel and Scientific Computing (PARA 2010), Part I, Lecture Notes in Computer Science},
+    pages = {249–259},
+    number = {7133},
+    year = {2012},
+  }
+slug: hpcs2012-48426
+reference: Daichi Mukunoki, Daisuke Takahashi, “Implementation and Evaluation of
+  Quadruple Precision BLAS Functions on GPUs”, Proc. 10th International
+  Conference on Applied Parallel and Scientific Computing (PARA 2010), Part I,
+  Lecture Notes in Computer Science, No. 7133, pp. 249–259, 2012.
+class:
+  class: international
+  subclass: conference

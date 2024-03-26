@@ -1,0 +1,180 @@
+---
+import type { CarouselPicture } from "@content";
+import { Image } from "astro:assets";
+
+// 簡易的な実装。ネイティブの実装でありおそらくパフォーマンス上は有利だが、
+// Macのblinkでは自然でスムーズなスクロールを実現する方法がない。GeckoとWebkitは可能
+// またRecyclerな表現も出来ない
+// このタイプのコンポーネントの本来正しい実装はscrollイベントをhookし、デフォルトのスクロールに変わりstyle属性のtransform: translationXで実現する
+// ただしこの方法はエンジンがハンドラの処理を行った後にスクロールを行うためパフォーマンス上の懸念があり、モバイル環境では
+// addEventListenerの第二引数に`{passive: false}`が必要。
+// スナップ処理はstyle属性のtransform: translationとCSSでのtransitionで実現可能。
+// これらの処理は複雑なDOM操作を必要とする上、パフォーマンス上の懸念があるのでここでは使わない。
+// ちなみにネイティブのスクロールをDOMの入れ替えでinfinite化するのは無理です。
+// Chrome早くsmooth scrollingを入れてくれ〜
+
+interface Props {
+  pictures: CarouselPicture[];
+  width: number;
+  height: number;
+  scrollInterval?: number;
+  graceToAutoScroll?: number;
+}
+
+const {
+  pictures,
+  width,
+  height,
+  scrollInterval,
+  graceToAutoScroll: durationToStartAutoScroll,
+} = Astro.props;
+---
+
+<hpcs-carousel
+  data-scroll-interval={scrollInterval ? scrollInterval : 1500}
+  data-grace-to-auto-scroll={durationToStartAutoScroll
+    ? durationToStartAutoScroll
+    : 3000}
+>
+  <ul class="root">
+    {
+      pictures.map((pic, index) => (
+        <li data-picture-index={index}>
+          <figure>
+            <Image src={pic.src} alt={pic.name} width={width} height={height} />
+            <figcaption>
+              <span>{pic.name}</span>
+            </figcaption>
+          </figure>
+        </li>
+      ))
+    }
+  </ul>
+</hpcs-carousel>
+
+<style>
+  .root {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .root::-webkit-scrollbar {
+    display: none;
+  }
+
+  img {
+    width: calc(max(895px, 100vw));
+    min-width: calc(max(895px, 100vw));
+    height: auto;
+  }
+
+  li {
+    scroll-snap-align: center;
+    min-width: 100vw;
+    max-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  figcaption {
+    position: absolute;
+    /* This is adhoc. CSS cannot applying alpha value to hexadecimal coded color */
+    background-color: rgba(40, 37, 45, 0.6);
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+<script is:inline>
+  class Carousel extends HTMLElement {
+    constructor() {
+      super();
+      const scrollInterval = parseInt(this.dataset.scrollInterval, 10);
+      const graceToAutoScroll = parseInt(this.dataset.graceToAutoScroll, 10);
+      this.currentIndex = 0;
+      const container = this.querySelector("ul");
+
+      [...container.children].forEach((child, index) => {
+        const observer = new IntersectionObserver(
+          () => {
+            this.currentIndex = index;
+          },
+          {
+            threshold: 0.9,
+          }
+        );
+        observer.observe(child);
+      });
+
+      const scroll = () => {
+        if (
+          container.scrollLeft >
+          window.innerWidth * (container.children.length - 2)
+        ) {
+          container.scrollBy({
+            left:
+              -window.innerWidth * container.children.length +
+              window.innerWidth / 2,
+            behavior: "smooth",
+          });
+        } else {
+          container.scrollBy({
+            left: window.innerWidth / 2,
+            behavior: "smooth",
+          });
+        }
+      };
+
+      const scheduleAutoScroll = () => {
+        if (this.timeoutHandler) {
+          clearTimeout(this.timeoutHandler);
+        }
+        this.timeoutHandler = setTimeout(() => {
+          this.timeoutHandler = null;
+          scroll();
+          this.intervalHandler = setInterval(() => {
+            scroll();
+          }, scrollInterval);
+        }, graceToAutoScroll);
+      };
+
+      const cancelAutoScroll = () => {
+        if (this.intervalHandler) {
+          clearInterval(this.intervalHandler);
+          this.intervalHandler = null;
+        }
+      };
+
+      container.addEventListener("scroll", () => {
+        cancelAutoScroll();
+        scheduleAutoScroll();
+      });
+      scheduleAutoScroll();
+    }
+  }
+
+  customElements.define("hpcs-carousel", Carousel);
+</script>

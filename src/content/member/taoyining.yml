@@ -1,0 +1,11 @@
+name: ""
+eng_name: Tao Yining
+occupation: Student
+grade: M1
+team: fpga
+icon: ./icons/taoyining.jpg
+username: taoyining
+message: |
+  身体（手・足・腰）に取り付けた加速度センサで取得したデータを利用して，実時間で動作（歩く，走る，階段の昇降，停止など）を実時間で分類する組込みシステムについて開発しています．
+  現在，動作認識を AI で行っていますが，将来的には，通常の歩行と異常時の歩行などの違いを検出し，高齢者の転倒予防や傷病後のリハビリテーション効率の改善など，
+  人に優しい IoT を実現したいと考えています．

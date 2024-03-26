@@ -1,0 +1,201 @@
+---
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+import TopLevelSection from "@components/composite/section/H1.astro";
+import ListItem from "@components/display/list/item/Naked.astro";
+import List from "@components/display/list/list.astro";
+import Base from "@layouts/base/index.astro";
+import PublicationHeading from "@components/pages/publications/PublicationHeading.astro";
+import type { GetStaticPaths } from "astro";
+import SubClass from "@components/pages/publications/SubClass.astro";
+import { Icon } from "astro-icon/components";
+import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
+import { getCollection } from "astro:content";
+import H2 from "@components/composite/heading/h2.astro";
+
+const years = [
+  ...new Set((await getCollection("publication")).map((pub) => pub.data.year)),
+].sort((a, b) => a - b);
+
+export const getStaticPaths = (async () => {
+  return [
+    ...new Set(
+      (await getCollection("publication")).map((pub) => pub.data.year)
+    ),
+  ].map((year) => ({
+    params: { year: year.toString() },
+  }));
+}) satisfies GetStaticPaths;
+
+const year = parseInt(Astro.params.year, 10);
+
+const journal = await getCollection(
+  "publication",
+  (pub) => pub.data.class.class === "journal" && pub.data.year == year
+);
+
+const international = {
+  conference: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "international" &&
+      pub.data.class.subclass === "conference" &&
+      pub.data.year === year
+  ),
+  poster: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "international" &&
+      pub.data.class.subclass === "poster" &&
+      pub.data.year === year
+  ),
+};
+
+const domestic = {
+  conference: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "conference" &&
+      pub.data.year === year
+  ),
+  poster: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "poster" &&
+      pub.data.year === year
+  ),
+  workshop: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "workshop" &&
+      pub.data.year === year
+  ),
+  magazine: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "magazine" &&
+      pub.data.year === year
+  ),
+  misc: await getCollection(
+    "publication",
+    (pub) =>
+      pub.data.class.class === "domestic" &&
+      pub.data.class.subclass === "misc" &&
+      pub.data.year === year
+  ),
+};
+
+const prevYear = years[years.indexOf(year) - 1];
+const nextYear = years[years.indexOf(year) + 1];
+---
+
+<Base>
+  <NoImageHeader>
+    <span class="supplemental-text-in-heading">Publications of</span>
+    <span class="year-in-heading">{Astro.params.year}</span>
+  </NoImageHeader>
+  <ResponsiveWidth>
+    <nav class="year-nav">
+      <div class="year-link-container">
+        {
+          prevYear && (
+            <a
+              class:list={["prev-year", "year-link"]}
+              href={`/publications/${prevYear}`}
+            >
+              <Icon
+                name="material-symbols:chevron-left-rounded"
+                class="nav-icon"
+              />
+              {prevYear}
+            </a>
+          )
+        }
+      </div>
+      <div class="year-link-container">
+        {
+          nextYear && (
+            <a
+              class:list={["next-year", "year-link"]}
+              href={`/publications/${nextYear}`}
+            >
+              {nextYear}
+              <Icon
+                name="material-symbols:chevron-right-rounded"
+                class="nav-icon"
+              />
+            </a>
+          )
+        }
+      </div>
+    </nav>
+  </ResponsiveWidth>
+  <TopLevelSection backgroundInverted={false}>
+    <H2>論文誌</H2>
+    <List ordered={false}>
+      {
+        journal.map((pub) => (
+          <ListItem>
+            <PublicationHeading pub={pub} />
+          </ListItem>
+        ))
+      }
+    </List>
+  </TopLevelSection>
+  <TopLevelSection backgroundInverted={false}>
+    <H2>国際会議</H2>
+    <SubClass title="本会議" publications={international.conference} />
+    <SubClass title="ポスター" publications={international.poster} />
+  </TopLevelSection>
+  <TopLevelSection backgroundInverted={false}>
+    <H2>国内会議</H2>
+    <SubClass title="国内会議" publications={domestic.conference} />
+    <SubClass title="ポスター" publications={domestic.poster} />
+    <SubClass title="研究会" publications={domestic.workshop} />
+    <SubClass title="雑誌" publications={domestic.magazine} />
+    <SubClass title="その他" publications={domestic.misc} />
+  </TopLevelSection>
+</Base>
+
+<style>
+  .supplemental-text-in-heading {
+    font-size: var(--font-size-lg);
+  }
+
+  .year-in-heading {
+    font-weight: bold;
+    font-size: var(--font-size-2xl);
+  }
+
+  .year-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block-start: 1rem;
+  }
+
+  .year-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .prev-yaer {
+  }
+
+  .next-year {
+  }
+
+  .year-link-container:hover .nav-icon {
+    transform: scale(1.5);
+  }
+
+  .nav-icon {
+    color: var(--color-primary);
+    font-size: var(--font-size-xl);
+    transition: transform 0.1s linear;
+  }
+</style>

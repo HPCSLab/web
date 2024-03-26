@@ -1,0 +1,59 @@
+---
+import type { Publication } from "@content";
+import ExternalLink from "@components/atom/link/ExternalLink.astro";
+
+interface Props {
+  pub: { data: Publication; id: string };
+}
+
+const { pub } = Astro.props;
+---
+
+<section>
+  <div class="work-title">
+    <ExternalLink href={`/publications/${pub.id}`}>
+      {pub.data.title}
+    </ExternalLink>
+  </div>
+  <div class="work-detail">
+    <ul class="authors-container">
+      {pub.data.authors.map((author) => <li class="author">{author}</li>)}
+    </ul>
+    <div class="reference">
+      {pub.data.reference}
+    </div>
+  </div>
+</section>
+
+<style>
+  .work {
+    margin-bottom: 2rem;
+  }
+
+  .work-title {
+    font-size: var(--font-size-lg);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-detail {
+    margin-left: 2rem;
+  }
+
+  .authors-container {
+    display: inline;
+    margin-bottom: 0.5rem;
+  }
+
+  .author {
+    color: var(--color-text-weak);
+    display: inline;
+    margin-right: 0.5em;
+  }
+
+  .reference {
+    margin-top: 1rem;
+    color: var(--color-text-weak);
+    font-size: var(--font-size-sm);
+  }
+</style>

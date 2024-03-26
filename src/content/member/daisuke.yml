@@ -1,0 +1,16 @@
+name: 高橋 大介
+eng_name: Daisuke TAKAHASHI
+occupation: Faculty
+grade: Professor
+team: algo
+icon: ./icons/daisuke.jpg
+username: daisuke
+keywords:
+  - 数値計算
+  - メニーコア
+  - アクセラレータ
+message: |
+  限られた時間の中で大規模なシミュレーションを行うために、
+  スーパーコンピュータの性能をできるだけ発揮できるようなアルゴリズムやプログラミングに関する研究を行っています。
+  高速なプログラムを作成するには、コンピュータの仕組みや数学について深い理解が必要になりますが、努力が性能という数字にそのまま反映されることから、
+  やりがいがある分野です。

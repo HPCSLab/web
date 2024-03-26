@@ -1,0 +1,29 @@
+title: High resolution of city-level climate simulation by GPU with multi-physical phenomena
+authors:
+  - Watanabe Koei
+  - Kikuchi Kohei
+  - Boku Taisuke
+  - Sato Takuto
+  - Kusaka Hiroyuki
+bibtex: |
+  @inproceedings{10.1007/978-3-030-93571-9_1,
+  author = {Watanabe, Koei and Kikuchi, Kohei and Boku, Taisuke and Sato, Takuto and Kusaka, Hiroyuki},
+  title = {High Resolution of City-Level Climate Simulation by GPU with Multi-physical Phenomena},
+  year = {2021},
+  isbn = {978-3-030-93570-2},
+  publisher = {Springer-Verlag},
+  address = {Berlin, Heidelberg},
+  url = {https://doi.org/10.1007/978-3-030-93571-9_1},
+  doi = {10.1007/978-3-030-93571-9_1},
+  abstract = {In this paper, we describe the Graphics Processing Unit (GPU) implementation of our City-LES code on detailed large eddy simulations, including the multi-physical phenomena on fluid dynamics, heat absorption and reflection by surface and building materials, cloud effects, and even sunlight effect. Because a detailed simulation involving these phenomena is required for analyses at the street level and several meters of resolution, the computation amount is enormous, and ordinary CPU computation cannot provide sufficient performance. Therefore, we implemented the entire code on GPU clusters with large-scale computing. We applied OpenACC coding to incrementally implement relatively easy programming and eliminate data transfers between the CPU and GPU memories. Based on this research, we determined that the elimination of data transfers is effective, even in the case where a part of the code execution on the GPU is slower than the CPU, owing to the absence of spatial parallelism. The objective of this study is to perform a complete climate simulation on a few square-kilometers field around the Tokyo Station, considering the finest resolution of the original highlighted area of the Marathon race in the Olympic Games Tokyo 2020. We successfully transferred the entire code to the GPU to provide approximately eight times the performance of CPU-only computation on multi-GPU per node with a large scale cluster.},
+  booktitle = {Network and Parallel Computing: 18th IFIP WG 10.3 International Conference, NPC 2021, Paris, France, November 3–5, 2021, Proceedings},
+  pages = {3–15},
+  numpages = {13},
+  keywords = {GPU, Large eddy simulation, Multi-physics, Climate, GPU cluster, OpenACC},
+  location = {Paris, France}
+  }
+reference: |
+  Koei Watanabe, Kohei Kikuchi, Taisuke Boku, Takuto Sato, and Hiroyuki Kusaka. 2021. High Resolution of City-Level Climate Simulation by GPU with Multi-physical Phenomena. In Network and Parallel Computing: 18th IFIP WG 10.3 International Conference, NPC 2021, Paris, France, November 3–5, 2021, Proceedings. Springer-Verlag, Berlin, Heidelberg, 3–15. https://doi.org/10.1007/978-3-030-93571-9_1
+year: 2022
+class:
+  class: journal

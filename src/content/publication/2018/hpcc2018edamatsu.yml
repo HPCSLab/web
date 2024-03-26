@@ -1,0 +1,22 @@
+title: Acceleration of Large Integer Multiplication with Intel AVX-512 Instructions
+authors:
+  - 枝松 拓弥
+  - 高橋 大介
+url: https://doi.org/10.1109/HPCC/SmartCity/DSS.2018.00059
+bibtex: |
+  @INPROCEEDINGS{8622797,
+  author={Edamatsu, Takuya and Takahashi, Daisuke},
+  booktitle={2018 IEEE 20th International Conference on High Performance Computing and Communications; IEEE 16th International Conference on Smart City; IEEE 4th International Conference on Data Science and Systems (HPCC/SmartCity/DSS)}, 
+  title={Acceleration of Large Integer Multiplication with Intel AVX-512 Instructions}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={211-218},
+  keywords={Program processors;Kernel;Registers;Libraries;Cryptography;Time measurement;Conferences;AVX-512;SIMD;Knights Landing;large integer multiplication;reduced-radix representation},
+  doi={10.1109/HPCC/SmartCity/DSS.2018.00059}}
+year: 2018
+reference: |
+  T. Edamatsu and D. Takahashi, "Acceleration of Large Integer Multiplication with Intel AVX-512 Instructions," 2018 IEEE 20th International Conference on High Performance Computing and Communications; IEEE 16th International Conference on Smart City; IEEE 4th International Conference on Data Science and Systems (HPCC/SmartCity/DSS), Exeter, UK, 2018, pp. 211-218, doi: 10.1109/HPCC/SmartCity/DSS.2018.00059.
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,32 @@
+title: Performance Evaluation on GPU-FPGA Accelerated Computing Considering Interconnections between Accelerators
+authors:
+  - Sano Yuka
+  - Kobayashi Ryohei
+  - Fujita Norihisa
+  - Boku Taisuke
+year: 2022
+bibtex: |
+  @inproceedings{10.1145/3535044.3535046,
+  author = {Sano, Yuka and Kobayashi, Ryohei and Fujita, Norihisa and Boku, Taisuke},
+  title = {Performance Evaluation on GPU-FPGA Accelerated Computing Considering Interconnections between Accelerators},
+  year = {2022},
+  isbn = {9781450396608},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3535044.3535046},
+  doi = {10.1145/3535044.3535046},
+  abstract = {Graphic processing units (GPUs) are often equipped with HPC systems as accelerators because of their high computing capability. GPUs are powerful computing devices; however, they operate inefficiently on applications that employ partially poor parallelism, non-regular computation, or frequent inter-node communication. To address these shortcomings of GPUs, field-programmable gate arrays (FPGA) have been emerging in the HPC domain because their reconfigurable capabilities enable the construction of application-specific pipelined hardware and memory systems. Several studies have focused on improving overall application performance by combining GPUs and FPGAs, and the platforms for achieving this have adopted the approach of hosting these two devices on a single compute node; however, the inevitability of this approach has not been discussed. In this study, we evaluated it quantitatively using an astrophysics application that performs radiative transfer to simulate the early-stage universe after the Big Bang. The application runs on a compute node equipped with a GPU and an FPGA, and the GPU and FPGA computation kernels are launched from a single CPU (process) in the application. We modified the code to enable the launch of the GPU and FPGA computation kernels from separate message-passing interface (MPI) processes. Each MPI process was assigned to two compute nodes to run the application, which were equipped only with a GPU and FPGA, respectively, and the execution performance of the application was compared against that of the original GPU-FPGA accelerated application. The results revealed that the performance degradation compared to the original GPU-FPGA accelerated application was approximately 2 ∼ 3 \%, thereby demonstrating quantitatively that even if both devices are mounted on different compute nodes, this is acceptable in practical use depending on the characteristics of the application.},
+  booktitle = {Proceedings of the 12th International Symposium on Highly-Efficient Accelerators and Reconfigurable Technologies},
+  pages = {10–16},
+  numpages = {7},
+  keywords = {accelerator, MPI, HPC, GPU, FPGA},
+  location = {Tsukuba, Japan},
+  series = {HEART '22}
+  }
+class:
+  class: "international"
+  subclass: conference
+reference: |
+  Yuka Sano, Ryohei Kobayashi, Norihisa Fujita, and Taisuke Boku. 2022. Performance Evaluation on GPU-FPGA Accelerated Computing Considering Interconnections between Accelerators. In Proceedings of the 12th International Symposium on Highly-Efficient Accelerators and Reconfigurable Technologies (HEART '22). Association for Computing Machinery, New York, NY, USA, 10–16. https://doi.org/10.1145/3535044.3535046
+description:
+  - The Proceedings of the 12th International Symposium on Highly Efficient Accelerators and Reconfigurable Technologies (HEART 2022), 10-16, Jun, 2022

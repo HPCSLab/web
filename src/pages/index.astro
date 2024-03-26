@@ -1,0 +1,126 @@
+---
+import Carousel from "@components/display/Carousel.astro";
+import Base from "@layouts/base/index.astro";
+import Typography from "@components/display/Typography.astro";
+import List from "@components/display/list/list.astro";
+import ListItem from "@components/display/list/item/Naked.astro";
+import TopLevelSection from "@components/composite/section/H1.astro";
+import Keyword from "@components/display/Keyword.astro";
+import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+import ChevronListItem from "@components/display/list/item/Chevron.astro";
+import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
+import ExternalLink from "@components/atom/link/ExternalLink.astro";
+import { getCollection } from "astro:content";
+import H2 from "@components/composite/heading/h2.astro";
+
+const news = (await getCollection("news")).sort(
+  (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date)
+);
+
+const carouselPictures = (await getCollection("carousel"))
+  .sort(() => Math.random() - 0.5)
+  .map((pic) => pic.data);
+---
+
+<Base>
+  <Carousel pictures={carouselPictures} width={1200} height={300} />
+
+  <NoImgHeader>HPCS Laboratory</NoImgHeader>
+  <TopLevelSection>
+    <H2>About</H2>
+    <Typography>
+      筑波大学ハイパフォーマンス・コンピューティング・システム研究室では，超並列計算機からクラスタまで，高性能計算に関連した以下の研究を行っています．
+    </Typography>
+    <List ordered={false}>
+      <ChevronListItem>
+        各種<Keyword>並列処理システム</Keyword>における高性能計算と性能評価
+      </ChevronListItem>
+      <ChevronListItem>
+        プロセッサからネットワークまで<Keyword>
+          計算機アーキテクチャ
+        </Keyword>に関する研究
+      </ChevronListItem>
+      <ChevronListItem>
+        <Keyword>GPU</Keyword>
+        や
+        <Keyword>メニーコア</Keyword>,
+        <Keyword>FPGA</Keyword>
+        などの高性能計算向けアーキテクチャの研究
+      </ChevronListItem>
+      <ChevronListItem>
+        高性能<Keyword>並列処理コンパイラ</Keyword>の研究
+      </ChevronListItem>
+      <ChevronListItem>
+        <Keyword>大規模データ処理 (ビッグデータ)</Keyword> 技術の研究
+      </ChevronListItem>
+      <ChevronListItem>
+        大規模計算機を支える<Keyword>ストレージ技術</Keyword>や<Keyword>
+          システムソフトウェア
+        </Keyword>に関する研究
+      </ChevronListItem>
+      <ChevronListItem>
+        大規模計算機における<Keyword>高性能数値計算</Keyword>技術の研究
+      </ChevronListItem>
+    </List>
+    <Typography>
+      特に，筑波大学計算科学研究センターで運用されている多重複合型演算加速スーパーコンピュータCygnus,
+      最先端共同HPC基盤施設（JCAHPC）のOakforest-PACSでは，
+      これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており，
+      並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算を目指した研究を進めています．
+    </Typography>
+  </TopLevelSection>
+  <ResponsiveWidth>
+    <H2>
+      <ReadMoreLink href="/bachelor">卒研配属情報はこちらから</ReadMoreLink>
+    </H2>
+  </ResponsiveWidth>
+  <TopLevelSection backgroundInverted={false}>
+    <H2>What's news</H2>
+    <List ordered={false}>
+      {
+        news.slice(0, 10).map((news) => (
+          <ListItem class="news-headline">
+            <div>
+              <span class="news-date">{news.data.date}</span>
+              <ExternalLink href={`/news/${news.slug}`}>
+                {news.data.title}
+              </ExternalLink>
+            </div>
+          </ListItem>
+        ))
+      }
+
+      <ListItem>
+        <ReadMoreLink href="/news">さらに読む</ReadMoreLink>
+      </ListItem>
+    </List>
+  </TopLevelSection>
+</Base>
+
+<style>
+  h1 {
+    font-size: var(--font-size-3xl);
+    color: var(--color-inverted-text-strong);
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--color-bg-dark);
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: var(--font-size-xl);
+  }
+
+  .about {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .news-date {
+    color: var(--color-text-weak);
+    font-size: smaller;
+  }
+</style>

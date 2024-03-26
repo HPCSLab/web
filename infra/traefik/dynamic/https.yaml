@@ -1,0 +1,4 @@
+tls:
+  certificates:
+    - certFile: /etc/pki/www/fullchain.cer
+      keyFile: /etc/pki/www/www.nopass.key

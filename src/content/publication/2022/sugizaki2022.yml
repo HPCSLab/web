@@ -1,0 +1,22 @@
+title: A Fast Algorithm for Computing the Number of Magic Series
+authors:
+  - 杉﨑 行優
+  - 高橋 大介
+url: https://doi.org/10.1007/s00026-022-00584-5
+year: 2022
+class:
+  class: journal
+bibtex: |-
+  @article{Sugizaki2022AFA,
+    title={A Fast Algorithm for Computing the Number of Magic Series},
+    author={Yukimasa Sugizaki and Daisuke Takahashi},
+    journal={Annals of Combinatorics},
+    year={2022},
+    volume={26},
+    pages={511 - 532},
+    url={https://api.semanticscholar.org/CorpusID:253588723}
+  }
+reference: |
+  Sugizaki, Y., Takahashi, D. A Fast Algorithm for Computing the Number of Magic Series. Ann. Comb. 26, 511–532 (2022). https://doi.org/10.1007/s00026-022-00584-5
+description:
+  - Annals of Combinatorics, Vol. 26, No. 2, pp. 511-532 (2022)

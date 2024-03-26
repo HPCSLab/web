@@ -1,0 +1,27 @@
+global:
+  checkNewVersion: true
+serversTransport:
+  insecureSkipVerify: false
+log:
+  format: common
+  level: DEBUG
+accessLog:
+  format: common
+api:
+  dashboard: true
+  insecure: false
+entryPoints:
+  https:
+    address: ":443"
+    http3: {}
+    http:
+      tls: true
+  http:
+    address: ":80"
+    http:
+      tls: false
+providers:
+  file:
+    directory: /etc/traefik/dynamic
+  docker:
+    exposedByDefault: false

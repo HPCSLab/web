@@ -1,0 +1,22 @@
+---
+interface Props {
+  minW?: string;
+}
+
+const { minW } = Astro.props;
+---
+
+<div>
+  <slot />
+</div>
+
+<style define:vars={{ minW: minW ? minW : "1fr" }}>
+  div {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc(min(100%, var(--minW))), max-content)
+    );
+  }
+</style>

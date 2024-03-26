@@ -1,0 +1,20 @@
+title: Design and Implementation of OpenMPD
+booktitle: International Workshop on OpenMP 2007
+year: 2007
+authors:
+  - Jinpil Lee
+  - Mitsuhisa Sato and Taisuke Boku
+bibtex: |-
+  @inproceedings{hpcs2007-45763,
+    title = {Design and Implementation of OpenMPD},
+    booktitle = {International Workshop on OpenMP 2007},
+    pages = {132-135},
+    year = {2007},
+  }
+slug: hpcs2007-45763
+reference: "Jinpil Lee, Mitsuhisa Sato and Taisuke Boku: Design and
+  Implementation of OpenMPD, International Workshop on OpenMP 2007, pp. 132-135,
+  (2007)"
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,76 @@
+---
+import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
+import H1Section from "@components/composite/section/H1.astro";
+import ChevronListItem from "@components/display/list/item/Chevron.astro";
+import List from "@components/display/list/list.astro";
+import Base from "@layouts/base/index.astro";
+import H2 from "@components/composite/heading/h2.astro";
+---
+
+<Base title="access">
+  <NoImageHeader>Access</NoImageHeader>
+  <H1Section backgroundInverted={false}>
+    <H2>Address</H2>
+    <address>
+      <div class="address">
+        HPCS Lab. University of Tsukuba 1-1-1 Tennodai, Tsukuba, 305-8573,
+        Ibaraki, Japan
+      </div>
+      <div class="address">
+        305-8573 茨城県 つくば市 天王台 1-1-1 筑波大学 システム情報工学研究科
+        HPCS研究室
+      </div>
+      <List ordered={false}>
+        <ChevronListItem>総合研究棟B 928 (9F)</ChevronListItem>
+        <ChevronListItem>総合研究棟B 1122 (11F)</ChevronListItem>
+        <ChevronListItem>総合研究棟B 1124 (11F)</ChevronListItem>
+      </List>
+    </address>
+  </H1Section>
+  <H1Section backgroundInverted={false}>
+    <H2>Phone</H2>
+    <section class="phone-numbers">
+      <h3 class="phone-place">総合研究棟B 1122 (11F)</h3>
+      <div class="phone-table">
+        <div class="phone-title">Telephone</div>
+        <div class="phone-number">+81.29.853.6912 (Ext. 6912)</div>
+        <div class="phone-title">Fax</div>
+        <div class="phone-number">+81.29.853.6912 (Ext. 6912)</div>
+        <div class="phone-title">電話</div>
+        <div class="phone-number">029-853-6912 (内線:6912)</div>
+        <div class="phone-title">Fax</div>
+        <div class="phone-number">029-853-6912 (内線:6912)</div>
+      </div>
+    </section>
+    <section class="phone-numbers">
+      <h3 class="phone-place">総合研究棟B 1124 (11F)</h3>
+      <div class="phone-table">
+        <div class="phone-title">Telephone</div>
+        <div class="phoone-number">(Ext. 3655)</div>
+        <div class="phone-title">電話</div>
+        <div class="phone-number">(内線:3655)</div>
+      </div>
+    </section>
+  </H1Section>
+</Base>
+
+<style>
+  address {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .phone-numbers {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .phone-place {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .phone-table {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    row-gap: 1rem;
+  }
+</style>

@@ -1,0 +1,25 @@
+title: Hybrid-view Programming of Nuclear Fusion Simulation Code in the PGAS
+  Parallel Programming Language XcalableMP
+booktitle: Proc. of ICPADS2014, Dec-2014.
+year: 2014
+authors:
+  - K. Tsugane
+  - H. Nuga
+  - T. Boku
+  - H. Murai
+  - M. Sato
+  - W. Tang
+  - B. Wang
+bibtex: >-
+  @inproceedings{hpcs2014-32928,
+    title = {Hybrid-view Programming of Nuclear Fusion Simulation Code in the PGAS Parallel Programming Language XcalableMP},
+    booktitle = {Proc. of ICPADS2014, Dec-2014.},
+    year = {2014},
+  }
+slug: hpcs2014-32928
+reference: K. Tsugane, H. Nuga, T. Boku, H. Murai, M. Sato, W. Tang, B. Wang,
+  “Hybrid-view Programming of Nuclear Fusion Simulation Code in the PGAS
+  Parallel Programming Language XcalableMP”, Proc. of ICPADS2014, Dec-2014.
+class:
+  class: international
+  subclass: conference

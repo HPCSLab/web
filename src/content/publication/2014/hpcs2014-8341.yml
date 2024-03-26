@@ -1,0 +1,19 @@
+title: Disk Cache-Aware Task Scheduling For Data-Intensive and Many-Task Workflow
+booktitle: IEEE Cluster 2014, Madrid
+year: 2014
+authors:
+  - Masahiro Tanaka and Osamu Tatebe
+bibtex: >-
+  @inproceedings{hpcs2014-8341,
+    title = {Disk Cache-Aware Task Scheduling For Data-Intensive and Many-Task Workflow},
+    booktitle = {IEEE Cluster 2014, Madrid},
+    pages = {167–175},
+    year = {2014},
+  }
+slug: hpcs2014-8341
+reference: Masahiro Tanaka and Osamu Tatebe, “Disk Cache-Aware Task Scheduling
+  For Data-Intensive and Many-Task Workflow,” IEEE Cluster 2014, Madrid, pp.
+  167–175, Sep-2014
+class:
+  class: international
+  subclass: conference

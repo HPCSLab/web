@@ -1,0 +1,23 @@
+title: An Open-source FPGA Library for Data Sorting
+authors:
+  - Kobayashi Ryohei
+  - Miura Kento
+  - Fujita Norihisa
+  - Boku Taisuke
+  - Amagasa Toshiyuki
+year: 2022
+bibtex: |
+  @article{Ryohei Kobayashi2022,
+    title={An Open-source FPGA Library for Data Sorting},
+    author={Ryohei Kobayashi and Kento Miura and Norihisa Fujita and Taisuke Boku and Toshiyuki Amagasa},
+    journal={Journal of Information Processing},
+    volume={30},
+    number={ },
+    pages={766-777},
+    year={2022},
+    doi={10.2197/ipsjjip.30.766}
+  }
+reference: |
+  Ryohei Kobayashi, Kento Miura, Norihisa Fujita, Taisuke Boku, Toshiyuki Amagasa, An Open-source FPGA Library for Data Sorting, Journal of Information Processing, 2022, 30 巻, p. 766-777, 公開日 2022/10/15, Online ISSN 1882-6652, https://doi.org/10.2197/ipsjjip.30.766, https://www.jstage.jst.go.jp/article/ipsjjip/30/0/30_766/_article/-char/ja, 抄録:
+class:
+  class: journal

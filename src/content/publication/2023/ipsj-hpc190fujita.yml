@@ -1,0 +1,27 @@
+title: SYCLに基づく複数の演算加速装置を統一的に扱えるプログラミング手法の提案
+year: 2023
+bibtex: |
+  @techreport { IPSJ-HPC190:fujita,
+    author      = "{藤田 典久} and {小林 諒平} and {Beau Johnston} and {Narasinga Rao Miniskar} and {Seyong Lee} and {Keita Teranishi} and {Jeffrer S. Vetter} and {朴 泰祐}",
+    title       = "SYCLに基づく複数の演算加速装置を統一的に扱えるプログラミング手法の提案",
+    year        = "2023",
+    volume      = "2023-HPC-190",
+    number      = "1",
+    month       = "7",
+    booktitle   = "情報処理学会 第190回 HPC 研究会報告 (HPC190)"
+  }
+authors:
+  - 藤田 典久
+  - 小林 諒平
+  - Beau Johnston
+  - Narasinga Rao Miniskar
+  - Seyong Lee
+  - Keita Teranishi
+  - Jeffrer S. Vetter
+  - 朴 泰祐
+reference: |
+  藤田 典久, 小林 諒平, Beau Johnston, Narasinga Rao Miniskar, Seyong Lee, Keita Teranishi, Jeffrer S. Vetter, 朴 泰祐:
+  “SYCLに基づく複数の演算加速装置を統一的に扱えるプログラミング手法の提案,” 情報処理学会 第190回HPC研究発表会, Vol. 2023-HPC-190, No. 1, Jul 2023.
+class:
+  class: domestic
+  subclass: workshop

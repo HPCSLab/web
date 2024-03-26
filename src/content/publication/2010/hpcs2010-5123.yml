@@ -1,0 +1,21 @@
+title: リングトポロジーによるMPI-IO書込の高速化技法　先進的計算基盤システムシンポジウムSACSIS2010論文集
+year: 2010
+authors:
+  - 堀敦史
+  - 太田一樹
+  - 安井隆
+  - 鴨志田良和
+  - 松葉浩也
+  - 住元真司
+  - 石川裕
+bibtex: |-
+  @inproceedings{hpcs2010-5123,
+    title = {リングトポロジーによるMPI-IO書込の高速化技法　先進的計算基盤システムシンポジウムSACSIS2010論文集},
+    pages = {319-327},
+    year = {2010},
+  }
+slug: hpcs2010-5123
+reference: 堀敦史，太田一樹，安井隆，鴨志田良和，松葉浩也，住元真司，石川裕：リングトポロジーによるMPI-IO書込の高速化技法　先進的計算基盤システムシンポジウムSACSIS2010論文集，pp.319-327，2010
+class:
+  class: domestic
+  subclass: conference

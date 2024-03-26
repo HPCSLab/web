@@ -1,0 +1,21 @@
+title: Electron Dynamics Simulation with Time-Dependent Density Functional
+  Theory on Large Scale Many-Core Systems
+booktitle: Supercomputing Conference (SC) 16, ACM Student Research Competition Poster
+year: 2016
+authors:
+  - Yuta Hirokawa
+bibtex: >-
+  @inproceedings { SC16-SRC:hirokawa, 
+    author    = "{Yuta Hirokawa}",
+    title     = "{Electron Dynamics Simulation with Time-Dependent Density Functional Theory on Large Scale Many-Core Systems}",
+    booktitle = "Supercomputing Conference (SC) 16, ACM Student Research Competition Poster",
+    month	    = "11",
+    year 	    = "2016"
+  }
+slug: sc16-srchirokawa
+reference: "Yuta Hirokawa: “Electron Dynamics Simulation with Time-Dependent
+  Density Functional Theory on Large Scale Many-Core Systems”, Supercomputing
+  Conference (SC) 16, ACM Student Research Competition Poster, Nov. 2016."
+class:
+  class: international
+  subclass: poster

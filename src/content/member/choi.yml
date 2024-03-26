@@ -1,0 +1,9 @@
+name: チェ ヨン ギュ
+eng_name: Choi Yeon Kyu
+occupation: Student
+grade: M2
+team: perf
+icon: ./icons/choi.jpg
+username: choi
+message: |
+  NVIDIA GPUのRT coreを利用した汎用計算の加速化に挑戦しています．

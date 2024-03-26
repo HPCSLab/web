@@ -1,0 +1,28 @@
+title: Accelerating I/O in Distributed Data Processing Systems with Apache Arrow CHFS
+authors:
+  - Sohei Koyama
+  - Kohei Hiraga
+  - Osamu Tatebe,
+year: 2023
+reference: |
+  . Koyama, K. Hiraga and O. Tatebe, "Accelerating I/O in Distributed Data Processing Systems with Apache Arrow CHFS," in 2023 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops), Santa Fe, NM, USA, 2023 pp. 1-4.
+bibtex: |
+  @INPROCEEDINGS {10321849,
+  author = {S. Koyama and K. Hiraga and O. Tatebe},
+  booktitle = {2023 IEEE International Conference on Cluster Computing Workshops (CLUSTER Workshops)},
+  title = {Accelerating I/O in Distributed Data Processing Systems with Apache Arrow CHFS},
+  year = {2023},
+  volume = {},
+  issn = {},
+  pages = {1-4},
+  abstract = {In recent years, distributed data-processing frameworks have become popular for processing big data. However, in an HPC, where the computation and storage nodes are separated, the bandwidth between the computation and storage components is small, causing a reduction in data processing throughput. Therefore, in this paper, data were stored on the computation node to solve the data processing throughput degradation. We propose an I/O acceleration method that integrates Apache Arrow and CHFS. It leverages non-volatile memory, a state-of-the-art storage device, via CHFS and leverages CHFS from a distributed data processing framework via Apache Arrow&#x27;s abstract file system API. The evaluation results showed that the system achieved up to 11.60 times higher bandwidth than when reading data from the parallel file system Lustre. This study also compared with Apache Arrow with BeeOND and UnifyFS, other ad hoc filesystems. The proposed Apache Arrow CHFS showed up to 1.67x/1.23x better write performance. The implementation is published at https://github.com/tsukuba-hpcs/arrow-chfs},
+  keywords = {degradation;file systems;nonvolatile memory;conferences;distributed databases;bandwidth;machine learning},
+  doi = {10.1109/CLUSTERWorkshops61457.2023.00009},
+  url = {https://doi.ieeecomputersociety.org/10.1109/CLUSTERWorkshops61457.2023.00009},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  month = {oct}
+  }
+class:
+  class: international
+  subclass: conference

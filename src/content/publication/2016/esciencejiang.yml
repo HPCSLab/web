@@ -1,0 +1,22 @@
+title: Fast Window Aggregate on Array Database by Recursive Incremental Computation
+booktitle: Proc. of IEEE eScience
+year: 2016
+authors:
+  - Jiang Li
+  - Hideyuki Kawashima
+  - Osamu Tatebe
+bibtex: >-
+  @inproceedings { eScience:Jiang, 
+    author    = "{Jiang Li} and {Hideyuki Kawashima} and {Osamu Tatebe}",
+    title     = "{Fast Window Aggregate on Array Database by Recursive Incremental Computation}",
+    booktitle = "Proc. of IEEE eScience",
+    month	    = "10",
+    year 	    = "2016"
+  }
+slug: esciencejiang
+reference: "Jiang Li, Hideyuki Kawashima, Osamu Tatebe: “Fast Window Aggregate
+  on Array Database by Recursive Incremental Computation”, Proc. of IEEE
+  eScience, Oct. 2016."
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,32 @@
+title: Trade-Off of Offloading to FPGA in OpenMP Task-Based Programming
+authors:
+  - Watanabe Yutaka
+  - Jinpil Lee
+  - Taisuke Boku
+  - Mitsuhisa Sato
+year: 2018
+reference: |
+  Watanabe, Y., Lee, J., Boku, T., Sato, M. (2018). Trade-Off of Offloading to FPGA in OpenMP Task-Based Programming. In: de Supinski, B., Valero-Lara, P., Martorell, X., Mateo Bellido, S., Labarta, J. (eds) Evolving OpenMP for Evolving Architectures. IWOMP 2018. Lecture Notes in Computer Science(), vol 11128. Springer, Cham. https://doi.org/10.1007/978-3-319-98521-3_7
+bibtex: |
+  @InProceedings{10.1007/978-3-319-98521-3_7,
+  author="Watanabe, Yutaka
+  and Lee, Jinpil
+  and Boku, Taisuke
+  and Sato, Mitsuhisa",
+  editor="de Supinski, Bronis R.
+  and Valero-Lara, Pedro
+  and Martorell, Xavier
+  and Mateo Bellido, Sergi
+  and Labarta, Jesus",
+  title="Trade-Off of Offloading to FPGA in OpenMP Task-Based Programming",
+  booktitle="Evolving OpenMP for Evolving Architectures",
+  year="2018",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="96--110",
+  abstract="In High-Performance Computing (HPC), Field Programmable Gate Array (FPGA) is attracting increased attention as an accelerator because its performance has been dramatically improved in recent years. On the other hand, task-based programming recently supported in OpenMP 4.0 enables to expose much parallelism by executing several tasks of the program in the form of a task graph. To accelerate the task-based parallel program by FPGA, it is useful for some dominant tasks frequently executed in parallel to be offloaded to FPGA as an asynchronous FPGA task. We present a performance optimization based on the trade-off between the kernel size and the number of asynchronously executed kernels in parallel in OpenMP task-based programming with FPGA tasks to make use of FPGA hardware resources efficiently. Since a ``program'' for FPGA is directly converted into the hardware, the hardware resource limitation raises a new issue in optimization on which and how to offload a task to FPGA. Taking task-based block Cholesky factorization as a motivating example, we present the trade-off on how to offload dominant ``GEMM'' task frequently executed in parallel in the execution of the task-graph. We found that under the limitation of the hardware resource, multiple small kernels are better than a single big high-performance kernel because of higher throughput and higher kernel frequency.",
+  isbn="978-3-319-98521-3"
+  }
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,177 @@
+---
+import type { IndexPage } from "../sitemap";
+import Box from "@components/layout/box/box.astro";
+import TextWithIcon from "@components/atom/TextWithIcon.astro";
+
+interface Props {
+  pages: IndexPage[];
+}
+
+const { pages } = Astro.props;
+const lastPage = pages[pages.length - 1];
+---
+
+<nav class="nav-wrapper">
+  <ul class="nav-index-container">
+    {
+      pages.map((page) => (
+        <li class="nav-index">
+          <Box p="0.5rem" mode="h">
+            <div class="nav-index-link-wrapper">
+              {page.hasChildren ? (
+                <TextWithIcon
+                  icon={page.icon}
+                  iconColor="primary"
+                  animateOnHover={true}
+                >
+                  {page.title}
+                </TextWithIcon>
+              ) : (
+                <a href={page.url}>
+                  <TextWithIcon
+                    icon={page.icon}
+                    iconColor="primary"
+                    animateOnHover={true}
+                  >
+                    {page.title}
+                  </TextWithIcon>
+                </a>
+              )}
+            </div>
+            {page.hasChildren ? (
+              <nav
+                class:list={
+                  lastPage && page.title === lastPage.title
+                    ? ["drawer-last", "drawer"]
+                    : ["drawer"]
+                }
+              >
+                <Box p="0.5rem">
+                  <ul class="link-list">
+                    {page.children.map((subpage) => (
+                      <li class="link">
+                        <a href={subpage.url}>
+                          <TextWithIcon
+                            icon={subpage.icon}
+                            iconColor="primary"
+                            animateOnHover={true}
+                          >
+                            {subpage.title}
+                          </TextWithIcon>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </Box>
+              </nav>
+            ) : null}
+          </Box>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .nav-index-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+    padding-inline-end: 2rem;
+  }
+
+  .nav-index-link-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+  }
+
+  .nav-index-link-wrapper a {
+    padding: 0.5em;
+  }
+
+  .nav-index-link-wrapper > a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nav-index {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+
+  @keyframes show-drawer {
+    0% {
+      transform: scale(0.95);
+      visibility: visible;
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes hide-drawer {
+    0% {
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    99% {
+      visibility: visible;
+      transform: scale(0.95);
+    }
+
+    100% {
+      visibility: hidden;
+    }
+  }
+
+  .drawer {
+    position: absolute;
+    padding-top: 0.5rem;
+    width: var(--drawer-width);
+    left: calc(50% - var(--drawer-width) / 2);
+    visibility: hidden;
+    transition:
+      transform 0.1s ease-out,
+      visibility 0.1s ease-out;
+    z-index: 100;
+    transform: scale(0.95);
+  }
+
+  .drawer-last {
+    right: -1.5rem;
+    left: unset;
+    width: 20em;
+  }
+
+  .link-list {
+    border-radius: 2px;
+    background-color: white;
+    padding: 0.5em;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .drawer:hover {
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .nav-index:hover .drawer {
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .nav-wrapper {
+    height: 100%;
+  }
+</style>

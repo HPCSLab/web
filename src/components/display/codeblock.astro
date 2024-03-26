@@ -1,0 +1,113 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  code: string;
+}
+---
+
+<code-block>
+  <div class="root">
+    <button class="copy-button">
+      <Icon
+        name="material-symbols:content-copy-outline-rounded"
+        class="copy-icon"
+      />
+    </button>
+    <div class:list={["button-msg", "copy-suggest"]}>copy?</div>
+    <code>
+      <pre>{Astro.props.code}</pre>
+    </code>
+  </div>
+</code-block>
+
+<script>
+  class CodeBlock extends HTMLElement {
+    timeoutHandler?: NodeJS.Timeout;
+
+    constructor() {
+      super();
+      const button = this.querySelector("button");
+      if (button) {
+        button.addEventListener("click", () => this.handleClick());
+      }
+    }
+
+    handleClick() {
+      const pre = this.querySelector("pre");
+      const hoverMsg = this.querySelector(".button-msg");
+      if (pre && hoverMsg && pre.textContent) {
+        navigator.clipboard.writeText(pre.textContent).then(() => {});
+        if (this.timeoutHandler) {
+          clearTimeout(this.timeoutHandler);
+        }
+        hoverMsg.textContent = "copied!";
+        hoverMsg.classList.add("button-msg-show");
+        this.timeoutHandler = setTimeout(() => {
+          hoverMsg.textContent = "copy?";
+          hoverMsg.classList.remove("button-msg-show");
+        }, 1000);
+      }
+    }
+  }
+
+  customElements.define("code-block", CodeBlock);
+</script>
+
+<style>
+  .root {
+    position: relative;
+  }
+
+  .copy-icon {
+    color: var(--color-inverted-text-weak);
+  }
+
+  .copy-button {
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    color: var(--color-inverted-text-disable);
+  }
+
+  .copy-button:hover .copy-icon {
+    color: var(--color-inverted-text-normal);
+  }
+
+  .button-msg {
+    height: 1rem;
+    position: absolute;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 0.2rem;
+    color: var(--color-inverted-text-normal);
+    background-color: rgba(255, 255, 255, 0.1);
+    right: 1.5rem;
+    top: 0.3rem;
+    opacity: 0;
+    font-size: var(--font-size-sm);
+    transition: opacity 0.1s ease;
+  }
+
+  .button-msg-show {
+    opacity: 1;
+  }
+
+  .copy-button:hover ~ .copy-suggest {
+    opacity: 1;
+  }
+
+  code {
+    display: block;
+    padding: 1rem;
+    background-color: var(--color-bg-dark);
+    color: var(--color-inverted-text-normal);
+    border-radius: 0.2rem;
+    overflow-x: scroll;
+  }
+</style>

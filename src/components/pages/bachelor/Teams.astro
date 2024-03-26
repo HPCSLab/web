@@ -1,0 +1,18 @@
+---
+
+---
+
+<div class="root">
+  <slot />
+</div>
+
+<style>
+  .root {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc(min(100%, 20rem)), max-content)
+    );
+    gap: 2rem;
+  }
+</style>

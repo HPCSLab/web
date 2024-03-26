@@ -1,0 +1,25 @@
+title: Development and Implementation of an Interactive Parallelization
+  Assistance Tool for OpenMP
+booktitle: iPat/OMP, IEICE Transaction on Information Systems
+year: 2006
+authors:
+  - M. Ishihara
+  - H. Honda
+  - M. Sato
+bibtex: >-
+  @inproceedings{hpcs2006-2400,
+    title = {Development and Implementation of an Interactive Parallelization Assistance Tool for OpenMP},
+    booktitle = {iPat/OMP, IEICE Transaction on Information Systems},
+    pages = {399407},
+    vol = {E89D},
+    number = {2},
+    year = {2006},
+  }
+slug: hpcs2006-2400
+reference: "M. Ishihara, H. Honda, M. Sato: Development and Implementation of an
+  Interactive Parallelization Assistance Tool for OpenMP. iPat/OMP, IEICE
+  Transaction on Information Systems, Vol. E89D, No. 2, pp. 399407, Feb.
+  (2006)."
+class:
+  class: international
+  subclass: conference
