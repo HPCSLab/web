@@ -17,6 +17,7 @@
     {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
+      "matchDatasources": ["npm", "github-actions"],
       "automerge": true
     }
   ]
