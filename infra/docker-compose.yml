@@ -17,29 +17,21 @@ services:
       - "8080:8080"
       - "443:443/tcp"
       - "443:443/udp"
-  fallback-http:
-    build: ./fallback-http
+  fallback:
+    build: ./fallback
     volumes:
       - type: bind
         source: /home
         target: /home
     labels:
       - traefik.enable=true
-      - traefik.http.routers.fallback-http.entrypoints=http
-      - traefik.http.routers.fallback-http.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
-      - traefik.http.routers.fallback-http.priority=1
-  fallback-https:
-    build: ./fallback-https
-    volumes:
-      - type: bind
-        source: /home
-        target: /home
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.fallback-https.entrypoints=https
-      - traefik.http.routers.fallback-https.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
-      - traefik.http.routers.fallback-https.priority=1
-      - traefik.http.routers.fallback-https.tls.certresolver=main
+      - traefik.http.routers.fallback.entrypoints=https,http
+      - traefik.http.routers.fallback.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
+      - traefik.http.routers.fallback.priority=1
+      - traefik.http.routers.fallback.tls.certresolver=main
+      - traefik.http.routers.fallback.middlewares=redirect-to-https
+      - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
+      - traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true
   hpcs-web:
     image: nginx:1.25.4
     volumes:
