@@ -295,6 +295,7 @@ const carouselSchema = (ctx: SchemaContext) =>
   z.object({
     src: ctx.image(),
     name: z.string(),
+    date: z.date(),
   });
 
 export type CarouselPicture = z.infer<ReturnType<typeof carouselSchema>>;
