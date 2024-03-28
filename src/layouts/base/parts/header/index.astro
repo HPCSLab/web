@@ -33,7 +33,7 @@ import { pages } from "./sitemap";
     addToggleEventListener: (handler: ToggleEventHandler) => void;
   };
 
-  customElements.whenDefined("humburger-button").then(() => {
+  customElements.whenDefined("hamburger-button").then(() => {
     const drawerToggleButton = document.getElementById(
       "drawer-toggle-button"
     ) as HamburgerButton | null;
@@ -158,7 +158,7 @@ import { pages } from "./sitemap";
     padding-right: 1rem;
   }
 
-  @container (min-width: 60rem) {
+  @container (min-width: 50rem) {
     .desktop-nav {
       display: unset;
     }

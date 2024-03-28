@@ -4,16 +4,16 @@ interface Props {
 }
 ---
 
-<humburger-button id={Astro.props.id}>
+<hamburger-button id={Astro.props.id}>
   <button class:list={["root"]}>
     <div class:list={["top", "bar"]}></div>
     <div class:list={["middle", "bar"]}></div>
     <div class:list={["bottom", "bar"]}></div>
   </button>
-</humburger-button>
+</hamburger-button>
 
 <script>
-  export class HumburgerButton extends HTMLElement {
+  export class HamburgerButton extends HTMLElement {
     opened: boolean;
     toggleEventListeners: ((opened: boolean) => void)[];
 
@@ -56,7 +56,7 @@ interface Props {
     }
   }
 
-  customElements.define("humburger-button", HumburgerButton);
+  customElements.define("hamburger-button", HamburgerButton);
 </script>
 
 <style>
