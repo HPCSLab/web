@@ -7,7 +7,7 @@ services:
         source: ./traefik
         target: /etc/traefik
       - type: bind
-        source: ./pki
+        source: /etc/pki/www
         target: /etc/pki/www
       - type: bind
         source: /var/run/docker.sock
@@ -21,25 +21,25 @@ services:
     build: ./fallback-http
     volumes:
       - type: bind
-        source: /Users
+        source: /home
         target: /home
     labels:
       - traefik.enable=true
       - traefik.http.routers.fallback-http.entrypoints=http
       - traefik.http.routers.fallback-http.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
-      - traefik.http.routers.fallback-http.priority=0
+      - traefik.http.routers.fallback-http.priority=1
   fallback-https:
     build: ./fallback-https
     volumes:
       - type: bind
-        source: /Users
+        source: /home
         target: /home
     labels:
       - traefik.enable=true
       - traefik.http.routers.fallback-https.entrypoints=https
       - traefik.http.routers.fallback-https.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
-      - traefik.http.routers.fallback-https.priority=0
-      - traefik.http.routers.web.tls.certresolver=main
+      - traefik.http.routers.fallback-https.priority=1
+      - traefik.http.routers.fallback-https.tls.certresolver=main
   hpcs-web:
     image: nginx:1.25.4
     volumes:

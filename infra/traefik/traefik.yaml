@@ -13,7 +13,6 @@ api:
 entryPoints:
   https:
     address: ":443"
-    http3: {}
     http:
       tls: true
   http:
@@ -28,7 +27,5 @@ certificatesResolvers:
       certificatesDuration: 2160
       tlsChallenge: {}
 providers:
-  file:
-    directory: /etc/traefik/dynamic
   docker:
     exposedByDefault: false

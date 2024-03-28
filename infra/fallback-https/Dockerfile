@@ -1,4 +1,5 @@
-FROM httpd:2.4-bookworm
+#FROM httpd:2.4-bookworm
+FROM php:8.1-apache
 
 ARG UID=48
 ARG GID=48
@@ -6,19 +7,14 @@ ARG GID=48
 RUN groupadd -g $GID apache && \
     useradd -m -s /bin/bash -u $UID -g $GID apache
 
-RUN apt-get update && apt-get install -y \
-    php8.2 \
-    libphp8.2-embed \
-    php8.2-mbstring \
-    php8.2-xml \
-    libapache2-mod-php
+ENV APACHE_DOCUMENT_ROOT /home/www/new/https
+ENV APACHE_RUN_USER apache
 
-RUN ln -s /usr/lib/apache2/modules/libphp8.2.so /usr/local/apache2/modules/libphp8.2.so
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-COPY apache2/conf /usr/local/apache2/conf
-COPY apache2/conf.d /usr/local/apache2/conf.d
-COPY apache2/conf.modules.d /usr/local/apache2/conf.modules.d
-COPY php.ini /etc/php.ini
-COPY php.d /etc/php.d
+RUN a2enmod authnz_ldap
+RUN a2enmod authz_groupfile
+RUN a2enmod userdir
 
-CMD httpd -D FOREGROUND
+COPY userdir2.conf /etc/apache2/mods-enabled/userdir.conf
