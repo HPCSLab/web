@@ -25,10 +25,13 @@ services:
         target: /home
     labels:
       - traefik.enable=true
-      - traefik.http.routers.fallback.entrypoints=https,http
-      - traefik.http.routers.fallback.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
-      - traefik.http.routers.fallback.priority=1
-      - traefik.http.routers.fallback.tls.certresolver=main
+      - traefik.http.routers.fallback-secure.entrypoints=https
+      - traefik.http.routers.fallback-secure.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
+      - traefik.http.routers.fallback-secure.priority=1
+      - traefik.http.routers.fallback-secure.tls.certresolver=main
+      - traefik.http.routers.fallback-insecure.entrypoints=http
+      - traefik.http.routers.fallback-insecure.rule=Host(`www.hpcs.cs.tsukuba.ac.jp`)
+      - traefik.http.routers.fallback-insecure.priority=1
       - traefik.http.routers.fallback.middlewares=redirect-to-https
       - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
       - traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true
