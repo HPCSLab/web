@@ -88,7 +88,7 @@ export type FacultyGrade = z.infer<typeof facultyGradeSchema>;
 export function translateFacultyGrade(grade: FacultyGrade): string {
   switch (grade) {
     case "Assistant Professor":
-      return "助教授";
+      return "助教";
     case "Associate Professor":
       return "准教授";
     case "Professor":
@@ -295,6 +295,7 @@ const carouselSchema = (ctx: SchemaContext) =>
   z.object({
     src: ctx.image(),
     name: z.string(),
+    date: z.date(),
   });
 
 export type CarouselPicture = z.infer<ReturnType<typeof carouselSchema>>;

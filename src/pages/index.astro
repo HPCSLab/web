@@ -15,11 +15,11 @@ import { getCollection } from "astro:content";
 import H2 from "@components/composite/heading/h2.astro";
 
 const news = (await getCollection("news")).sort(
-  (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date)
+  (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date),
 );
 
 const carouselPictures = (await getCollection("carousel"))
-  .sort(() => Math.random() - 0.5)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .map((pic) => pic.data);
 ---
 

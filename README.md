@@ -86,7 +86,7 @@ Web係が通常編集対象とするのは以下のファイルです。
 
 | `grade` （`Faculty`）                              | 説明           |
 | :------------------------------------------------- | :------------- |
-| `Assistant Professor`                              | 助教授         |
+| `Assistant Professor`                              | 助教           |
 | `Associate Professor`                              | 准教授         |
 | `Professor`                                        | 教授           |
 | `Professor (Cooperative Gradutate School Program)` | 連携大学院教授 |
