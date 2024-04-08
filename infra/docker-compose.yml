@@ -2,6 +2,7 @@ services:
   traefik:
     image: traefik:3.0
     command: --configFile=/etc/traefik/traefik.yaml
+    restart: unless-stopped
     volumes:
       - type: bind
         source: ./traefik
@@ -19,6 +20,7 @@ services:
       - "443:443/udp"
   fallback:
     build: ./fallback
+    restart: unless-stopped
     volumes:
       - type: bind
         source: /home
@@ -38,6 +40,7 @@ services:
       - traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true
   hpcs-web:
     image: nginx:1.25.4
+    restart: unless-stopped
     volumes:
       - type: bind
         source: ./hpcs-web/nginx.conf
