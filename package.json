@@ -24,7 +24,7 @@
     "@iconify-json/ph": "^1.1.12",
     "astro": "^4.5.18",
     "astro-icon": "^1.1.0",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "yaml": "^2.4.1",
     "zod": "^3.22.4"
   },
