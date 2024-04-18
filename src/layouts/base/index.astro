@@ -1,6 +1,9 @@
 ---
 import Header from "./parts/header/index.astro";
 import Footer from "./parts/Footer.astro";
+export type Props = {
+  title: string;
+};
 const { title } = Astro.props;
 ---
 
