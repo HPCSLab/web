@@ -32,7 +32,7 @@ if (news === undefined) {
 const Body = await news.render();
 ---
 
-<Base>
+<Base title={news.data.title} description={news.data.description}>
   <article>
     <NoImageHeader>
       <h1>

@@ -90,9 +90,15 @@ const domestic = {
 
 const prevYear = years[years.indexOf(year) - 1];
 const nextYear = years[years.indexOf(year) + 1];
+
+const internationalPubNum = Object.values(international).map(pubs => pubs.length).reduce((a, b) => a + b);
+const domesticPubNum = Object.values(domestic).map(pubs => pubs.length).reduce((a, b) => a + b);
+
 ---
 
-<Base>
+<Base
+  title={`${Astro.params.year}年度の研究発表`}
+  description={`${Astro.params.year}の学会発表、ジャーナル投稿一覧 (ジャーナル${journal.length}件、国際会議${internationalPubNum}件、国内${domesticPubNum})`}>
   <NoImageHeader>
     <span class="supplemental-text-in-heading">Publications of</span>
     <span class="year-in-heading">{Astro.params.year}</span>
