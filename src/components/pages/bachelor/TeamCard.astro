@@ -41,7 +41,7 @@ const { team, href } = Astro.props;
                     facultyRef.id
                   );
                   return (
-                    <a href={`/members/${facultyRef.id}`} class="faculty-name">
+                    <a href={`/~${facultyRef.id}`} class="faculty-name">
                       {faculty.data.name
                         ? faculty.data.name
                         : faculty.data.eng_name}
