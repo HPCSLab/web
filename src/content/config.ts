@@ -105,20 +105,20 @@ const facultySchema = z.object({
 
 export type Faculty = z.infer<typeof facultyGradeSchema>;
 
-const researcherGradeSchema = z.union([z.literal("Chief"), z.literal("")]);
+const researcherGradeSchema = z.union([z.literal("Senior"), z.literal("")]);
 
 const researcherSchema = z.object({
   occupation: z.literal("Researcher"),
   grade: researcherGradeSchema,
 });
 
-function translateResearcherGrade(
+export function translateResearcherGrade(
   grade: z.infer<typeof researcherGradeSchema>,
 ): string {
   switch (grade) {
     case "":
       return "研究員";
-    case "Chief":
+    case "Senior":
       return "主任研究員";
   }
 }
