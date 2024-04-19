@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import type { Member } from "@content";
-import { translateFacultyGrade } from "@content";
+import { translateFacultyGrade, translateResearcherGrade } from "@content";
 import { Icon } from "astro-icon/components";
 import { getEntry } from "astro:content";
 
@@ -51,7 +51,7 @@ const team = await getEntry("team", props.team.slug);
               <div class="occupation">{translateFacultyGrade(props.grade)}</div>
             );
           case "Researcher":
-            return <div class="occupation">研究者</div>;
+            return <div class="occupation">{translateResearcherGrade(props.grade)}</div>;
           case "Student":
             return <div class="occupation">{props.grade}</div>;
           case "Research Student":
