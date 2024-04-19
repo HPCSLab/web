@@ -1,0 +1,25 @@
+title: RustのUCXラッパーasync-ucxの性能評価
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=231110&file_id=1&file_no=1
+authors:
+  - 小山 創平
+  - 平賀 弘平
+  - 建部 修見
+year: 2023
+bibtex: |
+  @techreport {ipsj-hpc192:mnakano,
+    author      = "{中野 将生} and {平賀 弘平} and {建部 修見}",
+    title       = "RustのUCXラッパーasync-ucxの性能評価",
+    year        = "2023",
+    volume      = "2023-HPC-192",
+    number      = "32",
+    pages       = "1--9",
+    month       = "12",
+    booktitle   = "情報処理学会 第190回 HPC 研究会報告 (HPC190)"
+  }
+reference: |
+  中野 将生, 平賀 弘平, 建部 修見:
+  “RustのUCXラッパーasync-ucxの性能評価,”
+  情報処理学会 第192回 HPC 研究会報告 (HPC192),
+class:
+  class: domestic
+  subclass: workshop
