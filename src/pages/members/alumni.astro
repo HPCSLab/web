@@ -36,7 +36,22 @@ const alumni = (
     <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "staff")
-        .map((alumnus) => alumnus.data)}
+        .map((alumnus) => alumnus.data)
+        .sort((a, b) => {
+          if (a.year < b.year) {
+            return -1;
+          }
+          if (a.year > b.year) {
+            return 1;
+          }
+          if (a.month < b.month) {
+            return -1;
+          }
+          if (a.month > b.month) {
+            return 1;
+          }
+          return a.name.localeCompare(b.name);
+        })}
     />
   </H1Section>
   <H1Section backgroundInverted={false}>
@@ -44,7 +59,22 @@ const alumni = (
     <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "doctor")
-        .map((alumnus) => alumnus.data)}
+        .map((alumnus) => alumnus.data)
+        .sort((a, b) => {
+          if (a.year < b.year) {
+            return -1;
+          }
+          if (a.year > b.year) {
+            return 1;
+          }
+          if (a.month < b.month) {
+            return -1;
+          }
+          if (a.month > b.month) {
+            return 1;
+          }
+          return a.name.localeCompare(b.name);
+        })}
     />
   </H1Section>
   <H1Section backgroundInverted={false}>
@@ -52,7 +82,22 @@ const alumni = (
     <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "master")
-        .map((alumnus) => alumnus.data)}
+        .map((alumnus) => alumnus.data)
+        .sort((a, b) => {
+          if (a.year < b.year) {
+            return -1;
+          }
+          if (a.year > b.year) {
+            return 1;
+          }
+          if (a.month < b.month) {
+            return -1;
+          }
+          if (a.month > b.month) {
+            return 1;
+          }
+          return a.name.localeCompare(b.name);
+        })}
     />
   </H1Section>
   <H1Section backgroundInverted={false}>
@@ -60,7 +105,22 @@ const alumni = (
     <AlumniCard
       alumni={alumni
         .filter((alumni) => alumni.data.type === "undergraduate")
-        .map((alumnus) => alumnus.data)}
+        .map((alumnus) => alumnus.data)
+        .sort((a, b) => {
+          if (a.year < b.year) {
+            return -1;
+          }
+          if (a.year > b.year) {
+            return 1;
+          }
+          if (a.month < b.month) {
+            return -1;
+          }
+          if (a.month > b.month) {
+            return 1;
+          }
+          return a.name.localeCompare(b.name);
+        })}
     />
   </H1Section>
 </Base>
