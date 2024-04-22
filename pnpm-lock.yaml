@@ -21,8 +21,8 @@ importers:
         specifier: ^1.1.12
         version: 1.1.12
       '@iconify-json/fluent':
-        specifier: ^1.1.52
-        version: 1.1.52
+        specifier: ^1.1.53
+        version: 1.1.53
       '@iconify-json/ic':
         specifier: ^1.1.17
         version: 1.1.17
@@ -604,8 +604,8 @@ packages:
   '@iconify-json/charm@1.1.12':
     resolution: {integrity: sha512-a/O7GM2ENm4I+mSddGaHdPNh/RHCbLT4Nlv6Dfgfg+VXTkwjmvzHB1kt3YUB9089UMG6Co3KU2LHXVrCAeuvnw==}
 
-  '@iconify-json/fluent@1.1.52':
-    resolution: {integrity: sha512-DO+1206tb8WS/CQqbk47dNjwjmMtIydC56Hvj7TuAy0i8Us8JRUpmINsTGHbNu9CK9tGU2XY8SJJ1qALtDcnlw==}
+  '@iconify-json/fluent@1.1.53':
+    resolution: {integrity: sha512-3bgfkjTw3rjtuT1fFy433k3Ws5GGsT+/4C1JSF6EzHuH6dwJ2pyiNAUP5I4ufCZH7MGQoEt9txdvRIMJK6rtIg==}
 
   '@iconify-json/ic@1.1.17':
     resolution: {integrity: sha512-EvAjZzVESmN36zlyefylePUNaU2BQ3eRKVZ6KQSQ2bG01ppoZaiFZRri74VTyvp5Mlv2yn68ux1fgCoT+etGmA==}
@@ -4116,7 +4116,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/fluent@1.1.52':
+  '@iconify-json/fluent@1.1.53':
     dependencies:
       '@iconify/types': 2.0.0
 
