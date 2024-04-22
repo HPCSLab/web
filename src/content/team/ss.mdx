@@ -82,7 +82,7 @@ HPC用大規模PCクラスタ、筑波大学のスーパーコンピュータPeg
 います。
 
 - アドホックファイルシステムの研究（[CHFS](https://github.com/otatebe/chfs),
-[FINCHFS](https://github.com/tsukuba-hpcs/finchfs)）
+  [FINCHFS](https://github.com/tsukuba-hpcs/finchfs)）
 
 スーパーコンピュータでは、並列ファイルシステムの性能と演算性能のギャップを埋めるため、
 計算ノードのローカルストレージを用いて一時的に並列ファイルシステムを構築する
@@ -91,6 +91,7 @@ HPC用大規模PCクラスタ、筑波大学のスーパーコンピュータPeg
 アドホックファイルシステムとして、CHFS、FINCHFS を開発しています。CHFS は
 I/O性能の世界ランキングIO500の[2023年6月の10ノード研究部門](https://io500.org/list/isc23/ten)
 において21位となりました。
+
 <Youtube
   src="https://www.youtube.com/embed/K6sO66kAkJ8"
   title="CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory"
@@ -106,6 +107,7 @@ CHFS をキャッシングファイルシステムに対応させたシステム
 従来のキャッシングファイルシステムでは、小さいファイルのアクセス性能が低い問題がありましたが、
 CHFS/Cache では、並列ファイルシステムとの間の一貫性の条件を緩和することによりその問題解決を
 図りました。
+
 <Youtube
   src="https://www.youtube.com/embed/cHJ78vycAms"
   title="Caching Support for CHFS Node-local Persistent Memory File System"
@@ -125,6 +127,7 @@ MPI-IO、HDF5、Apache Arrow、TensorStore などのライブラリを拡張し�
 - 次期フラグシップマシンのストレージシステム調査研究
 
 富岳の次の次期フラグシップマシンのストレージシステムの調査研究を進めています。以下はその中間報告です。
+
 <Youtube
   src="https://www.youtube.com/embed/W2AUqhQJ8uk"
   title="次期フラグシップマシンのストレージシステム調査研究の中間報告"
@@ -142,6 +145,7 @@ GfarmはHPCI共用ストレージなどで実運用されています。HPCI共�
 富岳を中核とした国内のHPC基盤で利用される広域ストレージシステムで、全国のスーパーコンピュータ
 センターをはじめどこからでもマウントして利用可能なファイルシステムです。ファイルは自動的に
 東拠点（柏）と西拠点（神戸）に複製され、障害が発生してもアクセス可能です。
+
 <Youtube
   src="https://www.youtube.com/embed/dvFO3XhU0tU"
   title="Gfarmファイルシステムの最新機能"
