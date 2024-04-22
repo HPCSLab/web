@@ -4,12 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev --host 0.0.0.0",
+    "start": "astro dev",
+    "startw": "astro dev --host 0.0.0.0",
     "build": "astro check && astro build",
     "lint": "run-p lint:*",
     "lint:fmt": "prettier --check .",
     "lint:astro": "astro check",
-    "preview": "astro preview --host 0.0.0.0",
+    "preview": "astro preview",
     "fix": "run-p fix:*",
     "fix:fmt": "prettier -w .",
     "astro": "astro"
