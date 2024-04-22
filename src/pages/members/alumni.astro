@@ -38,19 +38,10 @@ const alumni = (
         .filter((alumni) => alumni.data.type === "staff")
         .map((alumnus) => alumnus.data)
         .sort((a, b) => {
-          if (a.year < b.year) {
-            return -1;
-          }
-          if (a.year > b.year) {
-            return 1;
-          }
-          if (a.month < b.month) {
-            return -1;
-          }
-          if (a.month > b.month) {
-            return 1;
-          }
-          return a.name.localeCompare(b.name);
+          var c =
+            new Date(a.year, a.month - 1).getTime() -
+            new Date(b.year, b.month - 1).getTime();
+          return c == 0 ? a.name.localeCompare(b.name) : c;
         })}
     />
   </H1Section>
@@ -61,19 +52,10 @@ const alumni = (
         .filter((alumni) => alumni.data.type === "doctor")
         .map((alumnus) => alumnus.data)
         .sort((a, b) => {
-          if (a.year < b.year) {
-            return -1;
-          }
-          if (a.year > b.year) {
-            return 1;
-          }
-          if (a.month < b.month) {
-            return -1;
-          }
-          if (a.month > b.month) {
-            return 1;
-          }
-          return a.name.localeCompare(b.name);
+          var c =
+            new Date(a.year, a.month - 1).getTime() -
+            new Date(b.year, b.month - 1).getTime();
+          return c == 0 ? a.name.localeCompare(b.name) : c;
         })}
     />
   </H1Section>
@@ -84,19 +66,10 @@ const alumni = (
         .filter((alumni) => alumni.data.type === "master")
         .map((alumnus) => alumnus.data)
         .sort((a, b) => {
-          if (a.year < b.year) {
-            return -1;
-          }
-          if (a.year > b.year) {
-            return 1;
-          }
-          if (a.month < b.month) {
-            return -1;
-          }
-          if (a.month > b.month) {
-            return 1;
-          }
-          return a.name.localeCompare(b.name);
+          var c =
+            new Date(a.year, a.month - 1).getTime() -
+            new Date(b.year, b.month - 1).getTime();
+          return c == 0 ? a.name.localeCompare(b.name) : c;
         })}
     />
   </H1Section>
@@ -107,19 +80,10 @@ const alumni = (
         .filter((alumni) => alumni.data.type === "undergraduate")
         .map((alumnus) => alumnus.data)
         .sort((a, b) => {
-          if (a.year < b.year) {
-            return -1;
-          }
-          if (a.year > b.year) {
-            return 1;
-          }
-          if (a.month < b.month) {
-            return -1;
-          }
-          if (a.month > b.month) {
-            return 1;
-          }
-          return a.name.localeCompare(b.name);
+          var c =
+            new Date(a.year, a.month - 1).getTime() -
+            new Date(b.year, b.month - 1).getTime();
+          return c == 0 ? a.name.localeCompare(b.name) : c;
         })}
     />
   </H1Section>
