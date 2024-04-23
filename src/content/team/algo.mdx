@@ -71,12 +71,15 @@ import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
 import ServerImage from "@asset/team/algo/server-front.jpg";
 import { Image } from "astro:assets";
 import Chevron from "@components/display/list/item/Chevron.astro";
+import InlineLink from "@components/display/inline-link.astro";
+import YoutubeContainer from "@components/layout/YoutubeContainer.astro";
 
 export const components = {
   p: Typography,
   li: Chevron,
   strong: Keyword,
   h2,
+  a: InlineLink,
 };
 
 ## 高橋 大介 教授
@@ -124,7 +127,9 @@ Phiプロセッサを搭載した4ノードのクラスタがあります。こ�
 
 高橋教授の研究内容のひとつであるFFTをご紹介します。
 
-<Youtube
-  src="https://www.youtube.com/embed/GPJx5JTGQEU"
-  title="配信講義 計算科学技術特論B (2020) 第6回"
-/>
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/GPJx5JTGQEU"
+    title="配信講義 計算科学技術特論B (2020) 第6回"
+  />
+</YoutubeContainer>

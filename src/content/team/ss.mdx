@@ -58,12 +58,15 @@ import Chevron from "@components/display/list/item/Chevron.astro";
 import Typography from "@components/display/Typography.astro";
 import Youtube from "@components/display/Youtube.astro";
 import h2 from "@components/composite/heading/h2.astro";
+import InlineLink from "@components/display/inline-link.astro";
+import YoutubeContainer from "@components/layout/YoutubeContainer.astro";
 
 export const components = {
   p: Typography,
   li: Chevron,
   strong: Keyword,
   h2,
+  a: InlineLink,
 };
 
 ## 建部修見教授
@@ -92,10 +95,12 @@ HPC用大規模PCクラスタ、筑波大学のスーパーコンピュータPeg
 I/O性能の世界ランキングIO500の[2023年6月の10ノード研究部門](https://io500.org/list/isc23/ten)
 において21位となりました。
 
-<Youtube
-  src="https://www.youtube.com/embed/K6sO66kAkJ8"
-  title="CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory"
-/>
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/K6sO66kAkJ8"
+    title="CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory"
+  />
+</YoutubeContainer>
 
 - キャッシングファイルシステムの研究（CHFS/Cache）
 
@@ -108,10 +113,12 @@ CHFS をキャッシングファイルシステムに対応させたシステム
 CHFS/Cache では、並列ファイルシステムとの間の一貫性の条件を緩和することによりその問題解決を
 図りました。
 
-<Youtube
-  src="https://www.youtube.com/embed/cHJ78vycAms"
-  title="Caching Support for CHFS Node-local Persistent Memory File System"
-/>
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/cHJ78vycAms"
+    title="Caching Support for CHFS Node-local Persistent Memory File System"
+  />
+</YoutubeContainer>
 また、書換えたデータを並列ファイルシステムにフラッシュすると性能低下する問題もありましたが、
 その問題については I/O-Aware フラッシング機構を提案することで解決を図りました。
 
@@ -128,10 +135,12 @@ MPI-IO、HDF5、Apache Arrow、TensorStore などのライブラリを拡張し�
 
 富岳の次の次期フラグシップマシンのストレージシステムの調査研究を進めています。以下はその中間報告です。
 
-<Youtube
-  src="https://www.youtube.com/embed/W2AUqhQJ8uk"
-  title="次期フラグシップマシンのストレージシステム調査研究の中間報告"
-/>
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/W2AUqhQJ8uk"
+    title="次期フラグシップマシンのストレージシステム調査研究の中間報告"
+  />
+</YoutubeContainer>
 
 - Gfarmファイルシステム
 
@@ -146,10 +155,12 @@ GfarmはHPCI共用ストレージなどで実運用されています。HPCI共�
 センターをはじめどこからでもマウントして利用可能なファイルシステムです。ファイルは自動的に
 東拠点（柏）と西拠点（神戸）に複製され、障害が発生してもアクセス可能です。
 
-<Youtube
-  src="https://www.youtube.com/embed/dvFO3XhU0tU"
-  title="Gfarmファイルシステムの最新機能"
-/>
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/dvFO3XhU0tU"
+    title="Gfarmファイルシステムの最新機能"
+  />
+</YoutubeContainer>
 
 ## 日常生活
 
