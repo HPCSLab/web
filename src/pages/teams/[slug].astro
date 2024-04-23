@@ -39,7 +39,10 @@ const students = await getCollection(
 );
 ---
 
-<Base title={team.data.name} description={`HPCS研究室 ${team.data.name}チームの研究内容とメンバーの紹介、最近の研究業績一覧`}>
+<Base
+  title={team.data.name}
+  description={`HPCS研究室 ${team.data.name}チームの研究内容とメンバーの紹介、最近の研究業績一覧`}
+>
   <BlurImageHeader imgSrc={team.data.cover.src} imgAlt={team.data.cover.alt}>
     {team.data.name} team
   </BlurImageHeader>

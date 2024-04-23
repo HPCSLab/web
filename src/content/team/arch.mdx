@@ -78,12 +78,15 @@ import cygnus from "@asset/team/arch/Cygnus.png";
 import aisConcept from "@asset/team/arch/AiS_concept.png";
 import aocl from "@asset/team/arch/aocl.png";
 import astroFpga from "@asset/team/arch/astro-fpga.png";
+import InlineLink from "@components/display/inline-link.astro";
+import YoutubeContainer from "@components/layout/YoutubeContainer.astro";
 
 export const components = {
   p: Typography,
   li: Chevron,
   strong: Keyword,
   h2,
+  a: InlineLink,
 };
 
 ## 朴 泰祐 教授
@@ -195,18 +198,26 @@ GPUに加え，FPGAにおいてもOpenCLプラットフォーム (右図)
 
 <Box mode="v" p="1rem">
   <VStack template="1fr 1fr 1fr">
+
+    <YoutubeContainer>
     <Youtube
       src="https://www.youtube.com/embed/zT1BKPU8VVk"
       title="Developing Faster Algorithms with OpenACC and XcalableACC"
     />
+    </YoutubeContainer>
+    <YoutubeContainer>
     <Youtube
       src="https://www.youtube.com/embed/RgADPWRNBgM"
       title="Oakforest-PACS: Overview of the New JCAHPC Computing Facility"
     />
+    </YoutubeContainer>
+    <YoutubeContainer>
     <Youtube
       src="https://www.youtube.com/embed/BDPsa7AP7NA"
       title="Interview with HPC in Asia Chair Prof. Dr. Taisuke Boku"
     />
+    </YoutubeContainer>
+
   </VStack>
 </Box>
 
