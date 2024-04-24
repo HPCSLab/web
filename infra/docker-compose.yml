@@ -39,7 +39,7 @@ services:
       - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
       - traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true
   hpcs-web:
-    image: nginx:1.25.5
+    image: nginx:1.26.0
     restart: unless-stopped
     volumes:
       - type: bind
