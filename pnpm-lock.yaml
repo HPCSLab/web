@@ -30,8 +30,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@iconify-json/ph':
-        specifier: ^1.1.12
-        version: 1.1.12
+        specifier: ^1.1.13
+        version: 1.1.13
       astro:
         specifier: ^4.7.1
         version: 4.7.1(@types/node@20.12.8)(typescript@5.4.5)
@@ -478,8 +478,8 @@ packages:
   '@iconify-json/material-symbols@1.1.79':
     resolution: {integrity: sha512-/OvCxrxPQ/qncjGAPZkNk6LEpVX1nIK6e6BhMsbXMT5pEpnrePsRsVOYsiB8bJn3x67HP8zBrxZSYisDCKf8ow==}
 
-  '@iconify-json/ph@1.1.12':
-    resolution: {integrity: sha512-m+rXTW084YaQQHT+F8TxdkCoAh+i/5MWRoSuPmxCWPlxwMAaLT/QfyVsbEiV95HM5806U/jKpBV6F1b7Pmr3Vg==}
+  '@iconify-json/ph@1.1.13':
+    resolution: {integrity: sha512-xtM4JJ63HCKj09WRqrBswXiHrpliBlqboWSZH8odcmqYXbvIFceU9/Til4V+MQr6+MoUC+KB72cxhky2+A6r/g==}
 
   '@iconify/tools@3.0.7':
     resolution: {integrity: sha512-DxfhFLMnooS34dHelpGUnnYrxLZHs0czC1CgrBhAbuL8ddVzBb2VEQm8kh9qGh7A34qeXAB5iSHH3A72rAaFrg==}
@@ -3736,7 +3736,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/ph@1.1.12':
+  '@iconify-json/ph@1.1.13':
     dependencies:
       '@iconify/types': 2.0.0
 
