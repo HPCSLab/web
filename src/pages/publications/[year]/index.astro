@@ -189,19 +189,13 @@ const domesticPubNum = Object.values(domestic).map(pubs => pubs.length).reduce((
     align-items: center;
   }
 
-  .prev-yaer {
-  }
-
-  .next-year {
-  }
-
-  .year-link-container:hover .nav-icon {
-    transform: scale(1.5);
-  }
-
   .nav-icon {
     color: var(--color-primary);
     font-size: var(--font-size-xl);
     transition: transform 0.1s linear;
+  }
+
+  .year-link-container:hover .nav-icon {
+    transform: scale(1.5);
   }
 </style>
