@@ -3,9 +3,11 @@ eng_name: Masaki Nakano
 occupation: Student
 grade: M1
 team: ss
-icon: ./icons/mnakano.jpg
+icon: ./icons/mnakano.webp
 username: mnakano
 keywords:
+  - 分散ブロックデバイス
   - 非同期ランタイム
 message: |
-  HPCに限らず色々な分散システムの話をしましょう
+  高速かつそこそこ可用性と一貫性を保つ分散ストレージ設計に興味があります。
+  色々出来る楽しい研究室です。
