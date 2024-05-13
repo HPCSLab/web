@@ -187,6 +187,8 @@ export function viewRank(member: Member): number {
           return 4 * 100 + 2;
         case "Assistant Professor":
           return 4 * 100 + 1;
+        default:
+          return -1;
       }
     case "Researcher":
       return 3 * 100;
