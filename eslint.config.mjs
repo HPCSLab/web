@@ -1,27 +1,18 @@
 // @ts-check
 
 import tseslint from "typescript-eslint";
+import astro from "eslint-plugin-astro";
 import javascript from "@eslint/js";
 
 export default tseslint.config(
-  javascript.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
   {
     ignores: ["dist", ".astro", "node_modules"],
   },
-  {
-    languageOptions: {
-      parserOptions: {
-        project: true,
-        ecmaVersion: 2021,
-        sourceType: "module",
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-  },
+  javascript.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
+  ...astro.configs.recommended,
+  ...astro.configs["jsx-a11y-recommended"],
   {
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
@@ -40,6 +31,20 @@ export default tseslint.config(
       "@typescript-eslint/no-unused-vars": ["error"],
       "@typescript-eslint/consistent-type-imports": "warn",
       "@typescript-eslint/no-unnecessary-condition": "warn",
+    },
+  },
+  {
+    languageOptions: {
+      parserOptions: {
+        project: "./tsconfig.json",
+        tsconfigRootDir: ".",
+        extraFileExtensions: [".astro"],
+        ecmaVersion: 2021,
+        sourceType: "module",
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
   },
 );
