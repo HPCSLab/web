@@ -37,7 +37,7 @@
     "@types/eslint__js": "^8.42.3",
     "eslint": "^8.57.0",
     "@eslint/js": "^8.57.0",
-    "typescript-eslint": "^7.8.0",
+    "typescript-eslint": "^7.9.0",
     "eslint-plugin-astro": "^1.2.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "npm-run-all2": "^6.1.2",
