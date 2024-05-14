@@ -24,32 +24,23 @@
     "@iconify-json/charm": "^1.1.12",
     "@iconify-json/fluent": "^1.1.54",
     "@iconify-json/ic": "^1.1.17",
-    "@iconify-json/icons8": "^1.1.8",
+    "@iconify-json/material-symbols": "^1.1.79",
     "@iconify-json/ph": "^1.1.13",
     "astro": "^4.8.3",
     "astro-icon": "^1.1.0",
-    "astro-seo": "^0.8.3",
-    "typescript": "^5.4.5",
-    "yaml": "^2.4.2",
-    "zod": "^3.23.8"
+    "astro-seo": "^0.8.3"
   },
   "devDependencies": {
-    "@eslint/js": "^8.56.0",
-    "@iconify-json/material-symbols": "^1.1.79",
     "@rollup/plugin-yaml": "^4.1.2",
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
-    "@typescript-eslint/parser": "^7.9.0",
     "@types/eslint": "^8.56.10",
     "@types/eslint__eslintrc": "^2.1.1",
     "@types/eslint__js": "^8.42.3",
-    "eslint-plugin-astro": "^1.2.0",
-    "eslint-plugin-import": "^2.29.1",
-    "@typescript-eslint/parser": "^7.8.0",
     "eslint": "^8.56.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
+    "@eslint/js": "^8.56.0",
+    "typescript-eslint": "^7.8.0",
+    "eslint-plugin-astro": "^1.2.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "npm-run-all2": "^6.1.2",
-    "postcss-html": "^1.7.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "sharp": "^0.33.3",
@@ -57,6 +48,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^14.0.0",
     "stylelint-prettier": "^5.0.0",
-    "typescript-eslint": "^7.8.0"
+    "postcss-html": "^1.7.0",
+    "typescript": "^5.4.5"
   }
 }

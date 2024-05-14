@@ -16,7 +16,6 @@ export default defineConfig({
       include: {
         fluent: "*",
         ph: "*",
-        icons8: "*",
         ic: "*",
         charm: "*",
       },
