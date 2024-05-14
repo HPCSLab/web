@@ -43,7 +43,7 @@ importers:
         version: 0.8.3(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.5)
     devDependencies:
       '@eslint/js':
-        specifier: ^8.56.0
+        specifier: ^8.57.0
         version: 8.57.0
       '@rollup/plugin-yaml':
         specifier: ^4.1.2
@@ -58,7 +58,7 @@ importers:
         specifier: ^8.42.3
         version: 8.42.3
       eslint:
-        specifier: ^8.56.0
+        specifier: ^8.57.0
         version: 8.57.0
       eslint-plugin-astro:
         specifier: ^1.2.0
