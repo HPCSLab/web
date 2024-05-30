@@ -43,7 +43,7 @@
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.14.0",
-    "sharp": "^0.33.3",
+    "sharp": "^0.33.4",
     "stylelint": "^16.6.1",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^14.0.0",
