@@ -79,7 +79,7 @@ importers:
         specifier: ^0.14.0
         version: 0.14.0
       sharp:
-        specifier: ^0.33.3
+        specifier: ^0.33.4
         version: 0.33.4
       stylelint:
         specifier: ^16.6.1
