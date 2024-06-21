@@ -46,7 +46,7 @@
     "sharp": "^0.33.4",
     "stylelint": "^16.6.1",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-config-recommended": "^14.0.1",
     "stylelint-prettier": "^5.0.0",
     "postcss-html": "^1.7.0",
     "typescript": "^5.5.2"
