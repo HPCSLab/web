@@ -1,9 +1,9 @@
 name: 関 拓己
 eng_name: Takumi Seki
 occupation: Student
-grade: M1
+grade: M2
 team: perf
 icon: ./icons/seki.jpg
 username: seki
 message: |
-  GPUの計算速度を向上させるパラメータをCUPTIライブラリによってパフォーマンスカウンタを取得することで効率よく探索する方法を研究しております.
+  Fortranアプリケーションの半自動GPU化に関して研究しています.
