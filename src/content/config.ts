@@ -105,9 +105,23 @@ const facultySchema = z.object({
 
 export type Faculty = z.infer<typeof facultyGradeSchema>;
 
+const researcherGradeSchema = z.union([z.literal("Senior"), z.literal("")]);
+
 const researcherSchema = z.object({
   occupation: z.literal("Researcher"),
+  grade: researcherGradeSchema,
 });
+
+export function translateResearcherGrade(
+  grade: z.infer<typeof researcherGradeSchema>,
+): string {
+  switch (grade) {
+    case "":
+      return "研究員";
+    case "Senior":
+      return "主任研究員";
+  }
+}
 
 export type Researcher = z.infer<typeof researcherSchema>;
 
@@ -153,7 +167,7 @@ export function memberRoleName(member: Member): string {
     case "Faculty":
       return translateFacultyGrade(member.grade);
     case "Researcher":
-      return "研究者";
+      return translateResearcherGrade(member.grade);
     case "Research Student":
       return "研究生";
     case "Student":
@@ -173,6 +187,8 @@ export function viewRank(member: Member): number {
           return 4 * 100 + 2;
         case "Assistant Professor":
           return 4 * 100 + 1;
+        default:
+          return -1;
       }
     case "Researcher":
       return 3 * 100;

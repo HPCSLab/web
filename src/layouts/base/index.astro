@@ -1,17 +1,31 @@
 ---
 import Header from "./parts/header/index.astro";
 import Footer from "./parts/Footer.astro";
-const { title } = Astro.props;
+import {SEO} from "astro-seo";
+export type Props = {
+  title: string;
+  description: string;
+};
+const { title, description } = Astro.props;
 ---
 
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="/destyle.css" />
-    <link rel="stylesheet" href="/global.css" />
+    <SEO 
+    title={title}
+    description={description}
+    extend={{
+      link: [
+        {rel: "stylesheet", href: "/destyle.css"},
+        {rel: "stylesheet", href: "/global.css"},
+      ],
+      meta: [
+        { name: "generator", content: Astro.generator },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+      ]
+    }}
+    >
   </head>
   <body>
     <Header />

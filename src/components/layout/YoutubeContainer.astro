@@ -1,9 +1,20 @@
-<div>
-  <slot />
+<div class="outer">
+  <div class="inner">
+    <slot />
+  </div>
 </div>
 
 <style>
-  div {
+  .outer {
     max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner {
+    max-width: 100%;
+    width: calc(min(36rem, 85dvw));
   }
 </style>

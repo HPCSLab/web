@@ -9,7 +9,7 @@ description: FPGA，特に FPGA を用いた大規模数値計算やリアルタ
 bachelorInfo:
   capacities:
     - faculties:
-        - yamaguchi
+        - yoshiki
       capacity: 3
   informationSessions:
     - day: 2023-10-18
@@ -56,15 +56,17 @@ import h2 from "@components/composite/heading/h2.astro";
 import { Image } from "astro:assets";
 import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
 import IntroImage from "@asset/team/fpga/fpga-fig.png";
+import InlineLink from "@components/display/inline-link.astro";
 
 export const components = {
   p: Typography,
   li: Chevron,
   strong: Keyword,
   h2,
+  a: InlineLink,
 };
 
-## 山口 佳樹 准教授
+## 山口 佳樹 教授
 
 - **FPGA**や**GPU** などによるアクセラレータに関する研究
 - 画像・音声処理，ビッグデータ解析，人工知能，暗号処理などにおける**ハードウェア化**研究，など

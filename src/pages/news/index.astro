@@ -6,10 +6,12 @@ import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import Base from "@layouts/base/index.astro";
 
-const news = await getCollection("news");
+const news = (await getCollection("news")).sort(
+  (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date)
+);
 ---
 
-<Base title="News">
+<Base title="News" description="HPCS研究室の学会表彰などのニュース一覧">
   <NoImgHeader>News</NoImgHeader>
   <ResponsiveWidth>
     <ul class="container">

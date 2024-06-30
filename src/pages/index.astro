@@ -23,7 +23,7 @@ const carouselPictures = (await getCollection("carousel"))
   .map((pic) => pic.data);
 ---
 
-<Base>
+<Base title="HPCS Lab." description="筑波大学 HPCS研究室について">
   <Carousel pictures={carouselPictures} width={1200} height={300} />
 
   <NoImgHeader>HPCS Laboratory</NoImgHeader>

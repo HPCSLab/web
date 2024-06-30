@@ -5,7 +5,12 @@ interface Props {
 ---
 
 <hamburger-button id={Astro.props.id}>
-  <button class:list={["root"]}>
+  <button
+    class:list={["root"]}
+    aria-pressed="false"
+    aria-expanded="false"
+    aria-label="サイドメニューを開く"
+  >
     <div class:list={["top", "bar"]}></div>
     <div class:list={["middle", "bar"]}></div>
     <div class:list={["bottom", "bar"]}></div>
@@ -17,28 +22,40 @@ interface Props {
     opened: boolean;
     toggleEventListeners: ((opened: boolean) => void)[];
 
+    toggle() {
+      const root = this.querySelector(".root");
+      if (root) {
+        if (root.classList.contains("opened")) {
+          root.classList.remove("opened");
+          root.ariaPressed = "false";
+          root.ariaExpanded = "false";
+          root.ariaLabel = "サイドメニューを開く";
+          this.opened = false;
+          for (const handler of this.toggleEventListeners) {
+            handler(false);
+          }
+        } else {
+          root.classList.add("opened");
+          root.ariaPressed = "true";
+          root.ariaExpanded = "true";
+          root.ariaLabel = "サイドメニューを閉じる";
+          this.opened = true;
+          for (const handler of this.toggleEventListeners) {
+            handler(true);
+          }
+        }
+      }
+    }
+
     constructor() {
       super();
 
       this.opened = false;
       this.toggleEventListeners = [];
-
       const root = this.querySelector(".root");
       if (root) {
         root.addEventListener("click", () => {
-          if (root.classList.contains("opened")) {
-            root.classList.remove("opened");
-            this.opened = false;
-            for (const handler of this.toggleEventListeners) {
-              handler(false);
-            }
-          } else {
-            root.classList.add("opened");
-            this.opened = true;
-            for (const handler of this.toggleEventListeners) {
-              handler(true);
-            }
-          }
+          this.toggle();
         });
       }
     }
@@ -50,7 +67,7 @@ interface Props {
     removeToggleEventListener(handler: (opened: boolean) => void) {
       this.toggleEventListeners = [
         ...this.toggleEventListeners.filter(
-          (registered) => registered != handler
+          (registered) => registered != handler,
         ),
       ];
     }

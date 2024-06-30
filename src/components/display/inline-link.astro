@@ -1,0 +1,17 @@
+---
+export type Props = {
+  href: string;
+};
+---
+
+<a href={Astro.props.href} class="link">
+  <slot />
+</a>
+
+<style>
+  .link {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>
