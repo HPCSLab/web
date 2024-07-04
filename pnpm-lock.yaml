@@ -13,7 +13,7 @@ importers:
         version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.2)(typescript@5.5.3)
       '@astrojs/mdx':
         specifier: ^3.1.2
-        version: 3.1.2(astro@4.11.4(@types/node@20.14.9)(typescript@5.5.3))
+        version: 3.1.2(astro@4.11.5(@types/node@20.14.9)(typescript@5.5.3))
       '@astrojs/sitemap':
         specifier: ^3.1.6
         version: 3.1.6
@@ -33,8 +33,8 @@ importers:
         specifier: ^1.1.13
         version: 1.1.13
       astro:
-        specifier: ^4.11.4
-        version: 4.11.4(@types/node@20.14.9)(typescript@5.5.3)
+        specifier: ^4.11.5
+        version: 4.11.5(@types/node@20.14.9)(typescript@5.5.3)
       astro-icon:
         specifier: ^1.1.0
         version: 1.1.0
@@ -1074,8 +1074,8 @@ packages:
   astro-seo@0.8.4:
     resolution: {integrity: sha512-Ou1vzQSXAxa0K8rtNtXNvSpYqOGEgMhh0immMxJeXmbVZac3UKCNWAoXWyOQDFYsZvBugCRSg0N1phBqPMVgCw==}
 
-  astro@4.11.4:
-    resolution: {integrity: sha512-jSCnPD+r4MO5Pxl04XfCydzZiL/p70q1ddYind02JDGQDLlps4d2s/AfT/7be12gf1PpR13ACcvO6aJFUIVQXA==}
+  astro@4.11.5:
+    resolution: {integrity: sha512-TCRhuaLwrxwMhS8S1GG+ZTdrAXigX9C8E/YUTs/r2t+owHxDgwl86IV9xH1IHrCPoqhK6civyAQNOT+GKmkb0A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3484,12 +3484,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@3.1.2(astro@4.11.4(@types/node@20.14.9)(typescript@5.5.3))':
+  '@astrojs/mdx@3.1.2(astro@4.11.5(@types/node@20.14.9)(typescript@5.5.3))':
     dependencies:
       '@astrojs/markdown-remark': 5.1.1
       '@mdx-js/mdx': 3.0.1
       acorn: 8.12.0
-      astro: 4.11.4(@types/node@20.14.9)(typescript@5.5.3)
+      astro: 4.11.5(@types/node@20.14.9)(typescript@5.5.3)
       es-module-lexer: 1.5.4
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -4500,7 +4500,7 @@ snapshots:
       - prettier-plugin-astro
       - typescript
 
-  astro@4.11.4(@types/node@20.14.9)(typescript@5.5.3):
+  astro@4.11.5(@types/node@20.14.9)(typescript@5.5.3):
     dependencies:
       '@astrojs/compiler': 2.8.1
       '@astrojs/internal-helpers': 0.4.1
