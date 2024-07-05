@@ -1,0 +1,20 @@
+---
+title: "国際会議 IEEE Cluster 2024で本研究室の学生と研究員と教員が発表します"
+description: "IEE Cluster 2024 にて，本研究室所属の学生と研究員と教員が共著の以下の論文が受理されました．"
+date: "2024-07-05"
+published: true
+---
+
+国際会議 [IEEE Cluster 2024](https://clustercomp.org/2024/)において本研究所属の小山（学生）と平賀（研究員）と建部（教授）による論文が受理されました。
+IEEE Cluster 2024は、9月24日から27日にかけて、日本の神戸で開催されます。
+
+> Sohei Koyama, Kohei Hiraga, Osamu Tatebe, "FINCHFS: Design of Ad-Hoc File System for I/O Heavy HPC Workloads", Proceedings of IEEE International Conference on Cluster Computing (CLUSTER), 2024 (to appear)
+
+本研究は、並列ファイルシステムでは対応が困難な近年のHPCワークロードに着目し、その解決策としてアドホックファイルシステムFINCHFSを設計しました。
+アドホックファイルシステムを並列ファイルシステムを補完する役割として再定義すると、その要件はメタデータアクセス性能と、小さなサイズのI/O性能です。
+FINCHFSはシェアードナッシングアーキテクチャと新たな提案手法number-aware hashingの組み合わせによりこの要件を高い水準で達成しました。
+Pegasusスーパコンピュータ64ノードを利用した性能評価では、MDTest Hard writeにおいて32.5 MIOPS・IOR Hard writeにおいて796.0GiB/sを示しており、これは最先端のアドホックファイルシステムCHFSに比べて42.8倍、174.2倍の性能を実現しています。
+
+本研究の成果は、空間局所性を活かさないアドホックファイルシステムの設計において、通常リクエストの偏りでスケールしないと思われていたシェアードナッシングアーキテクチャを導入することで、小さなRPCの性能の大幅な引き上げを実現出来ることを示したという点で重要です。
+
+Keywords: FINCHFS, Ad-Hoc File System, Persistent Memory, Parallel I/O, HPC
