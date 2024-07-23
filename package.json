@@ -31,16 +31,17 @@
     "astro-seo": "^0.8.4"
   },
   "devDependencies": {
+    "@eslint/js": "^9.7.0",
     "@rollup/plugin-yaml": "^4.1.2",
+    "@types/bun": "^1.1.6",
     "@types/eslint": "^8.56.11",
     "@types/eslint__eslintrc": "^2.1.2",
     "@types/eslint__js": "^8.42.3",
     "eslint": "^9.7.0",
-    "@eslint/js": "^9.7.0",
-    "typescript-eslint": "^7.17.0",
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "npm-run-all2": "^6.2.2",
+    "postcss-html": "^1.7.0",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.0",
     "sharp": "^0.33.4",
@@ -48,7 +49,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^14.0.1",
     "stylelint-prettier": "^5.0.2",
-    "postcss-html": "^1.7.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
   }
 }
