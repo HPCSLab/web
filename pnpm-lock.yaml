@@ -18,8 +18,8 @@ importers:
         specifier: ^3.1.6
         version: 3.1.6
       '@iconify-json/charm':
-        specifier: ^1.1.12
-        version: 1.1.12
+        specifier: ^1.1.13
+        version: 1.1.13
       '@iconify-json/fluent':
         specifier: ^1.1.60
         version: 1.1.60
@@ -475,8 +475,8 @@ packages:
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/charm@1.1.12':
-    resolution: {integrity: sha512-a/O7GM2ENm4I+mSddGaHdPNh/RHCbLT4Nlv6Dfgfg+VXTkwjmvzHB1kt3YUB9089UMG6Co3KU2LHXVrCAeuvnw==}
+  '@iconify-json/charm@1.1.13':
+    resolution: {integrity: sha512-b3tk4T7ghLEkd5MYO0PYUFpKDTk5+hKLb+dCurWrA8ZXFoSq3MT4grnQ3+hWRtvdiHA6UN6VmuNDDmVeRZ/waw==}
 
   '@iconify-json/fluent@1.1.60':
     resolution: {integrity: sha512-o1SsJtT0YxphVgHI+LuAMZfA+KlBnXVK+xVQ0nLwMk4bmZNw3i07Jb+nkrCESGKFIFZf6TFuO0fcrsidpgQpSA==}
@@ -3769,7 +3769,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
-  '@iconify-json/charm@1.1.12':
+  '@iconify-json/charm@1.1.13':
     dependencies:
       '@iconify/types': 2.0.0
 
