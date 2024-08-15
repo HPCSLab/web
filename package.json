@@ -26,7 +26,7 @@
     "@iconify-json/ic": "^1.1.18",
     "@iconify-json/material-symbols": "^1.1.87",
     "@iconify-json/ph": "^1.1.14",
-    "astro": "^4.13.4",
+    "astro": "^4.14.2",
     "astro-icon": "^1.1.0",
     "astro-seo": "^0.8.4"
   },
