@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.1.2",
-    "@types/eslint": "^8.56.11",
+    "@types/eslint": "^8.56.12",
     "@types/eslint__eslintrc": "^2.1.2",
     "@types/eslint__js": "^8.42.3",
     "eslint": "^9.9.1",
