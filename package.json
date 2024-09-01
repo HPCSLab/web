@@ -23,7 +23,7 @@
     "@astrojs/sitemap": "^3.1.6",
     "@iconify-json/charm": "^1.2.0",
     "@iconify-json/fluent": "^1.2.0",
-    "@iconify-json/ic": "^1.1.18",
+    "@iconify-json/ic": "^1.2.0",
     "@iconify-json/material-symbols": "^1.1.89",
     "@iconify-json/ph": "^1.1.14",
     "astro": "^4.15.1",
