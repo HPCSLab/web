@@ -76,7 +76,7 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       prettier-plugin-astro:
-        specifier: ^0.14.0
+        specifier: ^0.14.1
         version: 0.14.1
       sharp:
         specifier: ^0.33.5
