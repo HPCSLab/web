@@ -38,7 +38,7 @@
     "eslint": "^9.9.1",
     "@eslint/js": "^9.9.1",
     "typescript-eslint": "^8.5.0",
-    "eslint-plugin-astro": "^1.2.3",
+    "eslint-plugin-astro": "^1.2.4",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "npm-run-all2": "^6.2.2",
     "prettier": "^3.3.3",
