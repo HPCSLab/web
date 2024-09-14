@@ -40,7 +40,7 @@
     "typescript-eslint": "^8.5.0",
     "eslint-plugin-astro": "^1.2.4",
     "eslint-plugin-jsx-a11y": "^6.10.0",
-    "npm-run-all2": "^6.2.2",
+    "npm-run-all2": "^6.2.3",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "sharp": "^0.33.5",
