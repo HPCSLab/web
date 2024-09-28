@@ -1,0 +1,26 @@
+title: Improving Performance on Replica-Exchange Molecular Dynamics Simulations by Optimizing GPU Core Utilization
+year: 2024
+bibtex: |
+  @article { published_papers/47450951,
+  title = "Improving Performance on Replica-Exchange Molecular Dynamics Simulations by Optimizing GPU Core Utilization",
+  author = "Boku, Taisuke and Sugita, Masatake and Kobayashi, Ryohei and Furuya, Shinnosuke and Fujie, Takuya and Ohue, Masahito and Akiyama, Yutaka",
+  journal = "ICPP '24: Proceedings of the 53rd International Conference on Parallel Processing",
+  month = "8",
+  pages = "1082--1091",
+  publisher = "Association for Computing Machinery",
+  doi = "10.1145/3673038.3673097",
+  year = "2024"
+  }
+authors:
+  - Taisuke Boku
+  - Masataka Sugita
+  - Ryohei Kobayashi
+  - Shinnosuke Furuya
+  - Takuya Fujie
+  - Masahito Ohue
+  - Yutaka Akiyama
+reference: |
+  Taisuke Boku, Masataka Sugita, Ryohei Kobayashi, Shinnosuke Furuya, Takuya Fujie, Masahito Ohue, Yutaka Akiyama, “Improving Performance on Replica-Exchange Molecular Dynamics Simulations by Optimizing GPU Core Utilization”, Proc. of ICPP2024, Visby, Sweden, Aug. 15th, 2024.
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,24 @@
+title: Accelerating Radiative Transfer Simulation on NVIDIA GPUs with OpenACC
+year: 2023
+bibtex: |
+  @inproceedings{kobayashi2022accelerating,
+  title={Accelerating Radiative Transfer Simulation on NVIDIA GPUs with OpenACC},
+  author={Kobayashi, Ryohei and Fujita, Norihisa and Yamaguchi, Yoshiki and Boku, Taisuke and Yoshikawa, Kohji and Abe, Makito and Umemura, Masayuki},
+  booktitle={International Conference on Parallel and Distributed Computing: Applications and Technologies},
+  pages={344--358},
+  year={2022},
+  organization={Springer}
+  }
+authors:
+  - Ryohei Kobayashi
+  - Norihisa Fujita
+  - Yoshiki Yamaguchi
+  - Taisuke Boku
+  - Kohji Yoshikawa
+  - Makito Abe
+  - Masayuki Umemura
+reference: |
+  Ryohei Kobayashi, Norihisa Fujita, Yoshiki Yamaguchi, Taisuke Boku, Kohji Yoshikawa, Makito Abe, Masayuki Umemura, "Accelerating Radiative Transfer Simulation on NVIDIA GPUs with OpenACC", PDCAT 2022: Parallel and Distributed Computing, Applications and Technologies, Volume 13798, pp.344 – 358, 2023 年 4 月
+class:
+  class: international
+  subclass: conference
