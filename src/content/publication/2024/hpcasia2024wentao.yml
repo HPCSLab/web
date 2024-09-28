@@ -1,0 +1,20 @@
+title: Using Intel oneAPI for Multi-hybrid Acceleration Programming with GPU and FPGA Coupling
+year: 2024
+bibtex: |
+  @inproceedings{liang2024using,
+  title={Using Intel oneAPI for Multi-hybrid Acceleration Programming with GPU and FPGA Coupling},
+  author={Liang, Wentao and Fujita, Norihisa and Kobayashi, Ryohei and Boku, Taisuke},
+  booktitle={Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region Workshops},
+  pages={69--76},
+  year={2024}
+  }
+authors:
+  - Liang, Wentao
+  - Fujita Norihisa
+  - Kobayashi Ryohei
+  - Boku Taisuke
+reference: |
+  Liang, W., Fujita, N., Kobayashi, R., & Boku, T. (2024, January). Using Intel oneAPI for Multi-hybrid Acceleration Programming with GPU and FPGA Coupling. In Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region Workshops (pp. 69-76).
+class:
+  class: international
+  subclass: conference

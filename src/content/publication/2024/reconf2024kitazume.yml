@@ -1,0 +1,24 @@
+title: 適応型帯域圧縮ハードウェアプラットフォームのChisel実装と評価
+year: 2024
+bibtex: |
+  @inproceedings{kitazume2024ChiselImplementation
+  title={適応型帯域圧縮ハードウェアプラットフォームのChisel実装と評価},
+  author={北爪開人 and 上野知洋 and 吉井一友 and 木山真人 and 藤田典久 and 小林諒平 and 佐野健太郎 and 朴　泰祐},
+  booktitle={電子情報通信学会技術研究報告, vol. 124, no. 188},
+  pages={41-46},
+  year={2024},
+  }
+authors:
+  - 北爪開人
+  - 上野知洋
+  - 吉井一友
+  - 木山真人
+  - 藤田典久
+  - 小林諒平
+  - 佐野健太郎
+  - 朴　泰祐
+reference: |
+  北爪開人, 上野知洋, 吉井一友, 木山真人, 藤田典久, 小林諒平, 佐野健太郎, 朴　泰祐, "適応型帯域圧縮ハードウェアプラットフォームのChisel実装と評価", 電子情報通信学会技術研究報告, vol. 124, no. 188, RECONF2024-50, pp. 41-46, 2024年9月.
+class:
+  class: domestic
+  subclass: workshop
