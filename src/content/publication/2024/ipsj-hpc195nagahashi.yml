@@ -1,0 +1,24 @@
+title: MPI/OpenMP並列化によるスライドパズルのZero-Aware Pattern Databaseの構築
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=237584&file_id=1&file_no=1
+authors:
+  -	長橋 朋也
+  - 高橋 大介
+year: 2024
+bibtex: |
+  @techreport {ipsj-hpc195:nagahashi,
+   author	 = "{長橋 朋也} and {高橋 大介}",
+   title	 = "MPI/OpenMP並列化によるスライドパズルのZero-Aware Pattern Databaseの構築",
+   year 	 = "2024",
+   volume	 = "2024-HPC-195",
+   number	 = "23",
+   pages   = "1--6",
+   month   = "8",
+   booktitle = "情報処理学会 第195回 HPC 研究会報告 (HPC195)"
+  }
+reference: |
+  川上 昌汰, 高橋 大介:
+  "MPI/OpenMP並列化によるスライドパズルのZero-Aware Pattern Databaseの構築,”
+  情報処理学会 第195回 HPC 研究会報告 (HPC195),
+class:
+  class: domestic
+  subclass: workshop
