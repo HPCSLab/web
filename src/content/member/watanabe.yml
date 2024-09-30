@@ -6,3 +6,4 @@ team: perf
 icon: ./icons/watanabe.jpg
 username: watanabe
 message: |
+  OpenACCでの遊休GPUを利用した通信の高速化手法を研究しています。
