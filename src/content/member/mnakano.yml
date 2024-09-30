@@ -8,4 +8,4 @@ username: mnakano
 keywords:
   - 非同期ランタイム
 message: |
-  HPCに限らず色々な分散システムの話をしましょう
+  先読みとバッファリングを非同期的に扱うことでsmall fileへのリクエストの高層化を考えています。
