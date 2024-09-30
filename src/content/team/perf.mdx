@@ -73,18 +73,33 @@ GPUの動作周波数もCPUより低く，多数の演算器を活用できる�
 他には，**GPU計算を支援する各種ソフトウェア開発**や，
 あるいは希望があればGPU以外のCPUやメニーコアプロセッサも対象とします．
 過去に学生が行った研究，および現在の主な研究テーマは以下の通りです．
-- <span style="font-weight: bold; font-size: 1.2em;">Fortranアプリケーションの半自動GPU化</span>\
-　ユーザにGPU化範囲を指定してもらうことにより，その範囲内の並列化可能な箇所をGPU用のプログラムに置き換えます．\
-　これによりGPUプログラミングの支援を実現します．
-- <span style="font-weight: bold; font-size: 1.2em;">OpenACCアプリケーションでのチェックポイント機能の実現</span> \
-　チェックポイントとは，実行中のアプリケーションの状態をファイルなどに保存して，それをもとに後から再実行する機能を指します．\
-　既存のチェックポイントソフトウェア「DMTCP」を拡張し，OpenACCアプリケーションを対象とすることを目標としています．
-- <span style="font-weight: bold; font-size: 1.2em;">遊休GPUを利用したホスト・デバイス間通信の高速化</span> \
-　GPUを1基のみ使用するアプリケーションを複数のGPUを搭載する計算ノードで実行する際，使われないGPU（遊休GPU）が存在します．\
-　このようなGPUアプリケーションに対して遊休GPUも利用することによってプログラムを変更することなく高速化する手法を研究しました．
-- <span style="font-weight: bold; font-size: 1.2em;">DO CONCURRENT構文によるOpenSWPCのGPU化</span> \
-　Fortranの標準並列化構文であるDO CONCURRENTにて，地震波の伝播シミュレーションコードであるOpenSWPCを\
-　最小限の修正でGPUに移植する研究を行いました．
 
+- <span style="font-weight: bold; font-size: 1.2em;">
+    Fortranアプリケーションの半自動GPU化
+  </span>
+
+  ユーザにGPU化範囲を指定してもらうことにより，その範囲内の並列化可能な箇所をGPU用のプログラムに置き換えます．\
+  　これによりGPUプログラミングの支援を実現します．
+
+- <span style="font-weight: bold; font-size: 1.2em;">
+    OpenACCアプリケーションでのチェックポイント機能の実現
+  </span>
+
+  チェックポイントとは，実行中のアプリケーションの状態をファイルなどに保存して，それをもとに後から再実行する機能を指します．\
+  　既存のチェックポイントソフトウェア「DMTCP」を拡張し，OpenACCアプリケーションを対象とすることを目標としています．
+
+- <span style="font-weight: bold; font-size: 1.2em;">
+    遊休GPUを利用したホスト・デバイス間通信の高速化
+  </span>
+
+  GPUを1基のみ使用するアプリケーションを複数のGPUを搭載する計算ノードで実行する際，使われないGPU（遊休GPU）が存在します．\
+  　このようなGPUアプリケーションに対して遊休GPUも利用することによってプログラムを変更することなく高速化する手法を研究しました．
+
+- <span style="font-weight: bold; font-size: 1.2em;">
+    DO CONCURRENT構文によるOpenSWPCのGPU化
+  </span>
+
+  Fortranの標準並列化構文であるDO CONCURRENTにて，地震波の伝播シミュレーションコードであるOpenSWPCを\
+  　最小限の修正でGPUに移植する研究を行いました．
 
 <Image src={cover} alt="Performanceチームの本棚" />
