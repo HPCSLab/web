@@ -11,57 +11,48 @@ bachelorInfo:
   capacities:
     - faculties:
         - taisuke
-        - rkobayashi
         - fujita
-      capacity: 8
+      capacity: 5
   informationSessions:
-    - day: 2023-10-06
-      hour:
-        begin: "17:00"
-        end: "18:00"
-      place:
-        display: 総合研究棟B 1122
-        canonical: 筑波大学 総合研究棟B 1122
-      note: 全体説明会後に実施
-
-    - day: 2023-10-12
+    - day: 2024-10-04
       hour:
         begin: "18:15"
-        end: "19:30"
+        end: "19:00"
       place:
-        display: 総合研究棟B1111
-        canonical: 筑波大学 総合研究棟B 1111
+        display: "計算機科学研究センター B会議室"
+        canonical: 筑波大学 計算科学研究センター B会議室
 
-    - day: 2023-10-17
+    - day: 2024-10-09
       hour:
         begin: "18:15"
-        end: "19:30"
+        end: "19:00"
       place:
-        display: 総合研究棟B1121/22
-        canonical: 筑波大学  総合研究棟B1121/22
+        display: "計算機科学研究センター B会議室"
+        canonical: 筑波大学 計算科学研究センター B会議室
+
+    - day: 2023-10-18
+      hour:
+        begin: "18:15"
+        end: "19:00"
+      place:
+        display: "計算機科学研究センター B会議室"
+        canonical: 筑波大学 計算科学研究センター B会議室
 
 recentWorks:
+  - 2024/hpcasia2024wentao
+  - 2024/icpp2024boku
+  - 2024/eScience2024fujita
+  - 2024/pdcat2022rkobayasi
+  - 2023/acs2023tsunashima
+  - 2023/sc-w2023fujita
   - 2023/ischp2023boku
-  - 2023/ipsj-hpc190fujita
-  - 2023/ipsj-hpc190kobayashi
   - 2022/europar-2022fujita
-  - 2023/ipsj-hpc189kitazume
   - 2022/pdcat-2022kobayashi
   - 2023/ipsj-hpc188sano
   - 2023/hpcasia-2023kikuchi
   - 2023/hpcasia-2023kobayashi
   - 2022/icpp-ws2022boku
-  - 2023/ipsj-hpc187kikuchi
   - 2022/ipsj-jip2022kobayashi
-  - 2022/ipsj-hpc185kobayashi
-  - 2022/heart2022sano
-  - 2022/ipsj-hpc2022sano
-  - 2022/ipsj-hpc183fujita
-  - 2022/ipsj-hpc183tsunashima
-  - 2022/ipsj-hpc183kashiwano
-  - 2022/ipsj-hpc183kobayashi
-  - 2022/lncs2022
-  - 2022/hpcasia2022watanabe
 ---
 
 import Keyword from "@components/display/Keyword.astro";
@@ -108,20 +99,18 @@ GPUやメニーコアプロセッサ等の演算加速装置をより有効に�
   個人ページ
 </ReadMoreLink>
 
-## 小林 諒平 助教
+## 藤田 典久 助教
 
-- 高性能な**FPGAアクセラレータ**とその開発方式に関する研究
+- **GPU**/**FPGA**等の演算加速装置に関する研究，アプリケーションの高速化
+- 高性能計算における**高速ネットワーク**に関する研究
+- 上記の要素を活用するための**プログラミング環境**に関する研究
 
-大規模なデータ処理や科学技術計算を高速，かつ低消費電力に実行できるようにするために，電子回路のパターンをプログラムできるハードウェアであるFPGAを応用した計算機システムについて研究しています．具体的にはCPUやGPUをより効率的・大規模に利用するための，FPGA向けのハードウェアアルゴリズムやFPGAベースの専用アクセラレータの提案，実装を行っていきます．また，高性能なFPGAアクセラレータの効率的な開発を睨んだプラットフォームについても同時に研究しています．
-
-<ReadMoreLink href="https://sites.google.com/site/ryokbya/">
-  個人ページ
-</ReadMoreLink>
+GPU/FPGA等の演算加速装置を高性能計算で活用することに関する研究を行っています．演算加速装置を用いた科学技術計算アプリケーションの高速化だけでなく，計算機を相互接続する高性能ネットワークに関する研究，FPGA間直接通信に関する研究を進めています．また，これらの研究要素を活用するためのプログラミング環境に関する研究など，システムソフトウェアに関する研究も行っています．
 
 ## 研究内容
 
 アーキテクチャチームでは，GPUやメニーコアプロセッサ等の演算加速装置をより有効に大規模並列処理に活用する手法や，超高性能並列処理向けネットワーク，さらにこれらを活用する高性能並列コンパイラの研究をしています．
-現在の主な研究テーマは以下の通りです．なお，朴及び小林，藤田の3名が共同で適宜指導を行います。朴教授、小林助教、藤田助教の共同募集で募集人数は8名です．
+現在の主な研究テーマは以下の通りです．なお，朴及び藤田の2名が共同で適宜指導を行います。朴教授、藤田助教の共同募集で募集人数は5名です．
 
 - FPGAを用いた演算オフローディングと高速通信の融合に関する研究
 - 大規模メニーコアシステムを用いた超並列アプリケーションの実装と最適化に関する研究（朴）
@@ -193,8 +182,24 @@ GPUに加え，FPGAにおいてもOpenCLプラットフォーム (右図)
 
 ## 世界的な活動
 
-朴教授は国際会議における議長やプログラム委員長を務めるなど、世界的に活躍しています．
-また，小林助教も国際会議のプログラム委員の経験があります．
+朴教授は以下の国際会議にて、議長やプログラム委員長を務めるなど、世界的に活躍しています。
+
+- Steering Committee Chair: HPC Asia
+- Steering Committee: IEEE Cluster
+- Steering Committee: ICPP
+- International Advisory Committee: HANAMI Europe-Japan Collaboration
+- Chair: 2023 ACM Gordon Bell Prize Committee
+- Committee Member (2021-2024): ACM Gordon Bell Prize Committee
+- General Co-Chair: IEEE Cluster 2025, Edinburgh
+- General Vice Co-Chair: IEEE Cluster 2024, Kobe
+- General Co-Chair: IEEE Cluster 2020, virtual
+- General Chair: ICPP2019, Kyoto
+
+藤田助教も複数の国際会議でプログラム委員の経験があります。
+
+- Special Session Chair, Performance Optimization and Auto-Tuning of Software on Multicore/Manycore Systems 2024
+- Member, ISC 2024 Workshop Committee
+- Publicity Chair, HPC Asia 2024 Organizing Committee
 
 <Box mode="v" p="1rem">
   <VStack template="1fr 1fr 1fr">
@@ -223,5 +228,4 @@ GPUに加え，FPGAにおいてもOpenCLプラットフォーム (右図)
 
 ## 他チームとの協力
 
-並列プログラミング言語に関する研究はPAチームとの共同研究で，我々のPEACH2をPAチームで開発している並列言語XcalableMPの演算加速装置向け拡張XcalableACCに導入した実績もあります．
-また，FPGAチームとも協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．
+FPGAチームと協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．

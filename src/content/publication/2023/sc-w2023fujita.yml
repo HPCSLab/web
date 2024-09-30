@@ -1,0 +1,23 @@
+title: "CHARM-SYCL: New Unified Programming Environment for Multiple Accelerator Types"
+year: 2024
+bibtex: |
+  @inproceedings{fujita2023charm,
+  title={CHARM-SYCL: New Unified Programming Environment for Multiple Accelerator Types},
+  author={Fujita, Norihisa and Johnston, Beau and Kobayashi, Ryohei and Teranishi, Keita and Lee, Seyong and Boku, Taisuke and Vetter, Jeffrey S},
+  booktitle={Proceedings of the SC'23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis},
+  pages={1651--1661},
+  year={2023}
+  }
+authors:
+  - Norihisa Fujita
+  - Beau Johnston
+  - Ryohei Kobayashi
+  - Keita Teranishi
+  - Seyong Lee
+  - Taisuke Boku
+  - Jeffrey S. Vetter
+reference: |
+  Norihisa Fujita, Beau Johnston, Ryohei Kobayashi, Keita Teranishi, Seyong Lee, Taisuke Boku, and Jeffrey S. Vetter, “CHARM-SYCL: New Unified Programming Environment for Multiple Accelerator Types,” In Proceedings of the SC '23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis (SC-W '23). Association for Computing Machinery, New York, NY, USA, pp. 1651–1661, Nov. 2023. doi: doi.org/10.1145/3624062.3624244
+class:
+  class: international
+  subclass: conference
