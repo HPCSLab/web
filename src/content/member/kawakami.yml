@@ -5,4 +5,4 @@ grade: M1
 team: algo
 icon: ./icons/kawakami.jpg
 username: kawakami
-message: 8倍精度浮動小数点数を用いたFFTの実装
+message: 高精度高速フーリエ変換
