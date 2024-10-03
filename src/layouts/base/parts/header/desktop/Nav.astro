@@ -2,6 +2,7 @@
 import type { IndexPage } from "../sitemap";
 import Box from "@components/layout/box/box.astro";
 import TextWithIcon from "@components/atom/TextWithIcon.astro";
+import { bachelorPage } from "../sitemap";
 
 interface Props {
   pages: IndexPage[];
@@ -69,6 +70,11 @@ const lastPage = pages[pages.length - 1];
         </li>
       ))
     }
+    <li class="nav-index strong">
+      <Box p="0.5rem">
+        <a href={bachelorPage.url}>卒研配属情報</a>
+      </Box>
+    </li>
   </ul>
 </nav>
 
@@ -99,6 +105,11 @@ const lastPage = pages[pages.length - 1];
     position: relative;
     z-index: 1;
     height: 100%;
+  }
+
+  .nav-index.strong {
+    background-color: var(--color-triadic-2);
+    color: white;
   }
 
   @keyframes show-drawer {
@@ -170,5 +181,21 @@ const lastPage = pages[pages.length - 1];
 
   .nav-wrapper {
     height: 100%;
+  }
+
+  .strong-link {
+    background-color: white;
+    width: fit-content;
+    padding: 0.4rem;
+    color: var(--color-primary);
+    border-radius: 0.5rem;
+    transition: all 0.1s linear;
+    border: 1px solid var(--color-primary);
+  }
+
+  .strong-link:hover {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: white;
   }
 </style>
