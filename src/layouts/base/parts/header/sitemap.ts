@@ -28,6 +28,13 @@ export type AcordionIndex = {
 
 export type IndexPage = JustLinkIndex | AcordionIndex;
 
+export const bachelorPage : JustLinkIndex = {
+  title: "卒研配属",
+  url: "/bachelor",
+  hasChildren: false,
+  icon: "material-symbols:chat-info-outline-rounded",
+}
+
 const teamPages = (await getCollection("team")).map((team) => ({
   title: team.data.name,
   url: `/teams/${team.slug}`,
@@ -40,11 +47,7 @@ export const pages: IndexPage[] = [
     hasChildren: true,
     icon: "material-symbols:team-dashboard-outline",
     children: [
-      {
-        title: "卒研配属",
-        url: "/bachelor",
-        icon: "material-symbols:chat-info-outline-rounded",
-      },
+      bachelorPage,
       ...teamPages,
     ],
   },
