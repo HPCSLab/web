@@ -27,7 +27,7 @@ const faculties = await getCollection(
   (member) =>
     (member.data.occupation === "Faculty" ||
       member.data.occupation === "Researcher") &&
-    member.data.team.slug === Astro.params.slug
+    member.data.team.slug === Astro.params.slug,
 );
 
 const students = await getCollection(
@@ -35,7 +35,7 @@ const students = await getCollection(
   (member) =>
     (member.data.occupation === "Student" ||
       member.data.occupation === "Research Student") &&
-    member.data.team.slug === Astro.params.slug
+    member.data.team.slug === Astro.params.slug,
 );
 ---
 
