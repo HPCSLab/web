@@ -16,7 +16,7 @@ interface Props {
 const works = await Promise.all(
   Astro.props.works.map(async (work) => {
     return await getEntry("publication", work.id);
-  })
+  }),
 );
 
 function isNotNull<T>(x: T | null | undefined): x is T {

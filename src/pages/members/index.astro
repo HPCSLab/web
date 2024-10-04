@@ -7,23 +7,26 @@ import { viewRank } from "@content";
 
 const faculties = await getCollection(
   "member",
-  ({ data }) => data.occupation === "Faculty"
+  ({ data }) => data.occupation === "Faculty",
 );
 const researchers = await getCollection(
   "member",
-  ({ data }) => data.occupation === "Researcher"
+  ({ data }) => data.occupation === "Researcher",
 );
 const researchStudents = await getCollection(
   "member",
-  ({ data }) => data.occupation === "Research Student"
+  ({ data }) => data.occupation === "Research Student",
 );
 const students = await getCollection(
   "member",
-  ({ data }) => data.occupation === "Student"
+  ({ data }) => data.occupation === "Student",
 );
 ---
 
-<Base title="HPCS メンバー" description="HPCS研究室に所属する教員、研究員、学生の一覧">
+<Base
+  title="HPCS メンバー"
+  description="HPCS研究室に所属する教員、研究員、学生の一覧"
+>
   <div class="root">
     <section>
       <div class="separator">
