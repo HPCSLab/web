@@ -1,6 +1,6 @@
 services:
   traefik:
-    image: traefik:v3.1
+    image: traefik:v3.2
     command: --configFile=/etc/traefik/traefik.yaml
     restart: unless-stopped
     volumes:
