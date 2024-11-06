@@ -125,7 +125,7 @@ export const pages: IndexPage[] = [
       },
       {
         title: "Internal",
-        url: "/internal/pukiwiki/",
+        url: "/internal/",
         icon: "material-symbols:login-rounded",
       },
     ],
