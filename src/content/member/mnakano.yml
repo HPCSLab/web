@@ -8,4 +8,4 @@ username: mnakano
 keywords:
   - 非同期ランタイム
 message: |
-  先読みとバッファリングを非同期的に扱うことでsmall fileへのリクエストの高層化を考えています。
+  先読みとバッファリングを非同期的に扱うことでsmall fileへのリクエストの高速化を考えています。
