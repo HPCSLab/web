@@ -19,14 +19,14 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
-    "@astrojs/mdx": "^3.1.6",
+    "@astrojs/mdx": "^4.0.0",
     "@astrojs/sitemap": "^3.1.6",
     "@iconify-json/charm": "^1.2.0",
     "@iconify-json/fluent": "^1.2.1",
     "@iconify-json/ic": "^1.2.0",
     "@iconify-json/material-symbols": "^1.2.1",
     "@iconify-json/ph": "^1.2.0",
-    "astro": "^4.15.6",
+    "astro": "^5.0.0",
     "astro-icon": "^1.1.1",
     "astro-seo": "^0.8.4"
   },
