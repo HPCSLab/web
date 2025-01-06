@@ -4,11 +4,12 @@ import { getCollection, getEntry } from "astro:content";
 import Base from "@layouts/base/index.astro";
 import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+import { render } from "astro:content";
 
 export const getStaticPaths = (async () => {
   const news = await getCollection("news");
   return news.map((news) => {
-    const matched = /(\d{4})\/(.+)/.exec(news.slug);
+    const matched = /(\d{4})\/(.+)/.exec(news.id);
     if (matched && matched[1] && matched[2]) {
       return {
         params: {
@@ -25,11 +26,11 @@ export const getStaticPaths = (async () => {
 const params = Astro.params;
 
 const news = await getEntry("news", `${params.year}/${params.slug}`);
-if (news === undefined) {
+if (!news) {
   throw new Error(`${params.year}/${params.slug} not found`);
 }
 
-const Body = await news.render();
+const Body = await render(news);
 ---
 
 <Base title={news.data.title} description={news.data.description}>

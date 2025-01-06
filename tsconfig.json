@@ -7,7 +7,7 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@asset/*": ["src/asset/*"],
-      "@content": ["src/content/config.ts"]
+      "@content": ["src/content.config.ts"]
     }
   },
   "include": [

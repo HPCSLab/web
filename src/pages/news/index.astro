@@ -19,7 +19,7 @@ const news = (await getCollection("news")).sort(
         news.map((article) => (
           <li class="news-heading">
             <h2 class="title">
-              <ExternalLink href={`/news/${article.slug}`}>
+              <ExternalLink href={`/news/${article.id}`}>
                 {article.data.title}
               </ExternalLink>
             </h2>
