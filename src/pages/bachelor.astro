@@ -106,7 +106,7 @@ const generalSessionFormLink = "https://forms.gle/meqA8rHAmdPdb2Cd9";
     <Teams>
       {
         teams.map((team) => (
-          <TeamCard team={team.data} href={`/teams/${team.slug}`} />
+          <TeamCard team={team.data} href={`/teams/${team.id}`} />
         ))
       }
     </Teams>

@@ -80,7 +80,7 @@ const carouselPictures = (await getCollection("carousel"))
           <ListItem class="news-headline">
             <div>
               <span class="news-date">{news.data.date}</span>
-              <ExternalLink href={`/news/${news.slug}`}>
+              <ExternalLink href={`/news/${news.id}`}>
                 {news.data.title}
               </ExternalLink>
             </div>

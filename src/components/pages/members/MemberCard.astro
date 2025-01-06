@@ -10,7 +10,10 @@ interface Props {
 }
 
 const props = Astro.props.faculty;
-const team = await getEntry("team", props.team.slug);
+const team = await getEntry("team", props.team.id);
+if (!team) {
+  throw new Error(`${props.team.id} not found`);
+}
 ---
 
 <section>

@@ -37,7 +37,7 @@ export const bachelorPage: JustLinkIndex = {
 
 const teamPages = (await getCollection("team")).map((team) => ({
   title: team.data.name,
-  url: `/teams/${team.slug}`,
+  url: `/teams/${team.id}`,
   icon: team.data.icon,
 }));
 
