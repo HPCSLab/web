@@ -38,15 +38,17 @@ const { team, href } = Astro.props;
                 {capacity.faculties.map(async (facultyRef) => {
                   const faculty = await getEntry(
                     facultyRef.collection,
-                    facultyRef.id
+                    facultyRef.id,
                   );
-                  return (
-                    <a href={`/~${facultyRef.id}`} class="faculty-name">
-                      {faculty.data.name
-                        ? faculty.data.name
-                        : faculty.data.eng_name}
-                    </a>
-                  );
+                  if (faculty) {
+                    return (
+                      <a href={`/~${facultyRef.id}`} class="faculty-name">
+                        {faculty.data.name
+                          ? faculty.data.name
+                          : faculty.data.eng_name}
+                      </a>
+                    );
+                  }
                 })}
               </div>
               <div class="capacity-n">

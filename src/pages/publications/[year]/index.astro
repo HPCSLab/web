@@ -19,7 +19,7 @@ const years = [
 export const getStaticPaths = (async () => {
   return [
     ...new Set(
-      (await getCollection("publication")).map((pub) => pub.data.year)
+      (await getCollection("publication")).map((pub) => pub.data.year),
     ),
   ].map((year) => ({
     params: { year: year.toString() },
@@ -30,7 +30,7 @@ const year = parseInt(Astro.params.year, 10);
 
 const journal = await getCollection(
   "publication",
-  (pub) => pub.data.class.class === "journal" && pub.data.year == year
+  (pub) => pub.data.class.class === "journal" && pub.data.year == year,
 );
 
 const international = {
@@ -39,14 +39,14 @@ const international = {
     (pub) =>
       pub.data.class.class === "international" &&
       pub.data.class.subclass === "conference" &&
-      pub.data.year === year
+      pub.data.year === year,
   ),
   poster: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "international" &&
       pub.data.class.subclass === "poster" &&
-      pub.data.year === year
+      pub.data.year === year,
   ),
 };
 
@@ -56,49 +56,53 @@ const domestic = {
     (pub) =>
       pub.data.class.class === "domestic" &&
       pub.data.class.subclass === "conference" &&
-      pub.data.year === year
+      pub.data.year === year,
   ),
   poster: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "domestic" &&
       pub.data.class.subclass === "poster" &&
-      pub.data.year === year
+      pub.data.year === year,
   ),
   workshop: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "domestic" &&
       pub.data.class.subclass === "workshop" &&
-      pub.data.year === year
+      pub.data.year === year,
   ),
   magazine: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "domestic" &&
       pub.data.class.subclass === "magazine" &&
-      pub.data.year === year
+      pub.data.year === year,
   ),
   misc: await getCollection(
     "publication",
     (pub) =>
       pub.data.class.class === "domestic" &&
       pub.data.class.subclass === "misc" &&
-      pub.data.year === year
+      pub.data.year === year,
   ),
 };
 
 const prevYear = years[years.indexOf(year) - 1];
 const nextYear = years[years.indexOf(year) + 1];
 
-const internationalPubNum = Object.values(international).map(pubs => pubs.length).reduce((a, b) => a + b);
-const domesticPubNum = Object.values(domestic).map(pubs => pubs.length).reduce((a, b) => a + b);
-
+const internationalPubNum = Object.values(international)
+  .map((pubs) => pubs.length)
+  .reduce((a, b) => a + b);
+const domesticPubNum = Object.values(domestic)
+  .map((pubs) => pubs.length)
+  .reduce((a, b) => a + b);
 ---
 
 <Base
   title={`${Astro.params.year}年度の研究発表`}
-  description={`${Astro.params.year}の学会発表、ジャーナル投稿一覧 (ジャーナル${journal.length}件、国際会議${internationalPubNum}件、国内${domesticPubNum})`}>
+  description={`${Astro.params.year}の学会発表、ジャーナル投稿一覧 (ジャーナル${journal.length}件、国際会議${internationalPubNum}件、国内${domesticPubNum})`}
+>
   <NoImageHeader>
     <span class="supplemental-text-in-heading">Publications of</span>
     <span class="year-in-heading">{Astro.params.year}</span>
@@ -189,19 +193,13 @@ const domesticPubNum = Object.values(domestic).map(pubs => pubs.length).reduce((
     align-items: center;
   }
 
-  .prev-yaer {
-  }
-
-  .next-year {
-  }
-
-  .year-link-container:hover .nav-icon {
-    transform: scale(1.5);
-  }
-
   .nav-icon {
     color: var(--color-primary);
     font-size: var(--font-size-xl);
     transition: transform 0.1s linear;
+  }
+
+  .year-link-container:hover .nav-icon {
+    transform: scale(1.5);
   }
 </style>

@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 import Base from "@layouts/base/index.astro";
 import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
@@ -11,23 +11,27 @@ import H2 from "@components/composite/heading/h2.astro";
 import VSpace from "@components/layout/VSpace.astro";
 import RecentWorks from "@components/pages/teams/RecentWorks.astro";
 import { viewRank } from "@content";
+import type { CollectionEntry } from "astro:content";
 
 export const getStaticPaths = (async () => {
   return (await getCollection("team")).map((team) => ({
-    params: { slug: team.slug },
+    params: { slug: team.id },
   }));
 }) satisfies GetStaticPaths;
 
-const team = await getEntry("team", Astro.params.slug);
+const team = (await getEntry(
+  "team",
+  Astro.params.slug,
+)) as CollectionEntry<"team">;
 
-const Rendered = await team.render();
+const Rendered = await render(team);
 
 const faculties = await getCollection(
   "member",
   (member) =>
     (member.data.occupation === "Faculty" ||
       member.data.occupation === "Researcher") &&
-    member.data.team.slug === Astro.params.slug
+    member.data.team.id === Astro.params.slug,
 );
 
 const students = await getCollection(
@@ -35,7 +39,7 @@ const students = await getCollection(
   (member) =>
     (member.data.occupation === "Student" ||
       member.data.occupation === "Research Student") &&
-    member.data.team.slug === Astro.params.slug
+    member.data.team.id === Astro.params.slug,
 );
 ---
 

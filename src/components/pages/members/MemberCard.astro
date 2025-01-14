@@ -10,7 +10,10 @@ interface Props {
 }
 
 const props = Astro.props.faculty;
-const team = await getEntry("team", props.team.slug);
+const team = await getEntry("team", props.team.id);
+if (!team) {
+  throw new Error(`${props.team.id} not found`);
+}
 ---
 
 <section>
@@ -51,7 +54,11 @@ const team = await getEntry("team", props.team.slug);
               <div class="occupation">{translateFacultyGrade(props.grade)}</div>
             );
           case "Researcher":
-            return <div class="occupation">{translateResearcherGrade(props.grade)}</div>;
+            return (
+              <div class="occupation">
+                {translateResearcherGrade(props.grade)}
+              </div>
+            );
           case "Student":
             return <div class="occupation">{props.grade}</div>;
           case "Research Student":
@@ -148,9 +155,6 @@ const team = await getEntry("team", props.team.slug);
     display: flex;
     flex-direction: row;
     margin-bottom: 0.5rem;
-  }
-
-  .team {
   }
 
   .badge {

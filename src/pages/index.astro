@@ -7,7 +7,6 @@ import ListItem from "@components/display/list/item/Naked.astro";
 import TopLevelSection from "@components/composite/section/H1.astro";
 import Keyword from "@components/display/Keyword.astro";
 import ReadMoreLink from "@components/atom/link/ReadMoreLink.astro";
-import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import ChevronListItem from "@components/display/list/item/Chevron.astro";
 import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
@@ -69,12 +68,10 @@ const carouselPictures = (await getCollection("carousel"))
       これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており，
       並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算を目指した研究を進めています．
     </Typography>
-  </TopLevelSection>
-  <ResponsiveWidth>
     <H2>
-      <ReadMoreLink href="/bachelor">卒研配属情報はこちらから</ReadMoreLink>
+      <a href="/bachelor" class="large-link">卒研配属情報はこちらから</a>
     </H2>
-  </ResponsiveWidth>
+  </TopLevelSection>
   <TopLevelSection backgroundInverted={false}>
     <H2>What's news</H2>
     <List ordered={false}>
@@ -83,7 +80,7 @@ const carouselPictures = (await getCollection("carousel"))
           <ListItem class="news-headline">
             <div>
               <span class="news-date">{news.data.date}</span>
-              <ExternalLink href={`/news/${news.slug}`}>
+              <ExternalLink href={`/news/${news.id}`}>
                 {news.data.title}
               </ExternalLink>
             </div>
@@ -122,5 +119,20 @@ const carouselPictures = (await getCollection("carousel"))
   .news-date {
     color: var(--color-text-weak);
     font-size: smaller;
+  }
+
+  .large-link {
+    background-color: var(--color-triadic-2);
+    width: fit-content;
+    padding: 0.7rem;
+    font-weight: bolder;
+    color: var(--color-inverted-text-strong);
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.1s linear;
+  }
+
+  .large-link:hover {
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.6);
   }
 </style>

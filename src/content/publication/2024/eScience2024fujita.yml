@@ -1,0 +1,25 @@
+title: "CHARM-SYCL & IRIS: A Tool Chain for Performance Portability on Extremely Heterogeneous Systems,"
+year: 2024
+bibtex: |
+  @inproceedings{fujita2024charm,
+  title={CHARM-SYCL \& IRIS: A Tool Chain for Performance Portability on Extremely Heterogeneous Systems},
+  author={Fujita, Norihisa and Johnston, Beau and Miniskar, Narasinga Rao and Kobayashi, Ryohei and Monil, Mohammad Alaul Haque and Teranishi, Keita and Lee, Seyong and Vetter, Jeffrey S and Boku, Taisuke},
+  booktitle={2024 IEEE 20th International Conference on e-Science (e-Science)},
+  pages={1--10},
+  year={2024},
+  organization={IEEE}
+  }
+authors:
+  - Norihisa Fujita
+  - Beau Johnston
+  - Narasinga Rao Miniskar
+  - Ryohei Kobayashi
+  - Mohammad Alaul Haque Monil
+  - Keita Teranishi
+  - Seyong Lee, Jeffrey S. Vetter
+  - Taisuke Boku
+reference: |
+  Norihisa Fujita, Beau Johnston, Narasinga Rao Miniskar, Ryohei Kobayashi, Mohammad Alaul Haque Monil, Keita Teranishi, Seyong Lee, Jeffrey S. Vetter, Taisuke Boku, "CHARM-SYCL & IRIS: A Tool Chain for Performance Portability on Extremely Heterogeneous Systems," 2024 IEEE 20th International Conference on e-Science (e-Science), Osaka, Japan, pp. 1-10, Sept. 2024 doi: doi.org/10.1109/e-Science62913.2024.10678717.
+class:
+  class: international
+  subclass: conference

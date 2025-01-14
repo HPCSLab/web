@@ -1,7 +1,7 @@
 ---
 import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
 import Base from "@layouts/base/index.astro";
-import HpcsAll from "@asset/hpcs-all-2019.jpg";
+import HpcsAll from "@asset/hpcs-all-2024.jpg";
 import Typography from "@components/display/Typography.astro";
 import H1Section from "@components/composite/section/H1.astro";
 import Keyword from "@components/display/Keyword.astro";
@@ -21,18 +21,20 @@ const generalSession: InformationSession = {
     display: "総合研究棟B1001",
     canonical: "筑波大学 総合研究棟B1001",
   },
-  day: new Date("2023-10-6"),
+  day: new Date("2024-10-2"),
   hour: {
-    begin: "16:45",
-    end: "18:00",
+    begin: "15:15",
+    end: "16:30",
   },
 };
 
-const generalSessionFormLink =
-  "https://docs.google.com/forms/d/e/1FAIpQLScoPSBe2PMLGNuUuVF980Yi6xQWacRS9oya9YENXPxeiwCiOg/viewform";
+const generalSessionFormLink = "https://forms.gle/meqA8rHAmdPdb2Cd9";
 ---
 
-<Base title="卒研配属情報" description="卒研配属情報と学群四年生向けの研究室紹介">
+<Base
+  title="卒研配属情報"
+  description="卒研配属情報と学群四年生向けの研究室紹介"
+>
   <BlurImageHeader imgSrc={HpcsAll} imgAlt="HPCS全員の集合写真">
     卒研配属情報
   </BlurImageHeader>
@@ -90,13 +92,21 @@ const generalSessionFormLink =
     <a href={generalSessionFormLink} class="general-session-link">
       全体説明会申し込みフォーム</a
     >
+    <H2>各チームの説明会</H2>
+    <Typography>
+      各チームの説明会日程は下に記載されています．
+      もちろん，飛び入り参加も大歓迎ですが，事前に申し込みいただけるとこちらで来る予定の人を把握できるためありがたいです！
+    </Typography>
+    <a href={generalSessionFormLink} class="general-session-link">
+      チーム説明会申し込みフォーム
+    </a>
   </H1Section>
   <H1Section backgroundInverted={true} fullW={true}>
     <H2 backgroundInverted={true} slot="heading">チーム一覧</H2>
     <Teams>
       {
         teams.map((team) => (
-          <TeamCard team={team.data} href={`/teams/${team.slug}`} />
+          <TeamCard team={team.data} href={`/teams/${team.id}`} />
         ))
       }
     </Teams>

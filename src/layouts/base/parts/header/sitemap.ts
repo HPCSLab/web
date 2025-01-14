@@ -28,9 +28,16 @@ export type AcordionIndex = {
 
 export type IndexPage = JustLinkIndex | AcordionIndex;
 
+export const bachelorPage: JustLinkIndex = {
+  title: "卒研配属",
+  url: "/bachelor",
+  hasChildren: false,
+  icon: "material-symbols:chat-info-outline-rounded",
+};
+
 const teamPages = (await getCollection("team")).map((team) => ({
   title: team.data.name,
-  url: `/teams/${team.slug}`,
+  url: `/teams/${team.id}`,
   icon: team.data.icon,
 }));
 
@@ -39,14 +46,7 @@ export const pages: IndexPage[] = [
     title: "Teams",
     hasChildren: true,
     icon: "material-symbols:team-dashboard-outline",
-    children: [
-      {
-        title: "卒研配属",
-        url: "/bachelor",
-        icon: "material-symbols:chat-info-outline-rounded",
-      },
-      ...teamPages,
-    ],
+    children: [bachelorPage, ...teamPages],
   },
   {
     title: "Members",
@@ -125,7 +125,7 @@ export const pages: IndexPage[] = [
       },
       {
         title: "Internal",
-        url: "/internal/pukiwiki/",
+        url: "/internal/",
         icon: "material-symbols:login-rounded",
       },
     ],

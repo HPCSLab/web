@@ -1,3 +1,4 @@
+import { glob } from "astro/loaders";
 import {
   z,
   defineCollection,
@@ -187,6 +188,8 @@ export function viewRank(member: Member): number {
           return 4 * 100 + 2;
         case "Assistant Professor":
           return 4 * 100 + 1;
+        default:
+          return -1;
       }
     case "Researcher":
       return 3 * 100;
@@ -316,27 +319,45 @@ export type CarouselPicture = z.infer<ReturnType<typeof carouselSchema>>;
 
 export const collections = {
   news: defineCollection({
-    type: "content",
     schema: newsSchema,
+    loader: glob({
+      base: "./content/news",
+      pattern: "**/*.mdx",
+    }),
   }),
   publication: defineCollection({
-    type: "data",
     schema: publicationSchema,
+    loader: glob({
+      base: "./content/publication",
+      pattern: "**/*.yml",
+    }),
   }),
   member: defineCollection({
-    type: "data",
     schema: memberSchema,
+    loader: glob({
+      base: "./content/member",
+      pattern: "**/*.yml",
+    }),
   }),
   alumni: defineCollection({
-    type: "data",
     schema: alumnusSchema,
+    loader: glob({
+      base: "./content/alumni",
+      pattern: "**/*.yml",
+    }),
   }),
   team: defineCollection({
-    type: "content",
     schema: teamSchema,
+    loader: glob({
+      base: "./content/team",
+      pattern: "**/*.mdx",
+    }),
   }),
   carousel: defineCollection({
-    type: "data",
     schema: carouselSchema,
+    loader: glob({
+      base: "./content/carousel",
+      pattern: "**/*.yml",
+    }),
   }),
 };

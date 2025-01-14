@@ -1,0 +1,24 @@
+title: GPUにおける8倍精度高速フーリエ変換の実装と評価
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=234031&file_id=1&file_no=1
+authors:
+  - 川上 昌汰
+  - 高橋 大介
+year: 2024
+bibtex: |
+  @techreport {ipsj-hpc194:kawakami
+   author	 = "{川上 昌汰} and {高橋 大介}",
+   title	 = "GPUにおける8倍精度高速フーリエ変換の実装と評価",
+   year 	 = "2024",
+   volume	 = "2024-HPC-194",
+   number	 = "2",
+   pages   = "1--7",
+   month   = "5",
+   booktitle = "情報処理学会 第194回 HPC 研究会報告 (HPC194)"
+  }
+reference: |
+  川上 昌汰, 高橋 大介:
+  “GPUにおける8倍精度高速フーリエ変換の実装と評価,”
+  情報処理学会 第194回 HPC 研究会報告 (HPC194),
+class:
+  class: domestic
+  subclass: workshop

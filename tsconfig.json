@@ -2,11 +2,19 @@
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "baseUrl": ".",
+    "allowJs": true,
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@asset/*": ["src/asset/*"],
-      "@content": ["src/content/config.ts"]
+      "@content": ["src/content.config.ts"]
     }
-  }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.mjs",
+    ".prettierrc.mjs",
+    "stylelint.config.js",
+    "**/*.astro"
+  ]
 }
