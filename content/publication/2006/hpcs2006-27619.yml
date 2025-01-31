@@ -1,0 +1,22 @@
+title: P2P Overlay Network for TCP Programming with UDP Hole Punching
+booktitle: Proc. IFIP International Conference on Network and Parallel Computing(NPC 2006)
+year: 2006
+authors:
+  - Takayuki Okamoto
+  - Taisuke Boku
+  - Mitsuhisa Sato
+  - Osamu Tatebe
+bibtex: >-
+  @inproceedings{hpcs2006-27619,
+    title = {P2P Overlay Network for TCP Programming with UDP Hole Punching},
+    booktitle = {Proc. IFIP International Conference on Network and Parallel Computing(NPC 2006)},
+    pages = {199204},
+    year = {2006},
+  }
+reference: "Takayuki Okamoto, Taisuke Boku, Mitsuhisa Sato, Osamu Tatebe: P2P
+  Overlay Network for TCP Programming with UDP Hole Punching, Proc. IFIP
+  International Conference on Network and Parallel Computing(NPC 2006), pp.
+  199204, (2006)."
+class:
+  class: international
+  subclass: conference

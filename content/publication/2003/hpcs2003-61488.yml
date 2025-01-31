@@ -1,0 +1,21 @@
+title: '"Performance of Clusterenabled OpenMP for the SCASH Software Distributed
+  Shared Memory System'
+booktitle: "CCGRID 2003: 450456"
+year: 2003
+authors:
+  - Yoshinori Ojima
+  - Mitsuhisa Sato
+  - Hiroshi Harada
+  - Yutaka Ishikawa
+bibtex: >-
+  @inproceedings{hpcs2003-61488,
+    title = {"Performance of Clusterenabled OpenMP for the SCASH Software Distributed Shared Memory System},
+    booktitle = {CCGRID 2003: 450456},
+    year = {2003},
+  }
+reference: "Yoshinori Ojima, Mitsuhisa Sato, Hiroshi Harada, Yutaka Ishikawa:
+  “Performance of Clusterenabled OpenMP for the SCASH Software Distributed
+  Shared Memory System”. CCGRID 2003: 450456"
+class:
+  class: international
+  subclass: conference

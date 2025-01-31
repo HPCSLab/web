@@ -1,0 +1,23 @@
+title: Building Hierarchical Grid Storage Using the GFARM Global File System and
+  the JUXMEM Grid DataSharing Service
+booktitle: Proceedings of EuroPar 2008, LNCS 5168, Springer
+year: 2008
+authors:
+  - Gabriel Antoniu
+  - Loic Cudennec
+  - Majd Ghareeb
+  - Osamu Tatebe
+bibtex: >-
+  @inproceedings{hpcs2008-57241,
+    title = {Building Hierarchical Grid Storage Using the GFARM Global File System and the JUXMEM Grid DataSharing Service},
+    booktitle = {Proceedings of EuroPar 2008, LNCS 5168, Springer},
+    pages = {456-465},
+    year = {2008},
+  }
+reference: Gabriel Antoniu, Loic Cudennec, Majd Ghareeb, Osamu Tatebe, “Building
+  Hierarchical Grid Storage Using the GFARM Global File System and the JUXMEM
+  Grid DataSharing Service”, Proceedings of EuroPar 2008, LNCS 5168, Springer,
+  pp.456-465, 2008
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,23 @@
+title: "Implementation and Performance Evaluation of CONFLEXG: Gridenabled
+  Molecular Conformational Space Search Program with OmniRPC"
+booktitle: 18th Annual ACM International Conference on Supercomputing (ICS04).
+year: 2004
+authors:
+  - Yoshihiro Nakajima
+  - Mitsuhisa Sato
+  - Hitoshi Goto
+  - Taisuke Boku
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2004-42310,
+    title = {Implementation and Performance Evaluation of CONFLEXG: Gridenabled Molecular Conformational Space Search Program with OmniRPC},
+    booktitle = {18th Annual ACM International Conference on Supercomputing (ICS04).},
+    year = {2004},
+  }
+reference: "Yoshihiro Nakajima, Mitsuhisa Sato, Hitoshi Goto, Taisuke Boku,
+  Daisuke Takahashi, “Implementation and Performance Evaluation of CONFLEXG:
+  Gridenabled Molecular Conformational Space Search Program with OmniRPC”, 18th
+  Annual ACM International Conference on Supercomputing (ICS04)."
+class:
+  class: international
+  subclass: conference

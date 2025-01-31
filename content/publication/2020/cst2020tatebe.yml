@@ -1,0 +1,20 @@
+title: Gfarm/BB - Gfarm file system for node-local burst buffer
+booktitle: Journal of Computer Science and Technology
+year: 2020
+authors:
+  - Osamu Tatebe
+  - Shukuko Moriwake
+  - Yoshihiro Oyama
+bibtex: |-
+  @article{cst2020:tatebe,
+  	author    = {Osamu Tatebe, and Shukuko Moriwake, and Yoshihiro Oyama,},
+  	title     = {Gfarm/BB - Gfarm file system for node-local burst buffer},
+  	booktitle = {Journal of Computer Science and Technology},
+  	year      = 2020,
+  	note      = {to appear},
+  }
+reference: " Osamu Tatebe,  Shukuko Moriwake,  Yoshihiro Oyama: “Gfarm/BB –
+  Gfarm file system for node-local burst buffer”, Journal of Computer Science
+  and Technology, 2020. (to appear)"
+class:
+  class: journal

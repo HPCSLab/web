@@ -1,0 +1,24 @@
+title: "PPFS: a Scale-out Distributed File System for Post-Petascale Systems"
+booktitle: Proceedings of the 2nd IEEE International Conference on Data Science
+  and Systems (DSS 2016)
+year: 2016
+authors:
+  - Fuyumasa Takatsu
+  - Kohei Hiraga
+  - Osamu Tatebe
+bibtex: >-
+  @inproceedings { TakatsuDSS2016,
+    author={Fuyumasa Takatsu and Kohei Hiraga and Osamu Tatebe},
+    title ={{PPFS: a Scale-out Distributed File System for Post-Petascale Systems}},
+    booktitle = {{Proceedings of the 2nd IEEE International Conference on Data Science and Systems (DSS 2016)}},
+    year      = {2016},
+    month     = {12},
+    comment   = {to appear},
+  }
+reference: "Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “PPFS: a Scale-out
+  Distributed File System for Post-Petascale Systems”, Proceedings of the 2nd
+  IEEE International Conference on Data Science and Systems (DSS 2016), Dec.
+  2016. (to appear)"
+class:
+  class: international
+  subclass: conference

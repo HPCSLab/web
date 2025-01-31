@@ -1,0 +1,19 @@
+title: メモリ効率を考慮した組み込み向け高信頼ソフトウェア分散共有メモリの検討
+booktitle: 情報処理学会研究報告, 2007HPC112
+year: 2007
+authors:
+  - 李 珍泌
+  - 木村 英明
+  - 佐藤 三久
+bibtex: |-
+  @inproceedings{hpcs2007-56020,
+    title = {メモリ効率を考慮した組み込み向け高信頼ソフトウェア分散共有メモリの検討},
+    booktitle = {情報処理学会研究報告, 2007HPC112},
+    pages = {13-18},
+    year = {2007},
+  }
+reference: 李 珍泌，木村 英明，佐藤
+  三久：メモリ効率を考慮した組み込み向け高信頼ソフトウェア分散共有メモリの検討，情報処理学会研究報告，2007HPC112，pp. 13-18, (2007)
+class:
+  class: domestic
+  subclass: workshop

@@ -1,0 +1,26 @@
+title: "RI2N/DRV: Multi-link Ethernet for High-Bandwidth and Fault-Tolerant
+  Network on PC Clusters"
+booktitle: "International Parallel and Distributed Processing Symposium (IPDPS
+  2009) The 9th Workshop on Communication Architecture for Clusters (CAC 2009):
+  pp.1-8"
+year: 2009
+authors:
+  - Shin’ichi Miura
+  - Toshihiro Hanawa
+  - Taiga Yonemoto
+  - Taisuke Boku
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2009-21845,
+    title = {RI2N/DRV: Multi-link Ethernet for High-Bandwidth and Fault-Tolerant Network on PC Clusters},
+    booktitle = {International Parallel and Distributed Processing Symposium (IPDPS 2009) The 9th Workshop on Communication Architecture for Clusters (CAC 2009): pp.1-8},
+    year = {2009},
+  }
+reference: "Shin’ichi Miura, Toshihiro Hanawa, Taiga Yonemoto, Taisuke Boku,
+  Mitsuhisa Sato: RI2N/DRV: Multi-link Ethernet for High-Bandwidth and
+  Fault-Tolerant Network on PC Clusters. International Parallel and Distributed
+  Processing Symposium (IPDPS 2009) The 9th Workshop on Communication
+  Architecture for Clusters (CAC 2009): pp.1-8"
+class:
+  class: international
+  subclass: conference

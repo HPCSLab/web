@@ -1,0 +1,22 @@
+title: Efficient Parallel Summation on Encrypted Database System
+booktitle: Proc. of IEEE International Conference on Big Data and Smart
+  Computing (BigComp)
+year: 2017
+authors:
+  - Kentaro Horio
+  - Hideyuki Kawashima
+  - Osamu Tatebe
+bibtex: >-
+  @inproceedings { BigComp:Horio, 
+    author    = "{Kentaro Horio} and {Hideyuki Kawashima} and {Osamu Tatebe}",
+    title     = "{Efficient Parallel Summation on Encrypted Database System}",
+    booktitle = "Proc. of IEEE International Conference on Big Data and Smart Computing (BigComp)",
+    month	    = "2",
+    year 	    = "2017"
+  }
+reference: "Kentaro Horio, Hideyuki Kawashima, Osamu Tatebe: “Efficient Parallel
+  Summation on Encrypted Database System”, Proc. of IEEE International
+  Conference on Big Data and Smart Computing (BigComp), Feb. 2017."
+class:
+  class: international
+  subclass: conference

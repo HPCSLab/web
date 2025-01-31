@@ -1,0 +1,23 @@
+title: Capability Assessment of a Multiple-FPGA System for High-Performance Computing
+booktitle: HPC in Asia Posters Session in International Supercomputing
+  Conference (ISC) 2016
+year: 2016
+authors:
+  - Iman Firmansyah
+  - Yoshiki Yamaguchi
+  - Taisuke Boku
+bibtex: >-
+  @inproceedings { HPCinAsia2016:iman, 
+    author    = "{Iman Firmansyah} and {Yoshiki Yamaguchi} and {Taisuke Boku}",
+    title     = "{Capability Assessment of a Multiple-FPGA System for High-Performance Computing}",
+    booktitle = "HPC in Asia Posters Session in International Supercomputing Conference (ISC) 2016",
+    month	    = "6",
+    year 	    = "2016"
+  }
+reference: "Iman Firmansyah, Yoshiki Yamaguchi, Taisuke Boku: “Capability
+  Assessment of a Multiple-FPGA System for High-Performance Computing”, HPC in
+  Asia Posters Session in International Supercomputing Conference (ISC) 2016,
+  Jun. 2016."
+class:
+  class: international
+  subclass: poster

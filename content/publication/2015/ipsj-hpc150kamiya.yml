@@ -1,0 +1,23 @@
+title: 並列ログ先行書き込みの評価
+booktitle: 情報処理学会第150回HPC研究会報告 (HPC150)
+year: 2015
+authors:
+  - 神谷 孝明
+  - 川島 英之
+  - 建部 修見
+bibtex: |-
+  @techreport { IPSJ-HPC150:kamiya,
+    author    = "{神谷 孝明} and {川島 英之} and {建部 修見}",
+    title     = "{並列ログ先行書き込みの評価}",
+    booktitle = "情報処理学会第150回HPC研究会報告 (HPC150)",
+    volume    = "2015-HPC-150",
+    number    = "37",
+    month     = "8",
+    year      = "2015"
+  }
+reference:
+  "神谷 孝明, 川島 英之, 建部 修見: “並列ログ先行書き込みの評価”, 情報処理学会第150回HPC研究会報告 (HPC150),
+  Vol. 2015-HPC-150, No. 37, Aug. 2015."
+class:
+  class: domestic
+  subclass: misc

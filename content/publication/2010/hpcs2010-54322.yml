@@ -1,0 +1,22 @@
+title: '"Impact of Gfarm'
+booktitle: a Wide-area Distributed File System, upon Astronomical Data Analysis
+  and Virtual Observatory", Proceedings of Astronomical Data Analysis Software
+  and Systems XIX, ASP Conference Series Vol.434
+year: 2010
+authors:
+  - Masahiro Tanaka
+  - Osamu Tatebe
+bibtex: >-
+  @inproceedings{hpcs2010-54322,
+    title = {"Impact of Gfarm},
+    booktitle = {a Wide-area Distributed File System, upon Astronomical Data Analysis and Virtual Observatory", Proceedings of Astronomical Data Analysis Software and Systems XIX, ASP Conference Series Vol.434},
+    pages = {433-436},
+    year = {2010},
+  }
+reference: "Masahiro Tanaka, Osamu Tatebe: “Impact of Gfarm, a Wide-area
+  Distributed File System, upon Astronomical Data Analysis and Virtual
+  Observatory”, Proceedings of Astronomical Data Analysis Software and Systems
+  XIX, ASP Conference Series Vol.434, pp.433-436, 2010"
+class:
+  class: international
+  subclass: conference

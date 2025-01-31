@@ -1,0 +1,17 @@
+title: A Mixed-Radix Parallel Three-Dimensional FFT Algorithm on Clusters of
+  Vector SMPs
+booktitle: PPSC 2001
+year: 2001
+authors:
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2001-23643,
+    title = {A Mixed-Radix Parallel Three-Dimensional FFT Algorithm on Clusters of Vector SMPs},
+    booktitle = {PPSC 2001},
+    year = {2001},
+  }
+reference: "Daisuke Takahashi: A Mixed-Radix Parallel Three-Dimensional FFT
+  Algorithm on Clusters of Vector SMPs. PPSC 2001"
+class:
+  class: international
+  subclass: conference

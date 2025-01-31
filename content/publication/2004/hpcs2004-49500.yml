@@ -1,0 +1,22 @@
+title: P2P分散システムXtermWeb上でのGrid RPCシステムOmniRPCの設計
+booktitle: ハイパフォーマンスコンピューティングシステム研究会, 2004HPC99
+year: 2004
+authors:
+  - 中島佳宏
+  - 佐藤三久
+  - 朴 泰祐
+  - 高橋大介
+  - Samir Djilali
+  - Franck Cappello
+bibtex: |-
+  @inproceedings{hpcs2004-49500,
+    title = {P2P分散システムXtermWeb上でのGrid RPCシステムOmniRPCの設計},
+    booktitle = {ハイパフォーマンスコンピューティングシステム研究会, 2004HPC99},
+    year = {2004},
+  }
+reference: 中島佳宏，佐藤三久，朴 泰祐，高橋大介, Samir Djilali，Franck
+  Cappello，”P2P分散システムXtermWeb上でのGrid
+  RPCシステムOmniRPCの設計”，ハイパフォーマンスコンピューティングシステム研究会，2004HPC99，2004.
+class:
+  class: domestic
+  subclass: workshop

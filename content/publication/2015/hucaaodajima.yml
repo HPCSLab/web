@@ -1,0 +1,27 @@
+title: Hybrid Communication with TCA and InfiniBand? on A Parallel Programming
+  Language for Accelerators XcalableACC
+booktitle: Proc. of HUCAA2015 in IEEE Cluster2015
+year: 2015
+authors:
+  - Tetsuya Odajima
+  - Taisuke Boku
+  - Toshihiro Hanawa
+  - Hitoshi Murai
+  - Masahiro Nakao
+  - Akihiro Tabuchi
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings { HUCAA:odajima,
+    author    = "{Tetsuya Odajima} and {Taisuke Boku} and {Toshihiro Hanawa} and {Hitoshi Murai} and {Masahiro Nakao} and {Akihiro Tabuchi} and {Mitsuhisa Sato}",
+    title     = "{Hybrid Communication with TCA and InfiniBand? on A Parallel Programming Language for Accelerators XcalableACC}",
+    booktitle = "Proc. of HUCAA2015 in IEEE Cluster2015",
+    month	    = "9",
+    year 	    = "2015"
+  }
+reference: "Tetsuya Odajima, Taisuke Boku, Toshihiro Hanawa, Hitoshi Murai,
+  Masahiro Nakao, Akihiro Tabuchi, Mitsuhisa Sato: “Hybrid Communication with
+  TCA and InfiniBand? on A Parallel Programming Language for Accelerators
+  XcalableACC”, Proc. of HUCAA2015 in IEEE Cluster2015, Sep. 2015."
+class:
+  class: international
+  subclass: conference

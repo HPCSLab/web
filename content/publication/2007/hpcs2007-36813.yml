@@ -1,0 +1,21 @@
+title: Implementation and Evaluation of Parallel FFT Using SIMD Instructions on
+  MultiCore Processors
+booktitle: Proc. 10th International Workshop on Innovative Architecture for
+  Future Generation HighPerformance Processors and Systems (IWIA 2007)
+year: 2007
+authors:
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2007-36813,
+    title = {Implementation and Evaluation of Parallel FFT Using SIMD Instructions on MultiCore Processors},
+    booktitle = {Proc. 10th International Workshop on Innovative Architecture for Future Generation HighPerformance Processors and Systems (IWIA 2007)},
+    pages = {5359},
+    year = {2007},
+  }
+reference: "Daisuke Takahashi: Implementation and Evaluation of Parallel FFT
+  Using SIMD Instructions on MultiCore Processors, Proc. 10th International
+  Workshop on Innovative Architecture for Future Generation HighPerformance
+  Processors and Systems (IWIA 2007), pp. 5359"
+class:
+  class: international
+  subclass: conference

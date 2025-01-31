@@ -1,0 +1,18 @@
+title: '"PIO: Parallel I/O System for Massively Parallel Processors'
+booktitle: "HPCN Europe 2001: 383-392"
+year: 2001
+authors:
+  - Taisuke Boku
+  - Masazumi Matsubara
+  - Ken’ichi Itakura
+bibtex: |-
+  @inproceedings{hpcs2001-10454,
+    title = {"PIO: Parallel I/O System for Massively Parallel Processors},
+    booktitle = {HPCN Europe 2001: 383-392},
+    year = {2001},
+  }
+reference: "Taisuke Boku, Masazumi Matsubara, Ken’ichi Itakura: “PIO: Parallel
+  I/O System for Massively Parallel Processors”. HPCN Europe 2001: 383-392"
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,21 @@
+title: GridRPCシステムにおけるリモートプログラムシッピング機構
+booktitle: ハイパフォーマンスコンピューティング研究会, 2002HPC96
+year: 2003
+authors:
+  - 渡邊 啓正
+  - 本多 弘樹
+  - 弓場 敏嗣
+  - 田中良夫
+  - 佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2003-5956,
+    title = {GridRPCシステムにおけるリモートプログラムシッピング機構},
+    booktitle = {ハイパフォーマンスコンピューティング研究会, 2002HPC96},
+    year = {2003},
+  }
+reference: 渡邊 啓正，本多 弘樹，弓場
+  敏嗣，田中良夫，佐藤三久，”GridRPCシステムにおけるリモートプログラムシッピング機構”，ハイパフォーマンスコンピューティング研究会,
+  2002HPC96, 2003.
+class:
+  class: domestic
+  subclass: workshop

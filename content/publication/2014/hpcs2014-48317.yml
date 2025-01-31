@@ -1,0 +1,17 @@
+title: Cluster-wide RAIDの実装と評価
+booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会(HPC145, SWoPP2014), 2014年8月
+year: 2014
+authors:
+  - 大辻弘貴
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2014-48317,
+    title = {Cluster-wide RAIDの実装と評価},
+    booktitle = {情報処理学会ハイパフォーマンスコンピューティング研究会(HPC145, SWoPP2014), 2014年8月},
+    year = {2014},
+  }
+reference: 大辻弘貴，建部修見，「Cluster-wide
+  RAIDの実装と評価」，情報処理学会ハイパフォーマンスコンピューティング研究会(HPC145, SWoPP2014)，2014年8月
+class:
+  class: domestic
+  subclass: workshop

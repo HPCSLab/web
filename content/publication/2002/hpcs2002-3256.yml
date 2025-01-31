@@ -1,0 +1,21 @@
+title: ItaniumプロセッサによるSCoreクラスタ構築に関する検討
+booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC921
+year: 2002
+authors:
+  - 石川 裕
+  - 高橋 大介
+  - 朴 泰祐
+  - 佐藤 三久
+bibtex: |-
+  @inproceedings{hpcs2002-3256,
+    title = {ItaniumプロセッサによるSCoreクラスタ構築に関する検討},
+    booktitle = {情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC921},
+    pages = {16.},
+    year = {2002},
+  }
+reference:
+  石川 裕, 高橋 大介, 朴 泰祐, 佐藤 三久, “ItaniumプロセッサによるSCoreクラスタ構築に関する検討”,
+  情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC921, 2002, pp.16.
+class:
+  class: domestic
+  subclass: workshop

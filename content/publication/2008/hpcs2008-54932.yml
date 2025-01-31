@@ -1,0 +1,22 @@
+title: ディペンダブルな組込みOSの提案
+booktitle: 第10回組込みシステム技術に関するサマーワークショップ(SWEST10)予稿集
+year: 2008
+authors:
+  - 菅谷 みどり
+  - 藤田 肇
+  - 塙 敏博
+  - 中澤 仁
+  - 松田 元彦
+  - 前田 俊行
+bibtex: |-
+  @inproceedings{hpcs2008-54932,
+    title = {ディペンダブルな組込みOSの提案},
+    booktitle = {第10回組込みシステム技術に関するサマーワークショップ(SWEST10)予稿集},
+    pages = {35-38},
+    year = {2008},
+  }
+reference: 菅谷 みどり，藤田 肇, 塙 敏博, 中澤 仁, 松田 元彦, 前田
+  俊行：ディペンダブルな組込みOSの提案，第10回組込みシステム技術に関するサマーワークショップ(SWEST10)予稿集, pp.35-38, (2008)
+class:
+  class: domestic
+  subclass: poster

@@ -1,0 +1,22 @@
+title: GPUによる4倍精度BLASの実装と評価
+booktitle: |-
+  情報処理学会研究報告, 2009-ARC-186
+  2009-HPC-122
+year: 2009
+authors:
+  - 椋木大地
+  - 高橋大介
+bibtex: |-
+  @inproceedings{hpcs2009-59554,
+    title = {GPUによる4倍精度BLASの実装と評価},
+    booktitle = {情報処理学会研究報告, 2009-ARC-186
+  2009-HPC-122},
+    number = {13},
+    year = {2009},
+  }
+reference: |-
+  椋木大地，高橋大介：GPUによる4倍精度BLASの実装と評価，情報処理学会研究報告，2009-ARC-186
+  2009-HPC-122, No. 13，2009．
+class:
+  class: domestic
+  subclass: workshop

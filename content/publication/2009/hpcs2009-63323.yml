@@ -1,0 +1,22 @@
+title: 小規模システム向け省電力高性能ディペンダブル通信機構:PEARL
+booktitle: 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集
+year: 2009
+authors:
+  - 塙 敏博
+  - 朴 泰祐
+  - 三浦 信一
+  - 佐藤 三久
+  - 有本 和民
+bibtex: |-
+  @inproceedings{hpcs2009-63323,
+    title = {小規模システム向け省電力高性能ディペンダブル通信機構:PEARL},
+    booktitle = {先進的計算基盤システムシンポジウム(SACSIS 2009)論文集},
+    pages = {124-125},
+    year = {2009},
+  }
+reference: 塙 敏博，朴 泰祐，三浦 信一，佐藤 三久，有本
+  和民：小規模システム向け省電力高性能ディペンダブル通信機構:PEARL，先進的計算基盤システムシンポジウム(SACSIS
+  2009)論文集，pp.124-125, 2009
+class:
+  class: domestic
+  subclass: poster

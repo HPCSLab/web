@@ -1,0 +1,25 @@
+title: "My WorkSphere: Integrative Work Environment for Gridunaware Biomedical
+  Researchers and Applications"
+booktitle: Proceedings of 2nd Grid Computing Environment Workshop
+year: 2006
+authors:
+  - Z. Ding
+  - Y. Luo
+  - X. Wei
+  - C. Misleh
+  - W. W. Li
+  - P. W. Arzberger
+  - O. Tatebe
+bibtex: >-
+  @inproceedings{hpcs2006-18348,
+    title = {My WorkSphere: Integrative Work Environment for Gridunaware Biomedical Researchers and Applications},
+    booktitle = {Proceedings of 2nd Grid Computing Environment Workshop},
+    year = {2006},
+  }
+reference: "Z. Ding, Y. Luo, X. Wei, C. Misleh, W. W. Li, P. W. Arzberger, O.
+  Tatebe, “My WorkSphere: Integrative Work Environment for Gridunaware
+  Biomedical Researchers and Applications”, Proceedings of 2nd Grid Computing
+  Environment Workshop, 2006."
+class:
+  class: international
+  subclass: conference

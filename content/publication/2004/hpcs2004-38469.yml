@@ -1,0 +1,20 @@
+title: 組込みチップマルチプロセッサM32R32700へのOpenMP処理系の実装と評価" 計算機アーキテクチャ研究会
+booktitle: 2004ARC152
+year: 2004
+authors:
+  - 堀田義彦
+  - 佐藤三久
+  - 中島佳宏
+  - 小島好紀
+bibtex: |-
+  @inproceedings{hpcs2004-38469,
+    title = {組込みチップマルチプロセッサM32R32700へのOpenMP処理系の実装と評価" 計算機アーキテクチャ研究会},
+    booktitle = {2004ARC152},
+    year = {2004},
+  }
+reference:
+  堀田義彦，佐藤三久，中島佳宏，小島好紀，”組込みチップマルチプロセッサM32R32700へのOpenMP処理系の実装と評価”
+  計算機アーキテクチャ研究会，2004ARC152，2004.
+class:
+  class: domestic
+  subclass: workshop

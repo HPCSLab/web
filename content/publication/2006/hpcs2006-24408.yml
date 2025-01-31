@@ -1,0 +1,23 @@
+title: "VFRECNet: ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク"
+booktitle: 情報処理学会論文誌:コンピューティングシステム
+year: 2006
+authors:
+  - 三浦信一
+  - 岡本高幸
+  - 朴泰祐
+  - 佐藤三久
+  - 高橋大介
+bibtex: |-
+  @article{hpcs2006-24408,
+    title = {VFRECNet: ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク},
+    booktitle = {情報処理学会論文誌:コンピューティングシステム},
+    pages = {3545},
+    vol = {47},
+    number = {SIG 12(ACS 15)},
+    year = {2006},
+  }
+reference: "三浦信一，岡本高幸，朴泰祐，佐藤三久，高橋大介：VFRECNet:
+  ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク，情報処理学会論文誌：コンピューティングシステム, Vol. 47,
+  No. SIG 12(ACS 15), pp. 3545, (2006)."
+class:
+  class: journal

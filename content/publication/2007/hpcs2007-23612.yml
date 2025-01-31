@@ -1,0 +1,23 @@
+title: "RI2N/UDP: High bandwidth and faulttolerant network for PCcluster based
+  on multilink Ethernet"
+booktitle: The Workshop on Communication Architecture for Clusters (CAC) in IPDPS
+year: 2007
+authors:
+  - Takayuki Okamoto
+  - Shin’ichi Miura
+  - Taisuke Boku
+  - Mitsuhisa Sato
+  - and Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2007-23612,
+    title = {RI2N/UDP: High bandwidth and faulttolerant network for PCcluster based on multilink Ethernet},
+    booktitle = {The Workshop on Communication Architecture for Clusters (CAC) in IPDPS},
+    year = {2007},
+  }
+reference: "Takayuki Okamoto, Shin’ichi Miura, Taisuke Boku, Mitsuhisa Sato, and
+  Daisuke Takahashi: RI2N/UDP: High bandwidth and faulttolerant network for
+  PCcluster based on multilink Ethernet. The Workshop on Communication
+  Architecture for Clusters (CAC) in IPDPS"
+class:
+  class: international
+  subclass: conference

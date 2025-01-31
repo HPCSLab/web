@@ -1,0 +1,20 @@
+title: Flexible Fine Grain Thread Management By StackThreads/MP Library for
+  OpenMP Task　情報処理学会研究報告
+booktitle: 2010-HPC-125(7)
+year: 2010
+authors:
+  - アドナン
+  - 佐藤三久
+bibtex: >-
+  @inproceedings{hpcs2010-16742,
+    title = {Flexible Fine Grain Thread Management By StackThreads/MP Library for OpenMP Task　情報処理学会研究報告},
+    booktitle = {2010-HPC-125(7)},
+    pages = {1-8},
+    year = {2010},
+  }
+reference:
+  アドナン，佐藤三久： Flexible Fine Grain Thread Management By StackThreads/MP
+  Library for OpenMP Task　情報処理学会研究報告，2010-HPC-125(7)，pp. 1-8，2010
+class:
+  class: domestic
+  subclass: workshop

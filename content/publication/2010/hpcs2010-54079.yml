@@ -1,0 +1,28 @@
+title: "D-Cloud: Design of a Software Testing Environment for Reliable
+  Distributed Systems Using Cloud Computing Technology"
+booktitle: 10th IEEE/ACM International Symposium on Cluster, Cloud and Grid
+  Computing (CCGRID2010) Workshop on Second International Symposium on Cloud
+  Computing(Cloud 2010)
+year: 2010
+authors:
+  - Takayuki Banzai
+  - Hitoshi Koizumi
+  - Ryo Kanbayashi
+  - Takayuki Imada
+  - Toshihiro Hanawa and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2010-54079,
+    title = {D-Cloud: Design of a Software Testing Environment for Reliable Distributed Systems Using Cloud Computing Technology},
+    booktitle = {10th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID2010) Workshop on Second International Symposium on Cloud Computing(Cloud 2010)},
+    pages = {631-636},
+    year = {2010},
+  }
+reference: "Takayuki Banzai, Hitoshi Koizumi, Ryo Kanbayashi, Takayuki Imada,
+  Toshihiro Hanawa and Mitsuhisa Sato: D-Cloud: Design of a Software Testing
+  Environment for Reliable Distributed Systems Using Cloud Computing Technology,
+  10th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing
+  (CCGRID2010) Workshop on Second International Symposium on Cloud
+  Computing(Cloud 2010), pp. 631-636, 2010"
+class:
+  class: international
+  subclass: conference

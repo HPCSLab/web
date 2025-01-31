@@ -1,0 +1,18 @@
+title: Challenge of Pwrake
+booktitle: a workflow system for post-petascale data-intensive sciences",
+  PRAGMA21, Sapporo Japan, Oct. 17-20
+year: 2011
+authors:
+  - Masahiro Tanaka and Osamu Tatebe
+bibtex: >-
+  @inproceedings{hpcs2011-63321,
+    title = {Challenge of Pwrake},
+    booktitle = {a workflow system for post-petascale data-intensive sciences", PRAGMA21, Sapporo Japan, Oct. 17-20},
+    year = {2011},
+  }
+reference: Masahiro Tanaka and Osamu Tatebe, “Challenge of Pwrake, a workflow
+  system for post-petascale data-intensive sciences”, PRAGMA21, Sapporo Japan,
+  Oct. 17-20, 2011.
+class:
+  class: international
+  subclass: poster

@@ -1,0 +1,35 @@
+title: The PRAGMA Testbed Building a MultiApplication International Grid
+booktitle: Proceedings of International Workshop on Grid Testbeds (Grid Testbeds)
+year: 2006
+authors:
+  - Cindy Zheng
+  - David Abramson
+  - Peter W. Arzberger
+  - Shahaan Ayyub
+  - Colin Enticott
+  - Slavisa Garic
+  - Mason J. Katz
+  - JaeHyuck Kwak
+  - BuSung Lee
+  - Philip M. Papadopoulos
+  - Sugree Phatanapherom
+  - Somsak Sriprayoonsakul
+  - Yoshio Tanaka
+  - Yusuke Tanimura
+  - Osamu Tatebe
+  - Putchong Uthayopas
+bibtex: >-
+  @inproceedings{hpcs2006-19897,
+    title = {The PRAGMA Testbed Building a MultiApplication International Grid},
+    booktitle = {Proceedings of International Workshop on Grid Testbeds (Grid Testbeds)},
+    year = {2006},
+  }
+reference: Cindy Zheng, David Abramson, Peter W. Arzberger, Shahaan Ayyub, Colin
+  Enticott, Slavisa Garic, Mason J. Katz, JaeHyuck Kwak, BuSung Lee, Philip M.
+  Papadopoulos, Sugree Phatanapherom, Somsak Sriprayoonsakul, Yoshio Tanaka,
+  Yusuke Tanimura, Osamu Tatebe, Putchong Uthayopas, “The PRAGMA Testbed
+  Building a MultiApplication International Grid”, Proceedings of International
+  Workshop on Grid Testbeds (Grid Testbeds), 2006.
+class:
+  class: international
+  subclass: conference

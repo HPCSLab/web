@@ -1,0 +1,82 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import Base from "@layouts/base/index.astro";
+import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
+import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  const news = await getCollection("news");
+  return news.map((news) => {
+    const [year, id] = news.id.split("/");
+    return {
+      params: {
+        year: year!,
+        id: id!,
+      },
+    };
+  });
+}
+
+const { year, id } = Astro.params;
+
+const news = (await getEntry("news", `${year}/${id}`))!;
+
+const Body = await render(news);
+---
+
+<Base title={news.data.title} description={news.data.description}>
+  <article>
+    <NoImageHeader>
+      <h1>
+        {news.data.title}
+      </h1>
+      <div class="date">
+        {news.data.date}
+      </div>
+    </NoImageHeader>
+    <div class="news-md-top">
+      <ResponsiveWidth>
+        <Body.Content />
+      </ResponsiveWidth>
+    </div>
+  </article>
+</Base>
+
+<style is:global>
+  .news-md-top .header-container {
+    padding-block-start: 1rem;
+    padding-block-end: 0.5rem;
+    background-color: var(--color-bg-dark);
+    color: var(--color-inverted-text-strong);
+  }
+
+  .date {
+    margin-top: 0.5rem;
+    color: var(--color-inverted-text-disable);
+  }
+
+  .news-md-top h1 {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+  }
+
+  .news-md-top p {
+    line-height: 1.5;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+  }
+
+  .news-md-top a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    color: var(--color-primary);
+  }
+
+  .news-md-top blockquote {
+    color: var(--color-text-normal);
+    border-left: 2px solid var(--color-primary);
+    border-radius: 1px;
+    padding-left: 1rem;
+  }
+</style>

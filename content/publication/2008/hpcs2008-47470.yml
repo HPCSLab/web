@@ -1,0 +1,23 @@
+title: T2K筑波システムにおけるLinpack性能評価情報処理学会研究報告
+booktitle: 2008HPC116
+year: 2008
+authors:
+  - 高橋大介
+  - 後藤和茂
+  - 朴泰祐
+  - 建部修見
+  - 佐藤三久
+  - 三上和徳
+bibtex: |-
+  @inproceedings{hpcs2008-47470,
+    title = {T2K筑波システムにおけるLinpack性能評価情報処理学会研究報告},
+    booktitle = {2008HPC116},
+    pages = {55-60},
+    year = {2008},
+  }
+reference:
+  高橋大介，後藤和茂，朴泰祐，建部修見，佐藤三久，三上和徳：T2K筑波システムにおけるLinpack性能評価情報処理学会研究報告，2008HPC116，pp.
+  55-60, (2008)
+class:
+  class: domestic
+  subclass: workshop

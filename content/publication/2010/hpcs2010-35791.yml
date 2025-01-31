@@ -1,0 +1,17 @@
+title: トラフィック量に適応する非対称マルチリンクEthernetトランキング
+booktitle: 情報処理学会論文誌コンピューティングシステム
+year: 2010
+authors:
+  - 米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久
+bibtex: |-
+  @article{hpcs2010-35791,
+    title = {トラフィック量に適応する非対称マルチリンクEthernetトランキング},
+    booktitle = {情報処理学会論文誌コンピューティングシステム},
+    pages = {25-37},
+    vol = {3},
+    number = {1},
+    year = {2010},
+  }
+reference: 米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久：トラフィック量に適応する非対称マルチリンクEthernetトランキング，情報処理学会論文誌コンピューティングシステム，Vol.3，No.1，pp.25-37
+class:
+  class: journal

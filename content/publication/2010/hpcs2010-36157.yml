@@ -1,0 +1,26 @@
+title: "PEARL: Power-aware"
+booktitle: Dependable, and High-Performance Communication Link Using PCI
+  Express", IEEE/ACM International Conference on Green Computing and
+  Communitations (GreenCom2010)
+year: 2010
+authors:
+  - Toshihiro Hanawa
+  - Taisuke Boku
+  - Shin’ichi Miura
+  - Mitsuhisa Sato
+  - and Kazutami Arimoto
+bibtex: >-
+  @inproceedings{hpcs2010-36157,
+    title = {PEARL: Power-aware},
+    booktitle = {Dependable, and High-Performance Communication Link Using PCI Express", IEEE/ACM International Conference on Green Computing and Communitations (GreenCom2010)},
+    pages = {284-291},
+    year = {2010},
+  }
+reference: "Toshihiro Hanawa, Taisuke Boku, Shin’ichi Miura, Mitsuhisa Sato, and
+  Kazutami Arimoto, ”PEARL: Power-aware, Dependable, and High-Performance
+  Communication Link Using PCI Express”, IEEE/ACM International Conference on
+  Green Computing and Communitations (GreenCom2010), pp. 284-291, 2010.
+  doi:http://doi.ieeecomputersociety.org/10.1109/GreenCom-CPSCom.2010.115"
+class:
+  class: international
+  subclass: conference

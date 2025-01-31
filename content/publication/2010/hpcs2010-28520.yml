@@ -1,0 +1,15 @@
+title: PCクラスタ間ファイル複製スケジューリング　先進的計算基盤システムシンポジウムSACSIS2010論文集
+year: 2010
+authors:
+  - 鈴木克典
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2010-28520,
+    title = {PCクラスタ間ファイル複製スケジューリング　先進的計算基盤システムシンポジウムSACSIS2010論文集},
+    pages = {71-78},
+    year = {2010},
+  }
+reference: 鈴木克典，建部修見：PCクラスタ間ファイル複製スケジューリング　先進的計算基盤システムシンポジウムSACSIS2010論文集，pp.71-78，2010
+class:
+  class: domestic
+  subclass: conference

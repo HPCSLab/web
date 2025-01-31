@@ -1,0 +1,20 @@
+title: MPI上のソフトウェア分散共有メモリシステム
+booktitle: ハイパフォーマンスコンピューティング研究会, 2004HPC98
+year: 2004
+authors:
+  - 小島 好紀
+  - 佐藤三久
+  - 朴 泰祐
+  - 高橋大介
+bibtex: |-
+  @inproceedings{hpcs2004-31555,
+    title = {MPI上のソフトウェア分散共有メモリシステム},
+    booktitle = {ハイパフォーマンスコンピューティング研究会, 2004HPC98},
+    year = {2004},
+  }
+reference:
+  小島 好紀, 佐藤三久, 朴 泰祐, 高橋大介, “MPI上のソフトウェア分散共有メモリシステム”,
+  ハイパフォーマンスコンピューティング研究会, 2004HPC98, 2004.
+class:
+  class: domestic
+  subclass: workshop

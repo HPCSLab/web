@@ -1,0 +1,30 @@
+title: Integration of Parallel Write Ahead Logging and Cicada Concurrency
+  Control Method
+booktitle: 2nd IEEE International Workshop on Big Data and IoT Security in Smart
+  Computing (BITS 2018)
+year: 2018
+authors:
+  - Takayuki Tanabe
+  - Kawashima Hideyuki
+  - Tatebe Osamu
+bibtex: >-
+  @inproceedings { BITS2018:tanabe,
+
+  author = "{Takayuki Tanabe} and {Kawashima Hideyuki} and {Tatebe Osamu}",
+
+  title = "{Integration of Parallel Write Ahead Logging and Cicada Concurrency Control Method}",
+
+  booktitle = "2nd IEEE International Workshop on Big Data and IoT Security in Smart Computing (BITS 2018)",
+
+  month = "6",
+
+  year = "2018"
+
+  }
+reference: "Takayuki Tanabe, Kawashima Hideyuki, Tatebe Osamu: “Integration of
+  Parallel Write Ahead Logging and Cicada Concurrency Control Method”, 2nd IEEE
+  International Workshop on Big Data and IoT Security in Smart Computing (BITS
+  2018), Jun. 2018."
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,20 @@
+title: Parallel Implementation of Strassen’s Matrix Multiplication Algorithm for
+  Heterogeneous Clusters
+booktitle: The 13th Heterogeneous Computing Workshop (HCW 2004).
+year: 2004
+authors:
+  - Yuhsuke Ohtaki
+  - Daisuke Takahashi
+  - Taisuke Boku and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2004-60090,
+    title = {Parallel Implementation of Strassen’s Matrix Multiplication Algorithm for Heterogeneous Clusters},
+    booktitle = {The 13th Heterogeneous Computing Workshop (HCW 2004).},
+    year = {2004},
+  }
+reference: Yuhsuke Ohtaki, Daisuke Takahashi, Taisuke Boku and Mitsuhisa Sato,
+  “Parallel Implementation of Strassen’s Matrix Multiplication Algorithm for
+  Heterogeneous Clusters”, The 13th Heterogeneous Computing Workshop (HCW 2004).
+class:
+  class: international
+  subclass: conference

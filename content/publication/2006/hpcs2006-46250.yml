@@ -1,0 +1,26 @@
+title: 複数Gigabit Ethernetを用いたPACSCSのための高性能通信機構の設計と評価
+booktitle: 情報処理学会論文誌:コンピューティングシステム
+year: 2006
+authors:
+  - 住元 真司
+  - 大江 和一
+  - 久門 耕一
+  - 朴 泰祐
+  - 佐藤 三久
+  - 宇川 彰
+bibtex: |-
+  @inproceedings{hpcs2006-46250,
+    title = {複数Gigabit Ethernetを用いたPACSCSのための高性能通信機構の設計と評価},
+    booktitle = {情報処理学会論文誌:コンピューティングシステム},
+    pages = {3545},
+    vol = {47},
+    number = {SIG 12(ACS 15)},
+    year = {2006},
+  }
+reference:
+  住元 真司, 大江 和一, 久門 耕一, 朴 泰祐, 佐藤 三久, 宇川 彰：複数Gigabit
+  Ethernetを用いたPACSCSのための高性能通信機構の設計と評価，情報処理学会論文誌：コンピューティングシステム, Vol. 47, No. SIG
+  12(ACS 15), pp. 3545, (2006).
+class:
+  class: domestic
+  subclass: conference

@@ -1,0 +1,22 @@
+title: Power efficient scheduling for numerical methods on heterogeneous grids
+  電子情報通信学会技術研究報告
+booktitle: CPSY2008
+year: 2008
+authors:
+  - Laurent Choy
+  - Eric Wartelle
+  - 佐藤 三久
+  - Serge G. Petiton
+bibtex: >-
+  @inproceedings{hpcs2008-46845,
+    title = {Power efficient scheduling for numerical methods on heterogeneous grids 電子情報通信学会技術研究報告},
+    booktitle = {CPSY2008},
+    pages = {91-96},
+    year = {2008},
+  }
+reference: "Laurent Choy, Eric Wartelle, 佐藤 三久, Serge G. Petiton: Power
+  efficient scheduling for numerical methods on heterogeneous grids
+  電子情報通信学会技術研究報告，CPSY2008, pp. 91-96, (2008)"
+class:
+  class: domestic
+  subclass: workshop

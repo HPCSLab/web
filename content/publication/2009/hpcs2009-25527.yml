@@ -1,0 +1,18 @@
+title: 分散メモリ向け並列言語XcalableMPコンパイラの試作と評価 情報処理学会研究報告
+booktitle: 2009-HPC-121(6)
+year: 2009
+authors:
+  - 李珍泌、朴泰祐、佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2009-25527,
+    title = {分散メモリ向け並列言語XcalableMPコンパイラの試作と評価 情報処理学会研究報告},
+    booktitle = {2009-HPC-121(6)},
+    pages = {1-10},
+    year = {2009},
+  }
+reference:
+  李珍泌、朴泰祐、佐藤三久：分散メモリ向け並列言語XcalableMPコンパイラの試作と評価
+  情報処理学会研究報告，2009-HPC-121(6)，pp. 1-10, 2009
+class:
+  class: domestic
+  subclass: workshop

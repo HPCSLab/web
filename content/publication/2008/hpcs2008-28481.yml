@@ -1,0 +1,22 @@
+title: ユーザ透過に利用可能な高性能・耐故障マルチリンクEthernet結合システム
+booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2008論文集
+year: 2008
+authors:
+  - 岡本 高幸
+  - 三浦 信一
+  - 朴 泰祐
+  - 塙 敏博
+  - 佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2008-28481,
+    title = {ユーザ透過に利用可能な高性能・耐故障マルチリンクEthernet結合システム},
+    booktitle = {ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2008論文集},
+    pages = {41-48},
+    year = {2008},
+  }
+reference: 岡本 高幸, 三浦 信一, 朴 泰祐, 塙 敏博,
+  佐藤三久：ユーザ透過に利用可能な高性能・耐故障マルチリンクEthernet結合システム，2008年ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2008論文集,
+  pp. 41-48, (2008).
+class:
+  class: domestic
+  subclass: conference

@@ -1,0 +1,22 @@
+title: taggedVLANとマルチリンクに基づくPCクラスタ向け高性能・耐故障ネットワークの実装と評価
+booktitle: 情報処理学会研究報告, 2006HPC108
+year: 2006
+authors:
+  - 三浦信一
+  - 岡本高幸
+  - 朴泰祐
+  - 佐藤三久
+  - 高橋大介
+bibtex: |-
+  @inproceedings{hpcs2006-38978,
+    title = {taggedVLANとマルチリンクに基づくPCクラスタ向け高性能・耐故障ネットワークの実装と評価},
+    booktitle = {情報処理学会研究報告, 2006HPC108},
+    pages = {2530},
+    year = {2006},
+  }
+reference:
+  三浦信一，岡本高幸，朴泰祐，佐藤三久，高橋大介：taggedVLANとマルチリンクに基づくPCクラスタ向け高性能・耐故障ネットワークの実装と評価，情報処理学会研究報告，2006HPC108，pp.
+  2530, (2006).
+class:
+  class: domestic
+  subclass: workshop

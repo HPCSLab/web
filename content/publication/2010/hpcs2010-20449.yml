@@ -1,0 +1,22 @@
+title: XcalableMPによるNAS Parallel Benchmarksの実装と評価
+booktitle: 並列／分散／協調処理に関する『金沢』サマー・ワークショップ（SWoPP金沢2010）, 研究報告ハイパフォーマンスコンピューティング（HPC）
+year: 2010
+authors:
+  - 中尾昌広
+  - 李珍泌
+  - 朴泰祐
+  - 佐藤三久
+bibtex: >-
+  @inproceedings{hpcs2010-20449,
+    title = {XcalableMPによるNAS Parallel Benchmarksの実装と評価},
+    booktitle = {並列／分散／協調処理に関する『金沢』サマー・ワークショップ（SWoPP金沢2010）, 研究報告ハイパフォーマンスコンピューティング（HPC）},
+    pages = {1-7},
+    vol = {2010-HPC-126 No.9},
+    year = {2010},
+  }
+reference: 中尾昌広，李珍泌，朴泰祐，佐藤三久：XcalableMPによるNAS Parallel
+  Benchmarksの実装と評価，2010年並列／分散／協調処理に関する『金沢』サマー・ワークショップ（SWoPP金沢2010），研究報告ハイパフォーマンスコンピューティング（HPC），Vol.2010-HPC-126
+  No.9，pp.1-7，2010
+class:
+  class: domestic
+  subclass: workshop

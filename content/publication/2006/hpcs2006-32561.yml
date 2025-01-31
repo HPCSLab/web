@@ -1,0 +1,25 @@
+title: 複数グリッドジョブ実行システムの計算資源を統合・利用するGrid RPCシステムの設計と実装
+booktitle: 情報処理学会論文誌:コンピューティングシステム
+year: 2006
+authors:
+  - 中島佳宏
+  - 佐藤三久
+  - 相田祥昭
+  - 高橋大介
+  - 朴泰祐
+  - Franck Cappello
+bibtex: |-
+  @article{hpcs2006-32561,
+    title = {複数グリッドジョブ実行システムの計算資源を統合・利用するGrid RPCシステムの設計と実装},
+    booktitle = {情報処理学会論文誌:コンピューティングシステム},
+    pages = {207218},
+    vol = {47},
+    number = {SIG 7(ACS 14)},
+    year = {2006},
+  }
+reference: 中島佳宏，佐藤三久，相田祥昭，高橋大介，朴泰祐，Franck
+  Cappello：複数グリッドジョブ実行システムの計算資源を統合・利用するGrid
+  RPCシステムの設計と実装，情報処理学会論文誌：コンピューティングシステム, Vol. 47, No. SIG 7(ACS 14), pp. 207218,
+  (2006).
+class:
+  class: journal

@@ -1,0 +1,21 @@
+title: Measurement and Characterization of Power Consumption of Microprocessors
+  for Poweraware cluster
+booktitle: COOL Chips VII.
+year: 2004
+authors:
+  - Yoshihiko Hotta
+  - Mitsuhisa Sato
+  - Daisuke Takahashi
+  - Taisuke Boku
+bibtex: >-
+  @inproceedings{hpcs2004-27747,
+    title = {Measurement and Characterization of Power Consumption of Microprocessors for Poweraware cluster},
+    booktitle = {COOL Chips VII.},
+    year = {2004},
+  }
+reference: Yoshihiko Hotta, Mitsuhisa Sato, Daisuke Takahashi, Taisuke Boku,
+  “Measurement and Characterization of Power Consumption of Microprocessors for
+  Poweraware cluster”, COOL Chips VII.
+class:
+  class: international
+  subclass: conference

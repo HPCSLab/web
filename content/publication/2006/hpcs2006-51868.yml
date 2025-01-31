@@ -1,0 +1,25 @@
+title: "GDIA: A Scalable Grid Infrastructure for Data Intensive Applications"
+booktitle: Proceedings of IEEE International Conference on Hybrid Information
+  Technology (ICHIT 2006)
+year: 2006
+authors:
+  - X. Wei
+  - Z. Ding
+  - W. W. Li
+  - O. Tatebe
+  - J. Jiang
+  - L. Hu
+  - P. W. Arzberger
+bibtex: >-
+  @inproceedings{hpcs2006-51868,
+    title = {GDIA: A Scalable Grid Infrastructure for Data Intensive Applications},
+    booktitle = {Proceedings of IEEE International Conference on Hybrid Information Technology (ICHIT 2006)},
+    year = {2006},
+  }
+reference: "X. Wei, Z. Ding, W. W. Li, O. Tatebe, J. Jiang, L. Hu, P. W.
+  Arzberger, “GDIA: A Scalable Grid Infrastructure for Data Intensive
+  Applications”, Proceedings of IEEE International Conference on Hybrid
+  Information Technology (ICHIT 2006), 2006."
+class:
+  class: international
+  subclass: conference

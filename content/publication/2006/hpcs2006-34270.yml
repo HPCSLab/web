@@ -1,0 +1,20 @@
+title: ヘテロなOS の計算資源を活用するグリッドRPC の設計
+booktitle: 情報処理学会研究報告, 2006HPC107
+year: 2006
+authors:
+  - 上村佳史
+  - 中島佳宏
+  - 佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2006-34270,
+    title = {ヘテロなOS の計算資源を活用するグリッドRPC の設計},
+    booktitle = {情報処理学会研究報告, 2006HPC107},
+    pages = {269274},
+    year = {2006},
+  }
+reference:
+  上村佳史, 中島佳宏, 佐藤三久：ヘテロなOS の計算資源を活用するグリッドRPC
+  の設計，情報処理学会研究報告，2006HPC107，pp. 269274, (2006).
+class:
+  class: domestic
+  subclass: workshop

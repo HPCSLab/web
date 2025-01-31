@@ -1,0 +1,15 @@
+title: グラフ分割による広域分散並列ワークフローの効率的な実行　先進的計算基盤システムシンポジウムSACSIS2010論文集
+year: 2010
+authors:
+  - 田中昌宏
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2010-28832,
+    title = {グラフ分割による広域分散並列ワークフローの効率的な実行　先進的計算基盤システムシンポジウムSACSIS2010論文集},
+    pages = {63-70},
+    year = {2010},
+  }
+reference: 田中昌宏，建部修見：グラフ分割による広域分散並列ワークフローの効率的な実行　先進的計算基盤システムシンポジウムSACSIS2010論文集，pp.63-70，2010
+class:
+  class: domestic
+  subclass: conference
