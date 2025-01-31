@@ -1,0 +1,18 @@
+title: 組込み機器向けon-chip/off-chipコア間通信機構 情報処理学会研究報告
+booktitle: 2009-ARC-184(2)
+year: 2009
+authors:
+  - 三浦信一、塙敏博、朴泰祐、佐藤三久
+bibtex: |-
+  @inproceedings{hpcs2009-49748,
+    title = {組込み機器向けon-chip/off-chipコア間通信機構 情報処理学会研究報告},
+    booktitle = {2009-ARC-184(2)},
+    pages = {1-7},
+    year = {2009},
+  }
+reference:
+  三浦信一、塙敏博、朴泰祐、佐藤三久：組込み機器向けon-chip/off-chipコア間通信機構
+  情報処理学会研究報告，2009-ARC-184(2)，pp. 1-7, 2009
+class:
+  class: domestic
+  subclass: workshop

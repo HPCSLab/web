@@ -1,0 +1,21 @@
+title: '"Preliminary Evaluation of Dynamic Load Balancing Using Loop
+  Repartitioning on Omni/SCASH'
+booktitle: "CCGRID 2003: 463470"
+year: 2003
+authors:
+  - Yoshiaki Sakae
+  - Mitsuhisa Sato
+  - Satoshi Matsuoka
+  - Hiroshi Harada
+bibtex: >-
+  @inproceedings{hpcs2003-19937,
+    title = {"Preliminary Evaluation of Dynamic Load Balancing Using Loop Repartitioning on Omni/SCASH},
+    booktitle = {CCGRID 2003: 463470},
+    year = {2003},
+  }
+reference: "Yoshiaki Sakae, Mitsuhisa Sato, Satoshi Matsuoka, Hiroshi Harada:
+  “Preliminary Evaluation of Dynamic Load Balancing Using Loop Repartitioning on
+  Omni/SCASH”. CCGRID 2003: 463470"
+class:
+  class: international
+  subclass: conference

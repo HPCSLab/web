@@ -1,0 +1,23 @@
+title: Design of Object Storage Using OpenNVM for High-performance Distributed
+  File System
+booktitle: Journal of Information Processing
+year: 2016
+authors:
+  - Fuyumasa Takatsu
+  - Kohei Hiraga
+  - Osamu Tatebe
+bibtex: >-
+  @article{Fuyumasa Takatsu2016,
+    title={{Design of Object Storage Using OpenNVM for High-performance Distributed File System}},
+    author={Fuyumasa Takatsu and Kohei Hiraga and Osamu Tatebe},
+    journal={Journal of Information Processing},
+    volume={24},
+    number={5},
+    pages={824-833},
+    year={2016},
+  }
+reference: "Fuyumasa Takatsu, Kohei Hiraga, Osamu Tatebe: “Design of Object
+  Storage Using OpenNVM for High-performance Distributed File System”, Journal
+  of Information Processing, Vol. 24, No. 5, pp. 824-833, 2016."
+class:
+  class: journal

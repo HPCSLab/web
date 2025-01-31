@@ -1,0 +1,23 @@
+title: '"Heterogeneous multicomputer system: a new platform for multiparadigm
+  scientific simulation'
+booktitle: "ICS 2002: 2634"
+year: 2002
+authors:
+  - Taisuke Boku
+  - Masayuki Umemura
+  - Junichiro Makino
+  - Toshiyuki Fukushige
+  - Hajime Susa
+  - Akira Ukawa
+bibtex: >-
+  @inproceedings{hpcs2002-53459,
+    title = {"Heterogeneous multicomputer system: a new platform for multiparadigm scientific simulation},
+    booktitle = {ICS 2002: 2634},
+    year = {2002},
+  }
+reference: "Taisuke Boku, Masayuki Umemura, Junichiro Makino, Toshiyuki
+  Fukushige, Hajime Susa, Akira Ukawa: “Heterogeneous multicomputer system: a
+  new platform for multiparadigm scientific simulation”. ICS 2002: 2634"
+class:
+  class: international
+  subclass: conference

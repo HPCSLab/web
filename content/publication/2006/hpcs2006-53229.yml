@@ -1,0 +1,23 @@
+title: Efficient Parallel Implementation of Classical GramSchmidt
+  Orthogonalization Using Matrix Multiplication
+booktitle: Proc. 4th International Workshop on Parallel Matrix Algorithms and
+  Applications (PMAA’06)
+year: 2006
+authors:
+  - Takuya Yokozawa
+  - Daisuke Takahashi
+  - Taisuke Boku and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2006-53229,
+    title = {Efficient Parallel Implementation of Classical GramSchmidt Orthogonalization Using Matrix Multiplication},
+    booktitle = {Proc. 4th International Workshop on Parallel Matrix Algorithms and Applications (PMAA’06)},
+    pages = {3738},
+    year = {2006},
+  }
+reference: "Takuya Yokozawa, Daisuke Takahashi, Taisuke Boku and Mitsuhisa Sato:
+  Efficient Parallel Implementation of Classical GramSchmidt Orthogonalization
+  Using Matrix Multiplication, Proc. 4th International Workshop on Parallel
+  Matrix Algorithms and Applications (PMAA’06), pp. 3738, (2006)."
+class:
+  class: international
+  subclass: conference

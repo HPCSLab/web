@@ -1,0 +1,23 @@
+title: "PEACH: A Communication SoC for PCI Express Direct Link"
+booktitle: IEEE Symposium on Low-Power and High-Speed Chips (COOL Chips XIV), 1
+  page, 2011 (PDF), Best Feature Award
+year: 2011
+authors:
+  - Toshihiro Hanawa
+  - Taisuke Boku
+  - Shin’ichi Miura
+  - Mitsuhisa Sato
+  - and Kazutami Arimoto
+bibtex: >-
+  @inproceedings{hpcs2011-52790,
+    title = {PEACH: A Communication SoC for PCI Express Direct Link},
+    booktitle = {IEEE Symposium on Low-Power and High-Speed Chips (COOL Chips XIV), 1 page, 2011 (PDF), Best Feature Award},
+    year = {2011},
+  }
+reference: "Toshihiro Hanawa, Taisuke Boku, Shin’ichi Miura, Mitsuhisa Sato, and
+  Kazutami Arimoto, “PEACH: A Communication SoC for PCI Express Direct Link,”
+  IEEE Symposium on Low-Power and High-Speed Chips (COOL Chips XIV), 1 page,
+  2011 (PDF), Best Feature Award"
+class:
+  class: international
+  subclass: poster

@@ -1,0 +1,23 @@
+title: OpenMPを用いた並列ベンチマークプログラムによる組込み向けマルチコアプロセッサの評価情報処理学会研究報告
+booktitle: 2008ARC179
+year: 2008
+authors:
+  - 塙 敏博
+  - 李 珍泌
+  - 今田 貴之
+  - 木村 英明
+  - 佐藤 三久
+  - 朴 泰祐
+bibtex: |-
+  @inproceedings{hpcs2008-50156,
+    title = {OpenMPを用いた並列ベンチマークプログラムによる組込み向けマルチコアプロセッサの評価情報処理学会研究報告},
+    booktitle = {2008ARC179},
+    pages = {73-78},
+    year = {2008},
+  }
+reference: 塙 敏博，李 珍泌，今田 貴之，木村 英明，佐藤 三久，朴
+  泰祐：OpenMPを用いた並列ベンチマークプログラムによる組込み向けマルチコアプロセッサの評価情報処理学会研究報告，2008ARC179，pp.
+  73-78，(2008)
+class:
+  class: domestic
+  subclass: workshop

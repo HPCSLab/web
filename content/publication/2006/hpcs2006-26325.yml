@@ -1,0 +1,22 @@
+title: Grid RPCにおける広域データ管理レイヤの利用
+booktitle: 先進的計算基盤システムシンポジウムSACSIS2006論文集
+year: 2006
+authors:
+  - 相田祥昭
+  - 中島佳宏
+  - 佐藤三久
+  - 櫻井鉄也
+  - 高橋大介
+  - 朴泰祐
+bibtex: |-
+  @inproceedings{hpcs2006-26325,
+    title = {Grid RPCにおける広域データ管理レイヤの利用},
+    booktitle = {先進的計算基盤システムシンポジウムSACSIS2006論文集},
+    pages = {8592},
+    year = {2006},
+  }
+reference: 相田祥昭，中島佳宏，佐藤三久，櫻井鉄也，高橋大介，朴泰祐：Grid
+  RPCにおける広域データ管理レイヤの利用，先進的計算基盤システムシンポジウムSACSIS2006論文集, pp. 8592, (2006).
+class:
+  class: domestic
+  subclass: conference

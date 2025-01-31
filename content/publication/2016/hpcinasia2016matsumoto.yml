@@ -1,0 +1,25 @@
+title: Implementation & Performance Evaluation of NAS Parallel CG Benchmark on
+  GPU Cluster with Proprietary Interconnect TCA
+booktitle: HPC in Asia Posters Session in International Supercomputing
+  Conference (ISC) 2016
+year: 2016
+authors:
+  - Kazuya Matsumoto
+  - Norihisa Fujita
+  - Toshihiro Hanawa
+  - Taisuke Boku
+bibtex: >-
+  @inproceedings { HPCinAsia2016:matsumoto, 
+    author    = "{Kazuya Matsumoto} and {Norihisa Fujita} and {Toshihiro Hanawa} and {Taisuke Boku}",
+    title     = "{Implementation & Performance Evaluation of NAS Parallel CG Benchmark on GPU Cluster with Proprietary Interconnect TCA}",
+    booktitle = "HPC in Asia Posters Session in International Supercomputing Conference (ISC) 2016",
+    month	    = "6",
+    year 	    = "2016"
+  }
+reference: "Kazuya Matsumoto, Norihisa Fujita, Toshihiro Hanawa, Taisuke Boku:
+  “Implementation & Performance Evaluation of NAS Parallel CG Benchmark on GPU
+  Cluster with Proprietary Interconnect TCA”, HPC in Asia Posters Session in
+  International Supercomputing Conference (ISC) 2016, Jun. 2016."
+class:
+  class: international
+  subclass: poster

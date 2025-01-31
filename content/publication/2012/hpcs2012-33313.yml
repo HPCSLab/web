@@ -1,0 +1,21 @@
+title: PGAS言語XcalableMPにおけるcoarray機能の実装と評価
+booktitle: SACSIS2012 – 先進的計算基盤システムシンポジウム, 2012年5月, 神戸国際会議場（兵庫）
+year: 2012
+authors:
+  - 中尾昌広
+  - Tran Minh Tuan
+  - 李珍泌
+  - 朴泰祐
+  - 佐藤三久.
+bibtex: |-
+  @inproceedings{hpcs2012-33313,
+    title = {PGAS言語XcalableMPにおけるcoarray機能の実装と評価},
+    booktitle = {SACSIS2012 – 先進的計算基盤システムシンポジウム, 2012年5月, 神戸国際会議場（兵庫）},
+    year = {2012},
+  }
+reference: 中尾昌広，Tran Minh
+  Tuan，李珍泌，朴泰祐，佐藤三久．“PGAS言語XcalableMPにおけるcoarray機能の実装と評価“，SACSIS2012 –
+  先進的計算基盤システムシンポジウム，2012年5月，神戸国際会議場（兵庫）
+class:
+  class: domestic
+  subclass: conference

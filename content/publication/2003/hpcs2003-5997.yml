@@ -1,0 +1,24 @@
+title: HPC向けオンチップメモリプロセッサアーキテクチャSCIMAのSMP化の検討と性能評価
+booktitle: 情報処理学会論文誌コンピューティングシステム
+year: 2003
+authors:
+  - 高橋 睦史
+  - 近藤 正章
+  - 朴 泰祐
+  - 高橋 大介
+  - 中村 宏
+  - 佐藤 三久
+bibtex: |-
+  @article{hpcs2003-5997,
+    title = {HPC向けオンチップメモリプロセッサアーキテクチャSCIMAのSMP化の検討と性能評価},
+    booktitle = {情報処理学会論文誌コンピューティングシステム},
+    pages = {7686},
+    vol = {44},
+    number = {SIG6 (ACS 1)},
+    year = {2003},
+  }
+reference: 高橋 睦史, 近藤 正章, 朴 泰祐, 高橋 大介, 中村 宏, 佐藤 三久,
+  “HPC向けオンチップメモリプロセッサアーキテクチャSCIMAのSMP化の検討と性能評価”, 情報処理学会論文誌コンピューティングシステム,Vol.44,
+  No. SIG6 (ACS 1), pp.7686, 2003.
+class:
+  class: journal

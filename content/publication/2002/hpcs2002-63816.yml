@@ -1,0 +1,24 @@
+title: Heterogeneous MultiComputer System における重力効果を含む宇宙輻射流体計算
+booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2002) 論文集
+year: 2002
+authors:
+  - 朴 泰祐
+  - 牧野 淳一郎
+  - 須佐 元
+  - 梅村 雅之
+  - 福重 俊幸
+  - 宇川 彰
+bibtex: |-
+  @inproceedings{hpcs2002-63816,
+    title = {Heterogeneous MultiComputer System における重力効果を含む宇宙輻射流体計算},
+    booktitle = {ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2002) 論文集},
+    pages = {1724},
+    year = {2002},
+  }
+reference:
+  朴 泰祐, 牧野 淳一郎, 須佐 元, 梅村 雅之, 福重 俊幸, 宇川 彰, “Heterogeneous MultiComputer
+  System における重力効果を含む宇宙輻射流体計算”, 2002年ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2002)
+  論文集, pp.1724, 2002.
+class:
+  class: domestic
+  subclass: conference

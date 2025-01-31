@@ -1,0 +1,19 @@
+title: '"OpenGR: A Directivebased Grid Programming Environment'
+booktitle: "International Workshop on OpenMP: Experiences and Implementations. 2003:"
+year: 2003
+authors:
+  - Motonori Hirano
+  - Mitsuhisa Sato
+  - Yoshio Tanaka
+bibtex: >-
+  @inproceedings{hpcs2003-36238,
+    title = {"OpenGR: A Directivebased Grid Programming Environment},
+    booktitle = {International Workshop on OpenMP: Experiences and Implementations. 2003:},
+    year = {2003},
+  }
+reference: "Motonori Hirano, Mitsuhisa Sato, Yoshio Tanaka: “OpenGR: A
+  Directivebased Grid Programming Environment”. International Workshop on
+  OpenMP: Experiences and Implementations. 2003:"
+class:
+  class: international
+  subclass: conference

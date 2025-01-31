@@ -1,0 +1,26 @@
+title: Implementation and Evaluation of One-sided PGAS Communication in
+  XcalableACC for Accelerated Clusters
+booktitle: The 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid
+  Computing (CCGrid2017)
+year: 2017
+authors:
+  - Akihiro Tabuchi
+  - Masahiro Nakao
+  - Hitoshi Murai
+  - Taisuke Boku
+  - Mitsuhisa Sato
+bibtex: >-
+  @inproceedings { CCGrid2017:Tabuchi, 
+    author    = "{Akihiro Tabuchi} and {Masahiro Nakao} and {Hitoshi Murai} and {Taisuke Boku} and {Mitsuhisa Sato}",
+    title     = "{Implementation and Evaluation of One-sided PGAS Communication in XcalableACC for Accelerated Clusters}",
+    booktitle = "The 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid2017)",
+    month	    = "5",
+    year 	    = "2017",
+  }
+reference: "Akihiro Tabuchi, Masahiro Nakao, Hitoshi Murai, Taisuke Boku,
+  Mitsuhisa Sato: “Implementation and Evaluation of One-sided PGAS Communication
+  in XcalableACC for Accelerated Clusters”, The 17th IEEE/ACM International
+  Symposium on Cluster, Cloud and Grid Computing (CCGrid2017), May. 2017."
+class:
+  class: international
+  subclass: conference

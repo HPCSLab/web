@@ -1,0 +1,24 @@
+title: QCD Library for GPU Cluster with Proprietary Interconnect for GPU Direct
+  Communication
+booktitle: Proc. of HeteroPar 2014, Aug-2014.
+year: 2014
+authors:
+  - N. Fujita
+  - H. Fujii
+  - T. Hanawa
+  - Y. Kodama
+  - T. Boku
+  - Y. Kuramashi
+  - M. Clark
+bibtex: >-
+  @inproceedings{hpcs2014-32943,
+    title = {QCD Library for GPU Cluster with Proprietary Interconnect for GPU Direct Communication},
+    booktitle = {Proc. of HeteroPar 2014, Aug-2014.},
+    year = {2014},
+  }
+reference: N. Fujita, H. Fujii, T. Hanawa, Y. Kodama, T. Boku, Y. Kuramashi, M.
+  Clark, “QCD Library for GPU Cluster with Proprietary Interconnect for GPU
+  Direct Communication”, Proc. of HeteroPar 2014, Aug-2014.
+class:
+  class: international
+  subclass: conference

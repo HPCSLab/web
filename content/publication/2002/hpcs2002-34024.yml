@@ -1,0 +1,22 @@
+title: SMPPCクラスタにおけるSPAM粒子シミュレーションのハイブリッド並列化
+booktitle: 並列処理シンポジウム JSPP’2002 論文集
+year: 2002
+authors:
+  - 吉川 茂洋
+  - 朴 泰祐
+  - 佐藤 三久
+  - 高橋 大介
+  - Carol G. Hoover
+  - William G. Hoover
+bibtex: |-
+  @inproceedings{hpcs2002-34024,
+    title = {SMPPCクラスタにおけるSPAM粒子シミュレーションのハイブリッド並列化},
+    booktitle = {並列処理シンポジウム JSPP’2002 論文集},
+    year = {2002},
+  }
+reference:
+  吉川 茂洋, 朴 泰祐, 佐藤 三久, 高橋 大介, Carol G. Hoover, William G. Hoover,
+  “SMPPCクラスタにおけるSPAM粒子シミュレーションのハイブリッド並列化”, 並列処理シンポジウム JSPP’2002 論文集, 2002.
+class:
+  class: domestic
+  subclass: conference

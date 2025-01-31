@@ -1,0 +1,25 @@
+title: "Peach: A Multicore Communication System on Chip with PCI Express"
+booktitle: IEEE Micro
+year: 2011
+authors:
+  - Sugako Otani
+  - Hiroyuki Kondo
+  - Itaru Nonomura
+  - Toshihiro Hanawa
+  - Shin’ichi Miura
+  - Taisuke Boku
+bibtex: |-
+  @article{hpcs2011-50314,
+    title = {Peach: A Multicore Communication System on Chip with PCI Express},
+    booktitle = {IEEE Micro},
+    pages = {39-50},
+    vol = {31},
+    number = {6},
+    year = {2011},
+  }
+reference: "Sugako Otani, Hiroyuki Kondo, Itaru Nonomura, Toshihiro Hanawa,
+  Shin’ichi Miura, Taisuke Boku, “Peach: A Multicore Communication System on
+  Chip with PCI Express,” IEEE Micro, Vol. 31, No. 6, pp. 39-50, 2011.
+  doi:http://doi.ieeecomputersociety.org/10.1109/MM.2011.93"
+class:
+  class: journal

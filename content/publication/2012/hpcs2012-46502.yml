@@ -1,0 +1,24 @@
+title: Performance Comparison of Double
+booktitle: 'Triple and Quadruple Precision Real and Complex BLAS Subroutines on
+  GPU", Proceedings of the ATIP/A*CRC Workshop on Accelerator Technologies for
+  High-Performance Computing: Does Asia Lead the Way?, ATIP ’12, Singapore,
+  Singapore, A*STAR Computational Resource Centre'
+year: 2012
+authors:
+  - Daichi Mukunoki
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2012-46502,
+    title = {Performance Comparison of Double},
+    booktitle = {Triple and Quadruple Precision Real and Complex BLAS Subroutines on GPU", Proceedings of the ATIP/A*CRC Workshop on Accelerator Technologies for High-Performance Computing: Does Asia Lead the Way?, ATIP ’12, Singapore, Singapore, A*STAR Computational Resource Centre},
+    pages = {37:1–37:3},
+    year = {2012},
+  }
+reference: "Daichi Mukunoki, Daisuke Takahashi, “Performance Comparison of
+  Double, Triple and Quadruple Precision Real and Complex BLAS Subroutines on
+  GPU”, Proceedings of the ATIP/A*CRC Workshop on Accelerator Technologies for
+  High-Performance Computing: Does Asia Lead the Way?, ATIP ’12, Singapore,
+  Singapore, A*STAR Computational Resource Centre, pp. 37:1–37:3, May. 2012."
+class:
+  class: international
+  subclass: poster

@@ -1,0 +1,25 @@
+title: Evaluation of FFT for GPU Cluster Using Tightly Coupled Accelerators
+  Architecture
+booktitle: Proc. of HUCAA2015 in IEEE Cluster2015
+year: 2015
+authors:
+  - Toshihiro Hanawa
+  - Norihisa Fujita
+  - Tetsuya Odajima
+  - Kazuya Matsumoto
+  - Taisuke Boku
+bibtex: >-
+  @inproceedings { HUCAA:hanawa,
+    author    = "{Toshihiro Hanawa} and  {Norihisa Fujita} and {Tetsuya Odajima} and {Kazuya Matsumoto} and {Taisuke Boku}",
+    title     = "{Evaluation of FFT for GPU Cluster Using Tightly Coupled Accelerators Architecture}",
+    booktitle = "Proc. of HUCAA2015 in IEEE Cluster2015",
+    month	    = "9",
+    year 	    = "2015"
+  }
+reference: "Toshihiro Hanawa, Norihisa Fujita, Tetsuya Odajima, Kazuya
+  Matsumoto, Taisuke Boku: “Evaluation of FFT for GPU Cluster Using Tightly
+  Coupled Accelerators Architecture”, Proc. of HUCAA2015 in IEEE Cluster2015,
+  Sep. 2015."
+class:
+  class: international
+  subclass: conference

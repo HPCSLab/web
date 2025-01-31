@@ -1,0 +1,21 @@
+title: PCクラスタにおけるDVS制御による電力性能の最適化
+booktitle: 計算機アーキテクチャ研究会, 2005ARC156
+year: 2005
+authors:
+  - 堀田義彦
+  - 佐藤三久
+  - 木村英明
+  - 朴 泰祐
+  - 高橋大介
+  - 松岡 聡
+bibtex: |-
+  @inproceedings{hpcs2005-61487,
+    title = {PCクラスタにおけるDVS制御による電力性能の最適化},
+    booktitle = {計算機アーキテクチャ研究会, 2005ARC156},
+    year = {2005},
+  }
+reference: 堀田義彦，佐藤三久，木村英明，朴 泰祐，高橋大介，松岡
+  聡，”PCクラスタにおけるDVS制御による電力性能の最適化”，計算機アーキテクチャ研究会，2005ARC156，2005.
+class:
+  class: domestic
+  subclass: workshop

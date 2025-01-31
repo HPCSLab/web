@@ -1,0 +1,22 @@
+title: "SCIMASMP: onchip memory processor architecture for SMP"
+booktitle: WMPI 2004.
+year: 2004
+authors:
+  - Chikafumi Takahashi
+  - Masaaki Kondo
+  - Taisuke Boku
+  - Daisuke Takahashi
+  - Hiroshi Nakamura
+  - Mitsuhisa Sato
+bibtex: |-
+  @inproceedings{hpcs2004-35934,
+    title = {SCIMASMP: onchip memory processor architecture for SMP},
+    booktitle = {WMPI 2004.},
+    year = {2004},
+  }
+reference: "Chikafumi Takahashi, Masaaki Kondo, Taisuke Boku, Daisuke Takahashi,
+  Hiroshi Nakamura, Mitsuhisa Sato, “SCIMASMP: onchip memory processor
+  architecture for SMP”, WMPI 2004."
+class:
+  class: international
+  subclass: conference

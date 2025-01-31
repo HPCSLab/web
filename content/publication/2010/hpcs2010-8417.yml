@@ -1,0 +1,20 @@
+title: "Implementation and Performance Evaluation of XcalableMP: A Parallel
+  Programming Language for Distributed Memory Systems"
+booktitle: The 39th international Conference on Parallel Processing Workshops (ICPPW10)
+year: 2010
+authors:
+  - Jinpil Lee and Mitsuhisa Sato
+bibtex: >-
+  @inproceedings{hpcs2010-8417,
+    title = {Implementation and Performance Evaluation of XcalableMP: A Parallel Programming Language for Distributed Memory Systems},
+    booktitle = {The 39th international Conference on Parallel Processing Workshops (ICPPW10)},
+    pages = {413-420},
+    year = {2010},
+  }
+reference: "Jinpil Lee and Mitsuhisa Sato: Implementation and Performance
+  Evaluation of XcalableMP: A Parallel Programming Language for Distributed
+  Memory Systems, The 39th international Conference on Parallel Processing
+  Workshops (ICPPW10), pp.413-420, 2010."
+class:
+  class: international
+  subclass: conference

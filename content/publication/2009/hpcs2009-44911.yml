@@ -1,0 +1,18 @@
+title: ファイルステージングシステムCatwalkのMPI-IO実装 情報処理学会研究報告
+booktitle: 2009-HPC-121(10)
+year: 2009
+authors:
+  - 堀敦史、鴨志田良和、松葉浩也、安井隆、住元真司、石川裕
+bibtex: |-
+  @inproceedings{hpcs2009-44911,
+    title = {ファイルステージングシステムCatwalkのMPI-IO実装 情報処理学会研究報告},
+    booktitle = {2009-HPC-121(10)},
+    pages = {1-9},
+    year = {2009},
+  }
+reference:
+  堀敦史、鴨志田良和、松葉浩也、安井隆、住元真司、石川裕：ファイルステージングシステムCatwalkのMPI-IO実装
+  情報処理学会研究報告，2009-HPC-121(10)，pp. 1-9, 2009
+class:
+  class: domestic
+  subclass: workshop

@@ -1,0 +1,19 @@
+title: PCクラスタにおける並列一次元FFTのブロックアルゴリズム
+booktitle: 並列処理シンポジウム JSPP’2002 論文集
+year: 2002
+authors:
+  - 高橋 大介
+  - 朴 泰祐
+  - 佐藤 三久
+bibtex: |-
+  @inproceedings{hpcs2002-33487,
+    title = {PCクラスタにおける並列一次元FFTのブロックアルゴリズム},
+    booktitle = {並列処理シンポジウム JSPP’2002 論文集},
+    year = {2002},
+  }
+reference:
+  高橋 大介, 朴 泰祐, 佐藤 三久, “PCクラスタにおける並列一次元FFTのブロックアルゴリズム”, 並列処理シンポジウム
+  JSPP’2002 論文集, 2002.
+class:
+  class: domestic
+  subclass: conference

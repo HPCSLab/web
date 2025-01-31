@@ -1,0 +1,25 @@
+title: Implementing CG Method on GPU Cluster with Proprietary Interconnect TCA
+  for GPU Direct Communication
+booktitle: 1st Annual Meeting on Advanced Computing System and Infrastructure
+year: 2015
+authors:
+  - Kazuya Matsumoto
+  - Toshihiro Hanawa
+  - Yuetsu Kodama
+  - Hisafumi Fujii
+  - Taisuke Boku
+bibtex: >-
+  @inproceedings { ACSI2015:matsumoto,
+    author    = "{Kazuya Matsumoto} and {Toshihiro Hanawa} and {Yuetsu Kodama} and {Hisafumi Fujii} and {Taisuke Boku}",
+    title     = "{Implementing CG Method on GPU Cluster with Proprietary Interconnect TCA for GPU Direct Communication}",
+    booktitle = "1st Annual Meeting on Advanced Computing System and Infrastructure",
+    month	    = "1",
+    year 	    = "2015"
+  }
+reference: "Kazuya Matsumoto, Toshihiro Hanawa, Yuetsu Kodama, Hisafumi Fujii,
+  Taisuke Boku: “Implementing CG Method on GPU Cluster with Proprietary
+  Interconnect TCA for GPU Direct Communication”, 1st Annual Meeting on Advanced
+  Computing System and Infrastructure, Jan. 2015."
+class:
+  class: domestic
+  subclass: conference

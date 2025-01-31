@@ -1,0 +1,29 @@
+title: "PPMDS: A Distributed Metadata Server based on Nonblocking Transactions"
+booktitle: Proceedings of the Second International Workshop on Data Science
+  Engineering and its Applications
+year: 2018
+authors:
+  - Kohei Hiraga
+  - Osamu Tatebe
+  - Hideyuki Kawashima
+bibtex: >-
+  @inproceedings{DSEA2018:hiraga,
+
+  author={Hiraga, Kohei and Tatebe, Osamu and Kawashima, Hideyuki},
+
+  booktitle={Proceedings of the Second International Workshop on Data Science Engineering and its Applications},
+
+  title={PPMDS: A Distributed Metadata Server based on Nonblocking Transactions},
+
+  year={2018},
+
+  month={10},
+
+  }
+reference: "Kohei Hiraga, Osamu Tatebe, Hideyuki Kawashima: “PPMDS: A
+  Distributed Metadata Server based on Nonblocking Transactions”, Proceedings of
+  the Second International Workshop on Data Science Engineering and its
+  Applications, Oct. 2018."
+class:
+  class: international
+  subclass: conference

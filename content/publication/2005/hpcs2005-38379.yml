@@ -1,0 +1,24 @@
+title: Grid Environment for Computational Astrophysics Driven by GRAPE6 with
+  HMCSG and OmniRPC
+booktitle: The Joint Workshop on HighPerformance Grid Computing & HighLevel
+  Parakkek Programming Models (HIPSHPGC2005).
+year: 2005
+authors:
+  - Taisuke Boku
+  - Kenji Onuma
+  - Mitsuhisa Sato
+  - Yoshihiro Nakajima
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2005-38379,
+    title = {Grid Environment for Computational Astrophysics Driven by GRAPE6 with HMCSG and OmniRPC},
+    booktitle = {The Joint Workshop on HighPerformance Grid Computing & HighLevel Parakkek Programming Models (HIPSHPGC2005).},
+    year = {2005},
+  }
+reference: Taisuke Boku, Kenji Onuma, Mitsuhisa Sato, Yoshihiro Nakajima,
+  Daisuke Takahashi, “Grid Environment for Computational Astrophysics Driven by
+  GRAPE6 with HMCSG and OmniRPC”, The Joint Workshop on HighPerformance Grid
+  Computing & HighLevel Parakkek Programming Models (HIPSHPGC2005).
+class:
+  class: international
+  subclass: conference

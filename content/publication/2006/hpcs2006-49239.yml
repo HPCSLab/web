@@ -1,0 +1,21 @@
+title: A Hybrid MPI/OpenMP Implementation of a Parallel 3D FFT on SMP Clusters
+booktitle: Proc. 6th International Conference on Parallel Processing and Applied
+  Mathematics (PPAM 2005), Lecture Notes in Computer Science
+year: 2006
+authors:
+  - Daisuke Takahashi
+bibtex: >-
+  @inproceedings{hpcs2006-49239,
+    title = {A Hybrid MPI/OpenMP Implementation of a Parallel 3D FFT on SMP Clusters},
+    booktitle = {Proc. 6th International Conference on Parallel Processing and Applied Mathematics (PPAM 2005), Lecture Notes in Computer Science},
+    pages = {970977},
+    number = {3911},
+    year = {2006},
+  }
+reference: "Daisuke Takahashi: A Hybrid MPI/OpenMP Implementation of a Parallel
+  3D FFT on SMP Clusters, Proc. 6th International Conference on Parallel
+  Processing and Applied Mathematics (PPAM 2005), Lecture Notes in Computer
+  Science, No. 3911, SpringerVerlag, pp. 970977,(2006)."
+class:
+  class: international
+  subclass: conference

@@ -1,0 +1,24 @@
+title: High Performance Data Analysis for Particle Physics Using The Gfarm File System
+booktitle: SC06 Storage Challenge Winner on Large Systems.
+year: 2006
+authors:
+  - Osamu Tatebe
+  - Mitsuhisa Sato
+  - Taisuke Boku
+  - Akira Ukawa
+  - Nobuhiko Katayama
+  - Shohei Nishida
+  - and Ichiro Adachi
+bibtex: >-
+  @inproceedings{hpcs2006-38649,
+    title = {High Performance Data Analysis for Particle Physics Using The Gfarm File System},
+    booktitle = {SC06 Storage Challenge Winner on Large Systems.},
+    year = {2006},
+  }
+reference: "Osamu Tatebe, Mitsuhisa Sato, Taisuke Boku, Akira Ukawa, Nobuhiko
+  Katayama, Shohei Nishida, and Ichiro Adachi: High Performance Data Analysis
+  for Particle Physics Using The Gfarm File System. SC06 Storage Challenge
+  Winner on Large Systems."
+class:
+  class: international
+  subclass: conference

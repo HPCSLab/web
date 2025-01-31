@@ -1,0 +1,22 @@
+title: 密結合並列演算加速機構 TCA を用いた GPU 間直接通信による Collective 通信の実装と予備評価
+booktitle: 情報処理学会研究報告
+year: 2014
+authors:
+  - 松本 和也
+  - 塙 敏博
+  - 児玉 祐悦
+  - 藤井 久史
+  - 朴 泰祐
+bibtex: |-
+  @inproceedings{hpcs2014-3133,
+    title = {密結合並列演算加速機構 TCA を用いた GPU 間直接通信による Collective 通信の実装と予備評価},
+    booktitle = {情報処理学会研究報告},
+    vol = {2014-HPC-147 No.23},
+    year = {2014},
+  }
+reference:
+  松本 和也, 塙 敏博, 児玉 祐悦, 藤井 久史, 朴 泰祐, “密結合並列演算加速機構 TCA を用いた GPU 間直接通信による
+  Collective 通信の実装と予備評価”, 情報処理学会研究報告, Vol.2014-HPC-147 No.23, 2014.
+class:
+  class: domestic
+  subclass: workshop

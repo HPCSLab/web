@@ -1,0 +1,20 @@
+title: '"OmniRPC: A Grid RPC Facility for Cluster and Global Computing in OpenMP'
+booktitle: "WOMPAT 2001: 130-136"
+year: 2001
+authors:
+  - Mitsuhisa Sato
+  - Motonari Hirano
+  - Yoshio Tanaka
+  - Satoshi Sekiguchi
+bibtex: >-
+  @inproceedings{hpcs2001-4888,
+    title = {"OmniRPC: A Grid RPC Facility for Cluster and Global Computing in OpenMP},
+    booktitle = {WOMPAT 2001: 130-136},
+    year = {2001},
+  }
+reference: "Mitsuhisa Sato, Motonari Hirano, Yoshio Tanaka, Satoshi Sekiguchi:
+  “OmniRPC: A Grid RPC Facility for Cluster and Global Computing in OpenMP”.
+  WOMPAT 2001: 130-136"
+class:
+  class: international
+  subclass: conference

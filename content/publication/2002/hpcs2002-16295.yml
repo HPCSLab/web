@@ -1,0 +1,23 @@
+title: Ethernetによるクラスタ上での分散共有メモリOpenMP Omni/SCASHの性能評価
+booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC9121
+year: 2002
+authors:
+  - 小島 好紀
+  - 佐藤 三久
+  - 原田 浩
+  - 石川 裕
+  - 朴 泰祐
+  - 高橋 大介
+bibtex: |-
+  @inproceedings{hpcs2002-16295,
+    title = {Ethernetによるクラスタ上での分散共有メモリOpenMP Omni/SCASHの性能評価},
+    booktitle = {情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC9121},
+    pages = {121126.},
+    year = {2002},
+  }
+reference: 小島 好紀, 佐藤 三久, 原田 浩, 石川 裕, 朴 泰祐, 高橋 大介,
+  “Ethernetによるクラスタ上での分散共有メモリOpenMP Omni/SCASHの性能評価”,
+  情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC9121, 2002, pp.121126.
+class:
+  class: domestic
+  subclass: workshop

@@ -1,0 +1,19 @@
+title: 大規模ワークフローに対応したPwrakeシステムの設計と実装
+booktitle: 情報処理学会研究報告, 2012-HPC-135(14) (SWoPP鳥取2012)
+year: 2012
+authors:
+  - 田中昌宏
+  - 建部修見
+bibtex: |-
+  @inproceedings{hpcs2012-44926,
+    title = {大規模ワークフローに対応したPwrakeシステムの設計と実装},
+    booktitle = {情報処理学会研究報告, 2012-HPC-135(14) (SWoPP鳥取2012)},
+    pages = {1-7},
+    year = {2012},
+  }
+reference:
+  "田中昌宏, 建部修見: 大規模ワークフローに対応したPwrakeシステムの設計と実装, 情報処理学会研究報告,
+  2012-HPC-135(14) (SWoPP鳥取2012), pp.1-7, 2012年7月."
+class:
+  class: domestic
+  subclass: workshop
