@@ -1,0 +1,21 @@
+title: Design of Reliable and Efficient Syscall Hooking Library for a Parallel File System
+
+authors:
+  - Haruka Miyauchi
+  - Sohei Koyama
+  - Osamu Tatebe
+year: 2024
+bibtex: |
+  @inproceedings{sc24miyauchi,
+  title={Design of Reliable and Efficient Syscall Hooking Library for a Parallel File System},
+  author={Miyauchi, Haruka and Koyama, Sohei and Tatebe, Osamu},
+  year={2024},
+  booktitle={SC24}
+  }
+reference: |
+  H. Miyauchi, S. Koyama and O.Tatebe,
+  “Design of Reliable and Efficient Syscall Hooking Library for a Parallel File System”,
+  Supercomputing Conference (SC) 24, Poster, Nov. 2024.
+class:
+  class: international
+  subclass: conference
