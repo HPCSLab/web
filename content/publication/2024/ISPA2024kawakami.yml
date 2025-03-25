@@ -1,0 +1,24 @@
+title: Implementation and Evaluation of Octuple-Precision Fast Fourier Transform on GPU
+url: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=237584&file_id=1&file_no=1
+authors:
+  - Shota Kawakami
+  - Daisuke Takahashi
+year: 2024
+bibtex: |
+  @INPROCEEDINGS{10885156,
+  author={Kawakami, Shota and Takahashi, Daisuke},
+  booktitle={2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)}, 
+  title={Implementation and Evaluation of Octuple-Precision Fast Fourier Transform on GPU}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={287-294},
+  doi={10.1109/ISPA63168.2024.00044}}
+
+reference: |
+  Shota Kawakami and Daisuke Takahashi:
+  "Implementation and Evaluation of Octuple-Precision Fast Fourier Transform on GPU,”
+  Proc. 2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA 2024), pp. 287-294 (2024).
+class:
+  class: international
+  subclass: conference
