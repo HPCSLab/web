@@ -16,7 +16,7 @@ bibtex: |
    booktitle = "情報処理学会 第195回 HPC 研究会報告 (HPC195)"
   }
 reference: |
-  川上 昌汰, 高橋 大介:
+  長橋 朋也, 高橋 大介:
   "MPI/OpenMP並列化によるスライドパズルのZero-Aware Pattern Databaseの構築,”
   情報処理学会 第195回 HPC 研究会報告 (HPC195),
 class:
