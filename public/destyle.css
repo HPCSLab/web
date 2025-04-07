@@ -245,14 +245,9 @@ textarea {
  * Reset radio and checkbox appearance to preserve their look in iOS.
  */
 
-[type="checkbox"] {
-  -webkit-appearance: checkbox;
-  appearance: checkbox;
-}
-
+[type="checkbox"],
 [type="radio"] {
-  -webkit-appearance: radio;
-  appearance: radio;
+  appearance: auto;
 }
 
 /**

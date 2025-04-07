@@ -34,9 +34,9 @@ img {
 body {
   box-sizing: border-box;
   min-height: 100vh;
-  font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family:
+    Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: var(--color-text-normal);
   background-color: white;
 }
