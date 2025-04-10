@@ -1,7 +1,9 @@
 name: Alexander Klassen
-eng_name: Alexander Klassen 
+eng_name: Alexander Klassen
 occupation: Student
 grade: M1
 team: ss
 icon: ./icons/klassen.jpg
 username: klassen
+message: |
+  分散ファイルシステムの最適化の研究をします
