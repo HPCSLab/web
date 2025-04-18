@@ -1,11 +1,11 @@
 name: 中野 将生
 eng_name: Masaki Nakano
 occupation: Student
-grade: M1
+grade: M2
 team: ss
 icon: ./icons/mnakano.jpg
 username: mnakano
 keywords:
   - 非同期ランタイム
 message: |
-  先読みとバッファリングを非同期的に扱うことでsmall fileへのリクエストの高速化を考えています。
+  高速並列ファイルシステムにおける負荷分散を考えています

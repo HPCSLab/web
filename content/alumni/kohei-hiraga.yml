@@ -1,5 +1,10 @@
 ---
-year: 2019
-month: 3
+# year: 2019
+# month: 3
+# name: Kohei Hiraga
+# type: doctor
+
 name: Kohei Hiraga
-type: doctor
+year: 2024
+month: 3
+type: staff
