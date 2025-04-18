@@ -1,7 +1,7 @@
 {
-  "extends": ["config:base", ":timezone(Asia/Tokyo)"],
+  "extends": ["config:recommended", ":timezone(Asia/Tokyo)"],
   "labels": ["dependencies", "renovate"],
-  "schedule": ["after 10pm and before 5am"],
+  "schedule": ["after 10pm", "before 5am"],
   "dependencyDashboard": true,
   "pin": {
     "automerge": true
