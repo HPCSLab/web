@@ -1,9 +1,9 @@
 name: 渡邊瑞己
 eng_name: Watanabe Mizuki
 occupation: Student
-grade: B4
+grade: M1
 team: perf
 icon: ./icons/watanabe.jpg
 username: watanabe
 message: |
-  OpenACCでの遊休GPUを利用した通信の高速化手法を研究しています。
+  卒業研究ではOpenACCでの遊休GPUを利用した通信の高速化手法を研究していました。
