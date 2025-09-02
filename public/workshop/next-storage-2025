@@ -1,0 +1,305 @@
+<html lang="ja">
+
+<head>
+    <title>次世代ストレージワークショップ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <style>
+        :root {
+            --dark-primary: #0097a7;
+            --light-primary: #b2ebf2;
+            --primary: #00bcd4;
+            --text: #ffffff;
+            --accent: #009688;
+            --primary-text: #212121;
+            --secondary-text: #757575;
+            --divider: #bdbdbd;
+        }
+
+        html {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            background-color: var(--text);
+            color: var(--primary-text);
+            padding: 0;
+            margin: 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            main {
+                width: 70%;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header {
+                text-align: center;
+            }
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--text);
+            padding: 1rem;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .top-level-section {
+            margin: 2rem 1rem 2rem 1rem;
+        }
+
+        .postal-number {
+            color: var(--secondary-text);
+            font-size: 80%;
+            margin-right: 1em;
+        }
+
+        .address {
+            font-size: 80%;
+        }
+
+        .hotel {
+            font-size: 100%;
+        }
+
+        .address-container {
+            display: flex;
+            flex-direction: row;
+            margin-block-start: 1rem;
+        }
+
+        .session-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .session-table>thead td {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            font-weight: bolder;
+        }
+
+        .session-table>thead {}
+
+        .session-table>tbody tr {
+            border-top: 1px solid var(--divider);
+        }
+
+        .session-table>tbody td {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .session {
+            margin-top: 2rem;
+            margin-left: 1rem;
+        }
+
+        .session-time {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+
+        .day {
+            margin-right: 0.5em;
+        }
+
+        .hour {}
+
+        .name {
+            width: 20%;
+        }
+
+        .belongs-to {
+            width: 20%;
+        }
+
+        .title {
+            width: 60%;
+        }
+    </style>
+    <header>
+        <h1>次世代ストレージワークショップ</h1>
+    </header>
+    <main>
+        <section class="top-level-section">
+            <h2>開催趣旨</h2>
+            <p>
+                科研費基盤研究A「次世代ストレージアーキテクチャの研究」,
+                科研費若手研究「次世代データサイエンスのための不揮発性メモリを用いたストレージシステムの研究」
+                及び富士通との特別共同研究について
+                これまでの研究成果の共有と今後について打ち合わせをするためのワークショップを開催する．
+            </p>
+        </section>
+        <section class="top-level-section">
+            <h2>日程</h2>
+            <p>2025年9月8日〜10日</p>
+        </section>
+        <section class="top-level-section">
+            <h2>開催地</h2>
+            <div>
+                <div class="address-container">
+                    <div class="postal-number">〒401-0502</div>
+                    <div class="address">山梨県南都留郡山中湖村平野580</div>
+                </div>
+                <div class="hotel">リゾートイン愛</div>
+            </div>
+        </section>
+        <section class="top-level-section">
+            <h2>プログラム</h2>
+            <section class="session">
+                <h3 class="session-time">
+                    <div class="day">9/8</div>
+                    <div class="hour">14:00 ~</div>
+                </h3>
+                <table class="session-table">
+                    <thead>
+                        <tr>
+                            <td class="name">発表者氏名</td>
+                            <td class="belongs-to">所属</td>
+                            <td class="title">題目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td class="name">大辻弘貴</td>
+                        <td class="belongs-to">富士通</td>
+                        <td class="title">
+                            大規模環境における並列ファイルシステムの構築と運用
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td class="name">小木勇輝</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">第3世代Optaneメモリによる大規模言語モデル推論キャッシュの性能評価</td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="session">
+                <h3 class="session-time">
+                    <div class="day">9/9</div>
+                    <div class="hour">9:00 ~</div>
+                </h3>
+                <table class="session-table">
+                    <thead>
+                        <tr>
+                            <td class="name">発表者氏名</td>
+                            <td class="belongs-to">所属</td>
+                            <td class="title">題目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name">西山 拓希</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">
+                                ハードウェアへのオフロードに基づいた分散合意アルゴリズムRaftのレイテンシーとスループットの改善
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name">中野将生</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">
+                                階層型キャッシュによるファイルアクセス高速化
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+            <section class="session">
+                <h3 class="session-time">
+                    <div class="day">9/3</div>
+                    <div class="hour">14:00 ~</div>
+                </h3>
+                <table class="session-table">
+                    <thead>
+                        <tr>
+                            <td class="name">発表者氏名</td>
+                            <td class="belongs-to">所属</td>
+                            <td class="title">題目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name">前田椋祐</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">通信とI/Oの非同期ランタイム上でのスケジューリング統合</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Alexander Klassen</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">RPCを用いたI/O処理の性能解析手法の調査</td>
+                        </tr>
+                        <tr>
+                            <td class="name">兪　明哲</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">フォールトトレランス分散学習基盤の研究</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="session">
+                <h3 class="session-time">
+                    <div class="day">9/10</div>
+                    <div class="hour">9:00 ~</div>
+                </h3>
+                <table class="session-table">
+                    <thead>
+                        <tr>
+                            <td class="name">発表者氏名</td>
+                            <td class="belongs-to">所属</td>
+                            <td class="title">題目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="name">平賀弘平</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">
+                                不揮発性メモリとMPI片方向通信によるMPI-IOバーストバッファの設計
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name">Mendrika Tiavina</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">
+                                Energy Optimization with Sleep Scheduling for Containerized Workloads
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name">建部修見</td>
+                            <td class="belongs-to">筑波大</td>
+                            <td class="title">キャッシングファイルシステムの実用化</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
