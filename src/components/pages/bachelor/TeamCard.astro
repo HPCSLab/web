@@ -68,7 +68,7 @@ const { team, href } = Astro.props;
       <section class="in-card-section">
         <h3>説明会</h3>
         <div class="schedule-table">
-          {team.bachelorInfo.informationSessions.map((session) => (
+          {team.bachelorInfo.informationSessions?.map((session) => (
             <Session session={session} />
           ))}
         </div>
