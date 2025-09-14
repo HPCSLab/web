@@ -5,4 +5,4 @@ grade: M1
 team: algo
 icon: ./icons/yamane.jpg
 username: yamane
-message: ""
+message: 半精度のSIMD演算を用いたFFTの実装
