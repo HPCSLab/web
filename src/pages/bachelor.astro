@@ -15,7 +15,6 @@ import Session from "@components/pages/bachelor/Session.astro";
 import type { InformationSession } from "@content";
 
 const teams = await getCollection("team");
-/*
 const generalSession: InformationSession = {
   place: {
     display: "CCS(計算科学研究センター) ワークショップ室",
@@ -27,10 +26,6 @@ const generalSession: InformationSession = {
     end: "19:45",
   },
 };
-*/
-
-const generalSession: InformationSession | null = null;
-
 ---
 
 <Base
