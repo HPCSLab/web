@@ -18,20 +18,19 @@ const teams = await getCollection("team");
 /*
 const generalSession: InformationSession = {
   place: {
-    display: "総合研究棟B1001",
-    canonical: "筑波大学 総合研究棟B1001",
+    display: "CCS(計算科学研究センター) ワークショップ室",
+    canonical: "筑波大学 計算科学研究センター ワークショップ室",
   },
-  day: new Date("2024-10-2"),
+  day: new Date("2025-10-7"),
   hour: {
-    begin: "15:15",
-    end: "16:30",
+    begin: "18:15",
+    end: "19:45",
   },
 };
 */
 
 const generalSession: InformationSession | null = null;
 
-const generalSessionFormLink = "https://forms.gle/meqA8rHAmdPdb2Cd9";
 ---
 
 <Base
@@ -76,8 +75,9 @@ const generalSessionFormLink = "https://forms.gle/meqA8rHAmdPdb2Cd9";
       </Chevron>
     </List>
     <Typography>
-      特に,筑波大学計算科学研究センターで運用されている Cygnus,
-      Pegasusでは,これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており,
+      特に,筑波大学計算科学研究センターで運用されている
+      Pegasusや,東京大学と共同で運用されている Miyabi
+      では,これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており,
       並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算の研究を進めています．
       研究室にある大規模 PC クラスタの他,ABCI や TSUBAME
       など他機構のスパコンも利用しながら研究を行っています．
@@ -95,20 +95,14 @@ const generalSessionFormLink = "https://forms.gle/meqA8rHAmdPdb2Cd9";
     <Typography>
       全体説明会は HPCS
       研究室に所属する先生が原則全員参加し，各チームの研究内容について紹介する説明会です．
-      以下のボタンをクリックし，リンク先のGoogleフォームに必要な情報を入力・送信して下さい．
-      もちろん，飛び入り参加も大歓迎です．直接，開催場所にお越し下さい！
+      参加に当たって申し込みなどは必要ありません．直接，開催場所にお越し下さい！
     </Typography>
-    <a href={generalSessionFormLink} class="general-session-link">
-      全体説明会申し込みフォーム</a
-    >
     <H2>各チームの説明会</H2>
     <Typography>
       各チームの説明会日程は下に記載されています．
-      もちろん，飛び入り参加も大歓迎ですが，事前に申し込みいただけるとこちらで来る予定の人を把握できるためありがたいです！
+      それぞれのチームについて詳細な説明が行われます.
+      申し込みなどは必要ありません．直接，開催場所にお越し下さい！
     </Typography>
-    <a href={generalSessionFormLink} class="general-session-link">
-      チーム説明会申し込みフォーム
-    </a>
   </H1Section>
   <H1Section backgroundInverted={true} fullW={true}>
     <H2 backgroundInverted={true} slot="heading">チーム一覧</H2>
@@ -123,6 +117,10 @@ const generalSessionFormLink = "https://forms.gle/meqA8rHAmdPdb2Cd9";
   <H1Section>
     <H2>就職先一覧</H2>
     <div class="after-graduate">
+      <div class="year">2025</div>
+      <div>Preferred Networks</div>
+      <div class="year">2024</div>
+      <div>DataDirect Networks Japan,東京エレクトロン</div>
       <div class="year">2019</div>
       <div>
         LINE,Treasure Data,FreakOut,Cadence Design Systems,
