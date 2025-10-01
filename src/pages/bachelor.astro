@@ -15,7 +15,7 @@ import Session from "@components/pages/bachelor/Session.astro";
 import type { InformationSession } from "@content";
 
 const teams = await getCollection("team");
-
+/*
 const generalSession: InformationSession = {
   place: {
     display: "総合研究棟B1001",
@@ -27,6 +27,9 @@ const generalSession: InformationSession = {
     end: "16:30",
   },
 };
+*/
+
+const generalSession: InformationSession | null = null;
 
 const generalSessionFormLink = "https://forms.gle/meqA8rHAmdPdb2Cd9";
 ---
@@ -82,7 +85,13 @@ const generalSessionFormLink = "https://forms.gle/meqA8rHAmdPdb2Cd9";
   </H1Section>
   <H1Section>
     <H2>全体説明会</H2>
-    <Session session={generalSession} direction="row" />
+    {
+      generalSession ? (
+        <Session session={generalSession} direction="row" />
+      ) : (
+        <b>未定</b>
+      )
+    }
     <Typography>
       全体説明会は HPCS
       研究室に所属する先生が原則全員参加し，各チームの研究内容について紹介する説明会です．

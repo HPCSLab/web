@@ -282,7 +282,7 @@ export type InformationSession = z.infer<
 
 const bachelorInfoSchema = z.object({
   capacities: z.array(bachelorCapacitySchema),
-  informationSessions: z.array(bachelorInformationSessionSchema),
+  informationSessions: z.array(bachelorInformationSessionSchema).nullish(),
 });
 
 export type BachelorCapacity = z.infer<typeof bachelorCapacitySchema>;
