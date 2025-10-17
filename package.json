@@ -15,6 +15,7 @@
     "preview": "astro preview",
     "fix": "run-p fix:*",
     "fix:fmt": "prettier -w .",
+    "fix:stylelint": "stylelint \"**/*.{astro,css}\" --fix",
     "astro": "astro"
   },
   "dependencies": {
@@ -45,7 +46,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "sharp": "^0.34.1",
-    "stylelint": "^16.18.0",
+    "stylelint": "^16.25.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^17.0.0",
     "stylelint-prettier": "^5.0.3",
