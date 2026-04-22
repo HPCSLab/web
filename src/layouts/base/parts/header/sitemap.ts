@@ -114,13 +114,15 @@ export const pages: IndexPage[] = [
         url: "https://www.ccs.tsukuba.ac.jp/",
         icon: "material-symbols:arrow-outward-rounded",
       },
-      ...(bachelorPageEnable ? [
-        {
-          title: "卒研配属情報",
-          url: "/bachelor/#!index.md",
-          icon: "material-symbols:arrow-outward-rounded",
-        }
-      ] : []),
+      ...(bachelorPageEnable
+        ? [
+            {
+              title: "卒研配属情報",
+              url: "/bachelor/#!index.md",
+              icon: "material-symbols:arrow-outward-rounded",
+            },
+          ]
+        : []),
       {
         title: "情報システム実験B",
         url: "/experiment/text.html",

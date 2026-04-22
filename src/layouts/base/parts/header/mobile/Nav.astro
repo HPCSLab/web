@@ -13,12 +13,15 @@ interface Props {
 
 <nav id={Astro.props.id}>
   {
-    bachelorPageEnable &&
-    <div class="root">
-      <h2>
-        <a href={bachelorPage.url} class="strong-link">卒研配属情報</a>
-      </h2>
-    </div>
+    bachelorPageEnable && (
+      <div class="root">
+        <h2>
+          <a href={bachelorPage.url} class="strong-link">
+            卒研配属情報
+          </a>
+        </h2>
+      </div>
+    )
   }
 
   {

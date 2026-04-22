@@ -74,10 +74,13 @@ const carouselPictures = (await getCollection("carousel"))
       並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算を目指した研究を進めています．
     </Typography>
     {
-      bachelorPageEnable &&
-      <H2>
-        <a href="/bachelor" class="large-link">卒研配属情報はこちらから</a>
-      </H2>
+      bachelorPageEnable && (
+        <H2>
+          <a href="/bachelor" class="large-link">
+            卒研配属情報はこちらから
+          </a>
+        </H2>
+      )
     }
   </TopLevelSection>
   <TopLevelSection backgroundInverted={false}>

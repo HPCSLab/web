@@ -15,8 +15,8 @@ import Session from "@components/pages/bachelor/Session.astro";
 import type { InformationSession } from "@content";
 import { bachelorPageEnable } from "src/site.config";
 
-if(!bachelorPageEnable) {
-  return new Response(null, {status: 404});
+if (!bachelorPageEnable) {
+  return new Response(null, { status: 404 });
 }
 
 const teams = await getCollection("team");
