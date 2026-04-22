@@ -12,6 +12,7 @@ import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
 import { getCollection } from "astro:content";
 import H2 from "@components/composite/heading/h2.astro";
+import { bachelorPageEnable } from "src/site.config";
 
 const news = (await getCollection("news")).sort(
   (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date),
@@ -72,9 +73,15 @@ const carouselPictures = (await getCollection("carousel"))
       これらの大規模並列計算機を用いて各種計算科学応用分野と積極的な関係・共同研究を行っており，
       並列言語・ライブラリ・アルゴリズム等、様々な面で実世界に役立つ高性能計算を目指した研究を進めています．
     </Typography>
-    <H2>
-      <a href="/bachelor" class="large-link">卒研配属情報はこちらから</a>
-    </H2>
+    {
+      bachelorPageEnable && (
+        <H2>
+          <a href="/bachelor" class="large-link">
+            卒研配属情報はこちらから
+          </a>
+        </H2>
+      )
+    }
   </TopLevelSection>
   <TopLevelSection backgroundInverted={false}>
     <H2>What's news</H2>

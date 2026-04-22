@@ -3,6 +3,7 @@ import FullscreenNavIndexAcordion from "./NavIndexAcordion.astro";
 import FullscreenNavIndexLink from "./NavIndexLink.astro";
 import type { IndexPage } from "../sitemap";
 import { bachelorPage } from "../sitemap";
+import { bachelorPageEnable } from "src/site.config";
 
 interface Props {
   id?: string;
@@ -11,11 +12,18 @@ interface Props {
 ---
 
 <nav id={Astro.props.id}>
-  <div class="root">
-    <h2>
-      <a href={bachelorPage.url} class="strong-link">卒研配属情報</a>
-    </h2>
-  </div>
+  {
+    bachelorPageEnable && (
+      <div class="root">
+        <h2>
+          <a href={bachelorPage.url} class="strong-link">
+            卒研配属情報
+          </a>
+        </h2>
+      </div>
+    )
+  }
+
   {
     Astro.props.sitemap.map((index) => (
       <div>
