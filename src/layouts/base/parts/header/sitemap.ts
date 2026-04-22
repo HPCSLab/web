@@ -1,4 +1,5 @@
 import { getCollection } from "astro:content";
+import { bachelorPageEnable } from "src/site.config";
 
 const latestPubYear = [
   ...new Set(
@@ -46,7 +47,7 @@ export const pages: IndexPage[] = [
     title: "Teams",
     hasChildren: true,
     icon: "material-symbols:team-dashboard-outline",
-    children: [bachelorPage, ...teamPages],
+    children: bachelorPageEnable ? [bachelorPage, ...teamPages] : teamPages,
   },
   {
     title: "Members",
@@ -113,11 +114,13 @@ export const pages: IndexPage[] = [
         url: "https://www.ccs.tsukuba.ac.jp/",
         icon: "material-symbols:arrow-outward-rounded",
       },
-      {
-        title: "卒研配属情報",
-        url: "/bachelor/#!index.md",
-        icon: "material-symbols:arrow-outward-rounded",
-      },
+      ...(bachelorPageEnable ? [
+        {
+          title: "卒研配属情報",
+          url: "/bachelor/#!index.md",
+          icon: "material-symbols:arrow-outward-rounded",
+        }
+      ] : []),
       {
         title: "情報システム実験B",
         url: "/experiment/text.html",

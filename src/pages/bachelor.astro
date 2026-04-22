@@ -13,6 +13,11 @@ import { getCollection } from "astro:content";
 import H2 from "@components/composite/heading/h2.astro";
 import Session from "@components/pages/bachelor/Session.astro";
 import type { InformationSession } from "@content";
+import { bachelorPageEnable } from "src/site.config";
+
+if(!bachelorPageEnable) {
+  return new Response(null, {status: 404});
+}
 
 const teams = await getCollection("team");
 const generalSession: InformationSession = {
