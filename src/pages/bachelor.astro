@@ -16,6 +16,7 @@ import type { InformationSession } from "@content";
 import { bachelorPageEnable } from "src/site.config";
 
 if (!bachelorPageEnable) {
+  // eslint-disable-next-line no-undef
   return new Response(null, { status: 404 });
 }
 
