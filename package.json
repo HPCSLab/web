@@ -29,7 +29,7 @@
     "@iconify-json/ph": "^1.2.2",
     "astro": "^5.7.3",
     "astro-icon": "^1.1.5",
-    "astro-seo": "^0.8.4"
+    "astro-seo": "^1.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
