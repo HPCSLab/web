@@ -6,4 +6,4 @@ team: perf
 icon: ./icons/takeshima.jpg
 username: takeshima
 message: |
-  卒業研究ではOpenACCでのチェックポイント機能の研究をしていました。
+  GPUアプリケーションを対象とするチェックポイント機能の研究をしています。
