@@ -1,5 +1,9 @@
 title: 複数グリッドジョブ実行システムの計算資源を統合・利用するGrid RPCシステムの設計と実装
+title_en: Design and implementation of a Grid RPC system that integrates and
+  utilizes computational resources of multiple grid job execution systems
 booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2006論文集
+booktitle_en: Proceedings of the Symposium on High Performance Computing and
+  Computational Science (HPCS2006)
 year: 2006
 authors:
   - 中島佳宏
@@ -18,6 +22,12 @@ bibtex: |-
 reference: 中島佳宏，佐藤三久，相田祥昭，高橋大介，朴泰祐，Franck
   Cappello：複数グリッドジョブ実行システムの計算資源を統合・利用するGrid
   RPCシステムの設計と実装，2006年ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2006論文集, pp. 1724, (2006).
+reference_en:
+  中島佳宏，佐藤三久，相田祥昭，高橋大介，朴泰祐，Franck Cappello：Design and implementation
+  of a Grid RPC system that integrates and utilizes computational resources of
+  multiple grid job execution systems，Proceedings of the Symposium on High
+  Performance Computing and Computational Science (HPCS2006), pp. 1724, (2006).
+  (in Japanese)
 class:
   class: domestic
   subclass: conference

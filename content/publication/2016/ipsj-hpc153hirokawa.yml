@@ -1,5 +1,7 @@
 title: 電子動力学シミュレーションコードのSymmetricモードによるXeon Phiクラスタへの実装と性能評価
+title_en: Implementation and performance evaluation of an electron dynamics simulation code on a Xeon Phi cluster in symmetric mode
 booktitle: 情報処理学会第153回HPC研究会報告 (HPC153)
+booktitle_en: IPSJ SIG Technical Report, 153rd SIGHPC Meeting (HPC153)
 year: 2016
 authors:
   - 廣川 祐太
@@ -20,6 +22,7 @@ reference:
   "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “電子動力学シミュレーションコードのSymmetricモードによるXeon
   Phiクラスタへの実装と性能評価”, 情報処理学会第153回HPC研究会報告 (HPC153), Vol. 2016-HPC-153, No. 16,
   Mar. 2016."
+reference_en: "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “Implementation and performance evaluation of an electron dynamics simulation code on a Xeon Phi cluster in symmetric mode”, IPSJ SIG Technical Report, 153rd SIGHPC Meeting (HPC153), Vol. 2016-HPC-153, No. 16, Mar. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

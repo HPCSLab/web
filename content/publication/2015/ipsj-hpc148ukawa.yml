@@ -1,5 +1,7 @@
 title: Extreme SIMD アーキテクチャのプログラミングモデル拡張 C による性能評価
+title_en: Performance evaluation of the Extreme SIMD architecture using an extended C programming model
 booktitle: 情報処理学会第148回HPC研究会報告 (HPC148)
+booktitle_en: IPSJ SIG Technical Report, 148th SIGHPC Meeting (HPC148)
 year: 2015
 authors:
   - 宇川 斉志
@@ -22,6 +24,7 @@ reference:
   "宇川 斉志, 佐藤 三久, 朴 泰祐, 児玉 祐悦, 山口 佳樹, 山本 淳二: “Extreme SIMD
   アーキテクチャのプログラミングモデル拡張 C による性能評価”, 情報処理学会第148回HPC研究会報告 (HPC148), Vol.
   2015-HPC-148, No. 24, Mar. 2015."
+reference_en: "宇川 斉志, 佐藤 三久, 朴 泰祐, 児玉 祐悦, 山口 佳樹, 山本 淳二: “Performance evaluation of the Extreme SIMD architecture using an extended C programming model”, IPSJ SIG Technical Report, 148th SIGHPC Meeting (HPC148), Vol. 2015-HPC-148, No. 24, Mar. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc

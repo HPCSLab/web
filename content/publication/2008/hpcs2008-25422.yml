@@ -1,4 +1,5 @@
 title: リソースネームスペース管理サービスの負荷分散手法の提案と評価情報処理学会研究報告
+title_en: Proposal and evaluation of a load balancing method for a resource namespace management service, IPSJ SIG Technical Report
 booktitle: 2008HPC116
 year: 2008
 authors:
@@ -14,6 +15,7 @@ bibtex: |-
 reference:
   中村昌弘，建部修見：リソースネームスペース管理サービスの負荷分散手法の提案と評価情報処理学会研究報告，2008HPC116，pp.
   103-106, (2008)
+reference_en: "中村昌弘, 建部修見: Proposal and evaluation of a load balancing method for a resource namespace management service, IPSJ SIG Technical Report, 2008HPC116, pp. 103-106, (2008) (in Japanese)"
 class:
   class: domestic
   subclass: workshop

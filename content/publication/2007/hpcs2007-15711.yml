@@ -1,4 +1,5 @@
 title: EthernetマルチリンクによるPCクラスタ向け高バンド幅・耐故障ネットワークRI2N/UDP
+title_en: "RI2N/UDP: a high-bandwidth and fault-tolerant network for PC clusters using multi-link Ethernet"
 booktitle: ""
 year: 2007
 authors:
@@ -18,5 +19,6 @@ bibtex: |-
 reference: 岡本 高幸，三浦信一，朴 泰祐，佐藤 三久，高橋
   大介：EthernetマルチリンクによるPCクラスタ向け高バンド幅・耐故障ネットワークRI2N/UDP 情報処理学会論文誌：コンピューティングシステム,
   Vol. 48, No. SIG 8(ACS 18), pp. 153164, (2007).
+reference_en: "岡本 高幸, 三浦信一, 朴 泰祐, 佐藤 三久, 高橋 大介: RI2N/UDP: a high-bandwidth and fault-tolerant network for PC clusters using multi-link Ethernet, IPSJ Transactions on Advanced Computing Systems (ACS), Vol. 48, No. SIG 8(ACS 18), pp. 153164, (2007). (in Japanese)"
 class:
   class: journal

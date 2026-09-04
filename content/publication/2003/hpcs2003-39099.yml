@@ -1,5 +1,8 @@
 title: "OmniRPC: グリッド環境での並列プログラミングのためのGrid RPCシステム"
+title_en: "OmniRPC: a Grid RPC system for parallel programming in grid environments"
 booktitle: Symposium on Advanced Computing Systems and Infrastructures (SACSIS2003) 論文集
+booktitle_en: Proceedings of the Symposium on Advanced Computing Systems and
+  Infrastructures (SACSIS2003)
 year: 2003
 authors:
   - 佐藤 三久
@@ -15,6 +18,10 @@ reference:
   "佐藤 三久, 朴 泰祐, 高橋 大介, “OmniRPC: グリッド環境での並列プログラミングのためのGrid RPCシステム”,
   2003年 Symposium on Advanced Computing Systems and Infrastructures (SACSIS2003)
   論文集, 2003."
+reference_en:
+  "佐藤 三久, 朴 泰祐, 高橋 大介, “OmniRPC: a Grid RPC system for parallel
+  programming in grid environments”, Proceedings of the Symposium on Advanced
+  Computing Systems and Infrastructures (SACSIS2003), 2003. (in Japanese)"
 class:
   class: domestic
   subclass: conference

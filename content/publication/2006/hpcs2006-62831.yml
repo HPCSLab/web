@@ -1,5 +1,7 @@
 title: UDP によるファイアウォール越えを用いたP2P オーバーレイネットワーク
+title_en: A P2P overlay network using firewall traversal over UDP
 booktitle: 情報処理学会研究報告, 2006HPC107, pp . 121126
+booktitle_en: IPSJ SIG Technical Report, 2006HPC107, pp . 121126
 year: 2006
 authors:
   - 岡本高幸
@@ -15,6 +17,10 @@ bibtex: |-
 reference:
   岡本高幸, 朴泰祐, 佐藤三久, 建部修見：UDP によるファイアウォール越えを用いたP2P
   オーバーレイネットワーク，情報処理学会研究報告，2006HPC107，pp . 121126, (2006).
+reference_en:
+  岡本高幸, 朴泰祐, 佐藤三久, 建部修見：A P2P overlay network using firewall
+  traversal over UDP，IPSJ SIG Technical Report，2006HPC107，pp . 121126, (2006).
+  (in Japanese)
 class:
   class: domestic
   subclass: workshop

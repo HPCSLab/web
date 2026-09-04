@@ -1,4 +1,5 @@
 title: ユーザ透過に利用可能な高性能・耐故障マルチリンクEthernet結合システム
+title_en: A user-transparent high-performance and fault-tolerant multi-link Ethernet interconnection system
 booktitle: ""
 year: 2008
 authors:
@@ -18,5 +19,6 @@ bibtex: |-
 reference: 岡本　高幸，三浦　信一， 朴　泰祐，塙　敏博，佐藤　三久，
   :ユーザ透過に利用可能な高性能・耐故障マルチリンクEthernet結合システム情報処理学会論文誌（ACS），Vol.1, No.1, pp.12-27,
   (2008)
+reference_en: "岡本　高幸, 三浦　信一, 朴　泰祐, 塙　敏博, 佐藤　三久: A user-transparent high-performance and fault-tolerant multi-link Ethernet interconnection system, IPSJ Transactions on Advanced Computing Systems (ACS), Vol.1, No.1, pp.12-27, (2008) (in Japanese)"
 class:
   class: journal

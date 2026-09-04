@@ -1,5 +1,7 @@
 title: 深層ニューラルネットワークにおける訓練高速化のための自動最適化
+title_en: Automatic optimization for accelerating the training of deep neural networks
 booktitle: 情報処理学会 第168回 HPC 研究会報告 (HPC168)
+booktitle_en: IPSJ SIG Technical Report, 168th HPC Meeting (HPC168)
 year: 2019
 authors:
   - 芹沢 和洋
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "芹沢 和洋, 建部 修見: “深層ニューラルネットワークにおける訓練高速化のための自動最適化”, 情報処理学会 第168回 HPC
   研究会報告 (HPC168), Vol. 2019-HPC-168, No. 25, Mar. 2019."
+reference_en: "芹沢 和洋, 建部 修見: “Automatic optimization for accelerating the training of deep neural networks”, IPSJ SIG Technical Report, 168th HPC Meeting (HPC168), Vol. 2019-HPC-168, No. 25, Mar. 2019. (in Japanese)"
 class:
   class: domestic
   subclass: misc

@@ -1,5 +1,7 @@
 title: 暗号化データベースシステムにおける効率的な集約処理の評価
+title_en: Evaluation of efficient aggregation processing in an encrypted database system
 booktitle: 情報処理学会第133回OS研究会報告 (OS133)
+booktitle_en: IPSJ SIG Technical Report, 133rd SIGOS Meeting (OS133)
 year: 2015
 authors:
   - 堀尾 健太郎
@@ -18,6 +20,7 @@ bibtex: |-
 reference:
   "堀尾 健太郎, 川島 英之, 建部 修見: “暗号化データベースシステムにおける効率的な集約処理の評価”,
   情報処理学会第133回OS研究会報告 (OS133), Vol. 2015-OS-133, No. 19, May. 2015."
+reference_en: "堀尾 健太郎, 川島 英之, 建部 修見: “Evaluation of efficient aggregation processing in an encrypted database system”, IPSJ SIG Technical Report, 133rd SIGOS Meeting (OS133), Vol. 2015-OS-133, No. 19, May. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc

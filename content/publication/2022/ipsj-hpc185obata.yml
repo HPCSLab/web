@@ -1,4 +1,5 @@
 title: HPC環境を想定した探索的データ解析におけるノードローカルストレージの利用の検討
+title_en: A study on the use of node-local storage in exploratory data analysis assuming an HPC environment
 url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=218957&item_no=1&page_id=13&block_id=8
 authors:
   - 巨畠 和樹
@@ -23,6 +24,13 @@ reference: |
   Vol. 2022-HPC-185,
   No. 19,
   Jul 2022.
+reference_en: |
+  巨畠 和樹, 小山 創平, 平賀 弘平, 建部 修見:
+  ”A study on the use of node-local storage in exploratory data analysis assuming an HPC environment,”
+  IPSJ SIG Technical Report, 185th HPC Meeting,
+  Vol. 2022-HPC-185,
+  No. 19,
+  Jul 2022. (in Japanese)
 class:
   class: domestic
   subclass: workshop

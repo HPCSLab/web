@@ -1,5 +1,9 @@
 title: "VFRECNet: ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク"
+title_en: "VFRECNet: a multi-path network for PC clusters using
+  driver-controlled taggedVLAN"
 booktitle: 先進的計算基盤システムシンポジウムSACSIS2006論文集
+booktitle_en: Proceedings of the Symposium on Advanced Computing Systems and
+  Infrastructures (SACSIS2006)
 year: 2006
 authors:
   - 三浦信一
@@ -17,6 +21,11 @@ bibtex: |-
 reference: "三浦信一，岡本高幸，朴泰祐，佐藤三久，高橋大介：VFRECNet:
   ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク，先進的計算基盤システムシンポジウムSACSIS2006論文集, pp.
   117125, (2006)."
+reference_en:
+  "三浦信一，岡本高幸，朴泰祐，佐藤三久，高橋大介：VFRECNet: a multi-path network for PC
+  clusters using driver-controlled taggedVLAN，Proceedings of the Symposium on
+  Advanced Computing Systems and Infrastructures (SACSIS2006), pp. 117125,
+  (2006). (in Japanese)"
 class:
   class: domestic
   subclass: conference

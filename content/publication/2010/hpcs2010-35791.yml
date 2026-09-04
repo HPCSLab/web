@@ -1,5 +1,7 @@
 title: トラフィック量に適応する非対称マルチリンクEthernetトランキング
+title_en: Asymmetric multi-link Ethernet trunking adaptive to traffic volume
 booktitle: 情報処理学会論文誌コンピューティングシステム
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2010
 authors:
   - 米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久
@@ -13,5 +15,6 @@ bibtex: |-
     year = {2010},
   }
 reference: 米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久：トラフィック量に適応する非対称マルチリンクEthernetトランキング，情報処理学会論文誌コンピューティングシステム，Vol.3，No.1，pp.25-37
+reference_en: "米元大我, 塙敏博, 三浦信一, 朴泰祐, 佐藤三久: Asymmetric multi-link Ethernet trunking adaptive to traffic volume, IPSJ Transactions on Advanced Computing Systems (ACS), Vol.3, No.1, pp.25-37. (in Japanese)"
 class:
   class: journal

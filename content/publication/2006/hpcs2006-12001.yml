@@ -1,5 +1,9 @@
 title: 行列積を用いた古典 GramSchmidt直交化の再帰的実装
+title_en: A recursive implementation of classical GramSchmidt orthogonalization
+  using matrix multiplication
 booktitle: 日本応用数理学会2006年度年会講演予稿集
+booktitle_en: Proceedings of the 2006 Annual Meeting of the Japan Society for
+  Industrial and Applied Mathematics (JSIAM)
 year: 2006
 authors:
   - 横澤拓弥
@@ -15,6 +19,11 @@ bibtex: |-
   }
 reference: 横澤拓弥，高橋大介，朴泰祐，佐藤三久：行列積を用いた古典
   GramSchmidt直交化の再帰的実装，日本応用数理学会2006年度年会講演予稿集， pp. 324325, (2006).
+reference_en:
+  横澤拓弥，高橋大介，朴泰祐，佐藤三久：A recursive implementation of classical
+  GramSchmidt orthogonalization using matrix multiplication，Proceedings of the
+  2006 Annual Meeting of the Japan Society for Industrial and Applied
+  Mathematics (JSIAM)， pp. 324325, (2006). (in Japanese)
 class:
   class: domestic
   subclass: workshop

@@ -1,5 +1,7 @@
 title: 演算加速機構を持つオンチップメモリプロセッサの電力性能評価
+title_en: Power-performance evaluation of an on-chip memory processor with an arithmetic acceleration mechanism
 booktitle: 情報処理学会研究報告, 2007ARC174
+booktitle_en: IPSJ SIG Technical Report, 2007ARC174
 year: 2007
 authors:
   - 高橋 睦史
@@ -21,6 +23,7 @@ bibtex: |-
 reference:
   高橋 睦史, 佐藤 三久, 高橋 大介, 朴 泰祐, 宇川 彰, 中村 宏, 青木 秀貴, 澤本 英雄, 助川
   直伸：演算加速機構を持つオンチップメモリプロセッサの電力性能評価, 情報処理学会研究報告, 2007ARC174, pp. 3742, (2007)
+reference_en: "高橋 睦史, 佐藤 三久, 高橋 大介, 朴 泰祐, 宇川 彰, 中村 宏, 青木 秀貴, 澤本 英雄, 助川 直伸: Power-performance evaluation of an on-chip memory processor with an arithmetic acceleration mechanism, IPSJ SIG Technical Report, 2007ARC174, pp. 3742, (2007) (in Japanese)"
 class:
   class: domestic
   subclass: workshop

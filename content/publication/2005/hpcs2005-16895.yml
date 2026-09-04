@@ -1,5 +1,7 @@
 title: 大規模固有値問題のmasterworker 型並列解法
+title_en: A masterworker type parallel method for large-scale eigenvalue problems
 booktitle: 情報処理学会論文誌コンピューティングシステム
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2005
 authors:
   - 櫻井鉄也
@@ -23,5 +25,10 @@ reference:
   櫻井鉄也, 多田野寛人, 早川賢太郎, 佐藤三久, 高橋大介, 長嶋雲平. 稲富雄一, 梅田宏明, 渡邊寿雄
   “大規模固有値問題のmasterworker 型並列解法”, 情報処理学会論文誌コンピューティングシステム, Vol.46, No. SIG7 (ACS
   10), pp.4451, 2005.
+reference_en:
+  櫻井鉄也, 多田野寛人, 早川賢太郎, 佐藤三久, 高橋大介, 長嶋雲平. 稲富雄一, 梅田宏明, 渡邊寿雄 “A
+  masterworker type parallel method for large-scale eigenvalue problems”, IPSJ
+  Transactions on Advanced Computing Systems (ACS), Vol.46, No. SIG7 (ACS 10),
+  pp.4451, 2005. (in Japanese)
 class:
   class: journal

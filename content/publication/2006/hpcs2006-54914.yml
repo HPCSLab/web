@@ -1,5 +1,7 @@
 title: DVFS制御を目的としたプログラムの領域分割
+title_en: Program region partitioning for DVFS control
 booktitle: 情報処理学会研究報告, 2006HPC108
+booktitle_en: IPSJ SIG Technical Report, 2006HPC108
 year: 2006
 authors:
   - 木村英明
@@ -17,6 +19,9 @@ bibtex: |-
   }
 reference: 木村英明，佐藤三久，堀田義彦，今田貴之，朴泰祐，高橋大介：
   DVFS制御を目的としたプログラムの領域分割，情報処理学会研究報告，2006HPC108，pp. 7378, (2006).
+reference_en:
+  木村英明，佐藤三久，堀田義彦，今田貴之，朴泰祐，高橋大介： Program region partitioning for DVFS
+  control，IPSJ SIG Technical Report，2006HPC108，pp. 7378, (2006). (in Japanese)
 class:
   class: domestic
   subclass: workshop

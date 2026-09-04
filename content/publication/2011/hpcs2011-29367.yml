@@ -1,4 +1,5 @@
 title: '"POSIX準拠の広域分散ファイルシステムGfarm 上でのHadoop MapReduce アプリケーション'
+title_en: '"Hadoop MapReduce applications on the POSIX-compliant wide-area distributed file system Gfarm'
 booktitle: SACSIS 2011
 year: 2011
 authors:
@@ -14,6 +15,7 @@ bibtex: |-
 reference:
   "三上俊輔, 太田一樹, 建部修見: “POSIX準拠の広域分散ファイルシステムGfarm 上でのHadoop MapReduce
   アプリケーション“, SACSIS 2011"
+reference_en: '三上俊輔, 太田一樹, 建部修見: "Hadoop MapReduce applications on the POSIX-compliant wide-area distributed file system Gfarm", SACSIS 2011. (in Japanese)'
 class:
   class: domestic
   subclass: conference

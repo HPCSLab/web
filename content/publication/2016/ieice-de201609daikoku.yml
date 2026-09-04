@@ -1,5 +1,7 @@
 title: MapReduceにおけるShuffleの性能解析
+title_en: Performance analysis of shuffle in MapReduce
 booktitle: 信学技報 116
+booktitle_en: IEICE Technical Report 116
 year: 2016
 authors:
   - 大黒 晴之
@@ -18,6 +20,7 @@ bibtex: |-
 reference:
   "大黒 晴之, 川島 英之, 建部 修見: “MapReduceにおけるShuffleの性能解析”, 信学技報 116, No. 214,
   pp. 19-24, Sep. 2016."
+reference_en: "大黒 晴之, 川島 英之, 建部 修見: “Performance analysis of shuffle in MapReduce”, IEICE Technical Report 116, No. 214, pp. 19-24, Sep. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

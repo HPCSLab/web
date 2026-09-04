@@ -1,5 +1,9 @@
 title: プロセッサの消費電力測定と低消費電力プロセッサによるクラスタの検討
+title_en: Power consumption measurement of processors and a study of clusters
+  built with low-power processors
 booktitle: 先進的計算基盤システムシンポジウム (SACSIS2004) 論文集
+booktitle_en: Proceedings of the Symposium on Advanced Computing Systems and
+  Infrastructures (SACSIS2004)
 year: 2004
 authors:
   - 堀田義彦
@@ -18,6 +22,11 @@ bibtex: |-
 reference: 堀田義彦，佐藤三久，朴
   泰祐，高橋大介，中島佳宏，高橋陸史，中村宏，”プロセッサの消費電力測定と低消費電力プロセッサによるクラスタの検討”，2004年
   先進的計算基盤システムシンポジウム (SACSIS2004) 論文集，2004.
+reference_en:
+  堀田義彦，佐藤三久，朴 泰祐，高橋大介，中島佳宏，高橋陸史，中村宏，”Power consumption measurement
+  of processors and a study of clusters built with low-power
+  processors”，Proceedings of the Symposium on Advanced Computing Systems and
+  Infrastructures (SACSIS2004)，2004. (in Japanese)
 class:
   class: domestic
   subclass: conference

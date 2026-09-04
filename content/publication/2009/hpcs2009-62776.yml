@@ -1,4 +1,5 @@
 title: 広域ファイルシステムのための分散メタデータサーバの設計 情報処理学会研究報告
+title_en: Design of a distributed metadata server for wide-area file systems, IPSJ SIG Technical Report
 booktitle: 2009-HPC-121(32)
 year: 2009
 authors:
@@ -11,6 +12,7 @@ bibtex: |-
     year = {2009},
   }
 reference: 平賀弘平、建部修見：広域ファイルシステムのための分散メタデータサーバの設計 情報処理学会研究報告，2009-HPC-121(32)，pp. 1-7, 2009
+reference_en: "平賀弘平、建部修見: Design of a distributed metadata server for wide-area file systems, IPSJ SIG Technical Report, 2009-HPC-121(32), pp. 1-7, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: workshop

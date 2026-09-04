@@ -1,5 +1,7 @@
 title: PCIe Gen3データ転送におけるFPGA性能の徹底調査
+title_en: Thorough investigation of FPGA performance in PCIe Gen3 data transfer
 booktitle: 電子情報通信学会第50回リコンフィギャラブルシステム研究会 (RECONF50)
+booktitle_en: IEICE 50th Technical Meeting on Reconfigurable Systems (RECONF50)
 year: 2017
 authors:
   - 中村 大樹
@@ -21,6 +23,7 @@ reference:
   "中村 大樹, 高山 尋考, 山口 佳樹, 朴 泰祐: “PCIe Gen3データ転送におけるFPGA性能の徹底調査”,
   電子情報通信学会第50回リコンフィギャラブルシステム研究会 (RECONF50), Vol. 117, No. 221, pp. 7-12, Sep.
   2017."
+reference_en: "中村 大樹, 高山 尋考, 山口 佳樹, 朴 泰祐: “Thorough investigation of FPGA performance in PCIe Gen3 data transfer”, IEICE 50th Technical Meeting on Reconfigurable Systems (RECONF50), Vol. 117, No. 221, pp. 7-12, Sep. 2017. (in Japanese)"
 class:
   class: domestic
   subclass: misc

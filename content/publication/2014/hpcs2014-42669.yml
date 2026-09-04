@@ -1,5 +1,7 @@
 title: ワークフローシステムPwrakeにおけるI/O性能を考慮したタスクスケジューリング
+title_en: I/O-performance-aware task scheduling in the workflow system Pwrake
 booktitle: 情報処理学会研究報告. Vol.2014-HPC-143
+booktitle_en: IPSJ SIG Technical Report. Vol.2014-HPC-143
 year: 2014
 authors:
   - 田中昌宏
@@ -14,6 +16,7 @@ bibtex: |-
 reference:
   "田中昌宏, 建部修見: ワークフローシステムPwrakeにおけるI/O性能を考慮したタスクスケジューリング． 情報処理学会研究報告.
   Vol.2014-HPC-143, No.3, 2014"
+reference_en: "田中昌宏, 建部修見: I/O-performance-aware task scheduling in the workflow system Pwrake. IPSJ SIG Technical Report. Vol.2014-HPC-143, No.3, 2014. (in Japanese)"
 class:
   class: domestic
   subclass: workshop

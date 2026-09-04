@@ -1,5 +1,7 @@
 title: ディペンダブルな組込みシステムに適した省電力高性能通信機構
+title_en: A low-power and high-performance communication mechanism suitable for dependable embedded systems
 booktitle: 情報処理学会研究報告 2007-HPC-113
+booktitle_en: IPSJ SIG Technical Report 2007-HPC-113
 year: 2007
 authors:
   - 塙 敏博
@@ -19,6 +21,7 @@ bibtex: |-
 reference: 塙 敏博，朴 泰祐，三浦 信一，岡本 高幸，佐藤 三久，有本
   和民，「ディペンダブルな組込みシステムに適した省電力高性能通信機構」，情報処理学会研究報告 2007-HPC-113，pp. 31-36, Vol.
   2007 No. 122, (2007)
+reference_en: "塙 敏博, 朴 泰祐, 三浦 信一, 岡本 高幸, 佐藤 三久, 有本 和民: A low-power and high-performance communication mechanism suitable for dependable embedded systems, IPSJ SIG Technical Report 2007-HPC-113, pp. 31-36, Vol. 2007 No. 122, (2007) (in Japanese)"
 class:
   class: domestic
   subclass: workshop

@@ -1,5 +1,9 @@
 title: Heterogeneous MultiComputer System における重力効果を含む宇宙輻射流体計算
+title_en: Cosmological radiation hydrodynamics simulation with gravitational
+  effects on the Heterogeneous MultiComputer System
 booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2002) 論文集
+booktitle_en: Proceedings of the Symposium on High Performance Computing and
+  Computational Science (HPCS2002)
 year: 2002
 authors:
   - 朴 泰祐
@@ -19,6 +23,11 @@ reference:
   朴 泰祐, 牧野 淳一郎, 須佐 元, 梅村 雅之, 福重 俊幸, 宇川 彰, “Heterogeneous MultiComputer
   System における重力効果を含む宇宙輻射流体計算”, 2002年ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2002)
   論文集, pp.1724, 2002.
+reference_en:
+  朴 泰祐, 牧野 淳一郎, 須佐 元, 梅村 雅之, 福重 俊幸, 宇川 彰, “Cosmological radiation
+  hydrodynamics simulation with gravitational effects on the Heterogeneous
+  MultiComputer System”, Proceedings of the Symposium on High Performance
+  Computing and Computational Science (HPCS2002), pp.1724, 2002. (in Japanese)
 class:
   class: domestic
   subclass: conference

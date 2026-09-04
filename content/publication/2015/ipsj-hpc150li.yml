@@ -1,5 +1,6 @@
 title: Design of Automatic Supernova Detection System
 booktitle: 情報処理学会第150回HPC研究会報告 (HPC150)
+booktitle_en: IPSJ SIG Technical Report, 150th SIGHPC Meeting (HPC150)
 year: 2015
 authors:
   - Li Jiang
@@ -18,6 +19,7 @@ bibtex: |-
 reference: "Li Jiang, Hideyuki Kawashima, Osamu Tatebe: “Design of Automatic
   Supernova Detection System”, 情報処理学会第150回HPC研究会報告 (HPC150), Vol. 2015-HPC-150,
   No. 19, Aug. 2015."
+reference_en: "Li Jiang, Hideyuki Kawashima, Osamu Tatebe: “Design of Automatic Supernova Detection System”, IPSJ SIG Technical Report, 150th SIGHPC Meeting (HPC150), Vol. 2015-HPC-150, No. 19, Aug. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc

@@ -1,5 +1,7 @@
 title: OmniRPC:グリッド環境での並列プログラミングのためのGrid RPCシステム
+title_en: "OmniRPC: a Grid RPC system for parallel programming in grid environments"
 booktitle: 情報処理学会論文誌コンピューティングシステム
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2003
 authors:
   - 佐藤三久
@@ -17,5 +19,9 @@ bibtex: |-
 reference:
   佐藤三久，朴泰祐，高橋大介，”OmniRPC：グリッド環境での並列プログラミングのためのGrid RPCシステム”,
   情報処理学会論文誌コンピューティングシステム, Vol.44, No. SIG11 (ACS 3), pp.3445, 2003.
+reference_en:
+  "佐藤三久，朴泰祐，高橋大介，”OmniRPC: a Grid RPC system for parallel
+  programming in grid environments”, IPSJ Transactions on Advanced Computing
+  Systems (ACS), Vol.44, No. SIG11 (ACS 3), pp.3445, 2003. (in Japanese)"
 class:
   class: journal

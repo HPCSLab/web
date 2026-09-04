@@ -1,4 +1,5 @@
 title: シームレスなMPI環境を実現するMPI-Adapterの設計と性能評価 情報処理学会研究報告
+title_en: Design and performance evaluation of MPI-Adapter for realizing a seamless MPI environment, IPSJ SIG Technical Report
 booktitle: 2009-HPC-121(12)
 year: 2009
 authors:
@@ -13,6 +14,7 @@ bibtex: |-
 reference:
   住元真司、中島耕太、成瀬彰、久門耕一、安井隆、鴨志田良和、松葉浩也、堀敦史、石川裕：シームレスなMPI環境を実現するMPI-Adapterの設計と性能評価
   情報処理学会研究報告，2009-HPC-121(12)，pp. 1-8, 2009
+reference_en: "住元真司、中島耕太、成瀬彰、久門耕一、安井隆、鴨志田良和、松葉浩也、堀敦史、石川裕: Design and performance evaluation of MPI-Adapter for realizing a seamless MPI environment, IPSJ SIG Technical Report, 2009-HPC-121(12), pp. 1-8, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: workshop

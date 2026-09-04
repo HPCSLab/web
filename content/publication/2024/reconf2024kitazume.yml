@@ -1,4 +1,5 @@
 title: 適応型帯域圧縮ハードウェアプラットフォームのChisel実装と評価
+title_en: Chisel implementation and evaluation of an adaptive bandwidth compression hardware platform
 year: 2024
 bibtex: |
   @inproceedings{kitazume2024ChiselImplementation
@@ -19,6 +20,8 @@ authors:
   - 朴　泰祐
 reference: |
   北爪開人, 上野知洋, 吉井一友, 木山真人, 藤田典久, 小林諒平, 佐野健太郎, 朴　泰祐, "適応型帯域圧縮ハードウェアプラットフォームのChisel実装と評価", 電子情報通信学会技術研究報告, vol. 124, no. 188, RECONF2024-50, pp. 41-46, 2024年9月.
+reference_en: |
+  北爪開人, 上野知洋, 吉井一友, 木山真人, 藤田典久, 小林諒平, 佐野健太郎, 朴　泰祐, "Chisel implementation and evaluation of an adaptive bandwidth compression hardware platform", IEICE Technical Report, vol. 124, no. 188, RECONF2024-50, pp. 41-46, September 2024. (in Japanese)
 class:
   class: domestic
   subclass: workshop

@@ -1,5 +1,8 @@
 title: DVS制御による負荷不均衡のある並列プログラムの電力量削減手法
+title_en: An energy reduction method by DVS control for parallel programs with
+  load imbalance
 booktitle: 情報処理学会研究報告, 2006ARC167 2006HPC105
+booktitle_en: IPSJ SIG Technical Report, 2006ARC167 2006HPC105
 year: 2006
 authors:
   - 木村英明
@@ -17,6 +20,10 @@ bibtex: |-
 reference:
   木村英明，佐藤三久，堀田義彦，朴泰祐，高橋大介：DVS制御による負荷不均衡のある並列プログラムの電力量削減手法，情報処理学会研究報告，
   2006ARC167 2006HPC105，pp. 151156, (2006).
+reference_en:
+  木村英明，佐藤三久，堀田義彦，朴泰祐，高橋大介：An energy reduction method by DVS control
+  for parallel programs with load imbalance，IPSJ SIG Technical Report，
+  2006ARC167 2006HPC105，pp. 151156, (2006). (in Japanese)
 class:
   class: domestic
   subclass: workshop

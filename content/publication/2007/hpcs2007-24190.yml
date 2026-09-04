@@ -1,5 +1,7 @@
 title: プライベートネットワーク内のノードをサーバとして外部に公開するための機構
+title_en: A mechanism for publishing nodes inside a private network as externally accessible servers
 booktitle: 情報処理学会研究報告, 2007HPC111
+booktitle_en: IPSJ SIG Technical Report, 2007HPC111
 year: 2007
 authors:
   - 山本 剛之
@@ -15,6 +17,7 @@ bibtex: |-
 reference:
   山本 剛之，建部 修見，佐藤 三久：プライベートネットワーク内のノードをサーバとして外部に公開するための機構，情報処理学会研究報告,
   2007HPC111, pp. 249254, (2007)
+reference_en: "山本 剛之, 建部 修見, 佐藤 三久: A mechanism for publishing nodes inside a private network as externally accessible servers, IPSJ SIG Technical Report, 2007HPC111, pp. 249254, (2007) (in Japanese)"
 class:
   class: domestic
   subclass: workshop

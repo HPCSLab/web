@@ -1,5 +1,7 @@
 title: 並行性制御法 Cicada の評価
+title_en: Evaluation of the concurrency control method Cicada
 booktitle: 第10回データ工学と情報マネジメントに関するフォーラム （第16回日本データベース学会年次大会）
+booktitle_en: The 10th Forum on Data Engineering and Information Management (the 16th Annual Meeting of the Database Society of Japan)
 year: 2018
 authors:
   - 田辺 敬之
@@ -15,6 +17,7 @@ bibtex: |-
   }
 reference: "田辺 敬之, 川島 英之, 建部 修見: “並行性制御法 Cicada の評価”,
   第10回データ工学と情報マネジメントに関するフォーラム （第16回日本データベース学会年次大会）, Mar. 2018."
+reference_en: "田辺 敬之, 川島 英之, 建部 修見: “Evaluation of the concurrency control method Cicada”, The 10th Forum on Data Engineering and Information Management (the 16th Annual Meeting of the Database Society of Japan), Mar. 2018. (in Japanese)"
 class:
   class: domestic
   subclass: poster

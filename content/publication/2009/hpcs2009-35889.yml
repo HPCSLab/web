@@ -1,4 +1,5 @@
 title: e-サイエンス推進のための広域分散ファイルシステムの適用と評価 情報処理学会研究報告
+title_en: Application and evaluation of a wide-area distributed file system for promoting e-Science, IPSJ SIG Technical Report
 booktitle: 2009-HPC-121(41)
 year: 2009
 authors:
@@ -13,6 +14,7 @@ bibtex: |-
 reference:
   田中昌宏、建部修見：e-サイエンス推進のための広域分散ファイルシステムの適用と評価
   情報処理学会研究報告，2009-HPC-121(41)，pp. 1-9, 2009
+reference_en: "田中昌宏、建部修見: Application and evaluation of a wide-area distributed file system for promoting e-Science, IPSJ SIG Technical Report, 2009-HPC-121(41), pp. 1-9, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: workshop

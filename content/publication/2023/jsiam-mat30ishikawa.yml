@@ -1,4 +1,5 @@
 title: 3次元モデル再構成問題に現れる鞍点型連立一次方程式に対する前処理付き反復法の開発
+title_en: Development of preconditioned iterative methods for saddle point linear systems arising in three-dimensional model reconstruction problems
 authors:
   - 石川 翔大
   - 多田野 寛人
@@ -19,6 +20,12 @@ reference: |
   日本応用数理学会「行列・固有値問題の解法とその応用」研究部会　第30回研究会,
   No. 8,
   Dec 2020.
+reference_en: |
+  石川 翔大, 多田野 寛人, 齋藤 歩:
+  “Development of preconditioned iterative methods for saddle point linear systems arising in three-dimensional model reconstruction problems,”
+  The 30th Meeting of the JSIAM Activity Group on Algorithms for Matrix / Eigenvalue Problems and their Applications,
+  No. 8,
+  Dec 2020. (in Japanese)
 class:
   class: domestic
   subclass: workshop

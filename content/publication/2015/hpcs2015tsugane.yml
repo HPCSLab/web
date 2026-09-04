@@ -1,5 +1,7 @@
 title: PGAS言語XcalableMPのハイブリッドビューによる核融合シミュレーションコードの実装と評価
+title_en: Implementation and evaluation of a fusion simulation code using the hybrid view of the PGAS language XcalableMP
 booktitle: 2015年ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2015) 論文集
+booktitle_en: Proceedings of the 2015 Symposium on High Performance Computing and Computational Science (HPCS2015)
 year: 2015
 authors:
   - 津金 佳祐
@@ -20,6 +22,7 @@ bibtex: >-
 reference: "津金 佳祐, 朴 泰祐, 村井 均, 佐藤 三久, William Tang, Bei Wang:
   “PGAS言語XcalableMPのハイブリッドビューによる核融合シミュレーションコードの実装と評価”,
   2015年ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2015) 論文集, pp. 54-63, Jun. 2015."
+reference_en: "津金 佳祐, 朴 泰祐, 村井 均, 佐藤 三久, William Tang, Bei Wang: “Implementation and evaluation of a fusion simulation code using the hybrid view of the PGAS language XcalableMP”, Proceedings of the 2015 Symposium on High Performance Computing and Computational Science (HPCS2015), pp. 54-63, Jun. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: conference

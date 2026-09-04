@@ -1,5 +1,9 @@
 title: グリッドRPCワーカーのためのWindows 上でのLinuxプログラムの実行環境（独創的ポスター賞）
+title_en: An execution environment for Linux programs on Windows for grid RPC
+  workers (Creative Poster Award)
 booktitle: 先進的計算基盤システムシンポジウムSACSIS2006論文集
+booktitle_en: Proceedings of the Symposium on Advanced Computing Systems and
+  Infrastructures (SACSIS2006)
 year: 2006
 authors:
   - 上村 佳史
@@ -15,6 +19,11 @@ bibtex: |-
 reference: 上村 佳史，中島 佳宏，佐藤 三久：グリッドRPCワーカーのためのWindows
   上でのLinuxプログラムの実行環境（独創的ポスター賞），先進的計算基盤システムシンポジウムSACSIS2006論文集, pp. 273274,
   (2006).
+reference_en:
+  上村 佳史，中島 佳宏，佐藤 三久：An execution environment for Linux programs on
+  Windows for grid RPC workers (Creative Poster Award)，Proceedings of the
+  Symposium on Advanced Computing Systems and Infrastructures (SACSIS2006), pp.
+  273274, (2006). (in Japanese)
 class:
   class: domestic
   subclass: poster

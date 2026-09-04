@@ -1,5 +1,7 @@
 title: 分散メモリ型システムを対象とした高生産・高性能プログラミングモデルXcalableMP
+title_en: XcalableMP, a high-productivity and high-performance programming model for distributed memory systems
 booktitle: 京都大学学術情報メディアセンター 全国共同利用版広報, 2011年6月号
+booktitle_en: Academic Center for Computing and Media Studies, Kyoto University, Newsletter (National Joint Usage Edition), June 2011 issue
 year: 2011
 authors:
   - 中尾昌広
@@ -13,6 +15,7 @@ bibtex: |-
 reference:
   中尾昌広，佐藤三久．”分散メモリ型システムを対象とした高生産・高性能プログラミングモデルXcalableMP”，京都大学学術情報メディアセンター
   全国共同利用版広報，2011年6月号
+reference_en: 中尾昌広, 佐藤三久. "XcalableMP, a high-productivity and high-performance programming model for distributed memory systems", Academic Center for Computing and Media Studies, Kyoto University, Newsletter (National Joint Usage Edition), June 2011 issue. (in Japanese)
 class:
   class: domestic
   subclass: magazine

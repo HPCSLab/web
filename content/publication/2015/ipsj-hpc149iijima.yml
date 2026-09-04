@@ -1,5 +1,7 @@
 title: 密結合演算加速機構 TCA アーキテクチャの Intel MIC プロセッサへの適用
+title_en: Application of the Tightly Coupled Accelerators (TCA) architecture to Intel MIC processors
 booktitle: 情報処理学会第149回HPC研究会報告 (HPC149)
+booktitle_en: IPSJ SIG Technical Report, 149th SIGHPC Meeting (HPC149)
 year: 2015
 authors:
   - 飯島 大貴
@@ -20,6 +22,7 @@ reference:
   "飯島 大貴, 廣川 祐太, 塙 敏博, 朴 泰祐: “密結合演算加速機構 TCA アーキテクチャの Intel MIC
   プロセッサへの適用”, 情報処理学会第149回HPC研究会報告 (HPC149), Vol. 2015-HPC-149, No. 16, Jun.
   2015."
+reference_en: "飯島 大貴, 廣川 祐太, 塙 敏博, 朴 泰祐: “Application of the Tightly Coupled Accelerators (TCA) architecture to Intel MIC processors”, IPSJ SIG Technical Report, 149th SIGHPC Meeting (HPC149), Vol. 2015-HPC-149, No. 16, Jun. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc

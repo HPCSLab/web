@@ -1,5 +1,7 @@
 title: 遠隔ファイルアクセスにおけるアクセスパターンと遅延の影響
+title_en: Impact of access patterns and latency on remote file access
 booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会(HPC128), 2010年12月
+booktitle_en: IPSJ SIGHPC (HPC128), December 2010
 year: 2010
 authors:
   - 大辻弘貴
@@ -11,6 +13,7 @@ bibtex: |-
     year = {2010},
   }
 reference: 大辻弘貴，建部修見，「遠隔ファイルアクセスにおけるアクセスパターンと遅延の影響」，情報処理学会ハイパフォーマンスコンピューティング研究会(HPC128)，2010年12月
+reference_en: 大辻弘貴, 建部修見, "Impact of access patterns and latency on remote file access", IPSJ SIGHPC (HPC128), December 2010. (in Japanese)
 class:
   class: domestic
   subclass: workshop

@@ -1,5 +1,7 @@
 title: eScience成果報告 高生産・高性能プログラミングのための並列言語XcalableMP
+title_en: eScience project report, Parallel language XcalableMP for high-productivity and high-performance programming
 booktitle: T2Kシンポジウム2011＠京大, 2011年11月, 京都大学百周年時計台記念館・百周年記念ホール（京都）
+booktitle_en: T2K Symposium 2011 @ Kyoto University, November 2011, Centennial Hall, Kyoto University Clock Tower Centennial Hall (Kyoto)
 year: 2011
 authors:
   - 中尾昌広
@@ -12,6 +14,7 @@ bibtex: |-
   }
 reference: 中尾昌広，佐藤三久．”eScience成果報告
   高生産・高性能プログラミングのための並列言語XcalableMP”，T2Kシンポジウム2011＠京大，2011年11月，京都大学百周年時計台記念館・百周年記念ホール（京都）
+reference_en: 中尾昌広, 佐藤三久. "eScience project report, Parallel language XcalableMP for high-productivity and high-performance programming", T2K Symposium 2011 @ Kyoto University, November 2011, Centennial Hall, Kyoto University Clock Tower Centennial Hall (Kyoto). (in Japanese)
 class:
   class: domestic
   subclass: conference

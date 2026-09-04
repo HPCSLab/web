@@ -1,5 +1,7 @@
 title: 並列分散ワークフローシステムPwrakeによる大規模データ処理
+title_en: Large-scale data processing with Pwrake, a parallel and distributed workflow system
 booktitle: 宇宙航空研究開発機構研究開発報告 JAXA-RR-11-007 (宇宙科学情報解析論文誌第一号)
+booktitle_en: JAXA Research and Development Report JAXA-RR-11-007 (Journal of Space Science Informatics Japan, First Issue)
 year: 2012
 authors:
   - 田中昌宏
@@ -14,6 +16,7 @@ bibtex: |-
 reference:
   田中昌宏, 建部修見, “並列分散ワークフローシステムPwrakeによる大規模データ処理”, 宇宙航空研究開発機構研究開発報告
   JAXA-RR-11-007 (宇宙科学情報解析論文誌第一号), pp.67-75, 2012年3月
+reference_en: 田中昌宏, 建部修見, "Large-scale data processing with Pwrake, a parallel and distributed workflow system", JAXA Research and Development Report JAXA-RR-11-007 (Journal of Space Science Informatics Japan, First Issue), pp.67-75, March 2012. (in Japanese)
 class:
   class: domestic
   subclass: conference

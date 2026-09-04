@@ -1,4 +1,6 @@
 title: 組込みチップマルチプロセッサM32R32700へのOpenMP処理系の実装と評価" 計算機アーキテクチャ研究会
+title_en: Implementation and evaluation of an OpenMP compiler for the embedded
+  chip multiprocessor M32R32700" IPSJ SIG Technical Report (SIGARC)
 booktitle: 2004ARC152
 year: 2004
 authors:
@@ -15,6 +17,10 @@ bibtex: |-
 reference:
   堀田義彦，佐藤三久，中島佳宏，小島好紀，”組込みチップマルチプロセッサM32R32700へのOpenMP処理系の実装と評価”
   計算機アーキテクチャ研究会，2004ARC152，2004.
+reference_en:
+  堀田義彦，佐藤三久，中島佳宏，小島好紀，”Implementation and evaluation of an OpenMP
+  compiler for the embedded chip multiprocessor M32R32700” IPSJ SIG Technical
+  Report (SIGARC)，2004ARC152，2004. (in Japanese)
 class:
   class: domestic
   subclass: workshop

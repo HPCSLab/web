@@ -1,5 +1,7 @@
 title: PCクラスタにおける並列一次元FFTのブロックアルゴリズム
+title_en: A blocking algorithm for parallel one-dimensional FFT on PC clusters
 booktitle: 並列処理シンポジウム JSPP’2002 論文集
+booktitle_en: Proceedings of the Joint Symposium on Parallel Processing (JSPP’2002)
 year: 2002
 authors:
   - 高橋 大介
@@ -14,6 +16,9 @@ bibtex: |-
 reference:
   高橋 大介, 朴 泰祐, 佐藤 三久, “PCクラスタにおける並列一次元FFTのブロックアルゴリズム”, 並列処理シンポジウム
   JSPP’2002 論文集, 2002.
+reference_en: 高橋 大介, 朴 泰祐, 佐藤 三久, “A blocking algorithm for parallel
+  one-dimensional FFT on PC clusters”, Proceedings of the Joint Symposium on
+  Parallel Processing (JSPP’2002), 2002. (in Japanese)
 class:
   class: domestic
   subclass: conference

@@ -1,5 +1,7 @@
 title: Xeon Phi クラスタにおける電子動力学シミュレーションの実装と性能評価
+title_en: Implementation and performance evaluation of electron dynamics simulation on a Xeon Phi cluster
 booktitle: 2015年ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2015)
+booktitle_en: 2015 Symposium on High Performance Computing and Computational Science (HPCS2015)
 year: 2015
 authors:
   - 廣川 祐太
@@ -19,6 +21,7 @@ bibtex: |-
 reference:
   "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “Xeon Phi クラスタにおける電子動力学シミュレーションの実装と性能評価”,
   2015年ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2015), No. P2-4, Jun. 2015. (Poster)"
+reference_en: "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “Implementation and performance evaluation of electron dynamics simulation on a Xeon Phi cluster”, 2015 Symposium on High Performance Computing and Computational Science (HPCS2015), No. P2-4, Jun. 2015. (Poster) (in Japanese)"
 class:
   class: domestic
   subclass: poster

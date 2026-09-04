@@ -1,5 +1,7 @@
 title: GPU向けQCDライブラリQUDAのTCAアーキテクチャ実装の性能評価
+title_en: Performance evaluation of a TCA architecture implementation of QUDA, a QCD library for GPUs
 booktitle: 情報処理学会研究報告, 2014-HPC-145 No.43
+booktitle_en: IPSJ SIG Technical Report, 2014-HPC-145 No.43
 year: 2014
 authors:
   - 藤井 久史
@@ -19,6 +21,7 @@ bibtex: |-
 reference:
   藤井 久史, 藤田 典久, 塙 敏博, 児玉 祐悦, 朴 泰祐, 佐藤 三久, 藏増 嘉伸, Mike Clark,
   “GPU向けQCDライブラリQUDAのTCAアーキテクチャ実装の性能評価”, 情報処理学会研究報告, 2014-HPC-145 No.43, 2014.
+reference_en: 藤井 久史, 藤田 典久, 塙 敏博, 児玉 祐悦, 朴 泰祐, 佐藤 三久, 藏増 嘉伸, Mike Clark, "Performance evaluation of a TCA architecture implementation of QUDA, a QCD library for GPUs", IPSJ SIG Technical Report, 2014-HPC-145 No.43, 2014. (in Japanese)
 class:
   class: domestic
   subclass: workshop

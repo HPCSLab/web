@@ -1,5 +1,7 @@
 title: ItaniumプロセッサによるSCoreクラスタ構築に関する検討
+title_en: A study on the construction of a SCore cluster with Itanium processors
 booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC921
+booktitle_en: IPSJ SIG Technical Report (SIGHPC), 2002HPC921
 year: 2002
 authors:
   - 石川 裕
@@ -16,6 +18,10 @@ bibtex: |-
 reference:
   石川 裕, 高橋 大介, 朴 泰祐, 佐藤 三久, “ItaniumプロセッサによるSCoreクラスタ構築に関する検討”,
   情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC921, 2002, pp.16.
+reference_en:
+  石川 裕, 高橋 大介, 朴 泰祐, 佐藤 三久, “A study on the construction of a SCore
+  cluster with Itanium processors”, IPSJ SIG Technical Report (SIGHPC),
+  2002HPC921, 2002, pp.16. (in Japanese)
 class:
   class: domestic
   subclass: workshop

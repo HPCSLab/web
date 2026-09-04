@@ -1,5 +1,7 @@
 title: アクセラレータ向け並列言語XcalableACCにおけるTCA/InfiniBandハイブリッド通信
+title_en: TCA/InfiniBand hybrid communication in XcalableACC, a parallel language for accelerators
 booktitle: 情報処理学会論文誌コンピューティングシステム (ACS)
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2015
 authors:
   - 小田嶋 哲哉
@@ -24,5 +26,6 @@ reference:
   "小田嶋 哲哉, 朴 泰祐, 塙 敏博, 児玉 祐悦, 村井 均, 中尾 昌広, 田渕 晶大, 佐藤 三久:
   “アクセラレータ向け並列言語XcalableACCにおけるTCA/InfiniBandハイブリッド通信”, 情報処理学会論文誌コンピューティングシステム
   (ACS), Vol. 8, No. 4, pp. 61-77, 2015."
+reference_en: "小田嶋 哲哉, 朴 泰祐, 塙 敏博, 児玉 祐悦, 村井 均, 中尾 昌広, 田渕 晶大, 佐藤 三久: “TCA/InfiniBand hybrid communication in XcalableACC, a parallel language for accelerators”, IPSJ Transactions on Advanced Computing Systems (ACS), Vol. 8, No. 4, pp. 61-77, 2015. (in Japanese)"
 class:
   class: journal

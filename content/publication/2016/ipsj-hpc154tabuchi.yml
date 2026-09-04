@@ -1,5 +1,7 @@
 title: PEZY-SC向けOmni OpenACCコンパイラの設計・試作
+title_en: Design and prototype implementation of the Omni OpenACC compiler for PEZY-SC
 booktitle: 情報処理学会第154回HPC研究会報告 (HPC154)
+booktitle_en: IPSJ SIG Technical Report, 154th SIGHPC Meeting (HPC154)
 year: 2016
 authors:
   - 田渕 晶大
@@ -23,6 +25,7 @@ reference:
   "田渕 晶大, 木村 耕行, 鳥居 淳, 松古 栄夫, 石川 正, 朴 泰祐, 佐藤 三久: “PEZY-SC向けOmni
   OpenACCコンパイラの設計・試作”, 情報処理学会第154回HPC研究会報告 (HPC154), Vol. 2016-HPC-154, No. 3,
   Apr. 2016."
+reference_en: "田渕 晶大, 木村 耕行, 鳥居 淳, 松古 栄夫, 石川 正, 朴 泰祐, 佐藤 三久: “Design and prototype implementation of the Omni OpenACC compiler for PEZY-SC”, IPSJ SIG Technical Report, 154th SIGHPC Meeting (HPC154), Vol. 2016-HPC-154, No. 3, Apr. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

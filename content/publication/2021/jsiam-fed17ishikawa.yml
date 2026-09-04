@@ -1,4 +1,5 @@
 title: 3次元モデル再構成問題に現れる鞍点型連立一次方程式に対する前処理付き反復法の性能評価
+title_en: Performance evaluation of preconditioned iterative methods for saddle point linear systems arising in three-dimensional model reconstruction problems
 authors:
   - 石川 翔大
   - 多田野 寛人
@@ -16,6 +17,11 @@ reference: |
   “3次元モデル再構成問題に現れる鞍点型連立一次方程式に対する前処理付き反復法の性能評価,”
   日本応用数理学会　第17回研究部会連合発表会,
   2021.
+reference_en: |
+  石川 翔大, 多田野 寛人, 齋藤 歩:
+  “Performance evaluation of preconditioned iterative methods for saddle point linear systems arising in three-dimensional model reconstruction problems,”
+  The 17th Joint Conference of Activity Groups of the Japan Society for Industrial and Applied Mathematics (JSIAM),
+  2021. (in Japanese)
 class:
   class: domestic
   subclass: conference

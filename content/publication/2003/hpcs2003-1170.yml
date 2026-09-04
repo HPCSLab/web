@@ -1,5 +1,9 @@
 title: HPC向けオンチップメモリプロセッサアーキテクチャSCIMAのSMP化の検討と性能評価
+title_en: Design study and performance evaluation of an SMP extension of SCIMA,
+  an on-chip memory processor architecture for HPC
 booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2003) 論文集
+booktitle_en: Proceedings of the Symposium on High Performance Computing and
+  Computational Science (HPCS2003)
 year: 2003
 authors:
   - 高橋 睦史
@@ -17,6 +21,12 @@ bibtex: |-
 reference: 高橋 睦史, 近藤 正章, 朴 泰祐, 中村 宏, 高橋 大介,
   佐藤三久,”HPC向けオンチップメモリプロセッサアーキテクチャSCIMAのSMP化の検討と性能評価”,
   2003年ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2003) 論文集, 2003.
+reference_en:
+  高橋 睦史, 近藤 正章, 朴 泰祐, 中村 宏, 高橋 大介, 佐藤三久,”Design study and
+  performance evaluation of an SMP extension of SCIMA, an on-chip memory
+  processor architecture for HPC”, Proceedings of the Symposium on High
+  Performance Computing and Computational Science (HPCS2003), 2003. (in
+  Japanese)
 class:
   class: domestic
   subclass: conference

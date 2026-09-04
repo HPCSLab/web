@@ -1,4 +1,5 @@
 title: 計算ノードの不揮発性メモリを用いたキャッシュファイルシステムの設計
+title_en: Design of a cache file system using non-volatile memory on compute nodes
 url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=217486&item_no=1&page_id=13&block_id=8
 authors:
   - 建部 修見
@@ -20,6 +21,13 @@ reference: |
   Vol. 2022-HPC-183,
   No. 8,
   May 2022.
+reference_en: |
+  建部 修見:
+  "Design of a cache file system using non-volatile memory on compute nodes,”
+  IPSJ SIG Technical Report, 183rd HPC Meeting,
+  Vol. 2022-HPC-183,
+  No. 8,
+  May 2022. (in Japanese)
 class:
   class: domestic
   subclass: workshop

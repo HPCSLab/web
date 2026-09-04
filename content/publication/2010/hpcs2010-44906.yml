@@ -1,4 +1,5 @@
 title: メモリバンド幅に着目したマルチコアノード上のアプリケーション最適化　情報処理学会研究報告
+title_en: Application optimization on multi-core nodes focusing on memory bandwidth, IPSJ SIG Technical Report
 booktitle: 2010-HPC-124(4)
 year: 2010
 authors:
@@ -17,6 +18,7 @@ bibtex: |-
 reference:
   三木康次，原田知徳，朴泰祐，塙敏博，三浦信一：メモリバンド幅に着目したマルチコアノード上のアプリケーション最適化　情報処理学会研究報告，2010-HPC-124(4)，pp.
   1-7，2010
+reference_en: "三木康次, 原田知徳, 朴泰祐, 塙敏博, 三浦信一: Application optimization on multi-core nodes focusing on memory bandwidth, IPSJ SIG Technical Report, 2010-HPC-124(4), pp. 1-7, 2010. (in Japanese)"
 class:
   class: domestic
   subclass: workshop

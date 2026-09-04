@@ -1,5 +1,7 @@
 title: ディペンダブルな組込みOSの提案
+title_en: A proposal for a dependable embedded operating system
 booktitle: 第10回組込みシステム技術に関するサマーワークショップ(SWEST10)予稿集
+booktitle_en: Proc. 10th Summer Workshop on Embedded System Technologies (SWEST10)
 year: 2008
 authors:
   - 菅谷 みどり
@@ -17,6 +19,7 @@ bibtex: |-
   }
 reference: 菅谷 みどり，藤田 肇, 塙 敏博, 中澤 仁, 松田 元彦, 前田
   俊行：ディペンダブルな組込みOSの提案，第10回組込みシステム技術に関するサマーワークショップ(SWEST10)予稿集, pp.35-38, (2008)
+reference_en: "菅谷 みどり, 藤田 肇, 塙 敏博, 中澤 仁, 松田 元彦, 前田 俊行: A proposal for a dependable embedded operating system, Proc. 10th Summer Workshop on Embedded System Technologies (SWEST10), pp.35-38, (2008) (in Japanese)"
 class:
   class: domestic
   subclass: poster

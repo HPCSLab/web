@@ -1,4 +1,5 @@
 title: 広域ファイルシステムにおける分散メタデータサーバの検討 情報処理学会研究報告
+title_en: A study on distributed metadata servers for wide-area file systems, IPSJ SIG Technical Report
 booktitle: 2009-ARC-182(24) 2009-HPC-119(24)
 year: 2009
 authors:
@@ -13,6 +14,7 @@ bibtex: |-
 reference:
   平賀弘平、建部修見：広域ファイルシステムにおける分散メタデータサーバの検討 情報処理学会研究報告，2009-ARC-182(24)
   2009-HPC-119(24)，pp.139-144，2009.
+reference_en: "平賀弘平、建部修見: A study on distributed metadata servers for wide-area file systems, IPSJ SIG Technical Report, 2009-ARC-182(24) 2009-HPC-119(24), pp.139-144, 2009. (in Japanese)"
 class:
   class: domestic
   subclass: workshop

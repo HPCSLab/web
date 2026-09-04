@@ -1,4 +1,5 @@
 title: RustのUCXラッパーasync-ucxの性能評価
+title_en: Performance evaluation of async-ucx, a UCX wrapper for Rust
 url: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=231110&file_id=1&file_no=1
 authors:
   - 中野 将生
@@ -20,6 +21,10 @@ reference: |
   中野 将生, 平賀 弘平, 建部 修見:
   “RustのUCXラッパーasync-ucxの性能評価,”
   情報処理学会 第192回 HPC 研究会報告 (HPC192),
+reference_en: |
+  中野 将生, 平賀 弘平, 建部 修見:
+  “Performance evaluation of async-ucx, a UCX wrapper for Rust,”
+  IPSJ SIG Technical Report, 192nd HPC Meeting (HPC192), (in Japanese)
 class:
   class: domestic
   subclass: workshop

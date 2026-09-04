@@ -1,4 +1,5 @@
 title: NVIDIA Volta GPUにおける浮動小数点演算を用いた剰余乗算の高速化
+title_en: Acceleration of modular multiplication using floating-point arithmetic on NVIDIA Volta GPUs
 authors:
   - 杉崎 行優
   - 高橋 大介
@@ -18,6 +19,12 @@ reference: |
   日本応用数理学会2020年度年会,
   pp. 419-420,
   Sep. 2020.
+reference_en: |
+  杉崎 行優, 高橋 大介:
+  “Acceleration of modular multiplication using floating-point arithmetic on NVIDIA Volta GPUs,”
+  The 2020 Annual Meeting of the Japan Society for Industrial and Applied Mathematics (JSIAM),
+  pp. 419-420,
+  Sep. 2020. (in Japanese)
 class:
   class: domestic
   subclass: conference

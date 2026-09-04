@@ -1,5 +1,8 @@
 title: 大規模P2P グリッドでの大容量コンピューティングのためのスケーラブルプログラミング環境の検討
+title_en: A study of a scalable programming environment for high-throughput
+  computing on large-scale P2P grids
 booktitle: 情報処理学会研究報告, 2006 HPC107
+booktitle_en: IPSJ SIG Technical Report, 2006 HPC107
 year: 2006
 authors:
   - 中島佳宏
@@ -15,6 +18,10 @@ bibtex: |-
 reference: 中島佳宏, 佐藤三久, 建部修見：大規模P2P
   グリッドでの大容量コンピューティングのためのスケーラブルプログラミング環境の検討，情報処理学会研究報告，2006 HPC107，pp. 115120,
   (2006).
+reference_en:
+  中島佳宏, 佐藤三久, 建部修見：A study of a scalable programming environment for
+  high-throughput computing on large-scale P2P grids，IPSJ SIG Technical
+  Report，2006 HPC107，pp. 115120, (2006). (in Japanese)
 class:
   class: domestic
   subclass: workshop

@@ -1,4 +1,5 @@
 title: PCクラスタ間ファイル複製スケジューリング　先進的計算基盤システムシンポジウムSACSIS2010論文集
+title_en: File replication scheduling among PC clusters, Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS2010)
 year: 2010
 authors:
   - 鈴木克典
@@ -10,6 +11,7 @@ bibtex: |-
     year = {2010},
   }
 reference: 鈴木克典，建部修見：PCクラスタ間ファイル複製スケジューリング　先進的計算基盤システムシンポジウムSACSIS2010論文集，pp.71-78，2010
+reference_en: "鈴木克典, 建部修見: File replication scheduling among PC clusters, Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS2010), pp.71-78, 2010. (in Japanese)"
 class:
   class: domestic
   subclass: conference

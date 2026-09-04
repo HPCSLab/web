@@ -1,5 +1,7 @@
 title: 大規模ワークフローに対応したPwrakeシステムの設計と実装
+title_en: Design and implementation of the Pwrake system for large-scale workflows
 booktitle: 情報処理学会研究報告, 2012-HPC-135(14) (SWoPP鳥取2012)
+booktitle_en: IPSJ SIG Technical Report, 2012-HPC-135(14) (SWoPP Tottori 2012)
 year: 2012
 authors:
   - 田中昌宏
@@ -14,6 +16,7 @@ bibtex: |-
 reference:
   "田中昌宏, 建部修見: 大規模ワークフローに対応したPwrakeシステムの設計と実装, 情報処理学会研究報告,
   2012-HPC-135(14) (SWoPP鳥取2012), pp.1-7, 2012年7月."
+reference_en: "田中昌宏, 建部修見: Design and implementation of the Pwrake system for large-scale workflows, IPSJ SIG Technical Report, 2012-HPC-135(14) (SWoPP Tottori 2012), pp.1-7, July 2012. (in Japanese)"
 class:
   class: domestic
   subclass: workshop

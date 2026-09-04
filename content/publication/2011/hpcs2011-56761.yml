@@ -1,5 +1,7 @@
 title: "XMCAPI: 組込み機器向けon-chip/off-chipコア間通信機構"
+title_en: "XMCAPI: An on-chip/off-chip inter-core communication mechanism for embedded systems"
 booktitle: 先進的計算基盤システムシンポジウム(SACSIS 2011)論文集
+booktitle_en: Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2011)
 year: 2011
 authors:
   - 三浦 信一
@@ -16,6 +18,7 @@ bibtex: |-
 reference: "三浦 信一，塙 敏博，朴 泰祐，佐藤 三久，「XMCAPI:
   組込み機器向けon-chip/off-chipコア間通信機構」，先進的計算基盤システムシンポジウム(SACSIS 2011)論文集，pp. 264-265,
   2011年5月．"
+reference_en: '三浦 信一, 塙 敏博, 朴 泰祐, 佐藤 三久, "XMCAPI: An on-chip/off-chip inter-core communication mechanism for embedded systems", Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2011), pp. 264-265, May 2011. (in Japanese)'
 class:
   class: domestic
   subclass: poster

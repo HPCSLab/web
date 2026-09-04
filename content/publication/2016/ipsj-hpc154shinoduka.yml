@@ -1,5 +1,7 @@
 title: 中心-半径型区間演算に基づく矩形演算を用いた精度保証付き高速フーリエ変換
+title_en: A verified fast Fourier transform using rectangular arithmetic based on midpoint-radius interval arithmetic
 booktitle: 情報処理学会第154回HPC研究会報告 (HPC154)
+booktitle_en: IPSJ SIG Technical Report, 154th SIGHPC Meeting (HPC154)
 year: 2016
 authors:
   - 篠塚 敬介
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "篠塚 敬介, 高橋 大介: “中心-半径型区間演算に基づく矩形演算を用いた精度保証付き高速フーリエ変換”,
   情報処理学会第154回HPC研究会報告 (HPC154), Vol. 2016-HPC-154, No. 9, Apr. 2016."
+reference_en: "篠塚 敬介, 高橋 大介: “A verified fast Fourier transform using rectangular arithmetic based on midpoint-radius interval arithmetic”, IPSJ SIG Technical Report, 154th SIGHPC Meeting (HPC154), Vol. 2016-HPC-154, No. 9, Apr. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

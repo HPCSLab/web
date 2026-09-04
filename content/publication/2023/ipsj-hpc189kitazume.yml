@@ -1,4 +1,5 @@
 title: HPC利用に向けたFPGA間シリアル通信コントローラKyokkoのIntel FPGAへの実装
+title_en: Implementation of the inter-FPGA serial communication controller Kyokko on Intel FPGAs for HPC use
 authors:
   - 北爪 開人
   - 藤田 典久
@@ -19,6 +20,10 @@ reference: |
   北爪 開人, 藤田 典久, 小林 諒平, 朴 泰祐:
   “HPC利用に向けたFPGA間シリアル通信コントローラKyokkoのIntel FPGAへの実装,” 
   情報処理学会 第189回HPC研究発表会, Vol. 2023-HPC-189, No. 4, May 2023.
+reference_en: |
+  北爪 開人, 藤田 典久, 小林 諒平, 朴 泰祐:
+  “Implementation of the inter-FPGA serial communication controller Kyokko on Intel FPGAs for HPC use,”
+  IPSJ SIG Technical Report, 189th HPC Meeting, Vol. 2023-HPC-189, No. 4, May 2023. (in Japanese)
 class:
   class: domestic
   subclass: workshop

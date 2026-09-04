@@ -1,5 +1,7 @@
 title: MPI上のソフトウェア分散共有メモリシステム
+title_en: A software distributed shared memory system on top of MPI
 booktitle: ハイパフォーマンスコンピューティング研究会, 2004HPC98
+booktitle_en: IPSJ SIG Technical Report (SIGHPC), 2004HPC98
 year: 2004
 authors:
   - 小島 好紀
@@ -15,6 +17,10 @@ bibtex: |-
 reference:
   小島 好紀, 佐藤三久, 朴 泰祐, 高橋大介, “MPI上のソフトウェア分散共有メモリシステム”,
   ハイパフォーマンスコンピューティング研究会, 2004HPC98, 2004.
+reference_en:
+  小島 好紀, 佐藤三久, 朴 泰祐, 高橋大介, “A software distributed shared memory
+  system on top of MPI”, IPSJ SIG Technical Report (SIGHPC), 2004HPC98, 2004.
+  (in Japanese)
 class:
   class: domestic
   subclass: workshop

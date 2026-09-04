@@ -1,5 +1,7 @@
 title: 高性能計算に向けた分散オブジェクトストレージ Ceph の性能評価
+title_en: Performance evaluation of the distributed object storage Ceph for high performance computing
 booktitle: 情報処理学会 第167回 HPC 研究会報告 (HPC167)
+booktitle_en: IPSJ SIG Technical Report, 167th HPC Meeting (HPC167)
 year: 2018
 authors:
   - 高橋 宗史
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "高橋 宗史, 建部 修見: “高性能計算に向けた分散オブジェクトストレージ Ceph の性能評価”, 情報処理学会 第167回 HPC
   研究会報告 (HPC167), Vol. 2018-HPC-167, No. 15, Dec. 2018."
+reference_en: "高橋 宗史, 建部 修見: “Performance evaluation of the distributed object storage Ceph for high performance computing”, IPSJ SIG Technical Report, 167th HPC Meeting (HPC167), Vol. 2018-HPC-167, No. 15, Dec. 2018. (in Japanese)"
 class:
   class: domestic
   subclass: misc

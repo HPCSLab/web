@@ -1,4 +1,5 @@
 title: Pegasusビッグメモリスーパコンピュータの性能評価
+title_en: Performance evaluation of the Pegasus big memory supercomputer
 url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=227118&item_no=1&page_id=13&block_id=8
 authors:
   - 建部 修見
@@ -21,6 +22,11 @@ reference: |
   “Pegasusビッグメモリスーパコンピュータの性能評価,”
   情報処理学会 第190回HPC研究発表会（SWoPP2023）,
   Aug 2023.
+reference_en: |
+  建部 修見, 平賀 弘平, 前田 宗則, 藤田 典久, 小林 諒平, 額田 彰:
+  “Performance evaluation of the Pegasus big memory supercomputer,”
+  IPSJ SIG Technical Report, 190th HPC Meeting (SWoPP2023),
+  Aug 2023. (in Japanese)
 class:
   class: domestic
   subclass: conference

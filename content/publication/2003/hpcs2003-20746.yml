@@ -1,5 +1,8 @@
 title: OmniRPCによる広域ネットワーク環境でのグリッドアプリケーションの性能評価
+title_en: Performance evaluation of grid applications in wide-area network
+  environments using OmniRPC
 booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC95
+booktitle_en: IPSJ SIG Technical Report (SIGHPC), 2002HPC95
 year: 2003
 authors:
   - 中島 佳宏
@@ -16,6 +19,10 @@ bibtex: |-
 reference: 中島 佳宏, 佐藤 三久, 朴 泰祐, 高橋 大介, 後藤 仁志,
   “OmniRPCによる広域ネットワーク環境でのグリッドアプリケーションの性能評価”, 情報処理学会ハイパフォーマンスコンピューティング研究会,
   2002HPC95, 2003.
+reference_en:
+  中島 佳宏, 佐藤 三久, 朴 泰祐, 高橋 大介, 後藤 仁志, “Performance evaluation of grid
+  applications in wide-area network environments using OmniRPC”, IPSJ SIG
+  Technical Report (SIGHPC), 2002HPC95, 2003. (in Japanese)
 class:
   class: domestic
   subclass: workshop

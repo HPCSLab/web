@@ -1,5 +1,7 @@
 title: 影響の少ないインスツルメント手法と電力最適化のためのプログラム領域分割
+title_en: A low-overhead instrumentation method and program region partitioning for power optimization
 booktitle: 先進的計算基盤システムシンポジウムSACSIS2007論文集
+booktitle_en: Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2007)
 year: 2007
 authors:
   - 木村 英明
@@ -16,6 +18,7 @@ bibtex: |-
 reference:
   木村 英明, 佐藤 三久, 堀田 義彦, 今田 貴之：影響の少ないインスツルメント手法と電力最適化のためのプログラム領域分割,
   先進的計算基盤システムシンポジウムSACSIS2007論文集, pp. 310, (2007).
+reference_en: "木村 英明, 佐藤 三久, 堀田 義彦, 今田 貴之: A low-overhead instrumentation method and program region partitioning for power optimization, Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2007), pp. 310, (2007). (in Japanese)"
 class:
   class: domestic
   subclass: conference

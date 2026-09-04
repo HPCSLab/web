@@ -1,4 +1,5 @@
 title: 複数右辺ベクトルを持つ線形方程式に対するブロック積型反復解法の近似解高精度化
+title_en: Improving the accuracy of approximate solutions of block product-type iterative methods for linear systems with multiple right-hand sides
 authors:
   - 倉本 亮世
   - 多田野 寛人
@@ -17,5 +18,7 @@ bibtex: |
   }
 reference: |
   倉本 亮世, 多田野 寛人, 複数右辺ベクトルを持つ線形方程式に対するブロック積型反復解法の近似解高精度化, 日本応用数理学会論文誌, 2020, 30 巻, 4 号, p. 290-319, 公開日 2020/12/25, Online ISSN 2424-0982, https://doi.org/10.11540/jsiamt.30.4_290, https://www.jstage.jst.go.jp/article/jsiamt/30/4/30_290/_article/-char/ja
+reference_en: |
+  倉本 亮世, 多田野 寛人, Improving the accuracy of approximate solutions of block product-type iterative methods for linear systems with multiple right-hand sides, Transactions of the Japan Society for Industrial and Applied Mathematics (JSIAM), 2020, Vol. 30, No. 4, p. 290-319, published 2020/12/25, Online ISSN 2424-0982, https://doi.org/10.11540/jsiamt.30.4_290, https://www.jstage.jst.go.jp/article/jsiamt/30/4/30_290/_article/-char/ja (in Japanese)
 class:
   class: journal

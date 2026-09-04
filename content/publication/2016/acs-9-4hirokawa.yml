@@ -1,5 +1,7 @@
 title: 電子動力学シミュレーションのステンシル計算最適化とメニーコアプロセッサへの実装
+title_en: Stencil computation optimization of electron dynamics simulation and its implementation on many-core processors
 booktitle: 情報処理学会論文誌コンピューティングシステム (ACS)
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2016
 authors:
   - 廣川 祐太
@@ -19,5 +21,6 @@ bibtex: |-
 reference: "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩:
   “電子動力学シミュレーションのステンシル計算最適化とメニーコアプロセッサへの実装”, 情報処理学会論文誌コンピューティングシステム (ACS), Vol.
   9, No. 4, pp. 1-14, 2016."
+reference_en: "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “Stencil computation optimization of electron dynamics simulation and its implementation on many-core processors”, IPSJ Transactions on Advanced Computing Systems (ACS), Vol. 9, No. 4, pp. 1-14, 2016. (in Japanese)"
 class:
   class: journal

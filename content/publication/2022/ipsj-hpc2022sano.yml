@@ -1,4 +1,5 @@
 title: ノードを跨いだGPU・FPGA複合型演算加速による宇宙物理シミュレーションの実装と評価
+title_en: Implementation and evaluation of astrophysics simulation with GPU/FPGA combined acceleration across nodes
 authors:
   - 佐野 由佳
   - 小林 諒平
@@ -20,6 +21,11 @@ reference: |
   ”ノードを跨いだGPU・FPGA複合型演算加速による宇宙物理シミュレーションの実装と評価,”
   情報処理学会第184回HPC研究報告会,
   Vol. 2022-HPC-184, No. 5
+reference_en: |
+  佐野 由佳, 小林 諒平, 藤田 典久, 朴 泰祐:
+  ”Implementation and evaluation of astrophysics simulation with GPU/FPGA combined acceleration across nodes,”
+  IPSJ SIG Technical Report, 184th HPC Meeting,
+  Vol. 2022-HPC-184, No. 5 (in Japanese)
 class:
   class: domestic
   subclass: workshop

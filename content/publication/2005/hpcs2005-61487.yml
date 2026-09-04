@@ -1,5 +1,7 @@
 title: PCクラスタにおけるDVS制御による電力性能の最適化
+title_en: Power performance optimization by DVS control on PC clusters
 booktitle: 計算機アーキテクチャ研究会, 2005ARC156
+booktitle_en: IPSJ SIG Technical Report (SIGARC), 2005ARC156
 year: 2005
 authors:
   - 堀田義彦
@@ -16,6 +18,10 @@ bibtex: |-
   }
 reference: 堀田義彦，佐藤三久，木村英明，朴 泰祐，高橋大介，松岡
   聡，”PCクラスタにおけるDVS制御による電力性能の最適化”，計算機アーキテクチャ研究会，2005ARC156，2005.
+reference_en:
+  堀田義彦，佐藤三久，木村英明，朴 泰祐，高橋大介，松岡 聡，”Power performance optimization by
+  DVS control on PC clusters”，IPSJ SIG Technical Report
+  (SIGARC)，2005ARC156，2005. (in Japanese)
 class:
   class: domestic
   subclass: workshop

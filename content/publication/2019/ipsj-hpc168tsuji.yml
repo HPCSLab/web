@@ -1,5 +1,7 @@
 title: 都市気象LESコードの並列GPU環境における高速化
+title_en: Acceleration of an urban meteorological LES code on a parallel GPU environment
 booktitle: 情報処理学会 第168回 HPC 研究会報告 (HPC168)
+booktitle_en: IPSJ SIG Technical Report, 168th HPC Meeting (HPC168)
 year: 2019
 authors:
   - 辻 大亮
@@ -21,6 +23,7 @@ bibtex: >-
 reference: "辻 大亮, 多田野 寛人, 朴 泰祐, 池田 亮作, 佐藤 拓人, 日下 博幸:
   “都市気象LESコードの並列GPU環境における高速化”, 情報処理学会 第168回 HPC 研究会報告 (HPC168), Vol.
   2019-HPC-168, No. 8, Mar. 2019."
+reference_en: "辻 大亮, 多田野 寛人, 朴 泰祐, 池田 亮作, 佐藤 拓人, 日下 博幸: “Acceleration of an urban meteorological LES code on a parallel GPU environment”, IPSJ SIG Technical Report, 168th HPC Meeting (HPC168), Vol. 2019-HPC-168, No. 8, Mar. 2019. (in Japanese)"
 class:
   class: domestic
   subclass: misc

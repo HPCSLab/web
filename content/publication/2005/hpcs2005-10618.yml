@@ -1,5 +1,8 @@
 title: '"グリッドRPCシステムOmniRPCにおける初期データの分散管理による効率化'
+title_en: '"Efficient execution by distributed management of initial data in the
+  grid RPC system OmniRPC'
 booktitle: 情報処理学会研究報告, 2005HPC104
+booktitle_en: IPSJ SIG Technical Report, 2005HPC104
 year: 2005
 authors:
   - 相田祥昭
@@ -18,6 +21,10 @@ bibtex: |-
 reference:
   相田祥昭，中島佳宏，佐藤三久，櫻井鉄也，高橋大介，朴泰祐：”グリッドRPCシステムOmniRPCにおける初期データの分散管理による効率化”，
   情報処理学会研究報告，2005HPC104，pp. 712, (2005).
+reference_en:
+  相田祥昭，中島佳宏，佐藤三久，櫻井鉄也，高橋大介，朴泰祐：”Efficient execution by distributed
+  management of initial data in the grid RPC system OmniRPC”， IPSJ SIG Technical
+  Report，2005HPC104，pp. 712, (2005). (in Japanese)
 class:
   class: domestic
   subclass: workshop

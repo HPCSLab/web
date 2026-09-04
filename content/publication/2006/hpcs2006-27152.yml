@@ -1,5 +1,7 @@
 title: PACSCSのための高性能通信ライブラリインターフェイスの設計
+title_en: Design of a high-performance communication library interface for PACSCS
 booktitle: 情報処理学会研究報告, 2006HPC107
+booktitle_en: IPSJ SIG Technical Report, 2006HPC107
 year: 2006
 authors:
   - 住元真司
@@ -20,6 +22,10 @@ bibtex: |-
 reference:
   住元真司，大江和一，久門耕一，高橋大介，朴泰祐，佐藤三久，吉江友照，宇川彰：PACSCSのための高性能通信ライブラリインターフェイスの設計，情報処理学会研究報告，2006HPC107，pp.
   215219, (2006).
+reference_en:
+  住元真司，大江和一，久門耕一，高橋大介，朴泰祐，佐藤三久，吉江友照，宇川彰：Design of a high-performance
+  communication library interface for PACSCS，IPSJ SIG Technical
+  Report，2006HPC107，pp. 215219, (2006). (in Japanese)
 class:
   class: domestic
   subclass: workshop

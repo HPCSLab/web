@@ -1,5 +1,7 @@
 title: 広域分散ファイルシステムGfarm v2の実装と評価
+title_en: Implementation and evaluation of the wide-area distributed file system Gfarm v2
 booktitle: 情報処理学会研究報告, 2007HPC113
+booktitle_en: IPSJ SIG Technical Report, 2007HPC113
 year: 2007
 authors:
   - 建部 修見
@@ -14,6 +16,7 @@ bibtex: |-
 reference:
   建部 修見，曽田 哲之， 「広域分散ファイルシステムGfarm v2の実装と評価」， 情報処理学会研究報告，2007HPC113，
   pp.7-12，(2007)
+reference_en: "建部 修見, 曽田 哲之: Implementation and evaluation of the wide-area distributed file system Gfarm v2, IPSJ SIG Technical Report, 2007HPC113, pp.7-12, (2007) (in Japanese)"
 class:
   class: domestic
   subclass: workshop

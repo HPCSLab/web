@@ -1,4 +1,5 @@
 title: ◦大規模SMPクラスタにおけるOpenMP/MPIハイブリッドプログラムの性能評価 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集
+title_en: Performance evaluation of OpenMP/MPI hybrid programs on large-scale SMP clusters, Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2009)
 year: 2009
 authors:
   - 辻 美和子
@@ -12,6 +13,7 @@ bibtex: >-
 reference:
   辻 美和子, 佐藤 三久：◦大規模SMPクラスタにおけるOpenMP/MPIハイブリッドプログラムの性能評価
   先進的計算基盤システムシンポジウム(SACSIS 2009)論文集，pp.265-272, 2009
+reference_en: "辻 美和子, 佐藤 三久: Performance evaluation of OpenMP/MPI hybrid programs on large-scale SMP clusters, Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2009), pp.265-272, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: conference

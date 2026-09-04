@@ -1,4 +1,5 @@
 title: 画像再構成問題に現れる鞍点型連立一次方程式に対するブロック構造を利用した前処理の適用とその性能評価
+title_en: Application and performance evaluation of preconditioning using block structures for saddle point linear systems arising in image reconstruction problems
 authors:
   - 石川 翔大
   - 多田野 寛人
@@ -14,6 +15,11 @@ reference: |
   画像再構成問題に現れる鞍点型連立一次方程式に対するブロック構造を利用した前処理の適用とその性能評価,”
   日本応用数理学会 2021年度年会,
   2021.
+reference_en: |
+  石川 翔大, 多田野 寛人, 齋藤 歩:
+  Application and performance evaluation of preconditioning using block structures for saddle point linear systems arising in image reconstruction problems,”
+  The 2021 Annual Meeting of the Japan Society for Industrial and Applied Mathematics (JSIAM),
+  2021. (in Japanese)
 class:
   class: domestic
   subclass: conference

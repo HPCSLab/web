@@ -1,5 +1,7 @@
 title: スクリプト言語 Xcrypt による格子 QCD シミュレーションの自動化
+title_en: Automation of lattice QCD simulations using the script language Xcrypt
 booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウム（HPCS2012）論文集
+booktitle_en: Proceedings of the Symposium on High Performance Computing and Computational Science (HPCS2012)
 year: 2012
 authors:
   - 斎藤 華
@@ -18,6 +20,7 @@ reference:
   斎藤 華, 朴 泰祐, 金谷 和至, 塙 敏博, 佐藤 三久, 「スクリプト言語 Xcrypt による格子 QCD
   シミュレーションの自動化」，2012年ハイパフォーマンスコンピューティングと計算科学シンポジウム（HPCS2012）論文集，pp. 7-14,
   2012年1月．
+reference_en: 斎藤 華, 朴 泰祐, 金谷 和至, 塙 敏博, 佐藤 三久, "Automation of lattice QCD simulations using the script language Xcrypt", Proceedings of the 2012 Symposium on High Performance Computing and Computational Science (HPCS2012), pp. 7-14, January 2012. (in Japanese)
 class:
   class: domestic
   subclass: conference

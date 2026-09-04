@@ -1,5 +1,7 @@
 title: XcalableMPによるNAS Parallel Benchmarksの実装と評価
+title_en: Implementation and evaluation of the NAS Parallel Benchmarks in XcalableMP
 booktitle: 並列／分散／協調処理に関する『金沢』サマー・ワークショップ（SWoPP金沢2010）, 研究報告ハイパフォーマンスコンピューティング（HPC）
+booktitle_en: Summer United Workshops on Parallel, Distributed and Cooperative Processing (SWoPP Kanazawa 2010), IPSJ SIG Technical Report, High Performance Computing (HPC)
 year: 2010
 authors:
   - 中尾昌広
@@ -17,6 +19,7 @@ bibtex: >-
 reference: 中尾昌広，李珍泌，朴泰祐，佐藤三久：XcalableMPによるNAS Parallel
   Benchmarksの実装と評価，2010年並列／分散／協調処理に関する『金沢』サマー・ワークショップ（SWoPP金沢2010），研究報告ハイパフォーマンスコンピューティング（HPC），Vol.2010-HPC-126
   No.9，pp.1-7，2010
+reference_en: "中尾昌広, 李珍泌, 朴泰祐, 佐藤三久: Implementation and evaluation of the NAS Parallel Benchmarks in XcalableMP, 2010 Summer United Workshops on Parallel, Distributed and Cooperative Processing (SWoPP Kanazawa 2010), IPSJ SIG Technical Report, High Performance Computing (HPC), Vol.2010-HPC-126 No.9, pp.1-7, 2010. (in Japanese)"
 class:
   class: domestic
   subclass: workshop

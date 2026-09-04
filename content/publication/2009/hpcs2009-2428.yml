@@ -1,4 +1,5 @@
 title: 仮想計算機環境における省電力化を目的としたサーバ資源制御 情報処理学会研究報告
+title_en: Server resource control for power saving in virtual machine environments, IPSJ SIG Technical Report
 booktitle: 2009-HPC-121(36)
 year: 2009
 authors:
@@ -13,6 +14,7 @@ bibtex: |-
 reference:
   今田貴之、佐藤三久、木村英明：仮想計算機環境における省電力化を目的としたサーバ資源制御
   情報処理学会研究報告，2009-HPC-121(36)，pp. 1-8, 2009
+reference_en: "今田貴之、佐藤三久、木村英明: Server resource control for power saving in virtual machine environments, IPSJ SIG Technical Report, 2009-HPC-121(36), pp. 1-8, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: workshop

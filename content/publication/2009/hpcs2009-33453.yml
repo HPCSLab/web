@@ -1,5 +1,7 @@
 title: 冗長ページ管理による高信頼ソフトウェア分散共有メモリシステム
+title_en: A highly reliable software distributed shared memory system using redundant page management
 booktitle: 第7回ディペンダブルシステムワークショップ DSW2009
+booktitle_en: Proc. 7th Dependable System Workshop (DSW2009)
 year: 2009
 authors:
   - 李珍泌、佐藤三久
@@ -13,6 +15,7 @@ bibtex: |-
 reference:
   李珍泌、佐藤三久：冗長ページ管理による高信頼ソフトウェア分散共有メモリシステム，第7回ディペンダブルシステムワークショップ
   DSW2009, pp.-, 2009
+reference_en: "李珍泌、佐藤三久: A highly reliable software distributed shared memory system using redundant page management, Proc. 7th Dependable System Workshop (DSW2009), pp.-, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: workshop

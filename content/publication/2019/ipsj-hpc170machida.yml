@@ -1,5 +1,7 @@
 title: 大規模ゲノムデータに対する分散並列相同性検索システムの提案
+title_en: Proposal of a distributed parallel homology search system for large-scale genomic data
 booktitle: 情報処理学会 第170回 HPC 研究会報告 (HPC170)
+booktitle_en: IPSJ SIG Technical Report, 170th HPC Meeting (HPC170)
 year: 2019
 authors:
   - 町田 健太
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "町田 健太, 建部 修見: “大規模ゲノムデータに対する分散並列相同性検索システムの提案”, 情報処理学会 第170回 HPC
   研究会報告 (HPC170), Vol. 2019-HPC-170, No. 31, Jul. 2019."
+reference_en: "町田 健太, 建部 修見: “Proposal of a distributed parallel homology search system for large-scale genomic data”, IPSJ SIG Technical Report, 170th HPC Meeting (HPC170), Vol. 2019-HPC-170, No. 31, Jul. 2019. (in Japanese)"
 class:
   class: domestic
   subclass: misc

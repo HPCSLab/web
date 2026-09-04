@@ -1,5 +1,7 @@
 title: Omni/SCASHにおける First Touch page allocationの実装
+title_en: Implementation of First Touch page allocation in Omni/SCASH
 booktitle: 情報処理学会計算機アーキテクチャ研究会, 2003ARC154
+booktitle_en: IPSJ SIG Technical Report (SIGARC), 2003ARC154
 year: 2003
 authors:
   - 小島 好紀
@@ -15,6 +17,10 @@ bibtex: |-
 reference:
   小島 好紀, 佐藤 三久, 朴 泰祐, 高橋 大介, “Omni/SCASHにおける First Touch page
   allocationの実装”, 情報処理学会計算機アーキテクチャ研究会, 2003ARC154, 2003.
+reference_en:
+  小島 好紀, 佐藤 三久, 朴 泰祐, 高橋 大介, “Implementation of First Touch page
+  allocation in Omni/SCASH”, IPSJ SIG Technical Report (SIGARC), 2003ARC154,
+  2003. (in Japanese)
 class:
   class: domestic
   subclass: workshop

@@ -1,5 +1,7 @@
 title: プライベートネットワーク内のノードへの透過的アクセスを実現するTNTシステムの開発
+title_en: Development of the TNT system for transparent access to nodes inside private networks
 booktitle: 先進的計算基盤システムシンポジウム SACSIS 2008 論文集, 情報処理学会, 電子情報通信学会
+booktitle_en: Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2008), IPSJ, IEICE
 year: 2008
 authors:
   - 山本 剛之
@@ -14,6 +16,7 @@ bibtex: |-
 reference: 山本 剛之，建部 修見，
   「プライベートネットワーク内のノードへの透過的アクセスを実現するTNTシステムの開発」，先進的計算基盤システムシンポジウム SACSIS 2008 論文集，
   情報処理学会，電子情報通信学会， pp.367-374，2008 年 6 月
+reference_en: "山本 剛之, 建部 修見: Development of the TNT system for transparent access to nodes inside private networks, Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2008), IPSJ, IEICE, pp.367-374, June 2008 (in Japanese)"
 class:
   class: domestic
   subclass: conference

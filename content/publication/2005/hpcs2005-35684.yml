@@ -1,5 +1,8 @@
 title: 複数グリッドミドルウェア上で動作するGrid RPCシステムOmniRPCの設計と実装
+title_en: Design and implementation of the Grid RPC system OmniRPC running on
+  multiple grid middleware
 booktitle: ハイパフォーマンスコンピューティング研究会, 2005HPC103
+booktitle_en: IPSJ SIG Technical Report (SIGHPC), 2005HPC103
 year: 2005
 authors:
   - 中島佳宏
@@ -17,6 +20,10 @@ bibtex: |-
 reference:
   中島佳宏，佐藤三久，相田祥昭，朴 泰祐，高橋大介，Franck Cappello，”複数グリッドミドルウェア上で動作するGrid
   RPCシステムOmniRPCの設計と実装”，ハイパフォーマンスコンピューティング研究会，2005HPC103，2005.
+reference_en:
+  中島佳宏，佐藤三久，相田祥昭，朴 泰祐，高橋大介，Franck Cappello，”Design and
+  implementation of the Grid RPC system OmniRPC running on multiple grid
+  middleware”，IPSJ SIG Technical Report (SIGHPC)，2005HPC103，2005. (in Japanese)
 class:
   class: domestic
   subclass: workshop

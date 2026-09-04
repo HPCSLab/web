@@ -1,5 +1,7 @@
 title: PGAS言語XcalableMPとUnified Parallel Cの性能比較
+title_en: Performance comparison of the PGAS languages XcalableMP and Unified Parallel C
 booktitle: 並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011）, 研究報告 ハイパフォーマンスコンピューティング（HPC）
+booktitle_en: Summer United Workshops on Parallel, Distributed and Cooperative Processing (SWoPP Kagoshima 2011), IPSJ SIG Technical Report, High Performance Computing (HPC)
 year: 2011
 authors:
   - 中尾昌広
@@ -19,6 +21,7 @@ reference:
   Cの性能比較”，2011年並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011），研究報告
   ハイパフォーマンスコンピューティング（HPC），Vol.2011-HPC-130 No.53,
   pp.1-8，2011年7月，かごしま県民交流センター（鹿児島）
+reference_en: 中尾昌広, 李珍泌, 朴泰祐, 佐藤三久. "Performance comparison of the PGAS languages XcalableMP and Unified Parallel C", 2011 Summer United Workshops on Parallel, Distributed and Cooperative Processing (SWoPP Kagoshima 2011), IPSJ SIG Technical Report, High Performance Computing (HPC), Vol.2011-HPC-130 No.53, pp.1-8, July 2011, Kagoshima Prefectural Citizens Exchange Center (Kagoshima). (in Japanese)
 class:
   class: domestic
   subclass: workshop

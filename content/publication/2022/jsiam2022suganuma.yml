@@ -1,4 +1,5 @@
 title: 複数右辺連立一次方程式に対するブロック・グローバル混合型反復法の構築と性能評価
+title_en: Construction and performance evaluation of a block-global hybrid iterative method for linear systems with multiple right-hand sides
 authors:
   - 菅沼 夏樹
   - 多田野 寛人
@@ -21,3 +22,8 @@ reference: |
   “複数右辺連立一次方程式に対するブロック・グローバル混合型反復法の構築と性能評価,”
   日本応用数理学会2022年度年会,
   2022.
+reference_en: |
+  菅沼 夏樹, 多田野 寛人:
+  “Construction and performance evaluation of a block-global hybrid iterative method for linear systems with multiple right-hand sides,”
+  The 2022 Annual Meeting of the Japan Society for Industrial and Applied Mathematics (JSIAM),
+  2022. (in Japanese)

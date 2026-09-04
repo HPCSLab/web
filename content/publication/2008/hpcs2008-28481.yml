@@ -1,5 +1,7 @@
 title: ユーザ透過に利用可能な高性能・耐故障マルチリンクEthernet結合システム
+title_en: A user-transparent high-performance and fault-tolerant multi-link Ethernet interconnection system
 booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2008論文集
+booktitle_en: Proc. Symposium on High Performance Computing and Computational Science (HPCS 2008)
 year: 2008
 authors:
   - 岡本 高幸
@@ -17,6 +19,7 @@ bibtex: |-
 reference: 岡本 高幸, 三浦 信一, 朴 泰祐, 塙 敏博,
   佐藤三久：ユーザ透過に利用可能な高性能・耐故障マルチリンクEthernet結合システム，2008年ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2008論文集,
   pp. 41-48, (2008).
+reference_en: "岡本 高幸, 三浦 信一, 朴 泰祐, 塙 敏博, 佐藤三久: A user-transparent high-performance and fault-tolerant multi-link Ethernet interconnection system, Proc. 2008 Symposium on High Performance Computing and Computational Science (HPCS 2008), pp. 41-48, (2008). (in Japanese)"
 class:
   class: domestic
   subclass: conference
