@@ -25,13 +25,12 @@ interface Props {
  */
 const { fallback = true } = Astro.props;
 const lang = langFromUrl(Astro.url);
-const hasCurrent = Astro.slots.has(lang);
+const hasEnglish = Astro.slots.has("en");
+
+// `<slot name>` は静的な文字列でなければならないので、言語ごとに分けて書く
+const showEnglish = lang === "en" && hasEnglish;
+const showJapanese = lang === "ja" || (!hasEnglish && fallback);
 ---
 
-{
-  lang === "ja" || hasCurrent ? (
-    <slot name={lang} />
-  ) : fallback ? (
-    <slot name="ja" />
-  ) : null
-}
+{showEnglish ? <slot name="en" /> : null}
+{showJapanese ? <slot name="ja" /> : null}
