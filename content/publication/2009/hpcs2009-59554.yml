@@ -1,6 +1,10 @@
 title: GPUによる4倍精度BLASの実装と評価
+title_en: Implementation and evaluation of quadruple-precision BLAS on GPUs
 booktitle: |-
   情報処理学会研究報告, 2009-ARC-186
+  2009-HPC-122
+booktitle_en: |-
+  IPSJ SIG Technical Report, 2009-ARC-186
   2009-HPC-122
 year: 2009
 authors:
@@ -17,6 +21,9 @@ bibtex: |-
 reference: |-
   椋木大地，高橋大介：GPUによる4倍精度BLASの実装と評価，情報処理学会研究報告，2009-ARC-186
   2009-HPC-122, No. 13，2009．
+reference_en: |-
+  椋木大地, 高橋大介: Implementation and evaluation of quadruple-precision BLAS on GPUs, IPSJ SIG Technical Report, 2009-ARC-186
+  2009-HPC-122, No. 13, 2009. (in Japanese)
 class:
   class: domestic
   subclass: workshop

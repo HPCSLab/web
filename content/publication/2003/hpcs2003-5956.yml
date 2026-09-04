@@ -1,5 +1,7 @@
 title: GridRPCシステムにおけるリモートプログラムシッピング機構
+title_en: A remote program shipping mechanism for GridRPC systems
 booktitle: ハイパフォーマンスコンピューティング研究会, 2002HPC96
+booktitle_en: IPSJ SIG Technical Report (SIGHPC), 2002HPC96
 year: 2003
 authors:
   - 渡邊 啓正
@@ -16,6 +18,10 @@ bibtex: |-
 reference: 渡邊 啓正，本多 弘樹，弓場
   敏嗣，田中良夫，佐藤三久，”GridRPCシステムにおけるリモートプログラムシッピング機構”，ハイパフォーマンスコンピューティング研究会,
   2002HPC96, 2003.
+reference_en:
+  渡邊 啓正，本多 弘樹，弓場 敏嗣，田中良夫，佐藤三久，”A remote program shipping mechanism
+  for GridRPC systems”，IPSJ SIG Technical Report (SIGHPC), 2002HPC96, 2003. (in
+  Japanese)
 class:
   class: domestic
   subclass: workshop

@@ -1,5 +1,7 @@
 title: FPGA間通信で発生する諸問題 -PCIe Gen3通信における注意点-
+title_en: Issues arising in inter-FPGA communication -notes on PCIe Gen3 communication-
 booktitle: 電子情報通信学会第43回リコンフィギャラブルシステム研究会 (RECONF43)
+booktitle_en: IEICE Technical Report, 43rd Technical Committee on Reconfigurable Systems (RECONF43)
 year: 2015
 authors:
   - 高山 尋考
@@ -19,6 +21,7 @@ reference:
   "高山 尋考, 山口 佳樹: “FPGA間通信で発生する諸問題 -PCIe Gen3通信における注意点-“,
   電子情報通信学会第43回リコンフィギャラブルシステム研究会 (RECONF43), Vol. 115, No. 343, pp. 33-38, Dec.
   2015."
+reference_en: "高山 尋考, 山口 佳樹: “Issues arising in inter-FPGA communication -notes on PCIe Gen3 communication-“, IEICE Technical Report, 43rd Technical Committee on Reconfigurable Systems (RECONF43), Vol. 115, No. 343, pp. 33-38, Dec. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc

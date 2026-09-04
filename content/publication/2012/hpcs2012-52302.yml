@@ -1,5 +1,7 @@
 title: PGAS並列プログラミング言語XcalableMPにおける演算加速装置を持つクラスタ向け拡張仕様の提案と試作
+title_en: Proposal and prototype implementation of an extension for accelerator-equipped clusters in the PGAS parallel programming language XcalableMP
 booktitle: 論文誌コンピューティングシステム(ACS), 情報処理学会
+booktitle_en: Transactions on Advanced Computing Systems (ACS), IPSJ
 year: 2012
 authors:
   - 李珍泌
@@ -18,5 +20,6 @@ bibtex: |-
 reference:
   李珍泌，チャントゥアンミン，小田嶋哲哉，朴泰祐，佐藤三久，”PGAS並列プログラミング言語XcalableMPにおける演算加速装置を持つクラスタ向け拡張仕様の提案と試作”，論文誌コンピューティングシステム(ACS)，情報処理学会，Vol.5
   No.2，pp.33-50，2012年3月
+reference_en: 李珍泌, チャントゥアンミン, 小田嶋哲哉, 朴泰祐, 佐藤三久, "Proposal and prototype implementation of an extension for accelerator-equipped clusters in the PGAS parallel programming language XcalableMP", Transactions on Advanced Computing Systems (ACS), IPSJ, Vol.5 No.2, pp.33-50, March 2012. (in Japanese)
 class:
   class: journal

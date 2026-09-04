@@ -1,5 +1,7 @@
 title: 高解像度LES計算のGPUによる高速化と性能評価
+title_en: Acceleration and performance evaluation of high-resolution LES computation on GPUs
 booktitle: 第13回非静力学モデルに関するワークショップ(気象学会)
+booktitle_en: The 13th Workshop on Non-hydrostatic Models (Meteorological Society of Japan)
 year: 2011
 authors:
   - 二星 義裕
@@ -17,6 +19,7 @@ bibtex: |-
 reference: 二星 義裕, 朴 泰祐, 塙 敏博, 池田 亮作, 日下
   博幸，「高解像度LES計算のGPUによる高速化と性能評価」，第13回非静力学モデルに関するワークショップ(気象学会)，pp. 82-83,
   2011年10月．
+reference_en: 二星 義裕, 朴 泰祐, 塙 敏博, 池田 亮作, 日下 博幸, "Acceleration and performance evaluation of high-resolution LES computation on GPUs", The 13th Workshop on Non-hydrostatic Models (Meteorological Society of Japan), pp. 82-83, October 2011. (in Japanese)
 class:
   class: domestic
   subclass: workshop

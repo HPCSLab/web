@@ -1,5 +1,7 @@
 title: 小規模システム向け省電力高性能ディペンダブル通信機構:PEARL
+title_en: "A low-power, high-performance and dependable communication mechanism for small-scale systems: PEARL"
 booktitle: 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集
+booktitle_en: Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2009)
 year: 2009
 authors:
   - 塙 敏博
@@ -17,6 +19,7 @@ bibtex: |-
 reference: 塙 敏博，朴 泰祐，三浦 信一，佐藤 三久，有本
   和民：小規模システム向け省電力高性能ディペンダブル通信機構:PEARL，先進的計算基盤システムシンポジウム(SACSIS
   2009)論文集，pp.124-125, 2009
+reference_en: "塙 敏博, 朴 泰祐, 三浦 信一, 佐藤 三久, 有本 和民: A low-power, high-performance and dependable communication mechanism for small-scale systems: PEARL, Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2009), pp.124-125, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: poster

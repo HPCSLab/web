@@ -1,5 +1,7 @@
 title: 仮想マシンと SpecC デバイスモデルを統合したデバイス故障エミュレータの実現
+title_en: Implementation of a device fault emulator integrating a virtual machine and SpecC device models
 booktitle: 情報処理学会研究報告, 2010-OS-115(19)
+booktitle_en: IPSJ SIG Technical Report, 2010-OS-115(19)
 year: 2010
 authors:
   - 小泉 仁志
@@ -19,6 +21,7 @@ bibtex: |-
 reference:
   小泉 仁志, 坂西 隆之, 塙 敏博, 佐藤 三久, 三浦 信一, 石井 忠俊, 高見澤 秀久：仮想マシンと SpecC
   デバイスモデルを統合したデバイス故障エミュレータの実現, 情報処理学会研究報告,2010-OS-115(19), pp. 1–8, 2010
+reference_en: "小泉 仁志, 坂西 隆之, 塙 敏博, 佐藤 三久, 三浦 信一, 石井 忠俊, 高見澤 秀久: Implementation of a device fault emulator integrating a virtual machine and SpecC device models, IPSJ SIG Technical Report, 2010-OS-115(19), pp. 1–8, 2010. (in Japanese)"
 class:
   class: domestic
   subclass: workshop

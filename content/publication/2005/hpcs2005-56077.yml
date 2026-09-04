@@ -1,5 +1,8 @@
 title: taggedVLANに基づくPCクラスタ向け高バンド幅ツリーネットワークの開発
+title_en: Development of a high-bandwidth tree network for PC clusters based on
+  taggedVLAN
 booktitle: ハイパフォーマンスコンピューティング研究会, 2005HPC104
+booktitle_en: IPSJ SIG Technical Report (SIGHPC), 2005HPC104
 year: 2005
 authors:
   - 三浦信一
@@ -15,6 +18,10 @@ bibtex: |-
   }
 reference: 三浦信一，岡本高幸，朴
   泰祐，佐藤三久，高橋大介，”taggedVLANに基づくPCクラスタ向け高バンド幅ツリーネットワークの開発”，ハイパフォーマンスコンピューティング研究会，2005HPC104，2005.
+reference_en:
+  三浦信一，岡本高幸，朴 泰祐，佐藤三久，高橋大介，”Development of a high-bandwidth tree
+  network for PC clusters based on taggedVLAN”，IPSJ SIG Technical Report
+  (SIGHPC)，2005HPC104，2005. (in Japanese)
 class:
   class: domestic
   subclass: workshop

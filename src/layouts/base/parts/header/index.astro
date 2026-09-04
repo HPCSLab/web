@@ -4,26 +4,44 @@ import HamburgerButton from "./mobile/HamburgerButton.astro";
 import NavMobile from "./mobile/Nav.astro";
 import logo from "./hpcs.svg";
 import { Image } from "astro:assets";
-import { pages } from "./sitemap";
+import { getSitemap } from "./sitemap";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import { localePath, type Lang } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const pages = getSitemap(lang);
+const t = useTranslations(lang);
 ---
 
 <div class="root">
   <header>
     <nav class="logo">
-      <a href="/"><Image src={logo} alt="HPCS Logo" /></a>
+      <a href={localePath(lang, "/")}><Image src={logo} alt="HPCS Logo" /></a>
     </nav>
     <div class="nav-container">
       <div class="desktop-nav">
-        <NavDesktop pages={pages} />
+        <NavDesktop pages={pages} lang={lang} />
+      </div>
+      <div class="header-lang-switcher">
+        <LanguageSwitcher lang={lang} />
       </div>
       <div class="mobile-nav">
-        <HamburgerButton id="drawer-toggle-button" />
+        <HamburgerButton
+          id="drawer-toggle-button"
+          openLabel={t("header.openMenu")}
+          closeLabel={t("header.closeMenu")}
+        />
       </div>
     </div>
   </header>
 
   <div id="fullscreen-nav-wrapper" class="fullscreen-nav-wrapper">
-    <NavMobile id="fullscreen-nav" sitemap={pages} />
+    <NavMobile id="fullscreen-nav" sitemap={pages} lang={lang} />
   </div>
 </div>
 
@@ -78,6 +96,14 @@ import { pages } from "./sitemap";
     height: 100%;
     display: flex;
     justify-content: end;
+    align-items: center;
+  }
+
+  .header-lang-switcher {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
   }
 
   :root {
@@ -165,6 +191,11 @@ import { pages } from "./sitemap";
 
     .mobile-nav {
       display: none;
+    }
+
+    .header-lang-switcher {
+      padding-right: 2rem;
+      padding-left: 0;
     }
   }
 </style>

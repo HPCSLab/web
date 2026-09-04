@@ -1,5 +1,7 @@
 title: ストレージコネクタspark-ceph-connectorの書き込み性能の改善
+title_en: Improving the write performance of the storage connector spark-ceph-connector
 booktitle: 情報処理学会 第176回 HPC 研究会報告 (HPC176)
+booktitle_en: IPSJ SIG Technical Report, 176th HPC Meeting (HPC176)
 year: 2020
 authors:
   - 高橋 宗史
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "高橋 宗史, 建部 修見: “ストレージコネクタspark-ceph-connectorの書き込み性能の改善”, 情報処理学会
   第176回 HPC 研究会報告 (HPC176), Vol. 2019-HPC-176, No. 8, Sep. 2020."
+reference_en: "高橋 宗史, 建部 修見: “Improving the write performance of the storage connector spark-ceph-connector”, IPSJ SIG Technical Report, 176th HPC Meeting (HPC176), Vol. 2019-HPC-176, No. 8, Sep. 2020. (in Japanese)"
 class:
   class: domestic
   subclass: misc

@@ -1,4 +1,5 @@
 title: 漸化式の可変的グループ化によるBlock GWBiCGSTAB法の性能改善
+title_en: Performance improvement of the Block GWBiCGSTAB method by variable grouping of recurrence relations
 authors:
   - 齋藤 颯人
   - 多田野 寛人
@@ -15,6 +16,11 @@ reference: |
   “漸化式の可変的グループ化によるBlock GWBiCGSTAB法の性能改善,”
   【非線形問題の高性能解法と可視化技術に関する研究会】2022年度第1回研究会,
   2022.
+reference_en: |
+  齋藤 颯人, 多田野 寛人:
+  “Performance improvement of the Block GWBiCGSTAB method by variable grouping of recurrence relations,”
+  The 1st Meeting of FY2022 of the Study Group on High-Performance Solution Methods and Visualization Techniques for Nonlinear Problems,
+  2022. (in Japanese)
 class:
   class: domestic
   subclass: conference

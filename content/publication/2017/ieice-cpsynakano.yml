@@ -1,5 +1,7 @@
 title: テンプレートマッチングベースのゲーム戦略とテンプレートサイズごとの照合率の関係性の分析
+title_en: Analysis of the relationship between template-matching-based game strategies and matching rates for different template sizes
 booktitle: 電子情報通信学会コンピュータシステム研究会萌芽的コンピュータシステム研究展示会
+booktitle_en: IEICE Technical Committee on Computer Systems (CPSY), Exhibition of Emerging Computer System Research
 year: 2017
 authors:
   - 中野 正隆
@@ -19,6 +21,7 @@ reference:
   "中野 正隆, 山口 佳樹: “テンプレートマッチングベースのゲーム戦略とテンプレートサイズごとの照合率の関係性の分析”,
   電子情報通信学会コンピュータシステム研究会萌芽的コンピュータシステム研究展示会, Vol. 117, No. 314, pp. 15-20, Nov.
   2017."
+reference_en: "中野 正隆, 山口 佳樹: “Analysis of the relationship between template-matching-based game strategies and matching rates for different template sizes”, IEICE Technical Committee on Computer Systems (CPSY), Exhibition of Emerging Computer System Research, Vol. 117, No. 314, pp. 15-20, Nov. 2017. (in Japanese)"
 class:
   class: domestic
   subclass: misc

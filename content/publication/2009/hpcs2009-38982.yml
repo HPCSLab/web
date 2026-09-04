@@ -1,5 +1,7 @@
 title: ネットワークトポロジを考慮したマルチリンクEthernetの性能最適化
+title_en: Performance optimization of multi-link Ethernet considering network topology
 booktitle: 先進的計算基盤システムシンポジウム(SACSIS 2009)論文集
+booktitle_en: Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2009)
 year: 2009
 authors:
   - 米元大我
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   米元大我，三浦信一，塙敏博，朴泰祐，佐藤三久：ネットワークトポロジを考慮したマルチリンクEthernetの性能最適化，先進的計算基盤システムシンポジウム(SACSIS
   2009)論文集，pp.177-178, 2009
+reference_en: "米元大我, 三浦信一, 塙敏博, 朴泰祐, 佐藤三久: Performance optimization of multi-link Ethernet considering network topology, Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2009), pp.177-178, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: poster

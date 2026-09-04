@@ -1,4 +1,5 @@
 title: FPGA高位合成における演算性能向上のための空間並列性記述に関する研究
+title_en: A study on spatial parallelism description for improving computational performance in FPGA high-level synthesis
 authors:
   - 佐野 由佳
   - 小林 諒平
@@ -23,3 +24,7 @@ reference: |
   佐野 由佳, 小林 諒平, 藤田 典久, 朴 泰祐, 佐藤 三久:
   ”FPGA高位合成における演算性能向上のための空間並列性記述に関する研究,”
   情報処理学会第188回HPC研究報告会, Vol. 2023-HPC-188, No. 22, Jul 2023.
+reference_en: |
+  佐野 由佳, 小林 諒平, 藤田 典久, 朴 泰祐, 佐藤 三久:
+  ”A study on spatial parallelism description for improving computational performance in FPGA high-level synthesis,”
+  IPSJ SIG Technical Report, 188th HPC Meeting, Vol. 2023-HPC-188, No. 22, Jul 2023. (in Japanese)

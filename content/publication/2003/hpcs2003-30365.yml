@@ -1,5 +1,8 @@
 title: ヘテロなクラスタ環境におけるStrassenの行列積アルゴリズムの並列化
+title_en: Parallelization of Strassen's matrix multiplication algorithm in
+  heterogeneous cluster environments
 booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC93
+booktitle_en: IPSJ SIG Technical Report (SIGHPC), 2002HPC93
 year: 2003
 authors:
   - 大滝 雄介
@@ -15,6 +18,10 @@ bibtex: |-
 reference:
   大滝 雄介, 高橋 大介, 朴 泰祐, 佐藤 三久, “ヘテロなクラスタ環境におけるStrassenの行列積アルゴリズムの並列化”,
   情報処理学会ハイパフォーマンスコンピューティング研究会, 2002HPC93, 2003.
+reference_en:
+  大滝 雄介, 高橋 大介, 朴 泰祐, 佐藤 三久, “Parallelization of Strassen's matrix
+  multiplication algorithm in heterogeneous cluster environments”, IPSJ SIG
+  Technical Report (SIGHPC), 2002HPC93, 2003. (in Japanese)
 class:
   class: domestic
   subclass: workshop

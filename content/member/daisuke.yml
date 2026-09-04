@@ -9,8 +9,17 @@ keywords:
   - 数値計算
   - メニーコア
   - アクセラレータ
+keywords_en:
+  - Numerical computation
+  - Many-core
+  - Accelerators
 message: |
   限られた時間の中で大規模なシミュレーションを行うために、
   スーパーコンピュータの性能をできるだけ発揮できるようなアルゴリズムやプログラミングに関する研究を行っています。
   高速なプログラムを作成するには、コンピュータの仕組みや数学について深い理解が必要になりますが、努力が性能という数字にそのまま反映されることから、
   やりがいがある分野です。
+message_en: |
+  We study algorithms and programming techniques that draw out as much of a supercomputer's performance as possible,
+  so that large-scale simulations can be carried out within a limited amount of time.
+  Writing fast programs requires a deep understanding of both how computers work and mathematics, but since your effort is reflected directly in the performance numbers,
+  it is a rewarding field.

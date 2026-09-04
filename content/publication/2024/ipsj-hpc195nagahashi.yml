@@ -1,4 +1,5 @@
 title: MPI/OpenMP並列化によるスライドパズルのZero-Aware Pattern Databaseの構築
+title_en: Construction of a Zero-Aware Pattern Database for sliding puzzles using MPI/OpenMP parallelization
 url: https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=237584&file_id=1&file_no=1
 authors:
   - 長橋 朋也
@@ -19,6 +20,10 @@ reference: |
   長橋 朋也, 高橋 大介:
   "MPI/OpenMP並列化によるスライドパズルのZero-Aware Pattern Databaseの構築,”
   情報処理学会 第195回 HPC 研究会報告 (HPC195),
+reference_en: |
+  長橋 朋也, 高橋 大介:
+  "Construction of a Zero-Aware Pattern Database for sliding puzzles using MPI/OpenMP parallelization,”
+  IPSJ SIG Technical Report, 195th HPC Meeting (HPC195), (in Japanese)
 class:
   class: domestic
   subclass: workshop

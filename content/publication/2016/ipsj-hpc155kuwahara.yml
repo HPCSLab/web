@@ -1,5 +1,7 @@
 title: GPUクラスタにおけるGPUセルフMPIシステムGMPIの予備性能評価
+title_en: Preliminary performance evaluation of GMPI, a GPU-self MPI system on GPU clusters
 booktitle: 情報処理学会第155回HPC研究会報告 (HPC155)
+booktitle_en: IPSJ SIG Technical Report, 155th SIGHPC Meeting (HPC155)
 year: 2016
 authors:
   - 桑原 悠太
@@ -18,6 +20,7 @@ bibtex: |-
 reference:
   "桑原 悠太, 塙 敏博, 朴 泰祐: “GPUクラスタにおけるGPUセルフMPIシステムGMPIの予備性能評価”,
   情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 15, Aug. 2016."
+reference_en: "桑原 悠太, 塙 敏博, 朴 泰祐: “Preliminary performance evaluation of GMPI, a GPU-self MPI system on GPU clusters”, IPSJ SIG Technical Report, 155th SIGHPC Meeting (HPC155), Vol. 2016-HPC-155, No. 15, Aug. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

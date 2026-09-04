@@ -1,5 +1,7 @@
 title: オンチップメモリプロセッサでの演算加速機構の検討
+title_en: A study on an arithmetic acceleration mechanism for on-chip memory processors
 booktitle: 情報処理学会研究報告, 2007ARC172 2007HPC109
+booktitle_en: IPSJ SIG Technical Report, 2007ARC172 2007HPC109
 year: 2007
 authors:
   - 高橋 睦史
@@ -22,6 +24,7 @@ reference:
   高橋 睦史, 佐藤 三久, 高橋 大介, 朴 泰祐, 宇川 彰, 中村 宏, 青木 秀貴, 澤本 英雄, 助川
   直伸：オンチップメモリプロセッサでの演算加速機構の検討, 情報処理学会研究報告, 2007ARC172 2007HPC109, pp. 263268,
   (2007)
+reference_en: "高橋 睦史, 佐藤 三久, 高橋 大介, 朴 泰祐, 宇川 彰, 中村 宏, 青木 秀貴, 澤本 英雄, 助川 直伸: A study on an arithmetic acceleration mechanism for on-chip memory processors, IPSJ SIG Technical Report, 2007ARC172 2007HPC109, pp. 263268, (2007) (in Japanese)"
 class:
   class: domestic
   subclass: workshop

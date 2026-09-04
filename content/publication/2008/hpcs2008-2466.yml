@@ -1,4 +1,5 @@
 title: 自動プログラム領域分割を用いた実行時DVFS制御情報処理学会研究報告
+title_en: Runtime DVFS control using automatic program region partitioning, IPSJ SIG Technical Report
 booktitle: 2008ARC169, 2008HPC114
 year: 2008
 authors:
@@ -15,6 +16,7 @@ bibtex: |-
   }
 reference: 木村 英明, 佐藤 三久，今田 貴之，堀田
   義彦：自動プログラム領域分割を用いた実行時DVFS制御情報処理学会研究報告，2008ARC169, 2008HPC114，pp. 91-96, (2008)
+reference_en: "木村 英明, 佐藤 三久, 今田 貴之, 堀田 義彦: Runtime DVFS control using automatic program region partitioning, IPSJ SIG Technical Report, 2008ARC169, 2008HPC114, pp. 91-96, (2008) (in Japanese)"
 class:
   class: domestic
   subclass: workshop

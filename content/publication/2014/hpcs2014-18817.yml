@@ -1,5 +1,7 @@
 title: Cluster-wide RAID向けの集中型コントローラ
+title_en: A centralized controller for Cluster-wide RAID
 booktitle: 情報処理学会ハイパフォーマンスコンピューティング研究会(HPC147, HOKKE22), 2014年12月
+booktitle_en: IPSJ SIGHPC (HPC147, HOKKE22), December 2014
 year: 2014
 authors:
   - 大辻弘貴
@@ -12,6 +14,7 @@ bibtex: |-
   }
 reference: 大辻弘貴，建部修見，「Cluster-wide
   RAID向けの集中型コントローラ」，情報処理学会ハイパフォーマンスコンピューティング研究会(HPC147, HOKKE22)，2014年12月
+reference_en: 大辻弘貴, 建部修見, "A centralized controller for Cluster-wide RAID", IPSJ SIGHPC (HPC147, HOKKE22), December 2014. (in Japanese)
 class:
   class: domestic
   subclass: workshop

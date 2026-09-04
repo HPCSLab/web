@@ -1,4 +1,5 @@
 title: GPU・FPGA複合型演算加速クラスタを用いた宇宙輻射輸送コードARGOTの多ノード並列化
+title_en: Multi-node parallelization of the astrophysical radiative transfer code ARGOT on a GPU/FPGA combined accelerated cluster
 year: 2022
 authors:
   - 小林 諒平
@@ -22,6 +23,10 @@ reference: |
   小林 諒平, 藤田 典久, 山口 佳樹, 朴 泰祐, 吉川 耕司, 安部 牧人, 梅村 雅之:
   ”GPU・FPGA複合型演算加速クラスタを用いた宇宙輻射輸送コードARGOTの多ノード並列化,”
   情報処理学会第185回HPC研究報告会, Vol. 2022-HPC-185, No. 1, Jul 2022
+reference_en: |
+  小林 諒平, 藤田 典久, 山口 佳樹, 朴 泰祐, 吉川 耕司, 安部 牧人, 梅村 雅之:
+  ”Multi-node parallelization of the astrophysical radiative transfer code ARGOT on a GPU/FPGA combined accelerated cluster,”
+  IPSJ SIG Technical Report, 185th HPC Meeting, Vol. 2022-HPC-185, No. 1, Jul 2022 (in Japanese)
 class:
   class: domestic
   subclass: workshop

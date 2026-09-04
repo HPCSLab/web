@@ -1,4 +1,5 @@
 title: GPUにおけるSELL形式疎行列ベクトル積の実装と性能評価
+title_en: Implementation and performance evaluation of sparse matrix-vector multiplication in the SELL format on GPUs
 authors:
   - 佐藤 駿一
   - 高橋 大介
@@ -18,6 +19,10 @@ reference: |
   佐藤 駿一, 高橋 大介:
   “GPUにおけるSELL形式疎行列ベクトル積の実装と性能評価,”
   情報処理学会第164回研究会報告 (HPC164), Vol. 2018-HPC-164, No. 3, Apr. 2018."
+reference_en: |
+  佐藤 駿一, 高橋 大介:
+  “Implementation and performance evaluation of sparse matrix-vector multiplication in the SELL format on GPUs,”
+  IPSJ SIG Technical Report, 164th HPC Meeting (HPC164), Vol. 2018-HPC-164, No. 3, Apr. 2018. (in Japanese)
 class:
   class: domestic
   subclass: workshop

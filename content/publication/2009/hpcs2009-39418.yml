@@ -1,4 +1,5 @@
 title: 非対称な形状に適応する高バンド幅multi-link Ethernet 情報処理学会研究報告
+title_en: High-bandwidth multi-link Ethernet adaptive to asymmetric configurations, IPSJ SIG Technical Report
 booktitle: 2009-OS-112(17)
 year: 2009
 authors:
@@ -13,6 +14,7 @@ bibtex: |-
 reference:
   米元大我、三浦信一、塙敏博、朴泰祐、佐藤三久：非対称な形状に適応する高バンド幅multi-link Ethernet
   情報処理学会研究報告，2009-OS-112(17)，pp. 1-9, 2009
+reference_en: "米元大我、三浦信一、塙敏博、朴泰祐、佐藤三久: High-bandwidth multi-link Ethernet adaptive to asymmetric configurations, IPSJ SIG Technical Report, 2009-OS-112(17), pp. 1-9, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: workshop

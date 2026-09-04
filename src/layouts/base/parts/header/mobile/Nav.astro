@@ -2,22 +2,34 @@
 import FullscreenNavIndexAcordion from "./NavIndexAcordion.astro";
 import FullscreenNavIndexLink from "./NavIndexLink.astro";
 import type { IndexPage } from "../sitemap";
-import { bachelorPage } from "../sitemap";
+import { getBachelorPage } from "../sitemap";
 import { bachelorPageEnable } from "src/site.config";
+import LanguageSwitcher from "../LanguageSwitcher.astro";
+import type { Lang } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
 
 interface Props {
-  id?: string;
+  id?: string | undefined;
   sitemap: IndexPage[];
+  lang: Lang;
 }
+
+const { id, sitemap, lang } = Astro.props;
+const bachelorPage = getBachelorPage(lang);
+const t = useTranslations(lang);
 ---
 
-<nav id={Astro.props.id}>
+<nav id={id}>
+  <div class="lang-switcher-row">
+    <LanguageSwitcher lang={lang} variant="mobile" />
+  </div>
+
   {
     bachelorPageEnable && (
       <div class="root">
         <h2>
           <a href={bachelorPage.url} class="strong-link">
-            卒研配属情報
+            {t("nav.bachelorLong")}
           </a>
         </h2>
       </div>
@@ -25,7 +37,7 @@ interface Props {
   }
 
   {
-    Astro.props.sitemap.map((index) => (
+    sitemap.map((index) => (
       <div>
         {index.hasChildren ? (
           <FullscreenNavIndexAcordion index={index} />
@@ -38,6 +50,13 @@ interface Props {
 </nav>
 
 <style>
+  .lang-switcher-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75rem 1rem;
+    border-bottom: 0.5px solid var(--color-text-weak);
+  }
+
   nav {
     height: calc(100vh - var(--header-height));
     min-height: calc(100vh - var(--header-height));

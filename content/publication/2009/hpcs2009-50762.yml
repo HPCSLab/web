@@ -1,4 +1,5 @@
 title: トラフィック量に適応する非対称マルチリンクEthernetトランキング 第21回コンピュータシステム・シンポジウム(ComSys 2009)論文集
+title_en: Asymmetric multi-link Ethernet trunking adaptive to traffic volume, Proc. 21st Computer System Symposium (ComSys 2009)
 year: 2009
 authors:
   - 米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久
@@ -11,6 +12,7 @@ bibtex: >-
 reference:
   米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久：トラフィック量に適応する非対称マルチリンクEthernetトランキング
   第21回コンピュータシステム・シンポジウム(ComSys 2009)論文集, pp. 21-30, 2009
+reference_en: "米元大我、塙敏博、三浦信一、朴泰祐、佐藤三久: Asymmetric multi-link Ethernet trunking adaptive to traffic volume, Proc. 21st Computer System Symposium (ComSys 2009), pp. 21-30, 2009 (in Japanese)"
 class:
   class: domestic
   subclass: conference

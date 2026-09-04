@@ -1,4 +1,5 @@
 title: 分散キャッシュファイルシステムの設計と実装
+title_en: Design and implementation of a distributed cache file system
 url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220228&item_no=1&page_id=13&block_id=8
 authors:
   - 笠井 大暉
@@ -19,6 +20,12 @@ reference: |
   情報処理学会第186回HPC研究報告会,
   2022-HPC-186,
   Jul 2022.
+reference_en: |
+  笠井 大暉, 建部 修見:
+  ”Design and implementation of a distributed cache file system,”
+  IPSJ SIG Technical Report, 186th HPC Meeting,
+  2022-HPC-186,
+  Jul 2022. (in Japanese)
 class:
   class: domestic
   subclass: workshop

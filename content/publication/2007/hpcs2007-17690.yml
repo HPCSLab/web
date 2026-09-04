@@ -1,5 +1,7 @@
 title: マルチパスネットワークを持つPC クラスタにおける動的経路制御システム
+title_en: A dynamic routing system for PC clusters with a multi-path network
 booktitle: 情報処理学会論文誌（コンピューティングシステム）
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2007
 authors:
   - 三浦信一
@@ -18,5 +20,6 @@ bibtex: |-
 reference: 三浦信一，岡本高幸，朴泰祐，塙敏博：マルチパスネットワークを持つPC
   クラスタにおける動的経路制御システム，情報処理学会論文誌（コンピューティングシステム），Vol.48, No. SIG18(ACS20), pp.
   56-68, (2007)
+reference_en: "三浦信一, 岡本高幸, 朴泰祐, 塙敏博: A dynamic routing system for PC clusters with a multi-path network, IPSJ Transactions on Advanced Computing Systems (ACS), Vol.48, No. SIG18(ACS20), pp. 56-68, (2007) (in Japanese)"
 class:
   class: journal

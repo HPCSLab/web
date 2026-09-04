@@ -1,5 +1,7 @@
 title: コンテナ型仮想化における NVMe-oF の性能評価
+title_en: Performance evaluation of NVMe-oF in container-based virtualization
 booktitle: 情報処理学会 第167回 HPC 研究会報告 (HPC167)
+booktitle_en: IPSJ SIG Technical Report, 167th HPC Meeting (HPC167)
 year: 2018
 authors:
   - 畑中 智之
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "畑中 智之, 建部 修見: “コンテナ型仮想化における NVMe-oF の性能評価”, 情報処理学会 第167回 HPC 研究会報告
   (HPC167), Vol. 2018-HPC-167, No. 13, Dec. 2018."
+reference_en: "畑中 智之, 建部 修見: “Performance evaluation of NVMe-oF in container-based virtualization”, IPSJ SIG Technical Report, 167th HPC Meeting (HPC167), Vol. 2018-HPC-167, No. 13, Dec. 2018. (in Japanese)"
 class:
   class: domestic
   subclass: misc

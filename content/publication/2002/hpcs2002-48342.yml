@@ -1,5 +1,7 @@
 title: SMPPCクラスタにおけるSPAM粒子シミュレーションのハイブリッド並列化
+title_en: Hybrid parallelization of SPAM particle simulation on SMPPC clusters
 booktitle: 情報処理学会論文誌ハイパフォーマンスコンピューティングシステム
+booktitle_en: IPSJ Transactions on High Performance Computing Systems
 year: 2002
 authors:
   - 吉川 茂洋
@@ -21,5 +23,10 @@ reference:
   吉川 茂洋, 朴 泰祐, 佐藤 三久, 高橋 大介, Carol G. Hoover, William G. Hoover,
   “SMPPCクラスタにおけるSPAM粒子シミュレーションのハイブリッド並列化”, 情報処理学会論文誌ハイパフォーマンスコンピューティングシステム,
   Vol.43, No. SIG 6 (HPS 5), pp.143152, 2002.
+reference_en:
+  吉川 茂洋, 朴 泰祐, 佐藤 三久, 高橋 大介, Carol G. Hoover, William G. Hoover,
+  “Hybrid parallelization of SPAM particle simulation on SMPPC clusters”, IPSJ
+  Transactions on High Performance Computing Systems, Vol.43, No. SIG 6 (HPS 5),
+  pp.143152, 2002. (in Japanese)
 class:
   class: journal

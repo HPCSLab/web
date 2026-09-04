@@ -1,4 +1,5 @@
 title: CHFSアドホック並列分散ファイルシステムのアクセス性能の評価
+title_en: Evaluation of the access performance of the CHFS ad hoc parallel distributed file system
 url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=218969&item_no=1&page_id=13&block_id=8
 authors:
   - 建部 修見
@@ -21,6 +22,13 @@ reference: |
   Vol. 2022-HPC-185,
   No. 31,
   Jul 2022.
+reference_en: |
+  建部 修見:
+  ”Evaluation of the access performance of the CHFS ad hoc parallel distributed file system,”
+  IPSJ SIG Technical Report on High Performance Computing (HPC),
+  Vol. 2022-HPC-185,
+  No. 31,
+  Jul 2022. (in Japanese)
 year: 2022
 class:
   class: domestic

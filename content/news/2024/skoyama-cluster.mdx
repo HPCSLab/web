@@ -1,9 +1,16 @@
 ---
 title: "国際会議 IEEE Cluster 2024で本研究室の学生と研究員と教員が発表します"
+title_en: "A student, a researcher and a faculty member of our laboratory will give a presentation at the international conference IEEE Cluster 2024"
 description: "IEEE Cluster 2024 にて，本研究室所属の学生と研究員と教員が共著の以下の論文が受理されました．"
+description_en: "At IEEE Cluster 2024, the following paper co-authored by a student, a researcher and a faculty member of our laboratory has been accepted."
 date: "2024-07-05"
 published: true
 ---
+
+import Lang from "@components/i18n/Lang.astro";
+
+<Lang>
+<Fragment slot="ja">
 
 国際会議 [IEEE Cluster 2024](https://clustercomp.org/2024/)において本研究所属の小山（学生）と平賀（研究員）と建部（教授）による論文が受理されました。
 IEEE Cluster 2024は、9月24日から27日にかけて、日本の神戸で開催されます。
@@ -18,3 +25,23 @@ Pegasusスーパコンピュータ64ノードを利用した性能評価では�
 本研究の成果は、メタデータサーバが分散しているアドホックファイルシステムの設計において、通常リクエストの偏りでスケールしないと思われていたシェアードナッシングアーキテクチャを導入することで、小さなRPCの性能の大幅な引き上げを実現出来ることを示したという点で重要です。
 
 Keywords: FINCHFS, Ad-Hoc File System, Persistent Memory, Parallel I/O, HPC
+
+</Fragment>
+<Fragment slot="en">
+
+A paper by Koyama (student), Hiraga (Researcher) and Tatebe (Professor) of our laboratory has been accepted at the international conference [IEEE Cluster 2024](https://clustercomp.org/2024/).
+IEEE Cluster 2024 will be held in Kobe, Japan, from September 24 to 27.
+
+> Sohei Koyama, Kohei Hiraga, Osamu Tatebe, "FINCHFS: Design of Ad-Hoc File System for I/O Heavy HPC Workloads", Proceedings of IEEE International Conference on Cluster Computing (CLUSTER), 2024 (to appear)
+
+This work focuses on recent HPC workloads that are difficult to support with parallel file systems, and designs the ad-hoc file system FINCHFS as a solution.
+Once an ad-hoc file system is redefined as playing a role complementary to a parallel file system, its requirements become metadata access performance and small-size I/O performance.
+FINCHFS meets these requirements at a high level by combining a shared-nothing architecture with number-aware hashing, a newly proposed method.
+In a performance evaluation using 64 nodes of the Pegasus supercomputer, it achieved 32.5 MIOPS on MDTest Hard write and 796.0 GiB/s on IOR Hard write, which are 42.8x and 174.2x the performance of CHFS, a state-of-the-art ad-hoc file system.
+
+The results of this work are significant in that they show that, in designing an ad-hoc file system with distributed metadata servers, introducing a shared-nothing architecture -- which had been assumed not to scale because of skew in requests -- can substantially raise the performance of small RPCs.
+
+Keywords: FINCHFS, Ad-Hoc File System, Persistent Memory, Parallel I/O, HPC
+
+</Fragment>
+</Lang>

@@ -1,5 +1,8 @@
 title: "VFRECNet: ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク"
+title_en: "VFRECNet: a multi-path network for PC clusters using
+  driver-controlled taggedVLAN"
 booktitle: 情報処理学会論文誌:コンピューティングシステム
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2006
 authors:
   - 三浦信一
@@ -19,5 +22,10 @@ bibtex: |-
 reference: "三浦信一，岡本高幸，朴泰祐，佐藤三久，高橋大介：VFRECNet:
   ドライバ制御によるtaggedVLANを用いたPCクラスタ向けマルチパスネットワーク，情報処理学会論文誌：コンピューティングシステム, Vol. 47,
   No. SIG 12(ACS 15), pp. 3545, (2006)."
+reference_en:
+  "三浦信一，岡本高幸，朴泰祐，佐藤三久，高橋大介：VFRECNet: a multi-path network for PC
+  clusters using driver-controlled taggedVLAN，IPSJ Transactions on Advanced
+  Computing Systems (ACS), Vol. 47, No. SIG 12(ACS 15), pp. 3545, (2006). (in
+  Japanese)"
 class:
   class: journal

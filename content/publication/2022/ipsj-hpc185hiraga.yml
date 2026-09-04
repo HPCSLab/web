@@ -1,4 +1,5 @@
 title: MPI-IO/CHFS:ノードローカル不揮発性メモリを活用するアドホック分散ファイルシステムのためのMPI-IOの設計
+title_en: "MPI-IO/CHFS: Design of MPI-IO for an ad hoc distributed file system utilizing node-local non-volatile memory"
 url: https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=218971&item_no=1&page_id=13&block_id=8
 authors:
   - 平賀 弘平
@@ -19,6 +20,12 @@ reference: |
   情報処理学会第185回HPC研究報告会,
   Vol. 2022-HPC-185,
   Jul 2022.
+reference_en: |
+  平賀 弘平, 建部 修見:
+  ”MPI-IO/CHFS: Design of MPI-IO for an ad hoc distributed file system utilizing node-local non-volatile memory,”
+  IPSJ SIG Technical Report, 185th HPC Meeting,
+  Vol. 2022-HPC-185,
+  Jul 2022. (in Japanese)
 class:
   class: domestic
   subclass: conference

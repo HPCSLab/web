@@ -2,11 +2,14 @@
 cover:
   src: ./cover/arcteam_group_photo.jpg
   alt: Archチームの集合写真
+  alt_en: Group photo of the Architecture team
 icon: "material-symbols:architecture-rounded"
 name: Architecture
 color: hsl(60, 77%, 29%)
 description: |
   ネットワークやアクセラレータ，特にFPGAやGPUなどの演算加速装置を用いた並列処理アーキテクチャとネットワークに関する研究を行っています
+description_en: |
+  We conduct research on networks and accelerators, in particular on parallel processing architectures and networks that use accelerators such as FPGAs and GPUs.
 bachelorInfo:
   capacities:
     - faculties:
@@ -71,6 +74,7 @@ import aocl from "@asset/team/arch/aocl.png";
 import astroFpga from "@asset/team/arch/astro-fpga.png";
 import InlineLink from "@components/display/inline-link.astro";
 import YoutubeContainer from "@components/layout/YoutubeContainer.astro";
+import Lang from "@components/i18n/Lang.astro";
 
 export const components = {
   p: Typography,
@@ -79,6 +83,9 @@ export const components = {
   h2,
   a: InlineLink,
 };
+
+<Lang>
+<Fragment slot="ja">
 
 ## 研究内容
 
@@ -202,3 +209,132 @@ GPU/FPGA等の演算加速装置を高性能計算で活用することに関す
 ## 他チームとの協力
 
 FPGAチームと協力しFPGAの基礎評価や並列アプリケーションの実装などを行っています．
+
+</Fragment>
+<Fragment slot="en">
+
+## Research
+
+The Architecture team studies methods for making more effective use of accelerators such as GPUs and FPGAs in massively parallel processing, networks for ultra-high-performance parallel processing, and high-performance parallel compilers that exploit them.
+We also believe that quantum computers, which have attracted much attention in recent years, may in the future become accelerators for particular classes of computation, and we are therefore studying development and execution environments for programs that use them.
+Under the collaboration agreement between the University of Tsukuba and the Global Research and Development Center for Business by Quantum-AI Technology (G-QuAT) of the National Institute of Advanced Industrial Science and Technology (AIST), research using G-QuAT's state-of-the-art quantum computers is also possible.
+We further work on applying accelerators such as GPUs and FPGAs to high performance computing, and we welcome anyone interested in accelerating scientific computing applications or in the environments used to develop them.
+Research on advanced development methodologies and development environments (compilers and runtimes) is also under way.
+Our current main research topics are listed below. Tsuji and Fujita jointly supervise students as appropriate; this is a joint call by Professor Tsuji and Assistant Professor Fujita, with capacity for four students.
+
+- Software for coupling the supercomputers and the quantum computers operated by the University of Tsukuba
+- Optimisation of quantum computer simulators on supercomputers
+- Workflows for using a variety of supercomputers and quantum computers together
+- Research on combining computation offloading on FPGAs with high-speed communication
+- Research on optimising real applications using GPUs
+- Research on application development methodologies that support multiple GPU vendors
+- Research on parallel programming languages for GPU-FPGA clusters
+
+Below we introduce the research topics our students are working on.
+
+## Implementing hardware that serialises multiple compressed streams
+
+In recent years the ratio of computing speed to the memory bandwidth and communication bandwidth available in a computer has grown ever larger.
+As a result, many scientific computations cannot be supplied with data fast enough, and memory access and data communication frequently become the
+performance bottleneck. One way of addressing this is to raise the effective bandwidth by compressing the data.  
+In this research we use an FPGA (Field Programmable Gate Array) to implement hardware that sends each compressed data stream onto the communication path at a rate that accounts for its size before compression, thereby removing the imbalance in the amount of data delivered to each destination.
+This reduces the time spent waiting for data to arrive (stalls) in computations that depend on several data streams at once.  
+This work is carried out as part of a joint research project with RIKEN on adaptive compression hardware.
+
+## Professor Taisuke Boku (scheduled to retire at the end of FY2025)
+
+- Research on parallel processing architectures and networks that include **accelerators** such as **GPUs**
+- Research on **parallel processing languages** and **compilers** for using such systems efficiently
+- Research on improving the performance of **massively parallel applications** through joint work with developers of real applications
+
+We study methods for making more effective use of accelerators such as GPUs and many-core processors in massively parallel processing, networks for ultra-high-performance parallel processing, and high-performance parallel compilers that exploit them. In the concept we have proposed, TCA
+(Tightly Coupled Accelerators),
+accelerators are connected to each other more quickly than conventional technology allows,
+and we develop the base technologies for efficient parallel processing on top of it.
+We also pursue practical large-scale applications together with researchers at the Center for Computational Sciences, University of Tsukuba,
+and, in joint work with Professor Mitsuhisa Sato of our cooperative graduate school programme,
+we collaborate with the next-generation massively parallel computer (post-K) project under way at RIKEN,
+advancing research on network simulation and on our own parallel processing languages and compilers.
+
+<ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~taisuke/">
+  Personal page
+</ReadMoreLink>
+
+## Professor Tsuji Miwako
+
+- Research on **middleware for cooperative computation** between quantum computers and supercomputers
+- Research on **programming environments for cooperative computation** between quantum computers and supercomputers
+
+A quantum computer operates on principles drawn from quantum mechanics that differ from those of conventional computers, and it may be able to solve problems conventional computers are poor at. A supercomputer is the infrastructure that drives simulation, the third pillar of science. In order to explore new computational possibilities, we research and develop, from many angles, the software needed to use the two together.
+
+## Assistant Professor Norihisa Fujita
+
+- Research on accelerators such as **GPUs** and **FPGAs**, and on accelerating applications
+- Research on **high-speed networks** in high performance computing
+- Research on **programming environments** for exploiting the above
+
+We research the use of accelerators such as GPUs and FPGAs in high performance computing. Beyond accelerating scientific computing applications with accelerators, we also work on the high-performance networks that interconnect computers and on direct FPGA-to-FPGA communication. In addition, we carry out research on system software, such as the programming environments needed to exploit these building blocks.
+
+## International activities
+
+Professor Boku is active worldwide, serving as chair and program chair of the following international conferences.
+
+- Steering Committee Chair: HPC Asia
+- Steering Committee: IEEE Cluster
+- Steering Committee: ICPP
+- International Advisory Committee: HANAMI Europe-Japan Collaboration
+- Chair: 2023 ACM Gordon Bell Prize Committee
+- Committee Member (2021-2024): ACM Gordon Bell Prize Committee
+- General Co-Chair: IEEE Cluster 2025, Edinburgh
+- General Vice Co-Chair: IEEE Cluster 2024, Kobe
+- General Co-Chair: IEEE Cluster 2020, virtual
+- General Chair: ICPP2019, Kyoto
+
+Professor Tsuji also takes on important roles such as general vice chair at several international conferences, and serves every year on the program committees of many of the major high performance computing conferences.
+
+- IEEE International Conference on Cluster Computing (CLUSTER2022), General Vice Chair
+- IEEE International Conference on Cluster Computing (CLUSTER2024), General Deupty Chair
+- The International Conference on High Performance Computing in Asia-Pacific Region (HPCAsia2022), General Vice Chair
+- The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC25, 24, 23, 22, etc), Technical Program Committee member
+- IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing Program Committee member (CCGRID25, 24, 23, 22, etc)
+- ISC High Performance (ISC25, 24, 23, 22, etc)
+- IEEE International Parallel and Distributed Processing Symposium (IPDPS25, 22)
+- International Conference on Parallel Processing (ICPP25, 24, 23, 22, etc)
+
+Assistant Professor Fujita has also served on the program committees of several international conferences.
+
+- Special Session Chair, Performance Optimization and Auto-Tuning of Software on Multicore/Manycore Systems 2024
+- Member, ISC 2024 Workshop Committee
+- Publicity Chair, HPC Asia 2024 Organizing Committee
+
+<Box mode="v" p="1rem">
+  <VStack template="1fr 1fr 1fr">
+
+    <YoutubeContainer>
+    <Youtube
+      src="https://www.youtube.com/embed/zT1BKPU8VVk"
+      title="Developing Faster Algorithms with OpenACC and XcalableACC"
+    />
+    </YoutubeContainer>
+    <YoutubeContainer>
+    <Youtube
+      src="https://www.youtube.com/embed/RgADPWRNBgM"
+      title="Oakforest-PACS: Overview of the New JCAHPC Computing Facility"
+    />
+    </YoutubeContainer>
+    <YoutubeContainer>
+    <Youtube
+      src="https://www.youtube.com/embed/BDPsa7AP7NA"
+      title="Interview with HPC in Asia Chair Prof. Dr. Taisuke Boku"
+    />
+    </YoutubeContainer>
+
+  </VStack>
+</Box>
+
+## Collaboration with other teams
+
+We work with the FPGA team on basic evaluation of FPGAs and on implementing parallel applications.
+
+</Fragment>
+</Lang>

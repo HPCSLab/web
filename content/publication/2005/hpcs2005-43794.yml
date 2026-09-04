@@ -1,5 +1,8 @@
 title: MPIを通信レイヤに用いるソフトウェア分散共有メモリシステム
+title_en: A software distributed shared memory system using MPI as its
+  communication layer
 booktitle: ハイパフォーマンスコンピューティングシステム (HPCS2005)
+booktitle_en: Symposium on High Performance Computing and Computational Science (HPCS2005)
 year: 2005
 authors:
   - 小島好紀
@@ -15,6 +18,10 @@ bibtex: |-
 reference:
   小島好紀，佐藤三久，朴 泰祐，高橋大介，”MPIを通信レイヤに用いるソフトウェア分散共有メモリシステム”，2005年
   ハイパフォーマンスコンピューティングシステム (HPCS2005), 2005.
+reference_en:
+  小島好紀，佐藤三久，朴 泰祐，高橋大介，”A software distributed shared memory system
+  using MPI as its communication layer”，Symposium on High Performance Computing
+  and Computational Science (HPCS2005), 2005. (in Japanese)
 class:
   class: domestic
   subclass: conference

@@ -1,5 +1,7 @@
 title: 大規模機械学習訓練におけるI/O性能の高速化
+title_en: Acceleration of I/O performance in large-scale machine learning training
 booktitle: 情報処理学会 第170回 HPC 研究会報告 (HPC170)
+booktitle_en: IPSJ SIG Technical Report, 170th HPC Meeting (HPC170)
 year: 2019
 authors:
   - 芹沢 和洋
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "芹沢 和洋, 建部 修見: “大規模機械学習訓練におけるI/O性能の高速化”, 情報処理学会 第170回 HPC 研究会報告
   (HPC170), Vol. 2019-HPC-170, No. 9, Jul. 2019."
+reference_en: "芹沢 和洋, 建部 修見: “Acceleration of I/O performance in large-scale machine learning training”, IPSJ SIG Technical Report, 170th HPC Meeting (HPC170), Vol. 2019-HPC-170, No. 9, Jul. 2019. (in Japanese)"
 class:
   class: domestic
   subclass: misc

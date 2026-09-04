@@ -4,11 +4,15 @@ import type { Member } from "@content";
 import { translateFacultyGrade, translateResearcherGrade } from "@content";
 import { Icon } from "astro-icon/components";
 import { getEntry } from "astro:content";
+import { langFromUrl } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
 
 interface Props {
   faculty: Member;
 }
 
+const lang = langFromUrl(Astro.url);
+const t = useTranslations(lang);
 const props = Astro.props.faculty;
 const team = await getEntry("team", props.team.id);
 if (!team) {
@@ -40,10 +44,10 @@ if (!team) {
   <div class="right">
     <h3 class="name-container">
       <div class="name">
-        {props.name ? props.name : props.eng_name}
+        {lang === "en" || !props.name ? props.eng_name : props.name}
       </div>
       <div class="eng-name">
-        {props.eng_name}
+        {lang === "en" ? props.name : props.eng_name}
       </div>
     </h3>
     {
@@ -51,18 +55,20 @@ if (!team) {
         switch (props.occupation) {
           case "Faculty":
             return (
-              <div class="occupation">{translateFacultyGrade(props.grade)}</div>
+              <div class="occupation">
+                {translateFacultyGrade(props.grade, lang)}
+              </div>
             );
           case "Researcher":
             return (
               <div class="occupation">
-                {translateResearcherGrade(props.grade)}
+                {translateResearcherGrade(props.grade, lang)}
               </div>
             );
           case "Student":
             return <div class="occupation">{props.grade}</div>;
           case "Research Student":
-            return <div class="occupation">研究生</div>;
+            return <div class="occupation">{t("role.researchStudent")}</div>;
         }
       })()
     }

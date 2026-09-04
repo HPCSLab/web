@@ -1,5 +1,7 @@
 title: 並列ログ先行書き込み手法P-WAL
+title_en: Parallel write-ahead logging method P-WAL
 booktitle: 情報処理学会論文誌データベース (TOD)
+booktitle_en: IPSJ Transactions on Databases (TOD)
 year: 2017
 authors:
   - 神谷 孝明
@@ -13,6 +15,7 @@ bibtex: |-
     year    = "2017"
   }
 reference: "神谷 孝明, 川島 英之, 建部 修見: “並列ログ先行書き込み手法P-WAL”, 情報処理学会論文誌データベース (TOD), 2017."
+reference_en: "神谷 孝明, 川島 英之, 建部 修見: “Parallel write-ahead logging method P-WAL”, IPSJ Transactions on Databases (TOD), 2017. (in Japanese)"
 class:
   class: domestic
   subclass: misc

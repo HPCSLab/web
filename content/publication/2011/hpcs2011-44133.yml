@@ -1,5 +1,7 @@
 title: アクセスパターンと回線遅延を考慮した遠隔ファイルアクセスの最適化
+title_en: Optimization of remote file access considering access patterns and network latency
 booktitle: 先進的計算基盤システムシンポジウム(SACSIS2011)論文集, 2011年5月
+booktitle_en: Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS2011), May 2011
 year: 2011
 authors:
   - 大辻弘貴
@@ -11,6 +13,7 @@ bibtex: |-
     year = {2011},
   }
 reference: 大辻弘貴，建部修見，”アクセスパターンと回線遅延を考慮した遠隔ファイルアクセスの最適化”，先進的計算基盤システムシンポジウム(SACSIS2011)論文集，2011年5月
+reference_en: 大辻弘貴, 建部修見, "Optimization of remote file access considering access patterns and network latency", Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS2011), May 2011. (in Japanese)
 class:
   class: domestic
   subclass: conference

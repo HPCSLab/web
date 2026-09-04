@@ -1,5 +1,7 @@
 title: スーパーコンピュータにおける高生産・高性能ソフトウェアについて
+title_en: On high-productivity and high-performance software for supercomputers
 booktitle: 情報通信技術プロジェクトによる学術フロンティア講演会, 2011年12月, 関西大学（大阪）
+booktitle_en: Academic Frontier Lecture by the Information and Communication Technology Project, December 2011, Kansai University (Osaka)
 year: 2011
 authors:
   - 中尾昌広.
@@ -10,6 +12,7 @@ bibtex: |-
     year = {2011},
   }
 reference: 中尾昌広．”スーパーコンピュータにおける高生産・高性能ソフトウェアについて”，情報通信技術プロジェクトによる学術フロンティア講演会，2011年12月，関西大学（大阪）
+reference_en: 中尾昌広. "On high-productivity and high-performance software for supercomputers", Academic Frontier Lecture by the Information and Communication Technology Project, December 2011, Kansai University (Osaka). (in Japanese)
 class:
   class: domestic
   subclass: misc

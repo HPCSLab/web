@@ -1,5 +1,7 @@
 title: GfarmファイルシステムにおけるRDMAアクセスの設計
+title_en: Design of RDMA access in the Gfarm file system
 booktitle: 情報処理学会第158回HPC研究会報告 (HPC158)
+booktitle_en: IPSJ SIG Technical Report, 158th HPC Meeting (HPC158)
 year: 2017
 authors:
   - 建部 修見
@@ -19,6 +21,7 @@ bibtex: |-
 reference:
   "建部 修見, 佐々木 慎, 高橋 一志, 大山 恵弘: “GfarmファイルシステムにおけるRDMAアクセスの設計”,
   情報処理学会第158回HPC研究会報告 (HPC158), Vol. 2017-HPC-158, No. 12, Mar. 2017."
+reference_en: "建部 修見, 佐々木 慎, 高橋 一志, 大山 恵弘: “Design of RDMA access in the Gfarm file system”, IPSJ SIG Technical Report, 158th HPC Meeting (HPC158), Vol. 2017-HPC-158, No. 12, Mar. 2017. (in Japanese)"
 class:
   class: domestic
   subclass: misc

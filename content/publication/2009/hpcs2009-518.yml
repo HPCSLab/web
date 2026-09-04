@@ -1,4 +1,5 @@
 title: マルチコア超並列クラスタにおける Volumetric 並列三次元FFTの実現と評価 情報処理学会研究報告
+title_en: Implementation and evaluation of Volumetric parallel three-dimensional FFT on massively parallel multi-core clusters, IPSJ SIG Technical Report
 booktitle: 2009-ARC-182(4) 2009-HPC-119(4)
 year: 2009
 authors:
@@ -13,6 +14,7 @@ bibtex: |-
 reference:
   高橋大介：マルチコア超並列クラスタにおける Volumetric 並列三次元FFTの実現と評価
   情報処理学会研究報告，2009-ARC-182(4) 2009-HPC-119(4)，pp.19-24，2009.
+reference_en: "高橋大介: Implementation and evaluation of Volumetric parallel three-dimensional FFT on massively parallel multi-core clusters, IPSJ SIG Technical Report, 2009-ARC-182(4) 2009-HPC-119(4), pp.19-24, 2009. (in Japanese)"
 class:
   class: domestic
   subclass: workshop

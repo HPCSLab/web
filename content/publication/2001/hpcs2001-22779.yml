@@ -1,5 +1,7 @@
 title: SCIMAにおける性能最適化手法の検討
+title_en: A study of performance optimization techniques for SCIMA
 booktitle: 情報処理学会論文誌ハイパフォーマンスコンピューティングシステム
+booktitle_en: IPSJ Transactions on High Performance Computing Systems
 year: 2001
 authors:
   - 近藤 正章
@@ -16,5 +18,9 @@ bibtex: |-
   }
 reference: 近藤 正章, 中村 宏, 朴 泰祐, “SCIMAにおける性能最適化手法の検討”,
   情報処理学会論文誌ハイパフォーマンスコンピューティングシステム, Vol.42, No. SIG 12 (HPS 4), pp.37-48, 2001.
+reference_en:
+  近藤 正章, 中村 宏, 朴 泰祐, “A study of performance optimization techniques
+  for SCIMA”, IPSJ Transactions on High Performance Computing Systems, Vol.42,
+  No. SIG 12 (HPS 4), pp.37-48, 2001. (in Japanese)
 class:
   class: journal

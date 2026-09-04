@@ -1,5 +1,7 @@
 title: GPUによる3倍精度浮動小数点演算の検討
+title_en: A study of triple-precision floating-point arithmetic on GPUs
 booktitle: 情報処理学会研究報告, 2011-ARC-197, 2011-HPC-132
+booktitle_en: IPSJ SIG Technical Report, 2011-ARC-197, 2011-HPC-132
 year: 2011
 authors:
   - 椋木大地
@@ -14,6 +16,7 @@ bibtex: |-
 reference:
   椋木大地，高橋大介，”GPUによる3倍精度浮動小数点演算の検討”, 情報処理学会研究報告，2011-ARC-197,
   2011-HPC-132，No. 23，2011
+reference_en: 椋木大地, 高橋大介, "A study of triple-precision floating-point arithmetic on GPUs", IPSJ SIG Technical Report, 2011-ARC-197, 2011-HPC-132, No. 23, 2011. (in Japanese)
 class:
   class: domestic
   subclass: workshop

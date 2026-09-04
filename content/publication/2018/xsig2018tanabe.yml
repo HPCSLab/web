@@ -1,4 +1,5 @@
 title: 並行性制御法 Cicada と並列ログ先行書き込み法 P-WAL の結合
+title_en: Combining the concurrency control method Cicada and the parallel write-ahead logging method P-WAL
 booktitle: cross-disciplinary workshop on computing Systems, Infrastructures,
   and programming (xSIG 2018)
 year: 2018
@@ -26,6 +27,7 @@ reference:
   "田辺 敬之, 川島 英之, 建部 修見: “並行性制御法 Cicada と並列ログ先行書き込み法 P-WAL の結合”,
   cross-disciplinary workshop on computing Systems, Infrastructures, and
   programming (xSIG 2018), May. 2018. (Outstanding B4 Student Award)"
+reference_en: "田辺 敬之, 川島 英之, 建部 修見: “Combining the concurrency control method Cicada and the parallel write-ahead logging method P-WAL”, cross-disciplinary workshop on computing Systems, Infrastructures, and programming (xSIG 2018), May. 2018. (Outstanding B4 Student Award) (in Japanese)"
 class:
   class: domestic
   subclass: conference

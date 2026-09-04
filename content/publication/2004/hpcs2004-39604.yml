@@ -1,5 +1,8 @@
 title: プロセッサの消費電力測定と低消費電力プロセッサによるクラスタの検討
+title_en: Power consumption measurement of processors and a study of clusters
+  built with low-power processors
 booktitle: 情報処理学会論文誌コンピューティングシステム
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2004
 authors:
   - 堀田義彦
@@ -21,5 +24,10 @@ bibtex: |-
 reference: 堀田義彦，佐藤三久，朴
   泰祐，高橋大介，中島佳宏，高橋陸史，中村宏，”プロセッサの消費電力測定と低消費電力プロセッサによるクラスタの検討”，情報処理学会論文誌コンピューティングシステム,
   Vol.46, No.SIG7(ACS 7), pp..
+reference_en:
+  堀田義彦，佐藤三久，朴 泰祐，高橋大介，中島佳宏，高橋陸史，中村宏，”Power consumption measurement
+  of processors and a study of clusters built with low-power processors”，IPSJ
+  Transactions on Advanced Computing Systems (ACS), Vol.46, No.SIG7(ACS 7), pp..
+  (in Japanese)
 class:
   class: journal

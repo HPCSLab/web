@@ -1,5 +1,7 @@
 title: 分散バーストバッファが持つI/Oの性能評価
+title_en: Performance evaluation of the I/O of a distributed burst buffer
 booktitle: 情報処理学会 第172回 HPC 研究会報告 (HPC172)
+booktitle_en: IPSJ SIG Technical Report, 172nd HPC Meeting (HPC172)
 year: 2019
 authors:
   - 澤田 一樹
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "澤田 一樹, 建部 修見: “分散バーストバッファが持つI/Oの性能評価”, 情報処理学会 第172回 HPC 研究会報告
   (HPC172), Vol. 2019-HPC-172, No. 20, Dec. 2019."
+reference_en: "澤田 一樹, 建部 修見: “Performance evaluation of the I/O of a distributed burst buffer”, IPSJ SIG Technical Report, 172nd HPC Meeting (HPC172), Vol. 2019-HPC-172, No. 20, Dec. 2019. (in Japanese)"
 class:
   class: domestic
   subclass: misc

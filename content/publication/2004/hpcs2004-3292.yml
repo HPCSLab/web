@@ -1,5 +1,9 @@
 title: ヘテロなクラスタ環境におけるStrassenの行列積アルゴリズムの並列化
+title_en: Parallelization of Strassen's matrix multiplication algorithm in
+  heterogeneous cluster environments
 booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2004) 論文集
+booktitle_en: Proceedings of the Symposium on High Performance Computing and
+  Computational Science (HPCS2004)
 year: 2004
 authors:
   - 大滝 雄介
@@ -15,6 +19,11 @@ bibtex: |-
 reference: 大滝 雄介, 高橋 大介, 朴 泰祐, 佐藤 三久,
   “ヘテロなクラスタ環境におけるStrassenの行列積アルゴリズムの並列化”，2004年 ハイパフォーマンスコンピューティングと計算科学シンポジウム
   (HPCS2004) 論文集, 2004.
+reference_en:
+  大滝 雄介, 高橋 大介, 朴 泰祐, 佐藤 三久, “Parallelization of Strassen's matrix
+  multiplication algorithm in heterogeneous cluster environments”，Proceedings of
+  the Symposium on High Performance Computing and Computational Science
+  (HPCS2004), 2004. (in Japanese)
 class:
   class: domestic
   subclass: conference

@@ -1,5 +1,7 @@
 title: 電子動力学コード ARTED による Knights Landing プロセッサの性能評価
+title_en: Performance evaluation of the Knights Landing processor using the electron dynamics code ARTED
 booktitle: 情報処理学会第157回HPC研究会報告 (HPC157)
+booktitle_en: IPSJ SIG Technical Report, 157th SIGHPC Meeting (HPC157)
 year: 2016
 authors:
   - 廣川 祐太
@@ -20,6 +22,7 @@ reference:
   "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “電子動力学コード ARTED による Knights Landing
   プロセッサの性能評価”, 情報処理学会第157回HPC研究会報告 (HPC157), Vol. 2016-HPC-157, No. 8, Dec.
   2016."
+reference_en: "廣川 祐太, 朴 泰祐, 佐藤 駿丞, 矢花 一浩: “Performance evaluation of the Knights Landing processor using the electron dynamics code ARTED”, IPSJ SIG Technical Report, 157th SIGHPC Meeting (HPC157), Vol. 2016-HPC-157, No. 8, Dec. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

@@ -1,4 +1,5 @@
 title: OpenACCによる宇宙物理シミュレーションのGPU＋FPGA協調計算の実装
+title_en: Implementation of GPU+FPGA cooperative computation for astrophysics simulation using OpenACC
 authors:
   - 綱島 隆太
   - 小林 諒平
@@ -28,6 +29,13 @@ reference: |
   Vol. 2022-HPC-183,
   No. 11,
   Mar 2022.
+reference_en: |
+  綱島 隆太, 小林 諒平, 藤田 典久, 朴 泰祐, Lee Seyong, Vetter Jeffrey S, 村井 均, 中尾 昌広, 辻 美和子, 佐藤 三久:
+  ”Implementation of GPU+FPGA cooperative computation for astrophysics simulation using OpenACC,”
+  IPSJ SIG Technical Report, 183rd HPC Meeting,
+  Vol. 2022-HPC-183,
+  No. 11,
+  Mar 2022. (in Japanese)
 class:
   class: domestic
   subclass: workshop

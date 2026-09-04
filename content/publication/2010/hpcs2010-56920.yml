@@ -1,4 +1,5 @@
 title: 分散メモリ向け並列言語XcalableMPコンパイラの実装と性能評価　先進的計算基盤システムシンポジウムSACSIS2010論文集
+title_en: Implementation and performance evaluation of a compiler for the distributed-memory parallel language XcalableMP, Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS2010)
 year: 2010
 authors:
   - 李珍泌
@@ -11,6 +12,7 @@ bibtex: |-
     year = {2010},
   }
 reference: 李珍泌，朴泰祐，佐藤三久：分散メモリ向け並列言語XcalableMPコンパイラの実装と性能評価　先進的計算基盤システムシンポジウムSACSIS2010論文集，pp.175-182，2010
+reference_en: "李珍泌, 朴泰祐, 佐藤三久: Implementation and performance evaluation of a compiler for the distributed-memory parallel language XcalableMP, Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS2010), pp.175-182, 2010. (in Japanese)"
 class:
   class: domestic
   subclass: conference

@@ -1,5 +1,7 @@
 title: RDMAの適用によるRAMPトランザクション処理の高速化
+title_en: Acceleration of RAMP transaction processing by applying RDMA
 booktitle: 情報処理学会論文誌データベース (TOD)
+booktitle_en: IPSJ Transactions on Databases (TOD)
 year: 2017
 authors:
   - 村田直郁
@@ -15,6 +17,7 @@ bibtex: |-
 reference:
   " 村田直郁, 川島 英之, 建部 修見: “RDMAの適用によるRAMPトランザクション処理の高速化”, 情報処理学会論文誌データベース
   (TOD), 2017."
+reference_en: " 村田直郁, 川島 英之, 建部 修見: “Acceleration of RAMP transaction processing by applying RDMA”, IPSJ Transactions on Databases (TOD), 2017. (in Japanese)"
 class:
   class: domestic
   subclass: misc

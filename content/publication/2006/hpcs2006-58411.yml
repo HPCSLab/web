@@ -1,5 +1,8 @@
 title: 科学技術計算用超並列クラスタPACSCSの実装と基本性能評価
+title_en: Implementation and basic performance evaluation of PACSCS, a massively
+  parallel cluster for scientific computing
 booktitle: 情報処理学会研究報告, 2006HPC107
+booktitle_en: IPSJ SIG Technical Report, 2006HPC107
 year: 2006
 authors:
   - 朴泰祐
@@ -21,6 +24,11 @@ bibtex: |-
 reference:
   朴泰祐，佐藤三久，高橋大介，宇川彰，深川正一，藤田不二男，清水正明，住元真司，久門耕一：科学技術計算用超並列クラスタPACSCSの実装と基本性能評価，情報処理学会研究報告，2006HPC107，pp.
   209214, (2006).
+reference_en:
+  朴泰祐，佐藤三久，高橋大介，宇川彰，深川正一，藤田不二男，清水正明，住元真司，久門耕一：Implementation and
+  basic performance evaluation of PACSCS, a massively parallel cluster for
+  scientific computing，IPSJ SIG Technical Report，2006HPC107，pp. 209214, (2006).
+  (in Japanese)
 class:
   class: domestic
   subclass: workshop

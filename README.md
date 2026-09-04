@@ -69,17 +69,19 @@ Web係が通常編集対象とするのは以下のファイルです。
 
 ### `src/content/member/*.yml`
 
-| プロパティ   | 意味                                                  |
-| :----------- | :---------------------------------------------------- |
-| `name`       | 日本語表記での名前。無くても良い                      |
-| `eng_name`   | 英語表記での名前                                      |
-| `occupation` | `Faculty`, `Researcher`, `Student`, `ResearchStudent` |
-| `grade`      | `Faculty`, `Student`の場合は必須。                    |
-| `team`       | `algo`, `arch`, `perf`, `pa`, `fpga`, `ss`            |
-| `icon`       | yamlファイルからの相対パス                            |
-| `username`   | LDAPに登録されるユーザーネーム                        |
-| `keywords`   | 必須ではない。キーワードのリスト                      |
-| `message`    | チーム紹介ページに記載されるメッセージ                |
+| プロパティ    | 意味                                                  |
+| :------------ | :---------------------------------------------------- |
+| `name`        | 日本語表記での名前。無くても良い                      |
+| `eng_name`    | 英語表記での名前                                      |
+| `occupation`  | `Faculty`, `Researcher`, `Student`, `ResearchStudent` |
+| `grade`       | `Faculty`, `Student`の場合は必須。                    |
+| `team`        | `algo`, `arch`, `perf`, `pa`, `fpga`, `ss`            |
+| `icon`        | yamlファイルからの相対パス                            |
+| `username`    | LDAPに登録されるユーザーネーム                        |
+| `keywords`    | 必須ではない。キーワードのリスト                      |
+| `keywords_en` | 必須ではない。`keywords`の英語版                      |
+| `message`     | チーム紹介ページに記載されるメッセージ                |
+| `message_en`  | 必須ではない。`message`の英語版                       |
 
 `grade`の詳細は以下。必要に応じて追加するのも可能ですが、
 どう修正すればいいかわからない場合はadminないしweb係に相談してください。
@@ -105,7 +107,9 @@ Web係が通常編集対象とするのは以下のファイルです。
 | frontmatterのプロパティ | 意味                                            |
 | :---------------------- | :---------------------------------------------- |
 | `title`                 | タイトル                                        |
+| `title_en`              | 必須ではない。`title`の英語版                   |
 | `description`           | 内容の簡潔な説明                                |
+| `description_en`        | 必須ではない。`description`の英語版             |
 | `date`                  | `yyyy-mm-dd`形式での発表日                      |
 | `published`             | 公開するかしないか。`false`にすると公開されない |
 
@@ -115,15 +119,18 @@ Markdownの拡張であるMDXで記述。`<h1>`は自動で挿入されるので
 
 ### `src/publication/:year/*.yml`
 
-| プロパティ  | 説明                                                               |
-| :---------- | :----------------------------------------------------------------- |
-| `title`     | タイトル                                                           |
-| `booktitle` | 学会名、ジャーナル名など                                           |
-| `year`      | 発表年                                                             |
-| `authors`   | 名前のリスト。正規化はされないので英語名でも日本語名でも大丈夫です |
-| `bibtex`    | bibtexのエントリ                                                   |
-| `reference` | plaintextでのリファレンス                                          |
-| `class`     | 詳細は下記                                                         |
+| プロパティ     | 説明                                                               |
+| :------------- | :----------------------------------------------------------------- |
+| `title`        | タイトル                                                           |
+| `title_en`     | 必須ではない。和文タイトルの英訳                                   |
+| `booktitle`    | 学会名、ジャーナル名など                                           |
+| `booktitle_en` | 必須ではない。`booktitle`の英訳                                    |
+| `year`         | 発表年                                                             |
+| `authors`      | 名前のリスト。正規化はされないので英語名でも日本語名でも大丈夫です |
+| `bibtex`       | bibtexのエントリ                                                   |
+| `reference`    | plaintextでのリファレンス                                          |
+| `reference_en` | 必須ではない。`reference`の英訳。著者名は日本語のまま残す          |
+| `class`        | 詳細は下記                                                         |
 
 #### `class`
 
@@ -148,11 +155,13 @@ Markdownの拡張であるMDXで記述。`<h1>`は自動で挿入されるので
 | :---------------------- | :--------------------------------------------- |
 | `cover.src`             | カバー画像への相対パス                         |
 | `cover.alt`             | カバー画像の代替テキスト                       |
+| `cover.alt_en`          | 必須ではない。`cover.alt`の英語版              |
 | `name`                  | チーム名                                       |
 | `icon`                  | チームアイコン。`iconify-json`のものが使えます |
 | `color`                 | チーム色                                       |
 
 | `description` | チームの簡潔な説明。卒研配属ページなどに表示される |
+| `description_en` | 必須ではない。`description`の英語版 |
 | `bachelorInfo.capacities` | 受入人数。受け入れ教員と人数を記述する。既存のファイルを参考にすること |
 | `bachelorInfo.informationSessions` | 説明会の詳細の配列。詳細は下記別表に |
 
@@ -170,6 +179,151 @@ Markdownの拡張であるMDXで記述。`<h1>`は自動で挿入されるので
 記述はMDXで行う。`@component/...`をimport出来るのでそれらを利用して記述する。
 `recentWorks`、カバー画像、メンバー紹介などは自動で追加されるため、
 教員ごとの紹介とその他研究室紹介のみを記述する。
+
+## 多言語対応（日本語 / 英語）
+
+全てのページに英語版があります。日本語版は今までどおり `/`、英語版は `/en/` 以下に出力されます。
+
+**日本語と英語で別々のファイルを編集する必要はありません。** 1つのファイルに日英を並べて書きます。
+
+### 記事やページの本文を日英で書く
+
+`<Lang>` を使い、`ja` と `en` のスロットに両方の言語を並べて書きます。
+`en` スロットを省略すると、英語版のページでも日本語がそのまま表示されます（未翻訳のフォールバック）。
+
+MDX（ニュース記事、チーム紹介ページ）での書き方:
+
+```mdx
+---
+title: "日本語のタイトル"
+title_en: "English title"
+description: "日本語の説明"
+description_en: "English description"
+date: "2026-01-30"
+published: true
+---
+
+import Lang from "@components/i18n/Lang.astro";
+
+<Lang>
+<Fragment slot="ja">
+
+日本語の本文をここに書く。
+
+> **引用や強調もそのまま使える**
+
+</Fragment>
+<Fragment slot="en">
+
+Write the English body here.
+
+> **Quotes and emphasis work the same way**
+
+</Fragment>
+</Lang>
+```
+
+**重要:** `<Fragment slot="...">` の直後と `</Fragment>` の直前には**必ず空行を入れてください**。
+空行がないとMDXが中身をMarkdownとして解釈せず、ビルドが壊れます。
+
+日本語版にしか意味のない内容（国内向けの内線番号表記など）は `fallback={false}` を付けます。
+こうすると英語版では何も出力されません。
+
+```astro
+<Lang fallback={false}>
+  <Fragment slot="ja">
+    <div>電話</div>
+    <div>029-853-6912 (内線:6912)</div>
+  </Fragment>
+</Lang>
+```
+
+`.astro` のページでも同じように書けます。
+
+```astro
+---
+import Lang from "@components/i18n/Lang.astro";
+---
+
+<Lang>
+  <Fragment slot="ja">
+    <Typography>日本語の本文</Typography>
+  </Fragment>
+  <Fragment slot="en">
+    <Typography>English text</Typography>
+  </Fragment>
+</Lang>
+```
+
+### コンテンツの英語版フィールド
+
+yamlやfrontmatterの項目は、`_en` を付けたフィールドを足すと英語版で使われます。
+省略した場合は日本語がそのまま表示されます。
+
+| 対象                              | 追加できるフィールド                                        |
+| :-------------------------------- | :---------------------------------------------------------- |
+| `content/news/:year/*.mdx`        | `title_en`, `description_en`                                |
+| `content/team/*.mdx`              | `description_en`, `cover.alt_en`                            |
+| `content/member/*.yml`            | `message_en`, `keywords_en`（名前は既存の`eng_name`を使用） |
+| `content/publication/:year/*.yml` | `title_en`, `booktitle_en`, `reference_en`                  |
+
+**人名は翻訳しません。** `content/publication` の `authors` と `content/alumni` の `name`、
+`reference_en` の中の著者名は日本語表記のまま残します。
+`bibtex` も引用のための記録なので手を加えません。
+`reference_en` の末尾には、和文論文を英語で引用する際の慣習に従って ` (in Japanese)` を付けます。
+
+### 見出しやボタンなどの短い文字列
+
+ページ内の短いUI文字列は `src/i18n/ui.ts` の辞書にまとめてあります。
+新しい文字列を足すときは `ja` と `en` の両方に同じキーを足してください（片方だけだと型エラーになります）。
+
+```ts
+// src/i18n/ui.ts
+const ja = {
+  "members.faculty": "教員",
+  // ...
+};
+
+const en: Record<UIKey, string> = {
+  "members.faculty": "Faculty",
+  // ...
+};
+```
+
+ページ側では次のように使います。
+
+```astro
+---
+import { langPaths, langFromParam } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
+
+export const getStaticPaths = langPaths;
+
+const lang = langFromParam(Astro.params.lang);
+const t = useTranslations(lang);
+---
+
+<h2>{t("members.faculty")}</h2>
+```
+
+### 新しいページを追加するとき
+
+ページは `src/pages/[...lang]/` 以下に置きます。ファイルは1つだけで、日英2つのURLが生成されます。
+`getStaticPaths` に言語を渡す必要があるので、次のどちらかを使ってください。
+
+- 言語でのみ分岐する普通のページ … `export const getStaticPaths = langPaths;`
+- 動的ルート … `withLangs()` で他のパラメータと組み合わせる
+
+```ts
+// 例: src/pages/[...lang]/teams/[id].astro
+export async function getStaticPaths() {
+  const teams = await getCollection("team");
+  return withLangs(teams.map((team) => ({ id: team.id })));
+}
+```
+
+ページ内のリンクは `localePath(lang, "/news")` を通してください。
+日本語なら `/news`、英語なら `/en/news` になります。直書きすると英語版から日本語版へ飛んでしまいます。
 
 ## インフラ（admin向け）
 
@@ -246,3 +400,38 @@ PHPサービスは廃止ないしコンテナ単位での分離を目標とし�
 
 全体の更新をいきなり行うのは困難であるため、
 まず第一段階として`traefik`の導入と本ページの`nginx`でのサーブだけを最初に行う。
+
+### 多言語対応
+
+英語版ページの追加にあたって、以下を要件とした。
+
+- 日本語と英語で編集対象のファイルが2つに分かれないこと
+- 既存の日本語版のURLが変わらないこと
+- テンプレートエンジン（Astro）とCIによる生成の枠組みを維持すること
+
+一般的な構成は `src/pages/en/` に実ディレクトリを作ってページを複製するものだが、
+これは1つ目の要件と真っ向から対立する。
+また、コンテンツを `content/news/ja/` と `content/news/en/` に分ける方式も広く使われているが、
+翻訳者と執筆者が同一で言語が日英2つに固定されているこの研究室の運用では、
+ファイルが分かれることによる同期ズレ（日本語だけ直して英語が古いまま、に気付けない）の方が問題になる。
+
+そこで以下の構成を採った。
+
+- **ルーティング**: `src/pages/[...lang]/` の rest パラメータで、
+  1つのページファイルから `/`（日本語）と `/en/`（英語）の両方を生成する。
+  `getStaticPaths` が `{ lang: undefined }` と `{ lang: "en" }` を返すことで、
+  デフォルト言語には接頭辞が付かず既存URLがそのまま維持される。
+- **本文**: `<Lang>` の名前付きスロットで日英を同一ファイル内に併記する。
+  スロットなのでコンポーネントを含むリッチな本文もそのまま書け、MDXの本文中でも使える。
+- **短いUI文字列**: `src/i18n/ui.ts` の辞書と `useTranslations(lang)`。
+  これはAstro公式のi18nレシピと同じ構成である。
+- **コンテンツ**: スキーマに `_en` サフィックスの任意フィールドを持たせ、未翻訳なら日本語にフォールバックする。
+
+言語コードはBCP 47（ISO 639-1）の2文字コード `en` を用いる。
+`<html lang>` と `<link rel="alternate" hreflang>` はこれに従う必要があり、
+`eng` のような3文字コード（ISO 639-2）はWebでは使われない。
+
+なお、この構成は3言語目を追加する場合には向いていない
+（1ファイルに3言語が並ぶことになり、`<Lang>` のスロットも増える）。
+その場合はロケールごとにコンテンツファイルを分ける一般的な方式への移行を検討すること。
+`Lang` と `localized()` を経由しているので、切り替え箇所は機械的に洗い出せる。

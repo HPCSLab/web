@@ -1,4 +1,6 @@
 import { glob } from "astro/loaders";
+import type { Lang } from "./i18n/lang";
+import { useTranslations } from "./i18n/ui";
 import {
   z,
   defineCollection,
@@ -10,6 +12,10 @@ const newsSchema = z.object({
   title: z.string(),
   date: z.string(),
   description: z.string(),
+  // 英語版。未指定なら日本語にフォールバックする (localized() を使う)。
+  // 記事本文は MDX 内で <Lang> を使い、日英を同じファイルに並べて書く。
+  title_en: z.string().nullish(),
+  description_en: z.string().nullish(),
 });
 
 export type News = z.infer<typeof newsSchema>;
@@ -60,6 +66,11 @@ const publicationSchema = z.object({
   reference: z.string(),
   url: z.string().nullish(),
   class: publicationClassSchema,
+  // 英語版。未指定なら日本語にフォールバックする。
+  // 著者名 (authors) と BibTeX は引用のための記録なので翻訳しない。
+  title_en: z.string().nullish(),
+  booktitle_en: z.string().nullish(),
+  reference_en: z.string().nullish(),
 });
 
 export type Publication = z.infer<typeof publicationSchema>;
@@ -73,6 +84,9 @@ const memberCommonSchema = (ctx: SchemaContext) =>
     username: z.string(),
     message: z.string().nullish(),
     keywords: z.array(z.string()).nullish(),
+    // 英語版。未指定なら日本語にフォールバックする。
+    message_en: z.string().nullish(),
+    keywords_en: z.array(z.string()).nullish(),
   });
 
 export type MemberCommon = z.infer<ReturnType<typeof memberCommonSchema>>;
@@ -86,16 +100,17 @@ const facultyGradeSchema = z.union([
 
 export type FacultyGrade = z.infer<typeof facultyGradeSchema>;
 
-export function translateFacultyGrade(grade: FacultyGrade): string {
+export function translateFacultyGrade(grade: FacultyGrade, lang: Lang): string {
+  const t = useTranslations(lang);
   switch (grade) {
     case "Assistant Professor":
-      return "助教";
+      return t("role.assistantProfessor");
     case "Associate Professor":
-      return "准教授";
+      return t("role.associateProfessor");
     case "Professor":
-      return "教授";
+      return t("role.professor");
     case "Professor (Cooperative Graduate School Program)":
-      return "連携大学院教授";
+      return t("role.cooperativeProfessor");
   }
 }
 
@@ -115,12 +130,14 @@ const researcherSchema = z.object({
 
 export function translateResearcherGrade(
   grade: z.infer<typeof researcherGradeSchema>,
+  lang: Lang,
 ): string {
+  const t = useTranslations(lang);
   switch (grade) {
     case "":
-      return "研究員";
+      return t("role.researcher");
     case "Senior":
-      return "主任研究員";
+      return t("role.seniorResearcher");
   }
 }
 
@@ -163,14 +180,14 @@ const memberSchema = (ctx: SchemaContext) =>
 
 export type Member = z.infer<ReturnType<typeof memberSchema>>;
 
-export function memberRoleName(member: Member): string {
+export function memberRoleName(member: Member, lang: Lang): string {
   switch (member.occupation) {
     case "Faculty":
-      return translateFacultyGrade(member.grade);
+      return translateFacultyGrade(member.grade, lang);
     case "Researcher":
-      return translateResearcherGrade(member.grade);
+      return translateResearcherGrade(member.grade, lang);
     case "Research Student":
-      return "研究生";
+      return useTranslations(lang)("role.researchStudent");
     case "Student":
       return member.grade;
   }
@@ -294,9 +311,12 @@ export type BachelorInfo = z.infer<typeof bachelorInfoSchema>;
 const teamSchema = (ctx: SchemaContext) => {
   return z.object({
     description: z.string(),
+    // 英語版。未指定なら日本語にフォールバックする。
+    description_en: z.string().nullish(),
     cover: z.object({
       src: ctx.image(),
       alt: z.string(),
+      alt_en: z.string().nullish(),
     }),
     name: z.string(),
     recentWorks: z.array(reference("publication")),

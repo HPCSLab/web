@@ -1,5 +1,7 @@
 title: 並列データ流に対する並列可視化
+title_en: Parallel visualization for parallel data streams
 booktitle: 並列処理シンポジウム JSPP’2001 論文集
+booktitle_en: Proceedings of the Joint Symposium on Parallel Processing (JSPP’2001)
 year: 2001
 authors:
   - 板倉 憲一
@@ -15,6 +17,10 @@ bibtex: |-
 reference:
   板倉 憲一, 朴 泰祐, 松原 正純, “並列データ流に対する並列可視化”, 並列処理シンポジウム JSPP’2001 論文集,
   pp.189-196, 2001.
+reference_en:
+  板倉 憲一, 朴 泰祐, 松原 正純, “Parallel visualization for parallel data
+  streams”, Proceedings of the Joint Symposium on Parallel Processing
+  (JSPP’2001), pp.189-196, 2001. (in Japanese)
 class:
   class: domestic
   subclass: conference

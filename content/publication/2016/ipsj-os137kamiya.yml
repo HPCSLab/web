@@ -1,5 +1,7 @@
 title: 並列WALにおける共有カウンタの競合緩和化
+title_en: Contention mitigation of shared counters in parallel WAL
 booktitle: 情報処理学会第137回OS研究会報告 (OS137)
+booktitle_en: IPSJ SIG Technical Report, 137th SIGOS Meeting (OS137)
 year: 2016
 authors:
   - 神谷 孝明
@@ -19,6 +21,7 @@ bibtex: |-
 reference:
   "神谷 孝明, 星野 喬, 川島 英之, 建部 修見: “並列WALにおける共有カウンタの競合緩和化”,
   情報処理学会第137回OS研究会報告 (OS137), Vol. 2016-OS-137, No. 7, May. 2016."
+reference_en: "神谷 孝明, 星野 喬, 川島 英之, 建部 修見: “Contention mitigation of shared counters in parallel WAL”, IPSJ SIG Technical Report, 137th SIGOS Meeting (OS137), Vol. 2016-OS-137, No. 7, May. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

@@ -7,3 +7,5 @@ icon: ./icons/watanabe.jpg
 username: watanabe
 message: |
   卒業研究ではOpenACCでの遊休GPUを利用した通信の高速化手法を研究していました。
+message_en: |
+  For my undergraduate thesis I studied a method for speeding up communication using idle GPUs with OpenACC.

@@ -1,5 +1,7 @@
 title: 省電力でディペンダブルな組込み並列システム向け計算プラットフォーム　ソフトウェアデザイン２月号
+title_en: A computing platform for low-power and dependable embedded parallel systems, Software Design, February issue
 booktitle: 技術評論社
+booktitle_en: Gijutsu-Hyoron Co., Ltd.
 year: 2010
 authors:
   - 塙敏博
@@ -11,6 +13,7 @@ bibtex: |-
     year = {2010},
   }
 reference: 塙敏博：省電力でディペンダブルな組込み並列システム向け計算プラットフォーム　ソフトウェアデザイン２月号，技術評論社, pp. 93-97, 2010
+reference_en: "塙敏博: A computing platform for low-power and dependable embedded parallel systems, Software Design, February issue, Gijutsu-Hyoron Co., Ltd., pp. 93-97, 2010. (in Japanese)"
 class:
   class: domestic
   subclass: magazine

@@ -1,5 +1,7 @@
 title: 最適化手法を自動化するXevolverフレームワーク用定義ファイルの実装
+title_en: Implementation of definition files for the Xevolver framework to automate optimization techniques
 booktitle: 情報処理学会第155回HPC研究会報告 (HPC155)
+booktitle_en: IPSJ SIG Technical Report, 155th SIGHPC Meeting (HPC155)
 year: 2016
 authors:
   - 五味 歩武
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "五味 歩武, 高橋 大介: “最適化手法を自動化するXevolverフレームワーク用定義ファイルの実装”,
   情報処理学会第155回HPC研究会報告 (HPC155), Vol. 2016-HPC-155, No. 7, Aug. 2016."
+reference_en: "五味 歩武, 高橋 大介: “Implementation of definition files for the Xevolver framework to automate optimization techniques”, IPSJ SIG Technical Report, 155th SIGHPC Meeting (HPC155), Vol. 2016-HPC-155, No. 7, Aug. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

@@ -1,4 +1,5 @@
 title: OpenACC 単一記述による GPU+ FPGA 複合デバイス処理システム
+title_en: A GPU+FPGA combined device processing system with a single OpenACC description
 year: 2023
 bibtex: |
   @article{綱島隆太2023openacc,
@@ -23,5 +24,7 @@ authors:
   - 佐藤 三久
 reference: |
   綱島隆太, 小林諒平, 藤田典久, 朴泰祐, 村井均, 中尾昌広, ... & 佐藤三久. (2023). OpenACC単一記述によるGPU+FPGA複合デバイス処理システム. 情報処理学会論文誌コンピューティングシステム (ACS), 16(2), 1-15.
+reference_en: |
+  綱島隆太, 小林諒平, 藤田典久, 朴泰祐, 村井均, 中尾昌広, ... & 佐藤三久. (2023). A GPU+FPGA combined device processing system with a single OpenACC description. IPSJ Transactions on Advanced Computing Systems (ACS), 16(2), 1-15. (in Japanese)
 class:
   class: journal

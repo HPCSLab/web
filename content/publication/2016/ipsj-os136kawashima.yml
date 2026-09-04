@@ -1,5 +1,7 @@
 title: 縮退表現に基づくシーケンスパタン集合の圧縮
+title_en: Compression of sequential pattern sets based on degenerate representation
 booktitle: 情報処理学会第136回OS研究会報告 (OS136)
+booktitle_en: IPSJ SIG Technical Report, 136th SIGOS Meeting (OS136)
 year: 2016
 authors:
   - 川島 英之
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "川島 英之, 建部 修見: “縮退表現に基づくシーケンスパタン集合の圧縮”, 情報処理学会第136回OS研究会報告 (OS136),
   Vol. 2016-OS-136, No. 13, Feb. 2016."
+reference_en: "川島 英之, 建部 修見: “Compression of sequential pattern sets based on degenerate representation”, IPSJ SIG Technical Report, 136th SIGOS Meeting (OS136), Vol. 2016-OS-136, No. 13, Feb. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

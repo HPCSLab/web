@@ -1,5 +1,7 @@
 title: 演算加速機構を持つクラスタ向けPGAS言語XcalableACCの評価
+title_en: Evaluation of the PGAS language XcalableACC for clusters with accelerators
 booktitle: 情報処理学会論文誌コンピューティングシステム (ACS)
+booktitle_en: IPSJ Transactions on Advanced Computing Systems (ACS)
 year: 2016
 authors:
   - 田渕 晶大
@@ -20,5 +22,6 @@ bibtex: |-
 reference: "田渕 晶大, 中尾 昌広, 村井 均, 朴 泰祐, 佐藤 三久:
   “演算加速機構を持つクラスタ向けPGAS言語XcalableACCの評価”, 情報処理学会論文誌コンピューティングシステム (ACS), Vol. 9,
   No. 1, pp. 17-29, 2016."
+reference_en: "田渕 晶大, 中尾 昌広, 村井 均, 朴 泰祐, 佐藤 三久: “Evaluation of the PGAS language XcalableACC for clusters with accelerators”, IPSJ Transactions on Advanced Computing Systems (ACS), Vol. 9, No. 1, pp. 17-29, 2016. (in Japanese)"
 class:
   class: journal

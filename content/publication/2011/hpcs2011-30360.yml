@@ -1,5 +1,7 @@
 title: ワークフロー実行中のデータ移動を最小化するタスク配置方式
+title_en: A task placement method that minimizes data movement during workflow execution
 booktitle: 並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011）, 情報処理学会研究報告
+booktitle_en: Summer United Workshops on Parallel, Distributed and Cooperative Processing (SWoPP Kagoshima 2011), IPSJ SIG Technical Report
 year: 2011
 authors:
   - 田中昌宏
@@ -16,6 +18,7 @@ reference:
   田中昌宏, 建部修見. 「ワークフロー実行中のデータ移動を最小化するタスク配置方式」,
   2011年並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011）, 情報処理学会研究報告,
   Vol.2011-HPC-130, No.61, 2011年7月.
+reference_en: 田中昌宏, 建部修見. "A task placement method that minimizes data movement during workflow execution", 2011 Summer United Workshops on Parallel, Distributed and Cooperative Processing (SWoPP Kagoshima 2011), IPSJ SIG Technical Report, Vol.2011-HPC-130, No.61, July 2011. (in Japanese)
 class:
   class: domestic
   subclass: workshop

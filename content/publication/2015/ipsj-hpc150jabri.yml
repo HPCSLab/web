@@ -1,6 +1,7 @@
 title: Design of concurrent B+Tree index for native KVS on Non-Volatile-Memories
   (Unrefereed Workshop Manuscript)
 booktitle: 情報処理学会第150回HPC研究会報告 (HPC150)
+booktitle_en: IPSJ SIG Technical Report, 150th SIGHPC Meeting (HPC150)
 year: 2015
 authors:
   - Mohamed Amin Jabri
@@ -18,6 +19,7 @@ bibtex: >-
 reference: "Mohamed Amin Jabri, Osamu Tatebe: “Design of concurrent B+Tree index
   for native KVS on Non-Volatile-Memories (Unrefereed Workshop Manuscript)”,
   情報処理学会第150回HPC研究会報告 (HPC150), Vol. 2015-HPC-150, No. 25, Aug. 2015."
+reference_en: "Mohamed Amin Jabri, Osamu Tatebe: “Design of concurrent B+Tree index for native KVS on Non-Volatile-Memories (Unrefereed Workshop Manuscript)”, IPSJ SIG Technical Report, 150th SIGHPC Meeting (HPC150), Vol. 2015-HPC-150, No. 25, Aug. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc

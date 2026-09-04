@@ -1,5 +1,7 @@
 title: アクセスパターンと回線遅延を考慮した遠隔ファイルアクセスの最適化
+title_en: Optimization of remote file access considering access patterns and network latency
 booktitle: 論文誌コンピューティングシステム(ACS), 情報処理学会
+booktitle_en: Transactions on Advanced Computing Systems (ACS), IPSJ
 year: 2011
 authors:
   - 大辻弘貴
@@ -15,5 +17,6 @@ bibtex: |-
 reference:
   大辻弘貴，建部修見，”アクセスパターンと回線遅延を考慮した遠隔ファイルアクセスの最適化”，論文誌コンピューティングシステム(ACS)，情報処理学会，Vol.
   4，No 4，pp.122-134，2011年10月
+reference_en: 大辻弘貴, 建部修見, "Optimization of remote file access considering access patterns and network latency", Transactions on Advanced Computing Systems (ACS), IPSJ, Vol. 4, No 4, pp.122-134, October 2011. (in Japanese)
 class:
   class: journal

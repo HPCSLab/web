@@ -1,4 +1,5 @@
 title: 大規模MapReduce実行環境向けShuffle通信のRDMAによる高速化
+title_en: RDMA-based acceleration of shuffle communication for large-scale MapReduce environments
 booktitle: The 1st. cross-disciplinary Workshop on Computing Systems,
   Infrastructures, and Programming (xSIG 2017)
 year: 2017
@@ -19,6 +20,7 @@ reference:
   "大黒 晴之, 川島 英之, 建部 修見: “大規模MapReduce実行環境向けShuffle通信のRDMAによる高速化”, The
   1st. cross-disciplinary Workshop on Computing Systems, Infrastructures, and
   Programming (xSIG 2017), Apr. 2017. (Outstanding Presentation Award)"
+reference_en: "大黒 晴之, 川島 英之, 建部 修見: “RDMA-based acceleration of shuffle communication for large-scale MapReduce environments”, The 1st. cross-disciplinary Workshop on Computing Systems, Infrastructures, and Programming (xSIG 2017), Apr. 2017. (Outstanding Presentation Award) (in Japanese)"
 class:
   class: domestic
   subclass: conference

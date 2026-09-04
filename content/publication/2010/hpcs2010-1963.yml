@@ -1,5 +1,7 @@
 title: GPU による4倍精度BLASの実装と評価
+title_en: Implementation and evaluation of quadruple precision BLAS on GPUs
 booktitle: 計算工学講演会論文集
+booktitle_en: Proceedings of the Conference on Computational Engineering and Science
 year: 2010
 authors:
   - 椋木大地
@@ -13,6 +15,7 @@ bibtex: |-
     year = {2010},
   }
 reference: 椋木大地，高橋大介，”GPU による4倍精度BLASの実装と評価”，計算工学講演会論文集，Vol. 15，No. 2，2010
+reference_en: 椋木大地, 高橋大介, "Implementation and evaluation of quadruple precision BLAS on GPUs", Proceedings of the Conference on Computational Engineering and Science, Vol. 15, No. 2, 2010. (in Japanese)
 class:
   class: domestic
   subclass: workshop

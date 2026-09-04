@@ -1,5 +1,9 @@
 title: 多様な計算環境で高性能を実現するFFTライブラリFFTSS
+title_en: FFTSS, an FFT library achieving high performance in a variety of
+  computing environments
 booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2006論文集, p. 33
+booktitle_en: Proceedings of the Symposium on High Performance Computing and
+  Computational Science (HPCS2006), p. 33
 year: 2006
 authors:
   - 額田彰
@@ -15,6 +19,11 @@ bibtex: |-
 reference:
   額田彰，高橋大介，須田礼仁，西田晃：多様な計算環境で高性能を実現するFFTライブラリFFTSS，2006年ハイパフォーマンスコンピューティングと計算科学シンポジウムHPCS2006論文集,
   p. 33, (2006).
+reference_en:
+  額田彰，高橋大介，須田礼仁，西田晃：FFTSS, an FFT library achieving high performance
+  in a variety of computing environments，Proceedings of the Symposium on High
+  Performance Computing and Computational Science (HPCS2006), p. 33, (2006). (in
+  Japanese)
 class:
   class: domestic
   subclass: poster

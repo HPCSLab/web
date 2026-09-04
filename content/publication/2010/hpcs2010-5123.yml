@@ -1,4 +1,5 @@
 title: リングトポロジーによるMPI-IO書込の高速化技法　先進的計算基盤システムシンポジウムSACSIS2010論文集
+title_en: A technique for accelerating MPI-IO writes using a ring topology, Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS2010)
 year: 2010
 authors:
   - 堀敦史
@@ -15,6 +16,7 @@ bibtex: |-
     year = {2010},
   }
 reference: 堀敦史，太田一樹，安井隆，鴨志田良和，松葉浩也，住元真司，石川裕：リングトポロジーによるMPI-IO書込の高速化技法　先進的計算基盤システムシンポジウムSACSIS2010論文集，pp.319-327，2010
+reference_en: "堀敦史, 太田一樹, 安井隆, 鴨志田良和, 松葉浩也, 住元真司, 石川裕: A technique for accelerating MPI-IO writes using a ring topology, Proceedings of the Symposium on Advanced Computing Systems and Infrastructures (SACSIS2010), pp.319-327, 2010. (in Japanese)"
 class:
   class: domestic
   subclass: conference

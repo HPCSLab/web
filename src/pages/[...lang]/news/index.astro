@@ -5,27 +5,40 @@ import Typography from "@components/display/Typography.astro";
 import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import Base from "@layouts/base/index.astro";
+import { langPaths, langFromParam, localePath, localized } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
+
+export const getStaticPaths = langPaths;
+
+const lang = langFromParam(Astro.params.lang);
+const t = useTranslations(lang);
 
 const news = (await getCollection("news")).sort(
   (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date),
 );
 ---
 
-<Base title="News" description="HPCS研究室の学会表彰などのニュース一覧">
-  <NoImgHeader>News</NoImgHeader>
+<Base title={t("news.title")} description={t("news.description")}>
+  <NoImgHeader>{t("news.title")}</NoImgHeader>
   <ResponsiveWidth>
     <ul class="container">
       {
         news.map((article) => (
           <li class="news-heading">
             <h2 class="title">
-              <ExternalLink href={`/news/${article.id}`}>
-                {article.data.title}
+              <ExternalLink href={localePath(lang, `/news/${article.id}`)}>
+                {localized(lang, article.data.title, article.data.title_en)}
               </ExternalLink>
             </h2>
             <div class="detail">
               <div class="date">{article.data.date}</div>
-              <Typography>{article.data.description}</Typography>
+              <Typography>
+                {localized(
+                  lang,
+                  article.data.description,
+                  article.data.description_en,
+                )}
+              </Typography>
             </div>
           </li>
         ))

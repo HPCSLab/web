@@ -7,9 +7,17 @@ icon: ./icons/tsuji.jpg
 username: tsuji
 keywords:
   - 量子HPC連携
+keywords_en:
+  - Quantum-HPC integration
 message: |
   量子コンピュータはこれまでの計算機とは全く異なる原理で動作するコンピュータで、
   スーパーコンピュータと連携させることで、これまでは不可能だった計算が可能になることが期待されます。
   量子コンピュータとスーパーコンピュータをつなぐためのソフトウェアや、
   連携のためのプログラミングモデルについて研究しています。世界トップクラスのスーパーコンピュータと
   最先端の量子コンピュータをつかって、ぜひいっしょに研究しましょう。
+message_en: |
+  Quantum computers work on principles completely different from those of computers so far, and by having them work together with
+  supercomputers, we expect that computations which were impossible until now will become possible.
+  I study the software for connecting quantum computers and supercomputers,
+  as well as programming models for that integration. Using world-class supercomputers and
+  cutting-edge quantum computers, let's do research together.

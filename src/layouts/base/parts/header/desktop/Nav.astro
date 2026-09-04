@@ -2,15 +2,20 @@
 import type { IndexPage } from "../sitemap";
 import Box from "@components/layout/box/box.astro";
 import TextWithIcon from "@components/atom/TextWithIcon.astro";
-import { bachelorPage } from "../sitemap";
+import { getBachelorPage } from "../sitemap";
 import { bachelorPageEnable } from "src/site.config";
+import type { Lang } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
 
 interface Props {
   pages: IndexPage[];
+  lang: Lang;
 }
 
-const { pages } = Astro.props;
+const { pages, lang } = Astro.props;
 const lastPage = pages[pages.length - 1];
+const bachelorPage = getBachelorPage(lang);
+const t = useTranslations(lang);
 ---
 
 <nav class="nav-wrapper">
@@ -75,7 +80,7 @@ const lastPage = pages[pages.length - 1];
       bachelorPageEnable && (
         <li class="nav-index strong">
           <Box p="0.5rem">
-            <a href={bachelorPage.url}>卒研配属情報</a>
+            <a href={bachelorPage.url}>{t("nav.bachelorLong")}</a>
           </Box>
         </li>
       )

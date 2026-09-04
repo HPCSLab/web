@@ -1,5 +1,7 @@
 title: EthernetマルチリンクによるPCクラスタ向け耐故障ネットワークRI2N/UDP
+title_en: RI2N/UDP, a fault-tolerant network for PC clusters using multi-link Ethernet
 booktitle: 情報処理学会研究報告, 2006ARC167 2006HPC105
+booktitle_en: IPSJ SIG Technical Report, 2006ARC167 2006HPC105
 year: 2006
 authors:
   - 岡本高幸
@@ -17,6 +19,10 @@ bibtex: |-
 reference:
   岡本高幸，三浦信一，朴泰祐，佐藤三久，高橋大介：EthernetマルチリンクによるPCクラスタ向け耐故障ネットワークRI2N/UDP，情報処理学会研究報告，2006ARC167
   2006HPC105， pp. 8590, (2006).
+reference_en:
+  岡本高幸，三浦信一，朴泰祐，佐藤三久，高橋大介：RI2N/UDP, a fault-tolerant network for PC
+  clusters using multi-link Ethernet，IPSJ SIG Technical Report，2006ARC167
+  2006HPC105， pp. 8590, (2006). (in Japanese)
 class:
   class: domestic
   subclass: workshop

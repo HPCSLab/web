@@ -1,4 +1,5 @@
 title: マルチコアプロセッサとSIMD演算によるモンテカルロ木探索を用いたオセロの実装 情報処理学会研究報告
+title_en: Implementation of Othello using Monte Carlo tree search with multi-core processors and SIMD operations, IPSJ SIG Technical Report
 booktitle: 2009GI22
 year: 2009
 authors:
@@ -16,6 +17,7 @@ bibtex: |-
 reference:
   久保田 悠司，佐藤 佳州，高橋 大介：マルチコアプロセッサとSIMD演算によるモンテカルロ木探索を用いたオセロの実装
   情報処理学会研究報告，2009GI22，No. 7，pp. 1-8, (2009)
+reference_en: "久保田 悠司, 佐藤 佳州, 高橋 大介: Implementation of Othello using Monte Carlo tree search with multi-core processors and SIMD operations, IPSJ SIG Technical Report, 2009GI22, No. 7, pp. 1-8, (2009) (in Japanese)"
 class:
   class: domestic
   subclass: workshop

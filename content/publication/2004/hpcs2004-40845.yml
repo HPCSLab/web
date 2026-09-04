@@ -1,5 +1,9 @@
 title: "CONFLEXG: OmniRPCによるグリッド環境上での分子立体配座探索"
+title_en: "CONFLEXG: molecular conformational space search on a grid environment
+  using OmniRPC"
 booktitle: ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2004) 論文集
+booktitle_en: Proceedings of the Symposium on High Performance Computing and
+  Computational Science (HPCS2004)
 year: 2004
 authors:
   - 中島佳宏
@@ -16,6 +20,11 @@ bibtex: |-
 reference:
   "中島佳宏，佐藤三久，後藤仁志，朴 泰祐，高橋大介，”CONFLEXG: OmniRPCによるグリッド環境上での分子立体配座探索”,
   2004年 ハイパフォーマンスコンピューティングと計算科学シンポジウム (HPCS2004) 論文集, 2004."
+reference_en:
+  "中島佳宏，佐藤三久，後藤仁志，朴 泰祐，高橋大介，”CONFLEXG: molecular conformational
+  space search on a grid environment using OmniRPC”, Proceedings of the
+  Symposium on High Performance Computing and Computational Science (HPCS2004),
+  2004. (in Japanese)"
 class:
   class: domestic
   subclass: conference

@@ -1,4 +1,5 @@
 title: Grid RPC における広域データ管理レイヤの利用
+title_en: Use of a wide-area data management layer in Grid RPC
 booktitle: ""
 year: 2007
 authors:
@@ -17,5 +18,6 @@ bibtex: |-
 reference: "相田祥昭, 中島佳宏, 佐藤三久, 建部修見,櫻井鉄也 : Grid RPC
   における広域データ管理レイヤの利用情報処理学会論文誌：トランザクション コンピューティングシステム, Vol. 48 No.SIG13, pp.
   127144 (2007)"
+reference_en: "相田祥昭, 中島佳宏, 佐藤三久, 建部修見, 櫻井鉄也 : Use of a wide-area data management layer in Grid RPC, IPSJ Transactions on Advanced Computing Systems (ACS), Vol. 48 No.SIG13, pp. 127144 (2007) (in Japanese)"
 class:
   class: journal

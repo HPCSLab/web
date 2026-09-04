@@ -7,3 +7,5 @@ icon: ./icons/skoyama.jpg
 username: skoyama
 message: |
   アドホックファイルシステムを開発しています。一緒にIO500上位を目指しましょう
+message_en: |
+  I am developing an ad hoc file system. Let's aim for the top of the IO500 together

@@ -1,5 +1,7 @@
 title: 高性能並列プログラミング言語処理系XcalableMP
+title_en: High-performance parallel programming language system XcalableMP
 booktitle: T2Kシンポジウム@東大
+booktitle_en: T2K Symposium @ The University of Tokyo
 year: 2010
 authors:
   - 中尾昌広
@@ -10,6 +12,7 @@ bibtex: |-
     year = {2010},
   }
 reference: 中尾昌広：高性能並列プログラミング言語処理系XcalableMP，T2Kシンポジウム@東大，2010
+reference_en: "中尾昌広: High-performance parallel programming language system XcalableMP, T2K Symposium @ The University of Tokyo, 2010. (in Japanese)"
 class:
   class: domestic
   subclass: conference

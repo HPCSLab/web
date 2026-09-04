@@ -6,3 +6,4 @@ team: algo
 icon: ./icons/shimazaki.jpg
 username: shimazaki
 message: 悪条件な特徴のある鞍点型連立一次方程式に関する研究
+message_en: Research on ill-conditioned saddle point linear systems of equations

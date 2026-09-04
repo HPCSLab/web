@@ -1,5 +1,4 @@
 ---
-import type { GetStaticPaths } from "astro";
 import { getCollection, getEntry, render } from "astro:content";
 import Base from "@layouts/base/index.astro";
 import BlurImageHeader from "@components/composite/header/BlurImageHeader.astro";
@@ -12,12 +11,16 @@ import VSpace from "@components/layout/VSpace.astro";
 import RecentWorks from "@components/pages/teams/RecentWorks.astro";
 import { viewRank } from "@content";
 import type { CollectionEntry } from "astro:content";
+import { withLangs, langFromParam, localized } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
 
-export const getStaticPaths = (async () => {
-  return (await getCollection("team")).map((team) => ({
-    params: { id: team.id },
-  }));
-}) satisfies GetStaticPaths;
+export async function getStaticPaths() {
+  const teams = await getCollection("team");
+  return withLangs(teams.map((team) => ({ id: team.id })));
+}
+
+const lang = langFromParam(Astro.params.lang);
+const t = useTranslations(lang);
 
 const team = (await getEntry(
   "team",
@@ -45,9 +48,14 @@ const students = await getCollection(
 
 <Base
   title={team.data.name}
-  description={`HPCS研究室 ${team.data.name}チームの研究内容とメンバーの紹介、最近の研究業績一覧`}
+  description={lang === "en"
+    ? `Research topics, members and recent publications of the ${team.data.name} team at the HPCS Laboratory`
+    : `HPCS研究室 ${team.data.name}チームの研究内容とメンバーの紹介、最近の研究業績一覧`}
 >
-  <BlurImageHeader imgSrc={team.data.cover.src} imgAlt={team.data.cover.alt}>
+  <BlurImageHeader
+    imgSrc={team.data.cover.src}
+    imgAlt={localized(lang, team.data.cover.alt, team.data.cover.alt_en)}
+  >
     {team.data.name} team
   </BlurImageHeader>
   <ResponsiveWidth>
@@ -56,7 +64,7 @@ const students = await getCollection(
     </div>
   </ResponsiveWidth>
   <H1Section backgroundInverted={true} fullW={true}>
-    <H2 slot="heading" backgroundInverted={true}>メンバー</H2>
+    <H2 slot="heading" backgroundInverted={true}>{t("teams.members")}</H2>
     <Grid minW="30rem">
       {
         faculties
@@ -75,7 +83,7 @@ const students = await getCollection(
   </H1Section>
 
   <H1Section>
-    <H2>近年の成果</H2>
+    <H2>{t("teams.recentWorks")}</H2>
     <RecentWorks works={team.data.recentWorks} />
   </H1Section>
 </Base>

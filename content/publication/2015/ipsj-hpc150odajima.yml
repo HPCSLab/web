@@ -1,5 +1,7 @@
 title: アクセラレータ向け並列プログラミング言語XcalableACCにおけるTCA/InfiniBandハイブリッド通信
+title_en: TCA/InfiniBand hybrid communication in XcalableACC, a parallel programming language for accelerators
 booktitle: 情報処理学会第150回HPC研究会報告 (HPC150)
+booktitle_en: IPSJ SIG Technical Report, 150th SIGHPC Meeting (HPC150)
 year: 2015
 authors:
   - 小田嶋 哲哉
@@ -23,6 +25,7 @@ reference:
   "小田嶋 哲哉, 朴 泰祐, 塙 敏博, 村井 均, 中尾 昌広, 田渕 晶大, 佐藤 三久:
   “アクセラレータ向け並列プログラミング言語XcalableACCにおけるTCA/InfiniBandハイブリッド通信”,
   情報処理学会第150回HPC研究会報告 (HPC150), Vol. 2015-HPC-150, No. 43, Aug. 2015."
+reference_en: "小田嶋 哲哉, 朴 泰祐, 塙 敏博, 村井 均, 中尾 昌広, 田渕 晶大, 佐藤 三久: “TCA/InfiniBand hybrid communication in XcalableACC, a parallel programming language for accelerators”, IPSJ SIG Technical Report, 150th SIGHPC Meeting (HPC150), Vol. 2015-HPC-150, No. 43, Aug. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc

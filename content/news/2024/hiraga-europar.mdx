@@ -1,9 +1,16 @@
 ---
 title: "国際会議 Euro-Par 2024で本研究室の研究員と教員が発表します"
+title_en: "A researcher and a faculty member of our laboratory will give a presentation at the international conference Euro-Par 2024"
 description: "Euro-Par 2024 にて，本研究室所属の研究員と教員が共著の以下の論文が受理されました．"
+description_en: "At Euro-Par 2024, the following paper co-authored by a researcher and a faculty member of our laboratory has been accepted."
 date: "2024-05-10"
 published: true
 ---
+
+import Lang from "@components/i18n/Lang.astro";
+
+<Lang>
+<Fragment slot="ja">
 
 国際会議 [Euro-Par 2024](https://2024.euro-par.org)において本研究室所属の平賀（研究員）と建部（教授）による論文が受理されました。
 Euro-Par 2024は、8月26日から30日にかけて、スペインのマドリードで開催されます。
@@ -17,3 +24,22 @@ PEANUTSは、不揮発性メモリという新しいストレージデバイス�
 本研究の成果は、これまで不可能であった大規模な単一共有ファイルの利用がデータサイエンスにおける標準的なI/Oフレームワークとなる可能性を示唆し、従来の性能制限を克服する実行可能なソリューションを提示したという点で重要です。
 
 Keywords: PEANUTS, Storage System, Persistent Memory, RDMA, One-Sided Communication, MPI-IO, Parallel I/O, HPC
+
+</Fragment>
+<Fragment slot="en">
+
+A paper by Hiraga (Researcher) and Tatebe (Professor) of our laboratory has been accepted at the international conference [Euro-Par 2024](https://2024.euro-par.org).
+Euro-Par 2024 will be held in Madrid, Spain, from August 26 to 30.
+
+> Kohei Hiraga and Osamu Tatebe, “PEANUTS: A Persistent Memory-Based Network Unilateral Transfer System for Enhanced MPI-IO Data Transfer,” in Euro-Par 2024: Parallel Processing - 30th International Conference on Parallel and Distributed Computing, Madrid, Spain, August 26-30, 2024, Proceedings, in Lecture Notes in Computer Science, Springer, 2024, to appear.
+
+This work proposes a new storage system, "PEANUTS (PErsistent memory And Network Unilateral Transfer System)", which aims to solve the performance problems of parallel I/O to a single shared file in high-performance computing.
+Although parallel I/O to a single shared file is widely used in scientific computing, existing storage systems have suffered from scalability and performance issues.
+By combining persistent memory, a new class of storage device, with one-sided RDMA communication over InfiniBand, PEANUTS draws out hardware performance close to its limit and achieves a substantial improvement of more than 2.2x over existing state-of-the-art work.
+
+The results of this work are significant in that they suggest that the use of large-scale single shared files, which had been infeasible until now, may become a standard I/O framework in data science, and in that they present a practical solution that overcomes conventional performance limitations.
+
+Keywords: PEANUTS, Storage System, Persistent Memory, RDMA, One-Sided Communication, MPI-IO, Parallel I/O, HPC
+
+</Fragment>
+</Lang>

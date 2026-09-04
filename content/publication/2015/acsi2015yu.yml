@@ -1,4 +1,5 @@
 title: 分散ファイルシステムGfarmにおけるMTCアプリケーションの性能予測モデルの構築
+title_en: Construction of a performance prediction model for MTC applications on the Gfarm distributed file system
 booktitle: Annual Meeting on Advanced Computing System and Infrastructure 2015 (ACSI2015)
 year: 2015
 authors:
@@ -19,6 +20,7 @@ reference:
   "Yu Gong,  建部修見,  田中昌宏: “分散ファイルシステムGfarmにおけるMTCアプリケーションの性能予測モデルの構築”,
   Annual Meeting on Advanced Computing System and Infrastructure 2015
   (ACSI2015), No. P16, Jan. 2015. (Poster)"
+reference_en: "Yu Gong,  建部修見,  田中昌宏: “Construction of a performance prediction model for MTC applications on the Gfarm distributed file system”, Annual Meeting on Advanced Computing System and Infrastructure 2015 (ACSI2015), No. P16, Jan. 2015. (Poster) (in Japanese)"
 class:
   class: domestic
   subclass: poster

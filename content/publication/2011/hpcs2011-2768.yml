@@ -1,5 +1,7 @@
 title: PGAS言語XcalableMPのmulti-node GPU向け拡張仕様の実装と評価
+title_en: Implementation and evaluation of a multi-node GPU extension of the PGAS language XcalableMP
 booktitle: 並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011）, 研究報告 ハイパフォーマンスコンピューティング（HPC）
+booktitle_en: Summer United Workshops on Parallel, Distributed and Cooperative Processing (SWoPP Kagoshima 2011), IPSJ SIG Technical Report, High Performance Computing (HPC)
 year: 2011
 authors:
   - Tran Minh Tuan
@@ -20,6 +22,7 @@ reference:
   GPU向け拡張仕様の実装と評価“，2011年並列／分散／協調処理に関する『鹿児島』サマー・ワークショップ（SWoPP鹿児島2011），研究報告
   ハイパフォーマンスコンピューティング（HPC），Vol.2011-HPC-130 No.53,
   pp.1-8，2011年7月，かごしま県民交流センター（鹿児島）
+reference_en: Tran Minh Tuan, 李珍泌, 小田嶋哲哉, 朴泰祐, 佐藤三久. "Implementation and evaluation of a multi-node GPU extension of the PGAS language XcalableMP", 2011 Summer United Workshops on Parallel, Distributed and Cooperative Processing (SWoPP Kagoshima 2011), IPSJ SIG Technical Report, High Performance Computing (HPC), Vol.2011-HPC-130 No.53, pp.1-8, July 2011, Kagoshima Prefectural Citizens Exchange Center (Kagoshima). (in Japanese)
 class:
   class: domestic
   subclass: workshop

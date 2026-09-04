@@ -1,5 +1,7 @@
 title: ノードローカルバーストバッファのためのMPI-IOの設計
+title_en: Design of MPI-IO for node-local burst buffers
 booktitle: 情報処理学会 第168回 HPC 研究会報告 (HPC168)
+booktitle_en: IPSJ SIG Technical Report, 168th HPC Meeting (HPC168)
 year: 2019
 authors:
   - 杉原 航平
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "杉原 航平, 建部 修見: “ノードローカルバーストバッファのためのMPI-IOの設計”, 情報処理学会 第168回 HPC 研究会報告
   (HPC168), Vol. 2019-HPC-168, No. 22, Mar. 2019."
+reference_en: "杉原 航平, 建部 修見: “Design of MPI-IO for node-local burst buffers”, IPSJ SIG Technical Report, 168th HPC Meeting (HPC168), Vol. 2019-HPC-168, No. 22, Mar. 2019. (in Japanese)"
 class:
   class: domestic
   subclass: misc

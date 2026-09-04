@@ -1,5 +1,7 @@
 title: 軽量スレッドライブラリArgobotsによるPGAS言語XcalableMPの動的タスク並列機能の設計
+title_en: Design of dynamic task parallelism in the PGAS language XcalableMP using the Argobots lightweight thread library
 booktitle: 情報処理学会第155回HPC研究会報告 (HPC155)
+booktitle_en: IPSJ SIG Technical Report, 155th SIGHPC Meeting (HPC155)
 year: 2016
 authors:
   - 津金 佳祐
@@ -20,6 +22,7 @@ bibtex: |-
 reference: "津金 佳祐, 中尾 昌広, 李 珍泌, 村井 均, 佐藤 三久:
   “軽量スレッドライブラリArgobotsによるPGAS言語XcalableMPの動的タスク並列機能の設計”, 情報処理学会第155回HPC研究会報告
   (HPC155), Vol. 2016-HPC-155, No. 29, Aug. 2016."
+reference_en: "津金 佳祐, 中尾 昌広, 李 珍泌, 村井 均, 佐藤 三久: “Design of dynamic task parallelism in the PGAS language XcalableMP using the Argobots lightweight thread library”, IPSJ SIG Technical Report, 155th SIGHPC Meeting (HPC155), Vol. 2016-HPC-155, No. 29, Aug. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

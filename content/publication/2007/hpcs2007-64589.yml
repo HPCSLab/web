@@ -1,4 +1,5 @@
 title: 影響の少ないインスツルメント手法と電力最適化のためのプログラム領域分割
+title_en: A low-overhead instrumentation method and program region partitioning for power optimization
 booktitle: ""
 year: 2007
 authors:
@@ -16,5 +17,6 @@ bibtex: |-
 reference: "木村英明, 佐藤三久, 堀田義彦, 今田貴之 :
   影響の少ないインスツルメント手法と電力最適化のためのプログラム領域分割情報処理学会論文誌：トランザクション コンピューティングシステム, Vol. 48
   No.SIG13,pp. 247259 (2007)"
+reference_en: "木村英明, 佐藤三久, 堀田義彦, 今田貴之 : A low-overhead instrumentation method and program region partitioning for power optimization, IPSJ Transactions on Advanced Computing Systems (ACS), Vol. 48 No.SIG13,pp. 247259 (2007) (in Japanese)"
 class:
   class: journal

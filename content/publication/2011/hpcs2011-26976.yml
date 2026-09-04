@@ -1,5 +1,7 @@
 title: "MPI-IO/Gfarm : 分散ファイルシステムGfarmのためのMPI-IOの実装と評価"
+title_en: "MPI-IO/Gfarm : Implementation and evaluation of MPI-IO for the distributed file system Gfarm"
 booktitle: 情報処理学会論文誌 Vol.53
+booktitle_en: IPSJ Journal Vol.53
 year: 2011
 authors:
   - 木村 浩希
@@ -15,5 +17,6 @@ bibtex: |-
 reference:
   "木村 浩希, 建部修見: MPI-IO/Gfarm : 分散ファイルシステムGfarmのためのMPI-IOの実装と評価,
   情報処理学会論文誌 Vol.53，No.12，pp.3239-3250, 2011年12月"
+reference_en: "木村 浩希, 建部修見: MPI-IO/Gfarm : Implementation and evaluation of MPI-IO for the distributed file system Gfarm, IPSJ Journal Vol.53, No.12, pp.3239-3250, December 2011. (in Japanese)"
 class:
   class: journal

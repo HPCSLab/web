@@ -8,5 +8,10 @@ username: tatebe
 keywords:
   - 分散ファイルシステム
   - 並列システムソフトウェア
+keywords_en:
+  - Distributed file systems
+  - Parallel system software
 message: |
   システムソフトウェアに興味がある人, 大きいことをやってみたい人は是非どうぞ. 好きなことをやってください.
+message_en: |
+  If you are interested in system software, or you want to take on something big, you are very welcome. Work on what you love.

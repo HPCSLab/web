@@ -1,5 +1,7 @@
 title: 分散型Webサーバ上でのエネルギー削減とQoS維持を両立させるサーバ電力状態制御手法
+title_en: A server power state control method achieving both energy reduction and QoS maintenance on distributed Web servers
 booktitle: 第20回 コンピュータシステム・シンポジウム (ComSys 2008)
+booktitle_en: Proc. 20th Computer System Symposium (ComSys 2008)
 year: 2008
 authors:
   - 今田 貴之
@@ -16,6 +18,7 @@ bibtex: |-
 reference: "今田 貴之，佐藤 三久，堀田 義彦，木村 英明:
   分散型Webサーバ上でのエネルギー削減とQoS維持を両立させるサーバ電力状態制御手法，第20回 コンピュータシステム・シンポジウム (ComSys
   2008)，pp.107-116"
+reference_en: "今田 貴之, 佐藤 三久, 堀田 義彦, 木村 英明: A server power state control method achieving both energy reduction and QoS maintenance on distributed Web servers, Proc. 20th Computer System Symposium (ComSys 2008), pp.107-116 (in Japanese)"
 class:
   class: domestic
   subclass: conference

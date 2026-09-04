@@ -1,5 +1,8 @@
 title: 行列積を用いた古典 GramSchmidt直交化の並列化手法の検討
+title_en: A study of parallelization methods for classical GramSchmidt
+  orthogonalization using matrix multiplication
 booktitle: 情報処理学会研究報告, 2006HPC106
+booktitle_en: IPSJ SIG Technical Report, 2006HPC106
 year: 2006
 authors:
   - 横澤拓弥
@@ -16,6 +19,10 @@ bibtex: |-
 reference:
   横澤拓弥，高橋大介，朴泰祐，佐藤三久：行列積を用いた古典 GramSchmidt直交化の並列化手法の検討，情報処理学会研究報告，
   2006HPC106，pp. 3136, (2006).
+reference_en:
+  横澤拓弥，高橋大介，朴泰祐，佐藤三久：A study of parallelization methods for
+  classical GramSchmidt orthogonalization using matrix multiplication，IPSJ SIG
+  Technical Report， 2006HPC106，pp. 3136, (2006). (in Japanese)
 class:
   class: domestic
   subclass: workshop

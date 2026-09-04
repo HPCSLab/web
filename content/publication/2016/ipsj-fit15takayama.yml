@@ -1,5 +1,7 @@
 title: "FPGAによるPCIe Gen3および100G超光インターコネクトに関する実験評価: 汎用高速演算クラスタシステムの実現に向けて"
+title_en: "Experimental evaluation of PCIe Gen3 and over-100G optical interconnects with FPGAs: toward the realization of a general-purpose high-speed computing cluster system"
 booktitle: FIT2016 第15回情報科学技術フォーラム 第１分冊
+booktitle_en: FIT2016 15th Forum on Information Technology, Vol. 1
 year: 2016
 authors:
   - 高山尋考
@@ -20,6 +22,7 @@ reference:
   " 高山尋考,  山口佳樹,  朴泰祐: “FPGAによるPCIe Gen3および100G超光インターコネクトに関する実験評価:
   汎用高速演算クラスタシステムの実現に向けて”, FIT2016 第15回情報科学技術フォーラム 第１分冊, No. C-018, pp. 267-268,
   Sep. 2016. (FIT奨励賞)"
+reference_en: " 高山尋考,  山口佳樹,  朴泰祐: “Experimental evaluation of PCIe Gen3 and over-100G optical interconnects with FPGAs: toward the realization of a general-purpose high-speed computing cluster system”, FIT2016 15th Forum on Information Technology, Vol. 1, No. C-018, pp. 267-268, Sep. 2016. (FIT Encouragement Award) (in Japanese)"
 class:
   class: domestic
   subclass: misc

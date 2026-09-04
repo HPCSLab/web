@@ -1,5 +1,7 @@
 title: PGAS言語XcalableMPにおける動的タスク機能の提案
+title_en: A proposal of dynamic task facilities in the PGAS language XcalableMP
 booktitle: 情報処理学会第151回HPC研究会報告 (HPC151)
+booktitle_en: IPSJ SIG Technical Report, 151st SIGHPC Meeting (HPC151)
 year: 2015
 authors:
   - 津金 佳祐
@@ -20,6 +22,7 @@ bibtex: |-
 reference:
   "津金 佳祐, 中尾 昌広, 李 珍泌, 村井 均, 佐藤 三久: “PGAS言語XcalableMPにおける動的タスク機能の提案”,
   情報処理学会第151回HPC研究会報告 (HPC151), Vol. 2015-HPC-151, No. 5, Oct. 2015."
+reference_en: "津金 佳祐, 中尾 昌広, 李 珍泌, 村井 均, 佐藤 三久: “A proposal of dynamic task facilities in the PGAS language XcalableMP”, IPSJ SIG Technical Report, 151st SIGHPC Meeting (HPC151), Vol. 2015-HPC-151, No. 5, Oct. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc

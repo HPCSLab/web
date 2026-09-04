@@ -1,5 +1,7 @@
 title: 分散メモリアプリケーションを簡単に書ける並列プログラミング言語XcalableMPの生産性と性能評価
+title_en: Productivity and performance evaluation of XcalableMP, a parallel programming language that makes it easy to write distributed memory applications
 booktitle: 京コンピュータ・シンポジウム2012, 2012年6月, 神戸大学 統合研究拠点コンベンションホール（神戸）
+booktitle_en: K Computer Symposium 2012, June 2012, Convention Hall, Integrated Research Center, Kobe University (Kobe)
 year: 2012
 authors:
   - 中尾昌広
@@ -15,6 +17,7 @@ bibtex: |-
 reference:
   中尾昌広，李珍泌，朴泰祐，佐藤三久．“分散メモリアプリケーションを簡単に書ける並列プログラミング言語XcalableMPの生産性と性能評価“，京コンピュータ・シンポジウム2012，2012年6月，神戸大学
   統合研究拠点コンベンションホール（神戸）
+reference_en: 中尾昌広, 李珍泌, 朴泰祐, 佐藤三久. "Productivity and performance evaluation of XcalableMP, a parallel programming language that makes it easy to write distributed memory applications", K Computer Symposium 2012, June 2012, Convention Hall, Integrated Research Center, Kobe University (Kobe). (in Japanese)
 class:
   class: domestic
   subclass: conference

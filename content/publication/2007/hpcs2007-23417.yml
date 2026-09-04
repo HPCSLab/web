@@ -1,5 +1,7 @@
 title: 匿名相互証明書とP2P通信を用いる認証方式
+title_en: An authentication scheme using anonymous mutual certificates and P2P communication
 booktitle: 先進的計算基盤システムシンポジウムSACSIS2007論文集
+booktitle_en: Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2007)
 year: 2007
 authors:
   - 平野 基孝
@@ -16,6 +18,7 @@ bibtex: |-
 reference:
   平野 基孝, 首藤 一幸, 田中 良夫, 佐藤 三久：匿名相互証明書とP2P通信を用いる認証方式,
   先進的計算基盤システムシンポジウムSACSIS2007論文集, pp. 8794, (2007).
+reference_en: "平野 基孝, 首藤 一幸, 田中 良夫, 佐藤 三久: An authentication scheme using anonymous mutual certificates and P2P communication, Proc. Symposium on Advanced Computing Systems and Infrastructures (SACSIS 2007), pp. 8794, (2007). (in Japanese)"
 class:
   class: domestic
   subclass: conference

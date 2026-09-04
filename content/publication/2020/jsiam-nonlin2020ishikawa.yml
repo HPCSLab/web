@@ -1,4 +1,5 @@
 title: 3次元モデル再構成問題に現れる鞍点型連立一次方程式の求解高速化
+title_en: Acceleration of solving saddle point linear systems arising in three-dimensional model reconstruction problems
 authors:
   - 石川 翔大
   - 多田野 寛人
@@ -16,6 +17,11 @@ reference: |
   “3次元モデル再構成問題に現れる鞍点型連立一次方程式の求解高速化,”
   【非線形問題の解法と可視化に関する研究会】2020年度第1回研究会,
   2020.
+reference_en: |
+  石川 翔大, 多田野 寛人, 齋藤 歩:
+  “Acceleration of solving saddle point linear systems arising in three-dimensional model reconstruction problems,”
+  The 1st Meeting of FY2020 of the Study Group on Solution Methods and Visualization for Nonlinear Problems,
+  2020. (in Japanese)
 class:
   class: domestic
   subclass: conference

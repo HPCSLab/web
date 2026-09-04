@@ -19,6 +19,8 @@ authors:
   - Masayuki Umemura
 reference: |
   Ryohei Kobayashi, Norihisa Fujita, Yoshiki Yamaguchi, Taisuke Boku, Kohji Yoshikawa, Makito Abe, Masayuki Umemura, "Accelerating Radiative Transfer Simulation on NVIDIA GPUs with OpenACC", PDCAT 2022: Parallel and Distributed Computing, Applications and Technologies, Volume 13798, pp.344 – 358, 2023 年 4 月
+reference_en: |
+  Ryohei Kobayashi, Norihisa Fujita, Yoshiki Yamaguchi, Taisuke Boku, Kohji Yoshikawa, Makito Abe, Masayuki Umemura, "Accelerating Radiative Transfer Simulation on NVIDIA GPUs with OpenACC", PDCAT 2022: Parallel and Distributed Computing, Applications and Technologies, Volume 13798, pp.344 – 358, April 2023
 class:
   class: international
   subclass: conference

@@ -4,6 +4,13 @@ import MemberCard from "@components/pages/members/MemberCard.astro";
 import Base from "@layouts/base/index.astro";
 import { getCollection } from "astro:content";
 import { viewRank } from "@content";
+import { langPaths, langFromParam } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
+
+export const getStaticPaths = langPaths;
+
+const lang = langFromParam(Astro.params.lang);
+const t = useTranslations(lang);
 
 const faculties = await getCollection(
   "member",
@@ -23,14 +30,11 @@ const students = await getCollection(
 );
 ---
 
-<Base
-  title="HPCS メンバー"
-  description="HPCS研究室に所属する教員、研究員、学生の一覧"
->
+<Base title={t("members.title")} description={t("members.description")}>
   <div class="root">
     <section>
       <div class="separator">
-        <h2>教員</h2>
+        <h2>{t("members.faculty")}</h2>
       </div>
 
       {
@@ -45,7 +49,7 @@ const students = await getCollection(
     </section>
     <section>
       <div class="separator">
-        <h2>研究員</h2>
+        <h2>{t("members.researcher")}</h2>
       </div>
 
       {
@@ -60,7 +64,7 @@ const students = await getCollection(
     </section>
     <section>
       <div class="separator">
-        <h2>学生</h2>
+        <h2>{t("members.student")}</h2>
       </div>
 
       {
@@ -75,7 +79,7 @@ const students = await getCollection(
     </section>
     <section>
       <div class="separator">
-        <h2>研究生</h2>
+        <h2>{t("members.researchStudent")}</h2>
       </div>
       {
         researchStudents

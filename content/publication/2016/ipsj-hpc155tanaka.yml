@@ -1,5 +1,7 @@
 title: ワークフローシステムPwrakeにおける耐障害機能
+title_en: Fault tolerance in the Pwrake workflow system
 booktitle: 情報処理学会第155回HPC研究会報告 (HPC155)
+booktitle_en: IPSJ SIG Technical Report, 155th SIGHPC Meeting (HPC155)
 year: 2016
 authors:
   - 田中 昌宏
@@ -17,6 +19,7 @@ bibtex: |-
 reference:
   "田中 昌宏, 建部 修見: “ワークフローシステムPwrakeにおける耐障害機能”, 情報処理学会第155回HPC研究会報告
   (HPC155), Vol. 2016-HPC-155, No. 11, Aug. 2016."
+reference_en: "田中 昌宏, 建部 修見: “Fault tolerance in the Pwrake workflow system”, IPSJ SIG Technical Report, 155th SIGHPC Meeting (HPC155), Vol. 2016-HPC-155, No. 11, Aug. 2016. (in Japanese)"
 class:
   class: domestic
   subclass: misc

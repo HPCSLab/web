@@ -1,5 +1,7 @@
 title: 環結合による類似検索の高性能化
+title_en: Performance improvement of similarity search by ring join
 booktitle: 情報処理学会第150回HPC研究会報告 (HPC150)
+booktitle_en: IPSJ SIG Technical Report, 150th SIGHPC Meeting (HPC150)
 year: 2015
 authors:
   - 三橋 龍也
@@ -18,6 +20,7 @@ bibtex: |-
 reference:
   "三橋 龍也, 川島 英之, 建部 修見: “環結合による類似検索の高性能化”, 情報処理学会第150回HPC研究会報告
   (HPC150), Vol. 2015-HPC-150, No. 16, Aug. 2015."
+reference_en: "三橋 龍也, 川島 英之, 建部 修見: “Performance improvement of similarity search by ring join”, IPSJ SIG Technical Report, 150th SIGHPC Meeting (HPC150), Vol. 2015-HPC-150, No. 16, Aug. 2015. (in Japanese)"
 class:
   class: domestic
   subclass: misc
