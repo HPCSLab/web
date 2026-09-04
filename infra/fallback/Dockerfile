@@ -1,5 +1,5 @@
 #FROM httpd:2.4-bookworm
-FROM php:8.4-apache
+FROM php:8.5-apache
 
 ARG UID=48
 ARG GID=48
