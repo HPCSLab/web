@@ -223,9 +223,8 @@ Write the English body here.
 </Lang>
 ```
 
-> [!IMPORTANT]
-> `<Fragment slot="...">` の直後と `</Fragment>` の直前には**必ず空行を入れてください**。
-> 空行がないとMDXが中身をMarkdownとして解釈せず、ビルドが壊れます。
+**重要:** `<Fragment slot="...">` の直後と `</Fragment>` の直前には**必ず空行を入れてください**。
+空行がないとMDXが中身をMarkdownとして解釈せず、ビルドが壊れます。
 
 日本語版にしか意味のない内容（国内向けの内線番号表記など）は `fallback={false}` を付けます。
 こうすると英語版では何も出力されません。
