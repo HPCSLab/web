@@ -8,6 +8,9 @@ username: tadano
 keywords:
   - 線形方程式
   - 数値計算
+keywords_en:
+  - Linear equations
+  - Numerical computation
 message: |
   当グループでは，数値線形代数に関するアルゴリズム開発を行っています．
   数値線形代数という研究分野は聞き慣れない方も多いと思いますが，
@@ -15,3 +18,10 @@ message: |
   そんなことをやって一体何の役に立つのか？と感じる方もいると思いますが，
   コンピュータで様々な現象のシミュレーションを行う際には多くの場面で大規模な連立一次方程式などが現れることから，
   必要不可欠な基盤技術となっています．みなさんもいろんな分野で役に立つアルゴリズムを研究してみませんか？
+message_en: |
+  Our group develops algorithms for numerical linear algebra.
+  Numerical linear algebra may not be a familiar research field to many people,
+  but what we do is use computers to solve things like large-scale systems of linear equations.
+  Some of you may wonder what on earth that is good for,
+  but because large-scale linear systems and the like show up in so many places when simulating various phenomena on a computer,
+  it has become an indispensable foundational technology. Why not join us and study algorithms that are useful in all kinds of fields?

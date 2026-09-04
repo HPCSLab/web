@@ -2,10 +2,12 @@
 cover:
   src: ./cover/ss_2024_summer.jpg
   alt: 集合写真
+  alt_en: Group photo
 icon: "material-symbols:home-storage-outline-rounded"
 name: System Software
 color: hsl(300, 77%, 29%)
 description: システムソフトウェア，特に並列ファイルシステムや DBMS など，並列分散システムに関わる基盤ソフトウェアの研究を行っています
+description_en: We conduct research on system software, in particular the infrastructure software behind parallel and distributed systems, such as parallel file systems and DBMSs.
 bachelorInfo:
   capacities:
     - faculties:
@@ -60,6 +62,7 @@ import Youtube from "@components/display/Youtube.astro";
 import h2 from "@components/composite/heading/h2.astro";
 import InlineLink from "@components/display/inline-link.astro";
 import YoutubeContainer from "@components/layout/YoutubeContainer.astro";
+import Lang from "@components/i18n/Lang.astro";
 
 export const components = {
   p: Typography,
@@ -68,6 +71,9 @@ export const components = {
   h2,
   a: InlineLink,
 };
+
+<Lang>
+<Fragment slot="ja">
 
 ## 建部修見教授
 
@@ -190,3 +196,132 @@ root権限が不要であれば筑波大学のCygnus、Pegasusスーパーコン
 チームの運用している共有ファイルシステム、DNSなどの運用はチーム内の有志が修士学生を中心に行っています。
 研究室全体のWebサービスやDNS運用はadmin係の担当となっています。
 どちらも全員の義務ではないので研究に集中して成果を出すのも、研究をしつつ運用経験を積むのも自由です。
+
+</Fragment>
+<Fragment slot="en">
+
+## Professor Osamu Tatebe
+
+- Research on parallel and distributed system software for HPC, big data and AI
+
+We conduct research on system software for very large-scale big data analysis, data-intensive computing
+and high performance computing.
+
+Handling ever larger data requires an I/O mechanism that scales with both the size of the data and the
+computing speed of the machine.
+To that end we study parallel and distributed system software that scales out, including distributed file systems,
+parallel I/O and application frameworks.
+
+Our research uses large-scale PC clusters for HPC, Pegasus (the University of Tsukuba's supercomputer), Miyabi (operated jointly with the University of Tokyo)
+and other systems.
+
+- Research on ad hoc file systems ([CHFS](https://github.com/otatebe/chfs),
+  [FINCHFS](https://github.com/tsukuba-hpcs/finchfs))
+
+On supercomputers, ad hoc file systems — which build a temporary parallel file system out of the local storage
+of the compute nodes — are seen as a promising way to close the gap between the performance of the
+parallel file system and that of the computation itself.
+
+We are developing CHFS and FINCHFS as ad hoc file systems. CHFS ranked 21st in the
+[10-node research category of the June 2023 edition](https://io500.org/list/isc23/ten) of IO500,
+the world ranking of I/O performance.
+
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/K6sO66kAkJ8"
+    title="CHFS: Parallel Consistent Hashing File System for Node-local Persistent Memory"
+  />
+</YoutubeContainer>
+
+- Research on caching file systems (CHFS/Cache)
+
+An ad hoc file system is a temporary parallel file system built on node-local storage, and data must therefore
+be moved between it and the underlying parallel file system. A caching file system is a mechanism that
+performs this data movement automatically.
+
+We are developing CHFS/Cache, a version of CHFS that works as a caching file system.
+Conventional caching file systems suffer from poor performance when accessing small files;
+in CHFS/Cache we address this problem by relaxing the consistency requirements between the cache and the
+parallel file system.
+
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/cHJ78vycAms"
+    title="Caching Support for CHFS Node-local Persistent Memory File System"
+  />
+</YoutubeContainer>
+There was also a problem of degraded performance when flushing modified data back to the parallel file system,
+which we address by proposing an I/O-aware flushing mechanism.
+
+- Research on parallel I/O libraries
+
+Ad hoc file systems and similar software are implemented at user level, so some effort is needed before
+applications can use them. So that applications can be used without modification, we are extending
+libraries such as MPI-IO, HDF5, Apache Arrow and TensorStore, so that any application built on those
+libraries works unchanged.
+
+We are also devising a variety of techniques to further improve the I/O performance of applications.
+
+- Study of the storage system for the next flagship machine
+
+We are studying the storage system for the flagship machine that will succeed Fugaku. The following is an interim report.
+
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/W2AUqhQJ8uk"
+    title="Interim report on the study of the storage system for the next flagship machine"
+  />
+</YoutubeContainer>
+
+- The Gfarm file system
+
+We research and develop the [Gfarm file system](http://oss-tsukuba.org/software/gfarm) as a
+wide-area distributed file system.
+Gfarm is a storage system that can be accessed securely over the Internet, can distribute storage across
+wide areas, scales out in both performance and capacity, has no single point of failure, guarantees data
+integrity, and can cope with silent data corruption.
+
+Gfarm is in production use in systems such as the HPCI shared storage. The HPCI shared storage is a wide-area
+storage system used across the domestic HPC infrastructure centred on Fugaku, which is promoted by MEXT;
+it can be mounted and used from anywhere, including supercomputer centres throughout Japan. Files are
+automatically replicated to the eastern site (Kashiwa) and the western site (Kobe), so they remain accessible
+even when a failure occurs.
+
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/dvFO3XhU0tU"
+    title="The latest features of the Gfarm file system"
+  />
+</YoutubeContainer>
+
+## Everyday life in the team
+
+- Meetings are held in person. Team meetings are weekly, and the whole-laboratory meeting is roughly monthly.
+- We also hold a reading group within the team. This year we are reading [_Architecture and Design of the Linux Storage Stack_](https://www.packtpub.com/product/architecture-and-design-of-the-linux-storage-stack/9781837639960).
+- There are no core hours.
+- On weekday afternoons there are typically two or three people in the laboratory.
+- The laboratory is equipped with a microwave oven, a refrigerator, an electric kettle, a coffee maker, sofas and so on, all of which students are free to use. Snacks and drinks are also on sale on site.
+- The goal for fourth-year undergraduates is to give an oral presentation at the HPC research meeting in March. Of course, if progress is fast, they can present at an international conference.
+  - Last year one fourth-year student presented in the poster session of SC24, a top-tier conference.
+- There are a number of enjoyable events, such as the implementation camp and the alumni gathering.
+  - The photograph below is from last year's alumni gathering.
+
+![SS team alumni gathering in 2024](./cover/ss_2024_obog.jpg)
+
+## Computing resources and operational services of the laboratory
+
+- We have about seven nodes equipped with Intel Optane persistent memory.
+- We have close to forty nodes with InfiniBand, two of which reach 400 Gbps.
+- Including the nodes used to run services, the team has about seventy of its own nodes, and `root` is available on all of them.
+- The cluster at the Center for Computational Sciences and the laboratory are connected by a 10G link.
+
+Because we have many experimental nodes on which root privileges are available and even the kernel can be replaced, a wide range of research is possible.
+When root privileges are not required, the University of Tsukuba's Cygnus and Pegasus supercomputers are also available,
+and after discussion with the faculty we sometimes use supercomputers at other universities as well.
+
+The shared file system, DNS and other services run by the team are operated by volunteers within the team, mainly master's students.
+Web services and DNS operation for the whole laboratory are handled by the admin group.
+Neither is compulsory, so you are free either to concentrate on research and produce results, or to gain operational experience alongside your research.
+
+</Fragment>
+</Lang>

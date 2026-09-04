@@ -6,3 +6,4 @@ team: algo
 icon: ./icons/yamane.jpg
 username: yamane
 message: 半精度のSIMD演算を用いたFFTの実装
+message_en: Implementation of an FFT using half-precision SIMD arithmetic

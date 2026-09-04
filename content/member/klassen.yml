@@ -7,3 +7,5 @@ icon: ./icons/klassen.jpg
 username: klassen
 message: |
   分散ファイルシステムの最適化の研究をします
+message_en: |
+  I am going to do research on optimizing distributed file systems

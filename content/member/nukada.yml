@@ -9,5 +9,11 @@ keywords:
   - 高性能計算
   - 性能最適化
   - GPUコンピューティング
+keywords_en:
+  - High performance computing
+  - Performance optimization
+  - GPU computing
 message: |
   私自身は計算の高速化に関連することであれば割と何でもやります．
+message_en: |
+  Personally, I will take on just about anything that has to do with making computation faster.

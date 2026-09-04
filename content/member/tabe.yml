@@ -7,6 +7,11 @@ icon: ./icons/tabe.jpg
 username: tabe
 keywords:
   - GPU
+keywords_en:
+  - GPU
 message: |
   私は、GPUを用いた科学技術計算アプリケーションについての研究を行うため、NvidiaのGPUについて勉強しています。
   研究室では、OpenMPやOpenMPIを通して並列計算の基礎について教えていただいたり、ほぼ毎週あるミーティングで自分の疑問を教授に直接相談することができるため、高性能計算の研究をする上で必要な並列計算や計算加速デバイスへの深い理解が得られます。そう言った分野に興味がある方は、ぜひ一度説明会に足を運んで見てください。
+message_en: |
+  I am studying Nvidia GPUs so that I can do research on scientific and technical computing applications that use GPUs.
+  In the lab you are taught the basics of parallel computing through OpenMP and OpenMPI, and at the meetings held almost every week you can take your questions straight to the professors, so you gain the deep understanding of parallel computing and accelerator devices that research in high performance computing requires. If you are interested in that kind of field, please come along to one of our information sessions.

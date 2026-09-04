@@ -7,3 +7,5 @@ icon: ./icons/shattori.jpg
 username: shattori
 message: |
   低遅延・広帯域なネットワークが好きです．最速でデータをやり取りしたい．
+message_en: |
+  I love low-latency, high-bandwidth networks. I want to move data as fast as it can possibly go.

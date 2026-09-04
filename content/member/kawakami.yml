@@ -6,3 +6,4 @@ team: algo
 icon: ./icons/kawakami.jpg
 username: kawakami
 message: より低精度なFFTを用いた高精度なFFTの計算手法に関する研究
+message_en: Research on methods for computing high-precision FFTs using lower-precision FFTs

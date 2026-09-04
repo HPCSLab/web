@@ -2,11 +2,14 @@
 cover:
   src: ./cover/ateam-bookshelf.jpg
   alt: Algorithmチームの本棚
+  alt_en: Bookshelf of the Algorithm team
 name: Algorithm
 icon: "fluent:flowchart-32-regular"
 color: hsl(0, 77%, 29%)
 description: |
   大規模数値計算，特に高性能数値計算ライブラリや大規模連立一次方程式の高速求解など科学技術計算に関する研究を行っています
+description_en: |
+  We conduct research on scientific computing, such as large-scale numerical computation, in particular high-performance numerical libraries and the fast solution of large-scale systems of linear equations.
 bachelorInfo:
   capacities:
     - faculties:
@@ -75,6 +78,7 @@ import { Image } from "astro:assets";
 import Chevron from "@components/display/list/item/Chevron.astro";
 import InlineLink from "@components/display/inline-link.astro";
 import YoutubeContainer from "@components/layout/YoutubeContainer.astro";
+import Lang from "@components/i18n/Lang.astro";
 
 export const components = {
   p: Typography,
@@ -83,6 +87,9 @@ export const components = {
   h2,
   a: InlineLink,
 };
+
+<Lang>
+<Fragment slot="ja">
 
 ## 高橋 大介 教授
 
@@ -132,3 +139,58 @@ export const components = {
     title="配信講義 計算科学技術特論B (2020) 第6回"
   />
 </YoutubeContainer>
+
+</Fragment>
+<Fragment slot="en">
+
+## Professor Daisuke Takahashi
+
+- Research on **high-performance numerical computation**
+- High-performance **parallel numerical computation** software
+- High-performance computing using **GPUs** and **MIC (Many Integrated Core)** processors
+- **High-precision computation** algorithms and their applications
+
+In order to carry out large-scale scientific computations within a limited amount of time, we study algorithms and programming techniques that draw out as much of a supercomputer's performance as possible. Writing fast programs demands a deep understanding of both computer architecture and mathematics, but it is a rewarding field, because the effort you put in is reflected directly in the numbers you measure.
+
+<ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~daisuke/">
+  Personal page
+</ReadMoreLink>
+
+## Associate Professor Hiroto Tadano
+
+- Research on **large-scale linear computation** algorithms
+- Construction of fast, accurate and reliable algorithms for **large-scale systems of linear equations**
+- Development of preconditioning methods for accelerating **systems of linear equations**
+- Development of fast solution methods for **large-scale eigenvalue problems** in parallel computing environments
+
+We develop numerical algorithms for problems such as systems of linear equations and eigenvalue problems.
+
+<ReadMoreLink href="https://www.hpcs.cs.tsukuba.ac.jp/~tadano/">
+  Personal page
+</ReadMoreLink>
+
+## The computers used by the Algorithm team
+
+<HStack template="50% 1fr">
+
+Our laboratory works in cooperation with the Center for Computational Sciences, University of Tsukuba, and depending on the research topic students can use Pegasus (theoretical peak performance 6.5 PFLOPS), the supercomputer operated by the University of Tsukuba since December 2022. Miyabi (theoretical peak performance 80.1 PFLOPS), the supercomputer operated by the Joint Center for Advanced High Performance Computing (JCAHPC), is also available. Both systems have many nodes equipped with high-performance CPUs and GPUs and large amounts of memory, and can rapidly perform large-scale computations that would be difficult on an ordinary computer. Students in the Algorithm team make active use of these supercomputers in their research.
+
+<Image
+  src={ServerImage}
+  alt="Compute cluster of the Algorithm team"
+/>
+</HStack>
+
+## FFT (Fast Fourier Transform)
+
+Here we introduce the FFT, one of Professor Takahashi's research topics.
+
+<YoutubeContainer>
+  <Youtube
+    src="https://www.youtube.com/embed/GPJx5JTGQEU"
+    title="Online lecture: Special Topics in Computational Science and Engineering B (2020), Lecture 6"
+  />
+</YoutubeContainer>
+
+</Fragment>
+</Lang>

@@ -9,6 +9,10 @@ keywords:
   - GPU
   - FPGA
   - アクセラレータ
+keywords_en:
+  - GPU
+  - FPGA
+  - Accelerators
 message: |
   大規模な科学技術計算にFPGAを適用する研究をしています。
   FPGA向けのアプリケーション最適化に関する研究だけでなく、
@@ -21,3 +25,15 @@ message: |
   これ以外にも本研究室の研究内容は世界的に評価されているので，
   「何か凄いことをして世界中の注目を集めてみたい！」とこっそり思っている人にとって本研究室はまさに理想的な環境です。
   1ミリでも興味を持ったら是非遊びに来て下さい！
+message_en: |
+  I do research on applying FPGAs to large-scale scientific and technical computing.
+  Besides research on optimizing applications for FPGAs,
+  I also work on using the fast external communication links of FPGAs to communicate between multiple FPGAs
+  and compute large problems in parallel across them.
+  Today's FPGAs have a high development cost and things rarely go smoothly,
+  but FPGAs can do things that CPUs and other accelerators cannot,
+  and I believe they are a device with a promising future. And above all, the sense of achievement and joy when a result finally comes out is something special.
+  Recently I received the HPC in Asia poster award at an international conference held in Frankfurt.
+  Our laboratory's research is highly regarded around the world in other areas too,
+  so if you secretly think "I want to do something amazing and get the world's attention!", this lab is exactly the ideal environment.
+  If you are even a millimeter interested, please come and visit us!

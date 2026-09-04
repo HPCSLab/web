@@ -7,6 +7,11 @@ icon: ./icons/hnishiyama.jpg
 username: hnishiyama
 keywords:
   - distributed consensus
+keywords_en:
+  - Distributed consensus
 message: |
   分散合意や冗長化関連の研究をやろうと思ってます。
   が、能力的に難しい場合は他の分野をやります。
+message_en: |
+  I'm thinking of doing research related to distributed consensus and redundancy.
+  But if that turns out to be beyond me, I'll work on something else.

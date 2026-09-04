@@ -7,3 +7,5 @@ icon: ./icons/takeshima.jpg
 username: takeshima
 message: |
   GPUアプリケーションを対象とするチェックポイント機能の研究をしています。
+message_en: |
+  I am doing research on checkpointing for GPU applications.
