@@ -119,15 +119,18 @@ Markdownの拡張であるMDXで記述。`<h1>`は自動で挿入されるので
 
 ### `src/publication/:year/*.yml`
 
-| プロパティ  | 説明                                                               |
-| :---------- | :----------------------------------------------------------------- |
-| `title`     | タイトル                                                           |
-| `booktitle` | 学会名、ジャーナル名など                                           |
-| `year`      | 発表年                                                             |
-| `authors`   | 名前のリスト。正規化はされないので英語名でも日本語名でも大丈夫です |
-| `bibtex`    | bibtexのエントリ                                                   |
-| `reference` | plaintextでのリファレンス                                          |
-| `class`     | 詳細は下記                                                         |
+| プロパティ     | 説明                                                               |
+| :------------- | :----------------------------------------------------------------- |
+| `title`        | タイトル                                                           |
+| `title_en`     | 必須ではない。和文タイトルの英訳                                   |
+| `booktitle`    | 学会名、ジャーナル名など                                           |
+| `booktitle_en` | 必須ではない。`booktitle`の英訳                                    |
+| `year`         | 発表年                                                             |
+| `authors`      | 名前のリスト。正規化はされないので英語名でも日本語名でも大丈夫です |
+| `bibtex`       | bibtexのエントリ                                                   |
+| `reference`    | plaintextでのリファレンス                                          |
+| `reference_en` | 必須ではない。`reference`の英訳。著者名は日本語のまま残す          |
+| `class`        | 詳細は下記                                                         |
 
 #### `class`
 
@@ -258,13 +261,17 @@ import Lang from "@components/i18n/Lang.astro";
 yamlやfrontmatterの項目は、`_en` を付けたフィールドを足すと英語版で使われます。
 省略した場合は日本語がそのまま表示されます。
 
-| 対象                       | 追加できるフィールド                                        |
-| :------------------------- | :---------------------------------------------------------- |
-| `content/news/:year/*.mdx` | `title_en`, `description_en`                                |
-| `content/team/*.mdx`       | `description_en`, `cover.alt_en`                            |
-| `content/member/*.yml`     | `message_en`, `keywords_en`（名前は既存の`eng_name`を使用） |
+| 対象                              | 追加できるフィールド                                        |
+| :-------------------------------- | :---------------------------------------------------------- |
+| `content/news/:year/*.mdx`        | `title_en`, `description_en`                                |
+| `content/team/*.mdx`              | `description_en`, `cover.alt_en`                            |
+| `content/member/*.yml`            | `message_en`, `keywords_en`（名前は既存の`eng_name`を使用） |
+| `content/publication/:year/*.yml` | `title_en`, `booktitle_en`, `reference_en`                  |
 
-`content/publication` と `content/alumni` は書誌情報と人名なので英語版フィールドはありません。
+**人名は翻訳しません。** `content/publication` の `authors` と `content/alumni` の `name`、
+`reference_en` の中の著者名は日本語表記のまま残します。
+`bibtex` も引用のための記録なので手を加えません。
+`reference_en` の末尾には、和文論文を英語で引用する際の慣習に従って ` (in Japanese)` を付けます。
 
 ### 見出しやボタンなどの短い文字列
 

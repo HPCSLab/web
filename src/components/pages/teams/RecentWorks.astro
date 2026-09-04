@@ -1,6 +1,7 @@
 ---
 import ExternalLink from "@components/atom/link/ExternalLink.astro";
 import { getEntry } from "astro:content";
+import { langFromUrl, localized } from "@i18n/lang";
 
 export type Work = {
   title: string;
@@ -22,6 +23,8 @@ const works = await Promise.all(
 function isNotNull<T>(x: T | null | undefined): x is T {
   return x ? true : false;
 }
+
+const lang = langFromUrl(Astro.url);
 ---
 
 <ul class="recent-works">
@@ -29,7 +32,9 @@ function isNotNull<T>(x: T | null | undefined): x is T {
     works.filter(isNotNull).map((work) => (
       <li class="work">
         <div class="work-title">
-          <ExternalLink href={work.data.url}>{work.data.title}</ExternalLink>
+          <ExternalLink href={work.data.url}>
+            {localized(lang, work.data.title, work.data.title_en)}
+          </ExternalLink>
         </div>
         <div class="work-detail">
           <ul class="authors-container">
@@ -37,7 +42,9 @@ function isNotNull<T>(x: T | null | undefined): x is T {
               <li class="author">{author}</li>
             ))}
           </ul>
-          <div class="description-container">{work.data.reference}</div>
+          <div class="description-container">
+            {localized(lang, work.data.reference, work.data.reference_en)}
+          </div>
         </div>
       </li>
     ))

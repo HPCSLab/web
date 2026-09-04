@@ -4,7 +4,7 @@ import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import Codeblock from "@components/display/codeblock.astro";
 import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 import { getCollection, getEntry } from "astro:content";
-import { withLangs, langFromParam } from "@i18n/lang";
+import { withLangs, langFromParam, localized } from "@i18n/lang";
 import { useTranslations } from "@i18n/ui";
 
 export async function getStaticPaths() {
@@ -18,19 +18,24 @@ export async function getStaticPaths() {
 }
 
 const { year, id } = Astro.params;
-const t = useTranslations(langFromParam(Astro.params.lang));
+const lang = langFromParam(Astro.params.lang);
+const t = useTranslations(lang);
 const pub = (await getEntry("publication", `${year}/${id}`))!.data;
+
+const title = localized(lang, pub.title, pub.title_en);
+const reference = localized(lang, pub.reference, pub.reference_en);
+const booktitle = localized(lang, pub.booktitle, pub.booktitle_en);
 ---
 
-<Base title={pub.title} description={pub.reference}>
+<Base title={title} description={reference}>
   <article>
     <NoImgHeader>
-      {pub.title}
+      {title}
     </NoImgHeader>
     <ResponsiveWidth>
       <section class="description">
         <div class="reference">
-          {pub.reference}
+          {reference}
         </div>
 
         <ul class="authors">
@@ -38,7 +43,7 @@ const pub = (await getEntry("publication", `${year}/${id}`))!.data;
         </ul>
 
         <div class="booktitle">
-          {pub.booktitle}
+          {booktitle}
         </div>
       </section>
       <section>

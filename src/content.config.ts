@@ -66,6 +66,11 @@ const publicationSchema = z.object({
   reference: z.string(),
   url: z.string().nullish(),
   class: publicationClassSchema,
+  // 英語版。未指定なら日本語にフォールバックする。
+  // 著者名 (authors) と BibTeX は引用のための記録なので翻訳しない。
+  title_en: z.string().nullish(),
+  booktitle_en: z.string().nullish(),
+  reference_en: z.string().nullish(),
 });
 
 export type Publication = z.infer<typeof publicationSchema>;
