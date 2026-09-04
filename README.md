@@ -325,6 +325,12 @@ export async function getStaticPaths() {
 ページ内のリンクは `localePath(lang, "/news")` を通してください。
 日本語なら `/news`、英語なら `/en/news` になります。直書きすると英語版から日本語版へ飛んでしまいます。
 
+**トップレベルのパスを増やしたら、traefik のルーティングにも追加してください。**
+`infra/docker-compose.yml` の `traefik.http.routers.web.rule` はパスの明示的な許可リストで、
+ここに載っていないパスは従来の Apache （`fallback` コンテナ）へ流れて 404 になります。
+`/~user` や `/internal` などの旧来のパスを Apache に残すための仕組みなので、
+新しいページを足したときはこのルールの更新を忘れないこと。
+
 ## インフラ（admin向け）
 
 前段が`traefik`でTLS終端を行う。このページ本体のサーブは`nginx`。

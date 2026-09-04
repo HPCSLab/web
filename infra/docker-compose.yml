@@ -73,4 +73,6 @@ services:
         || Path(`/publications`)
         || PathPrefix(`/teams/`)
         || Path(`/teams`)
+        || PathPrefix(`/en/`)
+        || Path(`/en`)
         )
