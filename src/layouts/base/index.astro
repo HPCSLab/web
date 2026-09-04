@@ -2,14 +2,31 @@
 import Header from "./parts/header/index.astro";
 import Footer from "./parts/Footer.astro";
 import { SEO } from "astro-seo";
+import { LANGS, DEFAULT_LANG, langFromUrl, switchLangPath } from "@i18n/lang";
+
 export type Props = {
   title: string;
   description: string;
 };
 const { title, description } = Astro.props;
+
+const lang = langFromUrl(Astro.url);
+
+// 検索エンジンに日英が同一ページの別言語版であることを伝える
+const siteOrigin = Astro.site?.href.replace(/\/$/, "") ?? "";
+const alternates = [
+  ...LANGS.map((alternate) => ({
+    hreflang: alternate,
+    href: `${siteOrigin}${switchLangPath(Astro.url, alternate)}`,
+  })),
+  {
+    hreflang: "x-default",
+    href: `${siteOrigin}${switchLangPath(Astro.url, DEFAULT_LANG)}`,
+  },
+];
 ---
 
-<html lang="ja">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <SEO
@@ -26,8 +43,17 @@ const { title, description } = Astro.props;
         ],
       }}
     />
+    {
+      alternates.map((alternate) => (
+        <link
+          rel="alternate"
+          hreflang={alternate.hreflang}
+          href={alternate.href}
+        />
+      ))
+    }
   </head><body>
-    <Header />
+    <Header lang={lang} />
     <div id="contents-wrapper">
       <main>
         <slot />

@@ -1,0 +1,102 @@
+---
+import {
+  LANGS,
+  LANG_NAMES,
+  LANG_SHORT_NAMES,
+  switchLangPath,
+  type Lang,
+} from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
+
+interface Props {
+  lang: Lang;
+  variant?: "desktop" | "mobile" | undefined;
+}
+
+/**
+ * 言語切り替えボタン。全ページのヘッダー (デスクトップ / モバイル) に出る。
+ * 現在表示中のページに対応する別言語の URL へ遷移するので、
+ * 切り替えてもトップページに戻されない。
+ */
+const { lang, variant = "desktop" } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<nav class:list={["switcher", variant]} aria-label={t("header.switchLang")}>
+  {
+    LANGS.map((target) => (
+      <a
+        class:list={["lang", { current: target === lang }]}
+        href={switchLangPath(Astro.url, target)}
+        hreflang={target}
+        lang={target}
+        title={LANG_NAMES[target]}
+        aria-current={target === lang ? "true" : undefined}
+      >
+        {LANG_SHORT_NAMES[target]}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    line-height: 1;
+    width: fit-content;
+  }
+
+  .lang {
+    display: block;
+    padding: 0.3rem 0.55rem;
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+    color: var(--color-primary);
+    background-color: transparent;
+    transition:
+      background-color 0.1s linear,
+      color 0.1s linear;
+  }
+
+  .lang + .lang {
+    border-left: 1px solid var(--color-primary);
+  }
+
+  .lang:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+
+  .lang.current {
+    background-color: var(--color-primary);
+    color: var(--color-inverted-text-strong);
+    cursor: default;
+  }
+
+  .lang.current:hover {
+    background-color: var(--color-primary);
+  }
+
+  /* ヘッダー内のリンク色指定に負けないようにする */
+  .switcher a:link,
+  .switcher a:visited {
+    color: var(--color-primary);
+  }
+
+  .switcher a.current:link,
+  .switcher a.current:visited {
+    color: var(--color-inverted-text-strong);
+  }
+
+  .mobile {
+    font-size: var(--font-size-base);
+  }
+
+  .mobile .lang {
+    padding: 0.5rem 1rem;
+  }
+</style>

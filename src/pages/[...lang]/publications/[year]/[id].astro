@@ -1,23 +1,24 @@
 ---
-import type { GetStaticPaths } from "astro";
 import Base from "@layouts/base/index.astro";
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import Codeblock from "@components/display/codeblock.astro";
 import NoImgHeader from "@components/composite/header/NoImageHeader.astro";
 import { getCollection, getEntry } from "astro:content";
-export const getStaticPaths = (async () => {
-  return (await getCollection("publication")).map((pub) => {
-    const [year, id] = pub.id.split("/");
-    return {
-      params: {
-        year: year!,
-        id: id!,
-      },
-    };
-  });
-}) satisfies GetStaticPaths;
+import { withLangs, langFromParam } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
+
+export async function getStaticPaths() {
+  const publications = await getCollection("publication");
+  return withLangs(
+    publications.map((pub) => {
+      const [year, id] = pub.id.split("/");
+      return { year: year!, id: id! };
+    }),
+  );
+}
 
 const { year, id } = Astro.params;
+const t = useTranslations(langFromParam(Astro.params.lang));
 const pub = (await getEntry("publication", `${year}/${id}`))!.data;
 ---
 
@@ -41,7 +42,7 @@ const pub = (await getEntry("publication", `${year}/${id}`))!.data;
         </div>
       </section>
       <section>
-        <h2>BiBTex entry</h2>
+        <h2>{t("publications.bibtex")}</h2>
         <Codeblock code={pub.bibtex} />
       </section>
     </ResponsiveWidth>

@@ -3,30 +3,36 @@ import { Image } from "astro:assets";
 import Badge from "@components/display/Badge.astro";
 import { memberRoleName, type Member } from "@content";
 import Typography from "@components/display/Typography.astro";
+import { langFromUrl, localized } from "@i18n/lang";
 
 interface Props {
   member: Member;
 }
 const { member } = Astro.props;
+const lang = langFromUrl(Astro.url);
+const displayName = localized(
+  lang,
+  member.name ?? member.eng_name,
+  member.eng_name,
+);
+const keywords = localized(lang, member.keywords, member.keywords_en);
+const message = localized(lang, member.message, member.message_en);
 ---
 
 <section>
   <div class="top-wrapper">
     <div class="icon-wrapper">
-      <Image
-        src={member.icon}
-        alt={member.name ? member.name : member.eng_name}
-      />
+      <Image src={member.icon} alt={displayName} />
     </div>
     <div class="top-text">
       <h3>
-        <div class="name">{member.name}</div>
-        <div class="role">{memberRoleName(member)}</div>
+        <div class="name">{displayName}</div>
+        <div class="role">{memberRoleName(member, lang)}</div>
       </h3>
       {
-        member.keywords ? (
+        keywords ? (
           <ul class="keywords-container">
-            {member.keywords.map((keyword) => (
+            {keywords.map((keyword) => (
               <li class="keyword">
                 <Badge>{keyword}</Badge>
               </li>
@@ -38,7 +44,7 @@ const { member } = Astro.props;
   </div>
 
   <div class="description">
-    <Typography>{member.message}</Typography>
+    <Typography>{message}</Typography>
   </div>
 
   <style>

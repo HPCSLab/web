@@ -1,15 +1,23 @@
 ---
 interface Props {
-  id?: string;
+  id?: string | undefined;
+  openLabel: string;
+  closeLabel: string;
 }
+
+const { id, openLabel, closeLabel } = Astro.props;
 ---
 
-<hamburger-button id={Astro.props.id}>
+<hamburger-button
+  id={id}
+  data-open-label={openLabel}
+  data-close-label={closeLabel}
+>
   <button
     class:list={["root"]}
     aria-pressed="false"
     aria-expanded="false"
-    aria-label="サイドメニューを開く"
+    aria-label={openLabel}
   >
     <div class:list={["top", "bar"]}></div>
     <div class:list={["middle", "bar"]}></div>
@@ -25,11 +33,13 @@ interface Props {
     toggle() {
       const root = this.querySelector(".root");
       if (root) {
+        const openLabel = this.dataset["openLabel"] ?? "";
+        const closeLabel = this.dataset["closeLabel"] ?? "";
         if (root.classList.contains("opened")) {
           root.classList.remove("opened");
           root.ariaPressed = "false";
           root.ariaExpanded = "false";
-          root.ariaLabel = "サイドメニューを開く";
+          root.ariaLabel = openLabel;
           this.opened = false;
           for (const handler of this.toggleEventListeners) {
             handler(false);
@@ -38,7 +48,7 @@ interface Props {
           root.classList.add("opened");
           root.ariaPressed = "true";
           root.ariaExpanded = "true";
-          root.ariaLabel = "サイドメニューを閉じる";
+          root.ariaLabel = closeLabel;
           this.opened = true;
           for (const handler of this.toggleEventListeners) {
             handler(true);

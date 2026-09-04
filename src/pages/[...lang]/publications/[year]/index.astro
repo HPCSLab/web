@@ -5,26 +5,29 @@ import ListItem from "@components/display/list/item/Naked.astro";
 import List from "@components/display/list/list.astro";
 import Base from "@layouts/base/index.astro";
 import PublicationHeading from "@components/pages/publications/PublicationHeading.astro";
-import type { GetStaticPaths } from "astro";
 import SubClass from "@components/pages/publications/SubClass.astro";
 import { Icon } from "astro-icon/components";
 import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
 import { getCollection } from "astro:content";
 import H2 from "@components/composite/heading/h2.astro";
+import { withLangs, langFromParam, localePath } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
 
 const years = [
   ...new Set((await getCollection("publication")).map((pub) => pub.data.year)),
 ].sort((a, b) => a - b);
 
-export const getStaticPaths = (async () => {
-  return [
+export async function getStaticPaths() {
+  const publicationYears = [
     ...new Set(
       (await getCollection("publication")).map((pub) => pub.data.year),
     ),
-  ].map((year) => ({
-    params: { year: year.toString() },
-  }));
-}) satisfies GetStaticPaths;
+  ];
+  return withLangs(publicationYears.map((year) => ({ year: year.toString() })));
+}
+
+const lang = langFromParam(Astro.params.lang);
+const t = useTranslations(lang);
 
 const year = parseInt(Astro.params.year, 10);
 
@@ -97,14 +100,20 @@ const internationalPubNum = Object.values(international)
 const domesticPubNum = Object.values(domestic)
   .map((pubs) => pubs.length)
   .reduce((a, b) => a + b);
+
+const title =
+  lang === "en"
+    ? `Publications in ${Astro.params.year}`
+    : `${Astro.params.year}年度の研究発表`;
+const description =
+  lang === "en"
+    ? `Journal articles and conference presentations in ${Astro.params.year} (${journal.length} journal, ${internationalPubNum} international, ${domesticPubNum} domestic)`
+    : `${Astro.params.year}の学会発表、ジャーナル投稿一覧 (ジャーナル${journal.length}件、国際会議${internationalPubNum}件、国内${domesticPubNum})`;
 ---
 
-<Base
-  title={`${Astro.params.year}年度の研究発表`}
-  description={`${Astro.params.year}の学会発表、ジャーナル投稿一覧 (ジャーナル${journal.length}件、国際会議${internationalPubNum}件、国内${domesticPubNum})`}
->
+<Base title={title} description={description}>
   <NoImageHeader>
-    <span class="supplemental-text-in-heading">Publications of</span>
+    <span class="supplemental-text-in-heading">{t("publications.of")}</span>
     <span class="year-in-heading">{Astro.params.year}</span>
   </NoImageHeader>
   <ResponsiveWidth>
@@ -114,7 +123,7 @@ const domesticPubNum = Object.values(domestic)
           prevYear && (
             <a
               class:list={["prev-year", "year-link"]}
-              href={`/publications/${prevYear}`}
+              href={localePath(lang, `/publications/${prevYear}`)}
             >
               <Icon
                 name="material-symbols:chevron-left-rounded"
@@ -130,7 +139,7 @@ const domesticPubNum = Object.values(domestic)
           nextYear && (
             <a
               class:list={["next-year", "year-link"]}
-              href={`/publications/${nextYear}`}
+              href={localePath(lang, `/publications/${nextYear}`)}
             >
               {nextYear}
               <Icon
@@ -144,7 +153,7 @@ const domesticPubNum = Object.values(domestic)
     </nav>
   </ResponsiveWidth>
   <TopLevelSection backgroundInverted={false}>
-    <H2>論文誌</H2>
+    <H2>{t("publications.journal")}</H2>
     <List ordered={false}>
       {
         journal.map((pub) => (
@@ -156,17 +165,32 @@ const domesticPubNum = Object.values(domestic)
     </List>
   </TopLevelSection>
   <TopLevelSection backgroundInverted={false}>
-    <H2>国際会議</H2>
-    <SubClass title="本会議" publications={international.conference} />
-    <SubClass title="ポスター" publications={international.poster} />
+    <H2>{t("publications.international")}</H2>
+    <SubClass
+      title={t("publications.mainConference")}
+      publications={international.conference}
+    />
+    <SubClass
+      title={t("publications.poster")}
+      publications={international.poster}
+    />
   </TopLevelSection>
   <TopLevelSection backgroundInverted={false}>
-    <H2>国内会議</H2>
-    <SubClass title="国内会議" publications={domestic.conference} />
-    <SubClass title="ポスター" publications={domestic.poster} />
-    <SubClass title="研究会" publications={domestic.workshop} />
-    <SubClass title="雑誌" publications={domestic.magazine} />
-    <SubClass title="その他" publications={domestic.misc} />
+    <H2>{t("publications.domestic")}</H2>
+    <SubClass
+      title={t("publications.domesticConference")}
+      publications={domestic.conference}
+    />
+    <SubClass title={t("publications.poster")} publications={domestic.poster} />
+    <SubClass
+      title={t("publications.workshop")}
+      publications={domestic.workshop}
+    />
+    <SubClass
+      title={t("publications.magazine")}
+      publications={domestic.magazine}
+    />
+    <SubClass title={t("publications.misc")} publications={domestic.misc} />
   </TopLevelSection>
 </Base>
 

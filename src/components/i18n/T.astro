@@ -1,0 +1,17 @@
+---
+import { langFromUrl, localized } from "@i18n/lang";
+
+interface Props {
+  ja: string;
+  en?: string | undefined;
+}
+
+/**
+ * 一行の短い文字列を日英で切り替えるための簡易版 `<Lang>`。
+ * `<T ja="研究生" en="Research Student" />` のように書く。
+ */
+const { ja, en } = Astro.props;
+const lang = langFromUrl(Astro.url);
+---
+
+{localized(lang, ja, en)}

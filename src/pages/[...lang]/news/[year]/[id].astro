@@ -4,32 +4,38 @@ import Base from "@layouts/base/index.astro";
 import NoImageHeader from "@components/composite/header/NoImageHeader.astro";
 import ResponsiveWidth from "@components/layout/ResponsiveWidth.astro";
 import { render } from "astro:content";
+import { withLangs, langFromParam, localized } from "@i18n/lang";
 
 export async function getStaticPaths() {
   const news = await getCollection("news");
-  return news.map((news) => {
-    const [year, id] = news.id.split("/");
-    return {
-      params: {
-        year: year!,
-        id: id!,
-      },
-    };
-  });
+  return withLangs(
+    news.map((news) => {
+      const [year, id] = news.id.split("/");
+      return { year: year!, id: id! };
+    }),
+  );
 }
 
 const { year, id } = Astro.params;
+const lang = langFromParam(Astro.params.lang);
 
 const news = (await getEntry("news", `${year}/${id}`))!;
+
+const title = localized(lang, news.data.title, news.data.title_en);
+const description = localized(
+  lang,
+  news.data.description,
+  news.data.description_en,
+);
 
 const Body = await render(news);
 ---
 
-<Base title={news.data.title} description={news.data.description}>
+<Base title={title} description={description}>
   <article>
     <NoImageHeader>
       <h1>
-        {news.data.title}
+        {title}
       </h1>
       <div class="date">
         {news.data.date}

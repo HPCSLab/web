@@ -4,6 +4,8 @@ import Typography from "@components/display/Typography.astro";
 import type { Team } from "@content";
 import { getEntry } from "astro:content";
 import Session from "./Session.astro";
+import { langFromUrl, localized } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
 
 interface Props {
   team: Team;
@@ -11,6 +13,8 @@ interface Props {
 }
 
 const { team, href } = Astro.props;
+const lang = langFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="root">
@@ -24,11 +28,11 @@ const { team, href } = Astro.props;
   </h2>
   <section class="in-card-section">
     <Typography>
-      {team.description}
+      {localized(lang, team.description, team.description_en)}
     </Typography>
   </section>
   <section class="in-card-section">
-    <h3>募集人数</h3>
+    <h3>{t("bachelor.capacity")}</h3>
     {
       team.bachelorInfo ? (
         <div class="capacities">
@@ -43,9 +47,11 @@ const { team, href } = Astro.props;
                   if (faculty) {
                     return (
                       <a href={`/~${facultyRef.id}`} class="faculty-name">
-                        {faculty.data.name
-                          ? faculty.data.name
-                          : faculty.data.eng_name}
+                        {localized(
+                          lang,
+                          faculty.data.name ?? faculty.data.eng_name,
+                          faculty.data.eng_name,
+                        )}
                       </a>
                     );
                   }
@@ -53,27 +59,27 @@ const { team, href } = Astro.props;
               </div>
               <div class="capacity-n">
                 {capacity.capacity}
-                <span class="unit">人</span>
+                <span class="unit">{t("bachelor.capacityUnit")}</span>
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <div>※学部での募集は行なっていません</div>
+        <div>{t("bachelor.noUndergraduate")}</div>
       )
     }
   </section>
   {
     team.bachelorInfo ? (
       <section class="in-card-section">
-        <h3>説明会</h3>
+        <h3>{t("bachelor.session")}</h3>
         <div class="schedule-table">
           {team.bachelorInfo.informationSessions ? (
             team.bachelorInfo.informationSessions?.map((session) => (
               <Session session={session} />
             ))
           ) : (
-            <b>未定</b>
+            <b>{t("bachelor.tbd")}</b>
           )}
         </div>
       </section>

@@ -1,0 +1,21 @@
+---
+import { langFromUrl } from "@i18n/lang";
+
+/**
+ * 日本語と英語を同じファイルに並べて書くためのディレクティブ。
+ *
+ * ```astro
+ * <Lang>
+ *   <Fragment slot="ja">日本語の本文</Fragment>
+ *   <Fragment slot="en">English text</Fragment>
+ * </Lang>
+ * ```
+ *
+ * `en` スロットが無ければ日本語にフォールバックする。
+ * MDX の本文中でもそのまま使える。
+ */
+const lang = langFromUrl(Astro.url);
+const showEnglish = lang === "en" && Astro.slots.has("en");
+---
+
+{showEnglish ? <slot name="en" /> : <slot name="ja" />}

@@ -1,22 +1,23 @@
 ---
 import type { InformationSession } from "@content";
 import { Icon } from "astro-icon/components";
+import { langFromUrl } from "@i18n/lang";
+import { useTranslations } from "@i18n/ui";
+import { formatMonthDay } from "@i18n/format";
 
 interface Props {
   session: InformationSession;
-  direction?: "column" | "row";
+  direction?: "column" | "row" | undefined;
 }
 
 const { session } = Astro.props;
+const lang = langFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="session">
   <div class="day">
-    {
-      session.day
-        ? `${session.day.getMonth() + 1}月${session.day.getDate()}日`
-        : "随時"
-    }
+    {session.day ? formatMonthDay(session.day, lang) : t("bachelor.anytime")}
   </div>
   <div class="hour">
     <Icon name="material-symbols:av-timer-outline-rounded" class="icon" />
@@ -28,7 +29,7 @@ const { session } = Astro.props;
           <span>{session.hour.end}</span>
         </span>
       ) : (
-        "随時"
+        t("bachelor.anytime")
       )
     }
   </div>

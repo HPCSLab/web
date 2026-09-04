@@ -2,9 +2,11 @@
 cover:
   src: ./cover/perfteam-bookshelf.png
   alt: perfチームの本棚
+  alt_en: Bookshelf of the Performance team
 icon: "ic:baseline-speed"
 name: Performance
 description: 主に，GPUを用いた高速化についての研究をしております．高速化以外には，GPU開発支援ソフトや，機能追加などの研究を行っています．
+description_en: We mainly work on acceleration using GPUs. Beyond acceleration itself, we also research software that supports GPU development and extends its functionality.
 color: hsl(240, 77%, 29%)
 bachelorInfo:
   capacities:
@@ -32,6 +34,7 @@ import h2 from "@components/composite/heading/h2.astro";
 import { Image } from "astro:assets";
 import cover from "@asset/team/perf/perfteam-bookshelf.png";
 import InlineLink from "@components/display/inline-link.astro";
+import Lang from "@components/i18n/Lang.astro";
 
 export const components = {
   p: Typography,
@@ -40,6 +43,9 @@ export const components = {
   h2,
   a: InlineLink,
 };
+
+<Lang>
+<Fragment slot="ja">
 
 ## 額田 彰 教授
 
@@ -102,3 +108,71 @@ GPUの動作周波数もCPUより低く，多数の演算器を活用できる�
   最小限の修正でGPUに移植する研究を行いました．
 
 <Image src={cover} alt="Performanceチームの本棚" />
+
+</Fragment>
+<Fragment slot="en">
+
+## Professor Akira Nukada
+
+In computing, performance usually means processing speed — how quickly a computation finishes.
+The goal of the Performance team is **making computation faster**.
+Even for exactly the same computation, the execution time varies enormously depending on the machine used and on how the program is written.
+Processors in recent machines have become particularly complex, and this team studies how to understand their characteristics,
+write code suited to them, and thereby draw out the performance the processor inherently possesses.
+
+## What is a GPU (Graphics Processing Unit)?
+
+A **GPU** (**Graphics Processing Unit**) is, as the name says, a device responsible for image processing.
+Work such as visualising three-dimensional space appears in 3D video games on the consumer side,
+and in design fields such as CAD on the professional side.
+Demand from the games industry in particular called for GPUs capable of rendering more beautiful images at higher resolution and higher frame rates,
+and high performance devices came to be offered at relatively low prices.
+As a result their floating-point performance came to exceed that of the CPUs of the time,
+and attempts began to use GPUs to accelerate computation in general.
+
+The defining feature of a GPU is that it carries a very large number of arithmetic units.
+Because image processing performs the same computation over a great deal of data,
+priority is given to packing in as many arithmetic units as possible.
+In exchange, various capabilities that an ordinary CPU provides are omitted or sacrificed.
+A GPU also runs at a lower clock frequency than a CPU, so no speed-up is achieved without enough parallelism to keep those many arithmetic units busy.
+We study how a program should be written so that the target computation maps well onto the structure of the GPU.
+
+## Research Topics
+
+Our main theme is **acceleration using GPUs**.
+We also work on **developing the various kinds of software that support GPU computing**,
+and, where a student wishes, on CPUs and many-core processors other than GPUs.
+Research previously carried out by our students, together with our current main topics, is as follows.
+
+- <span style="font-weight: bold; font-size: 1.2em;">
+    Semi-automatic GPU porting of Fortran applications
+  </span>
+
+  The user specifies the region to be moved to the GPU, and the parallelisable parts within that region are replaced by GPU code.\
+  This provides practical assistance with GPU programming.
+
+- <span style="font-weight: bold; font-size: 1.2em;">
+    Checkpointing for OpenACC applications
+  </span>
+
+  Checkpointing is the ability to save the state of a running application to a file and later resume execution from it.\
+  We aim to extend the existing checkpointing software DMTCP so that it covers OpenACC applications.
+
+- <span style="font-weight: bold; font-size: 1.2em;">
+    Accelerating host-device communication using idle GPUs
+  </span>
+
+  When an application that uses only a single GPU runs on a compute node equipped with several GPUs, some GPUs go unused — idle GPUs.\
+  We studied a technique that puts these idle GPUs to work as well, speeding up such applications without modifying the program.
+
+- <span style="font-weight: bold; font-size: 1.2em;">
+    GPU porting of OpenSWPC with the DO CONCURRENT construct
+  </span>
+
+  Using DO CONCURRENT, Fortran's standard parallelisation construct, we ported OpenSWPC, a seismic wave propagation simulation code,\
+  to the GPU with the smallest possible amount of modification.
+
+<Image src={cover} alt="Bookshelf of the Performance team" />
+
+</Fragment>
+</Lang>
