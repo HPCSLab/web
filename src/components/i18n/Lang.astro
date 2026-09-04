@@ -1,6 +1,15 @@
 ---
 import { langFromUrl } from "@i18n/lang";
 
+interface Props {
+  /**
+   * 現在の言語のスロットが無いときに日本語へフォールバックするか。
+   * 日本語版にしか意味のない内容 (国内向けの内線番号表記など) は
+   * `fallback={false}` を指定して英語版では何も出さない。
+   */
+  fallback?: boolean | undefined;
+}
+
 /**
  * 日本語と英語を同じファイルに並べて書くためのディレクティブ。
  *
@@ -11,11 +20,18 @@ import { langFromUrl } from "@i18n/lang";
  * </Lang>
  * ```
  *
- * `en` スロットが無ければ日本語にフォールバックする。
+ * `en` スロットが無ければ日本語にフォールバックする (未翻訳の扱い)。
  * MDX の本文中でもそのまま使える。
  */
+const { fallback = true } = Astro.props;
 const lang = langFromUrl(Astro.url);
-const showEnglish = lang === "en" && Astro.slots.has("en");
+const hasCurrent = Astro.slots.has(lang);
 ---
 
-{showEnglish ? <slot name="en" /> : <slot name="ja" />}
+{
+  lang === "ja" || hasCurrent ? (
+    <slot name={lang} />
+  ) : fallback ? (
+    <slot name="ja" />
+  ) : null
+}

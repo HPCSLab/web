@@ -224,6 +224,18 @@ Write the English body here.
 > `<Fragment slot="...">` の直後と `</Fragment>` の直前には**必ず空行を入れてください**。
 > 空行がないとMDXが中身をMarkdownとして解釈せず、ビルドが壊れます。
 
+日本語版にしか意味のない内容（国内向けの内線番号表記など）は `fallback={false}` を付けます。
+こうすると英語版では何も出力されません。
+
+```astro
+<Lang fallback={false}>
+  <Fragment slot="ja">
+    <div>電話</div>
+    <div>029-853-6912 (内線:6912)</div>
+  </Fragment>
+</Lang>
+```
+
 `.astro` のページでも同じように書けます。
 
 ```astro
