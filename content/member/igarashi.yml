@@ -5,4 +5,11 @@ grade: B4
 team: arch
 icon: ./icons/igarashi.jpg
 username: igarashi
-message:
+keywords:
+  - 量子HPC連携
+keywords_en:
+  - Quantum-HPC integration
+message: |
+  量子コンピュータとスーパーコンピュータを連携させるソフトウェアやワークフローについて研究しています。
+message_en: |
+  I am researching software and workflows for integrating quantum computers with supercomputers.
