@@ -5,4 +5,11 @@ grade: B4
 team: arch
 icon: ./icons/knakayama.jpg
 username: knakayama
-message:
+keywords:
+  - GPU
+keywords_en:
+  - GPU
+message: |
+  GPUのUnified Memoryについての研究をしています。
+message_en: |
+  I am conducting research on GPU Unified Memory.
