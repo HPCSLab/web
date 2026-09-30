@@ -32,19 +32,18 @@ const teams = await getCollection("team");
 const generalSession: InformationSession = {
   place: {
     display: pick(lang, {
-      ja: "CCS(計算科学研究センター) ワークショップ室",
-      en: "Workshop Room, Center for Computational Sciences (CCS)",
+      ja: "CCS(計算科学研究センター) 会議室A",
+      en: "Meeting Room A, Center for Computational Sciences (CCS)",
     }),
-    canonical: "筑波大学 計算科学研究センター ワークショップ室",
+    canonical: "筑波大学 計算科学研究センター 会議室A",
   },
-  day: new Date("2025-10-7"),
+  day: new Date("2026-10-2"),
   hour: {
-    begin: "18:15",
-    end: "19:45",
+    begin: "16:45",
+    end: "17:45",
   },
 };
 ---
-
 <Base title={t("bachelor.title")} description={t("bachelor.description")}>
   <BlurImageHeader
     imgSrc={HpcsAll}
