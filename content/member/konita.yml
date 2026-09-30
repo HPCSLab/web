@@ -5,4 +5,5 @@ grade: M1
 team: algo
 icon: ./icons/konita.jpg
 username: konita
-message:
+message: TensorCoreを用いた多倍長乗算の高速化
+message_en: Acceleration of multiple-precision multiplication using Tensor Cores

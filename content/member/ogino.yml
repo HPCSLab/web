@@ -5,4 +5,5 @@ grade: B4
 team: algo
 icon: ./icons/ogino.jpg
 username: ogino
-message:
+message: Group-wise更新を用いた高精度Block Krylov部分空間反復法の研究
+message_en: Research on highly accurate Block Krylov subspace methods using the group-wise updating technique
