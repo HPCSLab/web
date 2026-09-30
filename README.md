@@ -2,7 +2,13 @@
 
 現在の管理者:
 
-- [@namachan10777](https://github.com/namachan10777)
+- [@shingohattori](https://github.com/shingohattori)
+
+## デプロイ方法
+
+手オペ。マージされたら自動でデプロイされるようにしたいよね。
+
+https://github.com/HPCSLab/infra/blob/main/docs/service/web.md
 
 ## 更新方法
 
