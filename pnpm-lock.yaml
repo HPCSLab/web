@@ -18,7 +18,7 @@ importers:
         specifier: ^3.3.0
         version: 3.7.2
       '@iconify-json/charm':
-        specifier: ^1.2.2
+        specifier: ^1.2.3
         version: 1.2.3
       '@iconify-json/fluent':
         specifier: ^1.2.19
