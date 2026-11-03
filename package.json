@@ -23,7 +23,7 @@
     "@astrojs/mdx": "^4.2.4",
     "@astrojs/sitemap": "^3.3.0",
     "@iconify-json/charm": "^1.2.2",
-    "@iconify-json/fluent": "^1.2.19",
+    "@iconify-json/fluent": "^1.2.61",
     "@iconify-json/ic": "^1.2.2",
     "@iconify-json/material-symbols": "^1.2.20",
     "@iconify-json/ph": "^1.2.2",
